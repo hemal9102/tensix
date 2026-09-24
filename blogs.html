@@ -61,11 +61,44 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://tensix.in/#organization",
+      "name": "TENSIX",
+      "url": "https://tensix.in/",
+      "logo": "https://tensix.in/assets/favicon.png",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://hemalshah.vercel.app/#person",
+        "name": "Hemal Shah",
+        "url": "https://hemalshah.vercel.app/"
+      },
+      "owner": {
+        "@type": "Person",
+        "@id": "https://hemalshah.vercel.app/#person",
+        "name": "Hemal Shah",
+        "url": "https://hemalshah.vercel.app/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Navrangpura",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "postalCode": "380009",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0366,
+        "longitude": 72.5615
+      },
+      "hasMap": "https://maps.google.com/?q=23.0366,72.5615"
+    },
+    {
       "@type": "WebPage",
       "@id": "https://tensix.in/blogs#webpage",
       "url": "https://tensix.in/blogs.html",
-      "name": "Engineering Insights &amp; Research | TENSIX",
-      "headline": "Engineering Insights &amp; Research | TENSIX",
+      "name": "Engineering Insights & Research | TENSIX",
+      "headline": "Engineering Insights & Research | TENSIX",
       "description": "Technical insights, system architectures, and engineering research on Autonomous AI Multi-Agent Systems, GraphRAG, Cloud VPS (Oracle/Plesk), and GEO search intelligence by TENSIX.",
       "isPartOf": {
         "@id": "https://tensix.in/#website"

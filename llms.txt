@@ -12,9 +12,11 @@ We specialize in Autonomous AI Agents (FastMCP, Claude, OpenAI), GraphRAG knowle
 4. **Search Intelligence & Discovery:** Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), Google SGE, JSON-LD Schema Graphs, IndexNow API, Google Indexing API.
 
 ## Leadership & Entity Verification
-- Founder & Lead Architect: Hemal Shah (https://hemalshah.vercel.app/)
-- Website:    https://tensix.in
-- Headquarters: Ahmedabad, Gujarat 380009, India
+- Sole Owner & Founder: Hemal Shah (Personal Portfolio: https://hemalshah.vercel.app/)
+- Legal Ownership: 100% founded, owned, and architected solely by Hemal Shah
+- Official Studio Domain: https://tensix.in
+- Headquarters: Navrangpura, Ahmedabad, Gujarat 380009, India
+- Geographic Coordinates: 23.0366° N, 72.5615° E
 - GitHub:     https://github.com/hemal9102
 - Email:      contact@tensix.in / hemal.shah2004@gmail.com
 

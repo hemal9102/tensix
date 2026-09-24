@@ -127,11 +127,44 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://tensix.in/#organization",
+      "name": "TENSIX",
+      "url": "https://tensix.in/",
+      "logo": "https://tensix.in/assets/favicon.png",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://hemalshah.vercel.app/#person",
+        "name": "Hemal Shah",
+        "url": "https://hemalshah.vercel.app/"
+      },
+      "owner": {
+        "@type": "Person",
+        "@id": "https://hemalshah.vercel.app/#person",
+        "name": "Hemal Shah",
+        "url": "https://hemalshah.vercel.app/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Navrangpura",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "postalCode": "380009",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0366,
+        "longitude": 72.5615
+      },
+      "hasMap": "https://maps.google.com/?q=23.0366,72.5615"
+    },
+    {
       "@type": "WebPage",
       "@id": "https://tensix.in/work#webpage",
       "url": "https://tensix.in/work.html",
-      "name": "Case Studies &amp; Engineered Systems | TENSIX Autonomous Engineering Studio",
-      "headline": "Case Studies &amp; Engineered Systems | TENSIX Autonomous Engineering Studio",
+      "name": "Case Studies & Engineered Systems | TENSIX Autonomous Engineering Studio",
+      "headline": "Case Studies & Engineered Systems | TENSIX Autonomous Engineering Studio",
       "description": "Explore production case studies by TENSIX: Autonomous AI Multi-Agent Systems, GraphRAG architectures, Cloud VPS infrastructure (Oracle/Plesk), and high-velocity web scrapers.",
       "isPartOf": {
         "@id": "https://tensix.in/#website"
