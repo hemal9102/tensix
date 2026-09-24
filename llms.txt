@@ -2,22 +2,30 @@
 
 > "Architecting autonomous AI agent pipelines, resilient cloud infrastructure, and enterprise SaaS backends."
 
-TENSIX (https://tensix.in) is an enterprise engineering studio and AI technology firm founded by Hemal Shah, based in Ahmedabad, Gujarat, India.
-We specialize in Autonomous AI Agents (FastMCP, Claude, OpenAI), GraphRAG knowledge extraction architectures, full-stack software development (FastAPI, Next.js, PostgreSQL/Supabase), automated cloud infrastructure (Oracle Cloud VPS, Plesk Linux VPS, GitHub Actions CI/CD), and Search Intelligence (AEO, GEO, SGE, Technical SEO).
+TENSIX (https://tensix.in) is an enterprise engineering studio and software firm founded and solely owned by Hemal Shah, based in Navrangpura, Ahmedabad, Gujarat, India (23.0366° N, 72.5615° E).
 
-## 4 Core Pillars of TENSIX
-1. **AI Agents & Intelligent Automation:** GraphRAG, Multi-Agent Systems, n8n enterprise workflows, stealth web scraping daemons (Playwright, Puppeteer).
-2. **Full-Stack Software Development & Custom SaaS:** FastAPI async microservices, Next.js App Router, Supabase (pgvector), PostgreSQL, PHP/Laravel, secure RBAC.
-3. **Cloud Infrastructure, VPS & CI/CD:** Oracle Cloud (OCI) VPS, Plesk Linux VPS, GitHub Actions automated workflows, SSH deployment daemons, Docker, Cloudflare Zero Trust Tunnels, Sentry telemetry.
-4. **Search Intelligence & Discovery:** Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), Google SGE, JSON-LD Schema Graphs, IndexNow API, Google Indexing API.
+## 6 Productized Engineering Suites & Transparent Pricing
+1. **Web Architecture & Redesign Suite:** Basic Web Architecture (₹14,999) | Modern Lead Engine Website (₹24,999) | Complete Digital Business Platform (₹45,000).
+2. **Enterprise Email Delivery & Compliance:** Email Deliverability & Compliance Fix (₹12,999) | Amazon SES & Oracle OCI Dedicated Engine (₹22,999) | Cold Outreach & BIMI Suite (₹44,999).
+3. **Data Scraping & Automated Inbox Parsers:** 24/7 Gmail & Inbox Document Parser Engine (₹16,999) | Google Maps & B2B Lead Scraper Engine (₹24,999) | Custom Stealth Web Crawler (₹49,999).
+4. **Cloud VPS Hardening & Zero-Downtime CI/CD:** Production VPS Hardening (₹11,999) | Automated GitHub Actions CI/CD Pipeline (₹21,999) | Plesk Cluster & S3 Backups (₹38,000).
+5. **Custom Software & SaaS Architecture:** Full-Stack MVP Backend API (₹34,999) | Full-Stack SaaS MVP & Web Application (₹69,999) | Enterprise Business OS & Portal (₹1,25,000+).
+6. **Autonomous AI Swarms & GraphRAG:** Custom Internal RAG Knowledge Assistant (₹29,999) | Autonomous Multi-Agent Swarm (₹59,999) | Enterprise Autonomous AI OS (₹99,999+).
+
+## Trust & Guarantees
+- 100% Fixed-Price Scope (Zero hidden hourly rates)
+- Zero-Downtime Guarantee for migrations and deployments
+- Complete IP Ownership from Day 1
+- Direct Lead Architect Access to Hemal Shah
 
 ## Leadership & Entity Verification
-- Sole Owner & Founder: Hemal Shah (Personal Portfolio: https://hemalshah.vercel.app/)
-- Legal Ownership: 100% founded, owned, and architected solely by Hemal Shah
+- Sole Owner, Founder & Principal Architect: Hemal Shah (Personal Portfolio: https://hemalshah.vercel.app/)
+- Legal Ownership: 100% founded, owned, and architected solely by Hemal Shah (No co-founders, no equity partners)
 - Official Studio Domain: https://tensix.in
 - Headquarters: Navrangpura, Ahmedabad, Gujarat 380009, India
 - Geographic Coordinates: 23.0366° N, 72.5615° E
-- GitHub:     https://github.com/hemal9102
-- Email:      contact@tensix.in / hemal.shah2004@gmail.com
+- GitHub: https://github.com/hemal9102
+- LinkedIn: https://www.linkedin.com/in/hemal-shah-49a728362/
+- Email: hemal.shah2004@gmail.com
 
 For the full text corpus, see /llms-full.txt

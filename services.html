@@ -41,11 +41,198 @@
       opacity: 1;
     }
 
+    /* ── High-Converting Pricing & Productized Suites Styling ── */
+    .pricing-tabs-container {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 2rem 0 3rem;
+    }
+    .pricing-tab-btn {
+      padding: 0.65rem 1.3rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--color-text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+    .pricing-tab-btn:hover, .pricing-tab-btn.active {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(139, 92, 246, 0.3));
+      border-color: rgba(59, 130, 246, 0.7);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.35);
+      transform: translateY(-2px);
+    }
+    .pricing-group {
+      display: none;
+      animation: pageFadeIn 0.4s ease forwards;
+    }
+    .pricing-group.active {
+      display: block;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      align-items: stretch;
+    }
+    .pricing-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 1.25rem;
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      backdrop-filter: blur(14px);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45);
+      border-color: rgba(59, 130, 246, 0.45);
+    }
+    .pricing-card.featured {
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.98) 100%);
+      border: 2px solid rgba(59, 130, 246, 0.7);
+      box-shadow: 0 12px 40px rgba(59, 130, 246, 0.25);
+      transform: scale(1.02);
+    }
+    .pricing-card.featured:hover {
+      transform: scale(1.02) translateY(-8px);
+      box-shadow: 0 24px 54px rgba(59, 130, 246, 0.4);
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.32rem 1.1rem;
+      border-radius: 9999px;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.5);
+      white-space: nowrap;
+    }
+    .pricing-header h3 {
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .pricing-hook {
+      font-size: 0.88rem;
+      color: #93c5fd;
+      min-height: 2.6rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+    }
+    .pricing-price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .pricing-price {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    .pricing-period {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+    .pricing-anchor {
+      font-size: 0.78rem;
+      color: #86efac;
+      background: rgba(34, 197, 94, 0.1);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      font-weight: 500;
+    }
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+      flex: 1;
+    }
+    .pricing-features li {
+      font-size: 0.88rem;
+      color: var(--color-text);
+      padding: 0.45rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      line-height: 1.5;
+    }
+    .pricing-features li svg {
+      flex-shrink: 0;
+      color: #3b82f6;
+      margin-top: 0.2rem;
+    }
+    .pricing-card.featured .pricing-features li svg {
+      color: #86efac;
+    }
+    .pricing-cta {
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-align: center;
+      transition: all 0.25s ease;
+      display: block;
+    }
+    .pricing-guarantee-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 3.5rem 0 1rem;
+      padding: 1.75rem 2rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
+    }
+    .guarantee-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .guarantee-icon {
+      font-size: 1.5rem;
+    }
+    .guarantee-text h4 {
+      font-size: 0.92rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+    .guarantee-text p {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      margin: 0;
+      line-height: 1.4;
+    }
+
 /* Mobile Contrast Fix */
 @media (max-width: 768px) {
   .site-footer { background-color: #080d19 !important; }
   .site-footer, .site-footer p, .site-footer a, .site-footer address { color: #cbd5e1 !important; }
   .site-footer h3, .site-footer h4 { color: #ffffff !important; }
+  .pricing-card.featured { transform: none; }
+  .pricing-card.featured:hover { transform: translateY(-6px); }
 }
 </style>
 <!-- JSON-LD Service Schema -->
@@ -113,7 +300,55 @@
         "latitude": 23.0366,
         "longitude": 72.5615
       },
-      "hasMap": "https://maps.google.com/?q=23.0366,72.5615"
+      "hasMap": "https://maps.google.com/?q=23.0366,72.5615",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "TENSIX Productized Engineering Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Modern Lead Engine Website Architecture",
+            "price": "24999",
+            "priceCurrency": "INR",
+            "description": "15+ professional business pages, Next.js/React frontend, lead capture database, WhatsApp & click-to-call integration, on-page SEO."
+          },
+          {
+            "@type": "Offer",
+            "name": "Amazon SES & Oracle OCI Dedicated Email Delivery Engine",
+            "price": "22999",
+            "priceCurrency": "INR",
+            "description": "Production SES sandbox exit / OCI email delivery setup, SPF/DKIM/DMARC/BIMI compliance, 99.5% deliverability, cutting Mailchimp costs by 90%."
+          },
+          {
+            "@type": "Offer",
+            "name": "Google Maps & B2B Data Scraper Engine",
+            "price": "24999",
+            "priceCurrency": "INR",
+            "description": "Automated Playwright/FastMCP lead scraping engine with phone/email verification, anti-blocking proxies, and automated export."
+          },
+          {
+            "@type": "Offer",
+            "name": "Automated GitHub Actions CI/CD Pipeline",
+            "price": "21999",
+            "priceCurrency": "INR",
+            "description": "Zero-downtime GitHub Actions workflow deploying to Oracle OCI / Plesk Linux VPS via SSH & Docker multi-stage builds."
+          },
+          {
+            "@type": "Offer",
+            "name": "Full-Stack SaaS MVP & Web Application",
+            "price": "69999",
+            "priceCurrency": "INR",
+            "description": "Next.js App Router + FastAPI async backend, PostgreSQL database, Stripe/Razorpay billing, and JWT authentication."
+          },
+          {
+            "@type": "Offer",
+            "name": "Autonomous Multi-Agent AI Swarm",
+            "price": "59999",
+            "priceCurrency": "INR",
+            "description": "LangGraph multi-agent execution loop with custom MCP tool servers, automated research, synthesis, and self-healing error correction."
+          }
+        ]
+      }
     },
     {
       "@type": "WebPage",
@@ -392,8 +627,494 @@
 <p class="skill-label">Version Control — 92%</p>
 </div>
 </div>
+</section>
+
+<!-- ── High-Converting Pricing & Productized Engineering Suites ── -->
+<section class="section" id="pricing" style="background: linear-gradient(180deg, rgba(15,23,42,0.6) 0%, rgba(30,41,59,0.2) 100%); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+<div class="section-inner">
+  <div class="section-header reveal">
+    <div style="display:inline-block;padding:0.35rem 1rem;background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.28);border-radius:9999px;font-size:0.78rem;font-weight:700;color:#93c5fd;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1rem;">
+      Transparent Value-Based Pricing
+    </div>
+    <h2 class="section-title">Engineered Solutions. <span class="gradient-text">Predictable Pricing.</span></h2>
+    <p style="max-width:720px;margin:0 auto;line-height:1.7;">
+      No bloated agency overhead. No surprise hourly invoices. Complete, production-grade systems engineered directly by Lead Architect Hemal Shah with 100% intellectual property ownership from Day 1.
+    </p>
+
+    <!-- Category Tabs Filter -->
+    <div class="pricing-tabs-container">
+      <button class="pricing-tab-btn active" data-target="pricing-web" onclick="switchPricing('pricing-web', this)">🌐 Web &amp; Redesign</button>
+      <button class="pricing-tab-btn" data-target="pricing-email" onclick="switchPricing('pricing-email', this)">📬 Email &amp; SES Delivery</button>
+      <button class="pricing-tab-btn" data-target="pricing-scraping" onclick="switchPricing('pricing-scraping', this)">🕷️ Scraping &amp; Inbox Parsers</button>
+      <button class="pricing-tab-btn" data-target="pricing-cloud" onclick="switchPricing('pricing-cloud', this)">☁️ Cloud VPS &amp; CI/CD</button>
+      <button class="pricing-tab-btn" data-target="pricing-software" onclick="switchPricing('pricing-software', this)">⚡ Custom Software &amp; SaaS</button>
+      <button class="pricing-tab-btn" data-target="pricing-ai" onclick="switchPricing('pricing-ai', this)">🧠 Autonomous AI Swarms</button>
+    </div>
+  </div>
+
+  <!-- ── 1. Web & Redesign Suite ── -->
+  <div class="pricing-group active" id="pricing-web">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>Basic Web Architecture</h3>
+          <p class="pricing-hook">Clean, modern digital storefront built for high credibility and instant trust.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹14,999</span>
+            <span class="pricing-period">/ one-time investment</span>
+          </div>
+          <span class="pricing-anchor">⚡ Saves ₹35,000 vs bloated traditional agencies</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>6–10 Professional Pages</strong> (Home, About, Services, Contact)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>100% Mobile &amp; Tablet Responsive</strong> UI/UX</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>WhatsApp Quick Action</strong> + Email Contact Form</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Google Maps Local Embed</strong> + Social Profile Links</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Core Web Vitals Boost</strong> &amp; On-Page SEO Structure</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Production Deployment</strong> on Hostinger Architecture</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 5–7 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=web-basic">Claim Basic Web Slot →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">🔥 Most Popular — High ROI</span>
+        <div class="pricing-header">
+          <h3>Modern Responsive &amp; Lead Engine</h3>
+          <p class="pricing-hook">High-converting lead engine built with React.js components &amp; automated database capture.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹24,999</span>
+            <span class="pricing-period">/ one-time investment</span>
+          </div>
+          <span class="pricing-anchor">⭐ Replaces slow WordPress with 90+ PageSpeed React</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>15+ Custom Pages</strong> with clean component architecture</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Lead Capture Directly to DB</strong> with instant WhatsApp/Email alerts</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Frontend:</strong> React.js | <strong>Backend:</strong> Node.js / PHP | <strong>DB:</strong> MySQL</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Click-to-Call &amp; WhatsApp</strong> floating integration</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>301 Redirect Mapping:</strong> 100% SEO rank preservation for redesigns</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Google Analytics 4 &amp; GSC</strong> event tracking configured</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 7–10 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=web-standard">Deploy Lead Engine →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Complete Digital Platform</h3>
+          <p class="pricing-hook">Enterprise Next.js full-stack system with custom admin CMS &amp; AI search dominance.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹45,000</span>
+            <span class="pricing-period">/ one-time investment</span>
+          </div>
+          <span class="pricing-anchor">🚀 Built for scale &amp; high-ticket enterprise deals</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Next.js + React.js Dynamic System</strong> with modern micro-animations</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Custom Admin Dashboard:</strong> Manage blogs, inquiries &amp; content without code</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Backend:</strong> Node.js / FastAPI | <strong>Database:</strong> PostgreSQL / MySQL</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Advanced Schema (JSON-LD),</strong> XML Sitemaps &amp; `llms.txt` for AI engines</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Security Hardening &amp; Cloud Launch:</strong> Automated SSL + Global CDN</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>30-Day Post-Launch Support</strong> &amp; speed monitoring</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 10–14 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=web-premium">Build Enterprise Platform →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 2. Email Delivery & Amazon SES Suite ── -->
+  <div class="pricing-group" id="pricing-email">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>Deliverability &amp; Compliance Protocol</h3>
+          <p class="pricing-hook">Stop landing in Gmail &amp; Yahoo spam folders. Permanent 2024+ DNS authentication fix.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹12,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">🛡️ Guaranteed inbox delivery compliance</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Full DNS Security:</strong> SPF, DKIM (2048-bit), and DMARC (`p=reject`)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Custom Return-Path Domain</strong> (Removes "via amazon.com" flags)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Google Postmaster Tools &amp; Microsoft SNDS</strong> reputation registration</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Domain Blacklist Audit</strong> &amp; spam word score optimization</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 2–3 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=email-deliverability">Fix Email Deliverability →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">⭐ Best Value — Cuts SaaS Bills by 90%</span>
+        <div class="pricing-header">
+          <h3>Amazon SES / Oracle Email Engine</h3>
+          <p class="pricing-hook">Send 100,000+ emails for just ₹800/mo instead of paying ₹40,000/mo to Mailchimp.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹22,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">⚡ Amazon SES Production Approved (50k+ daily limit)</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Amazon SES / Oracle Cloud OCI</strong> production setup &amp; sandbox exit</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Dedicated SMTP &amp; REST API</strong> credentials for web apps and CRMs</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated Bounce &amp; Complaint Webhooks</strong> (Protects sender reputation)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Self-Hosted Campaign Portal:</strong> Mailcoach / Sendy / Ghost integration</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Dedicated IP Provisioning</strong> &amp; 30-day automated warmup schedule</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 4–6 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=email-ses-engine">Setup Cloud Email Engine →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Cold Outreach &amp; High-Volume Infra</h3>
+          <p class="pricing-hook">Multi-inbox cold email engine with automated warmup and verified BIMI brand logo.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹44,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">🔒 100% isolation for primary corporate domain</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Multi-Domain Secondary Architecture</strong> for cold outbound volume</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated Mailbox Warmup Integration</strong> (Instantly / Smartlead)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Custom SSL Tracking Domains</strong> for verified open &amp; click tracking</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>BIMI Setup:</strong> Verified brand logo displayed inside Gmail/Apple Mail</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated Drip Follow-ups</strong> via n8n / Python webhooks</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 7–10 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=email-cold-infra">Deploy Cold Infrastructure →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 3. Scraping & Automated Parsers ── -->
+  <div class="pricing-group" id="pricing-scraping">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>Automated Gmail &amp; Doc Parser</h3>
+          <p class="pricing-hook">Zero manual data entry. Extract vendor bills, POs, bank alerts directly to DB 24/7.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹16,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">⏱️ Saves 15–20 hours of manual clerk entry every week</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Secure OAuth / IMAP Inbox Listener</strong> running 24/7 in background</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated Attachment Download:</strong> PDFs, Excel, CSVs processed instantly</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Python OCR &amp; LLM Parsing:</strong> Invoice #, Vendor, Amount, Line Items</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Real-Time Sync:</strong> Push directly to Google Sheets, Notion, or PostgreSQL</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>WhatsApp Alert</strong> on high-value alerts or critical vendor invoices</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 3–5 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=scraper-gmail">Automate Inbox Parsing →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">🔥 Most Popular for Agencies</span>
+        <div class="pricing-header">
+          <h3>Google Maps B2B Lead Intelligence</h3>
+          <p class="pricing-hook">5,000 to 10,000+ verified B2B local business leads on demand without monthly SaaS fees.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹24,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">⭐ 100% automated deduplication &amp; phone normalization</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>FastMCP &amp; Playwright Engine</strong> targeting any niche &amp; global city</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Extracts:</strong> Business Name, Phone, Verified Email, Website, Rating, Address</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Phone Normalization &amp; Email Validation</strong> to eliminate dead records</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Export to CSV / Excel</strong> or direct webhook push to your CRM</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Docker Container Delivered</strong> for unlimited internal client runs</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 4–6 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=scraper-google-maps">Get Lead Scraper Engine →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Custom Crawler &amp; Competitor Telemetry</h3>
+          <p class="pricing-hook">Stealth web crawlers bypassing Cloudflare &amp; CAPTCHAs for market intelligence.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹49,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">📊 Real-time competitive edge on autopilot</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Stealth Headless Browser Automation</strong> with residential proxy rotation</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>E-Commerce Competitor Price Tracking:</strong> Instant alerts on price drops</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Directory Aggregation:</strong> Real estate listings, job portals, tenders</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated VPS Cron Jobs</strong> with self-healing error recovery</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Database Schema &amp; REST API</strong> to consume raw scraped data</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 7–12 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=scraper-custom">Build Custom Web Crawler →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 4. Cloud VPS & CI/CD DevOps ── -->
+  <div class="pricing-group" id="pricing-cloud">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>Cloud VPS Hardening &amp; Nginx Proxy</h3>
+          <p class="pricing-hook">Military-grade Linux server setup. Bulletproof security, fast caching, auto SSL.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹11,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">🚀 Eliminates shared hosting downtime &amp; speed limits</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Oracle Cloud OCI / Plesk / DigitalOcean / Hostinger</strong> Linux VPS provisioning</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>UFW Firewall + SSH Key-Only Login + Fail2ban</strong> brute-force protection</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Nginx Reverse Proxy:</strong> HTTP/2, Gzip/Brotli compression, security headers</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated SSL/TLS Certificates</strong> (Let's Encrypt auto-renewal)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 2–3 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=cloud-hardening">Harden Cloud VPS →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">⭐ Best Value for Dev Teams</span>
+        <div class="pricing-header">
+          <h3>Automated GitHub Actions CI/CD</h3>
+          <p class="pricing-hook">Deploy on `git push` over SSH with zero downtime. Automated builds &amp; test suites.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹21,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">⏱️ Production deployment in under 60 seconds</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Everything in Plan 1</strong> (Server hardening, Nginx, SSL)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>GitHub Actions CI/CD Pipeline</strong> deploying securely via SSH</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Docker Multi-Stage Containerization</strong> for lightweight production images</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Zero-Downtime Rolling Restarts</strong> with healthcheck verification</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Telegram / Discord / WhatsApp Alerts</strong> on build and deployment status</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 4–6 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=cloud-cicd">Automate CI/CD Pipeline →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Plesk Cluster &amp; Disaster Recovery</h3>
+          <p class="pricing-hook">Multi-site server cluster with automated off-site S3 backups &amp; 99.9% uptime.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹38,000</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">🛡️ Complete server resilience &amp; peace of mind</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Plesk Web Host Edition</strong> or Docker Compose cluster setup</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated Daily Off-Site Backups</strong> to AWS S3 / Oracle Object Storage</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Real-Time Server Telemetry:</strong> CPU, RAM, Disk, Nginx traffic monitoring</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Cloudflare Enterprise DNS</strong> with DDoS mitigation &amp; global edge rules</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 6–8 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=cloud-plesk">Deploy Enterprise Server →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. Custom Full-Stack Software & SaaS ── -->
+  <div class="pricing-group" id="pricing-software">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>MVP Backend &amp; Micro-SaaS API</h3>
+          <p class="pricing-hook">Blazing fast async API backend built with Python FastAPI &amp; PostgreSQL.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹34,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">⚡ Engineered for sub-50ms latency &amp; infinite scale</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>FastAPI (Python 3.12+)</strong> high-concurrency async REST endpoints</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>PostgreSQL / Supabase</strong> relational schema with pooling &amp; indexing</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>JWT Auth, Password Hashing</strong> &amp; Role-Based Access Control (RBAC)</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Swagger / OpenAPI UI</strong> interactive documentation auto-generated</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Docker Containerization</strong> ready for one-command cloud deployment</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 7–10 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=software-api">Build Micro-SaaS API →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">⭐ Most Popular for Founders</span>
+        <div class="pricing-header">
+          <h3>Full-Stack SaaS Product Platform</h3>
+          <p class="pricing-hook">Complete production-ready SaaS with Next.js frontend, FastAPI backend &amp; recurring billing.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹69,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">🚀 From concept to live subscription SaaS in 14 days</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Next.js 14+ Frontend</strong> with TypeScript, Tailwind CSS &amp; dark UI</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>FastAPI / Node.js Backend</strong> with Redis caching &amp; rate limiting</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Payment Gateway:</strong> Stripe, Razorpay, or PayPal subscription checkout</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>User Dashboard,</strong> team management, and comprehensive admin panel</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Transactional Emails</strong> integrated via Amazon SES</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 14–21 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=software-saas">Launch Full-Stack SaaS →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Enterprise Business OS (ERP / Portal)</h3>
+          <p class="pricing-hook">Tailor-made business operating system replacing disjointed, expensive legacy tools.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹1,25,000+</span>
+            <span class="pricing-period">/ custom scope</span>
+          </div>
+          <span class="pricing-anchor">🔑 100% proprietary code &amp; IP ownership</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Complex Business Logic Engine</strong> replacing 5+ manual SaaS tools</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Distributed Task Queues:</strong> Celery / Redis / RabbitMQ worker nodes</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Multi-Department RBAC,</strong> audit logs, and approval workflows</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Automated Database Snapshots</strong> &amp; off-site disaster recovery</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Complete Source Code Handover,</strong> architecture manuals &amp; staff training</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 3–5 Weeks</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=software-enterprise">Schedule Architecture Scope →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 6. Autonomous AI Multi-Agent Swarms ── -->
+  <div class="pricing-group" id="pricing-ai">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>Custom RAG Document Assistant</h3>
+          <p class="pricing-hook">AI assistant trained strictly on your company SOPs &amp; manuals with zero hallucinations.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹29,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">🤖 Saves hours of internal staff answering repetitive questions</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Vector Database Embeddings</strong> on Supabase pgvector with semantic search</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Embeddable Web Chat Widget</strong> or internal WhatsApp/Slack bot</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Strict Source Citations:</strong> Displays exact document paragraphs &amp; pages</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Admin Knowledge Upload Interface</strong> for adding new PDFs anytime</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 5–7 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=ai-rag">Deploy RAG Assistant →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">🧠 Flagship TENSIX Innovation</span>
+        <div class="pricing-header">
+          <h3>Autonomous Multi-Agent Swarm</h3>
+          <p class="pricing-hook">Multi-agent execution loop where specialized AI agents collaborate autonomously.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹59,999</span>
+            <span class="pricing-period">/ one-time setup</span>
+          </div>
+          <span class="pricing-anchor">⭐ Replaces a 5-person manual research and publishing team</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>LangGraph + n8n Swarm:</strong> Researcher -> Writer -> Reviewer -> Publisher</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Custom MCP Tool Servers</strong> connecting LLMs directly to DBs &amp; APIs</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Autonomous Content &amp; Data Synthesis</strong> running on scheduled triggers</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Self-Healing Error Correction Loops</strong> with deterministic quality gates</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 10–14 Business Days</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=ai-swarm">Deploy Agent Swarm →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Enterprise Autonomous AI OS</h3>
+          <p class="pricing-hook">End-to-end autonomous business pipeline running 24/7 without human intervention.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹99,999+</span>
+            <span class="pricing-period">/ custom scope</span>
+          </div>
+          <span class="pricing-anchor">🚀 Unrivaled operational leverage for modern firms</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Full Business Loop:</strong> Scrape lead -> AI qualify -> Enrich -> Email -> Book call -> Log CRM</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Multi-Modal Capabilities:</strong> Voice transcription, OCR &amp; LLM reasoning</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Real-Time Telemetry Dashboard</strong> &amp; human-in-the-loop review interface</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 2–4 Weeks</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=ai-enterprise">Engineer AI OS →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Trust & Risk Reversal Bar ── -->
+  <div class="pricing-guarantee-bar reveal">
+    <div class="guarantee-item">
+      <span class="guarantee-icon">🛡️</span>
+      <div class="guarantee-text">
+        <h4>100% Fixed-Price Scope</h4>
+        <p>Zero surprise hourly billing. What you see is exactly what you invest.</p>
+      </div>
+    </div>
+    <div class="guarantee-item">
+      <span class="guarantee-icon">🚀</span>
+      <div class="guarantee-text">
+        <h4>Zero-Downtime Guarantee</h4>
+        <p>Seamless migrations, DNS cutovers, and zero disruption to your active users.</p>
+      </div>
+    </div>
+    <div class="guarantee-item">
+      <span class="guarantee-icon">🔑</span>
+      <div class="guarantee-text">
+        <h4>Complete IP Ownership</h4>
+        <p>You own 100% of your source code, server credentials, and data from Day 1.</p>
+      </div>
+    </div>
+    <div class="guarantee-item">
+      <span class="guarantee-icon">📞</span>
+      <div class="guarantee-text">
+        <h4>Direct Architect Access</h4>
+        <p>Work directly with Founder &amp; Lead Architect Hemal Shah, not junior reps.</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 </section>
+
 <!-- ── FAQ Section (Optimized for AEO & GEO) ── -->
 <section class="section" id="faq" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
 <div class="section-inner">
@@ -546,6 +1267,20 @@ Gujarat 380009 · India
 <p>© 2026 TENSIX · Autonomous AI Systems &amp; Cloud Infrastructure Studio. Founded by <a href="https://hemalshah.vercel.app/" target="_blank" rel="noopener" style="color:#93c5fd;text-decoration:underline;">Hemal Shah</a></p>
 </div>
 </footer>
+<script>
+function switchPricing(groupId, btn) {
+  document.querySelectorAll('.pricing-tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.pricing-group').forEach(function(g) { g.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  var target = document.getElementById(groupId);
+  if (target) target.classList.add('active');
+}
+</script>
 <script defer="" src="script.js?v=1.3"></script>
+<aside aria-label="WhatsApp Chat">
+<a aria-label="Chat on WhatsApp" href="https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20found%20your%20services%20page%20and%20would%20like%20to%20discuss%20a%20project." rel="noopener" style="position:fixed;bottom:5.5rem;right:1.25rem;z-index:950;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.45);transition:transform 0.25s ease,box-shadow 0.25s ease;" target="_blank">
+<svg fill="#fff" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+</a>
+</aside>
 </body>
 </html>
