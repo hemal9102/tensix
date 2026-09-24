@@ -1,30 +1,72 @@
 ---
-title: Home MOC
-tags: [moc]
-updated: 2026-07-20
+title: "TENSIX Knowledge Vault — Home MOC"
+type: "moc"
+tags:
+  - moc
+  - tensix
+  - second-brain
+  - architecture
+created: 2026-09-25
+updated: 2026-09-25
+owner: "Hemal Shah"
+canonical: "https://tensix.in/"
 ---
 
-# Home — JobRecruitment Knowledge Vault
+# 🧠 TENSIX Knowledge Vault & Codebase Memory Graph
 
-**Purpose:** Top-level map of content for the JobRecruitment platform knowledge base.
+> **"One Human Lead Architect directing Autonomous AI Swarms running 24/7."**  
+> *Canonical Entity:* [[TENSIX-Entity-And-Brand-Specification]] (`https://tensix.in/`)  
+> *Founder & Sole Architect:* [[Hemal-Shah-Identity]] (`https://hemalshah.vercel.app/`)  
+> *Physical Anchor:* Navrangpura, Ahmedabad, Gujarat, India (`23.0366° N, 72.5615° E`)
 
-**Summary:** Navigation hub. Every knowledge area starts from here. This vault *complements* the in-repo docs — it never duplicates `CLAUDE.md` / `ARCHITECTURE.md`; it links to them.
+Welcome to the central Obsidian Knowledge Vault and Codebase Brain for **TENSIX**. This vault is the definitive source of truth governing architectural decision records (ADRs), productized service matrices, client acquisition psychology, codebase file topologies, and AI discovery protocols.
 
-## Maps of Content
-- [[SEO]] — ranking strategy, on-page, programmatic pages
-- [[Architecture]] — PHP platform structure, entry points, DI
-- [[Security]] — auth, session, CSRF, secrets
-- [[Deploy]] — the two deploy paths + traps
-- (add: Infra, Data as they grow)
+---
 
-## Canonical in-repo docs (source of truth — link, don't copy)
-- Root rules: `../../CLAUDE.md`
-- Backend architecture: `../../backend/ARCHITECTURE.md`
-- Layer rules: `../../backend/CLAUDE.md`, `../../backend/controllers/CLAUDE.md`, `../../backend/repositories/CLAUDE.md`
-- AI memory store: `../../.claude/projects/c--hk--public-html/memory/MEMORY.md`
+## 🗺️ Master Maps of Content (MOCs)
 
-## Areas
-- [[SEO-Ranking-Strategy]]
+| MOC | Core Scope | Status |
+| :--- | :--- | :--- |
+| **[[TENSIX-Master-MOC]]** | Global constellation map interconnecting all vault systems | 🟢 Active |
+| **[[TENSIX-Services-And-Pricing-MOC]]** | 6 productized engineering suites, 18 pricing tiers, ROI models | 🟢 Active |
+| **[[TENSIX-Target-Markets-And-Buyer-Personas-MOC]]** | Target niches, ICP profiles, pain-point mappings & market capture | 🟢 Active |
+| **[[TENSIX-Codebase-And-Architecture-MOC]]** | Complete file inventory, Python toolchain, DOM rendering & CSS | 🟢 Active |
+| **[[TENSIX-Persuasion-And-Sales-Playbook-MOC]]** | Psychological pricing, price anchoring, objection scripts & closing | 🟢 Active |
+| **[[TENSIX-AEO-GEO-SGE-Dominance-Architecture]]** | Schema graph hierarchies, LLM context files, indexing daemons | 🟢 Active |
+| **[[Autonomous-Software-Economy-MOC]]** | Autonomous multi-agent swarms, token economics & agent runtime | 🟢 Active |
+| **[[Global-Internet-Business-Ecosystems-MOC]]** | Value ladder, asymmetric bets, and physical economy moats | 🟢 Active |
 
-## Decisions
-- [[2026-07-20-seo-thin-content-fixes]]
+---
+
+## ⚡ Direct Graph Navigation Hubs
+
+### 1. Commercial Suites & Offerings
+- [[TENSIX-Web-Architecture-And-Redesign-Suite]] — Basic (₹14,999), Modern Lead Engine (₹24,999), Complete Platform (₹45,000)
+- [[TENSIX-Enterprise-Email-And-SES-Delivery-Engine]] — Compliance (₹12,999), Amazon SES / OCI (₹22,999), Cold Outreach (₹44,999)
+- [[TENSIX-Data-Scraping-And-Automated-Inbox-Parsers]] — Gmail Parsers (₹16,999), Google Maps Scraper (₹24,999), Stealth Crawler (₹49,999)
+- [[TENSIX-Cloud-VPS-Hardening-And-CICD-Pipelines]] — VPS Hardening (₹11,999), GitHub Actions CI/CD (₹21,999), Plesk Cluster (₹38,000)
+- [[TENSIX-Custom-Software-And-SaaS-Architecture]] — Backend API (₹34,999), Full-Stack SaaS MVP (₹69,999), Business OS (₹1,25,000+)
+- [[TENSIX-Autonomous-AI-Swarms-And-GraphRAG]] — RAG Assistant (₹29,999), Multi-Agent Swarm (₹59,999), Autonomous AI OS (₹99,999+)
+
+### 2. Positioning, Sales & Psychology
+- [[TENSIX-Buyer-Personas-And-Target-Segments]] — ICPs: High-Burn Founders, Outbound Agencies, MSMEs & Scaled Firms
+- [[TENSIX-Sales-Psychology-And-Pricing-Tricks]] — Price anchoring, compromise effect, zero-downtime & fixed-scope guarantees
+- [[TENSIX-Entity-And-Brand-Specification]] — Rebranding from HK Engineering, entity disambiguation, single-owner mandate
+
+### 3. Technical Core & Codebase Engine
+- [[TENSIX-Codebase-File-Inventory-And-Tooling]] — Breakdown of all 40+ HTML/Python/JS files, verification scripts & sitemaps
+- [[MASTER_PROMPT]] — The master canonical system prompt driving LLM web crawler synthesis
+- [[AEO-GEO-Monitoring-Loop]] — Continuous verification of search engine citations and brand grounding
+
+---
+
+## 📂 Vault Topology
+```text
+knowledge-vault/
+├── 00-MOC/              # High-level navigational indices & Maps of Content
+├── Permanent/           # Atomic, interconnected conceptual notes (Obsidian Graph Nodes)
+├── Projects/            # Active project memory & implementation plans
+├── Areas/               # Core ongoing engineering domains & local citations
+├── Decisions/           # Architectural Decision Records (ADRs) & strategic pivots
+└── Resources/           # Technical resumes, schema templates, and external specs
+```

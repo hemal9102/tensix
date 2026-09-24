@@ -1,58 +1,58 @@
 ---
-title: "System Architecture & Repository Matrix"
+title: "TENSIX System Architecture & Repository Matrix"
 type: "system"
-status: "active"
-project: "[[hemalshah_portfolio]]"
 tags:
   - system
   - architecture
+  - tensix
   - vercel
-created: 2026-07-26
-updated: 2026-07-26
+  - oci
+created: 2026-09-25
+updated: 2026-09-25
 priority: "high"
 owner: "Hemal Shah"
+canonical: "https://tensix.in/"
 ---
 
-# System Architecture: HK Engineering & Portfolio Ecosystem
+# System Architecture: TENSIX Autonomous Engineering Studio
 
 ## 1. Executive Summary
-This repository serves a dual purpose:
-1. **Production Web Application**: The official enterprise AI consulting portfolio for Hemal Shah (HK Engineering) hosted on Vercel at `hemalshah.vercel.app`.
-2. **AI Knowledge Operating System (Knowledge OS)**: The local-first Markdown source of truth governing architectural decision records (ADRs), SEO/GEO entity protocols, and automation workflows.
+This repository (`H:\portfolio_website\tensix`) operates as:
+1. **Production Web Application & Productized Engineering Portal**: The official website for **TENSIX** (`https://tensix.in/`), founded and solely owned by **Hemal Shah** in Navrangpura, Ahmedabad (`23.0366° N, 72.5615° E`).
+2. **AI Knowledge Operating System & Obsidian Second Brain**: The local-first Markdown source of truth governing architectural decision records (ADRs), productized service tiers, buyer personas, sales psychology, and AI discovery protocols.
+3. **Autonomous AI Swarm Hub**: The central command node where Hemal Shah directs specialized autonomous AI agents (researchers, coders, validators) to build and deploy high-concurrency systems.
 
 ---
 
 ## 2. Technical Stack Matrix
-- **Frontend Layer**: Vanilla HTML5, CSS3 (custom design system in `index.css`), and JavaScript (`script.js`). Zero heavy frontend framework bloat to maintain 100/100 Google PageSpeed Core Web Vitals.
-- **Hosting & CDN**: Vercel Static Edge Network with strict Content Security Policy (CSP) and security headers defined in `vercel.json`.
-- **AI Search & Schema Layer**: Extreme structured JSON-LD schemas (`Person`, `Organization`, `WebSite`, `FAQPage`, `Service`) injected across all root pages.
-- **AI Crawler Corpus**: Explicit plaintext knowledge endpoints (`llms.txt` and `llms-full.txt`) adhering to the Entity Namespace Protocol for regional disambiguation in Ahmedabad.
-- **Backend Architecture Reference**: Python, FastAPI, PostgreSQL, `pgvector`, and n8n (documented in `02_Projects/` and `blogs/`).
+- **Frontend Layer**: Vanilla HTML5, CSS3 (glassmorphic design system), and JavaScript (`script.js`). Zero heavy client-side JavaScript frameworks to maintain a perfect 100/100 Core Web Vitals rating.
+- **Edge & VPS Infrastructure**: Vercel Static Edge Network with strict Content Security Policy (CSP) headers in `vercel.json` alongside Oracle Cloud Infrastructure (OCI) and Plesk Linux VPS deployment paths.
+- **AI Search & Schema Layer**: Unified Schema.org JSON-LD hierarchy (`Organization`, `ProfessionalService`, `Person`, `OfferCatalog`, `GeoCoordinates`, `FAQPage`, `BreadcrumbList`) across all pages.
+- **AI Crawler Endpoints**: `/llms.txt` and `/llms-full.txt` (92k+ character corpus) compiled via `regen_llms.py`.
+- **Backend Architecture Reference**: Python 3.12+, FastAPI async APIs, PostgreSQL, `pgvector`, Playwright, FastMCP, and Docker.
 
 ---
 
-## 3. Directory & Routing Structure
+## 3. Directory & Knowledge OS Structure
 ```text
-hemalshah/
-├── 00_System/          # AI Knowledge OS system rules & personas
-├── 01_Memory/          # Hot memory (session) & Living memory (standards)
-├── 02_Projects/        # Active project memory graphs (ADRs, architectures)
-├── 04_Knowledge/       # Domain concepts (GEO/AEO, RAG, n8n)
-├── 06_Business/        # Business & local SEO dominance strategies
-├── 07_AI/              # AI pipelines & MCP retrieval specs
-├── 08_Life/            # Personal notes & habits
-├── 09_Archive/         # Historical logs and past iterations
-├── blogs/              # Technical spoke articles and case studies
-├── skills/             # Antigravity / AI agent operational playbooks
-├── assets/             # Optimized webp images and favicons
-├── *.html              # Production web pages (Pillar & Core pages)
-├── sitemap*.xml        # XML sitemaps with crawl priorities
-└── vercel.json         # Edge deployment security & headers
+tensix/
+├── 00-MOC/              # Obsidian Map of Content navigation hubs
+├── 00_System/           # System architecture rules, AI personas
+├── 01_Memory/           # Hot working memory & living engineering standards
+├── 02_Projects/         # Active project charters, sprint roadmaps
+├── 04_Knowledge/        # Domain conceptual notes (AEO/GEO, GraphRAG, CI/CD)
+├── 06_Business/         # Sales psychology, buyer personas, keyword dominance
+├── 07_AI/               # FastMCP pipelines, LangGraph multi-agent specs
+├── knowledge-vault/     # Obsidian Zettelkasten & PARA knowledge graph
+├── assets/              # Optimized WebP assets, SVG icons, Inter fonts
+├── *.html               # Production web pages (Pillars, Hubs, Case Studies)
+└── *.py                 # 25+ Python automation, indexing & audit scripts
 ```
 
 ---
 
-## 4. Design & Performance Principles
-- **Aesthetic Excellence**: Vibrant HSL color palettes, dark mode glassmorphism, micro-animations, and clean typography.
-- **Zero CLS / Reflow**: Font preloading and strict dimension attributes on all media.
-- **Semantic HTML**: Strict heading hierarchies (single `<h1>` per page) and accessible landmark tags.
+## 4. Operational & Delivery Principles
+- **100% Fixed-Price Scope**: Zero surprise hourly billing.
+- **Zero-Downtime Guarantee**: Seamless database migrations and DNS cutovers.
+- **Complete IP Ownership**: Client holds 100% legal ownership of code and server keys from Day 1.
+- **Direct Architect Access**: Work directly with Lead Architect Hemal Shah.
