@@ -4,12 +4,14 @@ Strips HTML tags, extracts visible text per page.
 """
 import os, re
 
-ROOT = r"H:\portfolio_website\hemalshah"
+ROOT = r"H:\portfolio_website\tensix"
 
 PAGES = [
     "index.html", "about.html", "services.html", "work.html",
     "contact.html", "team.html", "blogs.html", "whoami.html",
     "compare.html", "frameworks.html", "gallery.html", "resources.html",
+    "wr1.html", "navrangpura.html", "ahmedabad-software-engineering.html",
+    "hk-engineering-ahmedabad.html",
     "blogs/why-i-chose-automation-over-a-9-to-5.html",
     "blogs/what-is-our-life.html",
     "blogs/the-ultimate-local-business-seo-master-strategy.html",
@@ -32,12 +34,17 @@ def strip_tags(html):
     html = re.sub(r'\s+', ' ', html).strip()
     return html
 
-lines = ["Hemal Shah (HK) — AI Automation Engineer | Full Website Text Corpus"]
-lines.append("Generated for AI crawlers. Source: https://hemalshah.vercel.app/\n")
+lines = [
+    "TENSIX — Autonomous AI Swarms & Full-Stack Engineering Studio | Full Website Text Corpus",
+    "Founded, Owned, and Architected Solely by Hemal Shah (Navrangpura, Ahmedabad, Gujarat, India)",
+    "Coordinates: 23.0366° N, 72.5615° E",
+    "Generated for AI crawlers (LLMs, SearchGPT, Perplexity, Claude, Gemini). Canonical: https://tensix.in/\n"
+]
 
 for page in PAGES:
     filepath = os.path.join(ROOT, page)
     if not os.path.exists(filepath):
+        print(f"Warning: page missing {filepath}")
         continue
     with open(filepath, encoding="utf-8") as f:
         html = f.read()
