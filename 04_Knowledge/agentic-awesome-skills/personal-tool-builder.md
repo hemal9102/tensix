@@ -1,0 +1,19 @@
+---
+title: "personal-tool-builder"
+category: "uncategorized"
+date_added: 2026-02-27
+tags:
+  - skill
+  - uncategorized
+---
+
+# personal-tool-builder
+
+**Category**: uncategorized
+**Added**: 2026-02-27
+
+## Description
+Expert in building custom tools that solve your own problems first. The best products often start as personal tools - scratch your own itch, build for yourself, then discover others have the same itch.
+
+## Links
+- Back to [[Index]]

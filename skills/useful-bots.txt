@@ -1,0 +1,329 @@
+There are **hundreds of crawlers**, but you **should not list every bot in `robots.txt`**. A large robots.txt is harder to maintain and offers no ranking benefit. Only list bots when you want to give them different crawling rules.
+
+For a modern SEO + AEO website like **TechAndCarsInfo** or **JobRecruitment.in**, here are the major bots grouped by purpose.
+
+---
+
+# 1. Search Engine Crawlers
+
+These are the most important bots.
+
+```text
+Googlebot
+Googlebot-Image
+Googlebot-News
+Googlebot-Video
+AdsBot-Google
+AdsBot-Google-Mobile
+Storebot-Google
+
+Bingbot
+AdIdxBot
+
+Applebot
+
+DuckDuckBot
+
+YandexBot
+
+Baiduspider
+
+Sogou Spider
+
+PetalBot
+
+SeznamBot
+
+Qwantify
+
+MojeekBot
+
+NeevaBot
+```
+
+---
+
+# 2. AI Crawlers / LLM Crawlers
+
+These are increasingly important for AI visibility.
+
+```text
+GPTBot
+ChatGPT-User
+
+ClaudeBot
+Claude-Web
+
+Google-Extended
+
+CCBot
+
+Amazonbot
+
+Applebot-Extended
+
+PerplexityBot
+
+Perplexity-User
+
+OAI-SearchBot
+
+Meta-ExternalAgent
+
+Meta-ExternalFetcher
+
+Bytespider
+
+YouBot
+
+Diffbot
+
+ImagesiftBot
+
+Anthropic-AI
+
+Cohere-AI
+
+CommonCrawl
+```
+
+---
+
+# 3. SEO Crawlers
+
+Useful for audits and SEO tools.
+
+```text
+SemrushBot
+SemrushBot-SA
+
+AhrefsBot
+AhrefsSiteAudit
+
+MJ12bot
+
+DotBot
+
+DataForSeoBot
+
+Sitebulb
+
+Screaming Frog SEO Spider
+
+LumarBot
+
+Deepcrawl
+
+Oncrawl
+
+RyteBot
+
+SEO PowerSuite
+
+MorningscoreBot
+
+UbersuggestBot
+```
+
+---
+
+# 4. Social Media Preview Bots
+
+Used when links are shared.
+
+```text
+facebookexternalhit
+
+Facebot
+
+Twitterbot
+
+LinkedInBot
+
+Slackbot
+
+Discordbot
+
+TelegramBot
+
+WhatsApp
+
+Pinterestbot
+
+SkypeUriPreview
+
+Snapchat
+
+Mastodon
+
+redditbot
+```
+
+---
+
+# 5. Feed & Reader Bots
+
+```text
+FeedFetcher-Google
+
+Feedly
+
+Inoreader
+
+FlipboardProxy
+
+NewsBlur
+```
+
+---
+
+# 6. Monitoring Bots
+
+```text
+UptimeRobot
+
+Pingdom
+
+Better Stack
+
+StatusCake
+
+Freshping
+```
+
+---
+
+# 7. Security Bots
+
+```text
+Google-Safety
+
+Google-Site-Verification
+
+Cloudflare-AlwaysOnline
+
+Cloudflare-Healthchecks
+
+CensysInspect
+
+Shodan
+
+ZoomEye
+
+NetcraftSurveyAgent
+```
+
+---
+
+# 8. Archive Bots
+
+```text
+ia_archiver
+
+Wayback
+
+ArchiveBot
+```
+
+---
+
+# 9. Commerce Bots
+
+```text
+Amazonbot
+
+Pinterestbot
+
+Google-StoreBot
+```
+
+---
+
+# 10. Miscellaneous Legitimate Bots
+
+```text
+LinkedInBot
+
+YisouSpider
+
+TurnitinBot
+
+OpenWebSpider
+
+Exabot
+
+Gigabot
+
+SeekportBot
+```
+
+---
+
+# 11. Bots commonly blocked
+
+Many websites block these because they consume bandwidth or scrape aggressively.
+
+```text
+MJ12bot
+
+DotBot
+
+SemrushBot (optional)
+
+AhrefsBot (optional)
+
+CCBot (optional)
+
+Bytespider
+
+ZoominfoBot
+
+PetalBot (optional)
+
+BLEXBot
+
+MegaIndex
+
+DataForSeoBot
+
+SeznamBot
+
+ImagesiftBot
+
+YandexBot (optional)
+
+Sogou Spider
+
+Baiduspider
+```
+
+---
+
+# Recommended robots.txt strategy
+
+For most websites, don't create dozens of `User-agent` sections. Instead:
+
+* Allow all legitimate search engines:
+
+  ```text
+  User-agent: *
+  Allow: /
+  ```
+
+* Disallow only private areas:
+
+  ```text
+  Disallow: /admin/
+  Disallow: /api/private/
+  Disallow: /config/
+  Disallow: /vendor/
+  ```
+
+* If you want to restrict AI training while remaining searchable, create **specific rules** for AI bots rather than blocking everything.
+
+* Add:
+
+  ```text
+  Sitemap: https://example.com/sitemap.xml
+  ```
+

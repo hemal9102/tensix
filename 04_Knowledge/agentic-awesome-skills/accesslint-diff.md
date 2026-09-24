@@ -1,0 +1,19 @@
+---
+title: "accesslint-diff"
+category: "uncategorized"
+date_added: 2026-06-02
+tags:
+  - skill
+  - uncategorized
+---
+
+# accesslint-diff
+
+**Category**: uncategorized
+**Added**: 2026-06-02
+
+## Description
+Diff a live page's accessibility violations against a baseline — by default compares uncommitted changes (stash-based), or pass --branch [<name>] to diff against a branch. Reports only new violations introduced, violations fixed, and pre-existing count. Use `scan` for a full audit with no diffing.
+
+## Links
+- Back to [[Index]]

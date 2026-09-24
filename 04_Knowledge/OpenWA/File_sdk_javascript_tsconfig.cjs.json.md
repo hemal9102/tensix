@@ -1,0 +1,17 @@
+---
+title: "File: tsconfig.cjs.json"
+category: "codebase-file"
+tags:
+  - codebase
+  - OpenWA
+---
+
+# File: tsconfig.cjs.json
+
+**Path**: `sdk\javascript\tsconfig.cjs.json`
+
+## Location
+- Inside [[Dir_sdk_javascript]]
+
+## Links
+- Back to [[Index]]

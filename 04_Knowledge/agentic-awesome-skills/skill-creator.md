@@ -1,0 +1,23 @@
+---
+title: "skill-creator"
+category: "meta"
+date_added: 2026-02-27
+tags:
+  - [automation
+  - scaffolding
+  - skill-creation
+  - meta-skill]
+  - skill
+  - meta
+---
+
+# skill-creator
+
+**Category**: meta
+**Added**: 2026-02-27
+
+## Description
+To create new CLI skills following Anthropic's official best practices with zero manual configuration. This skill automates brainstorming, template application, validation, and installation processes while maintaining progressive disclosure patterns and writing style standards.
+
+## Links
+- Back to [[Index]]

@@ -1,0 +1,18 @@
+{
+  "name": "tensix",
+  "version": "1.0.0",
+  "description": "TENSIX — Autonomous AI Systems, Cloud Infrastructure & High-Concurrency Software",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ai", "automation", "fastapi", "nextjs", "vps", "seo", "geo", "aeo"],
+  "author": "Hemal Shah (Founder, Tensix)",
+  "license": "ISC",
+  "type": "commonjs",
+  "homepage": "https://tensix.in",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.62.0"
+  }
+}

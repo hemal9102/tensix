@@ -1,0 +1,19 @@
+---
+title: "occupational-health-analyzer"
+category: "health"
+date_added: None
+tags:
+  - skill
+  - health
+---
+
+# occupational-health-analyzer
+
+**Category**: health
+**Added**: None
+
+## Description
+分析职业健康数据、识别工作相关健康风险、评估职业健康状况、提供个性化职业健康建议。支持与睡眠、运动、心理健康等其他健康数据的关联分析。
+
+## Links
+- Back to [[Index]]

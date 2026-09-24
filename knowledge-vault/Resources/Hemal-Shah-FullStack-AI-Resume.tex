@@ -1,0 +1,177 @@
+\documentclass[10.5pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{xcolor} % Loaded before hyperref 
+\usepackage[hidelinks,colorlinks=true,urlcolor=darkblue,linkcolor=darkblue]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{mdframed}
+
+% Icon substitutes
+\newcommand{\faMapMarker}{{\small\textbullet}}
+\newcommand{\faPhone}{{\small\textbullet}}
+\newcommand{\faEnvelope}{{\small\textbullet}}
+\newcommand{\faGithub}{{\small\textbullet}}
+\newcommand{\faExternalLink}{$\nearrow$}
+
+% ========== COLORS ==========
+\definecolor{darkblue}{RGB}{10, 36, 99}
+\definecolor{accentblue}{RGB}{37, 99, 235}
+\definecolor{lightgray}{RGB}{248, 249, 250}
+\definecolor{medgray}{RGB}{100, 116, 139}
+\definecolor{borderblue}{RGB}{147, 197, 253}
+
+% ========== SECTION HEADING ==========
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titleformat{\section}{%
+\large\bfseries\color{darkblue}%
+}{}{0em}{}[{\color{accentblue}\vspace{2pt}\hrule height 1.5pt\vspace{2pt}}]
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+
+\setlist[itemize]{
+leftmargin=0.18in,
+topsep=1.5pt,
+itemsep=1.5pt,
+parsep=0pt,
+label={\textcolor{accentblue}{\small$\bullet$}}
+}
+
+\begin{document}
+
+% ========== HEADER ==========
+\begin{center}
+{\Huge \textbf{\textcolor{darkblue}{Hemal Shah}}} \\[4pt]
+{\small\color{medgray}
+\faMapMarker\ Ahmedabad, Gujarat \quad
+\faPhone\ \href{tel:+918320278775}{+91-8320278775} \quad
+\faEnvelope\ \href{mailto:hemal.shah2004@gmail.com}{hemal.shah2004@gmail.com} \quad
+\faGithub\ \href{https://github.com/hemal9102}{github.com/hemal9102} \quad
+\href{https://hemalshah.vercel.app}{\textbf{hemalshah.vercel.app}}
+}
+\end{center}
+
+\vspace{-3pt}
+{\color{borderblue}\hrule height 0.8pt}
+\vspace{3pt}
+
+% ========== PROFESSIONAL SUMMARY ==========
+\section*{Professional Summary}
+{\small
+Full-Stack AI Automation \& DevOps Engineer with hands-on experience building production-grade web systems, headless/headful scraping daemons, enterprise CMS backends, and multi-cloud CI/CD deployment pipelines. Skilled across Node.js, Next.js, FastAPI, Strapi CMS, PHP/MySQL, and Python httpx automation. Proven track record architecting automated CI/CD releases across Hostinger (Shared/VPS via WSL rsync), Vercel, Netlify, Render, and Railway, with Sentry error monitoring, AWS Bedrock, Google Cloud Platform (GCP), Cloudflare Zero Trust Tunnels, and hardened SQL injection/data leak defenses serving 400+ client profiles.
+}
+
+% ========== TECHNICAL SKILLS ==========
+\section*{Technical Skills}
+{\small
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{darkblue}}l@{\quad}X@{}}
+Languages & JavaScript (ES6+), TypeScript, Node.js, Python, PHP, SQL/MySQL, HTML5, CSS3, C/C++ \\[1.5pt]
+Frontend \& CMS & Next.js, React.js, Tailwind CSS, Strapi CMS, Headless CMS Architecture, Responsive UI/UX \\[1.5pt]
+Backend \& APIs & FastAPI, Express.js, Laravel, REST APIs, GraphQL, Session/JWT RBAC, Async Architecture, Linux Systemd \\[1.5pt]
+DevOps \& Multi-Cloud & Hostinger Shared/VPS, WSL (Ubuntu), rsync Deployments, Vercel, Netlify, Render, Railway, GCP, Docker, Git CI/CD \\[1.5pt]
+AI \& Foundation Models & AWS Bedrock, Gemini API, Groq LPU, NVIDIA NIM, Model Context Protocol (MCP), FastMCP, RAG, Embeddings \\[1.5pt]
+Scraping \& Automation & Playwright, Puppeteer (Headless \& Headful), httpx, BeautifulSoup, Pandas, n8n, ADB USB Automation, Webhooks \\[1.5pt]
+Security \& Monitoring & Sentry Real-Time Log Monitoring, SQL Parameterization, DLP, Cloudflare Tunnels, Anti-Bot Heuristics, IndexNow \\
+\end{tabularx}
+}
+
+% ========== EXPERIENCE ==========
+\section*{Experience}
+
+\noindent\textbf{\textcolor{darkblue}{Full Stack AI \& Automation Lead Engineer}} \hfill \textit{\small\color{medgray}Nov 2025 -- Present}\\
+{\small\color{accentblue}\textit{Job Recruitment Platform \& Corporate Services --- Ahmedabad, India}}
+\begin{itemize}
+\item Architected a hardened \textbf{Recruitment Operations Dashboard} (Node.js, PHP, MySQL) utilizing parameterized queries and strict input sanitization to eliminate SQL injection and privilege escalation vulnerabilities.
+\item Built automated \textbf{CI/CD deployment pipelines on Hostinger} using WSL (Windows Subsystem for Linux), SSH keys, and custom \textbf{rsync release daemons} for zero-downtime static and dynamic asset updates.
+\item Implemented real-time telemetry and error tracking using \textbf{Sentry log monitoring}, capturing runtime exceptions and automating alert triage across production backend workers.
+\item Built high-throughput \textbf{headless and headful scraping daemons} (Playwright, Puppeteer, Python httpx) with stealth evasion, dynamic proxy rotation, and deduplication for government job portals and LinkedIn.
+\item Engineered an edge \textbf{ADB + Python SMS Dispatch Node} using Android USB tethering and Render webhooks, preventing network data leaks via encrypted local queue daemons.
+\item Deployed encrypted \textbf{Cloudflare Zero Trust Tunnels} with continuous healthcheck daemons, securely bridging cloud portals to local GPU environments without open ports.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{\textcolor{darkblue}{Full Stack AI Developer (Contract / Client Solutions)}} \hfill \textit{\small\color{medgray}Jan 2025 -- Present}\\
+{\small\color{accentblue}\textit{Inddig Media Pvt Ltd --- Ahmedabad, India}}
+\begin{itemize}
+\item Architected and deployed multi-tenant applications across \textbf{Vercel, Netlify, Render, and Railway} using Next.js, Node.js, FastAPI, and Strapi CMS, powering automation workflows for \textbf{400+ client profiles}.
+\item Integrated \textbf{AWS Bedrock} and \textbf{Google Cloud Platform (GCP)} foundation models with n8n and Python httpx for enterprise document processing, lead qualification, and multi-step webhook orchestration.
+\item Automated multi-location \textbf{Google My Business (GMB)} on-page/off-page sync and review management using Playwright browser automation.
+\item Implemented rigorous application security audits, mitigating cross-site scripting (XSS), network data leak vectors, and API rate-abuse vulnerabilities across production endpoints.
+\end{itemize}
+
+% ========== PROJECTS ==========
+\section*{Projects}
+
+% --- Project 1 ---
+\noindent\href{https://scraper-o801.onrender.com/}{\textbf{\textcolor{darkblue}{Business Scraper MCP Server \faExternalLink}}} \hfill \textit{\small\color{medgray}FastMCP, Python httpx, Docker, Google Places API, Pandas, Render DevOps}
+\begin{itemize}
+\item Built a production-ready \textbf{FastMCP backend server} for scraping, enriching, and exporting B2B leads from Google Maps and Places API using asynchronous httpx pipelines, pandas, and Prefab UI.
+\item Configured automated Render CI/CD pipelines, Docker container builds, Apify fallback architecture, rate limiting, Sentry logs, and structured JSON/CSV export endpoints.
+\end{itemize}
+
+\vspace{2pt}
+
+% --- Project 2 ---
+\noindent\href{https://review.inddigmedia.in/}{\textbf{\textcolor{darkblue}{Business Review Automation Platform \faExternalLink}}} \hfill \textit{\small\color{medgray}n8n, FastAPI, PostgreSQL, GCP, Google Business Profile API, WhatsApp API}
+\begin{itemize}
+\item Built an AI-powered review automation platform using n8n, GCP/AI models, and Google Business Profile API for \textbf{400+ multi-client} business profiles.
+\item Automated Google review monitoring and generated contextual AI responses using custom business-specific templates, workflow orchestration, scheduling, API integrations, and content publishing automation.
+\end{itemize}
+
+\vspace{2pt}
+
+% --- Project 3 ---
+\noindent\href{https://app.makeappointments.in/}{\textbf{\textcolor{darkblue}{AI Appointment Booking Platform \faExternalLink}}} \hfill \textit{\small\color{medgray}Next.js, Node.js, FastAPI, PostgreSQL, Google Calendar API, Railway, Vercel}
+\begin{itemize}
+\item Developed an appointment booking and scheduling platform using FastAPI, PostgreSQL, Google Calendar API, OAuth, and multi-cloud hosting on Railway and Vercel.
+\item Implemented calendar synchronization, appointment management, authentication, and automated scheduling processes with Sentry error monitoring.
+\end{itemize}
+
+\vspace{2pt}
+
+% --- Project 4 ---
+\noindent\href{https://landingpages.inddigmedia.in/}{\textbf{\textcolor{darkblue}{Landing Pages Builder \& Headless CMS \faExternalLink}}} \hfill \textit{\small\color{medgray}Next.js, React, Strapi CMS, Tailwind CSS, Vercel, Netlify, SEO/AEO}
+\begin{itemize}
+\item Built high-converting business landing pages optimized for lead generation, SEO, AEO, GEO, and local business visibility deployed on Vercel/Netlify.
+\item Developed responsive UI, conversion-focused layouts, dynamic copy generation, Strapi headless CMS content binding, and scalable deployment workflows.
+\end{itemize}
+
+\vspace{2pt}
+
+% --- Project 5 ---
+\noindent\href{https://jobrecruitment.in/}{\textbf{\textcolor{darkblue}{Job Recruitment Portal \faExternalLink}}} \hfill \textit{\small\color{medgray}Hostinger CI/CD, WSL rsync, PHP, MySQL, Python, Groq, Gemini API, Cloudflare}
+\begin{itemize}
+\item Developed a recruitment platform on Hostinger shared hosting with automated \textbf{WSL rsync CI/CD deployment scripts}, candidate registration, and application workflows.
+\item Built scalable backend APIs, database architecture with SQL injection parameterized defense, and on-prem \textbf{ADB + Python SMS automation nodes} over Cloudflare Tunnels.
+\end{itemize}
+
+\vspace{2pt}
+
+% --- Project 6 ---
+\noindent\href{https://aashikabeautycareacademylasercenter.com/}{\textbf{\textcolor{darkblue}{Aashika Beauty Care Academy \faExternalLink}}} \hfill \textit{\small\color{medgray}Hostinger, HTML5/CSS3, JavaScript, PHP, Local SEO, Schema Markup}
+\begin{itemize}
+\item Designed and developed a business website with service showcase, SEO optimization, lead generation forms, WhatsApp integration, and mobile-first responsive design.
+\item Improved online visibility through technical SEO, schema implementation, and local search optimization.
+\end{itemize}
+
+% ========== EDUCATION ==========
+\section*{Education}
+\noindent\textbf{\textcolor{darkblue}{GSFC University}} \hfill \textit{\small\color{medgray}Vadodara, Gujarat}\\
+{\small B.Tech in Computer Science and Engineering --- AI/ML Specialization \hfill \textbf{CGPA: 7.12 / 10}}
+
+% ========== PREMIUM FOOTER ==========
+\vspace{6pt}
+{\color{borderblue}\hrule height 0.8pt}
+\vspace{4pt}
+\begin{center}
+\small\textit{
+Live applications, production deployments, technical case studies,
+AI automation workflows, architecture breakdowns, and additional
+project demonstrations are available in the portfolio.
+} \\[3pt]
+\href{https://hemalshah.vercel.app/wr.html}{\textcolor{accentblue}{\textbf{View Complete Work Repository \& Case Studies \faExternalLink}}}
+\end{center}
+
+\end{document}

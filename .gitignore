@@ -1,0 +1,16 @@
+# Sensitive files
+masterprompt.txt
+google-service-account.json
+*service-account*.json
+*.pem
+.env
+
+# Build & Testing
+.gradle/
+node_modules/
+test-results/
+playwright-report/
+__pycache__/
+*.pyc
+.DS_Store
+audit_out.txt

@@ -1,0 +1,21 @@
+# TENSIX — Autonomous AI Systems, Cloud Infrastructure & High-Concurrency Software
+
+> "Architecting autonomous AI agent pipelines, resilient cloud infrastructure, and enterprise SaaS backends."
+
+TENSIX (https://tensix.in) is an enterprise engineering studio and AI technology firm founded by Hemal Shah, based in Ahmedabad, Gujarat, India.
+We specialize in Autonomous AI Agents (FastMCP, Claude, OpenAI), GraphRAG knowledge extraction architectures, full-stack software development (FastAPI, Next.js, PostgreSQL/Supabase), automated cloud infrastructure (Oracle Cloud VPS, Plesk Linux VPS, GitHub Actions CI/CD), and Search Intelligence (AEO, GEO, SGE, Technical SEO).
+
+## 4 Core Pillars of TENSIX
+1. **AI Agents & Intelligent Automation:** GraphRAG, Multi-Agent Systems, n8n enterprise workflows, stealth web scraping daemons (Playwright, Puppeteer).
+2. **Full-Stack Software Development & Custom SaaS:** FastAPI async microservices, Next.js App Router, Supabase (pgvector), PostgreSQL, PHP/Laravel, secure RBAC.
+3. **Cloud Infrastructure, VPS & CI/CD:** Oracle Cloud (OCI) VPS, Plesk Linux VPS, GitHub Actions automated workflows, SSH deployment daemons, Docker, Cloudflare Zero Trust Tunnels, Sentry telemetry.
+4. **Search Intelligence & Discovery:** Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), Google SGE, JSON-LD Schema Graphs, IndexNow API, Google Indexing API.
+
+## Leadership & Entity Verification
+- Founder & Lead Architect: Hemal Shah (https://hemalshah.vercel.app/)
+- Website:    https://tensix.in
+- Headquarters: Ahmedabad, Gujarat 380009, India
+- GitHub:     https://github.com/hemal9102
+- Email:      contact@tensix.in / hemal.shah2004@gmail.com
+
+For the full text corpus, see /llms-full.txt

@@ -1,0 +1,230 @@
+# CLAUDE.md — HK Engineering / hemalshah.vercel.app
+# AI Agent Rules & Operational Protocol
+# Last updated: 2026-08-06
+
+---
+
+## 0. GIT & GITHUB — MANDATORY
+
+> **ALWAYS use account `hemal9102` for all git operations. No exceptions.**
+
+| Field              | Value                                                        |
+|--------------------|--------------------------------------------------------------|
+| **GitHub account** | `hemal9102`                                                  |
+| **Repo**           | `https://github.com/hemal9102/hemalshah.git`                 |
+| **Branch**         | `main`                                                       |
+| **Push command**   | `git push origin main`                                       |
+
+### Git workflow (run in order every time):
+```powershell
+$env:PYTHONIOENCODING="utf-8"
+python build_schema_web.py
+python inject_canonicals.py
+python build_sitemap.py
+git add -A -- ':!rajputbhavin_ai_blog.html' ':!rajputbhavin_home.html' ':!rajputbhavin_saas_blog.html'
+git commit -m "feat: <description>"
+git push origin main
+```
+
+### Rules:
+- **NEVER push with any other GitHub account**
+- **NEVER commit `rajputbhavin_*.html` files** — they are competitor decoy pages
+- **NEVER commit files inside `node_modules/` or `aeo_geo_pages/`**
+- Always write a descriptive commit message — not just "update"
+
+---
+
+## 1. PROJECT IDENTITY
+
+| Field            | Value                                              |
+|------------------|----------------------------------------------------|
+| **Project**      | hemalshah.vercel.app — HK Engineering portfolio    |
+| **Owner**        | Hemal Shah (HK)                                    |
+| **Base URL**     | `https://hemalshah.vercel.app`                     |
+| **Root Dir**     | `C:\hk\DUMP\glibberish`                            |
+| **Stack**        | Static HTML + Vanilla CSS/JS, deployed on Vercel   |
+| **Goal**         | Entity + Local SEO domination (AEO/GEO) in Ahmedabad for "AI automation", "custom software", "SaaS development" |
+
+---
+
+## 2. CENTRAL ENTITY IDs — NEVER CHANGE THESE
+
+These `@id` anchors are the single source of truth for the JSON-LD schema web.
+Every page on the site must reference them — **never redefine them from scratch on non-index pages**.
+
+```
+Organization  →  https://hemalshah.vercel.app/#organization
+Person        →  https://hemalshah.vercel.app/#person
+WebSite       →  https://hemalshah.vercel.app/#website
+```
+
+- **Full entity definitions** live ONLY on `index.html`
+- **All other pages** reference via `{"@id": "..."}` only (Entity Trap pattern)
+- This forces AI crawlers (GPTBot, Googlebot, PerplexityBot) to traverse back to index.html
+
+---
+
+## 3. SCHEMA RULES — MANDATORY
+
+### ✅ ALWAYS DO
+- Use `@graph` arrays — never standalone `@type` blocks
+- Every page gets: `WebPage/Article`, `BreadcrumbList`, `FAQPage`
+- `index.html` additionally defines: `Organization`, `Person`, `WebSite`
+- Spoke pages (e.g. `hk-engineering-ahmedabad.html`) get: `LocalBusiness`, `HowTo`, `ItemList`, `Service`
+- Strip all existing `ld+json` blocks before injecting — prevents duplicates
+- Inject schema immediately before `</head>`
+
+### ❌ NEVER DO
+- **NO `AggregateRating` schemas** — we do not use fake ratings; they look dishonest
+- **No standalone `@context` blocks** outside of a `@graph` — always use `@graph`
+- **No redefinition** of `Organization` or `Person` entities on non-index pages
+- **No backslashes in URLs** — always use forward slashes (`blogs/post.html` not `blogs\post.html`)
+- **No `rajputbhavin_*` pages** in sitemaps or schemas — these are competitor decoy pages, do not index them
+
+---
+
+## 4. DISAMBIGUATION RULE — CRITICAL
+
+**HK Engineering is NOT a manufacturing, CNC, or industrial company.**
+
+When writing FAQPage schemas, page content, or meta descriptions — always explicitly state:
+> "HK Engineering is a technology firm specializing in AI automation and custom software development. It is not a manufacturing company, CNC factory, or industrial supplier."
+
+This disambiguation is required on:
+- `hk-engineering-ahmedabad.html` (primary spoke page)
+- `navrangpura.html`
+- `ahmedabad-software-engineering.html`
+- `index.html` (via Organization description)
+
+---
+
+## 5. MICRO-LOCALITY STRATEGY
+
+The `areaServed` property on `LocalBusiness` schemas uses a **173-node Ahmedabad micro-locality mesh**.
+The full list is defined in `build_schema_web.py` → `AHMEDABAD_LOCALITIES`.
+
+Priority zones (highest-ticket clients):
+- **West:** Vastrapur, Satellite, Prahlad Nagar, Bodakdev, Navrangpura
+- **SG Highway Corridor:** Thaltej, Science City, Gota, Bopal, South Bopal
+- **Premium:** GIFT City, Gandhinagar Infocity, IIM Area, ISRO Colony
+- **Remote:** Mumbai, Bangalore, Hyderabad, Pune, Delhi NCR
+
+Do NOT reduce this list. Only add to it.
+
+---
+
+## 6. BUILD SCRIPTS — USE THESE, DON'T BYPASS THEM
+
+| Script                   | Purpose                                              | When to run                          |
+|--------------------------|------------------------------------------------------|--------------------------------------|
+| `build_schema_web.py`    | Generates spoke page + injects schema into all HTML  | After adding new pages or editing schema |
+| `inject_canonicals.py`   | Injects `<link rel="canonical">` into all HTML       | After `build_schema_web.py`          |
+| `build_sitemap.py`       | Regenerates `sitemap.xml` + `sitemap_index.xml`      | After adding/removing pages          |
+| `inject_eeat_metadata.py`| Injects EEAT meta tags                               | After major content changes          |
+| `inject_local_seo.py`    | Injects local SEO structured data                    | After adding new local pages         |
+
+**Execution order when making changes:**
+```
+1. build_schema_web.py
+2. inject_canonicals.py
+3. build_sitemap.py
+```
+
+Run all scripts with: `$env:PYTHONIOENCODING="utf-8"; python <script>.py`
+
+---
+
+## 7. SITEMAP RULES
+
+- **`sitemap.xml`** — master sitemap, all real pages with correct forward-slash URLs
+- **`sitemap_index.xml`** — points to `sitemap.xml` as primary
+- Excluded from sitemap: `google*.html`, `rajputbhavin_*.html`, `aeo_geo_pages/`
+- Priority weights:
+  - `index.html` → 1.0 / daily
+  - Spoke pages (`hk-engineering-ahmedabad.html`, `navrangpura.html`) → 0.9 / weekly
+  - Core pages (services, about, contact, work) → 0.8 / weekly
+  - Blogs → 0.6–0.8 / monthly
+- Always update `lastmod` to today's date when regenerating
+
+---
+
+## 8. LLMS.TXT RULES
+
+- `llms.txt` — concise plain-text identity summary for AI agents (keep under 50 lines)
+- `llms-full.txt` — full stripped-text corpus of all pages for AI training/crawling
+- Both are auto-regenerated by `build_schema_web.py`
+- **Never manually edit** — always regenerate via script
+- `llms.txt` must include the disambiguation statement: "HK Engineering is NOT a manufacturing company"
+
+---
+
+## 9. CONFIDENTIALITY
+
+- **`crypto_airdrop_ai`** project: Do NOT reference, link to, or mention in any public-facing HTML, schemas, or sitemaps. Internal R&D only.
+- **`rajputbhavin_*` pages**: These are competitor analysis decoys. Never index, never add to sitemap, never link to from other pages.
+- **`06_Business/`** plans: Strategic roadmaps — do not expose in any public schema or page content.
+
+---
+
+## 10. CONTENT & BRAND VOICE RULES
+
+- **Design Consistency**: Every new page must strictly use the existing website styling, theme, CSS structure, and UI components. Do not create pages with ad-hoc or generic styles so that they do not look like dummy pages ("taki humari webiste ka dummy page naa lage").
+- **Entity name**: Always "HK Engineering" (never "HK-Engineering" with a hyphen, unless referencing the German Mercedes company)
+- **Founder**: Always "Hemal Shah" or "Hemal Shah (HK)" — never just "HK" alone in formal contexts
+- **Location**: Always "Navrangpura, Ahmedabad, Gujarat, India" — never just "Ahmedabad"
+- **Services language**: Use "AI automation", "SaaS development", "workflow automation", "Generative Engine Optimization" — not generic terms like "web design" or "digital marketing"
+- **Tone**: Technical, confident, expert — not salesy or buzzword-heavy
+
+---
+
+## 11. FILE STRUCTURE REFERENCE
+
+```
+C:\hk\DUMP\glibberish\
+├── index.html                          ← Central entity hub (defines #organization, #person, #website)
+├── hk-engineering-ahmedabad.html       ← Primary spoke page (173-node areaServed mesh)
+├── navrangpura.html                    ← Secondary local spoke
+├── ahmedabad-software-engineering.html ← Tertiary local spoke
+├── services.html / about.html / contact.html / work.html
+├── whoami.html                         ← Hidden AEO page (do not link publicly)
+├── blogs/                              ← Blog posts (Article schema)
+│   ├── ahmedabad-*.html                ← Ahmedabad industry blogs (priority 0.8)
+│   ├── ai-engineering/
+│   ├── automation/
+│   ├── case-studies/
+│   └── seo-engineering/
+├── build_schema_web.py                 ← Master schema builder (RUN THIS FIRST)
+├── inject_canonicals.py                ← Canonical tag injector
+├── build_sitemap.py                    ← Sitemap generator
+├── sitemap.xml                         ← Live sitemap (35 URLs, auto-generated)
+├── sitemap_index.xml                   ← Sitemap index
+├── llms.txt                            ← AI agent corpus (concise)
+├── llms-full.txt                       ← AI agent corpus (full site text)
+├── 04_Knowledge/                       ← Strategy & research vault
+│   ├── agentic-awesome-skills/         ← Agent skill definitions
+│   ├── SEO_AEO_Graph/                  ← Keyword & locality strategy docs
+│   └── Master_Skills_Graph/            ← GEO/pGEO optimization skills
+└── 06_Business/                        ← CONFIDENTIAL business roadmaps
+```
+
+---
+
+## 12. QUICK REFERENCE — SCHEMA @GRAPH TEMPLATE
+
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebPage",       "@id": "PAGE_URL#webpage",    "publisher": {"@id": "https://hemalshah.vercel.app/#organization"}, "author": {"@id": "https://hemalshah.vercel.app/#person"} },
+    { "@type": "BreadcrumbList","@id": "PAGE_URL#breadcrumb"  },
+    { "@type": "FAQPage",       "@id": "PAGE_URL#faq"         }
+  ]
+}
+```
+
+**On index.html additionally add:**
+```json
+{ "@type": "Organization", "@id": "https://hemalshah.vercel.app/#organization", "name": "HK Engineering" },
+{ "@type": "Person",       "@id": "https://hemalshah.vercel.app/#person",       "name": "Hemal Shah"     },
+{ "@type": "WebSite",      "@id": "https://hemalshah.vercel.app/#website"                                }
+```

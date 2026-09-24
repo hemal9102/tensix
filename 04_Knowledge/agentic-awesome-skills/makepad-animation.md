@@ -1,0 +1,19 @@
+---
+title: "makepad-animation"
+category: "development"
+date_added: None
+tags:
+  - skill
+  - development
+---
+
+# makepad-animation
+
+**Category**: development
+**Added**: None
+
+## Description
+CRITICAL: Use for Makepad animation system. Triggers on: makepad animation, makepad animator, makepad hover, makepad state, makepad transition, 'from: { all: Forward', makepad pressed, makepad 动画, makepad 状态, makepad 过渡, makepad 悬停效果 
+
+## Links
+- Back to [[Index]]
