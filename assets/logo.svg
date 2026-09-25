@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%" fill="none">
+  <!-- Swiss Style Negative Space TENSIX Monogram -->
+  <rect width="120" height="120" rx="16" fill="#090D16"/>
+  <!-- Outer subtle architectural grid line -->
+  <rect x="8" y="8" width="104" height="104" rx="10" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  
+  <g fill="#F8FAFC">
+    <!-- Top Horizontal T-Bar -->
+    <path d="M26 26 H94 V38 H26 Z"/>
+    
+    <!-- Left Vertical 1-Stem of 10 / Left of T -->
+    <path d="M26 44 H42 V94 H26 Z"/>
+    
+    <!-- Central Negative Space Column forming 0 of 10 and 6 Loop -->
+    <!-- The 6 curve and loop -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M50 44 H68 L88 64 V94 H50 V44 Z M64 68 H74 V82 H64 V68 Z"/>
+    
+    <!-- Minimalist Precision Accent -->
+    <rect x="80" y="44" width="14" height="14" fill="#3B82F6"/>
+  </g>
+</svg>
