@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   safeInit('initScrollHeader', initScrollHeader);
   safeInit('initReveal', initReveal);
   safeInit('initSmoothScroll', initSmoothScroll);
-  safeInit('initRoiCalculator', initRoiCalculator);
+  safeInit('initArchitectureConsole', initArchitectureConsole);
   safeInit('initContactForm', initContactForm);
   safeInit('initScrollProgress', initScrollProgress);
   safeInit('initParallaxHero', initParallaxHero);
@@ -300,44 +300,131 @@ function initTypewriter() {
   }
 }
 
-/* ── Operational ROI Calculator ─────────────── */
-function initRoiCalculator() {
-  const slider = document.getElementById('roi-hours-slider');
-  const hoursDisplay = document.getElementById('roi-hours-val');
-  const annualHoursDisplay = document.getElementById('roi-annual-hours');
-  const annualCostDisplay = document.getElementById('roi-annual-cost');
-  const claimBtn = document.getElementById('roi-claim-btn');
+/* ── Architecture Telemetry Console ─────────── */
+function initArchitectureConsole() {
+  const tabs = document.querySelectorAll('.console-tab');
+  const body = document.getElementById('console-terminal-body');
+  const runBtn = document.getElementById('console-run-btn');
+  const deployBtn = document.getElementById('console-deploy-btn');
 
-  if (!slider) return;
+  if (!body) return;
 
-  function update() {
-    const hours = parseInt(slider.value, 10) || 20;
-    const annualHours = hours * 52;
-    const annualCost = annualHours * 30; // $30/hr standard operational rate
+  const scenarios = {
+    extraction: {
+      type: 'automation',
+      title: '01 // RESILIENT DATA EXTRACTION SWARM',
+      lines: [
+        { type: 'cmd', text: 'tensix extract --target="enterprise-dir" --workers=32 --stealth' },
+        { type: 'info', text: '[00:00.012] Initializing randomized TLS Client Hello fingerprint...' },
+        { type: 'info', text: '[00:00.184] Cloudflare Turnstile challenge detected' },
+        { type: 'success', text: '[00:00.412] Challenge solved via Playwright stealth worker pool (HTTP 200)' },
+        { type: 'success', text: '[00:01.085] 1,420 validated B2B profiles parsed & deduplicated' },
+        { type: 'metric', text: 'STATUS: OK | DOWNTIME: 0% | INGESTION: 14.2 records/sec' }
+      ]
+    },
+    inbox: {
+      type: 'other',
+      title: '02 // ENTERPRISE OUTREACH & SES INFRASTRUCTURE',
+      lines: [
+        { type: 'cmd', text: 'tensix verify-deliverability --domain="outreach.client.com"' },
+        { type: 'info', text: '[00:00.008] Querying DNS cryptographic TXT records...' },
+        { type: 'success', text: '[00:00.045] SPF Record: v=spf1 include:amazonses.com ~all [PASS]' },
+        { type: 'success', text: '[00:00.098] DKIM Signature: 2048-bit RSA Selector [ALIGNED]' },
+        { type: 'success', text: '[00:00.142] DMARC Policy: v=DMARC1; p=reject; pct=100 [ENFORCED]' },
+        { type: 'metric', text: 'INBOX SCORE: 10/10 | PRIMARY PLACEMENT: 99.4% | SPAM: 0.0%' }
+      ]
+    },
+    agent: {
+      type: 'ai',
+      title: '03 // AUTONOMOUS MULTI-AGENT RAG PIPELINE',
+      lines: [
+        { type: 'cmd', text: 'tensix agent --task="financial-reconciliation-stream"' },
+        { type: 'info', text: '[00:00.015] Decomposing unstructured ledger into graph nodes...' },
+        { type: 'info', text: '[00:00.072] Executing pgvector similarity search on Supabase...' },
+        { type: 'success', text: '[00:00.138] Vector Cosine Similarity: 0.942 [HIGH CONFIDENCE]' },
+        { type: 'success', text: '[00:00.280] Multi-agent cross-verification passed with 0 anomalies' },
+        { type: 'metric', text: 'EXECUTION TIME: 280ms | REASONING TOKENS: 412 | HUMAN ERROR: 0' }
+      ]
+    }
+  };
 
-    if (hoursDisplay) hoursDisplay.textContent = `${hours} hrs / week`;
-    if (annualHoursDisplay) annualHoursDisplay.textContent = `${annualHours.toLocaleString()} hrs`;
-    if (annualCostDisplay) {
-      annualCostDisplay.textContent = `$${annualCost.toLocaleString()}+`;
+  let activeScenario = 'extraction';
+  let isRunning = false;
+
+  function renderScenario(key, animate = false) {
+    activeScenario = key;
+    const scenario = scenarios[key];
+    if (!scenario) return;
+
+    // Update active tab styling
+    tabs.forEach(tab => {
+      const match = tab.getAttribute('data-scenario') === key;
+      tab.classList.toggle('active', match);
+    });
+
+    if (!animate) {
+      body.innerHTML = scenario.lines.map(l => formatLine(l)).join('');
+    } else {
+      body.innerHTML = '';
+      let i = 0;
+      isRunning = true;
+      if (runBtn) runBtn.disabled = true;
+
+      const interval = setInterval(() => {
+        if (i < scenario.lines.length) {
+          body.innerHTML += formatLine(scenario.lines[i]);
+          body.scrollTop = body.scrollHeight;
+          i++;
+        } else {
+          clearInterval(interval);
+          isRunning = false;
+          if (runBtn) runBtn.disabled = false;
+        }
+      }, 180);
     }
   }
 
-  slider.addEventListener('input', update);
-  update(); // Initial run
+  function formatLine(line) {
+    if (line.type === 'cmd') {
+      return `<div class="console-line cmd"><span class="console-prompt">&gt;</span> ${line.text}</div>`;
+    }
+    if (line.type === 'success') {
+      return `<div class="console-line success"><span class="console-dot green"></span> ${line.text}</div>`;
+    }
+    if (line.type === 'metric') {
+      return `<div class="console-line metric">${line.text}</div>`;
+    }
+    return `<div class="console-line info"><span class="console-dot blue"></span> ${line.text}</div>`;
+  }
 
-  if (claimBtn) {
-    claimBtn.addEventListener('click', function () {
-      const hours = slider.value || 20;
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      if (isRunning) return;
+      const key = tab.getAttribute('data-scenario');
+      renderScenario(key, false);
+    });
+  });
+
+  if (runBtn) {
+    runBtn.addEventListener('click', () => {
+      if (isRunning) return;
+      renderScenario(activeScenario, true);
+    });
+  }
+
+  if (deployBtn) {
+    deployBtn.addEventListener('click', () => {
+      const scenario = scenarios[activeScenario];
       const messageField = document.getElementById('cf-message');
       const serviceSelect = document.getElementById('cf-type');
       const nameField = document.getElementById('cf-name');
       const contactSection = document.getElementById('contact');
 
-      if (messageField) {
-        messageField.value = `We are losing approx. ${hours} hours/week across our team on repetitive manual operational tasks. I want to discuss engineering an autonomous system with TENSIX to reclaim this operational overhead.`;
+      if (messageField && scenario) {
+        messageField.value = `I am interested in deploying the ${scenario.title} architecture for our production system. Please brief us on scope, milestones, and implementation timeline.`;
       }
-      if (serviceSelect) {
-        serviceSelect.value = 'automation';
+      if (serviceSelect && scenario) {
+        serviceSelect.value = scenario.type;
       }
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -347,6 +434,9 @@ function initRoiCalculator() {
       }
     });
   }
+
+  // Initial render
+  renderScenario('extraction', false);
 }
 
 /* ── Contact Form ───────────────────────────── */
