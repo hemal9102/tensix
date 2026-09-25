@@ -13,6 +13,9 @@
   "license": "ISC",
   "type": "commonjs",
   "homepage": "https://tensix.in",
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
     "@playwright/test": "^1.62.0"

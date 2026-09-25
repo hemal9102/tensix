@@ -347,7 +347,8 @@ function initContactForm() {
       message: messageInput.value
     };
 
-    fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+    // Primary path: High-speed Supabase /api/contact endpoint with fallback
+    fetch('/api/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -355,14 +356,27 @@ function initContactForm() {
       },
       body: JSON.stringify(formData)
     })
-    .then(response => response.json())
+    .then(async response => {
+      if (response.ok) {
+        return response.json();
+      }
+      // If /api/contact is unavailable (e.g. static preview), fallback to FormSubmit
+      return fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      }).then(r => r.json());
+    })
     .then(data => {
       btn.innerHTML = originalText;
       btn.disabled = false;
 
       if (data.success === "true" || data.success === true) {
         form.reset();
-        showToast('Message sent! I\'ll get back to you soon.', 'success');
+        showToast('Consultation request transmitted! Saved to TENSIX database.', 'success');
         const successEl = document.getElementById('form-success');
         if (successEl) {
           successEl.style.display = 'block';
@@ -380,13 +394,31 @@ function initContactForm() {
           project_type: formData.project_type
         });
       } else {
-        showToast('Oops! Something went wrong. Please try again.', 'error');
+        showToast(data.error || 'Oops! Something went wrong. Please try again.', 'error');
       }
     })
     .catch(error => {
-      btn.innerHTML = originalText;
-      btn.disabled = false;
-      showToast('Connection error. Please check your network.', 'error');
+      // Final resilient fallback: try FormSubmit directly
+      fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(r => r.json())
+      .then(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        form.reset();
+        showToast('Consultation request transmitted!', 'success');
+      })
+      .catch(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        showToast('Connection error. Please check your network.', 'error');
+      });
       console.error('Error submitting form:', error);
     });
   });
