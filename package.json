@@ -4,9 +4,11 @@
   "description": "TENSIX — Autonomous AI Systems, Cloud Infrastructure & High-Concurrency Software",
   "main": "script.js",
   "scripts": {
+    "build": "echo 'Static build complete'",
+    "vercel-build": "echo 'Static build complete'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ai", "automation", "fastapi", "nextjs", "vps", "seo", "geo", "aeo"],
+  "keywords": ["ai", "automation", "fastapi", "vps", "seo", "geo", "aeo"],
   "author": "Hemal Shah (Founder, Tensix)",
   "license": "ISC",
   "type": "commonjs",

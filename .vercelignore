@@ -1,0 +1,11 @@
+node_modules/
+tests/
+skill_audits/
+audit_out.txt
+__pycache__/
+*.pyc
+google-service-account.json
+*service-account*.json
+*.pem
+.env
+masterprompt.txt
