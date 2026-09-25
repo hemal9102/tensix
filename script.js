@@ -15,12 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
   safeInit('initMobileNav', initMobileNav);
   safeInit('initScrollHeader', initScrollHeader);
   safeInit('initReveal', initReveal);
-  safeInit('initSkillBars', initSkillBars);
   safeInit('initSmoothScroll', initSmoothScroll);
-  safeInit('initParticles', initParticles);
-  safeInit('initTypewriter', initTypewriter);
+  safeInit('initRoiCalculator', initRoiCalculator);
   safeInit('initContactForm', initContactForm);
-  safeInit('initDockHighlight', initDockHighlight);
   safeInit('initScrollProgress', initScrollProgress);
   safeInit('initParallaxHero', initParallaxHero);
   safeInit('initPageTransition', initPageTransition);
@@ -300,6 +297,55 @@ function initTypewriter() {
       setTimeout(tick, deleting ? 40 : 80);
     }
     setTimeout(tick, 600);
+  }
+}
+
+/* ── Operational ROI Calculator ─────────────── */
+function initRoiCalculator() {
+  const slider = document.getElementById('roi-hours-slider');
+  const hoursDisplay = document.getElementById('roi-hours-val');
+  const annualHoursDisplay = document.getElementById('roi-annual-hours');
+  const annualCostDisplay = document.getElementById('roi-annual-cost');
+  const claimBtn = document.getElementById('roi-claim-btn');
+
+  if (!slider) return;
+
+  function update() {
+    const hours = parseInt(slider.value, 10) || 20;
+    const annualHours = hours * 52;
+    const annualCost = annualHours * 30; // $30/hr standard operational rate
+
+    if (hoursDisplay) hoursDisplay.textContent = `${hours} hrs / week`;
+    if (annualHoursDisplay) annualHoursDisplay.textContent = `${annualHours.toLocaleString()} hrs`;
+    if (annualCostDisplay) {
+      annualCostDisplay.textContent = `$${annualCost.toLocaleString()}+`;
+    }
+  }
+
+  slider.addEventListener('input', update);
+  update(); // Initial run
+
+  if (claimBtn) {
+    claimBtn.addEventListener('click', function () {
+      const hours = slider.value || 20;
+      const messageField = document.getElementById('cf-message');
+      const serviceSelect = document.getElementById('cf-type');
+      const nameField = document.getElementById('cf-name');
+      const contactSection = document.getElementById('contact');
+
+      if (messageField) {
+        messageField.value = `We are losing approx. ${hours} hours/week across our team on repetitive manual operational tasks. I want to discuss engineering an autonomous system with TENSIX to reclaim this operational overhead.`;
+      }
+      if (serviceSelect) {
+        serviceSelect.value = 'automation';
+      }
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      if (nameField) {
+        setTimeout(() => nameField.focus(), 600);
+      }
+    });
   }
 }
 

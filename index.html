@@ -125,6 +125,332 @@
   .site-footer, .site-footer p, .site-footer a, .site-footer address { color: #cbd5e1 !important; }
   .site-footer h3, .site-footer h4 { color: #ffffff !important; }
 }
+
+/* ── Swiss Editorial & ROI Calculator Styles ── */
+.swiss-meta-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 1.1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseGreen 2s infinite;
+  display: inline-block;
+}
+@keyframes pulseGreen {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.swiss-hero-headline {
+  font-size: clamp(2.4rem, 6.2vw, 4.8rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin: 0.5rem 0 1.5rem;
+  text-transform: uppercase;
+}
+
+.swiss-quote-card {
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto 1.8rem;
+  padding: 1.25rem 1.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid #3b82f6;
+  border-radius: 0 12px 12px 0;
+  text-align: left;
+}
+.swiss-quote-text {
+  font-size: clamp(1.05rem, 1.9vw, 1.28rem);
+  font-style: italic;
+  font-weight: 400;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+.swiss-quote-author {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Operational Reclaimed ROI Calculator */
+.roi-card {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.75rem 2.25rem;
+  background: rgba(15, 18, 28, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+}
+.roi-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.roi-badge {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #38bdf8;
+  text-transform: uppercase;
+}
+.roi-slider-wrap {
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1.75rem;
+}
+.roi-slider-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.roi-value-pill {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #38bdf8;
+  padding: 0.3rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.roi-range {
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.roi-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.8);
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.15s ease;
+}
+.roi-range::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+}
+.roi-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin: 2.25rem 0;
+}
+.roi-metric-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+}
+.roi-metric-num {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  display: block;
+}
+.roi-metric-label {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.4rem;
+  display: block;
+}
+.roi-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.1rem 1.8rem;
+  border-radius: 12px;
+  background: #fff;
+  color: #090a0f;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.roi-btn:hover {
+  background: #38bdf8;
+  color: #090a0f;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.35);
+}
+
+/* Transformation Matrix (Goals vs Results) */
+.transformation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+.goal-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.goal-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+.goal-idx {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.78rem;
+  color: #38bdf8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.goal-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+}
+.bottleneck-box {
+  background: rgba(239, 68, 68, 0.06);
+  border-left: 2px solid #ef4444;
+  padding: 0.85rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1rem;
+}
+.bottleneck-title {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f87171;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.bottleneck-desc {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0;
+}
+.result-box {
+  background: rgba(16, 185, 129, 0.06);
+  border-left: 2px solid #10b981;
+  padding: 0.85rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1.25rem;
+}
+.result-title {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #34d399;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.result-desc {
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+  margin: 0;
+}
+.goal-metric-badge {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.goal-metric-stat {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+}
+.goal-action-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #38bdf8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap 0.2s ease;
+}
+.goal-action-link:hover {
+  gap: 0.55rem;
+  color: #fff;
+}
+
+/* Guarantees & Operating Manifesto */
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.manifesto-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.manifesto-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.manifesto-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.5rem 0 0.5rem;
+}
+.manifesto-card p {
+  font-size: 0.92rem;
+  color: #94a3b8;
+  line-height: 1.65;
+  margin: 0;
+}
 </style>
 <!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
 <!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
@@ -373,262 +699,226 @@
 <span></span><span></span><span></span>
 </button>
 </header>
-<!-- ── Floating Bottom Dock ────────────────── -->
-<nav aria-label="Quick navigation" class="floating-dock">
-<div class="dock-inner">
-<a class="dock-btn" data-page="index.html" href="/" title="Home">
-<span class="dock-tooltip">Home</span>
-<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20">
-<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-<polyline points="9 22 9 12 15 12 15 22"></polyline>
-</svg>
-</a>
-<a class="dock-btn" data-page="blogs.html" href="blogs.html" title="Blog">
-<span class="dock-tooltip">Blog</span>
-<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20">
-<path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20"></path><path d="M4 3v16.5"></path><path d="M8 3h12v18H8z"></path>
-</svg>
-</a>
-<div class="dock-divider"></div>
-<a class="dock-btn" href="https://github.com/hemal9102" rel="noopener" target="_blank" title="GitHub">
-<span class="dock-tooltip">GitHub</span>
-<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
-<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
-</svg>
-</a>
-<a class="dock-btn" href="https://www.linkedin.com/in/hemal-shah-49a728362/" rel="noopener" target="_blank" title="LinkedIn">
-<span class="dock-tooltip">LinkedIn</span>
-<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
-<path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"></path>
-</svg>
-</a>
-<a class="dock-btn" href="https://www.instagram.com/hemal.io/" rel="noopener" target="_blank" title="Instagram">
-<span class="dock-tooltip">Instagram</span>
-<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
-<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-</svg>
-</a>
-<a class="dock-btn" href="mailto:hemal.shah2004@gmail.com" title="Email">
-<span class="dock-tooltip">Email</span>
-<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20">
-<path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</a>
-</div>
-</nav>
 <main>
-<!-- ── Hero Section ──────────────────────── -->
-<section class="hero">
+<!-- ── Hero Section (Swiss Editorial Authority) ── -->
+<section class="hero" style="min-height: 90vh; padding-top: calc(var(--header-height) + 2rem); padding-bottom: 4rem;">
 <div aria-hidden="true" class="hero-aurora"></div>
 <div class="hero-bg-gradient"></div>
-<div id="particleContainer"></div>
-<!-- Floating Tech Icons -->
-<div aria-hidden="true" class="hero-floaters">
-<!-- Python -->
-<div class="floater f1">
-<img alt="Python for AI and Backend Development" height="30" loading="lazy" src="assets/icons/python-original.svg?v=1.1" width="30"/>
-</div>
-<!-- Docker -->
-<div class="floater f2">
-<img alt="Docker for Containerized SaaS Deployments" height="30" loading="lazy" src="assets/icons/docker-original.svg?v=1.1" width="30"/>
-</div>
-<!-- TensorFlow -->
-<div class="floater f3">
-<img alt="TensorFlow Machine Learning Models" height="30" loading="lazy" src="assets/icons/tensorflow-original.svg?v=1.1" width="30"/>
-</div>
-<!-- FastAPI -->
-<div class="floater f4">
-<img alt="FastAPI for High-Speed Python Backends" height="30" loading="lazy" src="assets/icons/fastapi-original.svg?v=1.1" width="30"/>
-</div>
-<!-- Kubernetes -->
-<div class="floater f5">
-<img alt="Kubernetes for Container Orchestration" height="30" loading="lazy" src="assets/icons/kubernetes-plain.svg?v=1.1" width="30"/>
-</div>
-<!-- GitHub -->
-<div class="floater f6">
-<svg fill="currentColor" height="28" style="color:#e2e8f0" viewbox="0 0 24 24" width="28">
-<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
-</svg>
-</div>
-<!-- n8n text badge -->
-<div class="floater f7 floater-text-badge">
-<span>n8n</span>
-</div>
-<!-- OpenCV -->
-<div class="floater f8">
-<img alt="OpenCV for Computer Vision and Image Processing" height="30" loading="lazy" src="assets/icons/opencv-icon.svg?v=1.3" width="30"/>
-</div>
-</div>
-<!-- Centred Hero Content -->
-<div class="hero-content">
-<div class="reveal" style="display:inline-flex;align-items:center;justify-content:center;margin-bottom:0.5rem;">
-<img alt="TENSIX Swiss Emblem" height="88" src="assets/tensix-swiss-logo.png" style="border-radius:20px;border:1px solid rgba(255,255,255,0.14);box-shadow:0 12px 40px rgba(0,0,0,0.7);filter:drop-shadow(0 0 24px rgba(255,255,255,0.12));" width="88"/>
-</div>
-<h1>TEN<span class="gradient-text">SIX</span></h1>
-<div class="hero-subtitle-row">
-<span class="subtitle-rule"></span>
-<span class="hero-subtitle-inner">
-<span id="typed-text"></span><span class="typewriter-cursor">|</span>
-</span>
-<span class="subtitle-rule"></span>
-</div>
-<p class="hero-description">
-Autonomous Systems &amp; Software Engineering Studio — engineering high-concurrency web platforms, enterprise email delivery infrastructure, resilient data extraction swarms, and private AI agent pipelines with mathematical precision and zero agency bloat.
-</p>
-<p style="font-size:0.8rem;color:#94a3b8;letter-spacing:0.04em;text-align:center;margin:0;">
-TENSIX · Engineering Studio in Navrangpura, Ahmedabad, Gujarat 380009 · Founded by <a href="https://hemalshah.vercel.app/" target="_blank" rel="noopener" style="color:#93c5fd;text-decoration:underline;">Hemal Shah</a>
-</p>
-<div class="hero-tags">
-<span class="hero-tag">Autonomous AI Agents</span>
-<span class="hero-tag">FastAPI &amp; Next.js</span>
-<span class="hero-tag">Oracle &amp; Plesk VPS</span>
-<span class="hero-tag">GitHub Actions CI/CD</span>
-<span class="hero-tag">GraphRAG &amp; Supabase</span>
-<span class="hero-tag">GEO / AEO Search</span>
-</div>
-<div class="hero-cta">
-<a class="cta-hero-btn primary" href="services.html">Explore Solutions →</a>
-<a class="cta-hero-btn secondary" href="contact.html">Partner With Us</a>
-</div>
-</div>
-<div class="scroll-indicator">
-<span class="scroll-label">Scroll to explore</span>
-<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
+
+<div class="hero-content" style="max-width: 960px;">
+  <!-- Live Studio Telemetry Bar -->
+  <div class="reveal">
+    <div class="swiss-meta-bar">
+      <span class="pulse-dot"></span>
+      <span>TENSIX SYSTEMS // AHMEDABAD 23.0225° N, 72.5714° E // STATUS: ACCEPTING 2 CLIENTS Q2-Q3</span>
+    </div>
+  </div>
+
+  <h1 class="swiss-hero-headline reveal reveal-delay-1">
+    WE DON'T SELL CODE.<br/>
+    <span class="gradient-text">WE ENGINEER OPERATIONAL LEVERAGE.</span>
+  </h1>
+
+  <!-- Executive Quote Card -->
+  <div class="swiss-quote-card reveal reveal-delay-2">
+    <p class="swiss-quote-text">“If your team is performing a task manually every single morning, it is not work — it is an architectural flaw.”</p>
+    <span class="swiss-quote-author">— TENSIX Engineering Standard // Navrangpura, Ahmedabad</span>
+  </div>
+
+  <p class="hero-description reveal reveal-delay-3" style="max-width: 680px; margin: 0 auto 2rem; font-size: 1.05rem; line-height: 1.75; color: #cbd5e1;">
+    We build autonomous data extraction pipelines, zero-spam cold outreach infrastructure, and self-correcting AI systems that scale your operations without expanding your payroll.
+  </p>
+
+  <div class="hero-cta reveal reveal-delay-4">
+    <a class="cta-hero-btn primary" href="#calculator">Calculate Time Reclaimed ↓</a>
+    <a class="cta-hero-btn secondary" href="#contact">Schedule Architecture Brief</a>
+  </div>
 </div>
 </section>
-<!-- ── Infinite Tech & Architecture Marquee ── -->
-<div aria-hidden="true" class="marquee-container">
+
+<!-- ── Executive Outcome Marquee ── -->
+<div aria-hidden="true" class="marquee-container" style="border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.4);">
   <div class="marquee-track">
-    <span class="marquee-badge"><img src="assets/icons/python-original.svg?v=1.1" alt="Python" width="18" height="18"> Python 3.12+</span>
-    <span class="marquee-badge"><img src="assets/icons/fastapi-original.svg?v=1.1" alt="FastAPI" width="18" height="18"> FastAPI High-Concurrency</span>
-    <span class="marquee-badge"><img src="assets/icons/supabase-icon.svg?v=1.3" alt="Supabase" width="18" height="18"> Supabase & PostgreSQL</span>
-    <span class="marquee-badge"><span style="color:#e879f9;font-weight:700;">n8n</span> Autonomous Workflows</span>
-    <span class="marquee-badge"><img src="assets/icons/docker-original.svg?v=1.1" alt="Docker" width="18" height="18"> Docker Microservices</span>
-    <span class="marquee-badge"><img src="assets/icons/tensorflow-original.svg?v=1.1" alt="TensorFlow" width="18" height="18"> RAG & Vector Embeddings</span>
-    <span class="marquee-badge"><img src="assets/icons/opencv-icon.svg?v=1.3" alt="OpenCV" width="18" height="18"> Computer Vision & OCR</span>
-    <span class="marquee-badge"><img src="assets/icons/getpostman-icon.svg?v=1.3" alt="Postman" width="18" height="18"> API Architecture & Testing</span>
+    <span class="marquee-badge">✦ GUARANTEED PRIMARY INBOX PLACEMENT</span>
+    <span class="marquee-badge">✦ AUTONOMOUS HIGH-VELOCITY SCRAPING</span>
+    <span class="marquee-badge">✦ 100% CLIENT SYSTEM OWNERSHIP</span>
+    <span class="marquee-badge">✦ FIXED-PRICE DELIVERABLES &amp; GUARANTEED TIMELINES</span>
+    <span class="marquee-badge">✦ RESILIENT MULTI-AGENT ARCHITECTURES</span>
+    <span class="marquee-badge">✦ ZERO VENDOR LOCK-IN</span>
   </div>
   <div class="marquee-track" aria-hidden="true">
-    <span class="marquee-badge"><img src="assets/icons/python-original.svg?v=1.1" alt="Python" width="18" height="18"> Python 3.12+</span>
-    <span class="marquee-badge"><img src="assets/icons/fastapi-original.svg?v=1.1" alt="FastAPI" width="18" height="18"> FastAPI High-Concurrency</span>
-    <span class="marquee-badge"><img src="assets/icons/supabase-icon.svg?v=1.3" alt="Supabase" width="18" height="18"> Supabase & PostgreSQL</span>
-    <span class="marquee-badge"><span style="color:#e879f9;font-weight:700;">n8n</span> Autonomous Workflows</span>
-    <span class="marquee-badge"><img src="assets/icons/docker-original.svg?v=1.1" alt="Docker" width="18" height="18"> Docker Microservices</span>
-    <span class="marquee-badge"><img src="assets/icons/tensorflow-original.svg?v=1.1" alt="TensorFlow" width="18" height="18"> RAG & Vector Embeddings</span>
-    <span class="marquee-badge"><img src="assets/icons/opencv-icon.svg?v=1.3" alt="OpenCV" width="18" height="18"> Computer Vision & OCR</span>
-    <span class="marquee-badge"><img src="assets/icons/getpostman-icon.svg?v=1.3" alt="Postman" width="18" height="18"> API Architecture & Testing</span>
+    <span class="marquee-badge">✦ GUARANTEED PRIMARY INBOX PLACEMENT</span>
+    <span class="marquee-badge">✦ AUTONOMOUS HIGH-VELOCITY SCRAPING</span>
+    <span class="marquee-badge">✦ 100% CLIENT SYSTEM OWNERSHIP</span>
+    <span class="marquee-badge">✦ FIXED-PRICE DELIVERABLES &amp; GUARANTEED TIMELINES</span>
+    <span class="marquee-badge">✦ RESILIENT MULTI-AGENT ARCHITECTURES</span>
+    <span class="marquee-badge">✦ ZERO VENDOR LOCK-IN</span>
   </div>
 </div>
-<!-- ── Stats Row ─────────────────────────── -->
-<section class="section bg-alt">
-<div class="section-inner">
-<div class="stats-row">
-<div class="stat-item reveal">
-<span class="stat-number gradient-text">35+</span>
-<span class="stat-label">Production Deployments</span>
-</div>
-<div class="stat-item reveal reveal-delay-1">
-<span class="stat-number gradient-text">99.9%</span>
-<span class="stat-label">Uptime &amp; Reliability</span>
-</div>
-<div class="stat-item reveal reveal-delay-2">
-<span class="stat-number gradient-text">3–7d</span>
-<span class="stat-label">Deployment Velocity</span>
-</div>
-<div class="stat-item reveal reveal-delay-3">
-<span class="stat-number gradient-text">100%</span>
-<span class="stat-label">Fixed-Price &amp; IP Ownership</span>
-</div>
-</div>
-</div>
+
+<!-- ── Interactive Time & Capital Reclaimed Calculator ── -->
+<section class="section" id="calculator" style="background: radial-gradient(circle at 50% 30%, rgba(59,130,246,0.07) 0%, transparent 70%); padding: 5rem 1.5rem;">
+  <div class="section-inner">
+    <div class="roi-card reveal">
+      <div class="roi-header">
+        <span class="roi-badge">✦ OPERATIONAL AUDIT // INTERACTIVE CALCULATOR</span>
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: #fff; margin: 0.5rem 0 0.5rem; letter-spacing: -0.02em;">
+          Calculate Your Team's <span class="gradient-text">Reclaimed Capital</span>
+        </h2>
+        <p style="color: #94a3b8; font-size: 0.98rem; max-width: 580px; margin: 0 auto; line-height: 1.6;">
+          See exactly how many strategic hours and operating dollars TENSIX autonomous systems unlock for your business every single year.
+        </p>
+      </div>
+
+      <div class="roi-slider-wrap">
+        <div class="roi-slider-label">
+          <span>Weekly hours lost across your team on repetitive data entry, scraping, or manual outreach:</span>
+          <span class="roi-value-pill" id="roi-hours-val">20 hrs / week</span>
+        </div>
+        <input aria-label="Weekly hours wasted" class="roi-range" id="roi-hours-slider" max="80" min="5" step="1" type="range" value="20"/>
+      </div>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-metric-box">
+          <span class="roi-metric-num gradient-text" id="roi-annual-hours">1,040 hrs</span>
+          <span class="roi-metric-label">Annual Time Returned</span>
+        </div>
+        <div class="roi-metric-box">
+          <span class="roi-metric-num gradient-text" id="roi-annual-cost">$31,200+</span>
+          <span class="roi-metric-label">Estimated Payroll Saved</span>
+        </div>
+        <div class="roi-metric-box">
+          <span class="roi-metric-num" style="color: #38bdf8;">7–14 Days</span>
+          <span class="roi-metric-label">Production Turnaround</span>
+        </div>
+        <div class="roi-metric-box">
+          <span class="roi-metric-num" style="color: #10b981;">100%</span>
+          <span class="roi-metric-label">Client IP Ownership</span>
+        </div>
+      </div>
+
+      <button class="roi-btn" id="roi-claim-btn" type="button">
+        <span>Lock in This Scope &amp; Brief Our Engineers</span>
+        <svg fill="none" height="20" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="20"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
 </section>
-<!-- ── Featured Skills ───────────────────── -->
-<section class="section" id="skills">
-<div class="section-inner">
-<div class="section-header reveal">
-<h2 class="section-title">TENSIX <span class="gradient-text">Engineering Stack</span></h2>
-<p>Production-grade frameworks, infrastructure, and tools deployed across TENSIX systems</p>
-</div>
-<div class="skills-grid">
-<div class="skill-card reveal hover-lift">
-<div class="skill-card-header">
-<img alt="Python AI and ML Development" height="32" loading="lazy" src="assets/icons/python-icon.svg?v=1.3" width="32"/>
-<h3>Python</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
-<p class="skill-label">AI / ML Development</p>
-</div>
-<div class="skill-card reveal reveal-delay-1 hover-lift">
-<div class="skill-card-header">
-<img alt="n8n Workflow Automation" height="32" loading="lazy" src="assets/icons/n8n-icon.png?v=1.3" width="32"/>
-<h3>n8n</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
-<p class="skill-label">Workflow Automation</p>
-</div>
-<div class="skill-card reveal reveal-delay-2 hover-lift">
-<div class="skill-card-header">
-<img alt="Unity" height="32" loading="lazy" src="assets/icons/unity3d-icon.svg?v=1.3" width="32"/>
-<h3>Unity</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
-<p class="skill-label">Game Development</p>
-</div>
-<div class="skill-card reveal reveal-delay-3 hover-lift">
-<div class="skill-card-header">
-<img alt="Postman" height="32" loading="lazy" src="assets/icons/getpostman-icon.svg?v=1.3" width="32"/>
-<h3>Postman</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
-<p class="skill-label">API Testing</p>
-</div>
-<div class="skill-card reveal hover-lift">
-<div class="skill-card-header">
-<img alt="OpenCV" height="32" loading="lazy" src="assets/icons/opencv-icon.svg?v=1.3" width="32"/>
-<h3>OpenCV</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
-<p class="skill-label">Image Detection</p>
-</div>
-<div class="skill-card reveal reveal-delay-1 hover-lift">
-<div class="skill-card-header">
-<img alt="Supabase" height="32" loading="lazy" src="assets/icons/supabase-icon.svg?v=1.3" width="32"/>
-<h3>Supabase</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
-<p class="skill-label">Backend as a Service</p>
-</div>
-<div class="skill-card reveal reveal-delay-2 hover-lift">
-<div class="skill-card-header">
-<img alt="TensorFlow Machine Learning" height="32" loading="lazy" src="assets/icons/tensorflow-icon.svg?v=1.3" width="32"/>
-<h3>TensorFlow</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
-<p class="skill-label">Machine Learning</p>
-</div>
-<div class="skill-card reveal reveal-delay-3 hover-lift">
-<div class="skill-card-header">
-<img alt="Docker" height="32" loading="lazy" src="assets/icons/docker-icon.svg?v=1.3" width="32"/>
-<h3>Docker</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
-<p class="skill-label">Containerisation</p>
-</div>
-<div class="skill-card reveal hover-lift">
-<div class="skill-card-header">
-<img alt="Kubernetes" height="32" loading="lazy" src="assets/icons/kubernetes-icon.svg?v=1.3" width="32"/>
-<h3>Kubernetes</h3>
-</div>
-<div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
-<p class="skill-label">Container Orchestration</p>
-</div>
-</div>
-<div class="text-center" style="margin-top:2.5rem;">
-<a class="cta-button outline" href="services.html">View All Skills →</a>
-</div>
-</div>
+
+<!-- ── The Transformation Matrix (Goals & Results — Zero Tech Jargon) ── -->
+<section class="section bg-alt" id="solutions">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span style="font-family: ui-monospace, monospace; font-size: 0.8rem; color: #38bdf8; letter-spacing: 0.12em; text-transform: uppercase;">✦ SOLVING EXPENSIVE BOTTLENECKS</span>
+      <h2 class="section-title">The <span class="gradient-text">Transformation Matrix</span></h2>
+      <p>How high-growth companies replace manual human repetition with autonomous digital leverage</p>
+    </div>
+
+    <div class="transformation-grid">
+      <!-- Goal 01 -->
+      <div class="goal-card reveal hover-lift">
+        <span class="goal-idx">GOAL 01 // LEAD PIPELINE</span>
+        <h3 class="goal-title">Uncapped Qualified Lead Generation</h3>
+        
+        <div class="bottleneck-box">
+          <div class="bottleneck-title">The Operational Bottleneck</div>
+          <p class="bottleneck-desc">Sales reps waste 15+ hours weekly copy-pasting LinkedIn profiles, dealing with blocked IPs, and cleaning dead contact spreadsheets.</p>
+        </div>
+
+        <div class="result-box">
+          <div class="result-title">The TENSIX Transformation</div>
+          <p class="result-desc">Distributed extraction engines deposit 5,000+ verified decision-makers directly into your CRM every single Monday morning on autopilot.</p>
+        </div>
+
+        <div class="goal-metric-badge">
+          <div>
+            <span style="font-size: 0.72rem; color: #94a3b8; display: block; text-transform: uppercase;">Outcome Metric</span>
+            <span class="goal-metric-stat" style="color: #34d399;">+18 Hrs Reclaimed / Rep</span>
+          </div>
+          <a class="goal-action-link" href="services.html">Explore Solutions →</a>
+        </div>
+      </div>
+
+      <!-- Goal 02 -->
+      <div class="goal-card reveal reveal-delay-1 hover-lift">
+        <span class="goal-idx">GOAL 02 // EMAIL OUTREACH</span>
+        <h3 class="goal-title">Zero-Spam Primary Inbox Placement</h3>
+        
+        <div class="bottleneck-box">
+          <div class="bottleneck-title">The Operational Bottleneck</div>
+          <p class="bottleneck-desc">Sending 10,000 outbound emails only for 70% to hit spam folders, burning domain reputation and destroying high-value sales pipeline.</p>
+        </div>
+
+        <div class="result-box">
+          <div class="result-title">The TENSIX Transformation</div>
+          <p class="result-desc">Dedicated, isolated outreach infrastructure configured with 100% cryptographic authentication, automated warmup, and zero deliverability leakage.</p>
+        </div>
+
+        <div class="goal-metric-badge">
+          <div>
+            <span style="font-size: 0.72rem; color: #94a3b8; display: block; text-transform: uppercase;">Outcome Metric</span>
+            <span class="goal-metric-stat" style="color: #38bdf8;">99.4% Primary Inbox Rate</span>
+          </div>
+          <a class="goal-action-link" href="services.html">Explore Infra →</a>
+        </div>
+      </div>
+
+      <!-- Goal 03 -->
+      <div class="goal-card reveal reveal-delay-2 hover-lift">
+        <span class="goal-idx">GOAL 03 // OPERATIONS</span>
+        <h3 class="goal-title">Hands-Off Business Automation</h3>
+        
+        <div class="bottleneck-box">
+          <div class="bottleneck-title">The Operational Bottleneck</div>
+          <p class="bottleneck-desc">Hiring additional staff just to handle repetitive client onboarding, manual reporting, invoice reconciliations, and cross-tool data syncing.</p>
+        </div>
+
+        <div class="result-box">
+          <div class="result-title">The TENSIX Transformation</div>
+          <p class="result-desc">Self-correcting autonomous workflows that execute onboarding, validation, and database syncing in under 3 seconds with zero human error.</p>
+        </div>
+
+        <div class="goal-metric-badge">
+          <div>
+            <span style="font-size: 0.72rem; color: #94a3b8; display: block; text-transform: uppercase;">Outcome Metric</span>
+            <span class="goal-metric-stat" style="color: #c084fc;">5x Scaled Capacity</span>
+          </div>
+          <a class="goal-action-link" href="services.html">Explore Workflows →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── The TENSIX Guarantees (Swiss Editorial Manifesto) ── -->
+<section class="section" style="border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+  <div class="section-inner">
+    <div class="section-header reveal text-center">
+      <span style="font-family: ui-monospace, monospace; font-size: 0.8rem; color: #38bdf8; letter-spacing: 0.12em; text-transform: uppercase;">✦ OUR OPERATING PRINCIPLES</span>
+      <h2 class="section-title">The TENSIX <span class="gradient-text">Standard</span></h2>
+      <p>Why established operators choose us over traditional agencies and freelance marketplaces</p>
+    </div>
+
+    <div class="manifesto-grid">
+      <div class="manifesto-card reveal">
+        <span style="font-family: ui-monospace, monospace; font-size: 0.85rem; color: #38bdf8; font-weight: 700;">[ 01 ]</span>
+        <h3>Fixed Deliverables, Never Open-Ended Invoices</h3>
+        <p>We do not bill by the hour or drag out deadlines. You receive a battle-tested production system delivered on a guaranteed 7–14 day timeline for a fixed investment.</p>
+      </div>
+
+      <div class="manifesto-card reveal reveal-delay-1">
+        <span style="font-family: ui-monospace, monospace; font-size: 0.85rem; color: #34d399; font-weight: 700;">[ 02 ]</span>
+        <h3>3:00 AM Reliability</h3>
+        <p>Our systems are engineered to run autonomously in production without intervention, without rate-limit failures, and without panicking your team in the middle of the night.</p>
+      </div>
+
+      <div class="manifesto-card reveal reveal-delay-2">
+        <span style="font-family: ui-monospace, monospace; font-size: 0.85rem; color: #c084fc; font-weight: 700;">[ 03 ]</span>
+        <h3>Complete System &amp; Data Ownership</h3>
+        <p>Zero vendor lock-in. 100% of the repository code, infrastructure configuration, credentials, and databases belong entirely to you upon deployment.</p>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- ── Featured Projects ──────────────────── -->
 <section class="section bg-alt" id="projects">
