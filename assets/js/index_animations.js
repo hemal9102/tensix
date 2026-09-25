@@ -2,9 +2,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     new Typed('#typed-text', {
         strings: [
-            'Automation Engineer',
-            'Full Stack Developer',
-            'Problem Solver'
+            'Autonomous Systems Engineering',
+            'High-Performance Web Platforms',
+            'Enterprise AWS SES & Email Infra',
+            'Autonomous Data Extraction Swarms',
+            'Cloud VPS & DevOps Automation',
+            'Custom AI Multi-Agent Systems'
         ],
         typeSpeed: 60,
         backSpeed: 40,

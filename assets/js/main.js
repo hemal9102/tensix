@@ -21,9 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeTypewriter() {
     const typed = new Typed('#typed-text', {
         strings: [
-            'Automation Engineer',
-            'Full Stack Developer',
-            'Problem Solver'
+            'Autonomous Systems Engineering',
+            'High-Performance Web Platforms',
+            'Enterprise AWS SES & Email Infra',
+            'Autonomous Data Extraction Swarms',
+            'Cloud VPS & DevOps Automation',
+            'Custom AI Multi-Agent Systems'
         ],
         typeSpeed: 80,
         backSpeed: 50,
