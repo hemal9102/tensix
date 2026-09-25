@@ -15,8 +15,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="6sP5NAww_oq3nMjcFDZL42q_PT0JOPQ2yHslifRPwSQ" name="google-site-verification"/>
-<title>TENSIX — Autonomous AI Systems, Cloud Infrastructure &amp; High-Concurrency Software | Navrangpura, Ahmedabad</title>
-<meta content="TENSIX is an autonomous engineering studio founded and owned solely by Hemal Shah in Navrangpura, Ahmedabad. Specializing in AI Multi-Agent Systems, GraphRAG pipelines, Linux VPS CI/CD infrastructure, high-concurrency Python/Next.js software, and Generative Engine Optimization (GEO/AEO)." name="description"/>
+<title>TENSIX — Custom Software, Cloud Infrastructure &amp; Automation Studio</title>
+<meta content="TENSIX is a boutique engineering studio specializing in custom web applications, high-volume data extraction pipelines, and automated operational workflows. Delivered on guaranteed 7–14 day fixed scopes." name="description"/>
 <!-- SEO: Canonical URL (Change to custom domain like https://hemalshah.dev/ once purchased) -->
 <!-- Open Graph / Facebook -->
 <!-- Twitter -->
@@ -208,441 +208,496 @@ img { max-width: 100%; display: block; }
   .site-footer h3, .site-footer h4 { color: #ffffff !important; }
 }
 
-/* ── Industrial Swiss Architecture Design System ── */
+/* ── TENSIX Executive Studio Design System ── */
 :root {
-  --void-bg: #060709;
-  --void-panel: #0d0f14;
-  --hairline: rgba(255, 255, 255, 0.08);
-  --hairline-active: rgba(255, 255, 255, 0.22);
-  --text-pure: #FFFFFF;
-  --text-silver: #D1D5DB;
-  --text-muted: #6B7280;
-  --signal-blue: #3B82F6;
-  --signal-emerald: #10B981;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --bg-main: #0B0F19;
+  --bg-surface: #111827;
+  --bg-surface-elevated: #1F2937;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(59, 130, 246, 0.4);
+  --text-main: #FFFFFF;
+  --text-secondary: #E2E8F0;
+  --text-muted: #94A3B8;
+  --text-faint: #64748B;
+  --accent-primary: #3B82F6;
+  --accent-hover: #2563EB;
+  --accent-light: #60A5FA;
+  --success: #10B981;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 body {
-  background-color: var(--void-bg) !important;
-  color: var(--text-silver);
+  background-color: var(--bg-main) !important;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-.hairline-grid {
-  border-top: 1px solid var(--hairline);
-  border-bottom: 1px solid var(--hairline);
+/* Studio Hero Section */
+.studio-hero {
+  padding: 8.5rem 1.5rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-/* Meta Coordinates Bar */
-.swiss-telemetry {
+.hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  margin-bottom: 1.25rem;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #60A5FA;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
 }
-.telemetry-status-light {
+.hero-badge-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--signal-emerald);
-  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-  display: inline-block;
+  background: #3B82F6;
+  box-shadow: 0 0 8px #3B82F6;
 }
-
-/* Hero Section: Asymmetric Swiss Layout */
-.hero-industrial {
-  min-height: 85vh;
-  padding: calc(var(--header-height) + 2.5rem) 2rem 4rem;
-  max-width: 1240px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-@media (max-width: 960px) {
-  .hero-industrial {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-top: calc(var(--header-height) + 1.5rem);
-  }
-}
-
-.hero-editorial-left {
-  text-align: left;
-}
-
-.hero-industrial-title {
-  font-size: clamp(2.3rem, 5.2vw, 4.2rem);
+.hero-title {
+  font-size: clamp(2.3rem, 5.2vw, 3.8rem);
   font-weight: 800;
-  color: var(--text-pure);
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  margin-bottom: 1.25rem;
-  text-transform: uppercase;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  max-width: 980px;
+  margin-bottom: 1.5rem;
 }
-
-.hero-thesis-quote {
-  border-left: 2px solid var(--text-pure);
-  padding: 0.75rem 0 0.75rem 1.25rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--text-silver);
+.hero-subtitle {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.65;
+  color: #94A3B8;
+  max-width: 780px;
+  margin-bottom: 2.5rem;
 }
-.hero-thesis-quote cite {
-  display: block;
-  font-style: normal;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 0.4rem;
-}
-
-.hero-narrative {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: #9CA3AF;
-  max-width: 560px;
-  margin-bottom: 2rem;
-}
-
-.hero-actions {
+.hero-cta-group {
   display: flex;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
 }
-.btn-swiss-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.75rem;
-  background: var(--text-pure);
-  color: var(--void-bg);
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  border-radius: 4px;
-  border: 1px solid var(--text-pure);
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.btn-swiss-primary:hover {
-  background: transparent;
-  color: var(--text-pure);
-}
-.btn-swiss-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.75rem;
-  background: transparent;
-  color: var(--text-silver);
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  border-radius: 4px;
-  border: 1px solid var(--hairline-active);
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.btn-swiss-ghost:hover {
-  border-color: var(--text-pure);
-  color: var(--text-pure);
-}
-
-/* Architecture Diagnostic Terminal */
-.console-chassis {
-  background: var(--void-panel);
-  border: 1px solid var(--hairline);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
-  font-family: var(--font-mono);
-}
-.console-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.65rem 1rem;
-  background: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid var(--hairline);
-}
-.console-dots {
-  display: flex;
-  gap: 6px;
-}
-.console-dots span {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-}
-.console-title {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.console-tabs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border-bottom: 1px solid var(--hairline);
-  background: rgba(0, 0, 0, 0.25);
-}
-.console-tab {
-  padding: 0.6rem 0.5rem;
-  text-align: center;
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  border: none;
-  background: transparent;
-  border-right: 1px solid var(--hairline);
-  cursor: pointer;
-  letter-spacing: 0.04em;
-  transition: all 0.2s ease;
-  font-family: var(--font-mono);
-}
-.console-tab:last-child {
-  border-right: none;
-}
-.console-tab.active {
-  background: var(--void-panel);
-  color: var(--text-pure);
-  font-weight: 700;
-  border-bottom: 2px solid var(--signal-blue);
-}
-.console-tab:hover:not(.active) {
-  color: var(--text-silver);
-  background: rgba(255, 255, 255, 0.02);
-}
-.console-body {
-  padding: 1.25rem 1.25rem;
-  min-height: 220px;
-  font-size: 0.76rem;
-  line-height: 1.8;
-  color: #D1D5DB;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  background: #090B0F;
-}
-.console-line {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-  word-break: break-all;
-}
-.console-line.cmd {
-  color: #F3F4F6;
-  font-weight: 600;
-}
-.console-prompt {
-  color: var(--signal-blue);
-  font-weight: 700;
-}
-.console-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  margin-top: 6px;
-  flex-shrink: 0;
-}
-.console-dot.green {
-  background: var(--signal-emerald);
-}
-.console-dot.blue {
-  background: var(--signal-blue);
-}
-.console-line.success {
-  color: #34D399;
-}
-.console-line.metric {
-  margin-top: 0.6rem;
-  padding: 0.5rem 0.75rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 2px solid var(--signal-blue);
-  color: #E5E7EB;
-  font-size: 0.72rem;
-}
-.console-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 1rem;
-  background: rgba(0, 0, 0, 0.35);
-  border-top: 1px solid var(--hairline);
-  gap: 0.75rem;
-}
-.console-btn-run {
-  background: transparent;
-  border: 1px solid var(--hairline-active);
-  color: var(--text-silver);
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
-  padding: 0.45rem 0.85rem;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.console-btn-run:hover {
-  border-color: var(--text-pure);
-  color: var(--text-pure);
-}
-.console-btn-deploy {
-  background: var(--signal-blue);
-  border: 1px solid var(--signal-blue);
+.btn-primary-action {
+  background: #3B82F6;
   color: #FFFFFF;
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
   font-weight: 600;
-  padding: 0.45rem 1rem;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
 }
-.console-btn-deploy:hover {
+.btn-primary-action:hover {
   background: #2563EB;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+.btn-secondary-action {
+  background: rgba(255, 255, 255, 0.04);
+  color: #F1F5F9;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-secondary-action:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
 }
 
-/* Hairline Capabilities Grid (Architectural 3-column table) */
-.architectural-grid {
+/* Trust Metric Bar */
+.trust-metric-bar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-left: 1px solid var(--hairline);
-  border-right: 1px solid var(--hairline);
-  border-bottom: 1px solid var(--hairline);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 2.5rem;
 }
-@media (max-width: 900px) {
-  .architectural-grid {
+@media (max-width: 860px) {
+  .trust-metric-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .trust-metric-bar {
     grid-template-columns: 1fr;
   }
 }
-.arch-cell {
-  padding: 2.5rem 2rem;
-  border-right: 1px solid var(--hairline);
+.trust-metric-item {
   display: flex;
   flex-direction: column;
-  transition: background 0.25s ease;
 }
-.arch-cell:last-child {
-  border-right: none;
+.metric-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
 }
-.arch-cell:hover {
-  background: rgba(255, 255, 255, 0.015);
+.metric-label {
+  font-size: 0.84rem;
+  color: #94A3B8;
+  line-height: 1.45;
 }
-.arch-idx {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--text-muted);
+
+/* Section Shells */
+.content-section {
+  padding: 5.5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header-row {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.75rem;
+}
+.section-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #60A5FA;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.section-heading {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.section-subtext {
+  font-size: 1rem;
+  color: #94A3B8;
+  max-width: 500px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Services 3-Pillar Grid */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 960px) {
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pillar-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+.pillar-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.pillar-index {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #60A5FA;
+  letter-spacing: 0.08em;
   margin-bottom: 1rem;
 }
-.arch-title {
+.pillar-title {
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--text-pure);
-  line-height: 1.25;
-  margin-bottom: 1.25rem;
+  color: #FFFFFF;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
 }
-.arch-spec {
-  font-size: 0.9rem;
-  line-height: 1.65;
-  color: #9CA3AF;
+.pillar-desc {
+  font-size: 0.92rem;
+  color: #94A3B8;
+  line-height: 1.6;
   margin-bottom: 1.5rem;
-  flex: 1;
 }
-.arch-deliverable-list {
+.pillar-deliverables-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #CBD5E1;
+  margin-bottom: 0.75rem;
+}
+.pillar-list {
   list-style: none;
   padding: 0;
   margin: 0 0 1.5rem;
-  border-top: 1px solid var(--hairline);
+  border-top: 1px solid var(--border-subtle);
   padding-top: 1rem;
 }
-.arch-deliverable-list li {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: #D1D5DB;
+.pillar-list li {
+  font-size: 0.85rem;
+  color: #94A3B8;
   padding: 0.35rem 0;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
-.arch-deliverable-list li::before {
-  content: "—";
-  color: var(--signal-blue);
+.pillar-list li::before {
+  content: "✓";
+  color: #3B82F6;
+  font-weight: bold;
 }
-.arch-metric-row {
+.pillar-footer {
   margin-top: auto;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--hairline);
+  border-top: 1px solid var(--border-subtle);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
-.arch-metric-val {
-  font-family: var(--font-mono);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-pure);
+.pillar-timeline {
+  font-size: 0.82rem;
+  color: #94A3B8;
 }
-.arch-link {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--signal-blue);
+.pillar-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #60A5FA;
   text-decoration: none;
-  transition: color 0.15s ease;
 }
-.arch-link:hover {
-  color: var(--text-pure);
+.pillar-link:hover {
+  color: #FFFFFF;
 }
 
-/* Operating Standards Grid */
-.standards-grid {
+/* Case Studies Grid */
+.case-studies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-left: 1px solid var(--hairline);
-  border-right: 1px solid var(--hairline);
-  border-bottom: 1px solid var(--hairline);
+  gap: 1.75rem;
 }
-@media (max-width: 900px) {
-  .standards-grid {
+@media (max-width: 960px) {
+  .case-studies-grid {
     grid-template-columns: 1fr;
   }
 }
-.standard-cell {
+.case-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
   padding: 2.25rem 2rem;
-  border-right: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
 }
-.standard-cell:last-child {
-  border-right: none;
+.case-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
-.standard-num {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  display: block;
+.case-sector {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #38BDF8;
   margin-bottom: 0.75rem;
 }
-.standard-cell h3 {
+.case-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+  line-height: 1.35;
+}
+.case-block {
+  margin-bottom: 1.25rem;
+}
+.case-block-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+  margin-bottom: 0.35rem;
+}
+.case-block-text {
+  font-size: 0.88rem;
+  color: #CBD5E1;
+  line-height: 1.55;
+  margin: 0;
+}
+.case-metrics-badge {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  margin-top: auto;
+}
+.case-metric-highlight {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #34D399;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.case-metric-subtext {
+  font-size: 0.76rem;
+  color: #94A3B8;
+  display: block;
+}
+
+/* Process Timeline (3 Steps) */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.process-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 2.25rem 2rem;
+}
+.process-step-num {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #3B82F6;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.process-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+}
+.process-desc {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Operating Commitments */
+.standards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 900px) {
+  .standards-container {
+    grid-template-columns: 1fr;
+  }
+}
+.standard-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 2.25rem 2rem;
+}
+.standard-box h3 {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--text-pure);
+  color: #FFFFFF;
   margin-bottom: 0.75rem;
 }
-.standard-cell p {
+.standard-box p {
   font-size: 0.9rem;
-  line-height: 1.65;
-  color: #9CA3AF;
+  color: #94A3B8;
+  line-height: 1.6;
   margin: 0;
+}
+
+/* FAQ Accordion Styling */
+.faq-list {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.faq-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+}
+.faq-box h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.6rem;
+}
+.faq-box p {
+  font-size: 0.92rem;
+  color: #94A3B8;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Contact Intake Card */
+.contact-chassis {
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 2.75rem 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 600px) {
+  .contact-chassis {
+    padding: 1.75rem 1.25rem;
+  }
+}
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #F1F5F9;
+  margin-bottom: 0.5rem;
+}
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  background: rgba(10, 14, 23, 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  font-size: 0.92rem;
+  color: #FFFFFF;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 </style>
 <!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
@@ -881,361 +936,391 @@ body {
 <nav aria-label="Main navigation" class="nav" id="main-nav">
 <ul>
 <li><a class="active" href="/">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="work.html">Work</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="blogs.html">Insights</a></li>
-<li><a class="nav-cta" href="contact.html">Contact Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#work">Case Studies</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a class="nav-cta" href="#contact">Consultation</a></li>
 </ul>
 </nav>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="nav-toggle">
 <span></span><span></span><span></span>
 </button>
 </header>
-<main>
-<!-- ── Asymmetric Industrial Swiss Hero ── -->
-<section style="border-bottom: 1px solid var(--hairline); background: #060709;">
-  <div class="hero-industrial">
-    <div class="hero-editorial-left reveal">
-      <div class="swiss-telemetry">
-        <span class="telemetry-status-light"></span>
-        <span>TENSIX STUDIO // AHMEDABAD 23°N 72°E // [STATUS: 2 ENGAGEMENT SLOTS OPEN]</span>
+<main id="main-content">
+  <!-- ── Studio Hero Section ── -->
+  <section class="studio-hero">
+    <div class="reveal">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>BOUTIQUE SOFTWARE &amp; AUTOMATION STUDIO</span>
       </div>
 
-      <h1 class="hero-industrial-title">
-        WE REPLACE<br/>
-        REPETITIVE HUMAN WORK<br/>
-        WITH RUNTIME PRECISION.
+      <h1 class="hero-title">
+        We build the custom software and intelligent automation that power your business.
       </h1>
 
-      <blockquote class="hero-thesis-quote">
-        “If your business relies on manual human repetition every morning, it is not labor — it is an architectural flaw.”
-        <cite>— TENSIX Engineering Thesis // Navrangpura, Ahmedabad</cite>
-      </blockquote>
-
-      <p class="hero-narrative">
-        TENSIX engineers autonomous data extraction engines, private RAG pipelines, and dedicated cold outreach infrastructure for operators who demand scale without payroll bloat.
+      <p class="hero-subtitle">
+        From custom SaaS applications and robust data extraction systems to automated operational workflows. We partner with founders and growth-focused teams to deliver production-ready systems on fixed scopes in 7 to 14 days.
       </p>
 
-      <div class="hero-actions">
-        <a class="btn-swiss-primary" href="#contact">Initiate Project Brief →</a>
-        <a class="btn-swiss-ghost" href="#capabilities">Review Capabilities</a>
+      <div class="hero-cta-group">
+        <a class="btn-primary-action" href="#contact">
+          Schedule an Architecture Call
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a class="btn-secondary-action" href="#work">Explore Client Work ↓</a>
       </div>
-    </div>
 
-    <!-- Right: Architecture Diagnostic Terminal Chassis -->
-    <div class="reveal reveal-delay-2">
-      <div class="console-chassis">
-        <div class="console-topbar">
-          <div class="console-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <span class="console-title">SYSTEM TELEMETRY // RUNTIME AUDIT</span>
-          <span style="font-size: 0.68rem; color: #10B981; font-weight: 700;">● LIVE</span>
+      <!-- Trust Metrics Bar -->
+      <div class="trust-metric-bar">
+        <div class="trust-metric-item">
+          <span class="metric-number">7–14 Days</span>
+          <span class="metric-label">Rapid sprint execution from scope to deployment</span>
         </div>
-
-        <div class="console-tabs">
-          <button class="console-tab active" data-scenario="extraction" type="button">01 / SCRAPING</button>
-          <button class="console-tab" data-scenario="inbox" type="button">02 / OUTREACH</button>
-          <button class="console-tab" data-scenario="agent" type="button">03 / MULTI-AGENT</button>
+        <div class="trust-metric-item">
+          <span class="metric-number">100% Transfer</span>
+          <span class="metric-label">Complete source code &amp; infrastructure ownership</span>
         </div>
-
-        <div class="console-body" id="console-terminal-body">
-          <!-- Populated by JavaScript runtime -->
+        <div class="trust-metric-item">
+          <span class="metric-number">Fixed Scopes</span>
+          <span class="metric-label">Guaranteed deliverables with zero hourly billing creep</span>
         </div>
-
-        <div class="console-footer">
-          <button class="console-btn-run" id="console-run-btn" type="button">▶ Run Simulation</button>
-          <button class="console-btn-deploy" id="console-deploy-btn" type="button">Deploy This Architecture →</button>
+        <div class="trust-metric-item">
+          <span class="metric-number">Direct Access</span>
+          <span class="metric-label">Collaborate directly with senior systems architects</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── Editorial Status Ticker ── -->
-<div aria-hidden="true" style="border-bottom: 1px solid var(--hairline); background: rgba(0,0,0,0.5); padding: 0.75rem 1rem; overflow: hidden; white-space: nowrap; font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.08em; color: var(--text-muted);">
-  <div style="display: flex; gap: 3rem; justify-content: space-around;">
-    <span>[ DELIVERABILITY: 99.4% PRIMARY INBOX ]</span>
-    <span>[ DATA INGESTION: 10,000+ RECORDS/DAY ]</span>
-    <span>[ DEPLOYMENT TIMELINE: 7–14 BUSINESS DAYS ]</span>
-    <span>[ IP &amp; SOURCE CODE: 100% CLIENT TRANSFER ]</span>
-    <span>[ LATENCY: &lt; 200MS VECTOR LOOKUP ]</span>
-  </div>
-</div>
-
-<!-- ── Architectural Capabilities Grid ── -->
-<section id="capabilities" style="padding: 4rem 1.5rem; background: var(--void-bg);">
-  <div style="max-width: 1240px; margin: 0 auto;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--hairline); padding-bottom: 1.5rem;">
+  <!-- ── Services / Capabilities ── -->
+  <section id="services" class="content-section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="section-header-row reveal">
       <div>
-        <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--signal-blue); letter-spacing: 0.12em; text-transform: uppercase;">// DELIVERABLE PRODUCTION ARCHITECTURES</span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-pure); margin-top: 0.35rem; letter-spacing: -0.03em;">
-          ENGINEERED CAPABILITIES
-        </h2>
+        <span class="section-eyebrow">Core Capabilities</span>
+        <h2 class="section-heading">What We Build</h2>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 440px; margin: 0; line-height: 1.6;">
-        Fixed-timeline engineering engagements designed to permanently eliminate operational bottlenecks.
+      <p class="section-subtext">
+        Fixed-timeline engineering engagements designed to eliminate manual bottlenecks, integrate fragmented tools, and scale revenue.
       </p>
     </div>
 
-    <div class="architectural-grid">
-      <!-- 01 -->
-      <div class="arch-cell">
-        <span class="arch-idx">01 // DATA EXTRACTION</span>
-        <h3 class="arch-title">Resilient High-Velocity Scraping Swarms</h3>
-        <p class="arch-spec">
-          Custom distributed scraping engines engineered to mine high-volume B2B directories, Google Maps, and e-commerce endpoints without detection or IP exhaustion.
+    <div class="pillars-grid">
+      <!-- Pillar 01 -->
+      <div class="pillar-card reveal">
+        <span class="pillar-index">01 // CUSTOM PLATFORMS</span>
+        <h3 class="pillar-title">Custom Web Platforms &amp; Client Portals</h3>
+        <p class="pillar-desc">
+          Replace spreadsheet chaos and rigid no-code tools with tailored web software engineered for speed, enterprise-grade data security, and seamless customer experiences.
         </p>
-        <ul class="arch-deliverable-list">
-          <li>Playwright headless fingerprint randomization</li>
-          <li>Cloudflare Turnstile &amp; bot-challenge bypass</li>
-          <li>Automated deduplication directly into Postgres</li>
+        <div class="pillar-deliverables-title">What We Deliver</div>
+        <ul class="pillar-list">
+          <li>Modern full-stack web applications (FastAPI / Next.js)</li>
+          <li>Authenticated client &amp; internal administrative portals</li>
+          <li>High-concurrency REST &amp; GraphQL API backends</li>
+          <li>Relational database modeling with PostgreSQL</li>
         </ul>
-        <div class="arch-metric-row">
-          <div>
-            <span style="font-size: 0.68rem; color: var(--text-muted); display: block; text-transform: uppercase;">Throughput</span>
-            <span class="arch-metric-val">10,000+ / Day</span>
-          </div>
-          <a class="arch-link" href="services.html">View Architecture →</a>
+        <div class="pillar-footer">
+          <span class="pillar-timeline">Typical Timeline: 2–3 weeks</span>
+          <a class="pillar-link" href="#contact">Discuss Scope →</a>
         </div>
       </div>
 
-      <!-- 02 -->
-      <div class="arch-cell">
-        <span class="arch-idx">02 // INBOX INFRASTRUCTURE</span>
-        <h3 class="arch-title">Dedicated Cold Outreach Delivery Systems</h3>
-        <p class="arch-spec">
-          Enterprise email routing infrastructure engineered for high-volume sales organizations. Guaranteed primary inbox landing with zero domain burning.
+      <!-- Pillar 02 -->
+      <div class="pillar-card reveal reveal-delay-1">
+        <span class="pillar-index">02 // OPERATIONS AUTOMATION</span>
+        <h3 class="pillar-title">Automated Workflows &amp; System Integration</h3>
+        <p class="pillar-desc">
+          Eliminate 20+ hours of weekly manual data entry. We build continuous background automation connecting your CRM, payments, billing, and communication channels.
         </p>
-        <ul class="arch-deliverable-list">
-          <li>Isolated multi-domain routing pools (AWS SES / Mailcow)</li>
+        <div class="pillar-deliverables-title">What We Deliver</div>
+        <ul class="pillar-list">
+          <li>End-to-end multi-platform data syncing &amp; reconciliation</li>
+          <li>CRM automation &amp; instant inbound lead routing</li>
+          <li>Automated WhatsApp, Slack &amp; transactional email alerts</li>
+          <li>Custom webhook pipelines and background task queues</li>
+        </ul>
+        <div class="pillar-footer">
+          <span class="pillar-timeline">Typical Timeline: 1–2 weeks</span>
+          <a class="pillar-link" href="#contact">Discuss Scope →</a>
+        </div>
+      </div>
+
+      <!-- Pillar 03 -->
+      <div class="pillar-card reveal reveal-delay-2">
+        <span class="pillar-index">03 // MARKET DATA &amp; OUTREACH</span>
+        <h3 class="pillar-title">Data Extraction &amp; Outreach Infrastructure</h3>
+        <p class="pillar-desc">
+          Feed your sales pipeline with automated market data extraction and deploy dedicated, cryptographically authenticated email deliverability infrastructure that lands in primary inboxes.
+        </p>
+        <div class="pillar-deliverables-title">What We Deliver</div>
+        <ul class="pillar-list">
+          <li>High-speed automated data crawlers with proxy rotation</li>
+          <li>Automated record deduplication directly into databases</li>
+          <li>Dedicated email routing pools (AWS SES / Mailcow)</li>
           <li>100% cryptographic enforcement (SPF, DKIM 2048, DMARC)</li>
-          <li>Automated deliverability monitoring &amp; warmup</li>
         </ul>
-        <div class="arch-metric-row">
-          <div>
-            <span style="font-size: 0.68rem; color: var(--text-muted); display: block; text-transform: uppercase;">Inbox Placement</span>
-            <span class="arch-metric-val" style="color: var(--signal-emerald);">99.4% Primary</span>
-          </div>
-          <a class="arch-link" href="services.html">View Architecture →</a>
+        <div class="pillar-footer">
+          <span class="pillar-timeline">Typical Timeline: 1–2 weeks</span>
+          <a class="pillar-link" href="#contact">Discuss Scope →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Proven Case Studies ── -->
+  <section id="work" class="content-section" style="border-top: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.01);">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="section-eyebrow">Proven Engagements</span>
+        <h2 class="section-heading">Selected Case Studies</h2>
+      </div>
+      <p class="section-subtext">
+        Real-world software and automation architectures deployed in production with measured operational outcomes.
+      </p>
+    </div>
+
+    <div class="case-studies-grid">
+      <!-- Case Study 01 -->
+      <div class="case-card reveal">
+        <span class="case-sector">B2B Sales &amp; Market Intelligence</span>
+        <h3 class="case-title">Automated B2B Prospecting &amp; Data Pipeline</h3>
+        
+        <div class="case-block">
+          <div class="case-block-label">The Operational Challenge</div>
+          <p class="case-block-text">A sales development team spent 25+ hours every week manually copying business contacts from public directories, resulting in high duplication and slow prospecting cycles.</p>
+        </div>
+
+        <div class="case-block">
+          <div class="case-block-label">The Engineering Solution</div>
+          <p class="case-block-text">Engineered an automated cloud extraction and deduplication system that continuously scrapes directory endpoints, verifies phone/email data, and syncs directly to PostgreSQL.</p>
+        </div>
+
+        <div class="case-metrics-badge">
+          <span class="case-metric-highlight">10,000+ Records Extracted Daily</span>
+          <span class="case-metric-subtext">80% reduction in prospecting cost · 15+ hrs saved weekly per SDR</span>
         </div>
       </div>
 
-      <!-- 03 -->
-      <div class="arch-cell">
-        <span class="arch-idx">03 // AUTONOMOUS WORKFLOWS</span>
-        <h3 class="arch-title">Private Multi-Agent &amp; GraphRAG Systems</h3>
-        <p class="arch-spec">
-          Self-governing AI pipelines built on LangGraph and Supabase pgvector. Automate document reconciliation, customer triage, and multi-step data enrichment.
+      <!-- Case Study 02 -->
+      <div class="case-card reveal reveal-delay-1">
+        <span class="case-sector">Healthcare &amp; Clinical Operations</span>
+        <h3 class="case-title">Clinic Booking &amp; Automated Patient Triage</h3>
+        
+        <div class="case-block">
+          <div class="case-block-label">The Operational Challenge</div>
+          <p class="case-block-text">A multi-specialty healthcare practice suffered from an average 30% patient appointment no-show rate and heavy phone call bottlenecks at reception desks.</p>
+        </div>
+
+        <div class="case-block">
+          <div class="case-block-label">The Engineering Solution</div>
+          <p class="case-block-text">Built a responsive appointment booking portal synchronized in real time with Google Calendar and automated multi-step WhatsApp confirmation reminders.</p>
+        </div>
+
+        <div class="case-metrics-badge">
+          <span class="case-metric-highlight">75% Reduction in No-Shows</span>
+          <span class="case-metric-subtext">Zero double-bookings · 450+ hours saved annually in front-desk labor</span>
+        </div>
+      </div>
+
+      <!-- Case Study 03 -->
+      <div class="case-card reveal reveal-delay-2">
+        <span class="case-sector">Multi-Location Retail &amp; Services</span>
+        <h3 class="case-title">Automated Reputation &amp; Review Management</h3>
+        
+        <div class="case-block">
+          <div class="case-block-label">The Operational Challenge</div>
+          <p class="case-block-text">A regional brand operating multiple physical outlets struggled to monitor and reply to customer reviews promptly, hurting their local search rankings and customer retention.</p>
+        </div>
+
+        <div class="case-block">
+          <div class="case-block-label">The Engineering Solution</div>
+          <p class="case-block-text">Engineered an automated webhook pipeline monitoring Google review endpoints, conducting sentiment triage, and drafting tailored, on-brand responses for instant team approval.</p>
+        </div>
+
+        <div class="case-metrics-badge">
+          <span class="case-metric-highlight">&lt; 2-Second Review Ingestion</span>
+          <span class="case-metric-subtext">3.8x faster customer resolution · Top-3 local Google placement</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How We Work (Delivery Process) ── -->
+  <section id="process" class="content-section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="section-eyebrow">Our Methodology</span>
+        <h2 class="section-heading">How We Work</h2>
+      </div>
+      <p class="section-subtext">
+        A transparent, 3-phase delivery model designed to remove client risk and ship production software rapidly.
+      </p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card reveal">
+        <span class="process-step-num">PHASE 01 // DAYS 1–2</span>
+        <h3 class="process-title">Architecture Audit &amp; Fixed Scope</h3>
+        <p class="process-desc">
+          We review your existing workflows, evaluate data schemas, and draft a fixed-scope technical roadmap. You receive a guaranteed timeline and fixed investment before work begins.
         </p>
-        <ul class="arch-deliverable-list">
-          <li>Self-correcting verification loops with &lt; 200ms latency</li>
-          <li>Private vector store deployment on client infrastructure</li>
-          <li>Zero data leakage — 100% isolated API instances</li>
-        </ul>
-        <div class="arch-metric-row">
-          <div>
-            <span style="font-size: 0.68rem; color: var(--text-muted); display: block; text-transform: uppercase;">Human Effort</span>
-            <span class="arch-metric-val">Zero Manual Steps</span>
-          </div>
-          <a class="arch-link" href="services.html">View Architecture →</a>
-        </div>
+      </div>
+
+      <div class="process-card reveal reveal-delay-1">
+        <span class="process-step-num">PHASE 02 // DAYS 3–10</span>
+        <h3 class="process-title">Rapid Sprint Execution</h3>
+        <p class="process-desc">
+          We engineer your software or automated systems in private staging environments with continuous review checkpoints. Clean code, automated test suites, and zero fluff.
+        </p>
+      </div>
+
+      <div class="process-card reveal reveal-delay-2">
+        <span class="process-step-num">PHASE 03 // DAYS 11–14</span>
+        <h3 class="process-title">Deployment &amp; Complete Handover</h3>
+        <p class="process-desc">
+          We deploy the production architecture to your cloud accounts. You receive 100% of source code, credentials, architecture documentation, and live team training.
+        </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── The TENSIX Operating Principles ── -->
-<section style="padding: 4rem 1.5rem; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); background: var(--void-panel);">
-  <div style="max-width: 1240px; margin: 0 auto;">
-    <div style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--hairline); padding-bottom: 1.5rem;">
-      <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--signal-blue); letter-spacing: 0.12em; text-transform: uppercase;">// OPERATING PRINCIPLES</span>
-      <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--text-pure); margin-top: 0.35rem; letter-spacing: -0.03em;">
-        THE TENSIX STANDARD
-      </h2>
+  <!-- ── Operating Standards ── -->
+  <section id="standards" class="content-section" style="border-top: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015);">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="section-eyebrow">Our Commitments</span>
+        <h2 class="section-heading">The TENSIX Standard</h2>
+      </div>
+      <p class="section-subtext">
+        Why growing businesses and founders choose us over traditional agencies and open-ended freelance contracts.
+      </p>
     </div>
 
-    <div class="standards-grid">
-      <div class="standard-cell">
-        <span class="standard-num">[ 01 ]</span>
+    <div class="standards-container">
+      <div class="standard-box reveal">
         <h3>Fixed Deliverables, Never Open-Ended Invoices</h3>
         <p>We do not bill by the hour or drag out deadlines. You receive a battle-tested production system delivered on a guaranteed 7–14 day timeline for a pre-agreed fixed investment.</p>
       </div>
 
-      <div class="standard-cell">
-        <span class="standard-num">[ 02 ]</span>
-        <h3>3:00 AM Reliability</h3>
-        <p>Our architectures are engineered to run autonomously in production without intervention, without rate-limit failures, and without panicking your operations team in the middle of the night.</p>
+      <div class="standard-box reveal reveal-delay-1">
+        <h3>24/7 Production Reliability</h3>
+        <p>Our architectures are engineered to run autonomously in production with automated error handling, self-healing retries, and comprehensive monitoring to ensure 99.9%+ uptime.</p>
       </div>
 
-      <div class="standard-cell">
-        <span class="standard-num">[ 03 ]</span>
+      <div class="standard-box reveal reveal-delay-2">
         <h3>Complete System &amp; Data Ownership</h3>
-        <p>Zero vendor lock-in. 100% of the repository code, infrastructure configuration, credentials, and databases belong entirely to you upon deployment.</p>
+        <p>Zero vendor lock-in. 100% of the repository code, infrastructure configuration, credentials, and databases belong entirely to your company upon deployment.</p>
       </div>
     </div>
-  </div>
-</section>
-<!-- ── Featured Projects ──────────────────── -->
-<section class="section bg-alt" id="projects">
-<div class="section-inner">
-<div class="section-header reveal">
-<h2 class="section-title">Engineered <span class="gradient-text">Platforms &amp; Systems</span></h2>
-<p>Production systems, platforms, and automated pipelines engineered by TENSIX</p>
-</div>
-<div class="projects-grid">
-<!-- Crawler – Web Scraper Platform -->
-<div class="project-card reveal hover-lift">
-<div class="card-body">
-<h3>Crawler – Data Intelligence Platform</h3>
-<p>High-velocity data intelligence platform scraping lead data from Google Maps. Processes 10,000+ businesses daily with 100% automated deduplication, saving clients 15+ hours per week.</p>
-<div class="tag-list">
-<span class="tag">Python</span>
-<span class="tag">Playwright</span>
-<span class="tag green">Supabase</span>
-</div>
-<a class="card-link" href="https://scraper-o801.onrender.com/" rel="noopener" target="_blank">
-              View Live →
-            </a>
-</div>
-</div>
-<!-- AI Review Generator -->
-<div class="project-card reveal reveal-delay-1 hover-lift">
-<div class="card-body">
-<h3>AI Review Reply Generator</h3>
-<p>Autonomous reputation management tool integrating Google Places API and Claude/OpenAI models. Generates contextual, on-brand reviews responses in under 2 seconds, boosting client local SEO ratings.</p>
-<div class="tag-list">
-<span class="tag green">LLM</span>
-<span class="tag">Google Places API</span>
-<span class="tag orange">AI / ML</span>
-</div>
-</div>
-</div>
-<!-- Appointment Scheduler -->
-<div class="project-card reveal reveal-delay-2 hover-lift">
-<div class="card-body">
-<h3>Doctor Appointment Scheduler</h3>
-<p>Automated booking system syncing directly to Google Calendar. Integrates AiSensy API for automated WhatsApp reminders, reducing appointment no-shows by 75% for healthcare clinics.</p>
-<div class="tag-list">
-<span class="tag">Google Calendar API</span>
-<span class="tag green">AiSensy</span>
-<span class="tag purple">Automation</span>
-</div>
-<a class="card-link" href="https://app.makeappointments.in/#/doctor-register" rel="noopener" target="_blank">
-              View Live →
-            </a>
-</div>
-</div>
-</div>
-<div class="text-center" style="margin-top:2.5rem;">
-<a class="cta-button outline" href="work.html">View All Projects →</a>
-</div>
-</div>
-</section>
-<!-- ── FAQ Section (Optimized for AEO & GEO) ── -->
-<section class="section" id="faq" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
-<div class="section-inner">
-<div class="section-header reveal">
-<h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-<p>Answers to common questions about systems integration, RAG, and custom agents</p>
-</div>
-<div class="faq-container" style="max-width: 800px; margin: 2rem auto 0; display: flex; flex-direction: column; gap: 1.5rem;">
-<div class="faq-item reveal" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease;">
-<h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">What core engineering services does TENSIX deliver?</h3>
-<p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">TENSIX operates across 4 key pillars: (1) Custom Full-Stack Software &amp; SaaS (FastAPI, Next.js, Python), (2) Autonomous AI Multi-Agent Systems &amp; GraphRAG pipelines, (3) Cloud VPS Infrastructure (Oracle Cloud OCI &amp; Plesk Linux with automated GitHub Actions CI/CD via SSH), and (4) Next-Gen Search Intelligence (SEO, AEO, AIO, SGE, and GEO).</p>
-</div>
-<div class="faq-item reveal reveal-delay-1" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease;">
-<h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">Who leads technical architecture at TENSIX?</h3>
-<p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">TENSIX was founded and is led by <a href="https://hemalshah.vercel.app/" target="_blank" rel="noopener" style="color:#93c5fd;text-decoration:underline;">Hemal Shah</a>, an AI systems architect and full-stack engineer who directs all platform design, multi-agent frameworks, cloud infrastructure, and search optimization strategies.</p>
-</div>
-<div class="faq-item reveal reveal-delay-2" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease;">
-<h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">What cloud server and CI/CD capabilities does TENSIX manage?</h3>
-<p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">We architect and operate enterprise VPS instances across Oracle Cloud Infrastructure (OCI) and Plesk Linux VPS. We establish automated GitHub Actions CI/CD pipelines deploying via SSH, configure Docker containerization, Nginx reverse proxies, SSL/TLS certificates, and automated database backups.</p>
-</div>
-<div class="faq-item reveal reveal-delay-3" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease; margin-top: 1.5rem;">
-<h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">How does TENSIX optimize for AI Search (GEO, AEO, SGE)?</h3>
-<p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">We build rich semantic web architectures: dense Schema.org JSON-LD entity graphs, Speakable specifications, high-information-gain content, and technical structures engineered to guarantee authoritative citation and inclusion inside ChatGPT Search, Perplexity, Claude, and Google AI Overviews.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- ── Direct Contact Form (Optimized Conversion Hook) ── -->
-<section class="section" id="contact" style="background: linear-gradient(180deg, rgba(9, 10, 15, 0.5) 0%, rgba(9, 10, 15, 0.9) 100%); border-top: 1px solid rgba(255, 255, 255, 0.05);">
-<div class="section-inner" style="max-width: 800px;">
-<div class="section-header reveal text-center">
-<h2 class="section-title">Let's Engineer Your <span class="gradient-text">Next System</span></h2>
-<p style="max-width: 500px; margin: 0 auto; color: var(--color-text-muted);">Have an AI agent, cloud infrastructure, or custom software project? Discuss your architecture with TENSIX.</p>
-</div>
-<!-- Glassmorphic Form Card -->
-<div class="contact-form reveal reveal-delay-1" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 2.5rem; border-radius: 16px; backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-top: 2rem;">
-<form id="contact-form" novalidate="">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-<div class="form-group">
-<label for="cf-name" style="color: #fff; font-size: 0.9rem; margin-bottom: 0.5rem; display: block;">Name *</label>
-<input id="cf-name" name="name" placeholder="Your name" required="" style="width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 0.8rem 1rem; border-radius: 8px; color: #fff; outline: none; transition: border 0.3s;" type="text"/>
-</div>
-<div class="form-group">
-<label for="cf-email" style="color: #fff; font-size: 0.9rem; margin-bottom: 0.5rem; display: block;">Email *</label>
-<input id="cf-email" name="email" placeholder="your@email.com" required="" style="width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 0.8rem 1rem; border-radius: 8px; color: #fff; outline: none; transition: border 0.3s;" type="email"/>
-</div>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-<div class="form-group">
-<label for="cf-subject" style="color: #fff; font-size: 0.9rem; margin-bottom: 0.5rem; display: block;">Subject</label>
-<input id="cf-subject" name="subject" placeholder="Project inquiry, architecture consultation…" style="width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 0.8rem 1rem; border-radius: 8px; color: #fff; outline: none; transition: border 0.3s;" type="text"/>
-</div>
-<div class="form-group">
-<label for="cf-type" style="color: #fff; font-size: 0.9rem; margin-bottom: 0.5rem; display: block;">Service Focus</label>
-<select id="cf-type" name="project_type" style="width: 100%; background: rgba(9, 10, 15, 0.95); border: 1px solid rgba(255,255,255,0.08); padding: 0.8rem 1rem; border-radius: 8px; color: #fff; outline: none; cursor: pointer;">
-<option disabled="" selected="" value="">Select a service focus</option>
-<option value="ai">Autonomous AI Multi-Agent Systems &amp; GraphRAG</option>
-<option value="cloud">Cloud VPS (Oracle/Plesk) &amp; GitHub Actions CI/CD</option>
-<option value="software">Custom Full-Stack Software &amp; SaaS (FastAPI / Next.js)</option>
-<option value="search">Search Intelligence (GEO, AEO, AIO, SGE, SEO)</option>
-<option value="automation">n8n Automation &amp; High-Velocity Python Scrapers</option>
-<option value="other">Enterprise Consultation / Architecture Audit</option>
-</select>
-</div>
-</div>
-<div class="form-group" style="margin-top: 1.5rem;">
-<label for="cf-message" style="color: #fff; font-size: 0.9rem; margin-bottom: 0.5rem; display: block;">Message *</label>
-<textarea id="cf-message" name="message" placeholder="Tell me about your project, timeline, and goals…" required="" rows="5" style="width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 0.8rem 1rem; border-radius: 8px; color: #fff; outline: none; resize: vertical; transition: border 0.3s;"></textarea>
-</div>
-<button class="cta-button primary" style="width: 100%; margin-top: 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 600; padding: 1rem; cursor: pointer; border: none; border-radius: 8px; transition: transform 0.3s, background 0.3s;" type="submit">
-<svg fill="none" height="18" stroke="currentColor" stroke-width="2" style="transform: rotate(45deg); margin-right: 4px;" viewbox="0 0 24 24" width="18">
-<line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-            Send Message
-          </button>
-<div class="form-success" id="form-success" style="display:none; text-align: center; margin-top: 1.5rem; color: #10b981; font-weight: 500;">
-            ✓ Message sent successfully! I will get back to you within 24 hours.
-          </div>
-</form>
-</div>
-</div>
-</section>
-<!-- ── Site Footer ────────────────────────── -->
-<!-- ── CTA / Contact Banner ───────────────── -->
-<section class="section" style="background:linear-gradient(135deg,rgba(59,130,246,0.08),rgba(139,92,246,0.08)); border-top: 1px solid rgba(255,255,255,0.05);">
-<div class="section-inner text-center">
-<h2 class="section-title reveal" style="font-size:2rem;font-weight:700;color:#fff;margin-bottom:1rem;">
-        Ready to engineer your next <span class="gradient-text">Autonomous System</span>?
-      </h2>
-<p class="reveal reveal-delay-1" style="color:var(--color-text-muted);margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">
-        Partner with TENSIX to deploy robust AI multi-agent workflows, scalable Oracle/Plesk VPS CI/CD infrastructure, and high-concurrency SaaS applications.
+  </section>
+
+  <!-- ── FAQ Section ── -->
+  <section id="faq" class="content-section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="section-eyebrow">Client Questions</span>
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+      </div>
+      <p class="section-subtext">
+        Common questions regarding our engineering sprints, pricing model, and technical integration.
       </p>
-<div class="hero-buttons reveal reveal-delay-2">
-<a class="cta-button primary" href="#contact">Consult Architecture</a>
-<a class="cta-button secondary" href="services.html">Explore Capabilities</a>
-</div>
-</div>
-</section>
-<!-- ── Footer ─────────────────────────────── -->
-<!-- Local SEO Anchor -->
-<div class="local-seo-anchor" style="text-align:center; padding: 2rem 1rem; color: #94a3b8; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.02); background: #080d19;">
-    TENSIX — Enterprise Autonomous AI Systems, Cloud VPS Infrastructure, and Generative Engine Optimization in Navrangpura, Ahmedabad, Gujarat, India.
-  </div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-box reveal">
+        <h3>How does TENSIX price engineering projects?</h3>
+        <p>Every engagement is structured as a fixed-price sprint based on defined technical deliverables. You receive a clear, transparent scope and milestone schedule upfront, with zero surprise hourly bills.</p>
+      </div>
+
+      <div class="faq-box reveal reveal-delay-1">
+        <h3>What is the typical turnaround time for an engagement?</h3>
+        <p>Most focused systems — such as automated workflow pipelines, custom data scrapers, or portal MVPs — are completed and deployed within 7 to 14 business days. Larger full-stack platforms are delivered in structured 2 to 4-week milestones.</p>
+      </div>
+
+      <div class="faq-box reveal reveal-delay-2">
+        <h3>Can you integrate with our existing software and database stack?</h3>
+        <p>Yes. We engineer systems that seamlessly integrate with standard REST/GraphQL APIs, webhooks, PostgreSQL, Supabase, AWS, Cloudflare, and custom legacy backends without disrupting ongoing operations.</p>
+      </div>
+
+      <div class="faq-box reveal reveal-delay-3">
+        <h3>Who owns the intellectual property and code?</h3>
+        <p>You do. Upon project completion and final milestone approval, 100% of the source code, cloud infrastructure configurations, and databases are transferred directly to your organization with full documentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Consultation / Intake Form ── -->
+  <section id="contact" class="content-section" style="border-top: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.01);">
+    <div class="section-header-row reveal" style="text-align: center; justify-content: center; border-bottom: none; margin-bottom: 2rem;">
+      <div style="max-width: 650px;">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-heading">Schedule an Architecture Call</h2>
+        <p class="section-subtext" style="margin: 0.75rem auto 0;">
+          Tell us about your project, current operational bottlenecks, and timeline goals. A senior engineer will review your requirements and respond within 24 hours.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-chassis reveal">
+      <form id="contact-form" novalidate="">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Your Name *</label>
+            <input class="form-input" id="cf-name" name="name" placeholder="Alex Morgan" required="" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Work Email *</label>
+            <input class="form-input" id="cf-email" name="email" placeholder="alex@company.com" required="" type="email"/>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+          <div class="form-group">
+            <label class="form-label" for="cf-subject">Company / Website</label>
+            <input class="form-input" id="cf-subject" name="subject" placeholder="Company Name or URL" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-type">Service Focus</label>
+            <select class="form-select" id="cf-type" name="project_type">
+              <option disabled="" selected="" value="">Select an engineering focus</option>
+              <option value="software">Custom Web Application / SaaS Portal</option>
+              <option value="automation">Automated Workflows &amp; System Integration</option>
+              <option value="data">Data Extraction &amp; Outreach Infrastructure</option>
+              <option value="audit">Architecture Audit &amp; Technical Roadmapping</option>
+              <option value="other">General Engineering Inquiry</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 1.5rem;">
+          <label class="form-label" for="cf-message">Project Scope &amp; Goals *</label>
+          <textarea class="form-textarea" id="cf-message" name="message" placeholder="Briefly describe the system you need built, key business requirements, and target timeline…" required="" rows="4"></textarea>
+        </div>
+
+        <button class="btn-primary-action" style="width: 100%; margin-top: 2rem; justify-content: center; cursor: pointer; border: none; font-size: 1rem; padding: 1rem;" type="submit">
+          Request Technical Consultation →
+        </button>
+
+        <div class="form-success" id="form-success" style="display:none; text-align: center; margin-top: 1.5rem; color: #10B981; font-weight: 600;">
+          ✓ Message received. A senior systems architect will review your project and get back to you within 24 hours.
+        </div>
+      </form>
+
+      <div style="margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Prefer direct communication?</span>
+        <div style="display: flex; gap: 1.25rem;">
+          <a href="https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." target="_blank" rel="noopener" style="font-size: 0.85rem; color: #34D399; text-decoration: none; font-weight: 500;">
+            WhatsApp Direct ↗
+          </a>
+          <a href="mailto:hemal.shah2004@gmail.com" style="font-size: 0.85rem; color: #60A5FA; text-decoration: none; font-weight: 500;">
+            Email Direct ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
 <div class="footer-inner">
@@ -1294,12 +1379,12 @@ Gujarat 380009 · India
 </div>
 </div>
 <div class="footer-bottom">
-<p>© 2026 TENSIX · Autonomous AI Systems &amp; Cloud Infrastructure Studio. Founded by <a href="https://hemalshah.vercel.app/" target="_blank" rel="noopener" style="color:#93c5fd;text-decoration:underline;">Hemal Shah</a></p>
+<p>© 2026 TENSIX · Boutique Software &amp; Automation Studio. All rights reserved.</p>
 </div>
 </footer>
 <script defer="" src="script.js?v=1.3"></script>
 <aside aria-label="WhatsApp Chat">
-<a aria-label="Chat on WhatsApp" href="https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." rel="noopener" style="position:fixed;bottom:5.5rem;right:1.25rem;z-index:950;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.45);transition:transform 0.25s ease,box-shadow 0.25s ease;" target="_blank">
+<a aria-label="Chat on WhatsApp" href="https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." rel="noopener" style="position:fixed;bottom:5.5rem;right:1.25rem;z-index:950;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.45);transition:transform 0.25s ease,box-shadow 0.25s ease;" target="_blank">
 <svg fill="#fff" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
 </a>
 </aside>
