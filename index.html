@@ -208,325 +208,502 @@ img { max-width: 100%; display: block; }
   .site-footer h3, .site-footer h4 { color: #ffffff !important; }
 }
 
-/* ── TENSIX Executive Studio Design System ── */
+/* ── TENSIX Modern Studio Design System ── */
 :root {
-  --bg-main: #0B0F19;
-  --bg-surface: #111827;
-  --bg-surface-elevated: #1F2937;
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(59, 130, 246, 0.4);
-  --text-main: #FFFFFF;
-  --text-secondary: #E2E8F0;
-  --text-muted: #94A3B8;
-  --text-faint: #64748B;
-  --accent-primary: #3B82F6;
-  --accent-hover: #2563EB;
-  --accent-light: #60A5FA;
-  --success: #10B981;
+  --bg-dark: #080B11;
+  --bg-card: rgba(16, 22, 35, 0.75);
+  --bg-card-hover: rgba(22, 30, 48, 0.9);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glass-bright: rgba(255, 255, 255, 0.16);
+  --border-accent: rgba(59, 130, 246, 0.45);
+  --text-white: #FFFFFF;
+  --text-slate-100: #F1F5F9;
+  --text-slate-300: #CBD5E1;
+  --text-slate-400: #94A3B8;
+  --text-slate-500: #64748B;
+  --accent-blue: #3B82F6;
+  --accent-blue-hover: #2563EB;
+  --accent-glow: rgba(59, 130, 246, 0.2);
+  --accent-cyan: #38BDF8;
+  --accent-emerald: #10B981;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 body {
-  background-color: var(--bg-main) !important;
-  color: var(--text-secondary);
+  background-color: var(--bg-dark) !important;
+  color: var(--text-slate-300);
   font-family: var(--font-sans);
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(37, 99, 235, 0.18), transparent 70%),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px;
+  background-attachment: scroll, fixed;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
 }
 
-/* Studio Hero Section */
+/* ── Hero Section (Deep Negative Space & Asymmetric Topology) ── */
 .studio-hero {
-  padding: 8.5rem 1.5rem 5rem;
-  max-width: 1200px;
+  padding: 10.5rem 2rem 6.5rem;
+  max-width: 1260px;
   margin: 0 auto;
 }
-.hero-badge {
+.hero-split-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .hero-split-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    padding-top: 2rem;
+  }
+}
+
+.hero-pill-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.85rem;
-  background: rgba(59, 130, 246, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  gap: 0.6rem;
+  padding: 0.4rem 0.95rem;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 9999px;
   font-size: 0.78rem;
   font-weight: 600;
-  color: #60A5FA;
-  letter-spacing: 0.04em;
-  margin-bottom: 1.5rem;
+  color: #93C5FD;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.75rem;
 }
-.hero-badge-dot {
-  width: 6px;
-  height: 6px;
+.hero-badge-pulse {
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #3B82F6;
-  box-shadow: 0 0 8px #3B82F6;
+  box-shadow: 0 0 10px #3B82F6;
+  animation: badgePulse 2s infinite;
 }
-.hero-title {
-  font-size: clamp(2.3rem, 5.2vw, 3.8rem);
+@keyframes badgePulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(59, 130, 246, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.hero-h1 {
+  font-size: clamp(2.5rem, 5.2vw, 4rem);
   font-weight: 800;
-  line-height: 1.12;
-  letter-spacing: -0.035em;
-  color: #FFFFFF;
-  max-width: 980px;
-  margin-bottom: 1.5rem;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: var(--text-white);
+  margin-bottom: 1.6rem;
 }
-.hero-subtitle {
+.hero-h1-gradient {
+  background: linear-gradient(135deg, #FFFFFF 30%, #93C5FD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-lead-text {
   font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-  line-height: 1.65;
-  color: #94A3B8;
-  max-width: 780px;
+  line-height: 1.7;
+  color: var(--text-slate-400);
   margin-bottom: 2.5rem;
+  max-width: 620px;
 }
-.hero-cta-group {
+
+.hero-btn-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
-.btn-primary-action {
-  background: #3B82F6;
+
+.btn-primary-glow {
+  background: #2563EB;
   color: #FFFFFF;
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 0.85rem 1.75rem;
-  border-radius: 6px;
+  padding: 0.95rem 1.85rem;
+  border-radius: 8px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+  gap: 0.65rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
-.btn-primary-action:hover {
-  background: #2563EB;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+.btn-primary-glow:hover {
+  background: #1D4ED8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.55);
 }
-.btn-secondary-action {
-  background: rgba(255, 255, 255, 0.04);
-  color: #F1F5F9;
+.btn-outline-glass {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-slate-100);
   font-weight: 500;
   font-size: 0.95rem;
-  padding: 0.85rem 1.75rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-subtle);
+  padding: 0.95rem 1.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-glass-bright);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
 }
-.btn-secondary-action:hover {
+.btn-outline-glass:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
+  transform: translateY(-2px);
 }
 
-/* Trust Metric Bar */
+/* ── Hero Architectural Blueprint Visual (Artwork) ── */
+.topology-chassis {
+  background: linear-gradient(180deg, rgba(16, 22, 35, 0.85) 0%, rgba(11, 15, 25, 0.95) 100%);
+  border: 1px solid var(--border-glass-bright);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+.topology-chassis::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+.topology-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-glass);
+}
+.topology-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--text-slate-400);
+  text-transform: uppercase;
+}
+.topology-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-emerald);
+  font-weight: 600;
+}
+.topology-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 6px var(--accent-emerald);
+}
+
+/* Interactive-feeling Visual Flow Nodes */
+.flow-diagram-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.flow-node-box {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+.flow-node-box:hover {
+  border-color: var(--border-accent);
+  background: rgba(59, 130, 246, 0.04);
+}
+.flow-node-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.flow-node-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-cyan);
+}
+.flow-node-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-white);
+}
+.flow-node-sub {
+  font-size: 0.75rem;
+  color: var(--text-slate-500);
+}
+.flow-node-metric {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.08);
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* SVG Connection Pipe with glowing pulse */
+.flow-connector-pipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+.flow-pipe-svg {
+  stroke: rgba(59, 130, 246, 0.4);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+  animation: flowDash 1.2s linear infinite;
+}
+@keyframes flowDash {
+  to { stroke-dashoffset: -8; }
+}
+
+/* ── Trust Metric Strip ── */
 .trust-metric-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 2.5rem;
+  gap: 2rem;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 3.5rem;
+  margin-top: 3rem;
 }
 @media (max-width: 860px) {
-  .trust-metric-bar {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .trust-metric-bar { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 480px) {
-  .trust-metric-bar {
-    grid-template-columns: 1fr;
-  }
-}
-.trust-metric-item {
-  display: flex;
-  flex-direction: column;
+  .trust-metric-bar { grid-template-columns: 1fr; }
 }
 .metric-number {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: 800;
-  color: #FFFFFF;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.25rem;
+  color: var(--text-white);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.35rem;
 }
 .metric-label {
-  font-size: 0.84rem;
-  color: #94A3B8;
-  line-height: 1.45;
+  font-size: 0.85rem;
+  color: var(--text-slate-400);
+  line-height: 1.5;
 }
 
-/* Section Shells */
+/* ── Content Section Shells (Negative Space Pacing) ── */
 .content-section {
-  padding: 5.5rem 1.5rem;
-  max-width: 1200px;
+  padding: 7.5rem 2rem;
+  max-width: 1260px;
   margin: 0 auto;
 }
 .section-header-row {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 1.75rem;
+  gap: 1.75rem;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 2rem;
 }
 .section-eyebrow {
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #60A5FA;
-  margin-bottom: 0.5rem;
+  color: var(--accent-cyan);
+  margin-bottom: 0.6rem;
   display: block;
 }
 .section-heading {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--text-white);
   letter-spacing: -0.03em;
   line-height: 1.15;
 }
 .section-subtext {
-  font-size: 1rem;
-  color: #94A3B8;
-  max-width: 500px;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  color: var(--text-slate-400);
+  max-width: 520px;
+  line-height: 1.65;
   margin: 0;
 }
 
-/* Services 3-Pillar Grid */
+/* ── Services 3-Pillar Grid with Artful Visual Headers ── */
 .pillars-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 @media (max-width: 960px) {
-  .pillars-grid {
-    grid-template-columns: 1fr;
-  }
+  .pillars-grid { grid-template-columns: 1fr; }
 }
 .pillar-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 2.25rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 2.25rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 .pillar-card:hover {
-  border-color: var(--border-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px -20px rgba(37, 99, 235, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Visual Illustration Schematics in Cards */
+.card-visual-header {
+  height: 90px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 .pillar-index {
-  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #60A5FA;
-  letter-spacing: 0.08em;
-  margin-bottom: 1rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
 }
 .pillar-title {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--text-white);
   margin-bottom: 0.85rem;
   line-height: 1.3;
 }
 .pillar-desc {
   font-size: 0.92rem;
-  color: #94A3B8;
-  line-height: 1.6;
+  color: var(--text-slate-400);
+  line-height: 1.65;
   margin-bottom: 1.5rem;
 }
 .pillar-deliverables-title {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #CBD5E1;
+  color: var(--text-slate-300);
   margin-bottom: 0.75rem;
 }
 .pillar-list {
   list-style: none;
   padding: 0;
   margin: 0 0 1.5rem;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-glass);
   padding-top: 1rem;
 }
 .pillar-list li {
   font-size: 0.85rem;
-  color: #94A3B8;
+  color: var(--text-slate-300);
   padding: 0.35rem 0;
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 .pillar-list li::before {
-  content: "✓";
-  color: #3B82F6;
+  content: "→";
+  color: var(--accent-blue);
   font-weight: bold;
 }
 .pillar-footer {
   margin-top: auto;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-glass);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .pillar-timeline {
   font-size: 0.82rem;
-  color: #94A3B8;
+  color: var(--text-slate-400);
 }
 .pillar-link {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: #60A5FA;
+  color: var(--accent-cyan);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 .pillar-link:hover {
   color: #FFFFFF;
 }
 
-/* Case Studies Grid */
+/* ── Case Studies Grid (High Contrast & Visual Punch) ── */
 .case-studies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
+  gap: 2rem;
 }
 @media (max-width: 960px) {
-  .case-studies-grid {
-    grid-template-columns: 1fr;
-  }
+  .case-studies-grid { grid-template-columns: 1fr; }
 }
 .case-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 2.25rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 2.25rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 .case-card:hover {
-  border-color: var(--border-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
 }
 .case-sector {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #38BDF8;
+  color: var(--accent-cyan);
   margin-bottom: 0.75rem;
 }
 .case-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--text-white);
   margin-bottom: 1.25rem;
   line-height: 1.35;
 }
@@ -537,168 +714,370 @@ body {
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #94A3B8;
-  margin-bottom: 0.35rem;
+  letter-spacing: 0.08em;
+  color: var(--text-slate-400);
+  margin-bottom: 0.4rem;
 }
 .case-block-text {
   font-size: 0.88rem;
-  color: #CBD5E1;
-  line-height: 1.55;
+  color: var(--text-slate-300);
+  line-height: 1.6;
   margin: 0;
 }
 .case-metrics-badge {
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  border-radius: 6px;
-  padding: 0.85rem 1rem;
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
   margin-top: auto;
 }
 .case-metric-highlight {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #34D399;
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.35rem;
 }
 .case-metric-subtext {
-  font-size: 0.76rem;
-  color: #94A3B8;
+  font-size: 0.78rem;
+  color: var(--text-slate-400);
   display: block;
 }
 
-/* Process Timeline (3 Steps) */
+/* ── Process Timeline ── */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 @media (max-width: 900px) {
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
+  .process-grid { grid-template-columns: 1fr; }
 }
 .process-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 2.25rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 2.25rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 .process-step-num {
-  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
   font-weight: 700;
-  color: #3B82F6;
-  margin-bottom: 0.75rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.85rem;
   display: block;
 }
 .process-title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #FFFFFF;
-  margin-bottom: 0.75rem;
+  color: var(--text-white);
+  margin-bottom: 0.85rem;
 }
 .process-desc {
-  font-size: 0.9rem;
-  color: #94A3B8;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Operating Commitments */
-.standards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-@media (max-width: 900px) {
-  .standards-container {
-    grid-template-columns: 1fr;
-  }
-}
-.standard-box {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 2.25rem 2rem;
-}
-.standard-box h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #FFFFFF;
-  margin-bottom: 0.75rem;
-}
-.standard-box p {
-  font-size: 0.9rem;
-  color: #94A3B8;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* FAQ Accordion Styling */
-.faq-list {
-  max-width: 860px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-.faq-box {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 1.75rem 2rem;
-}
-.faq-box h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #FFFFFF;
-  margin-bottom: 0.6rem;
-}
-.faq-box p {
   font-size: 0.92rem;
-  color: #94A3B8;
+  color: var(--text-slate-400);
   line-height: 1.65;
   margin: 0;
 }
 
-/* Contact Intake Card */
-.contact-chassis {
-  max-width: 780px;
-  margin: 0 auto;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+/* ── Operating Commitments ── */
+.standards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .standards-container { grid-template-columns: 1fr; }
+}
+.standard-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
   border-radius: 12px;
-  padding: 2.75rem 2.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  padding: 2.25rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+.standard-box h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.85rem;
+}
+.standard-box p {
+  font-size: 0.92rem;
+  color: var(--text-slate-400);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── FAQ ── */
+.faq-list {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.faq-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.faq-box h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.75rem;
+}
+.faq-box p {
+  font-size: 0.95rem;
+  color: var(--text-slate-400);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Consultation Intake Chassis ── */
+.contact-chassis {
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass-bright);
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
 }
 @media (max-width: 600px) {
-  .contact-chassis {
-    padding: 1.75rem 1.25rem;
-  }
+  .contact-chassis { padding: 2rem 1.5rem; }
 }
 .form-label {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: #F1F5F9;
-  margin-bottom: 0.5rem;
+  color: var(--text-slate-100);
+  margin-bottom: 0.6rem;
 }
 .form-input, .form-select, .form-textarea {
   width: 100%;
-  background: rgba(10, 14, 23, 0.8);
-  border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 0.85rem 1rem;
-  font-size: 0.92rem;
+  background: rgba(8, 11, 17, 0.85);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  padding: 0.95rem 1.15rem;
+  font-size: 0.95rem;
   color: #FFFFFF;
   font-family: inherit;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.25s ease;
 }
 .form-input:focus, .form-select:focus, .form-textarea:focus {
-  border-color: #3B82F6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
+
+/* ── The Fixed, Modern Studio Footer ── */
+.studio-footer {
+  background: #05070B;
+  border-top: 1px solid var(--border-glass);
+  padding: 5rem 2rem 3rem;
+  margin-top: 5rem;
+}
+.footer-container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.footer-top-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid var(--border-glass);
+}
+.footer-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #34D399;
+  background: rgba(16, 185, 129, 0.08);
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+.status-indicator-green {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px #10B981;
+}
+.footer-location-tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-slate-400);
+  letter-spacing: 0.04em;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.25fr;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 960px) {
+  .footer-main-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+}
+@media (max-width: 580px) {
+  .footer-main-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+.footer-col-brand .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+.footer-logo-img {
+  border-radius: 6px;
+}
+.footer-logo-text {
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+.footer-logo-text span {
+  color: var(--accent-blue);
+}
+.footer-brand-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-slate-400);
+  margin-bottom: 1.5rem;
+  max-width: 380px;
+}
+.footer-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.footer-tech-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.25rem 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-glass);
+  border-radius: 4px;
+  color: var(--text-slate-300);
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-white);
+  margin-bottom: 1.5rem;
+}
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer-link-list a {
+  font-size: 0.9rem;
+  color: var(--text-slate-400);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+.footer-link-list a:hover {
+  color: var(--text-white);
+  transform: translateX(3px);
+}
+
+.footer-inquiry-text {
+  font-size: 0.88rem;
+  color: var(--text-slate-400);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.footer-cta-link {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  transition: color 0.2s ease;
+}
+.footer-cta-link:hover {
+  color: #FFFFFF;
+}
+.footer-direct-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer-direct-links a {
+  font-size: 0.85rem;
+  color: var(--text-slate-300);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-direct-links a:hover {
+  color: var(--accent-cyan);
+}
+.footer-social-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+.footer-social-strip a {
+  color: var(--text-slate-400);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-social-strip a:hover {
+  color: var(--text-white);
+}
+.footer-sep {
+  color: var(--text-slate-500);
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid var(--border-glass);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-bottom-bar p {
+  font-size: 0.85rem;
+  color: var(--text-slate-500);
+  margin: 0;
+}
+.footer-bottom-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.82rem;
+  color: var(--text-slate-500);
+}
+
 </style>
 <!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
 <!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
@@ -948,87 +1327,177 @@ body {
 </button>
 </header>
 <main id="main-content">
-  <!-- ── Studio Hero Section ── -->
+  <!-- ── Studio Hero Section (Deep Negative Space & Visual Schematic) ── -->
   <section class="studio-hero">
-    <div class="reveal">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        <span>BOUTIQUE SOFTWARE &amp; AUTOMATION STUDIO</span>
+    <div class="hero-split-grid reveal">
+      <!-- Left Editorial Column -->
+      <div>
+        <div class="hero-pill-badge">
+          <span class="hero-badge-pulse"></span>
+          <span>BOUTIQUE SOFTWARE &amp; AUTOMATION STUDIO</span>
+        </div>
+
+        <h1 class="hero-h1">
+          Engineering the <span class="hero-h1-gradient">software &amp; automation</span> that scale your revenue.
+        </h1>
+
+        <p class="hero-lead-text">
+          From custom SaaS platforms and robust data pipelines to autonomous business workflows. We partner with founders and growth teams to design, build, and deploy production systems in 7 to 14 days on fixed scopes.
+        </p>
+
+        <div class="hero-btn-row">
+          <a class="btn-primary-glow" href="#contact">
+            Schedule an Architecture Call
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a class="btn-outline-glass" href="#work">Explore Client Work ↓</a>
+        </div>
       </div>
 
-      <h1 class="hero-title">
-        We build the custom software and intelligent automation that power your business.
-      </h1>
+      <!-- Right Visual Schematic: Production System Topology (Art Style) -->
+      <div class="topology-chassis">
+        <div class="topology-header">
+          <span class="topology-title">System Architecture // Topology</span>
+          <span class="topology-status">Active Cluster</span>
+        </div>
 
-      <p class="hero-subtitle">
-        From custom SaaS applications and robust data extraction systems to automated operational workflows. We partner with founders and growth-focused teams to deliver production-ready systems on fixed scopes in 7 to 14 days.
-      </p>
+        <div class="flow-diagram-container">
+          <!-- Node 1: Ingestion -->
+          <div class="flow-node-box">
+            <div class="flow-node-info">
+              <div class="flow-node-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 17 4 4 4-4"></path></svg>
+              </div>
+              <div>
+                <div class="flow-node-label">Ingestion &amp; Scraping Engine</div>
+                <div class="flow-node-sub">Residential proxy rotation &amp; TLS bypass</div>
+              </div>
+            </div>
+            <span class="flow-node-metric">10k rec/day</span>
+          </div>
 
-      <div class="hero-cta-group">
-        <a class="btn-primary-action" href="#contact">
-          Schedule an Architecture Call
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a class="btn-secondary-action" href="#work">Explore Client Work ↓</a>
+          <!-- Connector 1 -->
+          <div class="flow-connector-pipe">
+            <svg height="20" width="20" class="flow-pipe-svg"><line x1="10" y1="0" x2="10" y2="20"></line></svg>
+          </div>
+
+          <!-- Node 2: Processing & Deduplication -->
+          <div class="flow-node-box">
+            <div class="flow-node-info">
+              <div class="flow-node-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="m9 12 2 2 4-4"></path></svg>
+              </div>
+              <div>
+                <div class="flow-node-label">Async Validation &amp; Deduplication</div>
+                <div class="flow-node-sub">Distributed background task queue</div>
+              </div>
+            </div>
+            <span class="flow-node-metric">&lt; 120ms</span>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="flow-connector-pipe">
+            <svg height="20" width="20" class="flow-pipe-svg"><line x1="10" y1="0" x2="10" y2="20"></line></svg>
+          </div>
+
+          <!-- Node 3: Storage & Delivery -->
+          <div class="flow-node-box">
+            <div class="flow-node-info">
+              <div class="flow-node-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+              </div>
+              <div>
+                <div class="flow-node-label">PostgreSQL &amp; Automated Delivery</div>
+                <div class="flow-node-sub">CRM sync, authenticated client portal, SES</div>
+              </div>
+            </div>
+            <span class="flow-node-metric">99.9% Uptime</span>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <!-- Trust Metrics Bar -->
-      <div class="trust-metric-bar">
-        <div class="trust-metric-item">
-          <span class="metric-number">7–14 Days</span>
-          <span class="metric-label">Rapid sprint execution from scope to deployment</span>
-        </div>
-        <div class="trust-metric-item">
-          <span class="metric-number">100% Transfer</span>
-          <span class="metric-label">Complete source code &amp; infrastructure ownership</span>
-        </div>
-        <div class="trust-metric-item">
-          <span class="metric-number">Fixed Scopes</span>
-          <span class="metric-label">Guaranteed deliverables with zero hourly billing creep</span>
-        </div>
-        <div class="trust-metric-item">
-          <span class="metric-number">Direct Access</span>
-          <span class="metric-label">Collaborate directly with senior systems architects</span>
-        </div>
+    <!-- Trust Metric Strip -->
+    <div class="trust-metric-bar reveal">
+      <div class="trust-metric-item">
+        <span class="metric-number">7–14 Days</span>
+        <span class="metric-label">Rapid sprint execution from architecture to production deployment</span>
+      </div>
+      <div class="trust-metric-item">
+        <span class="metric-number">100% Transfer</span>
+        <span class="metric-label">Complete source code, cloud configurations, and database ownership</span>
+      </div>
+      <div class="trust-metric-item">
+        <span class="metric-number">Fixed Scopes</span>
+        <span class="metric-label">Guaranteed deliverables and deadlines with zero hourly budget creep</span>
+      </div>
+      <div class="trust-metric-item">
+        <span class="metric-number">Senior Engineers</span>
+        <span class="metric-label">Collaborate directly with the system architects writing the code</span>
       </div>
     </div>
   </section>
 
-  <!-- ── Services / Capabilities ── -->
-  <section id="services" class="content-section" style="border-top: 1px solid var(--border-subtle);">
+  <!-- ── Core Capabilities with Graphic Schematics ── -->
+  <section id="services" class="content-section" style="border-top: 1px solid var(--border-glass);">
     <div class="section-header-row reveal">
       <div>
         <span class="section-eyebrow">Core Capabilities</span>
         <h2 class="section-heading">What We Build</h2>
       </div>
       <p class="section-subtext">
-        Fixed-timeline engineering engagements designed to eliminate manual bottlenecks, integrate fragmented tools, and scale revenue.
+        Focused engineering engagements designed to eliminate operational bottlenecks, integrate fragmented software, and scale your business.
       </p>
     </div>
 
     <div class="pillars-grid">
       <!-- Pillar 01 -->
       <div class="pillar-card reveal">
+        <!-- Visual Schematic: SaaS Portal Wireframe -->
+        <div class="card-visual-header">
+          <svg width="220" height="70" viewBox="0 0 220 70" fill="none">
+            <rect x="10" y="8" width="200" height="54" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+            <rect x="20" y="16" width="30" height="6" rx="2" fill="#3B82F6"/>
+            <rect x="20" y="28" width="60" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
+            <rect x="20" y="38" width="45" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+            <rect x="110" y="20" width="85" height="30" rx="4" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.2)"/>
+            <path d="M120 40 L135 32 L150 36 L165 26 L180 30" stroke="#38BDF8" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+
         <span class="pillar-index">01 // CUSTOM PLATFORMS</span>
         <h3 class="pillar-title">Custom Web Platforms &amp; Client Portals</h3>
         <p class="pillar-desc">
-          Replace spreadsheet chaos and rigid no-code tools with tailored web software engineered for speed, enterprise-grade data security, and seamless customer experiences.
+          Replace spreadsheet chaos and rigid no-code tools with tailored web software engineered for speed, enterprise data security, and seamless customer experiences.
         </p>
         <div class="pillar-deliverables-title">What We Deliver</div>
         <ul class="pillar-list">
-          <li>Modern full-stack web applications (FastAPI / Next.js)</li>
+          <li>Full-stack web applications (FastAPI / Next.js)</li>
           <li>Authenticated client &amp; internal administrative portals</li>
           <li>High-concurrency REST &amp; GraphQL API backends</li>
-          <li>Relational database modeling with PostgreSQL</li>
+          <li>Scalable relational database modeling with PostgreSQL</li>
         </ul>
         <div class="pillar-footer">
-          <span class="pillar-timeline">Typical Timeline: 2–3 weeks</span>
+          <span class="pillar-timeline">Timeline: 2–3 weeks</span>
           <a class="pillar-link" href="#contact">Discuss Scope →</a>
         </div>
       </div>
 
       <!-- Pillar 02 -->
       <div class="pillar-card reveal reveal-delay-1">
+        <!-- Visual Schematic: Automated Workflow Nodes -->
+        <div class="card-visual-header">
+          <svg width="220" height="70" viewBox="0 0 220 70" fill="none">
+            <circle cx="35" cy="35" r="14" fill="rgba(16,185,129,0.1)" stroke="#10B981" stroke-width="1.5"/>
+            <path d="M30 35 L34 39 L41 31" stroke="#10B981" stroke-width="1.8"/>
+            <line x1="50" y1="35" x2="85" y2="35" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
+            <rect x="85" y="21" width="50" height="28" rx="4" fill="rgba(59,130,246,0.1)" stroke="#3B82F6"/>
+            <line x1="135" y1="35" x2="170" y2="35" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
+            <circle cx="185" cy="35" r="14" fill="rgba(56,189,248,0.1)" stroke="#38BDF8" stroke-width="1.5"/>
+            <path d="M180 35 L190 35 M185 30 L185 40" stroke="#38BDF8" stroke-width="1.8"/>
+          </svg>
+        </div>
+
         <span class="pillar-index">02 // OPERATIONS AUTOMATION</span>
         <h3 class="pillar-title">Automated Workflows &amp; System Integration</h3>
         <p class="pillar-desc">
@@ -1042,13 +1511,25 @@ body {
           <li>Custom webhook pipelines and background task queues</li>
         </ul>
         <div class="pillar-footer">
-          <span class="pillar-timeline">Typical Timeline: 1–2 weeks</span>
+          <span class="pillar-timeline">Timeline: 1–2 weeks</span>
           <a class="pillar-link" href="#contact">Discuss Scope →</a>
         </div>
       </div>
 
       <!-- Pillar 03 -->
       <div class="pillar-card reveal reveal-delay-2">
+        <!-- Visual Schematic: Outreach Deliverability Shield -->
+        <div class="card-visual-header">
+          <svg width="220" height="70" viewBox="0 0 220 70" fill="none">
+            <rect x="25" y="16" width="45" height="38" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.15)"/>
+            <line x1="70" y1="35" x2="105" y2="35" stroke="#3B82F6" stroke-width="1.5"/>
+            <path d="M130 18 L155 24 V40 C155 48 143 54 130 58 C117 54 105 48 105 40 V24 Z" fill="rgba(59,130,246,0.1)" stroke="#3B82F6" stroke-width="1.5"/>
+            <path d="M123 38 L128 43 L138 33" stroke="#38BDF8" stroke-width="2"/>
+            <circle cx="185" cy="35" r="14" fill="rgba(16,185,129,0.1)" stroke="#10B981" stroke-width="1.5"/>
+            <text x="180" y="39" fill="#10B981" font-size="10" font-family="monospace" font-weight="bold">10/10</text>
+          </svg>
+        </div>
+
         <span class="pillar-index">03 // MARKET DATA &amp; OUTREACH</span>
         <h3 class="pillar-title">Data Extraction &amp; Outreach Infrastructure</h3>
         <p class="pillar-desc">
@@ -1062,7 +1543,7 @@ body {
           <li>100% cryptographic enforcement (SPF, DKIM 2048, DMARC)</li>
         </ul>
         <div class="pillar-footer">
-          <span class="pillar-timeline">Typical Timeline: 1–2 weeks</span>
+          <span class="pillar-timeline">Timeline: 1–2 weeks</span>
           <a class="pillar-link" href="#contact">Discuss Scope →</a>
         </div>
       </div>
@@ -1070,7 +1551,7 @@ body {
   </section>
 
   <!-- ── Proven Case Studies ── -->
-  <section id="work" class="content-section" style="border-top: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.01);">
+  <section id="work" class="content-section" style="border-top: 1px solid var(--border-glass);">
     <div class="section-header-row reveal">
       <div>
         <span class="section-eyebrow">Proven Engagements</span>
@@ -1148,7 +1629,7 @@ body {
   </section>
 
   <!-- ── How We Work (Delivery Process) ── -->
-  <section id="process" class="content-section" style="border-top: 1px solid var(--border-subtle);">
+  <section id="process" class="content-section" style="border-top: 1px solid var(--border-glass);">
     <div class="section-header-row reveal">
       <div>
         <span class="section-eyebrow">Our Methodology</span>
@@ -1187,7 +1668,7 @@ body {
   </section>
 
   <!-- ── Operating Standards ── -->
-  <section id="standards" class="content-section" style="border-top: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015);">
+  <section id="standards" class="content-section" style="border-top: 1px solid var(--border-glass);">
     <div class="section-header-row reveal">
       <div>
         <span class="section-eyebrow">Our Commitments</span>
@@ -1217,7 +1698,7 @@ body {
   </section>
 
   <!-- ── FAQ Section ── -->
-  <section id="faq" class="content-section" style="border-top: 1px solid var(--border-subtle);">
+  <section id="faq" class="content-section" style="border-top: 1px solid var(--border-glass);">
     <div class="section-header-row reveal">
       <div>
         <span class="section-eyebrow">Client Questions</span>
@@ -1252,7 +1733,7 @@ body {
   </section>
 
   <!-- ── Consultation / Intake Form ── -->
-  <section id="contact" class="content-section" style="border-top: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.01);">
+  <section id="contact" class="content-section" style="border-top: 1px solid var(--border-glass);">
     <div class="section-header-row reveal" style="text-align: center; justify-content: center; border-bottom: none; margin-bottom: 2rem;">
       <div style="max-width: 650px;">
         <span class="section-eyebrow">Get In Touch</span>
@@ -1299,7 +1780,7 @@ body {
           <textarea class="form-textarea" id="cf-message" name="message" placeholder="Briefly describe the system you need built, key business requirements, and target timeline…" required="" rows="4"></textarea>
         </div>
 
-        <button class="btn-primary-action" style="width: 100%; margin-top: 2rem; justify-content: center; cursor: pointer; border: none; font-size: 1rem; padding: 1rem;" type="submit">
+        <button class="btn-primary-glow" style="width: 100%; margin-top: 2rem; justify-content: center; cursor: pointer; border: none; font-size: 1rem; padding: 1rem;" type="submit">
           Request Technical Consultation →
         </button>
 
@@ -1308,13 +1789,13 @@ body {
         </div>
       </form>
 
-      <div style="margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-        <span style="font-size: 0.85rem; color: var(--text-muted);">Prefer direct communication?</span>
-        <div style="display: flex; gap: 1.25rem;">
-          <a href="https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." target="_blank" rel="noopener" style="font-size: 0.85rem; color: #34D399; text-decoration: none; font-weight: 500;">
+      <div style="margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--border-glass); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <span style="font-size: 0.88rem; color: var(--text-slate-400);">Prefer direct communication?</span>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." target="_blank" rel="noopener" style="font-size: 0.88rem; color: #34D399; text-decoration: none; font-weight: 500;">
             WhatsApp Direct ↗
           </a>
-          <a href="mailto:hemal.shah2004@gmail.com" style="font-size: 0.85rem; color: #60A5FA; text-decoration: none; font-weight: 500;">
+          <a href="mailto:hemal.shah2004@gmail.com" style="font-size: 0.88rem; color: #60A5FA; text-decoration: none; font-weight: 500;">
             Email Direct ↗
           </a>
         </div>
@@ -1322,65 +1803,86 @@ body {
     </div>
   </section>
 </main>
-<footer class="site-footer">
-<div class="footer-inner">
-<div class="footer-brand">
-<a class="logo" href="/" style="display:inline-flex;align-items:center;gap:0.65rem;text-decoration:none;margin-bottom:0.75rem;"><img alt="TENSIX Swiss Logo" class="logo-img" height="36" src="assets/favicon.webp?v=2.0" style="border-radius:8px;" width="36"/><span style="font-weight:800;font-size:1.25rem;letter-spacing:0.06em;color:#fff;">TEN<span class="gradient-text">SIX</span></span></a>
-<p>Enterprise Engineering Studio | Autonomous AI Agents, Cloud VPS &amp; High-Concurrency Software</p>
-<address style="font-size:0.82rem;color:#94a3b8;font-style:normal;margin-top:0.5rem;line-height:1.6;">
-TENSIX HQ · Navrangpura, Ahmedabad<br/>
-Gujarat 380009 · India
-</address>
-</div>
-<nav class="footer-nav">
-<h3>Navigate</h3>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="work.html">Work</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="blogs.html">Insights</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<nav aria-label="Resources navigation" class="footer-nav">
-<h3>Core Pillars</h3>
-<ul>
-<li><a href="services.html#ai">Autonomous AI &amp; GraphRAG</a></li>
-<li><a href="services.html#cloud">Cloud VPS &amp; CI/CD Pipelines</a></li>
-<li><a href="services.html#software">Full-Stack SaaS &amp; APIs</a></li>
-<li><a href="services.html#search">Search Intelligence (GEO/AEO)</a></li>
-</ul>
-</nav>
-<nav aria-label="Ahmedabad Hubs navigation" class="footer-nav">
-<h3>Ahmedabad Hubs</h3>
-<ul>
-<li><a href="navrangpura.html">Navrangpura Engineering Hub</a></li>
-<li><a href="ahmedabad-software-engineering.html">Software Engineering Ahmedabad</a></li>
-<li><a href="resources.html">Technical Whitepapers</a></li>
-</ul>
-</nav>
-<div class="footer-social">
-<h3>Connect</h3>
-<div class="social-row">
-<a aria-label="GitHub" class="social-btn" href="https://github.com/hemal9102" rel="noopener" target="_blank">
-<svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
-</a>
-<a aria-label="LinkedIn" class="social-btn" href="https://www.linkedin.com/in/hemal-shah-49a728362/" rel="noopener" target="_blank">
-<svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"></path></svg>
-</a>
-<a aria-label="Instagram" class="social-btn" href="https://www.instagram.com/hemal.io/" rel="noopener" target="_blank">
-<svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
-</a>
-<a aria-label="Email" class="social-btn" href="mailto:hemal.shah2004@gmail.com">
-<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
-</div>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2026 TENSIX · Boutique Software &amp; Automation Studio. All rights reserved.</p>
-</div>
+<footer class="studio-footer">
+  <div class="footer-container">
+    <div class="footer-top-strip">
+      <div class="footer-status-pill">
+        <span class="status-indicator-green"></span>
+        <span>TENSIX Production Systems: 99.98% Operational Uptime</span>
+      </div>
+      <div class="footer-location-tag">
+        <span>Navrangpura, Ahmedabad 380009 · Global Remote Engineering Engagements</span>
+      </div>
+    </div>
+
+    <div class="footer-main-grid">
+      <!-- Column 1: Studio Identity -->
+      <div class="footer-col-brand">
+        <a class="footer-logo" href="/">
+          <img src="assets/favicon.webp?v=2.0" alt="TENSIX Logo" width="32" height="32" class="footer-logo-img"/>
+          <span class="footer-logo-text">TEN<span>SIX</span></span>
+        </a>
+        <p class="footer-brand-desc">
+          Boutique software engineering and automation studio. We architect and deploy custom SaaS platforms, high-velocity data pipelines, and self-governing business automations.
+        </p>
+        <div class="footer-badge-row">
+          <span class="footer-tech-badge">Python / FastAPI</span>
+          <span class="footer-tech-badge">Next.js</span>
+          <span class="footer-tech-badge">PostgreSQL</span>
+          <span class="footer-tech-badge">Cloud VPS &amp; CI/CD</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Solutions -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Solutions</h4>
+        <ul class="footer-link-list">
+          <li><a href="#services">Custom Web Applications</a></li>
+          <li><a href="#services">Operations Automation</a></li>
+          <li><a href="#services">Data Extraction Engines</a></li>
+          <li><a href="#services">Dedicated Outreach Infra</a></li>
+          <li><a href="#services">Cloud VPS &amp; CI/CD Pipelines</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Selected Work -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Selected Work</h4>
+        <ul class="footer-link-list">
+          <li><a href="#work">B2B Prospecting Engine</a></li>
+          <li><a href="#work">Clinic Booking &amp; Triage</a></li>
+          <li><a href="#work">Reputation Management</a></li>
+          <li><a href="#process">Our 3-Phase Delivery</a></li>
+          <li><a href="#standards">The TENSIX Guarantee</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Direct Inquiries -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Direct Inquiries</h4>
+        <p class="footer-inquiry-text">Available for select Q2/Q3 engineering sprints and architecture audits.</p>
+        <a href="#contact" class="footer-cta-link">Schedule Consultation →</a>
+        <div class="footer-direct-links">
+          <a href="https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." target="_blank" rel="noopener">WhatsApp Direct ↗</a>
+          <a href="mailto:hemal.shah2004@gmail.com">hemal.shah2004@gmail.com</a>
+        </div>
+        <div class="footer-social-strip">
+          <a href="https://github.com/hemal9102" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <span class="footer-sep">·</span>
+          <a href="https://www.linkedin.com/in/hemal-shah-49a728362/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p>© 2026 TENSIX Engineering Studio. All code &amp; architectures delivered with 100% client ownership.</p>
+      <div class="footer-bottom-meta">
+        <span>Fixed-Scope Sprints</span>
+        <span>·</span>
+        <span>Zero Hourly Creep</span>
+      </div>
+    </div>
+  </div>
 </footer>
 <script defer="" src="script.js?v=1.3"></script>
 <aside aria-label="WhatsApp Chat">
