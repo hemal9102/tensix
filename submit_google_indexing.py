@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Google Indexing API Bulk Submitter
+Google Indexing API Bulk Submitter for tensix.in
 Uses google-service-account.json to submit sitemap URLs directly to Google's Indexing API.
 """
 
@@ -30,16 +30,18 @@ def get_urls_from_sitemap():
 def get_access_token():
     if not os.path.exists(SERVICE_ACCOUNT_FILE):
         print(f"[ERROR] Service account JSON not found at {SERVICE_ACCOUNT_FILE}")
-        return None
+        return None, None
     try:
         credentials = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE, scopes=SCOPES
         )
         credentials.refresh(Request())
-        return credentials.token
+        with open(SERVICE_ACCOUNT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return credentials.token, data.get("client_email")
     except Exception as e:
         print(f"[ERROR] Failed to obtain access token: {e}")
-        return None
+        return None, None
 
 def submit_url(url, token):
     headers = {
@@ -61,7 +63,7 @@ def submit_url(url, token):
 
 def main():
     print("=" * 60)
-    print("  Google Indexing API — Bulk URL Publisher")
+    print("  Google Indexing API — Bulk URL Publisher (tensix.in)")
     print("=" * 60)
 
     urls = get_urls_from_sitemap()
@@ -70,13 +72,15 @@ def main():
         return
 
     print(f"\n[INFO] Found {len(urls)} URLs in sitemap.xml")
-    print("[INFO] Authenticating via google-service-account.json ...")
-    token = get_access_token()
+    print(f"[INFO] Using credentials: {SERVICE_ACCOUNT_FILE}")
+    token, client_email = get_access_token()
     if not token:
         print("[ERROR] Authentication failed. Exiting.")
         return
 
-    print("[OK] Authenticated successfully with Google Indexing API.\n")
+    print(f"[OK] Authenticated successfully as: {client_email}")
+    print("[NOTE] Ensure this service account email is added as an OWNER in Google Search Console for tensix.in / https://www.tensix.in\n")
+
     success_count = 0
     fail_count = 0
 
