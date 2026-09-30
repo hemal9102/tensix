@@ -45,8 +45,8 @@ def submit_indexnow(host, key, key_location, url_list):
 if __name__ == '__main__':
     root_dir = os.path.dirname(os.path.abspath(__file__))
     sitemap_path = os.path.join(root_dir, "sitemap.xml")
-    host = "www.tensix.in"
-    key = "85d35ffc8a454f8ba91ab6e0dde7adf4"
+    host = "tensix.in"
+    key = "c4b69324e9334bbba3ff6f3f02db4fb6"
     key_location = f"https://{host}/{key}.txt"
     
     urls = get_urls_from_sitemap(sitemap_path)
