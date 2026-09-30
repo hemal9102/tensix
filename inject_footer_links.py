@@ -8,7 +8,7 @@ inject_block = '''<nav aria-label="Ahmedabad Hubs navigation" class="footer-nav"
 <ul>
 <li><a href="hk-engineering-ahmedabad.html">HK Engineering Ahmedabad</a></li>
 <li><a href="ahmedabad-software-engineering.html">Software Engineering Ahmedabad</a></li>
-<li><a href="navrangpura.html">Navrangpura Hub</a></li>
+<li><a href="software-company-in-navrangpura-ahmedabad.html">Navrangpura Hub</a></li>
 </ul>
 </nav>
 '''

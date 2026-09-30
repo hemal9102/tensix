@@ -120,6 +120,46 @@
   ],
   "redirects": [
     {
+      "source": "/whoami",
+      "destination": "/hemal-shah",
+      "permanent": true
+    },
+    {
+      "source": "/whoami.html",
+      "destination": "/hemal-shah",
+      "permanent": true
+    },
+    {
+      "source": "/wr1",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/wr1.html",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/navrangpura",
+      "destination": "/software-company-in-navrangpura-ahmedabad",
+      "permanent": true
+    },
+    {
+      "source": "/navrangpura.html",
+      "destination": "/software-company-in-navrangpura-ahmedabad",
+      "permanent": true
+    },
+    {
+      "source": "/compare",
+      "destination": "/tensix-vs-traditional-agencies",
+      "permanent": true
+    },
+    {
+      "source": "/compare.html",
+      "destination": "/tensix-vs-traditional-agencies",
+      "permanent": true
+    },
+    {
       "source": "/hk/blogs",
       "destination": "/blogs",
       "permanent": true

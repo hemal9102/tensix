@@ -47,7 +47,7 @@ for file_path in sorted(html_files):
         priority = "0.8"
         
     # Some URLs might be backup or temp files, let's filter wr1.html if present
-    if "wr1.html" in file_path:
+    if "case-studies.html" in file_path:
         continue
 
     xml_lines.append('  <url>')

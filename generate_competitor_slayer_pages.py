@@ -13,7 +13,7 @@ import re
 ROOT = r"H:\portfolio_website\tensix"
 
 # 1. Read navrangpura.html as the structural template
-with open(os.path.join(ROOT, "navrangpura.html"), "r", encoding="utf-8") as f:
+with open(os.path.join(ROOT, "software-company-in-navrangpura-ahmedabad.html"), "r", encoding="utf-8") as f:
     nav_template = f.read()
 
 # ==========================================

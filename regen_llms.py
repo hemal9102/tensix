@@ -11,9 +11,9 @@ PAGES = []
 # Prioritize root core pages
 CORE_PAGES = [
     "index.html", "about.html", "services.html", "work.html",
-    "contact.html", "team.html", "blogs.html", "whoami.html",
-    "compare.html", "frameworks.html", "gallery.html", "resources.html",
-    "wr1.html", "navrangpura.html", "ahmedabad-software-engineering.html",
+    "contact.html", "team.html", "blogs.html", "hemal-shah.html",
+    "tensix-vs-traditional-agencies.html", "frameworks.html", "gallery.html", "resources.html",
+    "case-studies.html", "software-company-in-navrangpura-ahmedabad.html", "ahmedabad-software-engineering.html",
     "saas-developer-ahmedabad.html", "best-software-company-in-gota.html",
     "hk-engineering-ahmedabad.html"
 ]

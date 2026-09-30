@@ -85,7 +85,7 @@ new_cta_and_footer = """  <!-- ── CTA / Contact Banner ───────
         <h3>Resources</h3>
         <ul>
           <li><a href="../resources.html">AI Resources</a></li>
-          <li><a href="../compare.html">Comparisons</a></li>
+          <li><a href="../tensix-vs-traditional-agencies.html">Comparisons</a></li>
           <li><a href="../frameworks.html">Proprietary Frameworks</a></li>
         </ul>
       </nav>
