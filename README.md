@@ -47,6 +47,15 @@
 - **Zero-Downtime Guarantee:** Seamless DNS cutovers and database migrations.
 - **Complete IP Ownership:** Client retains 100% ownership of code, server keys, and data from Day 1.
 - **Direct Lead Architect Access:** Direct collaboration with Lead Architect Hemal Shah.
+---
+
+## ⚡ Hosting & Instant Indexing Infrastructure
+
+- **Domain & DNS:** `tensix.in` managed via Cloudflare authoritative DNS (`lina.ns.cloudflare.com`, `mark.ns.cloudflare.com`) routing to Vercel edge.
+- **Apex & Subdomain Routing:** `tensix.in` automatically 308-redirects to canonical `www.tensix.in`.
+- **Search Engine Instant Submission:**
+  - **Google Indexing API:** `python submit_google_indexing.py` (37 sitemap URLs pushed via authorized service account).
+  - **IndexNow API:** `python submit_indexnow.py` (Bing, Yandex, Seznam instant push with root verification key `c4b69324e9334bbba3ff6f3f02db4fb6.txt`).
 
 ---
 
