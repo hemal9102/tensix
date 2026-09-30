@@ -33,7 +33,7 @@ git push origin main
 
 ---
 
-## 1. PROJECT IDENTITY
+## 1. PROJECT IDENTITY & SCOPE
 
 | Field            | Value                                                              |
 |------------------|--------------------------------------------------------------------|
@@ -42,7 +42,7 @@ git push origin main
 | **Canonical URL**| `https://tensix.in/` (also serves `https://www.tensix.in/`)         |
 | **Location**     | Navrangpura, Ahmedabad, Gujarat 380009, India (23.0366° N, 72.5615° E)|
 | **Stack**        | Semantic HTML5 + Vanilla CSS3 / JS + Vercel Edge Serverless        |
-| **Goal**         | Dominance in AI Swarms, Cloud VPS CI/CD, AEO/GEO Search Visibility |
+| **Total Pages**  | 37 Production Pages (All passing Schema and Crawler Audits)         |
 
 ---
 
@@ -84,13 +84,28 @@ python submit_indexnow.py
 
 ---
 
-## 4. SCHEMA & SEO RULES — MANDATORY
+## 4. DESIGN SYSTEMS & CORE COMPONENTS ACROSS THE SITE
+
+### 4.1 Swiss Industrial Design System
+- **Monochrome Brutalist Aesthetic:** Precision typography, dark-mode terminal consoles, high-contrast badges, and negative space ratios.
+- **Interactive ROI Calculator:** Embedded client savings estimator comparing SaaS bloat vs bare-metal Python/VPS setups.
+- **Live Diagnostic Console:** Animated telemetry dashboard on the homepage showing agent loop status, ping response, and system throughput.
+- **Architectural Topology Schematics:** In-line SVG diagrams rendering zero-downtime CI/CD pipelines, reverse proxies, and GraphRAG knowledge flows.
+
+### 4.2 High-Converting Competitor & Comparison Matrices
+- **`tensix-vs-traditional-agencies.html`:** Full 7-dimension comparison matrix contrasting TENSIX against Indian agencies (Elsner, KrishaWeb, Uplers, Growth Hackers, WPWeb Infotech).
+- **`services.html`:** Complete 6-stage hybrid delivery pipeline (Blueprint &rarr; Sandbox &rarr; Engineering &rarr; Hardening &rarr; Verification &rarr; Retainer).
+- **Local Industry Digital Survival Guides:** 6 long-form whitepapers targeting Ahmedabad's economic clusters (Textiles, Pharma, Machinery, Real Estate, Jewelry, Healthcare).
+
+---
+
+## 5. SCHEMA, SEO & AUDIT RULES — MANDATORY
 
 ### ✅ ALWAYS DO
 - Use `@graph` arrays — never standalone `@type` blocks.
 - Every page must contain: `WebPage/Article`, `BreadcrumbList`, and `FAQPage` where relevant.
-- Ensure all 37 pages pass `python validate_schemas.py` with 0 errors.
-- Ensure all internal links pass `python screaming_frog_audit.py` with 0 broken links and 0 orphans.
+- All 37 pages must pass `python validate_schemas.py` with 0 errors before pushing.
+- All internal links must pass `python screaming_frog_audit.py` with 0 broken links and 0 orphans.
 - Keep `sitemap.xml` strictly updated with all canonical URLs.
 
 ### ❌ NEVER DO
@@ -101,7 +116,7 @@ python submit_indexnow.py
 
 ---
 
-## 5. REBRANDING & DISAMBIGUATION
+## 6. REBRANDING & DISAMBIGUATION
 
 - **TENSIX** is an elite software, autonomous AI agent, and cloud engineering studio.
 - It was previously incubated under the engineering alias *HK Engineering*.
