@@ -226,6 +226,121 @@
       line-height: 1.4;
     }
 
+    /* ── Hybrid Delivery Pipeline & Delivery Model Styling ── */
+    .delivery-pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .pipeline-step-card {
+      background: rgba(15, 17, 24, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
+      padding: 1.75rem 1.5rem;
+      position: relative;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .pipeline-step-card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+    .pipeline-step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .pipeline-step-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .pipeline-step-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      flex: 1;
+    }
+    .pipeline-step-badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      display: inline-block;
+      align-self: flex-start;
+    }
+
+    /* Comparison Table Styling */
+    .compare-table-container {
+      overflow-x: auto;
+      margin: 2.5rem 0;
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(12, 14, 21, 0.9);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .compare-table th, .compare-table td {
+      padding: 1.1rem 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .compare-table th {
+      background: rgba(255, 255, 255, 0.03);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .compare-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .compare-table td:first-child {
+      font-weight: 600;
+      color: #e2e8f0;
+      width: 28%;
+    }
+    .compare-tensix-col {
+      background: rgba(59, 130, 246, 0.06) !important;
+      border-left: 2px solid rgba(59, 130, 246, 0.4);
+      border-right: 2px solid rgba(59, 130, 246, 0.4);
+      color: #93c5fd !important;
+      font-weight: 600;
+    }
+    th.compare-tensix-col {
+      background: rgba(59, 130, 246, 0.15) !important;
+      color: #fff !important;
+    }
+
+    /* Currency and Pricing Badges */
+    .pricing-usd {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-left: 0.4rem;
+    }
+
 /* Mobile Contrast Fix */
 @media (max-width: 768px) {
   .site-footer { background-color: #080d19 !important; }
@@ -849,6 +964,16 @@
           },
           "price": "29999",
           "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hybrid Retainers & Dedicated Autonomous AI Pod",
+            "description": "Continuous agile engineering sprints paired with dedicated 24/7 autonomous AI multi-agent swarms (LangGraph, FastMCP), server maintenance, GEO/AEO authority monitoring, and direct access to Lead Architect Hemal Shah."
+          },
+          "price": "39999",
+          "priceCurrency": "INR"
         }
       ]
     },
@@ -1151,6 +1276,7 @@
       <button class="pricing-tab-btn" data-target="pricing-cloud" onclick="switchPricing('pricing-cloud', this)">☁️ Cloud VPS &amp; CI/CD</button>
       <button class="pricing-tab-btn" data-target="pricing-software" onclick="switchPricing('pricing-software', this)">⚡ Custom Software &amp; SaaS</button>
       <button class="pricing-tab-btn" data-target="pricing-ai" onclick="switchPricing('pricing-ai', this)">🧠 Autonomous AI Swarms</button>
+      <button class="pricing-tab-btn" data-target="pricing-retainer" onclick="switchPricing('pricing-retainer', this)" style="border-color: rgba(139,92,246,0.6); background: rgba(139,92,246,0.12); color: #c4b5fd;">🚀 Retainers &amp; Dedicated AI</button>
     </div>
   </div>
 
@@ -1582,6 +1708,78 @@
     </div>
   </div>
 
+  <!-- ── 7. Hybrid Retainers & Dedicated AI Swarm (Borrowing Best from Global Agencies + Unique TENSIX AI) ── -->
+  <div class="pricing-group" id="pricing-retainer">
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal hover-lift">
+        <div class="pricing-header">
+          <h3>Growth Engine Retainer</h3>
+          <p class="pricing-hook">Ongoing engineering, GEO/AEO search prominence, and server maintenance for scaling businesses.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹39,999<span class="pricing-usd">($499)</span></span>
+            <span class="pricing-period">/ month (cancel anytime)</span>
+          </div>
+          <span class="pricing-anchor">⚡ Replaces $3,500/mo traditional agency retainers</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Continuous GEO/AEO Citations:</strong> Weekly Schema graph expansion for ChatGPT &amp; Perplexity AI</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>1 Production Engineering Sprint:</strong> New feature, parser, or landing page shipped monthly</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Cloud VPS Ops &amp; Security:</strong> Kernel patching, Nginx caching, SSL auto-renewals, automated S3 backups</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>SES &amp; DNS Deliverability Guard:</strong> Daily DMARC/bounce rate telemetry protection</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Direct Telegram / WhatsApp Line:</strong> 4-hour SLA response with Lead Architect Hemal Shah</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Zero Lock-In:</strong> Pause, modify, or cancel at the end of any 30-day cycle</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=retainer-growth">Deploy Growth Retainer →</a>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1 hover-lift">
+        <span class="pricing-badge">🔥 Hybrid Flagship — Swarm + Architect</span>
+        <div class="pricing-header">
+          <h3>Dedicated Autonomous AI Pod</h3>
+          <p class="pricing-hook">Dedicated 24/7 AI multi-agent swarm directed by Lead Architect Hemal Shah for high-velocity SMEs.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹79,999<span class="pricing-usd">($999)</span></span>
+            <span class="pricing-period">/ month (rolling agreement)</span>
+          </div>
+          <span class="pricing-anchor">⭐ Outperforms a 4-person in-house engineering team</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>2 Dedicated 24/7 Autonomous AI Swarms:</strong> Continuous lead extraction + doc processing</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>2 Full Engineering Sprints / Month:</strong> High-priority architecture, custom APIs, or automation pipelines</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Private MCP Tool Server:</strong> Custom tool-calling protocols connecting LLMs securely to your database</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Complete Code &amp; IP Ownership:</strong> 100% committed to your private GitHub organization every Friday</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Self-Hosted n8n &amp; Celery Daemons:</strong> Unlimited workflows with zero per-task Zapier limits</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround &amp; Response:</strong> 1-hour priority escalation directly with Lead Architect</span></li>
+        </ul>
+        <a class="pricing-cta cta-button primary" href="contact.html?plan=retainer-ai-pod">Activate Dedicated AI Pod →</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal reveal-delay-2 hover-lift">
+        <div class="pricing-header">
+          <h3>Scale-Up Fractional CTO &amp; Swarm</h3>
+          <p class="pricing-hook">Complete enterprise technology leadership paired with infinite-run autonomous execution pipelines.</p>
+          <div class="pricing-price-wrap">
+            <span class="pricing-price">₹1,49,999<span class="pricing-usd">($1,850)</span></span>
+            <span class="pricing-period">/ month (exclusive allocation)</span>
+          </div>
+          <span class="pricing-anchor">🔑 Elite fractional CTO + autonomous dev team in one</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Fractional CTO Systems Architecture:</strong> Technical roadmap, vendor evaluations, and compliance audits</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Unlimited Autonomous Swarm Deployments:</strong> Scraping, RAG pipelines, CRM webhooks, multi-agent workflows</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Weekly Strategic Architecture Calls:</strong> Live sprint planning &amp; systems review directly with Hemal Shah</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Enterprise High-Availability Infra:</strong> Multi-region cloud failover, Docker clusters &amp; zero-downtime CI/CD</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>SOC-2 / GDPR Ready Architecture:</strong> Strict audit trails, RBAC, secret masking &amp; security hardening</span></li>
+          <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Exclusive Availability:</strong> Maximum 2 enterprise slots active per calendar quarter</span></li>
+        </ul>
+        <a class="pricing-cta cta-button secondary" href="contact.html?plan=retainer-fractional-cto">Apply for Enterprise Slot →</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ── Trust & Risk Reversal Bar ── -->
   <div class="pricing-guarantee-bar reveal">
     <div class="guarantee-item">
@@ -1617,6 +1815,124 @@
 </div>
 </section>
 
+<!-- ── TENSIX Hybrid Delivery Pipeline & Execution Model ── -->
+<section class="section" id="delivery-model" style="background: linear-gradient(180deg, #090A0F 0%, #0D101A 50%, #090A0F 100%); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+<div class="section-inner">
+  <div class="section-header reveal">
+    <div style="display:inline-block;padding:0.35rem 1rem;background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.3);border-radius:9999px;font-size:0.78rem;font-weight:700;color:#c4b5fd;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1rem;">
+      Asymmetric Advantage · How TENSIX Delivers
+    </div>
+    <h2 class="section-title">The Hybrid <span class="gradient-text">Delivery Pipeline</span></h2>
+    <p style="max-width:760px;margin:0 auto;line-height:1.7;">
+      Combining the strategic certainty of elite US boutique agencies with the execution speed of 24/7 autonomous AI multi-agent swarms. Directed by Lead Architect Hemal Shah with zero junior dilution.
+    </p>
+  </div>
+
+  <!-- 4-Stage Pipeline Grid -->
+  <div class="delivery-pipeline-grid">
+    <div class="pipeline-step-card reveal hover-lift">
+      <div class="pipeline-step-num">1</div>
+      <h3 class="pipeline-step-title">Architect Discovery &amp; Blueprint</h3>
+      <p class="pipeline-step-desc">Direct technical deep-dive with Principal Architect Hemal Shah. We audit your codebase, map bottleneck telemetry, and produce a deterministic architecture diagram and fixed-price scope within 48 hours.</p>
+      <span class="pipeline-step-badge">⚡ 48-Hour Turnaround</span>
+    </div>
+
+    <div class="pipeline-step-card reveal reveal-delay-1 hover-lift">
+      <div class="pipeline-step-num">2</div>
+      <h3 class="pipeline-step-title">Autonomous Swarm Synthesis</h3>
+      <p class="pipeline-step-desc">Specialized AI multi-agent swarms (Researcher, Extractor, Coder, Test Generator) run 24/7 over FastMCP tool servers, generating boilerplates, parsing schemas, and automating tests with zero fatigue.</p>
+      <span class="pipeline-step-badge">🤖 24/7 Machine Execution</span>
+    </div>
+
+    <div class="pipeline-step-card reveal reveal-delay-2 hover-lift">
+      <div class="pipeline-step-num">3</div>
+      <h3 class="pipeline-step-title">Principal Review &amp; Hardening</h3>
+      <p class="pipeline-step-desc">Lead Architect manually reviews every line of code, refactors for concurrency, verifies SQL indices, configures Nginx caching, and enforces strict type safety and OWASP security standards.</p>
+      <span class="pipeline-step-badge">🛡️ Senior Human Quality Gate</span>
+    </div>
+
+    <div class="pipeline-step-card reveal reveal-delay-3 hover-lift">
+      <div class="pipeline-step-num">4</div>
+      <h3 class="pipeline-step-title">Zero-Downtime Launch &amp; Transfer</h3>
+      <p class="pipeline-step-desc">Automated deployment via GitHub Actions SSH pipelines into your own cloud (Oracle OCI, AWS, VPS). 100% source code, Git history, documentation, and credentials transferred with zero proprietary lock-in.</p>
+      <span class="pipeline-step-badge">🔑 100% Day-1 IP Transfer</span>
+    </div>
+  </div>
+
+  <!-- Asymmetric Competitor Comparison Matrix -->
+  <div class="section-header reveal" style="margin-top: 4rem; margin-bottom: 2rem;">
+    <h3 style="font-size: 1.6rem; color: #fff; font-weight: 700;">Why Global SMEs Choose <span class="gradient-text">TENSIX Over Competitors</span></h3>
+    <p style="font-size: 0.95rem; color: var(--color-text-muted);">Comparing TENSIX against traditional Western agencies, massive offshore IT shops, and generic freelancers.</p>
+  </div>
+
+  <div class="compare-table-container reveal">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Evaluation Criteria</th>
+          <th class="compare-tensix-col">TENSIX Hybrid Model</th>
+          <th>Tier 1 Global Agencies (WebFX, Disruptive)</th>
+          <th>Offshore IT Shops (Uplers, Elsner)</th>
+          <th>Generic Freelancers</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Lead Architect Access</strong></td>
+          <td class="compare-tensix-col">Direct 1-on-1 with Founder &amp; Architect Hemal Shah</td>
+          <td>Senior pitch, handed to junior account managers</td>
+          <td>Multiple layers of non-technical project managers</td>
+          <td>Single generalist with variable engineering depth</td>
+        </tr>
+        <tr>
+          <td><strong>Pricing Structure</strong></td>
+          <td class="compare-tensix-col">Transparent fixed sprints (₹14k–₹1.25L / $199–$1,650) or agile retainers</td>
+          <td>High minimum retainers ($3,000–$10,000/mo) with 6–12 mo lock-in</td>
+          <td>Hourly billing ($25–$45/hr) with misaligned scope incentives</td>
+          <td>Low upfront, hidden scope expansion fees</td>
+        </tr>
+        <tr>
+          <td><strong>Delivery Pipeline</strong></td>
+          <td class="compare-tensix-col">Hybrid: Human Principal + 24/7 Autonomous AI Swarms</td>
+          <td>Siloed manual departments with multi-week bottlenecks</td>
+          <td>Manual developer hours billing; slow turnarounds</td>
+          <td>Manual one-person capacity constraints</td>
+        </tr>
+        <tr>
+          <td><strong>Search &amp; AI Dominance</strong></td>
+          <td class="compare-tensix-col">GEO, AEO, Schema JSON-LD graphs &amp; SGE prominence</td>
+          <td>Legacy SEO (backlinks, blog volume, keyword stuffing)</td>
+          <td>Basic on-page meta tags and generic templates</td>
+          <td>Rarely aware of GEO/AEO entity graphs</td>
+        </tr>
+        <tr>
+          <td><strong>Automation &amp; Tooling</strong></td>
+          <td class="compare-tensix-col">Self-hosted n8n, FastMCP, Python &amp; zero per-task fees</td>
+          <td>Expensive Zapier / Make accounts billed to client</td>
+          <td>Off-the-shelf SaaS setups with vendor dependency</td>
+          <td>Basic unmonitored scripts without error recovery</td>
+        </tr>
+        <tr>
+          <td><strong>Code &amp; IP Ownership</strong></td>
+          <td class="compare-tensix-col">100% Day-1 transfer into client's GitHub &amp; cloud</td>
+          <td>Proprietary portal lock-in and transition fees</td>
+          <td>Often delayed until final invoice clearance</td>
+          <td>Unstandardized repos with missing documentation</td>
+        </tr>
+        <tr>
+          <td><strong>Average Turnaround</strong></td>
+          <td class="compare-tensix-col">7–14 Business Days per complete milestone</td>
+          <td>6–12 Weeks minimum onboarding and scoping</td>
+          <td>4–8 Weeks with frequent scope revisions</td>
+          <td>Unpredictable timeline slippage</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</section>
+
 <!-- ── FAQ Section (Optimized for AEO & GEO) ── -->
 <section class="section" id="faq" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
 <div class="section-inner">
@@ -1636,6 +1952,14 @@
 <div class="faq-item reveal reveal-delay-2" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease;">
 <h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">What is the TENSIX Engineering Framework?</h3>
 <p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">The TENSIX Framework is our proprietary architecture lifecycle: analyzing operational bottlenecks, structuring high-density semantic data pipelines, orchestrating multi-agent logic (via FastAPI, LangGraph, and n8n), and deploying on Oracle/Plesk VPS infrastructure via automated GitHub Actions CI/CD with 99.9% uptime and zero-downtime rollouts.</p>
+</div>
+<div class="faq-item reveal" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease;">
+<h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">How does TENSIX's Hybrid Delivery Pipeline work?</h3>
+<p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">Our hybrid model combines senior human judgment with 24/7 autonomous machine execution. Lead Architect Hemal Shah directs architectural scoping and code review, while autonomous AI agent swarms (LangGraph, FastMCP tool servers) run non-stop to generate test harnesses, extract data, scaffold backends, and run regression tests. This cuts delivery times by 65% compared to conventional agencies.</p>
+</div>
+<div class="faq-item reveal reveal-delay-1" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease;">
+<h3 style="color: #fff; font-size: 1.15rem; margin: 0 0 0.8rem 0; font-weight: 600;">How do your Monthly Retainers differ from traditional US agency contracts?</h3>
+<p style="color: var(--color-text-muted, #94a3b8); line-height: 1.6; font-size: 0.95rem; margin: 0;">Traditional global agencies charge $3,000 to $10,000/month with binding 6 to 12-month lock-in contracts and hand you off to junior account managers. TENSIX retainers start at ₹39,999 ($499/mo), operate on a month-to-month basis with zero lock-in, and provide direct 1-on-1 access to Lead Architect Hemal Shah alongside dedicated autonomous AI swarm allocation.</p>
 </div>
 </div>
 </div>
@@ -1889,6 +2213,7 @@ Gujarat 380009 · India
 <nav aria-label="Resources navigation" class="footer-nav">
 <h3>Core Pillars</h3>
 <ul>
+<li><a href="services.html#delivery-model">Hybrid Delivery Pipeline</a></li>
 <li><a href="services.html#ai">Autonomous AI &amp; GraphRAG</a></li>
 <li><a href="services.html#cloud">Cloud VPS &amp; CI/CD Pipelines</a></li>
 <li><a href="services.html#software">Full-Stack SaaS &amp; APIs</a></li>
