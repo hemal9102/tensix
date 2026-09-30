@@ -3,7 +3,7 @@ import json, re, os, sys
 if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
-root = r"H:\portfolio_website\hemalshah"
+root = r"H:\portfolio_website\tensix"
 errors = []
 total = 0
 file_count = 0

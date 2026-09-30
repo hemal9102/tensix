@@ -33,7 +33,7 @@
 <!-- Twitter -->
 <!-- Hreflang -->
 <!-- Local SEO Meta Tags -->
-<link href="https://hemal.io/" rel="me" title="hemal.io — Hemal Shah developer"/><link href="https://www.linkedin.com/in/hemal-shah-49a728362/" rel="me" title="LinkedIn — Hemal Shah"/><link href="https://github.com/hemal9102" rel="me" title="GitHub — hemal9102"/><link href="https://www.instagram.com/hemal.io/" rel="me" title="Instagram — hemal.io"/><title>WhatsApp System Design &amp; Real-Time Outage Analysis | HK Engineering</title><meta content="Deep-dive case study on WhatsApp's system design, Erlang architecture, and why it might be lagging today based on real-time routing bottlenecks." name="description"/><meta content="Hemal Shah" name="author"/><meta content="2024-01-01T08:00:00+00:00" property="article:published_time"/><meta content="2026-07-14T21:48:30+00:00" property="article:modified_time"/><meta content="article" property="og:type"/><meta content="What Is Our Life? | Hemal Shah (HK)" property="og:title"/><meta content="A philosophical reflection on the meaning of life, karma, and finding your path – by Hemal Shah." property="og:description"/><meta content="https://hemalshah.vercel.app/blogs/what-is-our-life.html" property="og:url"/><meta content="https://hemalshah.vercel.app/assets/favicon.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="What Is Our Life? | Hemal Shah (HK)" name="twitter:title"/><meta content="A philosophical reflection on the meaning of life, karma, and finding your path – by Hemal Shah." name="twitter:description"/><meta content="https://hemalshah.vercel.app/assets/favicon.png" name="twitter:image"/><meta content="IN-GJ" name="geo.region"/><meta content="Navrangpura, Ahmedabad" name="geo.placename"/><meta content="23.0366;72.5615" name="geo.position"/><meta content="23.0366, 72.5615" name="ICBM"/><link href="https://hemalshah.vercel.app/blogs/case-studies/whatsapp-system-design-outage.html" rel="canonical"/>
+<link href="https://hemal.io/" rel="me" title="hemal.io — Hemal Shah developer"/><link href="https://www.linkedin.com/in/hemal-shah-49a728362/" rel="me" title="LinkedIn — Hemal Shah"/><link href="https://github.com/hemal9102" rel="me" title="GitHub — hemal9102"/><link href="https://www.instagram.com/hemal.io/" rel="me" title="Instagram — hemal.io"/><title>WhatsApp System Design & Outage Resiliency Teardown | TENSIX</title><meta name="description" content="Architectural breakdown of WhatsApp's Erlang infrastructure, end-to-end encryption, and fault-tolerant distributed networks by TENSIX."/><meta content="Hemal Shah" name="author"/><meta content="2024-01-01T08:00:00+00:00" property="article:published_time"/><meta content="2026-07-14T21:48:30+00:00" property="article:modified_time"/><meta content="article" property="og:type"/><meta content="WhatsApp System Design & Outage Resiliency Teardown | TENSIX" property="og:title"/><meta content="Architectural breakdown of WhatsApp's Erlang infrastructure, end-to-end encryption, and fault-tolerant distributed networks by TENSIX." property="og:description"/><meta content="https://tensix.in/blogs/case-studies/whatsapp-system-design-outage.html" property="og:url"/><meta content="https://tensix.in/assets/favicon.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="WhatsApp System Design & Outage Resiliency Teardown | TENSIX" name="twitter:title"/><meta content="Architectural breakdown of WhatsApp's Erlang infrastructure, end-to-end encryption, and fault-tolerant distributed networks by TENSIX." name="twitter:description"/><meta content="https://tensix.in/assets/favicon.png" name="twitter:image"/><meta content="IN-GJ" name="geo.region"/><meta content="Navrangpura, Ahmedabad" name="geo.placename"/><meta content="23.0366;72.5615" name="geo.position"/><meta content="23.0366, 72.5615" name="ICBM"/><link href="https://tensix.in/blogs/case-studies/whatsapp-system-design-outage.html" rel="canonical"/>
 <style>
 /* Added for code blocks and callouts in other blogs */
 pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.6rem; overflow-x:auto; margin-bottom:2rem; border:1px solid rgba(255,255,255,0.1); }
@@ -49,28 +49,28 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://hemalshah.vercel.app/blogs/whatsapp-system-design-outage.html#webpage",
-      "url": "https://hemalshah.vercel.app/blogs/whatsapp-system-design-outage.html",
+      "@id": "https://tensix.in/blogs/whatsapp-system-design-outage.html#webpage",
+      "url": "https://tensix.in/blogs/whatsapp-system-design-outage.html",
       "name": "WhatsApp System Design &amp; Real-Time Outage Analysis | HK Engineering",
       "headline": "WhatsApp System Design &amp; Real-Time Outage Analysis | HK Engineering",
       "description": "Deep-dive case study on WhatsApp's system design, Erlang architecture, and why it might be lagging today based on real-time routing bottlenecks.",
       "isPartOf": {
-        "@id": "https://hemalshah.vercel.app/#website"
+        "@id": "https://tensix.in/#website"
       },
       "about": {
-        "@id": "https://hemalshah.vercel.app/#person"
+        "@id": "https://tensix.in/#person"
       },
       "author": {
-        "@id": "https://hemalshah.vercel.app/#person"
+        "@id": "https://tensix.in/#person"
       },
       "creator": {
-        "@id": "https://hemalshah.vercel.app/#person"
+        "@id": "https://tensix.in/#person"
       },
       "publisher": {
-        "@id": "https://hemalshah.vercel.app/#organization"
+        "@id": "https://tensix.in/#organization"
       },
       "breadcrumb": {
-        "@id": "https://hemalshah.vercel.app/blogs/whatsapp-system-design-outage.html#breadcrumb"
+        "@id": "https://tensix.in/blogs/whatsapp-system-design-outage.html#breadcrumb"
       },
       "speakable": {
         "@type": "SpeakableSpecification",
@@ -84,41 +84,41 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://hemalshah.vercel.app/blogs/whatsapp-system-design-outage.html#breadcrumb",
+      "@id": "https://tensix.in/blogs/whatsapp-system-design-outage.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://hemalshah.vercel.app/"
+          "item": "https://tensix.in/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "WhatsApp System Design &amp; Real-Time Outage Analysis | HK Engineering",
-          "item": "https://hemalshah.vercel.app/blogs/whatsapp-system-design-outage.html"
+          "item": "https://tensix.in/blogs/whatsapp-system-design-outage.html"
         }
       ]
     }
   ]
 }
   </script>
-  <link rel="canonical" href="https://hemalshah.vercel.app/blogs/case-studies/whatsapp-system-design-outage.html" />
+  <link rel="canonical" href="https://tensix.in/blogs/case-studies/whatsapp-system-design-outage.html"/>
 </head>
 <body>
 <div aria-hidden="true" class="scroll-progress" id="scrollProgress"></div>
 <div aria-hidden="true" class="cursor-glow" id="cursorGlow"></div>
 <!-- ── Header ─────────────────────────────── -->
 <header class="site-header">
-<a class="logo" href="../../index.html"><img alt="HK Engineering" class="logo-img" height="36" src="../../assets/favicon.webp?v=1.1" width="36"/></a>
+<a class="logo" href="/"><img alt="HK Engineering" class="logo-img" height="36" src="../../assets/favicon.webp?v=1.1" width="36"/></a>
 <nav aria-label="Main navigation" class="nav" id="main-nav">
 <ul>
-<li><a href="../../index.html">Home</a></li>
-<li><a href="../../about.html">About</a></li>
-<li><a href="../../work.html">Work</a></li>
-<li><a href="../../services.html">Skills</a></li>
-<li><a class="active" href="../../blogs.html">Blog</a></li>
-<li><a class="nav-cta" href="../../contact.html">Contact</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/work.html">Work</a></li>
+<li><a href="/services.html">Skills</a></li>
+<li><a class="active" href="/blogs.html">Blog</a></li>
+<li><a class="nav-cta" href="/contact.html">Contact</a></li>
 </ul>
 </nav>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle">
@@ -128,11 +128,11 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
 <!-- ── Floating Dock ──────────────────────── -->
 <nav aria-label="Quick navigation" class="floating-dock">
 <div class="dock-inner">
-<a class="dock-btn" href="../../index.html" title="Home">
+<a class="dock-btn" href="/" title="Home">
 <span class="dock-tooltip">Home</span>
 <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
 </a>
-<a class="dock-btn" href="../../blogs.html" style="color:#fff;background:rgba(59,130,246,0.15);" title="Blog">
+<a class="dock-btn" href="/blogs.html" style="color:#fff;background:rgba(59,130,246,0.15);" title="Blog">
 <span class="dock-tooltip">Blog</span>
 <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20"></path><path d="M4 3v16.5"></path><path d="M8 3h12v18H8z"></path></svg>
 </a>
@@ -155,7 +155,7 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
 <!-- ── Blog Content ────────────────────────── -->
 <section class="section" style="padding-top:calc(var(--header-height) + 3rem);">
 <div class="section-inner">
-<a class="blog-back reveal" href="../../blogs.html">
+<a class="blog-back reveal" href="/blogs.html">
         ← Back to Blog
       </a>
 <div class="blog-post reveal">
@@ -165,7 +165,7 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
 <span class="tag green">Reflection</span>
 </div>
 <div class="author-badge" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-<img src="../assets/favicon.webp?v=1.1" style="border-radius: 50%;" width="50"/>
+<img src="../../assets/favicon.webp?v=1.1" alt="Hemal Shah - Lead Systems Architect & Founder at TENSIX" style="border-radius: 50%;" width="50" height="50" loading="lazy"/>
 <div>
 <strong style="color: #fff; display: block; font-size: 1.1rem;">Hemal Shah (HK)</strong>
 <span style="font-size: 0.9rem; color: #94a3b8;">AI Automation Engineer &amp; Technical SEO</span>
@@ -216,7 +216,7 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
 <hr class="divider" style="margin-top:3rem;"/>
 <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
 <span style="color:var(--color-text-muted);font-size:0.85rem;">← Previous post</span>
-<a class="card-link" href="why-i-chose-automation-over-a-9-to-5.html">
+<a class="card-link" href="/blogs/why-i-chose-automation-over-a-9-to-5.html">
             Next: Why I Chose Automation Over a 9-to-5 →
           </a>
 </div>
@@ -229,26 +229,26 @@ pre { background:#080d19 !important; padding:1.5rem !important; border-radius:0.
 <footer class="site-footer">
 <div class="footer-inner">
 <div class="footer-brand">
-<a class="logo" href="../../index.html"><img alt="HK Engineering" class="logo-img" height="36" src="../../assets/favicon.webp?v=1.1" width="36"/></a>
+<a class="logo" href="/"><img alt="HK Engineering" class="logo-img" height="36" src="../../assets/favicon.webp?v=1.1" width="36"/></a>
 <p>Founder, HK Engineering | AI Agent &amp; Full-Stack Python Developer</p>
 </div>
 <nav class="footer-nav">
 <h3>Navigate</h3>
 <ul>
-<li><a href="../../index.html">Home</a></li>
-<li><a href="../../about.html">About</a></li>
-<li><a href="../../work.html">Work</a></li>
-<li><a href="../../services.html">Skills</a></li>
-<li><a href="../../blogs.html">Blog</a></li>
-<li><a href="../../contact.html">Contact</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/work.html">Work</a></li>
+<li><a href="/services.html">Skills</a></li>
+<li><a href="/blogs.html">Blog</a></li>
+<li><a href="/contact.html">Contact</a></li>
 </ul>
 </nav>
 <nav aria-label="Resources navigation" class="footer-nav">
 <h3>Resources</h3>
 <ul>
-<li><a href="../../resources.html">AI Resources</a></li>
-<li><a href="../../compare.html">Comparisons</a></li>
-<li><a href="../../frameworks.html">Proprietary Frameworks</a></li>
+<li><a href="/resources.html">AI Resources</a></li>
+<li><a href="/compare.html">Comparisons</a></li>
+<li><a href="/frameworks.html">Proprietary Frameworks</a></li>
 </ul>
 </nav>
 <div class="footer-social">
