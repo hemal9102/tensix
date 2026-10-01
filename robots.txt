@@ -237,5 +237,5 @@ User-agent: Cloudflare-AlwaysOnline
 Allow: /
 
 # ── Sitemap ───────────────────────────────────────────────────────────────────
-Sitemap: https://tensix.in/sitemap.xml
-Sitemap: https://tensix.in/sitemap_index.xml
+Sitemap: https://www.tensix.in/sitemap.xml
+Sitemap: https://www.tensix.in/sitemap_index.xml
