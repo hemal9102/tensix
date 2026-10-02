@@ -72,14 +72,17 @@ function initScrollHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
-  let isScrolled = window.scrollY > 60;
+  let isScrolled = false;
   let ticking = false;
 
-  // Initialize state
-  header.classList.toggle('scrolled', isScrolled);
+  // Initialize state asynchronously in next frame to prevent forced reflow during page boot
+  window.requestAnimationFrame(() => {
+    isScrolled = (window.scrollY || 0) > 60;
+    if (isScrolled) header.classList.add('scrolled');
+  });
 
   const onScroll = () => {
-    const currentScroll = window.scrollY > 60;
+    const currentScroll = (window.scrollY || 0) > 60;
     if (currentScroll !== isScrolled) {
       isScrolled = currentScroll;
       if (!ticking) {
