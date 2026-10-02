@@ -112,7 +112,8 @@ for rel, data in pages.items():
     else:
         canon_url = c_match.group(1).strip()
         expected = "https://tensix.in/" if rel == "index.html" else f"https://tensix.in/{rel}"
-        if canon_url != expected:
+        expected_www = "https://www.tensix.in/" if rel == "index.html" else f"https://www.tensix.in/{rel}"
+        if canon_url != expected and canon_url != expected_www:
             issues["non_self_referencing_canonical"].append((rel, canon_url, expected))
 
     # 5. OpenGraph & Twitter

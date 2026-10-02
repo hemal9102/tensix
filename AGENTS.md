@@ -125,4 +125,15 @@ python submit_indexnow.py
 
 ---
 
+## 7. GOOGLE INGESTION & CAFFEINE EDGE PIPELINE STANDARD
+
+- All technical pages and content architectures must strictly conform to the 5-Tier ingestion gates documented in `GOOGLE_INGESTION_ARCHITECTURE.md`:
+  - **Tier 0:** Sub-100ms TTFB on Cloudflare/Vercel edge to maximize Googlebot hostload crawl budget.
+  - **Tier 1:** 100% pre-rendered semantic HTML5 with `defer` scripts to avoid WRS Wave 2 queue delays.
+  - **Tier 2:** High-IDF technical terminology and distinct case studies to ensure >3 Hamming distance clearance on 64-bit SimHash.
+  - **Tier 3:** Single unified `@graph` JSON-LD schema linking `#organization` and `#person` for Knowledge Graph entity resolution.
+  - **Tier 4 & 5:** Respect the 24–72 hour Caffeine edge sharding and staging buffer; monitor Search Console progression from "Crawled - currently not indexed" to "URL is on Google".
+
+---
+
 © 2026 TENSIX. Founded and solely owned by Hemal Shah.
