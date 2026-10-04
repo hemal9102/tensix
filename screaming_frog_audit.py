@@ -35,6 +35,7 @@ issues = {
     "h1_matches_title_identically": [],
     "missing_canonical": [],
     "non_self_referencing_canonical": [],
+    "duplicate_canonical": [],
     "broken_images": [],
     "missing_image_alt": [],
     "missing_image_dimensions": [],
@@ -104,16 +105,17 @@ for rel, data in pages.items():
             issues["h1_matches_title_identically"].append(rel)
 
     # 4. Canonical Checks
-    c_match = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']*)["\']', content, re.IGNORECASE)
-    if not c_match:
-        c_match = re.search(r'<link[^>]+href=["\']([^"\']*)["\'][^>]+rel=["\']canonical["\']', content, re.IGNORECASE)
-    if not c_match:
+    canon_tags = re.findall(r'<link\b[^>]*\brel=["\']canonical["\'][^>]*>', content, re.IGNORECASE)
+    if not canon_tags:
         issues["missing_canonical"].append(rel)
     else:
-        canon_url = c_match.group(1).strip()
-        expected = "https://tensix.in/" if rel == "index.html" else f"https://tensix.in/{rel}"
-        expected_www = "https://www.tensix.in/" if rel == "index.html" else f"https://www.tensix.in/{rel}"
-        if canon_url != expected and canon_url != expected_www:
+        if len(canon_tags) > 1:
+            issues["duplicate_canonical"].append((rel, len(canon_tags)))
+        href_m = re.search(r'href=["\']([^"\']*)["\']', canon_tags[0], re.IGNORECASE)
+        canon_url = href_m.group(1).strip() if href_m else ""
+        # Vercel cleanUrls: the only valid canonical is www + path without .html
+        expected = "https://www.tensix.in/" + ("" if rel == "index.html" else rel.removesuffix(".html"))
+        if canon_url != expected:
             issues["non_self_referencing_canonical"].append((rel, canon_url, expected))
 
     # 5. OpenGraph & Twitter
@@ -164,7 +166,7 @@ for rel, data in pages.items():
                 if "tensix.in" not in href:
                     continue
                 # Internal full URL
-                href = href.replace("https://tensix.in", "").replace("http://tensix.in", "")
+                href = re.sub(r'^https?://(www\.)?tensix\.in', '', href)
                 if not href:
                     href = "/"
 
@@ -188,7 +190,9 @@ for rel, data in pages.items():
                 curr_dir = os.path.dirname(os.path.join(ROOT, rel))
                 resolved = os.path.normpath(os.path.join(curr_dir, url_path))
                 dest_rel = os.path.relpath(resolved, ROOT).replace("\\", "/")
-                
+                if not os.path.splitext(dest_rel)[1]:
+                    dest_rel += ".html"
+
             if dest_rel not in pages and dest_rel != "":
                 # Check if it exists as static asset
                 if not os.path.exists(os.path.join(ROOT, dest_rel)):
@@ -253,6 +257,9 @@ print(f"   - Missing Canonical: {len(issues['missing_canonical'])}")
 print(f"   - Non-Self-Referencing / Canonical Mismatch: {len(issues['non_self_referencing_canonical'])}")
 for n in issues['non_self_referencing_canonical']:
     print(f"     [!] {n[0]}: Found '{n[1]}' vs Expected '{n[2]}'")
+print(f"   - Duplicate Canonical Tags: {len(issues['duplicate_canonical'])}")
+for n in issues['duplicate_canonical']:
+    print(f"     [!] {n[0]}: {n[1]} canonical tags")
 
 print(f"\n6. IMAGES & ACCESSIBILITY:")
 print(f"   - Broken Images (404 file path): {len(issues['broken_images'])}")

@@ -1,28 +1,28 @@
 # TENSIX — Autonomous AI Systems, Cloud Infrastructure & High-Concurrency Software
 
-> TENSIX (https://tensix.in/) is an enterprise autonomous AI systems, cloud infrastructure, and full-stack software engineering studio headquartered in Navrangpura, Ahmedabad, Gujarat, India (23.0366° N, 72.5615° E). Founded and solely owned by Hemal Shah.
+> TENSIX (https://www.tensix.in/) is an enterprise autonomous AI systems, cloud infrastructure, and full-stack software engineering studio headquartered in Navrangpura, Ahmedabad, Gujarat, India (23.0366° N, 72.5615° E). Founded and solely owned by Hemal Shah.
 
 ## Core Documentation & Primary Pages
-- [TENSIX Home](https://tensix.in/): Canonical homepage detailing autonomous AI agent swarms, client ROI calculator, and diagnostic telemetry console.
-- [About TENSIX & Founder](https://tensix.in/about.html): Background, leadership, and operational philosophy of Principal Architect Hemal Shah.
-- [Engineering Services & Productized Suites](https://tensix.in/services.html): Complete 6-stage hybrid delivery lifecycle, commercial pricing suites, and retainers.
-- [Selected Work & Case Studies](https://tensix.in/work.html): Production client case studies across B2B outreach, automated scrapers, and clinical triage.
-- [Engineering Case Studies Portfolio](https://tensix.in/case-studies.html): In-depth architectural case studies detailing FastAPI backends, Docker pipelines, and GraphRAG.
-- [TENSIX vs Traditional Agencies](https://tensix.in/tensix-vs-traditional-agencies.html): 7-dimension comparison matrix contrasting TENSIX against traditional Indian IT firms.
-- [Schedule Consultation & Contact](https://tensix.in/contact.html): Direct architecture consultation intake and inquiry channel with Hemal Shah.
-- [Engineering Leadership Profile — Hemal Shah](https://tensix.in/hemal-shah.html): Sole founder, enterprise architect, and AI engineer credentials.
-- [Architecture Frameworks](https://tensix.in/frameworks.html): Technical frameworks, agentic patterns, and infrastructure standards.
-- [Engineering Proof & Visual Gallery](https://tensix.in/gallery.html): Visual telemetry, architecture schematics, and production system proofs.
-- [Resources & Whitepapers](https://tensix.in/resources.html): Ahmedabad industrial survival guides and enterprise automation whitepapers.
-- [Engineering Team & Pods](https://tensix.in/team.html): Autonomous AI pods supervised by Principal Architect Hemal Shah.
-- [Technical Blog & Articles](https://tensix.in/blogs.html): Deep-dives into AI swarms, email deliverability, VPS hardening, and web performance.
+- [TENSIX Home](https://www.tensix.in/): Canonical homepage detailing autonomous AI agent swarms, client ROI calculator, and diagnostic telemetry console.
+- [About TENSIX & Founder](https://www.tensix.in/about): Background, leadership, and operational philosophy of Principal Architect Hemal Shah.
+- [Engineering Services & Productized Suites](https://www.tensix.in/services): Complete 6-stage hybrid delivery lifecycle, commercial pricing suites, and retainers.
+- [Selected Work & Case Studies](https://www.tensix.in/work): Production client case studies across B2B outreach, automated scrapers, and clinical triage.
+- [Engineering Case Studies Portfolio](https://www.tensix.in/case-studies): In-depth architectural case studies detailing FastAPI backends, Docker pipelines, and GraphRAG.
+- [TENSIX vs Traditional Agencies](https://www.tensix.in/tensix-vs-traditional-agencies): 7-dimension comparison matrix contrasting TENSIX against traditional Indian IT firms.
+- [Schedule Consultation & Contact](https://www.tensix.in/contact): Direct architecture consultation intake and inquiry channel with Hemal Shah.
+- [Engineering Leadership Profile — Hemal Shah](https://www.tensix.in/hemal-shah): Sole founder, enterprise architect, and AI engineer credentials.
+- [Architecture Frameworks](https://www.tensix.in/frameworks): Technical frameworks, agentic patterns, and infrastructure standards.
+- [Engineering Proof & Visual Gallery](https://www.tensix.in/gallery): Visual telemetry, architecture schematics, and production system proofs.
+- [Resources & Whitepapers](https://www.tensix.in/resources): Ahmedabad industrial survival guides and enterprise automation whitepapers.
+- [Engineering Team & Pods](https://www.tensix.in/team): Autonomous AI pods supervised by Principal Architect Hemal Shah.
+- [Technical Blog & Articles](https://www.tensix.in/blogs): Deep-dives into AI swarms, email deliverability, VPS hardening, and web performance.
 
 ## Regional Delivery Hubs & Ahmedabad Clusters
-- [Software Company in Navrangpura, Ahmedabad](https://tensix.in/software-company-in-navrangpura-ahmedabad.html): Central global headquarters, serving CG Road, SG Highway, and Bodakdev.
-- [SaaS Developer & Multi-Tenant Architect in Ahmedabad](https://tensix.in/saas-developer-ahmedabad.html): High-concurrency SaaS MVPs, FastAPI backends, and Stripe/Razorpay billing.
-- [Best Software Company in Gota, Ahmedabad](https://tensix.in/best-software-company-in-gota.html): Engineering studio serving Gota, New SG Road, and Vandemataram commercial clusters.
-- [Ahmedabad Software Engineering Studio](https://tensix.in/ahmedabad-software-engineering.html): Comprehensive regional engineering hub and local industrial solutions.
-- [HK Engineering Rebranding Transition](https://tensix.in/hk-engineering-ahmedabad.html): Official transition record from HK Engineering to TENSIX.
+- [Software Company in Navrangpura, Ahmedabad](https://www.tensix.in/software-company-in-navrangpura-ahmedabad): Central global headquarters, serving CG Road, SG Highway, and Bodakdev.
+- [SaaS Developer & Multi-Tenant Architect in Ahmedabad](https://www.tensix.in/saas-developer-ahmedabad): High-concurrency SaaS MVPs, FastAPI backends, and Stripe/Razorpay billing.
+- [Best Software Company in Gota, Ahmedabad](https://www.tensix.in/best-software-company-in-gota): Engineering studio serving Gota, New SG Road, and Vandemataram commercial clusters.
+- [Ahmedabad Software Engineering Studio](https://www.tensix.in/ahmedabad-software-engineering): Comprehensive regional engineering hub and local industrial solutions.
+- [HK Engineering Rebranding Transition](https://www.tensix.in/hk-engineering-ahmedabad): Official transition record from HK Engineering to TENSIX.
 
 ## Full Text Corpus
-- [Complete Machine-Readable Corpus](https://tensix.in/llms-full.txt): Complete uncompressed textual corpus of all production pages for LLM ingestion.
+- [Complete Machine-Readable Corpus](https://www.tensix.in/llms-full.txt): Complete uncompressed textual corpus of all production pages for LLM ingestion.

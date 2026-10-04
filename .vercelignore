@@ -9,3 +9,8 @@ google-service-account.json
 *.pem
 .env
 masterprompt.txt
+
+contolo/
+citation_audit.py
+citation_audit.md
+tools/

@@ -3,6 +3,8 @@
 > **Document Type:** Internal Technical Specification & OSINT Research Blueprint  
 > **Target Entity:** TENSIX (`https://www.tensix.in`)  
 > **Scope:** Googlebot Web Rendering Service (WRS), Caffeine Indexing Database, NavBoost Chrome Telemetry, IndexNow Protocols, and Developer Community Exploits (Reddit r/TechSEO, BlackHatWorld, Hacker News).
+>
+> **⚠️ Reliability note (2026-10-04 fact check):** Sections 1–2 summarise Google's public documentation. Section 3 collects **unverified community claims**: treat them as anecdotes, not mechanisms. Anything that manufactures fake user engagement violates Google's spam policies and can get pages demoted.
 
 ---
 
@@ -69,13 +71,10 @@ flowchart TD
 
 Gathered from high-level technical discussions on Reddit (`r/SEO`, `r/TechSEO`), BlackHatWorld, and Hacker News:
 
-### 1. The Chrome NavBoost Telemetry Exploit
-* **The Background:** The 2024 Google algorithm leak confirmed the existence of **NavBoost**, a core ranking and indexing engine that monitors real-time user interaction data from Google Chrome browsers.
-* **The Exploit:** Google deprioritizes indexing pages that receive zero human traffic.
-  - **Action:** Open Google Chrome on 3–5 independent devices/IPs.
-  - Visit the target URL directly (`https://www.tensix.in/blogs/...`) or search the exact quoted title on Google.
-  - Spend 60–90 seconds scrolling through the content.
-  - **Result:** Chrome telemetry registers human engagement, signaling to NavBoost that the URL satisfies real user demand and forcing it out of the cold storage queue.
+### 1. NavBoost and Real User Demand *(unverified community claim)*
+* **What is known:** The 2024 Google API documentation leak and DOJ trial testimony describe **NavBoost** as a *ranking* system that uses aggregated click and interaction data. Nothing public shows it controls *indexing*, or that a handful of visits can move a URL out of "Crawled – currently not indexed".
+* **Do not** simulate visits from multiple devices or IPs. That is manufactured engagement, which Google's spam policies prohibit.
+* **Legitimate version:** earn real visits by sharing the page where its audience already is (see §3.3) and by linking to it from strong internal pages.
 
 ### 2. The Google Property Buffer Method
 * Google indexes its own platforms in real-time with near-zero latency.
@@ -84,7 +83,8 @@ Gathered from high-level technical discussions on Reddit (`r/SEO`, `r/TechSEO`),
   - Create a public **Google Site** or embed the links in a public **YouTube Video Description**.
   - Googlebot crawls internal Google properties with top priority, discovering and elevating the linked target page.
 
-### 3. The Live Firehose Lease (Reddit & LinkedIn)
+### 3. The Live Firehose Lease (Reddit & LinkedIn) *(partly verified)*
+* Google has a public data-licensing deal with Reddit (2024). The "5–15 minute" crawl timing below is anecdotal, and there is no published LinkedIn equivalent.
 * Google maintains dedicated live indexing partnerships with Reddit and LinkedIn.
 * **Action:**
   - Share technical case studies (e.g. *Enterprise RAG with pgvector* or *IRCTC System Design*) as genuine value-first discussions on Reddit (`r/FastAPI`, `r/SelfHosted`, `r/DevOps`) and LinkedIn.
@@ -96,8 +96,9 @@ Gathered from high-level technical discussions on Reddit (`r/SEO`, `r/TechSEO`),
 * **The Synergy:** Getting indexed and generating search impressions on Bing creates external traffic signals that prompt Googlebot to validate and index the same URLs.
 
 ### 5. Eliminating the Canonical-Redirect Desynchronization
-* **Root Cause:** A mismatch between server-level redirects (`www` vs `non-www`) and HTML canonical tags causes Googlebot to freeze index commits.
-* **Status on TENSIX:** **RESOLVED.** All 37 pages, sitemaps, and `robots.txt` have been permanently synchronized to `https://www.tensix.in/`.
+* **Root Cause:** Canonical tags that point at a URL which itself redirects send Google conflicting signals about which URL is the real one.
+* **History on TENSIX:** On 2026-09-30 the www vs non-www half was fixed, but canonicals still used `.html` URLs. With `vercel.json` `cleanUrls: true`, every one of them 308-redirected to the extensionless path, and 22 pages also carried two canonical tags.
+* **Status:** **Fixed 2026-10-04.** Every page now has exactly one canonical, `https://www.tensix.in/<path>` with no `.html`. Sitemaps, og:url, hreflang, JSON-LD `url`/`item`, and internal links match it. `screaming_frog_audit.py` now fails on any mismatch or duplicate.
 
 ---
 
@@ -107,7 +108,9 @@ Execute these diagnostic commands to monitor the live indexing pipeline:
 
 ```bash
 # 1. Verify Canonical Uniformity
-curl.exe -s -k -I -L https://www.tensix.in/about.html | grep -i "location\|canonical"
+# Expect: HTTP 200 directly (no 308), and the canonical equals the requested URL
+curl.exe -s -I https://www.tensix.in/about | findstr /i "HTTP location"
+curl.exe -s https://www.tensix.in/about | findstr /i "canonical"
 
 # 2. Check Robots.txt Directive
 curl.exe -s -k https://www.tensix.in/robots.txt
@@ -125,9 +128,9 @@ curl.exe -s -k https://www.tensix.in/sitemap.xml | grep -i "<loc>" | head -n 5
 
 ## 5. Ongoing Action Checklist for TENSIX
 
-- [x] **Canonical Tag Synchronization:** Updated all 32 HTML templates to `https://www.tensix.in/...`.
+- [x] **Canonical Tag Synchronization:** All 37 pages use a single, extensionless `https://www.tensix.in/...` canonical (2026-10-04).
 - [x] **Sitemap Alignment:** Synchronized `sitemap.xml`, `sitemap-new.xml`, `sitemap_geo_1.xml`, and `sitemap_index.xml`.
 - [x] **Robots.txt Routing:** Verified 100% crawl allowance for Googlebot, Bingbot, and AI crawlers.
 - [ ] **Google Search Console Resubmission:** Submit `https://www.tensix.in/sitemap.xml` in GSC.
 - [ ] **Google Business Profile (GBP):** Claim and verify "TENSIX" in Navrangpura, Ahmedabad.
-- [ ] **NavBoost Engagement Triggers:** Drive initial organic Chrome traffic via LinkedIn and technical communities.
+- [ ] **Real Audience Distribution:** Share new posts on LinkedIn and relevant technical communities, aimed at genuine readers, not simulated visits.

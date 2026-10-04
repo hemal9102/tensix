@@ -1,7 +1,9 @@
 # GOOGLE SEARCH ENGINE REVERSE-ENGINEERING & INGESTION ARCHITECTURE
 ## Mechanistic Breakdown: From Bare-Metal TCP Handshake to Caffeine Inverted Index & Edge Shards
 *Last Updated: 2026-10-02 | Author: Hemal Shah (Founder & Principal Architect, TENSIX)*
-*Canonical Target: `https://tensix.in/` | Infrastructure: Cloudflare DNS + Vercel Edge Serverless*
+*Canonical Target: `https://www.tensix.in/<path>` (no `.html`) | Infrastructure: Cloudflare DNS + Vercel Edge Serverless*
+
+> **⚠️ Reliability note (2026-10-04 fact check):** This is a *conceptual model*, not Google documentation. Items tagged **(hypothesis)** are not published by Google and cannot be verified; they include internal names, thresholds, viewport sizes, and timings. Publicly confirmed: Google crawls, renders with an evergreen Chromium (WRS), canonicalises and dedupes, and uses Caffeine-era incremental indexing. Use the hypotheses as heuristics, never as hard rules.
 
 ---
 
@@ -54,7 +56,7 @@
 ### Tier 0: Ingestion, Hostload Allocation & The Bigtable Frontier
 1. **The Ingestion Gateway:**
    - Initiated via `submit_google_indexing.py` targeting Google's Cloud API (`https://indexing.googleapis.com/v3/urlNotifications:publish`) using OAuth2 service account JWT bearer tokens.
-   - Pushes canonical URLs directly into Google's internal **Bigtable URL Frontier**.
+   - Pushes canonical URLs directly into Google's internal **Bigtable URL Frontier**. **(hypothesis)** Note: Google supports the Indexing API only for `JobPosting` / `BroadcastEvent` pages; for other pages submissions may be ignored.
 2. **Network Handshake & DNS Resolution:**
    - Googlebot resolvers query authoritative nameservers (`lina.ns.cloudflare.com`, `mark.ns.cloudflare.com`).
    - Opens encrypted **TLS 1.3 session with ALPN (HTTP/2 or HTTP/3 QUIC)** against Vercel edge IP (`d8ced1b4152d7850.vercel-dns-017.com`).
@@ -64,13 +66,13 @@
 
 ### Tier 1: Headless WRS (Web Rendering Service) Execution
 1. **Virtual Mobile Viewport:**
-   - Googlebot executes headless Chromium in sandboxed containers at **412 × 915 px** (`Device Pixel Ratio: 2.625`, simulating a modern mobile viewport).
+   - Googlebot executes headless Chromium with a mobile viewport. **(hypothesis: the exact 412 × 915 px / DPR 2.625 figures are not published by Google)**
    - Evaluates layout geometry, critical CSS stylesheets, and executes JavaScript.
 2. **Eliminating the "Wave 2" SPA Render Delay:**
    - Traditional SPAs (React, Angular, Vue) suffer massive indexing delays because Google renders them in "Wave 2" (a deferred rendering queue that can take days).
    - **TENSIX Implementation:** We deliver 100% pre-rendered semantic HTML5 with non-blocking deferred JS (`<script defer src="script.js">`). Wave 1 grabs the complete DOM instantly with zero delay.
 
-### Tier 2: SimHash De-Duplication & Shingling (Thin Content Filter)
+### Tier 2: SimHash De-Duplication & Shingling (Thin Content Filter) — (hypothesis: algorithm and threshold unpublished)
 1. **64-Bit SimHash Fingerprinting:**
    - Text is broken down into word $k$-shingles (sequences of 3 to 5 words).
    - High-IDF (Inverse Document Frequency) technical tokens (`FastAPI`, `Navrangpura`, `GraphRAG`, `SES sandbox`, `LangGraph`) receive elevated mathematical weights.
@@ -95,7 +97,7 @@
    - Anchors the primary entity to geographic coordinates: `23.0366° N, 72.5615° E` (Navrangpura, Ahmedabad 380009).
 3. **Dense Vector Embeddings (RankBrain & MUM):**
    - Natural language content and FAQ blocks are converted to dense vector embeddings.
-   - When a user searches *"Who is the top SaaS developer in Ahmedabad?"*, MUM matches the cosine similarity vector of our `saas-developer-ahmedabad.html` FAQ node.
+   - **(hypothesis)** When a user searches *"Who is the top SaaS developer in Ahmedabad?"*, a semantic retrieval model could match our `/saas-developer-ahmedabad` FAQ content.
 
 ### Tier 4: The Caffeine Inverted Index Commit
 1. **Posting List Decomposition:**
@@ -109,7 +111,7 @@
 2. **Micro-Batch Streaming Commits:**
    - Caffeine updates Bigtable posting lists continuously without requiring full web recrawls.
 
-### Tier 5: Edge Sharding & Staging Buffer (The 24–72h Delay)
+### Tier 5: Edge Sharding & Staging Buffer (The 24–72h Delay) — (hypothesis: no published buffer or timing)
 1. **Two-Phase Commit Replication:**
    - Index deltas replicate globally across data centers (Ashburn, Dublin, Frankfurt, Singapore, Mumbai).
 2. **Automated Reputation & Safety Hold:**
@@ -128,8 +130,8 @@
 | Gate | Google Requirement | TENSIX Architectural Rule |
 |---|---|---|
 | **WRS Speed** | Sub-second mobile layout render without JS lock | Zero-bloat semantic HTML5; no heavy UI frameworks; `defer` scripts. |
-| **SimHash Gate** | >3 bits Hamming distance from any existing page | 100% unique technical copy, real metrics, and tailored matrices. |
-| **Canonical Gate** | Strict single canonical per entity | Canonical tags match `https://tensix.in/...`; Cloudflare 308 apex redirect. |
+| **Duplicate-content filter** | Substantially unique content (exact method unpublished) | 100% unique technical copy, real metrics, and tailored matrices. |
+| **Canonical Gate** | Strict single canonical per entity | Exactly one canonical per page: `https://www.tensix.in/<path>` with no `.html`, matching Vercel cleanUrls and the 308 from apex to www. Enforced by `screaming_frog_audit.py`. |
 | **Entity Authority** | Machine-readable Knowledge Graph nodes | Single `@graph` JSON-LD array linking `#organization` & `#person`. |
 | **AI Agent Crawlers** | Discoverable structured documentation | Compliant `llms.txt` and `llms-full.txt` formatted with markdown links. |
 | **Accessibility & Contrast** | High legibility for automated visual checks | WCAG AA compliant colors (>7.5:1 ratio) and strict sequential headings. |
@@ -151,7 +153,6 @@ git add -A
 git commit -m "feat/fix: <description>"
 git push origin main
 
-# 4. Instant notification to Google & IndexNow engines
-python submit_google_indexing.py
+# 4. Notify IndexNow engines; for Google, resubmit sitemap.xml in Search Console
 python submit_indexnow.py
 ```

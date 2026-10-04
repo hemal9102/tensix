@@ -50,7 +50,7 @@ lines = [
     "TENSIX — Autonomous AI Swarms & Full-Stack Engineering Studio | Full Website Text Corpus",
     "Founded, Owned, and Architected Solely by Hemal Shah (Navrangpura, Ahmedabad, Gujarat, India)",
     "Coordinates: 23.0366° N, 72.5615° E",
-    "Generated for AI crawlers (LLMs, SearchGPT, Perplexity, Claude, Gemini). Canonical: https://tensix.in/\n"
+    "Generated for AI crawlers (LLMs, SearchGPT, Perplexity, Claude, Gemini). Canonical: https://www.tensix.in/\n"
 ]
 
 for page in PAGES:
@@ -61,7 +61,8 @@ for page in PAGES:
     with open(filepath, encoding="utf-8") as f:
         html = f.read()
     text = strip_tags(html)
-    lines.append(f"\n--- Page: {page} ---")
+    url = "https://www.tensix.in/" + ("" if page == "index.html" else page.removesuffix(".html"))
+    lines.append(f"\n--- Page: {url} ---")
     lines.append(text)
 
 output = "\n".join(lines)

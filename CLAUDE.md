@@ -1,6 +1,6 @@
 # CLAUDE.md — TENSIX (tensix.in)
 # AI Agent Rules, Infrastructure, SEO & Operational Protocol
-# Last updated: 2026-09-30
+# Last updated: 2026-10-04
 
 ---
 
@@ -16,7 +16,7 @@
 | **Push command**   | `git push origin main`                                       |
 
 ### Production Deployment & DNS Architecture:
-- **Canonical Domain:** `https://tensix.in/` (Apex redirects 308 to `https://www.tensix.in/`)
+- **Canonical URLs:** `https://www.tensix.in/<path>` with NO `.html` (e.g. `https://www.tensix.in/about`, home = `https://www.tensix.in/`). Apex `tensix.in` 308s to www; `vercel.json` `cleanUrls: true` 308s every `*.html` to the extensionless path.
 - **DNS Host:** Cloudflare (Authoritative NS: `lina.ns.cloudflare.com`, `mark.ns.cloudflare.com`)
 - **Hosting Platform:** Vercel (Auto-deploys from GitHub `main` branch)
 - **CNAME Target:** `d8ced1b4152d7850.vercel-dns-017.com`
@@ -52,7 +52,7 @@ These `@id` anchors are the single source of truth for the JSON-LD schema web:
 
 ```
 Organization  →  https://tensix.in/#organization
-Person        →  https://hemalshah.vercel.app/#person
+Person        →  https://tensix.in/#person
 WebSite       →  https://tensix.in/#website
 ```
 
@@ -68,18 +68,17 @@ The repository contains automated instant indexing pipelines:
 
 | Script / Asset | Target Engine | Purpose & Usage |
 |---|---|---|
-| `submit_google_indexing.py` | Google Search Console Indexing API | Submits all sitemap URLs as `URL_UPDATED` using service account |
-| `submit_indexnow.py` | Bing, Yandex, Seznam, Naver | Submits all sitemap URLs via IndexNow API protocol |
-| `c4b69324e9334bbba3ff6f3f02db4fb6.txt` | IndexNow Key Verification | Root verification key file served at `https://tensix.in/c4b69324e9334bbba3ff6f3f02db4fb6.txt` |
+| `submit_google_indexing.py` | Google Indexing API | Submits sitemap URLs as `URL_UPDATED`. **Google officially supports this API only for `JobPosting` / `BroadcastEvent` pages**; for normal pages it may be ignored. Primary Google path = `sitemap.xml` + Search Console. |
+| `submit_indexnow.py` | Bing, Yandex, Seznam, Naver | Submits all sitemap URLs via IndexNow (`host` must be `www.tensix.in` to match the URLs) |
+| `c4b69324e9334bbba3ff6f3f02db4fb6.txt` | IndexNow Key Verification | Root verification key file served at `https://www.tensix.in/c4b69324e9334bbba3ff6f3f02db4fb6.txt` |
 | `google-service-account.json` | Google Cloud API | Credentials file for Google Indexing API (in `.gitignore`) |
 
 ### Running Indexing Pipelines:
 ```powershell
-# 1. Submit to Google Indexing API
-python submit_google_indexing.py
-
-# 2. Submit to IndexNow (Bing / Yandex)
+# 1. Submit to IndexNow (Bing / Yandex)
 python submit_indexnow.py
+
+# 2. Google: resubmit sitemap.xml in Search Console (Indexing API is job/livestream-only)
 ```
 
 ---
@@ -107,12 +106,16 @@ python submit_indexnow.py
 - All 37 pages must pass `python validate_schemas.py` with 0 errors before pushing.
 - All internal links must pass `python screaming_frog_audit.py` with 0 broken links and 0 orphans.
 - Keep `sitemap.xml` strictly updated with all canonical URLs.
+- Exactly ONE `<link rel="canonical">` per page, equal to `https://www.tensix.in/<path>` (no `.html`). `screaming_frog_audit.py` enforces this.
+- Internal links are root-relative and extensionless (`/about`, `/blogs/<slug>`).
 
 ### ❌ NEVER DO
 - **NO `AggregateRating` schemas** without verifiable external review data.
 - **NO duplicate `@id` anchors** across pages.
 - **NO committing secret credentials:** `google-service-account.json`, `.env`, or `.pem` keys must remain strictly in `.gitignore`.
 - **NO backslashes in canonical URLs** — always use standard forward slashes.
+- **NO `.html` in canonical, sitemap `<loc>`, og:url, hreflang, or JSON-LD `url`/`item`** — these 308-redirect under cleanUrls. (`@id` values are opaque identifiers and stay unchanged.)
+- **Do NOT run scripts in `09_Archive/legacy_seo_scripts/`** — they hardcode the old `hemalshah.vercel.app` domain and `.html` URLs.
 
 ---
 
@@ -126,3 +129,26 @@ python submit_indexnow.py
 ---
 
 © 2026 TENSIX. Founded and solely owned by Hemal Shah.
+
+---
+
+## 8. MANDATORY SKILLS & PHILOSOPHY (from ~/.gemini/GEMINI.md)
+
+### 8.1 Ponytail Skill (`ponytail`) — Always Active
+- **Every coding, refactoring, designing, reviewing, or fixing task must adhere to the `ponytail` skill.**
+- Channel a pragmatic senior engineer: choose the simplest, shortest, cleanest, and most minimal solution that actually works.
+- Always climb the ladder:
+  1. **YAGNI**: Question whether speculative code or features need to exist at all.
+  2. **Codebase Reuse**: Reuse existing utilities, helpers, and patterns already in the repository before writing new ones.
+  3. **Standard Library First**: Prefer stdlib over external packages.
+  4. **Native Platform Features**: Use native platform capabilities (HTML/CSS, native APIs, database constraints) before pulling dependencies.
+  5. **No Bloat**: Avoid unnecessary dependencies, boilerplate, or over-engineering.
+
+### 8.2 TypeSafe Skill (`typesafe-ai` / `typesafe`) — Always Active
+- **Every AI-powered workflow, semantic decision, routing, or LLM-driven task must leverage the `typesafe-ai` skill.**
+- Treat AI units of intelligence as typed programming primitives rather than arbitrary free-form generation.
+- Use System One models (e.g. Jev) for fast, calibrated, typed judgments:
+  - **Choice**: Categorization and option selection with probability distributions.
+  - **Noul**: Calibrated binary condition probabilities.
+  - **Score**: Probability-weighted ranking across ordered dimension levels.
+- Keep workflows deterministic in application code; use TypeSafe judgments for programmable common sense and semantic evaluations.
