@@ -74,13 +74,23 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const body = req.body || {};
-    const { name, email, subject, project_type, message, _honey, botcheck, website } = body;
+    // Vercel parses both JSON and urlencoded bodies into an object; a raw string is parsed here as a fallback.
+    let body = req.body || {};
+    if (typeof body === 'string') {
+      try { body = JSON.parse(body); } catch (_) { body = Object.fromEntries(new URLSearchParams(body)); }
+    }
+    const { name, email, subject, project_type, message, plan, _honey, botcheck, website } = body;
+
+    // Plain HTML form posts (no JS) want a page back, not JSON.
+    const wantsHtml = /text\/html/.test(req.headers.accept || '') && !/application\/json/.test(req.headers.accept || '');
+    const reply = (status, payload) => (wantsHtml && status === 200)
+      ? res.writeHead(303, { Location: '/contact?sent=1' }).end()
+      : res.status(status).json(payload);
 
     // 1. Honeypot Anti-Spam Check (Silently drop bots with 200 OK)
     if (_honey || botcheck || website) {
       console.warn('[TENSIX Bot Shield] Dropped spam submission from bot.');
-      return res.status(200).json({
+      return reply(200, {
         success: true,
         message: 'Consultation request received successfully.'
       });
@@ -106,7 +116,8 @@ module.exports = async function handler(req, res) {
 
     // 4. Sanitize and enforce length limits (Anti-XSS & Anti-DoS)
     const cleanName = sanitizeInput(name, 100);
-    const cleanSubject = sanitizeInput(subject || 'General Architecture Consultation', 150);
+    const cleanPlan = String(plan || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 40);
+    const cleanSubject = (cleanPlan ? `[Plan: ${cleanPlan}] ` : '') + sanitizeInput(subject || 'General Architecture Consultation', 150);
     const cleanProjectType = sanitizeInput(project_type || 'Other', 100);
     const cleanMessage = sanitizeInput(message, 5000);
 
@@ -183,7 +194,7 @@ module.exports = async function handler(req, res) {
       console.error('[TENSIX Email Notify Error]', emailErr.message);
     }
 
-    return res.status(200).json({
+    return reply(200, {
       success: true,
       message: 'Consultation request received successfully.',
       database_saved: dbSaved,

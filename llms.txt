@@ -1,28 +1,62 @@
-# TENSIX — Autonomous AI Systems, Cloud Infrastructure & High-Concurrency Software
+# TENSIX — Software, AI and Websites from Ahmedabad
 
-> TENSIX (https://www.tensix.in/) is an enterprise autonomous AI systems, cloud infrastructure, and full-stack software engineering studio headquartered in Navrangpura, Ahmedabad, Gujarat, India (23.0366° N, 72.5615° E). Founded and solely owned by Hemal Shah.
+> TENSIX (https://www.tensix.in/) is a one-person software and AI studio in Navrangpura, Ahmedabad, Gujarat, India, founded and run by Hemal Shah. It builds websites, custom software and SaaS, AI agents and assistants, cloud and DevOps setups, email deliverability, data scraping and automation, and AI search visibility (GEO/AEO/SEO), at fixed prices in INR.
 
-## Core Documentation & Primary Pages
-- [TENSIX Home](https://www.tensix.in/): Canonical homepage detailing autonomous AI agent swarms, client ROI calculator, and diagnostic telemetry console.
-- [About TENSIX & Founder](https://www.tensix.in/about): Background, leadership, and operational philosophy of Principal Architect Hemal Shah.
-- [Engineering Services & Productized Suites](https://www.tensix.in/services): Complete 6-stage hybrid delivery lifecycle, commercial pricing suites, and retainers.
-- [Selected Work & Case Studies](https://www.tensix.in/work): Production client case studies across B2B outreach, automated scrapers, and clinical triage.
-- [Engineering Case Studies Portfolio](https://www.tensix.in/case-studies): In-depth architectural case studies detailing FastAPI backends, Docker pipelines, and GraphRAG.
-- [TENSIX vs Traditional Agencies](https://www.tensix.in/tensix-vs-traditional-agencies): 7-dimension comparison matrix contrasting TENSIX against traditional Indian IT firms.
-- [Schedule Consultation & Contact](https://www.tensix.in/contact): Direct architecture consultation intake and inquiry channel with Hemal Shah.
-- [Engineering Leadership Profile — Hemal Shah](https://www.tensix.in/hemal-shah): Sole founder, enterprise architect, and AI engineer credentials.
-- [Architecture Frameworks](https://www.tensix.in/frameworks): Technical frameworks, agentic patterns, and infrastructure standards.
-- [Engineering Proof & Visual Gallery](https://www.tensix.in/gallery): Visual telemetry, architecture schematics, and production system proofs.
-- [Resources & Whitepapers](https://www.tensix.in/resources): Ahmedabad industrial survival guides and enterprise automation whitepapers.
-- [Engineering Team & Pods](https://www.tensix.in/team): Autonomous AI pods supervised by Principal Architect Hemal Shah.
-- [Technical Blog & Articles](https://www.tensix.in/blogs): Deep-dives into AI swarms, email deliverability, VPS hardening, and web performance.
+## Core pages
+- [TENSIX | Software, AI & Websites in Ahmedabad](https://www.tensix.in/): TENSIX builds websites, custom software, AI assistants and business automation for companies in Ahmedabad and abroad. Fixed prices. You own all the code.
+- [About TENSIX | One-Person Software Studio, Ahmedabad](https://www.tensix.in/about): TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. You talk directly to the person building your project, start to finish.
+- [Services and Prices: AI, Software, Web, Cloud](https://www.tensix.in/services): TENSIX services in Ahmedabad: websites, custom software, AI assistants, cloud servers, email delivery, automation and AI search visibility, with fixed prices.
+- [Our Work: Live Projects Built by TENSIX](https://www.tensix.in/work): Live projects built by TENSIX in Ahmedabad: AI helpers, online booking, Google Maps lead finders, review replies, online stores and business websites.
+- [Case Studies: Problems Solved by TENSIX](https://www.tensix.in/case-studies): TENSIX case studies in plain words: the business problem, what was built and how it helped. Lead finding, online stores, hiring sites and automation.
+- [Contact TENSIX | Get a Fixed-Price Project Plan](https://www.tensix.in/contact): Tell Hemal Shah about your project. You get a reply within 24 hours with a simple plan and a fixed price for AI, software, website, or cloud work.
+- [Hemal Shah | Founder of TENSIX, Ahmedabad](https://www.tensix.in/hemal-shah): Hemal Shah is a software and AI engineer in Navrangpura, Ahmedabad, and the sole founder of TENSIX. He builds AI assistants, custom software and websites.
+- [Who Works at TENSIX | Hemal Shah and His AI Tools](https://www.tensix.in/team): TENSIX is run by one person, Hemal Shah, in Ahmedabad. See the AI tools he uses to deliver faster, while you always talk to the person doing the work.
+- [How TENSIX Builds Reliable AI Systems](https://www.tensix.in/frameworks): The 3-step method Hemal Shah of TENSIX uses to build AI assistants you can rely on: answers from your own data, apps that stay fast, and checked actions.
+- [Project Gallery: Screens from Real Builds](https://www.tensix.in/gallery): Screenshots from real projects by Hemal Shah at TENSIX, Ahmedabad: a secure file manager, a text-from-images reader and a Google Maps lead finder.
+- [AI Terms Explained Simply: Glossary](https://www.tensix.in/resources): Plain-English meanings of the AI terms business owners keep hearing: AI agents, RAG, GraphRAG, n8n and FastAPI. By Hemal Shah of TENSIX, Ahmedabad.
+- [TENSIX vs Agencies, Outsourcing & Freelancers](https://www.tensix.in/tensix-vs-traditional-agencies): Compare hiring TENSIX, one senior engineer, with an agency, an hourly outsourcing firm or a freelancer: who you talk to, pricing, speed and code ownership.
+- [TENSIX Guides & Insights | AI, Automation, Search](https://www.tensix.in/blogs): Plain-English guides from TENSIX on AI assistants, automation, cloud hosting and getting found on Google and ChatGPT, plus guides for Ahmedabad industries.
 
-## Regional Delivery Hubs & Ahmedabad Clusters
-- [Software Company in Navrangpura, Ahmedabad](https://www.tensix.in/software-company-in-navrangpura-ahmedabad): Central global headquarters, serving CG Road, SG Highway, and Bodakdev.
-- [SaaS Developer & Multi-Tenant Architect in Ahmedabad](https://www.tensix.in/saas-developer-ahmedabad): High-concurrency SaaS MVPs, FastAPI backends, and Stripe/Razorpay billing.
-- [Best Software Company in Gota, Ahmedabad](https://www.tensix.in/best-software-company-in-gota): Engineering studio serving Gota, New SG Road, and Vandemataram commercial clusters.
-- [Ahmedabad Software Engineering Studio](https://www.tensix.in/ahmedabad-software-engineering): Comprehensive regional engineering hub and local industrial solutions.
-- [HK Engineering Rebranding Transition](https://www.tensix.in/hk-engineering-ahmedabad): Official transition record from HK Engineering to TENSIX.
+## Services
+- [AI Agent and Assistant Development, Ahmedabad](https://www.tensix.in/services/ai-agent-development): Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices from ₹29,999.
+- [Cloud Server, VPS and DevOps Setup](https://www.tensix.in/services/cloud-devops): Secure cloud server (VPS) set-up, automatic deployments from GitHub, daily off-site backups and monitoring. Fixed prices from ₹11,999. Based in Ahmedabad.
+- [Custom Software, CRM and SaaS Development](https://www.tensix.in/services/custom-software-saas-development): Custom software, CRMs, ERPs and SaaS products built for your exact workflow. Fixed prices from ₹34,999, and you own all the code. Based in Ahmedabad.
+- [Web Scraping and Workflow Automation](https://www.tensix.in/services/data-scraping-automation): Automatic data entry from emails and invoices, Google Maps lead lists and custom website trackers with alerts. Fixed prices from ₹16,999. Based in Ahmedabad.
+- [Email Deliverability and Amazon SES Setup](https://www.tensix.in/services/email-deliverability): Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices from ₹12,999.
+- [Monthly Tech Retainers and Fractional CTO](https://www.tensix.in/services/fractional-cto-retainers): Monthly engineering, server care, AI automation, code audits and technical leadership from Hemal Shah, with no long contract. Plans from ₹39,999 a month.
+- [GEO, AEO and SEO for AI Search Visibility](https://www.tensix.in/services/geo-aeo-seo): Help Google, ChatGPT, Gemini and Perplexity understand and cite your business with technical SEO, structured data and clear answer pages. Custom quote.
+- [Website Design and Development in Ahmedabad](https://www.tensix.in/services/website-development): Fast, mobile-friendly business websites with WhatsApp, enquiry forms and SEO basics built in. Fixed prices from ₹14,999, ready in 5 to 14 business days.
 
-## Full Text Corpus
-- [Complete Machine-Readable Corpus](https://www.tensix.in/llms-full.txt): Complete uncompressed textual corpus of all production pages for LLM ingestion.
+## Local pages
+- [Software Company in Navrangpura, Ahmedabad](https://www.tensix.in/software-company-in-navrangpura-ahmedabad): TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. Websites, custom software and automation at fixed, published prices.
+- [Software & AI Development Company in Ahmedabad](https://www.tensix.in/ahmedabad-software-engineering): Websites, custom software, AI assistants and automation for Ahmedabad businesses. Fixed prices, and you work directly with founder Hemal Shah.
+- [SaaS & Custom Software Developer in Ahmedabad](https://www.tensix.in/saas-developer-ahmedabad): Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices from ₹34,999.
+- [Software & Website Company Serving Gota, Ahmedabad](https://www.tensix.in/best-software-company-in-gota): Websites, custom software and AI automation for businesses in Gota, Vandemataram and New SG Road, Ahmedabad. Fixed prices. Work directly with Hemal Shah.
+- [TENSIX (Formerly HK Engineering) | Software, Ahmedabad](https://www.tensix.in/hk-engineering-ahmedabad): HK Engineering in Navrangpura, Ahmedabad is now TENSIX: a software and AI studio run by Hemal Shah. Not a CNC or manufacturing firm. Same person, new name.
+
+## Guides & articles
+- [Ahmedabad Hospitals: Win More Patients Online](https://www.tensix.in/blogs/ahmedabad-healthcare-digital-survival): A plain guide for Ahmedabad hospitals and clinics: keep your website safe, help patients find your doctors on Google and AI search, and let them book online.
+- [Ahmedabad Jewelers: Sell Online Safely](https://www.tensix.in/blogs/ahmedabad-jewelry-digital-survival): A plain guide for Ahmedabad jewelers: protect stock and customer data, earn the trust of high-value and NRI buyers, and sell online with secure custom systems.
+- [Ahmedabad Machinery Makers: Win Export Orders](https://www.tensix.in/blogs/ahmedabad-machinery-digital-survival): A plain guide for Ahmedabad machinery makers: get found by B2B buyers, share clear specs and order updates online, and cut manual planning with custom software.
+- [Ahmedabad Pharma: Secure Export Websites](https://www.tensix.in/blogs/ahmedabad-pharma-digital-survival): A plain guide for Ahmedabad pharma exporters: stop website hacks that scare off buyers, look credible online, and link product data and inquiries to your ERP.
+- [Ahmedabad Real Estate: Win NRI Buyers Online](https://www.tensix.in/blogs/ahmedabad-real-estate-digital-survival): A plain guide for Ahmedabad builders and brokers: earn NRI buyer trust online with clear project details, virtual tours, quick replies and a secure website.
+- [Ahmedabad Textile Exporters: Get Found Online](https://www.tensix.in/blogs/ahmedabad-textile-digital-survival): A plain guide for Ahmedabad textile mills and exporters: get found by global B2B buyers, replace risky old websites, and automate inquiries and order handling.
+- [Building AI Agents with FastAPI: A Practical Guide](https://www.tensix.in/blogs/ai-engineering/building-ai-agents-with-fastapi): How to build an AI agent (software that answers and acts for you) with FastAPI and Python: how it fits together, the code, security, and deployment tips.
+- [Automated Data Pipelines with Python & n8n](https://www.tensix.in/blogs/automation/etl-pipeline-automation-n8n-python): How to move data between your apps and databases automatically with Python and n8n, so reports and AI search stay current without manual exports.
+- [Building My First AI Project: Engineering Lessons](https://www.tensix.in/blogs/building-my-first-ai-project-lessons-learned): Lessons from building my first real AI project, a chess engine: why the first version was too slow, how alpha-beta pruning fixed it, and what I learned.
+- [China's Cheap AI vs India's Sovereign AI Push](https://www.tensix.in/blogs/case-studies/china-vs-india-ai-race-cheap-llms): Why Chinese AI models are so cheap, what India is building in response, and what it means for Indian businesses choosing an AI model today.
+- [Guide: AI Document Search with FastAPI & pgvector](https://www.tensix.in/blogs/case-studies/enterprise-rag-pgvector-fastapi-case-study): How to build an AI assistant that answers from your company documents (RAG) on PostgreSQL and FastAPI, with fewer moving parts and faster replies.
+- [How IRCTC Handles the Tatkal Rush: System Design](https://www.tensix.in/blogs/case-studies/irctc-system-design-scalability): Why IRCTC slows down at Tatkal time and how it stops two people booking the same seat: queues, caching, and database locks explained simply.
+- [WhatsApp System Design: Why It Lags Under Load](https://www.tensix.in/blogs/case-studies/whatsapp-system-design-outage): How WhatsApp delivers messages for billions of people, and the likely technical reasons it slows down after outages or big feature launches, explained.
+- [n8n vs Python Scripts: Production Automation Guide](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which): When to use n8n, a visual automation tool, and when to write a custom Python script instead. A simple decision guide for automating business work, by TENSIX.
+- [GEO & AEO: How to Get Cited by AI Search Engines](https://www.tensix.in/blogs/seo-engineering/geo-aeo-semantic-seo-architecture): How structured data (JSON-LD) and clear entity pages help ChatGPT, Perplexity, and Google AI Overviews understand your business and cite it correctly.
+- [The Future of SEO: GEO and AI Search Explained](https://www.tensix.in/blogs/the-future-of-seo-geo-and-search-engines): A plain guide to where people search today, from Google and Bing to AI assistants like ChatGPT and Perplexity, and what GEO means for your business.
+- [The Ultimate Local Business SEO & AEO Strategy](https://www.tensix.in/blogs/the-ultimate-local-business-seo-master-strategy): A plain-language local SEO plan for small businesses: fix your website basics, write clear pages, win Google answer boxes, and get recommended by AI search.
+- [What Is Our Life? Reflections on Purpose](https://www.tensix.in/blogs/what-is-our-life): A philosophical reflection on life, purpose, mastery, and building high-impact technology systems by Hemal Shah, founder of TENSIX.
+- [Why I Chose Automation & Systems Over a 9-to-5](https://www.tensix.in/blogs/why-i-chose-automation-over-a-9-to-5): Why Hemal Shah chose to build automation and software for clients instead of taking a 9-to-5 job: the freedom, the real risks, and what the work has taught him.
+
+## Machine-readable
+- [Full text of every page](https://www.tensix.in/llms-full.txt): All pages as Markdown in one file.
+- [OpenAPI description](https://www.tensix.in/openapi.json): OpenAPI 3.1 for POST /api/contact (send a project inquiry).
+- [Agent Skills index](https://www.tensix.in/.well-known/agent-skills/index.json): Skill for picking a service and plan and requesting a quote.
+- Every page is also available as Markdown: send `Accept: text/markdown` to the page URL, or fetch https://www.tensix.in/md/<path>.md (for example https://www.tensix.in/md/index.md, https://www.tensix.in/md/services/cloud-devops.md).

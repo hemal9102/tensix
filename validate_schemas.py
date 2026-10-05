@@ -8,6 +8,19 @@ errors = []
 total = 0
 file_count = 0
 duplicates = []
+defined = {}  # @id -> set of pages that define it (more than @id/@type/name)
+
+
+def collect_defs(node, rel):
+    if isinstance(node, list):
+        for x in node:
+            collect_defs(x, rel)
+    elif isinstance(node, dict):
+        if "@id" in node and set(node) - {"@id", "@type", "name"}:
+            defined.setdefault(node["@id"], set()).add(rel)
+        for v in node.values():
+            collect_defs(v, rel)
+
 
 for dirpath, dirs, files in os.walk(root):
     dirs[:] = [d for d in dirs if d not in ("hk", "skills", "resources", "assets", "node_modules", ".git", "09_Archive")]
@@ -27,9 +40,13 @@ for dirpath, dirs, files in os.walk(root):
             
         for i, s in enumerate(schemas):
             try:
-                json.loads(s)
+                collect_defs(json.loads(s), rel)
             except Exception as e:
                 errors.append(f"{rel} schema {i+1}: {e}")
+
+for node_id, pages in sorted(defined.items()):
+    if len(pages) > 1:
+        duplicates.append(f"@id {node_id} is defined on {len(pages)} pages: {', '.join(sorted(pages))}")
 
 if errors or duplicates:
     if duplicates:
@@ -41,4 +58,4 @@ if errors or duplicates:
         for e in errors:
             print(f"  - {e}")
 else:
-    print(f"[OK] ALL VALID - {total} JSON-LD schemas across {file_count} HTML pages, zero errors, zero duplicates.")
+    print(f"[OK] ALL VALID - {total} JSON-LD schemas across {file_count} HTML pages, zero errors, zero duplicates, no @id defined on more than one page.")

@@ -1,0 +1,13 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.tensix.in/api/contact",
+      "service-desc": [
+        { "href": "https://www.tensix.in/openapi.json", "type": "application/openapi+json" }
+      ],
+      "service-doc": [
+        { "href": "https://www.tensix.in/contact", "type": "text/html" }
+      ]
+    }
+  ]
+}

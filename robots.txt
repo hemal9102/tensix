@@ -5,236 +5,310 @@
 # ── Global rule — everything allowed by default ──────────────────────────────
 User-agent: *
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Disallow: /node_modules/
 
 # ── Search Engine Crawlers ────────────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Disallow: /node_modules/
 
 User-agent: Googlebot-Image
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Googlebot-News
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Googlebot-Video
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: AdsBot-Google
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: AdsBot-Google-Mobile
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Storebot-Google
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Bingbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Disallow: /node_modules/
 
 User-agent: AdIdxBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Applebot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: DuckDuckBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: YandexBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Baiduspider
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Sogou Spider
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: PetalBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: SeznamBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Qwantify
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: MojeekBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── AI Crawlers / LLM Crawlers — Full access for AI visibility ────────────────
 User-agent: GPTBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: ChatGPT-User
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: OAI-SearchBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: ClaudeBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Claude-Web
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Anthropic-AI
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: PerplexityBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Perplexity-User
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Google-Extended
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Googlebot-Extended
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Applebot-Extended
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Meta-ExternalFetcher
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Amazonbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: YouBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Diffbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Bytespider
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: CCBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: CommonCrawl
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Cohere-AI
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: ImagesiftBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Social Media Preview Bots ─────────────────────────────────────────────────
 User-agent: facebookexternalhit
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Facebot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Twitterbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: LinkedInBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Slackbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Discordbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: TelegramBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: WhatsApp
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Pinterestbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: SkypeUriPreview
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Snapchat
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: redditbot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── SEO Audit Crawlers ────────────────────────────────────────────────────────
 User-agent: SemrushBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: SemrushBot-SA
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: AhrefsBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: AhrefsSiteAudit
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: MJ12bot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: DotBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: DataForSeoBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: LumarBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: RyteBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: UbersuggestBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: MorningscoreBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Feed & Reader Bots ────────────────────────────────────────────────────────
 User-agent: FeedFetcher-Google
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Feedly
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Inoreader
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: FlipboardProxy
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Monitoring Bots ───────────────────────────────────────────────────────────
 User-agent: UptimeRobot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Pingdom
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Archive Bots ──────────────────────────────────────────────────────────────
 User-agent: ia_archiver
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Wayback
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: ArchiveBot
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Security & Verification ───────────────────────────────────────────────────
 User-agent: Google-Safety
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Cloudflare-AlwaysOnline
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Sitemap ───────────────────────────────────────────────────────────────────
 Sitemap: https://www.tensix.in/sitemap.xml

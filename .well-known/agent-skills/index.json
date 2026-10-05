@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "request-a-quote",
+      "type": "skill-md",
+      "description": "Pick a TENSIX service and fixed-price plan (INR) and, with the user's consent, send a project inquiry to founder Hemal Shah via POST /api/contact.",
+      "url": "https://www.tensix.in/.well-known/agent-skills/request-a-quote/SKILL.md",
+      "digest": "sha256:7426e116c6f24b17d410bf3cf94735e43cd81a50939c5b465bfe827a09c1c37c"
+    }
+  ]
+}

@@ -155,102 +155,6 @@ function initSmoothScroll() {
   });
 }
 
-/* ── Particle System ────────────────────────── */
-function initParticles() {
-  const container = document.getElementById('particleContainer');
-  if (!container) return;
-
-  initCanvasParticles(container);
-}
-
-function initCanvasParticles(container) {
-  // Read layout BEFORE any DOM mutation to avoid forced reflow
-  let width = container.offsetWidth;
-  let height = container.offsetHeight;
-
-  const canvas = document.createElement('canvas');
-  canvas.style.cssText = 'position:absolute;top:0;left:0;pointer-events:none;';
-  canvas.width = width;
-  canvas.height = height;
-  container.appendChild(canvas);
-
-  const ctx = canvas.getContext('2d');
-
-  const isMobile = width < 600;
-  const numParticles = isMobile ? 30 : 60;
-  const connectDist  = isMobile ? 70 : 110;
-
-  let particles = [];
-
-  function resize() {
-    width = container.offsetWidth;
-    height = container.offsetHeight;
-    canvas.width = width;
-    canvas.height = height;
-  }
-
-  window.addEventListener('resize', resize, { passive: true });
-  
-  for (let i = 0; i < numParticles; i++) {
-    particles.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.8,
-      vy: (Math.random() - 0.5) * 0.8,
-      size: Math.random() * 3.5 + 2,
-      opacity: Math.random() * 0.4 + 0.2
-    });
-  }
-  
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reducedMotion) return;
-
-  const connectDistSq = connectDist * connectDist;
-
-  function draw() {
-    if (document.hidden) { requestAnimationFrame(draw); return; }
-    ctx.clearRect(0, 0, width, height);
-
-    // Pass 1 — move and draw dots
-    for (let i = 0; i < particles.length; i++) {
-      const pt = particles[i];
-      pt.x += pt.vx;
-      pt.y += pt.vy;
-      if (pt.x < 0) pt.x = width;
-      if (pt.x > width) pt.x = 0;
-      if (pt.y < 0) pt.y = height;
-      if (pt.y > height) pt.y = 0;
-
-      ctx.beginPath();
-      ctx.arc(pt.x, pt.y, pt.size / 2, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(255,255,255,${pt.opacity})`;
-      ctx.fill();
-    }
-
-    // Pass 2 — draw all connections as one batched path (no per-line stroke call)
-    ctx.beginPath();
-    ctx.strokeStyle = 'rgba(255,255,255,0.18)';
-    ctx.lineWidth = 0.6;
-    for (let i = 0; i < particles.length; i++) {
-      const pt = particles[i];
-      for (let j = i + 1; j < particles.length; j++) {
-        const other = particles[j];
-        const dx = pt.x - other.x;
-        const dy = pt.y - other.y;
-        if (dx * dx + dy * dy < connectDistSq) {
-          ctx.moveTo(pt.x, pt.y);
-          ctx.lineTo(other.x, other.y);
-        }
-      }
-    }
-    ctx.stroke();
-
-    requestAnimationFrame(draw);
-  }
-
-  draw();
-}
-
 /* ── Typewriter (Typed.js if loaded, fallback if not) ── */
 function initTypewriter() {
   const el = document.getElementById('typed-text');
@@ -309,6 +213,19 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
+  // Pricing cards link to /contact?plan=<slug>: keep the plan with the inquiry.
+  const plan = (new URLSearchParams(location.search).get('plan') || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 40);
+  const planInput = document.getElementById('cf-plan');
+  if (plan && planInput) {
+    planInput.value = plan;
+    const typeByPrefix = { ai: 'mas', software: 'fullstack', web: 'fullstack', cloud: 'cloud_vps', email: 'cloud_vps', scraper: 'scraping', retainer: 'consultation', geo: 'geo_aeo' };
+    const typeSelect = document.getElementById('cf-type');
+    const type = typeByPrefix[plan.split('-')[0]];
+    if (typeSelect && type) typeSelect.value = type;
+    const subjectInput = document.getElementById('cf-subject');
+    if (subjectInput && !subjectInput.value) subjectInput.value = 'Inquiry: ' + plan;
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -345,7 +262,8 @@ function initContactForm() {
       email: emailInput.value,
       subject: document.getElementById('cf-subject')?.value || 'General Inquiry',
       project_type: document.getElementById('cf-type')?.value || 'Other',
-      message: messageInput.value
+      message: messageInput.value,
+      plan: planInput ? planInput.value : ''
     };
 
     // Primary path: High-speed Supabase /api/contact endpoint with fallback
@@ -450,7 +368,7 @@ function initDockHighlight() {
   const current = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.dock-btn[data-page]').forEach(btn => {
     if (btn.dataset.page === current) {
-      btn.style.color = '#fff';
+      btn.style.color = '#1D4ED8';
       btn.style.background = 'rgba(59,130,246,0.15)';
     }
   });
@@ -639,7 +557,7 @@ function initRippleButtons() {
         `width:${size}px`,
         `height:${size}px`,
         'border-radius:50%',
-        'background:rgba(255,255,255,0.22)',
+        'background:rgba(15,23,42,0.15)',
         `top:${e.clientY - r.top  - size / 2}px`,
         `left:${e.clientX - r.left - size / 2}px`,
         'animation:rippleOut 0.55s ease forwards',

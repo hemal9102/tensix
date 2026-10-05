@@ -36,6 +36,7 @@ issues = {
     "missing_canonical": [],
     "non_self_referencing_canonical": [],
     "duplicate_canonical": [],
+    "duplicate_meta_tags": [],
     "broken_images": [],
     "missing_image_alt": [],
     "missing_image_dimensions": [],
@@ -117,6 +118,13 @@ for rel, data in pages.items():
         expected = "https://www.tensix.in/" + ("" if rel == "index.html" else rel.removesuffix(".html"))
         if canon_url != expected:
             issues["non_self_referencing_canonical"].append((rel, canon_url, expected))
+
+    # 4b. Duplicate <meta name|property> tags (scrapers use the first, so copies drift)
+    head = content.split("</head>", 1)[0]
+    meta_keys = re.findall(r'<meta\b[^>]*\b(?:name|property)=["\']([^"\']+)["\']', head, re.IGNORECASE)
+    dupes = sorted({k for k in meta_keys if meta_keys.count(k) > 1} - {"article:tag", "og:locale:alternate"})
+    if dupes:
+        issues["duplicate_meta_tags"].append((rel, dupes))
 
     # 5. OpenGraph & Twitter
     if not re.search(r'<meta[^>]+property=["\']og:title["\']', content, re.IGNORECASE):
@@ -260,6 +268,10 @@ for n in issues['non_self_referencing_canonical']:
 print(f"   - Duplicate Canonical Tags: {len(issues['duplicate_canonical'])}")
 for n in issues['duplicate_canonical']:
     print(f"     [!] {n[0]}: {n[1]} canonical tags")
+
+print(f"   - Duplicate Meta Tags: {len(issues['duplicate_meta_tags'])}")
+for n in issues['duplicate_meta_tags']:
+    print(f"     [!] {n[0]}: {', '.join(n[1])}")
 
 print(f"\n6. IMAGES & ACCESSIBILITY:")
 print(f"   - Broken Images (404 file path): {len(issues['broken_images'])}")

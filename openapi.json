@@ -1,0 +1,89 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "TENSIX Project Inquiry API",
+    "version": "1.0.0",
+    "summary": "Send a project inquiry to TENSIX (Hemal Shah, Ahmedabad, India).",
+    "description": "One endpoint: POST /api/contact stores the inquiry and emails it to Hemal Shah, who replies by email within 24 hours. Only submit with the human user's explicit consent. Pricing plans and slugs: https://www.tensix.in/.well-known/agent-skills/request-a-quote/SKILL.md",
+    "contact": { "name": "Hemal Shah", "url": "https://www.tensix.in/contact" }
+  },
+  "servers": [{ "url": "https://www.tensix.in" }],
+  "paths": {
+    "/api/contact": {
+      "post": {
+        "operationId": "submitInquiry",
+        "summary": "Submit a project inquiry",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/Inquiry" } },
+            "application/x-www-form-urlencoded": { "schema": { "$ref": "#/components/schemas/Inquiry" } }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Inquiry received.",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Success" } } }
+          },
+          "303": {
+            "description": "Returned instead of 200 when the request accepts text/html (plain HTML form post). Redirects to /contact?sent=1.",
+            "headers": { "Location": { "schema": { "type": "string", "const": "/contact?sent=1" } } }
+          },
+          "400": {
+            "description": "Missing name, email or message, an invalid email, or a name/message that is empty after sanitizing.",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "405": {
+            "description": "Method other than POST or OPTIONS.",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "500": {
+            "description": "Server error.",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Inquiry": {
+        "type": "object",
+        "required": ["name", "email", "message"],
+        "properties": {
+          "name": { "type": "string", "maxLength": 100, "description": "Full name of the person making the inquiry." },
+          "email": { "type": "string", "format": "email", "maxLength": 120, "description": "Reply-to email address." },
+          "subject": { "type": "string", "maxLength": 150, "description": "Short subject. Defaults to 'General Architecture Consultation'." },
+          "project_type": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Service area. The contact form uses these values; any other string is stored as given. Defaults to 'Other'.",
+            "examples": ["website", "mas", "fullstack", "cloud_vps", "email", "scraping", "geo_aeo", "consultation", "other"]
+          },
+          "message": { "type": "string", "maxLength": 5000, "description": "Project description: goals, current stack, timeline, budget." },
+          "plan": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]{0,40}$",
+            "description": "Optional pricing plan slug (e.g. ai-swarm, web-standard). Prepended to the subject as '[Plan: <slug>] '."
+          }
+        }
+      },
+      "Success": {
+        "type": "object",
+        "properties": {
+          "success": { "type": "boolean", "const": true },
+          "message": { "type": "string" },
+          "database_saved": { "type": "boolean" },
+          "lead_id": { "type": ["string", "null"] }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "success": { "type": "boolean", "const": false },
+          "error": { "type": "string" }
+        }
+      }
+    }
+  }
+}
