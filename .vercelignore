@@ -1,16 +1,23 @@
-node_modules/
-tests/
-skill_audits/
-audit_out.txt
-__pycache__/
-*.pyc
-google-service-account.json
-*service-account*.json
-*.pem
-.env
-masterprompt.txt
-
-contolo/
-citation_audit.py
-citation_audit.md
-tools/
+# Allowlist: deploy ONLY public site files. Everything else in the repo
+# (notes, memory, knowledge base, scripts) must never be served.
+# Add any new public file or folder here explicitly.
+/*
+!/*.html
+!/assets/
+!/blogs/
+!/services/
+!/md/
+!/api/
+!/.well-known/
+!/script.js
+!/robots.txt
+!/sitemap.xml
+!/sitemap_index.xml
+!/llms.txt
+!/llms-full.txt
+!/openapi.json
+!/c4b69324e9334bbba3ff6f3f02db4fb6.txt
+!/85d35ffc8a454f8ba91ab6e0dde7adf4.txt
+!/vercel.json
+!/package.json
+!/package-lock.json

@@ -51,7 +51,7 @@
       ]
     },
     {
-      "source": "/(sitemap.xml|sitemap_index.xml|sitemap_geo_1.xml|sitemap-new.xml)",
+      "source": "/(sitemap.xml|sitemap_index.xml)",
       "headers": [
         {
           "key": "Content-Type",
