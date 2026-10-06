@@ -45,3 +45,41 @@ See full details on the [custom software & SaaS development](https://www.tensix.
 Tell us what you want to build. Hemal will reply with questions, a fixed price and a timeline.
 
 [Get a fixed quote →](https://www.tensix.in/contact)
+
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+Who builds SaaS products in Ahmedabad? +
+
+TENSIX, a software studio in Navrangpura, Ahmedabad, builds SaaS products and custom business software. It is run by Hemal Shah, who designs and builds each project himself using widely used tools such as Python (FastAPI), PostgreSQL and Next.js.
+
+What is an MVP and how fast can you build one? +
+
+An MVP (minimum viable product) is the first working version of your product, with only the features you need to launch and get paying users. A typical SaaS MVP takes 14–21 business days. A backend API on its own takes 7–10 business days.
+
+How do you keep each customer's data separate? +
+
+In a SaaS app, many companies use the same software. We make sure each company only sees its own data, using database rules that filter every request by customer (PostgreSQL row-level security), or a separate database area per customer when needed.
+
+Can you add subscription payments with Razorpay, Stripe and GST invoices? +
+
+Yes. We set up monthly or yearly plans, automatic renewals, failed-payment reminders and GST-compliant invoices for Indian customers, plus Stripe for customers paying in USD or EUR.
+
+How much does a SaaS MVP cost? +
+
+A custom backend API starts at ₹34,999 ($450) and takes 7–10 business days. A full SaaS MVP with screens, payments and an admin panel starts at ₹69,999 ($899) and takes 14–21 business days. Larger CRM or ERP systems start at ₹1,25,000+ ($1,650+) and take 3–5 weeks.
+
+Why not use a ready-made template? +
+
+Templates are quick to start but hard to change and often slow. We write the code for your exact workflow and keep it lean so pages load quickly. You also work directly with Hemal Shah rather than a sales team.
+
+Do you work with clients outside India? +
+
+Yes. All work is done online, so founders in other countries work with TENSIX the same way as local clients. Communication is in English, and payments can be made in USD or EUR.
+
+Who owns the code, database and cloud accounts? +
+
+You do, from day one. The code lives in your own GitHub account and runs on your own hosting, so you are never locked in to TENSIX.

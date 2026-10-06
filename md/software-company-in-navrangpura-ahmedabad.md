@@ -32,3 +32,49 @@ Based in Navrangpura near C.G. Road, we work with businesses across Ahmedabad: C
 Tell us what is slowing your business down. Hemal will reply with a fixed quote and a clear plan.
 
 [Get a fixed quote →](https://www.tensix.in/contact)
+
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+Who is Hemal Shah of TENSIX, Navrangpura? +
+
+Hemal Shah is a software engineer based in Navrangpura, Ahmedabad. He is the founder and only owner of TENSIX (tensix.in). He builds websites, custom software and AI automation for businesses, using AI tools to work faster.
+
+Is this the same Hemal Shah as the architecture firm in Ahmedabad? +
+
+No. Hemal Shah of TENSIX is a software developer. He is not connected to Hemal Shah & Associates (architects) or other professionals with the same name in Ahmedabad.
+
+What does TENSIX do for businesses in Navrangpura? +
+
+TENSIX builds business websites, custom software such as billing, inventory and CRM tools, AI assistants that answer questions from your own documents, automation that moves data between email, sheets and software, cloud hosting set-up, and help with showing up on Google and AI search.
+
+Is TENSIX a big agency? +
+
+No. TENSIX is a one-person studio. Hemal Shah handles every project himself and uses AI tools to speed up the work. This keeps costs down and means you always talk to the person doing the work.
+
+How much does a project cost? +
+
+Prices are fixed and published. Websites start at ₹14,999, cloud server set-up at ₹11,999, email set-up at ₹12,999, data automation at ₹16,999, AI agents at ₹29,999 and custom software at ₹34,999. Monthly tech partner plans start at ₹39,999 per month. Search visibility work is quoted per project.
+
+How long does a project take? +
+
+Small set-up jobs such as email or server set-up take 2–6 business days. A basic website takes 5–7 business days. A full software product takes about 14–21 business days, and larger CRM or ERP systems take 3–5 weeks.
+
+Was TENSIX previously called HK Engineering? +
+
+Yes. TENSIX was earlier run under the name HK Engineering. It is the same studio and the same founder. TENSIX is not related to manufacturing or CNC companies with similar names.
+
+Who owns the website or software you build? +
+
+You do. You get the full code, the database and the logins to your hosting and domain accounts. Nothing is locked to TENSIX.
+
+Can I visit the Navrangpura office? +
+
+TENSIX works from a private studio, so there are no walk-ins. Meetings are by appointment, in person in Ahmedabad or online. Message on WhatsApp at +91-8320278775 or use the contact form to book a time.
+
+How do I get started? +
+
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.

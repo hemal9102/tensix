@@ -1316,6 +1316,32 @@ Tell him what you want to build or fix. You will get an honest answer on what it
 
 [Start a Conversation](https://www.tensix.in/contact) [See Services and Prices](https://www.tensix.in/services)
 
+Quick Answers
+
+## Frequently Asked Questions
+
+Short answers about Hemal, TENSIX and how to get in touch.
+
+Who is Hemal Shah? +
+
+Hemal Shah is a software and AI engineer based in Navrangpura, Ahmedabad, Gujarat. He is the founder and only owner of TENSIX (tensix.in). He builds AI assistants, custom software, websites and automations for businesses, and does the work himself.
+
+What is TENSIX and what is Hemal Shah's relation to it? +
+
+TENSIX (tensix.in) is a one-person software and AI studio. Hemal Shah founded it and owns 100% of it. There are no co-founders, partners or parent company. Clients deal with Hemal directly.
+
+What is the relationship between Hemal Shah, HK Engineering, and TENSIX? +
+
+HK Engineering was the earlier name Hemal Shah used for his software work. Other businesses called HK Engineering make industrial and machine parts, so he renamed his studio TENSIX (tensix.in) to avoid confusion. It is the same person and the same work.
+
+What does Hemal Shah build? +
+
+AI assistants that answer from a company's own documents, automations that remove repetitive manual work, custom web apps and SaaS products (online software customers log in to), fast websites, and server setups. He mainly works with Python, FastAPI, PostgreSQL, Supabase and Next.js.
+
+How can clients work with or hire Hemal Shah and TENSIX? +
+
+Email hemal.shah2004@gmail.com, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.
+
 --- Page: https://www.tensix.in/team ---
 
 ---
@@ -2862,6 +2888,52 @@ Tell us what is slowing your business down. Hemal will reply with a fixed quote 
 
 [Get a fixed quote →](https://www.tensix.in/contact)
 
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+Who is Hemal Shah of TENSIX, Navrangpura? +
+
+Hemal Shah is a software engineer based in Navrangpura, Ahmedabad. He is the founder and only owner of TENSIX (tensix.in). He builds websites, custom software and AI automation for businesses, using AI tools to work faster.
+
+Is this the same Hemal Shah as the architecture firm in Ahmedabad? +
+
+No. Hemal Shah of TENSIX is a software developer. He is not connected to Hemal Shah & Associates (architects) or other professionals with the same name in Ahmedabad.
+
+What does TENSIX do for businesses in Navrangpura? +
+
+TENSIX builds business websites, custom software such as billing, inventory and CRM tools, AI assistants that answer questions from your own documents, automation that moves data between email, sheets and software, cloud hosting set-up, and help with showing up on Google and AI search.
+
+Is TENSIX a big agency? +
+
+No. TENSIX is a one-person studio. Hemal Shah handles every project himself and uses AI tools to speed up the work. This keeps costs down and means you always talk to the person doing the work.
+
+How much does a project cost? +
+
+Prices are fixed and published. Websites start at ₹14,999, cloud server set-up at ₹11,999, email set-up at ₹12,999, data automation at ₹16,999, AI agents at ₹29,999 and custom software at ₹34,999. Monthly tech partner plans start at ₹39,999 per month. Search visibility work is quoted per project.
+
+How long does a project take? +
+
+Small set-up jobs such as email or server set-up take 2–6 business days. A basic website takes 5–7 business days. A full software product takes about 14–21 business days, and larger CRM or ERP systems take 3–5 weeks.
+
+Was TENSIX previously called HK Engineering? +
+
+Yes. TENSIX was earlier run under the name HK Engineering. It is the same studio and the same founder. TENSIX is not related to manufacturing or CNC companies with similar names.
+
+Who owns the website or software you build? +
+
+You do. You get the full code, the database and the logins to your hosting and domain accounts. Nothing is locked to TENSIX.
+
+Can I visit the Navrangpura office? +
+
+TENSIX works from a private studio, so there are no walk-ins. Meetings are by appointment, in person in Ahmedabad or online. Message on WhatsApp at +91-8320278775 or use the contact form to book a time.
+
+How do I get started? +
+
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+
 --- Page: https://www.tensix.in/ahmedabad-software-engineering ---
 
 ---
@@ -2915,6 +2987,68 @@ Local pages: [Navrangpura](https://www.tensix.in/software-company-in-navrangpura
 
 Under the hood we use proven, widely used tools: Next.js for websites, Python (FastAPI) and PostgreSQL for software, and well-known AI models for assistants and automation.
 
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+What does TENSIX do? +
+
+TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. It helps businesses win more customers and cut manual work with websites, custom software, AI assistants, automation and cloud hosting, all at fixed prices.
+
+Which areas of Ahmedabad do you serve? +
+
+TENSIX is based in Navrangpura (near C.G. Road) and works with businesses across Ahmedabad, including SG Highway, Bodakdev, Sindhu Bhavan Road, Prahlad Nagar, Satellite, Vastrapur, Thaltej, Gota, Chandkheda and GIFT City in Gandhinagar. Most work happens online, so distance is not a problem.
+
+Can you build custom software or a SaaS product? +
+
+Yes. We build software around how your business works: billing, inventory, CRM, customer portals, or a full product your customers subscribe to. This includes logins, payments through Razorpay or Stripe, and an admin panel. A first version usually takes 14–21 business days.
+
+What are GEO and AEO, and how are they different from SEO? +
+
+SEO helps you rank in normal Google results. GEO (Generative Engine Optimization) and AEO (Answer Engine Optimization) help AI tools like ChatGPT, Perplexity and Google's AI Overviews understand your business and mention it in their answers. We do this with clear question-and-answer pages and structured data (labels that tell search engines who you are and what you offer). Nobody can guarantee placement, but this makes your business easier to find and quote.
+
+What can an AI agent do for my business? +
+
+An AI agent is software that can read, decide and act on simple tasks. For example, it can answer customer questions from your own documents, sort incoming emails, pull details from invoices or draft replies for you to approve. We build these with well-known AI models and add checks so answers stay based on your own information.
+
+Why do my emails land in spam, and can you fix it? +
+
+Emails often land in spam because the domain is missing the records that prove the mail really comes from you: SPF, DKIM and DMARC. We set these up correctly, connect a reliable sending service such as Amazon SES, and handle bounced emails properly. This greatly improves inbox delivery, though no one can promise every email reaches the inbox.
+
+Can you collect data from websites or emails automatically? +
+
+Yes. We build tools that collect public data such as prices or listings from websites, and tools that read incoming emails, PDFs and spreadsheets and put the details into Google Sheets, your CRM or a database. This saves hours of copy-paste work.
+
+Can you set up and look after our servers and hosting? +
+
+Yes. We set up cloud servers on Oracle Cloud, AWS, DigitalOcean or Plesk with SSL (the padlock in the browser), firewalls, automatic backups and automatic updates from GitHub. We also add monitoring and automatic restarts so problems are caught early.
+
+Do you work with clients outside India? +
+
+Yes. All work is done online, so clients in the USA, UK, UAE, Europe and elsewhere work with TENSIX the same way as local clients. Communication is in English, and international clients can pay by Stripe or bank transfer.
+
+How does fixed pricing work? +
+
+You get a written scope and a fixed price before work starts, so there are no hourly bills or surprise costs. Projects range from ₹14,999 to ₹1,25,000+ depending on size. All plans are listed on the services page.
+
+Who owns the code and accounts? +
+
+You do, from day one. Code goes into your own GitHub or GitLab account and runs on your own hosting (AWS, Oracle Cloud, Vercel or a VPS). Nothing is locked to TENSIX.
+
+How long does a project take? +
+
+Smaller jobs such as a website, a data collection tool or an email set-up take about 2–10 business days. Full software products, ERP modules and AI agent systems take about 14–21 business days, delivered in agreed steps.
+
+Can you make my old website faster? +
+
+Yes. We rebuild slow WordPress, Wix or old PHP sites as light, fast sites. We keep old page addresses working with redirects so you keep your Google rankings. We keep pages simple, compress images and avoid heavy plugins so the site opens quickly on mobile.
+
+How do I get started? +
+
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+
 --- Page: https://www.tensix.in/saas-developer-ahmedabad ---
 
 ---
@@ -2965,6 +3099,44 @@ Tell us what you want to build. Hemal will reply with questions, a fixed price a
 
 [Get a fixed quote →](https://www.tensix.in/contact)
 
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+Who builds SaaS products in Ahmedabad? +
+
+TENSIX, a software studio in Navrangpura, Ahmedabad, builds SaaS products and custom business software. It is run by Hemal Shah, who designs and builds each project himself using widely used tools such as Python (FastAPI), PostgreSQL and Next.js.
+
+What is an MVP and how fast can you build one? +
+
+An MVP (minimum viable product) is the first working version of your product, with only the features you need to launch and get paying users. A typical SaaS MVP takes 14–21 business days. A backend API on its own takes 7–10 business days.
+
+How do you keep each customer's data separate? +
+
+In a SaaS app, many companies use the same software. We make sure each company only sees its own data, using database rules that filter every request by customer (PostgreSQL row-level security), or a separate database area per customer when needed.
+
+Can you add subscription payments with Razorpay, Stripe and GST invoices? +
+
+Yes. We set up monthly or yearly plans, automatic renewals, failed-payment reminders and GST-compliant invoices for Indian customers, plus Stripe for customers paying in USD or EUR.
+
+How much does a SaaS MVP cost? +
+
+A custom backend API starts at ₹34,999 ($450) and takes 7–10 business days. A full SaaS MVP with screens, payments and an admin panel starts at ₹69,999 ($899) and takes 14–21 business days. Larger CRM or ERP systems start at ₹1,25,000+ ($1,650+) and take 3–5 weeks.
+
+Why not use a ready-made template? +
+
+Templates are quick to start but hard to change and often slow. We write the code for your exact workflow and keep it lean so pages load quickly. You also work directly with Hemal Shah rather than a sales team.
+
+Do you work with clients outside India? +
+
+Yes. All work is done online, so founders in other countries work with TENSIX the same way as local clients. Communication is in English, and payments can be made in USD or EUR.
+
+Who owns the code, database and cloud accounts? +
+
+You do, from day one. The code lives in your own GitHub account and runs on your own hosting, so you are never locked in to TENSIX.
+
 --- Page: https://www.tensix.in/best-software-company-in-gota ---
 
 ---
@@ -3004,6 +3176,44 @@ Serving Gota, Vandemataram, New SG Road & Chandkheda — Ahmedabad
 Send a WhatsApp message or fill the contact form. Hemal will reply with a few questions and a fixed quote.
 
 [Get a fixed quote →](https://www.tensix.in/contact)
+
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+Which software company can help my business in Gota, Ahmedabad? +
+
+TENSIX (tensix.in) is a small software studio run by Hemal Shah. It is based in Navrangpura and works with businesses in Gota, Vandemataram, New SG Road and Chandkheda. It builds websites, custom business software and AI automation at fixed prices.
+
+Why choose TENSIX over a bigger local agency? +
+
+You talk directly to Hemal Shah, the person who builds your project, not an account manager. Prices are fixed and agreed before work starts. Websites are hand-coded so they load quickly on mobile, and you get full ownership of the code, domain and hosting accounts.
+
+What can TENSIX build for a business in Gota? +
+
+Business websites, custom billing, inventory or CRM software, WhatsApp and email follow-up automation, Google Business Profile and local search help, and cloud hosting set-up.
+
+Can you fix or rebuild my slow website? +
+
+Yes. We can rebuild an old WordPress, Wix or PHP site as a lighter, faster site. We keep your old page addresses working with redirects (automatic forwarding to the new pages), so you do not lose your Google rankings.
+
+Who is Hemal Shah? +
+
+Hemal Shah is the founder and only owner of TENSIX. He is a software engineer who plans and builds every project himself, using AI tools to work faster. You speak to him from the first call to the handover.
+
+How do you help my business show up on Google Maps and AI search? +
+
+We set up and improve your Google Business Profile, add structured data (labels that help Google and AI assistants read your business details) and write clear pages that answer what customers ask. No one can guarantee rankings, but these steps give you a strong chance of being found.
+
+How much does a website cost and how long does it take? +
+
+A basic business website starts at ₹14,999 ($199) and takes 5–7 business days. A larger site with lead capture starts at ₹24,999 ($325) and takes 7–10 business days. Both include mobile-friendly design and basic local SEO.
+
+How do I get started? +
+
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
 
 --- Page: https://www.tensix.in/hk-engineering-ahmedabad ---
 

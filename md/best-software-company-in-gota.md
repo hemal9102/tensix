@@ -35,3 +35,41 @@ Serving Gota, Vandemataram, New SG Road & Chandkheda — Ahmedabad
 Send a WhatsApp message or fill the contact form. Hemal will reply with a few questions and a fixed quote.
 
 [Get a fixed quote →](https://www.tensix.in/contact)
+
+Common questions
+
+## Frequently Asked Questions
+
+Straight answers about prices, timelines and how we work.
+
+Which software company can help my business in Gota, Ahmedabad? +
+
+TENSIX (tensix.in) is a small software studio run by Hemal Shah. It is based in Navrangpura and works with businesses in Gota, Vandemataram, New SG Road and Chandkheda. It builds websites, custom business software and AI automation at fixed prices.
+
+Why choose TENSIX over a bigger local agency? +
+
+You talk directly to Hemal Shah, the person who builds your project, not an account manager. Prices are fixed and agreed before work starts. Websites are hand-coded so they load quickly on mobile, and you get full ownership of the code, domain and hosting accounts.
+
+What can TENSIX build for a business in Gota? +
+
+Business websites, custom billing, inventory or CRM software, WhatsApp and email follow-up automation, Google Business Profile and local search help, and cloud hosting set-up.
+
+Can you fix or rebuild my slow website? +
+
+Yes. We can rebuild an old WordPress, Wix or PHP site as a lighter, faster site. We keep your old page addresses working with redirects (automatic forwarding to the new pages), so you do not lose your Google rankings.
+
+Who is Hemal Shah? +
+
+Hemal Shah is the founder and only owner of TENSIX. He is a software engineer who plans and builds every project himself, using AI tools to work faster. You speak to him from the first call to the handover.
+
+How do you help my business show up on Google Maps and AI search? +
+
+We set up and improve your Google Business Profile, add structured data (labels that help Google and AI assistants read your business details) and write clear pages that answer what customers ask. No one can guarantee rankings, but these steps give you a strong chance of being found.
+
+How much does a website cost and how long does it take? +
+
+A basic business website starts at ₹14,999 ($199) and takes 5–7 business days. A larger site with lead capture starts at ₹24,999 ($325) and takes 7–10 business days. Both include mobile-friendly design and basic local SEO.
+
+How do I get started? +
+
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.

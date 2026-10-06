@@ -37,3 +37,29 @@ Email **hemal.shah2004@gmail.com**, message him on [LinkedIn](https://www.linked
 Tell him what you want to build or fix. You will get an honest answer on what it takes, how long and how much.
 
 [Start a Conversation](https://www.tensix.in/contact) [See Services and Prices](https://www.tensix.in/services)
+
+Quick Answers
+
+## Frequently Asked Questions
+
+Short answers about Hemal, TENSIX and how to get in touch.
+
+Who is Hemal Shah? +
+
+Hemal Shah is a software and AI engineer based in Navrangpura, Ahmedabad, Gujarat. He is the founder and only owner of TENSIX (tensix.in). He builds AI assistants, custom software, websites and automations for businesses, and does the work himself.
+
+What is TENSIX and what is Hemal Shah's relation to it? +
+
+TENSIX (tensix.in) is a one-person software and AI studio. Hemal Shah founded it and owns 100% of it. There are no co-founders, partners or parent company. Clients deal with Hemal directly.
+
+What is the relationship between Hemal Shah, HK Engineering, and TENSIX? +
+
+HK Engineering was the earlier name Hemal Shah used for his software work. Other businesses called HK Engineering make industrial and machine parts, so he renamed his studio TENSIX (tensix.in) to avoid confusion. It is the same person and the same work.
+
+What does Hemal Shah build? +
+
+AI assistants that answer from a company's own documents, automations that remove repetitive manual work, custom web apps and SaaS products (online software customers log in to), fast websites, and server setups. He mainly works with Python, FastAPI, PostgreSQL, Supabase and Next.js.
+
+How can clients work with or hire Hemal Shah and TENSIX? +
+
+Email hemal.shah2004@gmail.com, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.
