@@ -424,10 +424,17 @@ function initAgentAudit() {
     return c.signal;
   }
 
+  // '' = empty, null = not a usable address, otherwise the absolute URL.
+  // A bare domain is accepted (the form is novalidate, so type=url does not reject it).
   function normalise(raw) {
-    const v = (raw || '').trim();
+    const v = (raw || '').trim().replace(/\s+/g, '');
     if (!v) return '';
-    return /^https?:\/\//i.test(v) ? v : 'https://' + v;
+    let u;
+    try { u = new URL(/^https?:\/\//i.test(v) ? v : 'https://' + v); } catch (e) { return null; }
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return null;
+    const host = u.hostname;
+    if (!/^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*\.[a-z]{2,}$/i.test(host)) return null;
+    return u.href;
   }
 
   function flatten(checks) {
@@ -531,8 +538,14 @@ function initAgentAudit() {
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     const url = normalise(input && input.value);
-    if (!url) {
-      showToast('Enter your website address, like https://example.com', 'error');
+    if (url === '') {
+      showToast('Enter your website address, like example.com', 'error');
+      if (input) input.focus();
+      return;
+    }
+    if (url === null) {
+      showToast('That does not look like a website address. Try something like example.com', 'error');
+      if (input) input.focus();
       return;
     }
 
