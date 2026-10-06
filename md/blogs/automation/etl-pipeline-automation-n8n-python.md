@@ -22,7 +22,7 @@ At TENSIX (formerly [HK Engineering](https://www.tensix.in/hk-engineering-ahmeda
 
 #### Need Your Data Workflows Automated?
 
-If you want data moved between apps, APIs connected, or reports updated without manual work, read about [HK Engineering (now TENSIX)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
+If you want data moved between apps, APIs connected, or reports updated without manual work, read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
 ## 1. The Setup: n8n for Workflows, Python for Heavy Lifting
 
@@ -84,7 +84,7 @@ If a record still fails after 3 retries, the raw data and the error are saved to
 
 Moving from manual exports to automated pipelines that retry on their own means less time spent fixing data by hand. Your reports and your internal AI search (RAG, an assistant that answers from your own documents) always work from current data.
 
-To discuss custom software or automation for your company, visit the [HK Engineering Ahmedabad page](https://www.tensix.in/hk-engineering-ahmedabad) or read [Hemal Shah's profile](https://www.tensix.in/hemal-shah).
+To discuss custom software or automation for your company, visit [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or read [Hemal Shah's profile](https://www.tensix.in/hemal-shah).
 
 ## Want Something Like This for Your Business?
 

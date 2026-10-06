@@ -1,5 +1,5 @@
 /* ============================================
-   HK Engineering — Main JavaScript
+   TENSIX — Main JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function () {

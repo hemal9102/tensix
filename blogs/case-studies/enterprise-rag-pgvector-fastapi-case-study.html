@@ -43,8 +43,7 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
 .pillar-callout p { margin:0; font-size:0.95rem; color:#334155; }
 </style>
   
-  <!-- SCHEMA WEB — HK Engineering / Hemal Shah — build_schema_web.py -->
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -183,9 +182,9 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
   <span>8 min technical read</span>
 </div>
 <aside class="pillar-callout" aria-label="In plain words" style="margin:1.5rem 0 2rem;"><strong style="display:block;margin-bottom:0.4rem;color:#0F172A;">In plain words</strong><p>RAG is an AI assistant that answers questions from your own documents, such as policies, contracts, or reports, instead of guessing. Many teams buy a separate "vector database" for this, which adds cost and makes answers slower. This article shows how to keep everything inside PostgreSQL, the database many companies already use, and serve answers quickly with FastAPI. If you want an assistant like this for your business, see <a href="/services/ai-agent-development">AI agent development</a>.</p></aside>
-<article><p>When companies grow their AI projects, the usual problem is not how smart the model is. It is how slowly the system finds the right documents, and being locked into a separate paid database. Dedicated vector databases add another service to run, extra network delay, and a monthly bill, even for teams that already run PostgreSQL.</p><p>This write-up walks through the architecture <a href="https://www.tensix.in/hk-engineering-ahmedabad">HK Engineering</a> (now TENSIX) uses for RAG (retrieval-augmented generation: an AI assistant that answers from your own documents), built with <strong>FastAPI</strong>, <strong>PostgreSQL with <code>pgvector</code></strong>, and <strong>LangChain</strong>. It is based on a document-heavy financial services workload of the kind common in Ahmedabad.</p><div class="pillar-callout">
+<article><p>When companies grow their AI projects, the usual problem is not how smart the model is. It is how slowly the system finds the right documents, and being locked into a separate paid database. Dedicated vector databases add another service to run, extra network delay, and a monthly bill, even for teams that already run PostgreSQL.</p><p>This write-up walks through the architecture <a href="https://www.tensix.in/hk-engineering-ahmedabad">TENSIX (formerly HK Engineering)</a> uses for RAG (retrieval-augmented generation: an AI assistant that answers from your own documents), built with <strong>FastAPI</strong>, <strong>PostgreSQL with <code>pgvector</code></strong>, and <strong>LangChain</strong>. It is based on a document-heavy financial services workload of the kind common in Ahmedabad.</p><div class="pillar-callout">
 <h2 style="color:#0F172A;font-size:1.1rem;margin:0 0 0.5rem;border:none;padding:0;">Want an AI Assistant That Knows Your Documents?</h2>
-<p>I design and build RAG systems for companies in Ahmedabad and beyond. Read about <a href="https://www.tensix.in/hk-engineering-ahmedabad">HK Engineering (now TENSIX)</a> or talk to <a href="https://www.tensix.in/hemal-shah">Hemal Shah</a> directly.</p>
+<p>I design and build RAG systems for companies in Ahmedabad and beyond. Read about <a href="https://www.tensix.in/hk-engineering-ahmedabad">TENSIX (formerly HK Engineering)</a> or talk to <a href="https://www.tensix.in/hemal-shah">Hemal Shah</a> directly.</p>
 </div><h2>1. The Problem: Why a Simple RAG Setup Slows Down</h2><p>A typical starting point is a synchronous Python script (one that handles one request at a time) talking to an external vector database service. When many analysts search documents at the same time, three problems appear:</p><ul>
 <li><strong>Waiting on the AI model:</strong> A server that handles one request at a time waits on the AI model, so busy periods end in time-out errors.</li>
 <li><strong>Index Inefficiency:</strong> Without an index, every search compares the question against every document chunk (exact k-NN), so searches get slower as the library grows.</li>
@@ -210,7 +209,7 @@ from pydantic import BaseModel
 import asyncpg
 from typing import List
 
-app = FastAPI(title="HK Engineering RAG Service")
+app = FastAPI(title="TENSIX RAG Service")
 
 class QueryRequest(BaseModel):
     query_text: str
@@ -263,7 +262,7 @@ async def retrieve_relevant_chunks(request: QueryRequest, db: asyncpg.Connection
 <td>One backup; results filtered by user permissions in the same query</td>
 </tr>
 </tbody>
-</table><h2>4. Key Takeaways for Business and Tech Leaders</h2><p>For important business systems, do not add a separate vector database just because it is popular. Keeping embeddings inside PostgreSQL gives you reliable transactions (ACID), one simple backup, and fast filtering of search results by who is allowed to see what.</p><p>To discuss a similar AI search or automation system for your company, in Ahmedabad or elsewhere, visit the <a href="https://www.tensix.in/hk-engineering-ahmedabad">HK Engineering Ahmedabad page</a> or send a message through the <a href="https://www.tensix.in/contact">contact page</a>.</p>
+</table><h2>4. Key Takeaways for Business and Tech Leaders</h2><p>For important business systems, do not add a separate vector database just because it is popular. Keeping embeddings inside PostgreSQL gives you reliable transactions (ACID), one simple backup, and fast filtering of search results by who is allowed to see what.</p><p>To discuss a similar AI search or automation system for your company, in Ahmedabad or elsewhere, visit <a href="https://www.tensix.in/hk-engineering-ahmedabad">TENSIX (formerly HK Engineering)</a> or send a message through the <a href="https://www.tensix.in/contact">contact page</a>.</p>
 <div class="inquiry-cta" style="margin: 3rem 0; padding: 2.5rem; background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.1)); border: 1px solid rgba(139,92,246,0.3); border-radius: 0.8rem; text-align: center; box-shadow: 0 10px 30px rgba(15,23,42,0.06);">
 <h2 style="font-size: 1.8rem; font-weight: 700; color: #0F172A; margin-bottom: 1rem; border: none; padding: 0;">Want Something Like This for Your Business?</h2>
 <p style="color: #334155; font-size: 1.05rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">TENSIX is a one-person studio run by Hemal Shah, who uses AI tools to work faster. Tell me what you need and I will reply with a clear plan and price.</p>

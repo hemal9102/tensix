@@ -62,7 +62,7 @@ from fastapi import FastAPI, Depends
 from pydantic import BaseModel
 from agent.core import generate_agent_response
 
-app = FastAPI(title="HK Engineering AI Agent API")
+app = FastAPI(title="TENSIX AI Agent API")
 
 class ChatRequest(BaseModel):
     user_id: str

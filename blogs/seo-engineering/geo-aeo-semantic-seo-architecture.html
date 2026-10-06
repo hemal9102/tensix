@@ -43,8 +43,7 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
 .pillar-callout p { margin:0; font-size:0.95rem; color:#334155; }
 </style>
   
-  <!-- SCHEMA WEB — HK Engineering / Hemal Shah — build_schema_web.py -->
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -185,7 +184,7 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
 <aside class="pillar-callout" aria-label="In plain words" style="margin:1.5rem 0 2rem;"><strong style="display:block;margin-bottom:0.4rem;color:#0F172A;">In plain words</strong><p>More people now ask ChatGPT, Perplexity, or Google AI Overviews instead of clicking through search results. GEO and AEO (generative and answer engine optimisation) make sure those AI tools understand who you are and mention you correctly. The main tool is structured data (JSON-LD: a hidden, machine-readable description of your business on each page), backed by clear, helpful content. If you want this done for your site, see <a href="/services/geo-aeo-seo">GEO, AEO and SEO services</a>.</p></aside>
 <article><p>Search is moving from matching keywords (Google's 10 blue links) to understanding who and what a page is about (Perplexity, ChatGPT Search, Claude, and Google AI Overviews). Traditional SEO leaned on backlinks and repeating keywords. <strong>Generative Engine Optimization (GEO)</strong> and <strong>Answer Engine Optimization (AEO)</strong> rely on clear, structured facts about your business and content that adds something new.</p><p>At TENSIX (formerly <a href="https://www.tensix.in/hk-engineering-ahmedabad">HK Engineering</a>), I build JSON-LD structured data that AI tools can read easily. This article explains why mass-produced keyword pages do poorly in AI search and how to describe your business clearly instead.</p><div class="pillar-callout">
 <h2 style="color:#0F172A;font-size:1.1rem;margin:0 0 0.5rem;border:none;padding:0;">Want AI Search to Describe Your Business Correctly?</h2>
-<p>I help software firms and local businesses set up structured data and content that AI answer engines can understand. Read about <a href="https://www.tensix.in/hk-engineering-ahmedabad">HK Engineering (now TENSIX)</a> or talk to <a href="https://www.tensix.in/hemal-shah">Hemal Shah</a> directly.</p>
+<p>I help software firms and local businesses set up structured data and content that AI answer engines can understand. Read about <a href="https://www.tensix.in/hk-engineering-ahmedabad">TENSIX (formerly HK Engineering)</a> or talk to <a href="https://www.tensix.in/hemal-shah">Hemal Shah</a> directly.</p>
 </div><h2>1. Why Keyword Stuffing No Longer Works</h2><p>When an AI answer engine reads a page, it does not just count keywords. It turns the text and structured data into embeddings (number lists that capture meaning) and compares them with what it already knows. If a site stuffs dozens of repeated keyword variations into its titles and headings, the page adds nothing new and looks spammy, so AI tools have little reason to cite it.</p><p>Real topical authority comes from a <strong>hub-and-spoke structure</strong>: a main page for each service you offer, supported by detailed articles that show you know the subject.</p><h2>2. Telling AI Exactly Who You Are with JSON-LD</h2><p>To make it clear who you are, I link the <code>Person</code>, <code>Organization</code>, <code>WebSite</code>, and <code>Service</code> entries into one <code>@graph</code>, each with a fixed <code>@id</code> address. This stops AI tools from mixing you up with other businesses or people with similar names in your city.</p><pre><code class="language-json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -193,7 +192,7 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
       "@type": "Person",
       "@id": "https://tensix.in/#person",
       "name": "Hemal Shah",
-      "jobTitle": "Lead AI Automation Engineer",
+      "jobTitle": "Founder &amp; Principal Architect",
       "worksFor": {"@id": "https://tensix.in/#organization"},
       "knowsAbout": [
         "Artificial Intelligence Consulting",
@@ -201,7 +200,7 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
         "Third Party API Integration Services",
         "ETL Automation Tools"
       ],
-      "disambiguatingDescription": "Hemal Shah (HK) is an AI Automation Engineer and Full Stack Python Developer in Ahmedabad, founder of TENSIX (formerly HK Engineering) — distinct from non-tech namesakes in healthcare and architecture."
+      "disambiguatingDescription": "Hemal Shah is a software and AI engineer in Ahmedabad, founder of TENSIX (formerly HK Engineering) — distinct from non-tech namesakes in healthcare and architecture."
     },
     {
       "@type": "Organization",
@@ -211,7 +210,7 @@ pre { background:#F1F5F9 !important; padding:1.5rem !important; border-radius:0.
       "areaServed": [{"@type": "City", "name": "Ahmedabad"}]
     }
   ]
-}</code></pre><h2>3. Adding an llms.txt File for AI Tools</h2><p>Besides JSON-LD, some AI tools read <code>llms.txt</code> and <code>llms-full.txt</code> files at the root of a site: plain-text summaries written for language models. It is a newer convention, not an official standard, but it is cheap to add. I use it to state clearly who the business is and how it differs from similarly named companies.</p><p>For example: <em>"HK Engineering Ahmedabad, in the software context, refers to Hemal Shah's studio, now TENSIX at tensix.in."</em> Clear statements like this reduce the chance that AI answer engines confuse your brand with someone else.</p><h2>4. Treat SEO Like Engineering, Not Tricks</h2><p>When SEO is built into the site properly instead of added as a trick, it holds up better when search engines change their rules. Clear writing, clean HTML structure, and accurate JSON-LD are the foundation for being found and cited by AI search.</p><p>To discuss GEO and AEO for your brand, visit the <a href="https://www.tensix.in/hk-engineering-ahmedabad">HK Engineering Ahmedabad page</a> or contact <a href="https://www.tensix.in/hemal-shah">Hemal Shah</a>.</p>
+}</code></pre><h2>3. Adding an llms.txt File for AI Tools</h2><p>Besides JSON-LD, some AI tools read <code>llms.txt</code> and <code>llms-full.txt</code> files at the root of a site: plain-text summaries written for language models. It is a newer convention, not an official standard, but it is cheap to add. I use it to state clearly who the business is and how it differs from similarly named companies.</p><p>For example: <em>"HK Engineering Ahmedabad, in the software context, refers to Hemal Shah's studio, now TENSIX at tensix.in."</em> Clear statements like this reduce the chance that AI answer engines confuse your brand with someone else.</p><h2>4. Treat SEO Like Engineering, Not Tricks</h2><p>When SEO is built into the site properly instead of added as a trick, it holds up better when search engines change their rules. Clear writing, clean HTML structure, and accurate JSON-LD are the foundation for being found and cited by AI search.</p><p>To discuss GEO and AEO for your brand, visit <a href="https://www.tensix.in/hk-engineering-ahmedabad">TENSIX (formerly HK Engineering)</a> or contact <a href="https://www.tensix.in/hemal-shah">Hemal Shah</a>.</p>
 <div class="inquiry-cta" style="margin: 3rem 0; padding: 2.5rem; background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.1)); border: 1px solid rgba(139,92,246,0.3); border-radius: 0.8rem; text-align: center; box-shadow: 0 10px 30px rgba(15,23,42,0.06);">
 <h2 style="font-size: 1.8rem; font-weight: 700; color: #0F172A; margin-bottom: 1rem; border: none; padding: 0;">Want Something Like This for Your Business?</h2>
 <p style="color: #334155; font-size: 1.05rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">TENSIX is a one-person studio run by Hemal Shah, who uses AI tools to work faster. Tell me what you need and I will reply with a clear plan and price.</p>

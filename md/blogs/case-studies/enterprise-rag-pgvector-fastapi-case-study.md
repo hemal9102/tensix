@@ -18,11 +18,11 @@ RAG is an AI assistant that answers questions from your own documents, such as p
 
 When companies grow their AI projects, the usual problem is not how smart the model is. It is how slowly the system finds the right documents, and being locked into a separate paid database. Dedicated vector databases add another service to run, extra network delay, and a monthly bill, even for teams that already run PostgreSQL.
 
-This write-up walks through the architecture [HK Engineering](https://www.tensix.in/hk-engineering-ahmedabad) (now TENSIX) uses for RAG (retrieval-augmented generation: an AI assistant that answers from your own documents), built with **FastAPI**, **PostgreSQL with `pgvector`**, and **LangChain**. It is based on a document-heavy financial services workload of the kind common in Ahmedabad.
+This write-up walks through the architecture [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) uses for RAG (retrieval-augmented generation: an AI assistant that answers from your own documents), built with **FastAPI**, **PostgreSQL with `pgvector`**, and **LangChain**. It is based on a document-heavy financial services workload of the kind common in Ahmedabad.
 
 ## Want an AI Assistant That Knows Your Documents?
 
-I design and build RAG systems for companies in Ahmedabad and beyond. Read about [HK Engineering (now TENSIX)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
+I design and build RAG systems for companies in Ahmedabad and beyond. Read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
 ## 1. The Problem: Why a Simple RAG Setup Slows Down
 
@@ -69,7 +69,7 @@ from pydantic import BaseModel
 import asyncpg
 from typing import List
 
-app = FastAPI(title="HK Engineering RAG Service")
+app = FastAPI(title="TENSIX RAG Service")
 
 class QueryRequest(BaseModel):
     query_text: str
@@ -110,7 +110,7 @@ Speed and cost depend on your documents, traffic, and hosting, so rather than qu
 
 For important business systems, do not add a separate vector database just because it is popular. Keeping embeddings inside PostgreSQL gives you reliable transactions (ACID), one simple backup, and fast filtering of search results by who is allowed to see what.
 
-To discuss a similar AI search or automation system for your company, in Ahmedabad or elsewhere, visit the [HK Engineering Ahmedabad page](https://www.tensix.in/hk-engineering-ahmedabad) or send a message through the [contact page](https://www.tensix.in/contact).
+To discuss a similar AI search or automation system for your company, in Ahmedabad or elsewhere, visit [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or send a message through the [contact page](https://www.tensix.in/contact).
 
 ## Want Something Like This for Your Business?
 

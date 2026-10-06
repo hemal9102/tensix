@@ -22,7 +22,7 @@ At TENSIX (formerly [HK Engineering](https://www.tensix.in/hk-engineering-ahmeda
 
 ## Want AI Search to Describe Your Business Correctly?
 
-I help software firms and local businesses set up structured data and content that AI answer engines can understand. Read about [HK Engineering (now TENSIX)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
+I help software firms and local businesses set up structured data and content that AI answer engines can understand. Read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
 ## 1. Why Keyword Stuffing No Longer Works
 
@@ -42,7 +42,7 @@ To make it clear who you are, I link the `Person`, `Organization`, `WebSite`, an
       "@type": "Person",
       "@id": "https://tensix.in/#person",
       "name": "Hemal Shah",
-      "jobTitle": "Lead AI Automation Engineer",
+      "jobTitle": "Founder & Principal Architect",
       "worksFor": {"@id": "https://tensix.in/#organization"},
       "knowsAbout": [
         "Artificial Intelligence Consulting",
@@ -50,7 +50,7 @@ To make it clear who you are, I link the `Person`, `Organization`, `WebSite`, an
         "Third Party API Integration Services",
         "ETL Automation Tools"
       ],
-      "disambiguatingDescription": "Hemal Shah (HK) is an AI Automation Engineer and Full Stack Python Developer in Ahmedabad, founder of TENSIX (formerly HK Engineering) — distinct from non-tech namesakes in healthcare and architecture."
+      "disambiguatingDescription": "Hemal Shah is a software and AI engineer in Ahmedabad, founder of TENSIX (formerly HK Engineering) — distinct from non-tech namesakes in healthcare and architecture."
     },
     {
       "@type": "Organization",
@@ -73,7 +73,7 @@ For example: *"HK Engineering Ahmedabad, in the software context, refers to Hema
 
 When SEO is built into the site properly instead of added as a trick, it holds up better when search engines change their rules. Clear writing, clean HTML structure, and accurate JSON-LD are the foundation for being found and cited by AI search.
 
-To discuss GEO and AEO for your brand, visit the [HK Engineering Ahmedabad page](https://www.tensix.in/hk-engineering-ahmedabad) or contact [Hemal Shah](https://www.tensix.in/hemal-shah).
+To discuss GEO and AEO for your brand, visit [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or contact [Hemal Shah](https://www.tensix.in/hemal-shah).
 
 ## Want Something Like This for Your Business?
 

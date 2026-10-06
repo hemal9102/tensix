@@ -3400,7 +3400,7 @@ from fastapi import FastAPI, Depends
 from pydantic import BaseModel
 from agent.core import generate_agent_response
 
-app = FastAPI(title="HK Engineering AI Agent API")
+app = FastAPI(title="TENSIX AI Agent API")
 
 class ChatRequest(BaseModel):
     user_id: str
@@ -3480,7 +3480,7 @@ At TENSIX (formerly [HK Engineering](https://www.tensix.in/hk-engineering-ahmeda
 
 #### Need Your Data Workflows Automated?
 
-If you want data moved between apps, APIs connected, or reports updated without manual work, read about [HK Engineering (now TENSIX)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
+If you want data moved between apps, APIs connected, or reports updated without manual work, read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
 ## 1. The Setup: n8n for Workflows, Python for Heavy Lifting
 
@@ -3542,7 +3542,7 @@ If a record still fails after 3 retries, the raw data and the error are saved to
 
 Moving from manual exports to automated pipelines that retry on their own means less time spent fixing data by hand. Your reports and your internal AI search (RAG, an assistant that answers from your own documents) always work from current data.
 
-To discuss custom software or automation for your company, visit the [HK Engineering Ahmedabad page](https://www.tensix.in/hk-engineering-ahmedabad) or read [Hemal Shah's profile](https://www.tensix.in/hemal-shah).
+To discuss custom software or automation for your company, visit [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or read [Hemal Shah's profile](https://www.tensix.in/hemal-shah).
 
 ## Want Something Like This for Your Business?
 
@@ -3687,11 +3687,11 @@ RAG is an AI assistant that answers questions from your own documents, such as p
 
 When companies grow their AI projects, the usual problem is not how smart the model is. It is how slowly the system finds the right documents, and being locked into a separate paid database. Dedicated vector databases add another service to run, extra network delay, and a monthly bill, even for teams that already run PostgreSQL.
 
-This write-up walks through the architecture [HK Engineering](https://www.tensix.in/hk-engineering-ahmedabad) (now TENSIX) uses for RAG (retrieval-augmented generation: an AI assistant that answers from your own documents), built with **FastAPI**, **PostgreSQL with `pgvector`**, and **LangChain**. It is based on a document-heavy financial services workload of the kind common in Ahmedabad.
+This write-up walks through the architecture [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) uses for RAG (retrieval-augmented generation: an AI assistant that answers from your own documents), built with **FastAPI**, **PostgreSQL with `pgvector`**, and **LangChain**. It is based on a document-heavy financial services workload of the kind common in Ahmedabad.
 
 ## Want an AI Assistant That Knows Your Documents?
 
-I design and build RAG systems for companies in Ahmedabad and beyond. Read about [HK Engineering (now TENSIX)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
+I design and build RAG systems for companies in Ahmedabad and beyond. Read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
 ## 1. The Problem: Why a Simple RAG Setup Slows Down
 
@@ -3738,7 +3738,7 @@ from pydantic import BaseModel
 import asyncpg
 from typing import List
 
-app = FastAPI(title="HK Engineering RAG Service")
+app = FastAPI(title="TENSIX RAG Service")
 
 class QueryRequest(BaseModel):
     query_text: str
@@ -3779,7 +3779,7 @@ Speed and cost depend on your documents, traffic, and hosting, so rather than qu
 
 For important business systems, do not add a separate vector database just because it is popular. Keeping embeddings inside PostgreSQL gives you reliable transactions (ACID), one simple backup, and fast filtering of search results by who is allowed to see what.
 
-To discuss a similar AI search or automation system for your company, in Ahmedabad or elsewhere, visit the [HK Engineering Ahmedabad page](https://www.tensix.in/hk-engineering-ahmedabad) or send a message through the [contact page](https://www.tensix.in/contact).
+To discuss a similar AI search or automation system for your company, in Ahmedabad or elsewhere, visit [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or send a message through the [contact page](https://www.tensix.in/contact).
 
 ## Want Something Like This for Your Business?
 
@@ -4015,7 +4015,7 @@ At TENSIX (formerly [HK Engineering](https://www.tensix.in/hk-engineering-ahmeda
 
 ## Want AI Search to Describe Your Business Correctly?
 
-I help software firms and local businesses set up structured data and content that AI answer engines can understand. Read about [HK Engineering (now TENSIX)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
+I help software firms and local businesses set up structured data and content that AI answer engines can understand. Read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
 ## 1. Why Keyword Stuffing No Longer Works
 
@@ -4035,7 +4035,7 @@ To make it clear who you are, I link the `Person`, `Organization`, `WebSite`, an
       "@type": "Person",
       "@id": "https://tensix.in/#person",
       "name": "Hemal Shah",
-      "jobTitle": "Lead AI Automation Engineer",
+      "jobTitle": "Founder & Principal Architect",
       "worksFor": {"@id": "https://tensix.in/#organization"},
       "knowsAbout": [
         "Artificial Intelligence Consulting",
@@ -4043,7 +4043,7 @@ To make it clear who you are, I link the `Person`, `Organization`, `WebSite`, an
         "Third Party API Integration Services",
         "ETL Automation Tools"
       ],
-      "disambiguatingDescription": "Hemal Shah (HK) is an AI Automation Engineer and Full Stack Python Developer in Ahmedabad, founder of TENSIX (formerly HK Engineering) — distinct from non-tech namesakes in healthcare and architecture."
+      "disambiguatingDescription": "Hemal Shah is a software and AI engineer in Ahmedabad, founder of TENSIX (formerly HK Engineering) — distinct from non-tech namesakes in healthcare and architecture."
     },
     {
       "@type": "Organization",
@@ -4066,7 +4066,7 @@ For example: *"HK Engineering Ahmedabad, in the software context, refers to Hema
 
 When SEO is built into the site properly instead of added as a trick, it holds up better when search engines change their rules. Clear writing, clean HTML structure, and accurate JSON-LD are the foundation for being found and cited by AI search.
 
-To discuss GEO and AEO for your brand, visit the [HK Engineering Ahmedabad page](https://www.tensix.in/hk-engineering-ahmedabad) or contact [Hemal Shah](https://www.tensix.in/hemal-shah).
+To discuss GEO and AEO for your brand, visit [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or contact [Hemal Shah](https://www.tensix.in/hemal-shah).
 
 ## Want Something Like This for Your Business?
 
