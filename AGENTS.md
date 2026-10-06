@@ -44,7 +44,7 @@ git push origin main
 | **Canonical URL**| `https://tensix.in/` (also serves `https://www.tensix.in/`)         |
 | **Location**     | Navrangpura, Ahmedabad, Gujarat 380009, India (23.0366° N, 72.5615° E)|
 | **Stack**        | Semantic HTML5 + Vanilla CSS3 / JS + Vercel Edge Serverless        |
-| **Total Pages**  | 45 Production Pages incl. 8 `/services/*` pages (all passing Schema and Crawler Audits) |
+| **Total Pages**  | 46 Production Pages incl. 8 `/services/*` pages and the `/is-my-site-ai-ready` tool (all passing Schema and Crawler Audits) |
 
 ---
 
@@ -112,6 +112,14 @@ python submit_indexnow.py
 - **`tensix-vs-traditional-agencies.html`:** plain-language comparison of a one-person studio vs a typical agency (who you talk to, fixed price, ownership), including when another option suits you better. No named competitors.
 - **Local Industry Digital Survival Guides:** 6 long-form whitepapers targeting Ahmedabad's economic clusters (Textiles, Pharma, Machinery, Real Estate, Jewelry, Healthcare).
 
+### 4.4 Free Tool: `/is-my-site-ai-ready`
+- A public agent-readiness checker. The visitor enters a URL; **the browser calls Cloudflare's scanner directly** at `POST https://isitagentready.com/api/scan` (`{url, format:"json"}`) and renders the result. Their CORS is `Access-Control-Allow-Origin: *`, so no proxy or serverless function exists — and **none should be added**: routing every scan through Vercel's egress IPs would make us one very noisy client, and a throttle would kill the tool for all visitors at once. Each visitor's own IP does the work.
+- This requires `https://isitagentready.com` in the `connect-src` directive of the CSP in `vercel.json`. **Apex only** &mdash; `www.isitagentready.com` does not resolve.
+- `initAgentAudit()` + the `AUDIT_CHECKS` map live in `script.js`. The map triages Cloudflare's 22 checks by `priority`: **`core`** (7 &mdash; robots.txt, sitemap, Link headers, AI crawler rules, content signals, markdown, agent skills) get a real consequence sentence and lead the page; **`advanced`** (10) and **`commerce`** (5) collapse into one `<details>` labelled as safe to ignore, because claiming an ordinary business loses traffic over `oauthProtectedResource` would breach §5.
+- An unknown check (if Cloudflare adds a 23rd) falls back to rendering their `message` and `nextLevel.requirements[].description` verbatim &mdash; it is never dropped. `durationMs` is shown per check and **omitted when null**; it is never summed, because the checks run concurrently.
+- All upstream strings are untrusted third-party data: render with `textContent`, never `innerHTML`. `evidence[].url` is derived from visitor input and must never become an `href`.
+- Attribution to Cloudflare, including their verbatim disclaimer, is **required and must stay prominent**. TENSIX does not test anyone's site.
+
 ---
 
 ## 5. SCHEMA, SEO & AUDIT RULES — MANDATORY
@@ -119,7 +127,7 @@ python submit_indexnow.py
 ### ✅ ALWAYS DO
 - Use `@graph` arrays — never standalone `@type` blocks.
 - Every page must contain: `WebPage/Article`, `BreadcrumbList`, and `FAQPage` where relevant.
-- All 45 pages must pass `python validate_schemas.py` with 0 errors before pushing (it also flags any `@id` fully defined on more than one page).
+- All 46 pages must pass `python validate_schemas.py` with 0 errors before pushing (it also flags any `@id` fully defined on more than one page).
 - All internal links must pass `python screaming_frog_audit.py` with 0 broken links and 0 orphans.
 - Keep `sitemap.xml` strictly updated with all canonical URLs.
 - Exactly ONE `<link rel="canonical">` per page, equal to `https://www.tensix.in/<path>` (no `.html`). `screaming_frog_audit.py` enforces this.
@@ -178,6 +186,8 @@ Target: isitagentready Content Site 6/7 and Level 4, using honest standards only
 | WebMCP (declarative) | `contact.html` form | `toolname="request-tensix-quote"`, `tooldescription`, `toolparamdescription` per field, hidden `plan` input (filled from `?plan=` by `script.js`; `api/contact.js` prefixes `[Plan: <slug>] ` to the subject). |
 
 **Intentionally NOT published** (there is no real endpoint or capability behind them, and fake files would be dishonest and could mislead agents): OAuth/OIDC discovery, oauth-protected-resource, auth.md, MCP server card, A2A agent card, commerce/payment protocols (x402, MPP, UCP, ACP), Web Bot Auth. **DNS-AID SVCB records are also not published**: there is no A2A/MCP endpoint to point them at, so that scanner check stays an honest fail.
+
+**Third-party dependency (the `/is-my-site-ai-ready` tool).** Cloudflare's scan API has **no ToS, no SLA and no versioning**, and is discoverable only via their own `/.well-known/api-catalog` and `scan-site` Agent Skill. Treat its response shape as untrusted: the renderer must tolerate a missing `nextLevel`, missing `evidence` and unknown `status` values, and the page must stay fully useful with zero scan data. If they ever withdraw CORS, the fallback is a serverless proxy at `/api/` (Vercel allows 300s with fluid compute, so a 10-15s upstream call fits) &mdash; accepting the IP-reputation trade noted in §4.4.
 
 **DNS records the owner adds in the Cloudflare dashboard:**
 - TXT `_catalog._agents.tensix.in` = `"url=https://www.tensix.in/.well-known/ai-catalog.json"`

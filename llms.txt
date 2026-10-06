@@ -16,6 +16,7 @@
 - [AI Terms Explained Simply: Glossary](https://www.tensix.in/resources): Plain-English meanings of the AI terms business owners keep hearing: AI agents, RAG, GraphRAG, n8n and FastAPI. By Hemal Shah of TENSIX, Ahmedabad.
 - [TENSIX vs Agencies, Outsourcing & Freelancers](https://www.tensix.in/tensix-vs-traditional-agencies): Compare hiring TENSIX, one senior engineer, with an agency, an hourly outsourcing firm or a freelancer: who you talk to, pricing, speed and code ownership.
 - [TENSIX Guides & Insights | AI, Automation, Search](https://www.tensix.in/blogs): Plain-English guides from TENSIX on AI assistants, automation, cloud hosting and getting found on Google and ChatGPT, plus guides for Ahmedabad industries.
+- [Is My Site AI Ready? Free Agent Readiness Check](https://www.tensix.in/is-my-site-ai-ready): Free check of whether AI agents and assistants can read your website. Scan data and fix steps come from Cloudflare isitagentready.com, shown with latency in ms.
 
 ## Services
 - [AI Agent and Assistant Development, Ahmedabad](https://www.tensix.in/services/ai-agent-development): Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices from ₹29,999.
