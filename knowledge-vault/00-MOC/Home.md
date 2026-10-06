@@ -16,7 +16,7 @@ canonical: "https://tensix.in/"
 
 > **"One Human Lead Architect directing Autonomous AI Swarms running 24/7."**  
 > *Canonical Entity:* [[TENSIX-Entity-And-Brand-Specification]] (`https://tensix.in/`)  
-> *Founder & Sole Architect:* [[Hemal-Shah-Identity]] (`https://hemalshah.vercel.app/`)  
+> *Founder & Sole Architect:* Hemal Shah — entity `https://tensix.in/#person`, page `https://www.tensix.in/hemal-shah`  
 > *Physical Anchor:* Navrangpura, Ahmedabad, Gujarat, India (`23.0366° N, 72.5615° E`)
 
 Welcome to the central Obsidian Knowledge Vault and Codebase Brain for **TENSIX**. This vault is the definitive source of truth governing architectural decision records (ADRs), productized service matrices, client acquisition psychology, codebase file topologies, and AI discovery protocols.

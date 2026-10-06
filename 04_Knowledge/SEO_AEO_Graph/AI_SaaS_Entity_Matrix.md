@@ -1,8 +1,8 @@
 # AI & SaaS Entity Keyword & Authority Matrix
 
 ## Entity Overview
-- **Brand Entity:** HK Engineering (https://hemalshah.vercel.app/#organization)
-- **Person Entity:** Hemal Shah / HK (https://hemalshah.vercel.app/#person)
+- **Brand Entity:** TENSIX (https://tensix.in/#organization)
+- **Person Entity:** Hemal Shah (https://tensix.in/#person)
 - **Primary Core:** AI Automation Engineering, Multi-Agent Systems, FastAPI / Next.js SaaS Development, GEO/AEO Optimization
 - **Location Entity:** Navrangpura, Ahmedabad, Gujarat, India (Covering GIFT City, SG Highway & Global Remote)
 

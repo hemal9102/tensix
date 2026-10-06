@@ -118,6 +118,15 @@
       ]
     },
     {
+      "source": "/:path((?!api/|assets/|md/|\\.well-known/)[^.]+)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/plain\", </.well-known/api-catalog>; rel=\"api-catalog\", </services>; rel=\"service-doc\""
+        }
+      ]
+    },
+    {
       "source": "/md/(.*)",
       "headers": [
         {

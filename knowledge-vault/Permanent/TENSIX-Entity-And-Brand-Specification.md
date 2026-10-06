@@ -26,7 +26,7 @@ canonical: "https://tensix.in/"
 - **Schema Organization ID:** `https://tensix.in/#organization`
 - **Schema WebSite ID:** `https://tensix.in/#website`
 - **Sole Founder & Principal Architect:** **Hemal Shah**
-- **Personal Entity URI:** `https://hemalshah.vercel.app/#person`
+- **Personal Entity URI:** `https://tensix.in/#person`
 - **Personal Portfolio & CV:** `https://hemal.io/`
 - **GitHub:** `https://github.com/hemal9102`
 - **LinkedIn:** `https://www.linkedin.com/in/hemal-shah-49a728362/`

@@ -61,7 +61,7 @@ TENSIX implements a unified, interconnected Schema.org graph across all pages:
       "url": "https://tensix.in/",
       "founder": {
         "@type": "Person",
-        "@id": "https://hemalshah.vercel.app/#person",
+        "@id": "https://tensix.in/#person",
         "name": "Hemal Shah"
       },
       "geo": {

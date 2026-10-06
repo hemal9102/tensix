@@ -313,3 +313,6 @@ Content-Signal: ai-train=no, search=yes, ai-input=yes
 # ── Sitemap ───────────────────────────────────────────────────────────────────
 Sitemap: https://www.tensix.in/sitemap.xml
 Sitemap: https://www.tensix.in/sitemap_index.xml
+
+# ── Agent discovery (ARD) ─────────────────────────────────────────────────────
+Agentmap: https://www.tensix.in/.well-known/ai-catalog.json

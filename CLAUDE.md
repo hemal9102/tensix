@@ -146,7 +146,7 @@ python submit_indexnow.py
 - **TENSIX** is an elite software, autonomous AI agent, and cloud engineering studio.
 - It was previously incubated under the engineering alias *HK Engineering*.
 - To avoid any confusion with manufacturing or CNC suppliers, all public entity branding is exclusively **TENSIX** (`https://tensix.in/`).
-- The transition record is permanently documented at `https://tensix.in/hk-engineering-ahmedabad.html`.
+- The transition record is permanently documented at `https://www.tensix.in/hk-engineering-ahmedabad`.
 
 ---
 
@@ -162,7 +162,7 @@ Target: isitagentready Content Site 6/7 and Level 4, using honest standards only
 | API catalog (RFC 9727) | `/.well-known/api-catalog` + `/openapi.json` | Linkset for the real `POST /api/contact`, served as `application/linkset+json`; `openapi.json` (OpenAPI 3.1) served as `application/openapi+json`. |
 | Agent Skills | `/.well-known/agent-skills/index.json` + `request-a-quote/SKILL.md` | One real skill: pick a service/plan and send an inquiry. The `sha256` digest is written by `build_agent_files.py`; `.gitattributes` forces LF under `.well-known/**` so the digest stays stable. |
 | AI catalog | `/.well-known/ai-catalog.json` + `<link rel="ai-catalog">` in `index.html` | Points to `openapi.json` and the SKILL.md with representative queries. |
-| WebMCP (declarative) | `contact.html` form | `toolname="request-tensix-quote"`, `tooldescription`, `toolparamdescription` per field, hidden `plan` input (filled from `?plan=` by `script.js`; `api/contact.js` prefixes `Plan: <slug>` to the subject). |
+| WebMCP (declarative) | `contact.html` form | `toolname="request-tensix-quote"`, `tooldescription`, `toolparamdescription` per field, hidden `plan` input (filled from `?plan=` by `script.js`; `api/contact.js` prefixes `[Plan: <slug>] ` to the subject). |
 
 **Intentionally NOT published** (there is no real endpoint or capability behind them, and fake files would be dishonest and could mislead agents): OAuth/OIDC discovery, oauth-protected-resource, auth.md, MCP server card, A2A agent card, commerce/payment protocols (x402, MPP, UCP, ACP), Web Bot Auth. **DNS-AID SVCB records are also not published**: there is no A2A/MCP endpoint to point them at, so that scanner check stays an honest fail.
 
