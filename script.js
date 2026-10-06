@@ -458,8 +458,9 @@ function initAgentAudit() {
     if (c.durationMs != null) head.appendChild(el('span', 'audit-ms', c.durationMs + ' ms'));
     row.appendChild(head);
 
-    // Our plain-language reading, or Cloudflare's own message when we have none.
-    const line = meta.cost || c.message;
+    // The cost sentence describes what a FAILING check loses you — showing it on a
+    // pass would be false. Passing and not-applicable checks get Cloudflare's own wording.
+    const line = (st === 'fail' && meta.cost) ? meta.cost : c.message;
     if (line) row.appendChild(el('p', 'audit-cost', line));
 
     const fix = fixes.get(c.name);
@@ -467,7 +468,7 @@ function initAgentAudit() {
       const p = el('p', 'audit-from');
       p.appendChild(el('b', null, 'From Cloudflare: '));
       if (fix.description) p.appendChild(document.createTextNode(fix.description));
-      (fix.specUrls || []).slice(0, 3).forEach(u => {
+      (fix.specUrls || []).slice(0, 2).forEach(u => {
         p.appendChild(document.createTextNode(' '));
         if (typeof u === 'string' && /^https:\/\//.test(u)) {
           const a = el('a', null, u);
