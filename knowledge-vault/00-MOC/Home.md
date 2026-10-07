@@ -1,25 +1,25 @@
 ---
-title: "TENSIX Knowledge Vault — Home MOC"
+title: "TENSIX Knowledge Vault — Home Dashboard"
 type: "moc"
 tags:
   - moc
   - tensix
   - second-brain
   - architecture
-created: 2026-09-25
-updated: 2026-09-25
+  - dashboard
+updated: 2026-10-07
 owner: "Hemal Shah"
 canonical: "https://tensix.in/"
 ---
 
-# 🧠 TENSIX Knowledge Vault & Codebase Memory Graph
+# 🧠 TENSIX Knowledge Vault & Second Brain Dashboard
 
-> **"One Human Lead Architect directing Autonomous AI Swarms running 24/7."**  
+> **"One Human Lead Architect directing Autonomous AI Systems running 24/7."**  
 > *Canonical Entity:* [[TENSIX-Entity-And-Brand-Specification]] (`https://tensix.in/`)  
 > *Founder & Sole Architect:* Hemal Shah — entity `https://tensix.in/#person`, page `https://www.tensix.in/hemal-shah`  
 > *Physical Anchor:* Navrangpura, Ahmedabad, Gujarat, India (`23.0366° N, 72.5615° E`)
 
-Welcome to the central Obsidian Knowledge Vault and Codebase Brain for **TENSIX**. This vault is the definitive source of truth governing architectural decision records (ADRs), productized service matrices, client acquisition psychology, codebase file topologies, and AI discovery protocols.
+Welcome to the unified **TENSIX Knowledge Vault**. All project documentation, architectural decision records (ADRs), research papers, business strategies, and codebase memory are unified into this single Obsidian vault.
 
 ---
 
@@ -28,45 +28,65 @@ Welcome to the central Obsidian Knowledge Vault and Codebase Brain for **TENSIX*
 | MOC | Core Scope | Status |
 | :--- | :--- | :--- |
 | **[[TENSIX-Master-MOC]]** | Global constellation map interconnecting all vault systems | 🟢 Active |
-| **[[TENSIX-Services-And-Pricing-MOC]]** | 6 productized engineering suites, 18 pricing tiers, ROI models | 🟢 Active |
+| **[[Research-And-GEO-MOC]]** | 6 Research papers, competitive GEO, NLI entailment, SAFE factuality | 🟢 Active |
+| **[[Website-Pages-MOC]]** | All 46 live website Markdown twins (services, blogs, local pages) | 🟢 Active |
+| **[[TENSIX-Services-And-Pricing-MOC]]** | 8 productized engineering suites, pricing tiers, ROI models | 🟢 Active |
 | **[[TENSIX-Target-Markets-And-Buyer-Personas-MOC]]** | Target niches, ICP profiles, pain-point mappings & market capture | 🟢 Active |
 | **[[TENSIX-Codebase-And-Architecture-MOC]]** | Complete file inventory, Python toolchain, DOM rendering & CSS | 🟢 Active |
 | **[[TENSIX-Persuasion-And-Sales-Playbook-MOC]]** | Psychological pricing, price anchoring, objection scripts & closing | 🟢 Active |
-| **[[TENSIX-AEO-GEO-SGE-Dominance-Architecture]]** | Schema graph hierarchies, LLM context files, indexing daemons | 🟢 Active |
-| **[[Autonomous-Software-Economy-MOC]]** | Autonomous multi-agent swarms, token economics & agent runtime | 🟢 Active |
-| **[[Global-Internet-Business-Ecosystems-MOC]]** | Value ladder, asymmetric bets, and physical economy moats | 🟢 Active |
+| **[[System-Architecture]]** | System design, infrastructure pipelines, and hosting topology | 🟢 Active |
 
 ---
 
-## ⚡ Direct Graph Navigation Hubs
+## 📁 Unified Vault Topology (The 10 Sectors)
 
-### 1. Commercial Suites & Offerings
-- [[TENSIX-Web-Architecture-And-Redesign-Suite]] — Basic (₹14,999), Modern Lead Engine (₹24,999), Complete Platform (₹45,000)
-- [[TENSIX-Enterprise-Email-And-SES-Delivery-Engine]] — Compliance (₹12,999), Amazon SES / OCI (₹22,999), Cold Outreach (₹44,999)
-- [[TENSIX-Data-Scraping-And-Automated-Inbox-Parsers]] — Gmail Parsers (₹16,999), Google Maps Scraper (₹24,999), Stealth Crawler (₹49,999)
-- [[TENSIX-Cloud-VPS-Hardening-And-CICD-Pipelines]] — VPS Hardening (₹11,999), GitHub Actions CI/CD (₹21,999), Plesk Cluster (₹38,000)
-- [[TENSIX-Custom-Software-And-SaaS-Architecture]] — Backend API (₹34,999), Full-Stack SaaS MVP (₹69,999), Business OS (₹1,25,000+)
-- [[TENSIX-Autonomous-AI-Swarms-And-GraphRAG]] — RAG Assistant (₹29,999), Multi-Agent Swarm (₹59,999), Autonomous AI OS (₹99,999+)
-
-### 2. Positioning, Sales & Psychology
-- [[TENSIX-Buyer-Personas-And-Target-Segments]] — ICPs: High-Burn Founders, Outbound Agencies, MSMEs & Scaled Firms
-- [[TENSIX-Sales-Psychology-And-Pricing-Tricks]] — Price anchoring, compromise effect, zero-downtime & fixed-scope guarantees
-- [[TENSIX-Entity-And-Brand-Specification]] — Rebranding from HK Engineering, entity disambiguation, single-owner mandate
-
-### 3. Technical Core & Codebase Engine
-- [[TENSIX-Codebase-File-Inventory-And-Tooling]] — Breakdown of all 40+ HTML/Python/JS files, verification scripts & sitemaps
-- [[MASTER_PROMPT]] — The master canonical system prompt driving LLM web crawler synthesis
-- [[AEO-GEO-Monitoring-Loop]] — Continuous verification of search engine citations and brand grounding
-
----
-
-## 📂 Vault Topology
 ```text
 knowledge-vault/
-├── 00-MOC/              # High-level navigational indices & Maps of Content
-├── Permanent/           # Atomic, interconnected conceptual notes (Obsidian Graph Nodes)
-├── Projects/            # Active project memory & implementation plans
-├── Areas/               # Core ongoing engineering domains & local citations
-├── Decisions/           # Architectural Decision Records (ADRs) & strategic pivots
-└── Resources/           # Technical resumes, schema templates, and external specs
+├── 00-MOC/                     # Maps of Content (Navigation hubs & Dashboards)
+├── 01-System-And-Memory/       # System personas, living memory, master prompts & security
+├── 02-Projects/                # Active and past project workspaces (SaaS MVPs, client builds)
+├── 03-Business-And-Strategy/   # GTM strategy, Ahmedabad dominance, sales psychology & KPIs
+├── 04-Research-And-GEO/        # 6 Research papers, competitive GEO forensics & indexing pipelines
+├── 05-Permanent/               # Atomic Zettelkasten conceptual notes (Graph Nodes)
+├── 06-Decisions/               # Architectural Decision Records (ADRs)
+├── 07-Areas/                   # Ongoing engineering domains (SEO, Email, DevOps, Security)
+├── 08-Knowledge-And-Skills/    # Skills graph, agentic knowledge, audit reports & tutorials
+├── 09-Archive/                 # Historical, superseded notes & legacy scripts
+└── Website-Markdown/           # Synchronized Markdown twins of all live website pages
 ```
+
+---
+
+## ⚡ Direct Quick-Access Links
+
+### 🔬 Research, Citations & GEO
+- [[04-Research-And-GEO/DOCS_GEO_RESEARCH_IMPLEMENTATION|DOCS_GEO_RESEARCH_IMPLEMENTATION.md]] — Complete technical reference on the AI citation engine.
+- [[00-MOC/Research-And-GEO-MOC|Research and GEO MOC]] — Synthesizing the 6 foundational arXiv papers.
+- [[04-Research-And-GEO/knowledge_base/Gap_Analysis_Rajput_vs_Hemal|Gap Analysis: Rajput Bhavin vs. Hemal Shah]]
+- [[04-Research-And-GEO/knowledge_base/Indexing_Pipeline_Architecture|Multi-Engine Indexing Pipeline Architecture]]
+
+### 💻 System, Memory & Architecture
+- [[01-System-And-Memory/MASTER_PROMPT|MASTER_PROMPT.md]] — Canonical AI instruction system.
+- [[01-System-And-Memory/SECURITY_REVIEW|SECURITY_REVIEW.md]] — Core security audit.
+- [[01-System-And-Memory/Memory/LIVING_MEMORY|Living Memory]] — Continuous agent context buffer.
+- [[01-System-And-Memory/System/AI_PERSONA|AI Persona Specification]]
+
+### 💼 Business & Commercial Playbooks
+- [[03-Business-And-Strategy/AEO_STRATEGY|AEO Strategy]]
+- [[03-Business-And-Strategy/Ahmedabad_Entity_Dominance|Ahmedabad Entity Dominance]]
+- [[03-Business-And-Strategy/KPI_TRACKING|KPI Tracking Matrix]]
+- [[03-Business-And-Strategy/NEURAL_DECISION_BOUNDARY_EMAIL|Neural Decision Boundary Outreach]]
+
+### 🌐 Live Website Pages
+- [[Website-Markdown/services/ai-agent-development|AI Agent Development (₹29,999)]]
+- [[Website-Markdown/services/custom-software-saas-development|Custom Software & SaaS (₹34,999)]]
+- [[Website-Markdown/services/geo-aeo-seo|GEO, AEO & SEO Service]]
+- [[Website-Markdown/services/cloud-devops|Cloud DevOps (₹11,999)]]
+
+---
+
+## 🧭 Vault Management Rules
+1. **Atomic Notes:** 1 concept per permanent note (`05-Permanent/`).
+2. **No Orphan Notes:** Every note must link to at least 1 parent MOC or related note.
+3. **Wikilinks:** Use `[[Note-Name]]` notation.
+4. **Tags:** Taxonomy: `#moc #architecture #research #geo #security #business #project #decision`.

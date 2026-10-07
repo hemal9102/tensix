@@ -60,6 +60,32 @@ How You Pay Fixed price per project
 
 Main Tools Python, FastAPI, Next.js, PostgreSQL
 
+Verified Technical Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Studio Model
+
+Solo Software & AI Studio (Founder: Hemal Shah)
+
+Pricing Guarantee
+
+100% Fixed Upfront Quotes (₹14,999 – ₹1,25,000+), 0 Hourly Billing
+
+Delivery SLA
+
+1 to 3 Weeks for Most Production Systems
+
+Core Capabilities
+
+Websites, SaaS MVPs, AI Agents (RAG/LangGraph), Cloud VPS, Automation
+
+Code Ownership
+
+100% Client-Owned Repositories, Servers & IP from Day 1
+
+Brand Disambiguation
+
+Independent; not Tenstorrent AI chip cores or Tensix Consulting US
+
 Services
 
 ## Services & Prices
@@ -404,6 +430,32 @@ Services and prices
 TENSIX is a one-person studio in Ahmedabad run by Hemal Shah. He builds websites, custom software, AI assistants, automations and cloud set-ups for businesses in India and abroad, using AI tools to work faster. Every project has a fixed price agreed before work starts, and you own everything that is built.
 
 [See plans and prices ↓](https://www.tensix.in/services#pricing) [How a project works ↓](https://www.tensix.in/services#delivery-model)
+
+Verified Pricing & Service Specifications Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service Catalogue
+
+8 Fixed-Price Engineering & AI Offerings
+
+Price Range
+
+₹11,999 to ₹1,25,000+ (Fixed quotes, 0 hourly billing)
+
+Delivery SLA
+
+2 to 21 business days by milestone
+
+Operator
+
+Hemal Shah • Solo Engineering Studio
+
+Code Ownership
+
+100% Client-owned repositories, accounts & credentials
+
+Contract Model
+
+Fixed scope & price in writing before work begins
 
 ## What TENSIX Can Build for You
 
@@ -1862,6 +1914,32 @@ TENSIX builds custom AI assistants and AI agents (software that reads informatio
 
 [Book a consultation](https://www.tensix.in/contact?plan=ai-swarm) [See plans and prices ↓](https://www.tensix.in/services/ai-agent-development#plans)
 
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Custom AI Agent & Assistant Development
+
+Pricing
+
+From ₹29,999 (Fixed upfront, 0 hourly billing)
+
+Turnaround
+
+5 to 14 business days
+
+Core Architecture
+
+RAG, LangGraph, FastAPI, pgvector, Claude & OpenAI
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned code & cloud accounts
+
 ## Who this is for
 
 - Teams that answer the same customer or staff questions again and again
@@ -1995,6 +2073,32 @@ description: "Secure cloud server (VPS) set-up, automatic deployments from GitHu
 TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast and safely, and new versions go live automatically when your code changes. Firewalls, SSL, backups and monitoring are set up properly, at fixed prices from ₹11,999.
 
 [Book a consultation](https://www.tensix.in/contact?plan=cloud-cicd) [See plans and prices ↓](https://www.tensix.in/services/cloud-devops#plans)
+
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Cloud VPS, Docker & CI/CD Deployment Setup
+
+Pricing
+
+From ₹11,999 (Fixed upfront, 0 hourly billing)
+
+Turnaround
+
+2 to 5 business days
+
+Core Architecture
+
+Oracle Cloud, AWS, DigitalOcean, Docker, Automated Backups
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned cloud & server credentials
 
 ## Who this is for
 
@@ -2131,6 +2235,32 @@ description: "Custom software, CRMs, ERPs and SaaS products built for your exact
 TENSIX builds custom business software: back-end systems, internal tools like CRMs and ERPs, and complete SaaS products (software you sell online by subscription). Prices are fixed from ₹34,999, and you own all the source code from day one.
 
 [Book a consultation](https://www.tensix.in/contact?plan=software-saas) [See plans and prices ↓](https://www.tensix.in/services/custom-software-saas-development#plans)
+
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Custom Software, CRM & SaaS MVP Development
+
+Pricing
+
+From ₹34,999 (Fixed upfront, 0 hourly billing)
+
+Turnaround
+
+14 to 21 business days
+
+Core Architecture
+
+Next.js, FastAPI, Node.js, PostgreSQL, Razorpay / Stripe
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned repositories & IP
 
 ## Who this is for
 
@@ -2270,6 +2400,32 @@ TENSIX builds small automatic systems that collect data for you: reading invoice
 
 [Book a consultation](https://www.tensix.in/contact?plan=scraper-google-maps) [See plans and prices ↓](https://www.tensix.in/services/data-scraping-automation#plans)
 
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Web Scraping, Document Parsing & Automation
+
+Pricing
+
+From ₹16,999 (Fixed upfront, 0 hourly billing)
+
+Turnaround
+
+3 to 7 business days
+
+Core Architecture
+
+Python, Puppeteer, Playwright, n8n, Google Sheets & CRM sync
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned scripts & data pipelines
+
 ## Who this is for
 
 - Offices where staff type invoice or order details from email into Excel or Tally
@@ -2408,6 +2564,32 @@ TENSIX fixes the settings that decide whether your emails reach the inbox, and s
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
 
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Business Email Deliverability & Amazon SES Setup
+
+Pricing
+
+From ₹12,999 (Fixed upfront, 0 hourly billing)
+
+Turnaround
+
+2 to 4 business days
+
+Core Architecture
+
+SPF, DKIM, DMARC, Custom Return-Path, Amazon SES
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned DNS & AWS SES accounts
+
 ## Who this is for
 
 - Businesses whose emails or invoices end up in customers' spam folders
@@ -2544,6 +2726,32 @@ description: "Monthly engineering, server care, AI automation, code audits and t
 TENSIX retainers give you a set amount of engineering work, server care and technical advice every month, delivered directly by founder Hemal Shah with the help of AI tools. Plans start at ₹39,999 a month, and the Growth Engine plan can be paused or cancelled at the end of any 30-day cycle.
 
 [Book a consultation](https://www.tensix.in/contact?plan=retainer-ai-pod) [See plans and prices ↓](https://www.tensix.in/services/fractional-cto-retainers#plans)
+
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Monthly Engineering Retainer & Fractional CTO
+
+Pricing
+
+From ₹39,999 / month (Cancel or pause anytime)
+
+Turnaround
+
+Ongoing monthly engineering sprints
+
+Core Architecture
+
+Code audits, architecture reviews, server care & AI systems
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned code & infrastructure
 
 ## Who this is for
 
@@ -2683,6 +2891,32 @@ TENSIX makes your website easy for Google and AI assistants like ChatGPT, Gemini
 
 [Book a consultation](https://www.tensix.in/contact?plan=geo-aeo-seo) [See plans and prices ↓](https://www.tensix.in/services/geo-aeo-seo#plans)
 
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Technical GEO, AEO & AI Search Citation Optimization
+
+Pricing
+
+Custom Quote (From ₹24,999)
+
+Turnaround
+
+7 to 14 business days
+
+Core Architecture
+
+Schema.org JSON-LD, llms.txt, Entity Disambiguation & Answer Pages
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned assets & Search Console access
+
 ## Who this is for
 
 - Businesses that get little traffic from Google despite having a website
@@ -2790,6 +3024,32 @@ description: "Fast, mobile-friendly business websites with WhatsApp, enquiry for
 TENSIX designs and builds business websites that load fast on phones, look professional and turn visitors into enquiries through forms, WhatsApp and call buttons. Prices are fixed from ₹14,999, and most sites are ready in 5 to 14 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=web-standard) [See plans and prices ↓](https://www.tensix.in/services/website-development#plans)
+
+Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
+
+Service
+
+Fast Business Website Design & Engineering
+
+Pricing
+
+From ₹14,999 (Fixed upfront, 0 hourly billing)
+
+Turnaround
+
+5 to 14 business days
+
+Core Architecture
+
+Lightweight HTML5, Next.js, 100% PageSpeed, Mobile-first
+
+Provider
+
+TENSIX • Hemal Shah (Solo Studio)
+
+Code Ownership
+
+100% Client-owned domain, hosting & source files
 
 ## Who this is for
 

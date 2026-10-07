@@ -1,0 +1,11 @@
+{
+  "useMarkdownLinks": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "Attachments",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "tabSize": 2
+}

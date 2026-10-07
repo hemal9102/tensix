@@ -1,0 +1,76 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "colorGroups": [
+    {
+      "query": "path:00-MOC",
+      "color": {
+        "a": 1,
+        "rgb": 16737792
+      }
+    },
+    {
+      "query": "path:01-System-And-Memory",
+      "color": {
+        "a": 1,
+        "rgb": 4159487
+      }
+    },
+    {
+      "query": "path:02-Projects",
+      "color": {
+        "a": 1,
+        "rgb": 5824767
+      }
+    },
+    {
+      "query": "path:03-Business-And-Strategy",
+      "color": {
+        "a": 1,
+        "rgb": 15418879
+      }
+    },
+    {
+      "query": "path:04-Research-And-GEO",
+      "color": {
+        "a": 1,
+        "rgb": 4443903
+      }
+    },
+    {
+      "query": "path:05-Permanent",
+      "color": {
+        "a": 1,
+        "rgb": 10839039
+      }
+    },
+    {
+      "query": "path:06-Decisions",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "path:07-Areas",
+      "color": {
+        "a": 1,
+        "rgb": 3394815
+      }
+    },
+    {
+      "query": "path:08-Knowledge-And-Skills",
+      "color": {
+        "a": 1,
+        "rgb": 10066329
+      }
+    },
+    {
+      "query": "path:09-Archive",
+      "color": {
+        "a": 1,
+        "rgb": 5592405
+      }
+    }
+  ]
+}

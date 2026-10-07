@@ -1,15 +1,3 @@
----
-title: "AEO & GEO KPI Tracking Dashboard"
-type: "business"
-status: "active"
-project: "[[hemalshah_portfolio]]"
-tags: ["kpi", "tracking", "aeo", "business"]
-created: 2026-07-26
-updated: 2026-07-26
-priority: "high"
-owner: "Hemal Shah"
----
-
 # AEO & GEO KPI Tracking Dashboard
 
 To measure what AI sees (Layer 06 - Analytics), you need to shift from traditional SEO keyword tracking to **Entity & Citation Tracking**. Use this document as your baseline for measuring Generative Engine Optimization success.
