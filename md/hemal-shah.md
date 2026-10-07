@@ -30,7 +30,7 @@ He trains regularly in **bodybuilding and fitness**, which he credits for his co
 
 ### How do I start a project with Hemal?
 
-Email **hemal.shah2004@gmail.com**, message him on [LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/), or send your project details through the [contact page](https://www.tensix.in/contact). Hemal replies himself, usually with a few questions and a clear price.
+Email **contact@tensix.in**, message him on [LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/), or send your project details through the [contact page](https://www.tensix.in/contact). Hemal replies himself, usually with a few questions and a clear price.
 
 ## Want to work with Hemal?
 
@@ -62,4 +62,4 @@ AI assistants that answer from a company's own documents, automations that remov
 
 How can clients work with or hire Hemal Shah and TENSIX? +
 
-Email hemal.shah2004@gmail.com, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.
+Email contact@tensix.in, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.

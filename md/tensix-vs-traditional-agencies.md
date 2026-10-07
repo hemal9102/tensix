@@ -14,13 +14,13 @@ There is more than one good way to get software built. This page compares four c
 
 ## The Comparison at a Glance
 
-TENSIX is a one-person studio: Hemal Shah, a senior engineer who uses AI tools to work faster. Here is how that approach differs from the usual alternatives. Every provider is different, so treat the other columns as typical patterns, not rules.
+TENSIX operates as a **Principal-Led Systems Laboratory** directed by Hemal Shah. You engage directly with the systems architect engineering your architecture—delivering deterministic software, sovereign ownership, and zero agency bloat.
 
-| What to compare | TENSIX (one senior engineer + AI tools) | Larger agencies | Hourly outsourcing firms | Freelance marketplaces |
+| What to compare | TENSIX (Principal Systems Architect + High-Leverage AI Tooling) | Larger agencies | Hourly outsourcing firms | Freelance marketplaces |
 | --- | --- | --- | --- | --- |
-| **1. Who you talk to** | **Hemal Shah directly**, the engineer who plans and builds your project. | Usually a sales lead first, then an account manager who passes requests to the team. | Often a project manager who coordinates developers you may not speak to. | The person doing the work, but skill and experience vary a lot. |
-| **2. How you pay** | **Fixed price per project** (₹12k–₹1.25L+) or monthly plans (Growth ₹39,999 / $499, AI Build Plan ₹79,999 / $999, Part-Time CTO ₹1,49,999 / $1,850). Price agreed before work starts. | Often monthly retainers, sometimes with a minimum contract length. | Often billed by the hour, so the final cost depends on how long the work takes. | Fixed or hourly. Work outside the first quote is usually charged extra. |
-| **3. How the work gets done** | **One senior engineer using AI coding tools** for routine work, and checking every change personally. | Separate people for design, writing, development and testing, which adds hand-offs. | A team of developers. The people on your project can change over time. | One person. Progress depends on their availability. |
+| **1. Who you talk to** | **Principal Systems Architect directly**. You engage with the engineer planning, writing, and deploying your systems. | Usually a sales lead first, then an account manager who passes requests to the team. | Often a project manager who coordinates developers you may not speak to. | The person doing the work, but skill and experience vary a lot. |
+| **2. How you pay** | **Milestone-based fixed engineering investment** or calibrated monthly retainers ($499 / $999 / $1,850). Zero ambiguous hourly billing. | Often monthly retainers, sometimes with a minimum contract length. | Often billed by the hour, so the final cost depends on how long the work takes. | Fixed or hourly. Work outside the first quote is usually charged extra. |
+| **3. How the work gets done** | **Principal-led engineering with state-of-the-art AI synthesis**, delivering compiled binaries, verified type-safe code, and mathematical mechanical sympathy. | Separate people for design, writing, development and testing, which adds hand-offs. | A team of developers. The people on your project can change over time. | One person. Progress depends on their availability. |
 | **4. Getting found online** | **Built in from the start:** fast pages, clear content and structured data (hidden labels that help Google and AI tools understand your site). | Varies. Many focus on classic SEO: keywords, blog posts and backlinks. | Often basic SEO plugins and page titles unless you ask for more. | Depends on the person. |
 | **5. Running costs after launch** | **Flat server bill where it makes sense:** automations can run on your own server (for example self-hosted n8n) instead of tools that charge per task. | Often paid tools such as Zapier or Make, whose bills grow with usage. | Often licensed tools or hosting managed by the vendor. | Varies. Small scripts may have no monitoring or alerts. |
 | **6. Who owns the code** | **You, from day one.** Code goes into your own GitHub and cloud accounts, with setup notes. | Check the contract. Some build on their own platforms, which can make leaving harder. | Check the contract. Code is sometimes handed over only after final payment. | Usually yours, but documentation and handover quality vary. |
@@ -68,15 +68,15 @@ Hourly billing makes the final bill hard to predict. Long contracts commit you b
 
 3
 
-### You Own Everything From Day One
+### Sovereign Infrastructure & Zero Vendor Lock-In
 
-Your software is a business asset. You should be able to keep it, change it, or hand it to someone else without asking permission.
+Your software is institutional capital. We build on open, sovereign foundations with zero recurring platform tax or artificial dependencies.
 
 #### With TENSIX
 
-- Code is saved in your own GitHub account from the first milestone.
-- Servers and cloud accounts are in your name. No licence fees to TENSIX.
-- You get setup notes, so another developer could take over if you ever need one.
+- All source code is committed directly to your enterprise GitHub/GitLab repository from Milestone 1.
+- Cloud infrastructure and production clusters are provisioned under your corporate tenancy. Zero TENSIX license tax.
+- Deterministic, self-contained architecture with complete automated CI/CD pipelines and cryptographic ownership.
 
 #### Ask any other provider
 
@@ -144,7 +144,7 @@ It depends on the project. TENSIX prices are fixed and published, starting at �
 
 ### Who owns the code when the project ends?
 
-You do. The code is stored in your own GitHub account from the start, along with setup notes, so you can keep working with TENSIX or hand it to another developer.
+You do, unconditionally. All source code is committed directly to your enterprise GitHub or GitLab repository from Milestone 1, with reproducible build configurations and zero proprietary platform lock-in.
 
 ### When is an agency a better choice?
 

@@ -10,32 +10,6 @@ TENSIX makes your website easy for Google and AI assistants like ChatGPT, Gemini
 
 [Book a consultation](https://www.tensix.in/contact?plan=geo-aeo-seo) [See plans and prices ↓](https://www.tensix.in/services/geo-aeo-seo#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Technical GEO, AEO & AI Search Citation Optimization
-
-Pricing
-
-Custom Quote (From ₹24,999)
-
-Turnaround
-
-7 to 14 business days
-
-Core Architecture
-
-Schema.org JSON-LD, llms.txt, Entity Disambiguation & Answer Pages
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned assets & Search Console access
-
 ## Who this is for
 
 - Businesses that get little traffic from Google despite having a website

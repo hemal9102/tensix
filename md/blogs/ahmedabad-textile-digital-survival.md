@@ -38,6 +38,6 @@ Related services: [Website development](https://www.tensix.in/services/website-d
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts

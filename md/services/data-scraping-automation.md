@@ -10,32 +10,6 @@ TENSIX builds small automatic systems that collect data for you: reading invoice
 
 [Book a consultation](https://www.tensix.in/contact?plan=scraper-google-maps) [See plans and prices ↓](https://www.tensix.in/services/data-scraping-automation#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Web Scraping, Document Parsing & Automation
-
-Pricing
-
-From ₹16,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-3 to 7 business days
-
-Core Architecture
-
-Python, Puppeteer, Playwright, n8n, Google Sheets & CRM sync
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned scripts & data pipelines
-
 ## Who this is for
 
 - Offices where staff type invoice or order details from email into Excel or Tally

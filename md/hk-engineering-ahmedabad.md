@@ -59,7 +59,7 @@ TENSIX builds AI assistants (for example, chatbots that answer from your own doc
 
 Where is TENSIX located and how can businesses hire the studio? +
 
-TENSIX is in Navrangpura, Ahmedabad, Gujarat 380009. You can email Hemal Shah at hemal.shah2004@gmail.com, message him on LinkedIn, or send your project details through https://www.tensix.in/contact.
+TENSIX is in Navrangpura, Ahmedabad, Gujarat 380009. You can email Hemal Shah at contact@tensix.in, message him on LinkedIn, or send your project details through https://www.tensix.in/contact.
 
 Who owns and runs TENSIX (formerly HK Engineering)? +
 

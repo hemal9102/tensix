@@ -109,4 +109,4 @@ Yes. We rebuild slow WordPress, Wix or old PHP sites as light, fast sites. We ke
 
 How do I get started? +
 
-Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.

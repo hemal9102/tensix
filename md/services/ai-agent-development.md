@@ -10,32 +10,6 @@ TENSIX builds custom AI assistants and AI agents (software that reads informatio
 
 [Book a consultation](https://www.tensix.in/contact?plan=ai-swarm) [See plans and prices ↓](https://www.tensix.in/services/ai-agent-development#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Custom AI Agent & Assistant Development
-
-Pricing
-
-From ₹29,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-5 to 14 business days
-
-Core Architecture
-
-RAG, LangGraph, FastAPI, pgvector, Claude & OpenAI
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned code & cloud accounts
-
 ## Who this is for
 
 - Teams that answer the same customer or staff questions again and again

@@ -10,32 +10,6 @@ TENSIX designs and builds business websites that load fast on phones, look profe
 
 [Book a consultation](https://www.tensix.in/contact?plan=web-standard) [See plans and prices ↓](https://www.tensix.in/services/website-development#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Fast Business Website Design & Engineering
-
-Pricing
-
-From ₹14,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-5 to 14 business days
-
-Core Architecture
-
-Lightweight HTML5, Next.js, 100% PageSpeed, Mobile-first
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned domain, hosting & source files
-
 ## Who this is for
 
 - Local businesses that need a professional website for the first time

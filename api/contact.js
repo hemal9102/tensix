@@ -189,7 +189,7 @@ module.exports = async function handler(req, res) {
     // 6. Forward sanitized lead to FormSubmit notification service
     let emailSent = false;
     try {
-      const emailRes = await fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+      const emailRes = await fetch('https://formsubmit.co/ajax/contact@tensix.in', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

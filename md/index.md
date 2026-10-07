@@ -316,7 +316,7 @@ Pages are kept light: clean code, no heavy page builders, compressed images, few
 
 How do I get started? +
 
-Fill in the contact form on this page, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Describe the problem in plain words. Hemal will reply within 24 hours with questions or a fixed-price proposal.
+Fill in the contact form on this page, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Describe the problem in plain words. Hemal will reply within 24 hours with questions or a fixed-price proposal.
 
 Get In Touch
 
@@ -326,4 +326,4 @@ Describe what you need in plain words: the problem, what you use today, and when
 
 Prefer direct communication?
 
-[WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project.) [Email Direct ↗](mailto:hemal.shah2004@gmail.com)
+[WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project.) [Email Direct ↗](mailto:contact@tensix.in)

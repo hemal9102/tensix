@@ -111,7 +111,7 @@
 - **Portfolio:** [hemalshah.vercel.app](https://hemalshah.vercel.app/) | [hemal.io](https://hemal.io/)
 - **GitHub:** [@hemal9102](https://github.com/hemal9102)
 - **LinkedIn:** [Hemal Shah](https://www.linkedin.com/in/hemal-shah-49a728362/)
-- **Contact:** `hemal.shah2004@gmail.com`
+- **Contact:** `contact@tensix.in`
 - **Headquarters:** Navrangpura, Ahmedabad, Gujarat 380009, India (23.0366° N, 72.5615° E)
 
 ---

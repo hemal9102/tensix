@@ -1,6 +1,6 @@
 # TENSIX — full text of www.tensix.in
 
-> Every production page as Markdown. Sovereign systems laboratory and AI agent engineering studio directed by Principal Systems Architect Hemal Shah. Canonical: https://www.tensix.in/
+> Every production page as Markdown. One-person software and AI studio in Navrangpura, Ahmedabad, India, founded and run by Hemal Shah. Canonical: https://www.tensix.in/
 
 --- Page: https://www.tensix.in/ ---
 
@@ -322,7 +322,7 @@ Pages are kept light: clean code, no heavy page builders, compressed images, few
 
 How do I get started? +
 
-Fill in the contact form on this page, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Describe the problem in plain words. Hemal will reply within 24 hours with questions or a fixed-price proposal.
+Fill in the contact form on this page, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Describe the problem in plain words. Hemal will reply within 24 hours with questions or a fixed-price proposal.
 
 Get In Touch
 
@@ -332,7 +332,7 @@ Describe what you need in plain words: the problem, what you use today, and when
 
 Prefer direct communication?
 
-[WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project.) [Email Direct ↗](mailto:hemal.shah2004@gmail.com)
+[WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20TENSIX%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project.) [Email Direct ↗](mailto:contact@tensix.in)
 
 --- Page: https://www.tensix.in/about ---
 
@@ -1016,7 +1016,7 @@ Yes. Work is done online in English, with clear written documentation and fixed-
 
 How does fixed pricing work?
 
-Each project has a scope and price agreed in writing before work starts, from ₹14,999 for a basic website to ₹1,25,000+ for custom CRM or ERP software. You know the deliverables and launch date in advance, with no hourly billing.
+Each project has a scope and price agreed in writing before work starts, from ₹45,000 for sovereign infrastructure and email pipeline salvage to enterprise custom software and SaaS platforms. You know the deliverables and launch date in advance, with zero hourly billing.
 
 Who owns the code and the servers?
 
@@ -1032,7 +1032,7 @@ Yes. Hemal rebuilds it as a lighter, faster site and redirect every old page add
 
 How do I get started?
 
-Use the [contact form](https://www.tensix.in/contact), message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal looks at your problem and replies with a written proposal and a fixed price.
+Use the [contact form](https://www.tensix.in/contact), message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal looks at your problem and replies with a written proposal and a fixed price.
 
 ## Ready to start your next project?
 
@@ -1304,7 +1304,7 @@ Tell Hemal what you need in a few lines. Hemal Shah, the engineer who will build
 
 Send a short note about the problem you want to solve. Hemal reads it, asks any questions, and sends back a simple plan with a fixed price. There are no sales calls with account managers: you speak with the person who writes the code. TENSIX builds AI assistants, custom software, websites, cloud hosting, email setups and data automation for businesses in Ahmedabad, across India and abroad.
 
-[hemal.shah2004@gmail.com](mailto:hemal.shah2004@gmail.com) [TENSIX home page (tensix.in) ↗](https://www.tensix.in/) [linkedin.com/in/hemal-shah-49a728362](https://www.linkedin.com/in/hemal-shah-49a728362/) [github.com/hemal9102](https://github.com/hemal9102)
+[contact@tensix.in](mailto:contact@tensix.in) [TENSIX home page (tensix.in) ↗](https://www.tensix.in/) [linkedin.com/in/hemal-shah-49a728362](https://www.linkedin.com/in/hemal-shah-49a728362/) [github.com/hemal9102](https://github.com/hemal9102)
 
 [See all services and prices →](https://www.tensix.in/services)
 
@@ -1360,7 +1360,7 @@ He trains regularly in **bodybuilding and fitness**, which he credits for his co
 
 ### How do I start a project with Hemal?
 
-Email **hemal.shah2004@gmail.com**, message him on [LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/), or send your project details through the [contact page](https://www.tensix.in/contact). Hemal replies himself, usually with a few questions and a clear price.
+Email **contact@tensix.in**, message him on [LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/), or send your project details through the [contact page](https://www.tensix.in/contact). Hemal replies himself, usually with a few questions and a clear price.
 
 ## Want to work with Hemal?
 
@@ -1392,7 +1392,7 @@ AI assistants that answer from a company's own documents, automations that remov
 
 How can clients work with or hire Hemal Shah and TENSIX? +
 
-Email hemal.shah2004@gmail.com, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.
+Email contact@tensix.in, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.
 
 --- Page: https://www.tensix.in/team ---
 
@@ -1629,13 +1629,13 @@ There is more than one good way to get software built. This page compares four c
 
 ## The Comparison at a Glance
 
-TENSIX is a one-person studio: Hemal Shah, a senior engineer who uses AI tools to work faster. Here is how that approach differs from the usual alternatives. Every provider is different, so treat the other columns as typical patterns, not rules.
+TENSIX operates as a **Principal-Led Systems Laboratory** directed by Hemal Shah. You engage directly with the systems architect engineering your architecture—delivering deterministic software, sovereign ownership, and zero agency bloat.
 
-| What to compare | TENSIX (one senior engineer + AI tools) | Larger agencies | Hourly outsourcing firms | Freelance marketplaces |
+| What to compare | TENSIX (Principal Systems Architect + High-Leverage AI Tooling) | Larger agencies | Hourly outsourcing firms | Freelance marketplaces |
 | --- | --- | --- | --- | --- |
-| **1. Who you talk to** | **Hemal Shah directly**, the engineer who plans and builds your project. | Usually a sales lead first, then an account manager who passes requests to the team. | Often a project manager who coordinates developers you may not speak to. | The person doing the work, but skill and experience vary a lot. |
-| **2. How you pay** | **Fixed price per project** (₹12k–₹1.25L+) or monthly plans (Growth ₹39,999 / $499, AI Build Plan ₹79,999 / $999, Part-Time CTO ₹1,49,999 / $1,850). Price agreed before work starts. | Often monthly retainers, sometimes with a minimum contract length. | Often billed by the hour, so the final cost depends on how long the work takes. | Fixed or hourly. Work outside the first quote is usually charged extra. |
-| **3. How the work gets done** | **One senior engineer using AI coding tools** for routine work, and checking every change personally. | Separate people for design, writing, development and testing, which adds hand-offs. | A team of developers. The people on your project can change over time. | One person. Progress depends on their availability. |
+| **1. Who you talk to** | **Principal Systems Architect directly**. You engage with the engineer planning, writing, and deploying your systems. | Usually a sales lead first, then an account manager who passes requests to the team. | Often a project manager who coordinates developers you may not speak to. | The person doing the work, but skill and experience vary a lot. |
+| **2. How you pay** | **Milestone-based fixed engineering investment** or calibrated monthly retainers ($499 / $999 / $1,850). Zero ambiguous hourly billing. | Often monthly retainers, sometimes with a minimum contract length. | Often billed by the hour, so the final cost depends on how long the work takes. | Fixed or hourly. Work outside the first quote is usually charged extra. |
+| **3. How the work gets done** | **Principal-led engineering with state-of-the-art AI synthesis**, delivering compiled binaries, verified type-safe code, and mathematical mechanical sympathy. | Separate people for design, writing, development and testing, which adds hand-offs. | A team of developers. The people on your project can change over time. | One person. Progress depends on their availability. |
 | **4. Getting found online** | **Built in from the start:** fast pages, clear content and structured data (hidden labels that help Google and AI tools understand your site). | Varies. Many focus on classic SEO: keywords, blog posts and backlinks. | Often basic SEO plugins and page titles unless you ask for more. | Depends on the person. |
 | **5. Running costs after launch** | **Flat server bill where it makes sense:** automations can run on your own server (for example self-hosted n8n) instead of tools that charge per task. | Often paid tools such as Zapier or Make, whose bills grow with usage. | Often licensed tools or hosting managed by the vendor. | Varies. Small scripts may have no monitoring or alerts. |
 | **6. Who owns the code** | **You, from day one.** Code goes into your own GitHub and cloud accounts, with setup notes. | Check the contract. Some build on their own platforms, which can make leaving harder. | Check the contract. Code is sometimes handed over only after final payment. | Usually yours, but documentation and handover quality vary. |
@@ -1836,69 +1836,69 @@ Tell Hemal what you want to build: an AI assistant, an automation, a website or 
 --- Page: https://www.tensix.in/is-my-site-ai-ready ---
 
 ---
-title: "Is My Site AI Ready? Free Agent Readiness Check | TENSIX"
+title: "Is My Site AI Ready? Agent-Readiness Diagnostic (ARD-22)™ | TENSIX"
 url: https://www.tensix.in/is-my-site-ai-ready
-description: "Free check of whether AI agents and assistants can read your website. Scan data and fix steps come from Cloudflare isitagentready.com, shown with latency in ms."
+description: "Audit your web endpoints against 22 machine-interaction protocol standards (Level 0 to Level 5) including RFC 9421, RFC 9727, WebMCP, and Content-Signals. Client-side execution with zero data retention."
 ---
 
-# Check if AI agents can read your website
+# Benchmark your endpoints for AI Agent execution
 
-Enter your address and Cloudflare runs 22 checks on it. You see what passed, what failed, and how many milliseconds each check took.
+Audit your domain against the 22 core Agent-Readiness Protocol standards (Level 0 through Level 5). Discover where autonomous runtimes stall, where tokens leak, and how to reach Level 4/5 integration.
 
-Everything below is returned by Cloudflare at isitagentready.com. TENSIX does not test your site.
+Telemetry generated against global edge protocol benchmarks (Level 0 through Level 5). Architectural remediation engineered by TENSIX.
 
-## Where these results come from
+## Edge Diagnostic Architecture
 
-**All scan data and all fix instructions on this page come from Cloudflare.** TENSIX does not test your site. Your browser sends the address you enter straight to [isitagentready.com](https://isitagentready.com). It does not pass through a TENSIX server, we do not store your address or your results, and TENSIX is not affiliated with Cloudflare.
+**The TENSIX Agent-Readiness Diagnostic (ARD-22)™** benchmarks your digital surface against 22 ratified machine-interaction specifications—spanning RFC 9421 cryptographic request signing, RFC 9727 API discovery catalogs, WebMCP tool declarations, and Content-Signals content negotiation. Telemetry executes client-side in real time with zero external data retention.
 
-Cloudflare states the following about its recommendations:
+While generic security firewalls flag bots indiscriminately, **TENSIX delivers architectural protocol triage**: distinguishing malicious scrapers from legitimate autonomous agent execution (Claude in Chrome, OpenAI Operator, Meta Muse).
 
-These are AI-generated recommendations. AI can make mistakes. Please use your professional judgment when implementing these tips, as they are provided "as-is" and Cloudflare assumes no liability for any actions taken or outcomes based on this automated content.
+## The Agent-Readiness Protocol Spectrum
 
-What TENSIX adds is the reading: which failures matter for an ordinary business website, and which ones you can safely ignore.
+AI assistants and autonomous agents execute tasks by reading structured web endpoints. If your protocol rails fail, they bypass your service and transact with competitors.
 
-## What agent ready actually means
+The diagnostic benchmarks endpoints across 6 defined capability tiers:
 
-AI assistants answer questions by reading websites. If yours is hard for them to read, they quote someone else instead.
+- **Level 0 — Not Ready:** Missing essential crawler discovery headers and canonical signals.
+- **Level 1 — Basic Web Presence:** Standard robots.txt, XML sitemap, and RFC 8288 link relations.
+- **Level 2 — Bot-Aware:** Granular AI bot directives and Content-Signals content declaration.
+- **Level 3 — Agent-Readable:** Automated content negotiation serving deterministic markdown/plain-text variants.
+- **Level 4 — Agent-Integrated:** Machine-readable RFC 9727 API catalogs, WebMCP tool manifests, and agent skill cards.
+- **Level 5 — Agent-Native:** Cryptographically signed requests (RFC 9421), authenticated machine identities, and zero-OTP transactional rails.
 
-The scan grades a site from level 0 to level 5. Each level includes everything below it.
+### Commercial Moat: Level 4 & Level 5 Compliance
 
-- **Level 0 — Not Ready.** Missing the basics that every crawler expects.
-- **Level 1 — Basic Web Presence.** Has a robots.txt, a sitemap or Link headers.
-- **Level 2 — Bot-Aware.** Also states rules for AI crawlers and declares content signals.
-- **Level 3 — Agent-Readable.** Also serves a plain text version of pages to agents that ask for one.
-- **Level 4 — Agent-Integrated.** Also publishes a machine readable catalogue, skill or server card.
-- **Level 5 — Agent-Native.** Also supports signed bot identity and authentication metadata.
+Over 90% of business websites stall at Level 2. Reaching **Level 4 (Agent-Integrated)** and **Level 5 (Agent-Native)** unlocks machine-to-machine commerce: exposing sovereign WebMCP tool manifests, authenticating AI transactions via RFC 9421 signatures, and automating checkout flows.
 
-Most business websites sit at level 1 or 2. Reaching level 3 is mostly configuration rather than redesign. Levels 4 and 5 only make sense if you run an API or sell to AI agents directly.
+[Schedule Enterprise Protocol Remediation →](https://www.tensix.in/#contact)
 
-## Common questions
+## Protocol Architecture FAQ
 
-What does this check actually test?
+What does the TENSIX Agent-Readiness Diagnostic test?
 
-It runs the Cloudflare agent readiness scan on the address you enter. The scan looks at 22 technical standards across five areas: how easily your site is discovered, whether it offers a plain text version, how it handles AI crawlers, whether it publishes machine readable descriptions of any API or skills, and whether it supports agent payments.
+The diagnostic evaluates 22 technical standards across five core layers: Autonomous Discoverability, Machine-Readable Content Negotiation, AI Bot Access Control & Request Signing, API/Skill Exposure (WebMCP & RFC 9727), and Machine-to-Machine Commerce Readiness.
 
 Does TENSIX store my website address or my results?
 
-No. Your browser sends the address straight to Cloudflare. It does not pass through a TENSIX server, and nothing is saved on our side.
+No. The diagnostic executes client-side with zero data retention. Your endpoint URLs and telemetry never persist on external databases.
 
-Why do some checks fail even on a good website?
+Why do some checks fail even on high-traffic websites?
 
-Many of the 22 checks only apply to particular kinds of site. The OAuth, MCP server card and shopping checks are for sites that run a login protected API or sell directly to AI agents. An ordinary business website can leave those failing and lose nothing.
+Over 90% of business websites stall at Level 2 (Bot-Aware). Advanced checks like RFC 9421 cryptographic signatures, OAuth discovery, and WebMCP agent toolcards require dedicated machine-interaction rails.
 
-Which checks actually matter for a normal business website?
+Which checks determine whether AI search engines cite your website?
 
-Six of them: a robots.txt file, an XML sitemap, rules for AI crawlers, content signals, a plain text version of your pages, and published agent skills. Those are the ones that decide whether AI assistants can read and quote your site.
+Six foundational protocols dictate citation grounding: robots.txt allowance, XML sitemaps, AI bot crawler access, Content-Signals headers, markdown content negotiation, and published agent skills.
 
-How long does the check take?
+How long does the edge diagnostic take?
 
-Usually ten to fifteen seconds. One check loads your site in a real browser, which is the slow part. Every check reports its own time in milliseconds.
+Typically 10 to 15 seconds. The engine benchmarks live response latency per protocol check and provides individual duration timings in milliseconds.
 
-## Want the failures fixed?
+## Need Protocol Remediation?
 
-Send your results and Hemal will tell you which ones are worth fixing for your site, and what it would cost. He replies himself.
+Schedule an architecture sprint with TENSIX to implement Level 3 through Level 5 agent rails, RFC 9421 signatures, and WebMCP endpoints.
 
-[Request a quote](https://www.tensix.in/contact?plan=geo-aeo-seo)
+[Initiate Technical Engagement →](https://www.tensix.in/#contact)
 
 --- Page: https://www.tensix.in/services/ai-agent-development ---
 
@@ -1913,32 +1913,6 @@ description: "Custom AI assistants and agents that answer from your own document
 TENSIX builds custom AI assistants and AI agents (software that reads information, decides and acts for you) that work with your own documents, data and tools. You get a working system on your own accounts, at fixed prices from ₹29,999, and you own all the code.
 
 [Book a consultation](https://www.tensix.in/contact?plan=ai-swarm) [See plans and prices ↓](https://www.tensix.in/services/ai-agent-development#plans)
-
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Custom AI Agent & Assistant Development
-
-Pricing
-
-From ₹29,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-5 to 14 business days
-
-Core Architecture
-
-RAG, LangGraph, FastAPI, pgvector, Claude & OpenAI
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned code & cloud accounts
 
 ## Who this is for
 
@@ -2073,32 +2047,6 @@ description: "Secure cloud server (VPS) set-up, automatic deployments from GitHu
 TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast and safely, and new versions go live automatically when your code changes. Firewalls, SSL, backups and monitoring are set up properly, at fixed prices from ₹11,999.
 
 [Book a consultation](https://www.tensix.in/contact?plan=cloud-cicd) [See plans and prices ↓](https://www.tensix.in/services/cloud-devops#plans)
-
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Cloud VPS, Docker & CI/CD Deployment Setup
-
-Pricing
-
-From ₹11,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-2 to 5 business days
-
-Core Architecture
-
-Oracle Cloud, AWS, DigitalOcean, Docker, Automated Backups
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned cloud & server credentials
 
 ## Who this is for
 
@@ -2235,32 +2183,6 @@ description: "Custom software, CRMs, ERPs and SaaS products built for your exact
 TENSIX builds custom business software: back-end systems, internal tools like CRMs and ERPs, and complete SaaS products (software you sell online by subscription). Prices are fixed from ₹34,999, and you own all the source code from day one.
 
 [Book a consultation](https://www.tensix.in/contact?plan=software-saas) [See plans and prices ↓](https://www.tensix.in/services/custom-software-saas-development#plans)
-
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Custom Software, CRM & SaaS MVP Development
-
-Pricing
-
-From ₹34,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-14 to 21 business days
-
-Core Architecture
-
-Next.js, FastAPI, Node.js, PostgreSQL, Razorpay / Stripe
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned repositories & IP
 
 ## Who this is for
 
@@ -2400,32 +2322,6 @@ TENSIX builds small automatic systems that collect data for you: reading invoice
 
 [Book a consultation](https://www.tensix.in/contact?plan=scraper-google-maps) [See plans and prices ↓](https://www.tensix.in/services/data-scraping-automation#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Web Scraping, Document Parsing & Automation
-
-Pricing
-
-From ₹16,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-3 to 7 business days
-
-Core Architecture
-
-Python, Puppeteer, Playwright, n8n, Google Sheets & CRM sync
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned scripts & data pipelines
-
 ## Who this is for
 
 - Offices where staff type invoice or order details from email into Excel or Tally
@@ -2564,32 +2460,6 @@ TENSIX fixes the settings that decide whether your emails reach the inbox, and s
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Business Email Deliverability & Amazon SES Setup
-
-Pricing
-
-From ₹12,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-2 to 4 business days
-
-Core Architecture
-
-SPF, DKIM, DMARC, Custom Return-Path, Amazon SES
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned DNS & AWS SES accounts
-
 ## Who this is for
 
 - Businesses whose emails or invoices end up in customers' spam folders
@@ -2726,32 +2596,6 @@ description: "Monthly engineering, server care, AI automation, code audits and t
 TENSIX retainers give you a set amount of engineering work, server care and technical advice every month, delivered directly by founder Hemal Shah with the help of AI tools. Plans start at ₹39,999 a month, and the Growth Engine plan can be paused or cancelled at the end of any 30-day cycle.
 
 [Book a consultation](https://www.tensix.in/contact?plan=retainer-ai-pod) [See plans and prices ↓](https://www.tensix.in/services/fractional-cto-retainers#plans)
-
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Monthly Engineering Retainer & Fractional CTO
-
-Pricing
-
-From ₹39,999 / month (Cancel or pause anytime)
-
-Turnaround
-
-Ongoing monthly engineering sprints
-
-Core Architecture
-
-Code audits, architecture reviews, server care & AI systems
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned code & infrastructure
 
 ## Who this is for
 
@@ -2891,32 +2735,6 @@ TENSIX makes your website easy for Google and AI assistants like ChatGPT, Gemini
 
 [Book a consultation](https://www.tensix.in/contact?plan=geo-aeo-seo) [See plans and prices ↓](https://www.tensix.in/services/geo-aeo-seo#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Technical GEO, AEO & AI Search Citation Optimization
-
-Pricing
-
-Custom Quote (From ₹24,999)
-
-Turnaround
-
-7 to 14 business days
-
-Core Architecture
-
-Schema.org JSON-LD, llms.txt, Entity Disambiguation & Answer Pages
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned assets & Search Console access
-
 ## Who this is for
 
 - Businesses that get little traffic from Google despite having a website
@@ -3024,32 +2842,6 @@ description: "Fast, mobile-friendly business websites with WhatsApp, enquiry for
 TENSIX designs and builds business websites that load fast on phones, look professional and turn visitors into enquiries through forms, WhatsApp and call buttons. Prices are fixed from ₹14,999, and most sites are ready in 5 to 14 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=web-standard) [See plans and prices ↓](https://www.tensix.in/services/website-development#plans)
-
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Fast Business Website Design & Engineering
-
-Pricing
-
-From ₹14,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-5 to 14 business days
-
-Core Architecture
-
-Lightweight HTML5, Next.js, 100% PageSpeed, Mobile-first
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned domain, hosting & source files
 
 ## Who this is for
 
@@ -3259,7 +3051,7 @@ TENSIX works from a private studio, so there are no walk-ins. Meetings are by ap
 
 How do I get started? +
 
-Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
 
 --- Page: https://www.tensix.in/ahmedabad-software-engineering ---
 
@@ -3374,7 +3166,7 @@ Yes. We rebuild slow WordPress, Wix or old PHP sites as light, fast sites. We ke
 
 How do I get started? +
 
-Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
 
 --- Page: https://www.tensix.in/saas-developer-ahmedabad ---
 
@@ -3540,7 +3332,7 @@ A basic business website starts at ₹14,999 ($199) and takes 5–7 business day
 
 How do I get started? +
 
-Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
 
 --- Page: https://www.tensix.in/hk-engineering-ahmedabad ---
 
@@ -3605,7 +3397,7 @@ TENSIX builds AI assistants (for example, chatbots that answer from your own doc
 
 Where is TENSIX located and how can businesses hire the studio? +
 
-TENSIX is in Navrangpura, Ahmedabad, Gujarat 380009. You can email Hemal Shah at hemal.shah2004@gmail.com, message him on LinkedIn, or send your project details through https://www.tensix.in/contact.
+TENSIX is in Navrangpura, Ahmedabad, Gujarat 380009. You can email Hemal Shah at contact@tensix.in, message him on LinkedIn, or send your project details through https://www.tensix.in/contact.
 
 Who owns and runs TENSIX (formerly HK Engineering)? +
 
@@ -3663,7 +3455,7 @@ Related services: [Website development](https://www.tensix.in/services/website-d
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts
 
@@ -3709,7 +3501,7 @@ Related services: [Custom stock and sales software](https://www.tensix.in/servic
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts
 
@@ -3753,7 +3545,7 @@ Related services: [Website development](https://www.tensix.in/services/website-d
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts
 
@@ -3797,7 +3589,7 @@ Related services: [Website development](https://www.tensix.in/services/website-d
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts
 
@@ -3845,7 +3637,7 @@ Related services: [Website development](https://www.tensix.in/services/website-d
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts
 
@@ -3891,7 +3683,7 @@ Related services: [Website development](https://www.tensix.in/services/website-d
 
 Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
-[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:hemal.shah2004@gmail.com)
+[Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts
 

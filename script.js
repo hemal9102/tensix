@@ -280,7 +280,7 @@ function initContactForm() {
         return response.json();
       }
       // If /api/contact is unavailable (e.g. static preview), fallback to FormSubmit
-      return fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+      return fetch('https://formsubmit.co/ajax/contact@tensix.in', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -318,7 +318,7 @@ function initContactForm() {
     })
     .catch(error => {
       // Final resilient fallback: try FormSubmit directly
-      fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+      fetch('https://formsubmit.co/ajax/contact@tensix.in', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

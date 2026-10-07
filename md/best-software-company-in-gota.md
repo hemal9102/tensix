@@ -72,4 +72,4 @@ A basic business website starts at ₹14,999 ($199) and takes 5–7 business day
 
 How do I get started? +
 
-Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.

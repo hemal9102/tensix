@@ -10,32 +10,6 @@ TENSIX builds custom business software: back-end systems, internal tools like CR
 
 [Book a consultation](https://www.tensix.in/contact?plan=software-saas) [See plans and prices ↓](https://www.tensix.in/services/custom-software-saas-development#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Custom Software, CRM & SaaS MVP Development
-
-Pricing
-
-From ₹34,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-14 to 21 business days
-
-Core Architecture
-
-Next.js, FastAPI, Node.js, PostgreSQL, Razorpay / Stripe
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned repositories & IP
-
 ## Who this is for
 
 - Businesses that have outgrown Excel sheets and WhatsApp groups

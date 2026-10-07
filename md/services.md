@@ -597,7 +597,7 @@ Yes. Work is done online in English, with clear written documentation and fixed-
 
 How does fixed pricing work?
 
-Each project has a scope and price agreed in writing before work starts, from ₹14,999 for a basic website to ₹1,25,000+ for custom CRM or ERP software. You know the deliverables and launch date in advance, with no hourly billing.
+Each project has a scope and price agreed in writing before work starts, from ₹45,000 for sovereign infrastructure and email pipeline salvage to enterprise custom software and SaaS platforms. You know the deliverables and launch date in advance, with zero hourly billing.
 
 Who owns the code and the servers?
 
@@ -613,7 +613,7 @@ Yes. Hemal rebuilds it as a lighter, faster site and redirect every old page add
 
 How do I get started?
 
-Use the [contact form](https://www.tensix.in/contact), message on WhatsApp at +91-8320278775, or email hemal.shah2004@gmail.com. Hemal looks at your problem and replies with a written proposal and a fixed price.
+Use the [contact form](https://www.tensix.in/contact), message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal looks at your problem and replies with a written proposal and a fixed price.
 
 ## Ready to start your next project?
 

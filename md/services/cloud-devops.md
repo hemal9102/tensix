@@ -10,32 +10,6 @@ TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast 
 
 [Book a consultation](https://www.tensix.in/contact?plan=cloud-cicd) [See plans and prices ↓](https://www.tensix.in/services/cloud-devops#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Cloud VPS, Docker & CI/CD Deployment Setup
-
-Pricing
-
-From ₹11,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-2 to 5 business days
-
-Core Architecture
-
-Oracle Cloud, AWS, DigitalOcean, Docker, Automated Backups
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned cloud & server credentials
-
 ## Who this is for
 
 - Businesses whose website is slow or goes down on shared hosting

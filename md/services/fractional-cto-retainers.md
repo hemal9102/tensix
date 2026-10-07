@@ -10,32 +10,6 @@ TENSIX retainers give you a set amount of engineering work, server care and tech
 
 [Book a consultation](https://www.tensix.in/contact?plan=retainer-ai-pod) [See plans and prices ↓](https://www.tensix.in/services/fractional-cto-retainers#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Monthly Engineering Retainer & Fractional CTO
-
-Pricing
-
-From ₹39,999 / month (Cancel or pause anytime)
-
-Turnaround
-
-Ongoing monthly engineering sprints
-
-Core Architecture
-
-Code audits, architecture reviews, server care & AI systems
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned code & infrastructure
-
 ## Who this is for
 
 - Growing businesses that need regular tech work but not a full-time developer

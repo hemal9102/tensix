@@ -10,32 +10,6 @@ TENSIX fixes the settings that decide whether your emails reach the inbox, and s
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
 
-Verified Specification & Pricing Last Verified: October 7, 2026 • Location: Navrangpura, Ahmedabad
-
-Service
-
-Business Email Deliverability & Amazon SES Setup
-
-Pricing
-
-From ₹12,999 (Fixed upfront, 0 hourly billing)
-
-Turnaround
-
-2 to 4 business days
-
-Core Architecture
-
-SPF, DKIM, DMARC, Custom Return-Path, Amazon SES
-
-Provider
-
-TENSIX • Hemal Shah (Solo Studio)
-
-Code Ownership
-
-100% Client-owned DNS & AWS SES accounts
-
 ## Who this is for
 
 - Businesses whose emails or invoices end up in customers' spam folders

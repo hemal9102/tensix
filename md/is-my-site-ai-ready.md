@@ -33,28 +33,32 @@ The diagnostic benchmarks endpoints across 6 defined capability tiers:
 
 Over 90% of business websites stall at Level 2. Reaching **Level 4 (Agent-Integrated)** and **Level 5 (Agent-Native)** unlocks machine-to-machine commerce: exposing sovereign WebMCP tool manifests, authenticating AI transactions via RFC 9421 signatures, and automating checkout flows.
 
-[Schedule Enterprise Protocol Remediation](https://www.tensix.in/#contact)
+[Schedule Enterprise Protocol Remediation →](https://www.tensix.in/#contact)
 
 ## Protocol Architecture FAQ
 
 What does the TENSIX Agent-Readiness Diagnostic test?
+
 The diagnostic evaluates 22 technical standards across five core layers: Autonomous Discoverability, Machine-Readable Content Negotiation, AI Bot Access Control & Request Signing, API/Skill Exposure (WebMCP & RFC 9727), and Machine-to-Machine Commerce Readiness.
 
 Does TENSIX store my website address or my results?
+
 No. The diagnostic executes client-side with zero data retention. Your endpoint URLs and telemetry never persist on external databases.
 
 Why do some checks fail even on high-traffic websites?
+
 Over 90% of business websites stall at Level 2 (Bot-Aware). Advanced checks like RFC 9421 cryptographic signatures, OAuth discovery, and WebMCP agent toolcards require dedicated machine-interaction rails.
 
 Which checks determine whether AI search engines cite your website?
+
 Six foundational protocols dictate citation grounding: robots.txt allowance, XML sitemaps, AI bot crawler access, Content-Signals headers, markdown content negotiation, and published agent skills.
 
 How long does the edge diagnostic take?
+
 Typically 10 to 15 seconds. The engine benchmarks live response latency per protocol check and provides individual duration timings in milliseconds.
 
 ## Need Protocol Remediation?
 
 Schedule an architecture sprint with TENSIX to implement Level 3 through Level 5 agent rails, RFC 9421 signatures, and WebMCP endpoints.
 
-[Initiate Technical Engagement](https://www.tensix.in/#contact)
-
+[Initiate Technical Engagement →](https://www.tensix.in/#contact)
