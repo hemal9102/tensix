@@ -1,6 +1,6 @@
 # TENSIX — full text of www.tensix.in
 
-> Every production page as Markdown. One-person software and AI studio in Navrangpura, Ahmedabad, India, founded and run by Hemal Shah. Canonical: https://www.tensix.in/
+> Every production page as Markdown. Sovereign systems laboratory and AI agent engineering studio directed by Principal Systems Architect Hemal Shah. Canonical: https://www.tensix.in/
 
 --- Page: https://www.tensix.in/ ---
 

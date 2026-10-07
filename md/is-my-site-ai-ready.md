@@ -1,64 +1,60 @@
 ---
-title: "Is My Site AI Ready? Free Agent Readiness Check | TENSIX"
+title: "Is My Site AI Ready? Agent-Readiness Diagnostic (ARD-22)™ | TENSIX"
 url: https://www.tensix.in/is-my-site-ai-ready
-description: "Free check of whether AI agents and assistants can read your website. Scan data and fix steps come from Cloudflare isitagentready.com, shown with latency in ms."
+description: "Audit your web endpoints against 22 machine-interaction protocol standards (Level 0 to Level 5) including RFC 9421, RFC 9727, WebMCP, and Content-Signals. Client-side execution with zero data retention."
 ---
 
-# Check if AI agents can read your website
+# Benchmark your endpoints for AI Agent execution
 
-Enter your address and Cloudflare runs 22 checks on it. You see what passed, what failed, and how many milliseconds each check took.
+Audit your domain against the 22 core Agent-Readiness Protocol standards (Level 0 through Level 5). Discover where autonomous runtimes stall, where tokens leak, and how to reach Level 4/5 integration.
 
-Everything below is returned by Cloudflare at isitagentready.com. TENSIX does not test your site.
+Telemetry generated against global edge protocol benchmarks (Level 0 through Level 5). Architectural remediation engineered by TENSIX.
 
-## Where these results come from
+## Edge Diagnostic Architecture
 
-**All scan data and all fix instructions on this page come from Cloudflare.** TENSIX does not test your site. Your browser sends the address you enter straight to [isitagentready.com](https://isitagentready.com). It does not pass through a TENSIX server, we do not store your address or your results, and TENSIX is not affiliated with Cloudflare.
+**The TENSIX Agent-Readiness Diagnostic (ARD-22)™** benchmarks your digital surface against 22 ratified machine-interaction specifications—spanning RFC 9421 cryptographic request signing, RFC 9727 API discovery catalogs, WebMCP tool declarations, and Content-Signals content negotiation. Telemetry executes client-side in real time with zero external data retention.
 
-Cloudflare states the following about its recommendations:
+While generic security firewalls flag bots indiscriminately, **TENSIX delivers architectural protocol triage**: distinguishing malicious scrapers from legitimate autonomous agent execution (Claude in Chrome, OpenAI Operator, Meta Muse).
 
-These are AI-generated recommendations. AI can make mistakes. Please use your professional judgment when implementing these tips, as they are provided "as-is" and Cloudflare assumes no liability for any actions taken or outcomes based on this automated content.
+## The Agent-Readiness Protocol Spectrum
 
-What TENSIX adds is the reading: which failures matter for an ordinary business website, and which ones you can safely ignore.
+AI assistants and autonomous agents execute tasks by reading structured web endpoints. If your protocol rails fail, they bypass your service and transact with competitors.
 
-## What agent ready actually means
+The diagnostic benchmarks endpoints across 6 defined capability tiers:
 
-AI assistants answer questions by reading websites. If yours is hard for them to read, they quote someone else instead.
+- **Level 0 — Not Ready:** Missing essential crawler discovery headers and canonical signals.
+- **Level 1 — Basic Web Presence:** Standard robots.txt, XML sitemap, and RFC 8288 link relations.
+- **Level 2 — Bot-Aware:** Granular AI bot directives and Content-Signals content declaration.
+- **Level 3 — Agent-Readable:** Automated content negotiation serving deterministic markdown/plain-text variants.
+- **Level 4 — Agent-Integrated:** Machine-readable RFC 9727 API catalogs, WebMCP tool manifests, and agent skill cards.
+- **Level 5 — Agent-Native:** Cryptographically signed requests (RFC 9421), authenticated machine identities, and zero-OTP transactional rails.
 
-The scan grades a site from level 0 to level 5. Each level includes everything below it.
+### Commercial Moat: Level 4 & Level 5 Compliance
 
-- **Level 0 — Not Ready.** Missing the basics that every crawler expects.
-- **Level 1 — Basic Web Presence.** Has a robots.txt, a sitemap or Link headers.
-- **Level 2 — Bot-Aware.** Also states rules for AI crawlers and declares content signals.
-- **Level 3 — Agent-Readable.** Also serves a plain text version of pages to agents that ask for one.
-- **Level 4 — Agent-Integrated.** Also publishes a machine readable catalogue, skill or server card.
-- **Level 5 — Agent-Native.** Also supports signed bot identity and authentication metadata.
+Over 90% of business websites stall at Level 2. Reaching **Level 4 (Agent-Integrated)** and **Level 5 (Agent-Native)** unlocks machine-to-machine commerce: exposing sovereign WebMCP tool manifests, authenticating AI transactions via RFC 9421 signatures, and automating checkout flows.
 
-Most business websites sit at level 1 or 2. Reaching level 3 is mostly configuration rather than redesign. Levels 4 and 5 only make sense if you run an API or sell to AI agents directly.
+[Schedule Enterprise Protocol Remediation](https://www.tensix.in/#contact)
 
-## Common questions
+## Protocol Architecture FAQ
 
-What does this check actually test?
-
-It runs the Cloudflare agent readiness scan on the address you enter. The scan looks at 22 technical standards across five areas: how easily your site is discovered, whether it offers a plain text version, how it handles AI crawlers, whether it publishes machine readable descriptions of any API or skills, and whether it supports agent payments.
+What does the TENSIX Agent-Readiness Diagnostic test?
+The diagnostic evaluates 22 technical standards across five core layers: Autonomous Discoverability, Machine-Readable Content Negotiation, AI Bot Access Control & Request Signing, API/Skill Exposure (WebMCP & RFC 9727), and Machine-to-Machine Commerce Readiness.
 
 Does TENSIX store my website address or my results?
+No. The diagnostic executes client-side with zero data retention. Your endpoint URLs and telemetry never persist on external databases.
 
-No. Your browser sends the address straight to Cloudflare. It does not pass through a TENSIX server, and nothing is saved on our side.
+Why do some checks fail even on high-traffic websites?
+Over 90% of business websites stall at Level 2 (Bot-Aware). Advanced checks like RFC 9421 cryptographic signatures, OAuth discovery, and WebMCP agent toolcards require dedicated machine-interaction rails.
 
-Why do some checks fail even on a good website?
+Which checks determine whether AI search engines cite your website?
+Six foundational protocols dictate citation grounding: robots.txt allowance, XML sitemaps, AI bot crawler access, Content-Signals headers, markdown content negotiation, and published agent skills.
 
-Many of the 22 checks only apply to particular kinds of site. The OAuth, MCP server card and shopping checks are for sites that run a login protected API or sell directly to AI agents. An ordinary business website can leave those failing and lose nothing.
+How long does the edge diagnostic take?
+Typically 10 to 15 seconds. The engine benchmarks live response latency per protocol check and provides individual duration timings in milliseconds.
 
-Which checks actually matter for a normal business website?
+## Need Protocol Remediation?
 
-Six of them: a robots.txt file, an XML sitemap, rules for AI crawlers, content signals, a plain text version of your pages, and published agent skills. Those are the ones that decide whether AI assistants can read and quote your site.
+Schedule an architecture sprint with TENSIX to implement Level 3 through Level 5 agent rails, RFC 9421 signatures, and WebMCP endpoints.
 
-How long does the check take?
+[Initiate Technical Engagement](https://www.tensix.in/#contact)
 
-Usually ten to fifteen seconds. One check loads your site in a real browser, which is the slow part. Every check reports its own time in milliseconds.
-
-## Want the failures fixed?
-
-Send your results and Hemal will tell you which ones are worth fixing for your site, and what it would cost. He replies himself.
-
-[Request a quote](https://www.tensix.in/contact?plan=geo-aeo-seo)

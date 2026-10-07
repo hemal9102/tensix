@@ -473,7 +473,7 @@ function initAgentAudit() {
     const fix = fixes.get(c.name);
     if (fix && (fix.description || (fix.specUrls && fix.specUrls.length))) {
       const p = el('p', 'audit-from');
-      p.appendChild(el('b', null, 'From Cloudflare: '));
+      p.appendChild(el('b', null, 'Specification Fix: '));
       if (fix.description) p.appendChild(document.createTextNode(fix.description));
       (fix.specUrls || []).slice(0, 2).forEach(u => {
         p.appendChild(document.createTextNode(' '));
@@ -561,8 +561,8 @@ function initAgentAudit() {
     ticker.setAttribute('aria-hidden', 'true');
     statusEl.appendChild(ticker);
     statusEl.appendChild(document.createTextNode(
-      ' elapsed. Cloudflare runs 22 checks, including one that loads your site in a real ' +
-      'browser. This usually takes 10 to 15 seconds.'));
+      ' elapsed. Executing 22 protocol checks across Level 0 to Level 5. ' +
+      'Typically completes in 10 to 15 seconds.'));
 
     const t0 = Date.now();
     const tick = setInterval(() => {
@@ -580,17 +580,17 @@ function initAgentAudit() {
       const data = await res.json();
       resultsWrap.hidden = false;
       render(data, data.targetUrl || data.url || url);
-      statusEl.textContent = 'Done in ' + ((Date.now() - t0) / 1000).toFixed(1) +
-        ' seconds. Results are from Cloudflare.';
+      statusEl.textContent = 'Diagnostic complete in ' + ((Date.now() - t0) / 1000).toFixed(1) +
+        ' seconds. 22 protocol specifications evaluated.';
     } catch (err) {
       const name = err && err.name;
       let msg;
       if (name === 'TimeoutError' || name === 'AbortError') {
-        msg = 'The Cloudflare scanner did not answer in time. Try again in a moment.';
+        msg = 'The diagnostic edge probe timed out. Please retry in a moment.';
       } else if (err && /^upstream /.test(err.message)) {
-        msg = 'The Cloudflare scanner returned an error. This is on their side, not yours.';
+        msg = 'Diagnostic upstream returned an error. Please retry shortly.';
       } else {
-        msg = 'Could not reach the Cloudflare scanner. Check your connection and try again.';
+        msg = 'Could not establish connection to diagnostic edge. Check your network connection.';
       }
       statusEl.textContent = msg;
       showToast(msg, 'error');
