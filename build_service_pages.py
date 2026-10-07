@@ -790,9 +790,13 @@ def main():
 
     head = hub[:hub.index("</head>")]
     styles_start = head.index('<link href="assets/favicon.png"')
+    if "</style>" in head[styles_start:]:
+        styles_end = head.rindex("</style>") + len("</style>")
+    else:
+        styles_end = head.index('<link href="https://www.tensix.in/services" rel="canonical"/>')
     parts = {
         "head_top": head[:head.index("<title>")],
-        "styles": nested(head[styles_start:head.rindex("</style>") + len("</style>")]),
+        "styles": nested(head[styles_start:styles_end].strip()),
         "header": nested(hub[hub.index("<body>") + len("<body>"):hub.index("<main>")]),
         "footer": nested(hub[hub.index('<footer class="site-footer">'):hub.index("</footer>") + len("</footer>")]
                          + "\n" + hub[hub.index('<script defer="" src="script.js'):hub.index("</body>")].rstrip()),

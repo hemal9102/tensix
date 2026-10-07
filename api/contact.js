@@ -9,11 +9,14 @@ let pool;
 
 function getPool() {
   if (!pool && Pool && process.env.DATABASE_URL) {
+    const isLocal = /localhost|127\.0\.0\.1/.test(process.env.DATABASE_URL);
     pool = new Pool({
       connectionString: process.env.DATABASE_URL,
-      ssl: {
-        rejectUnauthorized: false
-      },
+      ssl: isLocal
+        ? false
+        : {
+            rejectUnauthorized: process.env.DATABASE_SSL_REJECT_UNAUTHORIZED === 'false' ? false : true
+          },
       connectionTimeoutMillis: 5000,
       idleTimeoutMillis: 10000
     });
@@ -21,20 +24,12 @@ function getPool() {
   return pool;
 }
 
-// XSS Sanitizer: Escape HTML characters and strip script patterns
+// Input hygiene: strip control characters, null bytes and enforce bounds without corrupting data
 function sanitizeInput(str, maxLength = 1000) {
   if (typeof str !== 'string') return '';
-  let sanitized = str.slice(0, maxLength);
-  // Strip null bytes
-  sanitized = sanitized.replace(/\0/g, '');
-  // Escape HTML entities to prevent XSS / email HTML injection
-  return sanitized
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#x27;')
-    .replace(/\//g, '&#x2F;')
+  return str
+    .slice(0, maxLength)
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '')
     .trim();
 }
 
@@ -48,15 +43,31 @@ const ALLOWED_ORIGINS = [
   'http://127.0.0.1:5500'
 ];
 
+// In-memory rate limiting per container instance (OWASP API4:2023 Unrestricted Resource Consumption)
+const rateLimitMap = new Map();
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const MAX_REQUESTS_PER_WINDOW = 5;
+
+function isRateLimited(ip) {
+  if (!ip) return false;
+  const now = Date.now();
+  const record = rateLimitMap.get(ip) || { count: 0, resetAt: now + RATE_LIMIT_WINDOW_MS };
+  if (now > record.resetAt) {
+    record.count = 1;
+    record.resetAt = now + RATE_LIMIT_WINDOW_MS;
+    rateLimitMap.set(ip, record);
+    return false;
+  }
+  record.count += 1;
+  rateLimitMap.set(ip, record);
+  return record.count > MAX_REQUESTS_PER_WINDOW;
+}
+
 module.exports = async function handler(req, res) {
   const origin = req.headers.origin;
   if (origin && ALLOWED_ORIGINS.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin);
-  } else if (!origin) {
-    // Same-origin browser request
-    res.setHeader('Access-Control-Allow-Origin', 'https://tensix.in');
   } else {
-    // Restrict foreign origins
     res.setHeader('Access-Control-Allow-Origin', 'https://tensix.in');
   }
 
@@ -73,15 +84,30 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ success: false, error: 'Method not allowed' });
   }
 
+  // OWASP A01: Broken Access Control & Anti-CSRF Guard
+  const secFetchSite = req.headers['sec-fetch-site'];
+  if (secFetchSite && secFetchSite === 'cross-site') {
+    return res.status(403).json({ success: false, error: 'Cross-site form submission forbidden.' });
+  }
+
+  // Rate Limiting Guard
+  const clientIp = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() ||
+                   req.headers['cf-connecting-ip'] ||
+                   req.socket?.remoteAddress;
+  if (isRateLimited(clientIp)) {
+    return res.status(429).json({
+      success: false,
+      error: 'Too many requests. Please wait a few minutes or reach out via WhatsApp/email directly.'
+    });
+  }
+
   try {
-    // Vercel parses both JSON and urlencoded bodies into an object; a raw string is parsed here as a fallback.
     let body = req.body || {};
     if (typeof body === 'string') {
       try { body = JSON.parse(body); } catch (_) { body = Object.fromEntries(new URLSearchParams(body)); }
     }
     const { name, email, subject, project_type, message, plan, _honey, botcheck, website } = body;
 
-    // Plain HTML form posts (no JS) want a page back, not JSON.
     const wantsHtml = /text\/html/.test(req.headers.accept || '') && !/application\/json/.test(req.headers.accept || '');
     const reply = (status, payload) => (wantsHtml && status === 200)
       ? res.writeHead(303, { Location: '/contact?sent=1' }).end()
@@ -114,7 +140,7 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    // 4. Sanitize and enforce length limits (Anti-XSS & Anti-DoS)
+    // 4. Sanitize and enforce length limits
     const cleanName = sanitizeInput(name, 100);
     const cleanPlan = String(plan || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 40);
     const cleanSubject = (cleanPlan ? `[Plan: ${cleanPlan}] ` : '') + sanitizeInput(subject || 'General Architecture Consultation', 150);
@@ -131,23 +157,10 @@ module.exports = async function handler(req, res) {
     let dbSaved = false;
     let leadId = null;
 
-    // 5. Parameterized SQL Query (100% immune to SQL Injection)
+    // 5. Parameterized SQL Query (Immune to SQL Injection, hot-path DDL removed)
     const dbPool = getPool();
     if (dbPool) {
       try {
-        await dbPool.query(`
-          CREATE TABLE IF NOT EXISTS leads (
-            id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-            created_at TIMESTAMPTZ DEFAULT NOW(),
-            name TEXT NOT NULL,
-            email TEXT NOT NULL,
-            subject TEXT,
-            project_type TEXT,
-            message TEXT NOT NULL,
-            status TEXT DEFAULT 'new'
-          );
-        `);
-
         const insertQuery = `
           INSERT INTO leads (name, email, subject, project_type, message)
           VALUES ($1, $2, $3, $4, $5)
@@ -170,12 +183,13 @@ module.exports = async function handler(req, res) {
         console.error('[TENSIX DB Error]', dbErr.message);
       }
     } else {
-      console.warn('[TENSIX Warning] DATABASE_URL not set in environment variables.');
+      console.warn('[TENSIX Warning] DATABASE_URL not configured in environment variables.');
     }
 
-    // 6. Forward sanitized lead to FormSubmit for instant email notification
+    // 6. Forward sanitized lead to FormSubmit notification service
+    let emailSent = false;
     try {
-      await fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
+      const emailRes = await fetch('https://formsubmit.co/ajax/hemal.shah2004@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -190,8 +204,19 @@ module.exports = async function handler(req, res) {
           _database_saved: dbSaved ? `Yes (ID: ${leadId})` : 'Pending DATABASE_URL config'
         })
       });
+      if (emailRes.ok) {
+        emailSent = true;
+      }
     } catch (emailErr) {
       console.error('[TENSIX Email Notify Error]', emailErr.message);
+    }
+
+    // If both database persistence and email notification fail, alert the client
+    if (!dbSaved && !emailSent && process.env.DATABASE_URL) {
+      return res.status(502).json({
+        success: false,
+        error: 'Unable to deliver message at this time. Please contact Hemal directly on WhatsApp or phone.'
+      });
     }
 
     return reply(200, {
