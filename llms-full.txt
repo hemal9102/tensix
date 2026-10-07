@@ -1683,15 +1683,15 @@ Hourly billing makes the final bill hard to predict. Long contracts commit you b
 
 3
 
-### You Own Everything From Day One
+### Sovereign Infrastructure & Zero Vendor Lock-In
 
-Your software is a business asset. You should be able to keep it, change it, or hand it to someone else without asking permission.
+Your software is institutional capital. We build on open, sovereign foundations with zero recurring platform tax or artificial dependencies.
 
 #### With TENSIX
 
-- Code is saved in your own GitHub account from the first milestone.
-- Servers and cloud accounts are in your name. No licence fees to TENSIX.
-- You get setup notes, so another developer could take over if you ever need one.
+- All source code is committed directly to your enterprise GitHub/GitLab repository from Milestone 1.
+- Cloud infrastructure and production clusters are provisioned under your corporate tenancy. Zero TENSIX license tax.
+- Deterministic, self-contained architecture with complete automated CI/CD pipelines and cryptographic ownership.
 
 #### Ask any other provider
 
@@ -1759,7 +1759,7 @@ It depends on the project. TENSIX prices are fixed and published, starting at â‚
 
 ### Who owns the code when the project ends?
 
-You do. The code is stored in your own GitHub account from the start, along with setup notes, so you can keep working with TENSIX or hand it to another developer.
+You do, unconditionally. All source code is committed directly to your enterprise GitHub or GitLab repository from Milestone 1, with reproducible build configurations and zero proprietary platform lock-in.
 
 ### When is an agency a better choice?
 
