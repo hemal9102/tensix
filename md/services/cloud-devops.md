@@ -1,12 +1,12 @@
 ---
 title: "Cloud Server, VPS and DevOps Setup | TENSIX"
 url: https://www.tensix.in/services/cloud-devops
-description: "Secure cloud server (VPS) set-up, automatic deployments from GitHub, daily off-site backups and monitoring. Fixed prices from ₹11,999. Based in Ahmedabad."
+description: "Secure cloud server (VPS) set-up, automatic deployments from GitHub, daily off-site backups and monitoring. Fixed prices From ₹49,999. Based in Ahmedabad."
 ---
 
 # Secure Cloud Servers and Automatic Deployments, Set Up for You
 
-TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast and safely, and new versions go live automatically when your code changes. Firewalls, SSL, backups and monitoring are set up properly, at fixed prices from ₹11,999.
+TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast and safely, and new versions go live automatically when your code changes. Firewalls, SSL, backups and monitoring are set up properly, at fixed prices From ₹49,999.
 
 [Book a consultation](https://www.tensix.in/contact?plan=cloud-cicd) [See plans and prices ↓](https://www.tensix.in/services/cloud-devops#plans)
 

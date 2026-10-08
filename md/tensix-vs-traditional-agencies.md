@@ -56,7 +56,7 @@ Hourly billing makes the final bill hard to predict. Long contracts commit you b
 
 #### With TENSIX
 
-- **Fixed project prices**, from ₹11,999 for a server setup to ₹1,25,000+ for custom CRM/ERP software.
+- **Fixed project prices**, From ₹49,999 for a server setup to ₹1,25,000+ for custom CRM/ERP software.
 - **Monthly plans with no long lock-in:** Growth ₹39,999 / $499, AI Build Plan ₹79,999 / $999, Part-Time CTO ₹1,49,999 / $1,850. The Growth plan can be paused or cancelled at the end of any 30-day cycle. The other plans run month to month, with notice terms agreed in writing. See [monthly plans](https://www.tensix.in/services/fractional-cto-retainers).
 - You pay for finished, tested work delivered in milestones, not for hours.
 

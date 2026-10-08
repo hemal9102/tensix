@@ -69,7 +69,7 @@ Yes. TENSIX can sign a non-disclosure agreement (NDA) before you share any detai
 
 ### Can I hire TENSIX on a monthly basis?
 
-Yes. Monthly retainers start at ₹39,999 ($499) a month. A plan with more build time each month is ₹79,999 ($999), and a part-time CTO plan (senior technical leadership without a full-time hire) is ₹1,49,999 ($1,850) a month. Hemal works on your project every month, shares progress in your GitHub account, and you can message him directly.
+Yes. Dedicated studio retainers start at ₹79,999 ($999) a month. The Autonomous Systems Pod is ₹1,49,999 ($1,850) a month, and our Fractional CTO & Enterprise Architecture engagement is ₹2,49,999 ($3,200) a month. Hemal works on your project every month, shares progress in your GitHub account, and you can message him directly.
 
 ## Have a project in mind?
 

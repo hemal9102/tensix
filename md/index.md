@@ -62,7 +62,7 @@ Software & AI Studio (Founder: Hemal Shah)
 
 Pricing Guarantee
 
-100% Fixed Upfront Quotes (₹14,999 – ₹1,25,000+), 0 Hourly Billing
+100% Fixed Upfront Quotes (₹75,000 – ₹3,50,000+ ($1,000 – $4,500+)), 0 Hourly Billing
 
 Delivery SLA
 
@@ -92,7 +92,7 @@ Eight services, each with fixed-price plans. Pick one to see what is included an
 
 AI assistants that answer customer questions from your own documents, sort emails and handle routine office tasks.
 
-From ₹29,999 [See plans →](https://www.tensix.in/services/ai-agent-development)
+From ₹65,000 [See plans →](https://www.tensix.in/services/ai-agent-development)
 
 02 // SERVICE
 
@@ -100,7 +100,7 @@ From ₹29,999 [See plans →](https://www.tensix.in/services/ai-agent-developme
 
 Software built around how your business works, from client portals to full online products people subscribe to (SaaS).
 
-From ₹34,999 [See plans →](https://www.tensix.in/services/custom-software-saas-development)
+From ₹75,000 [See plans →](https://www.tensix.in/services/custom-software-saas-development)
 
 03 // SERVICE
 
@@ -108,7 +108,7 @@ From ₹34,999 [See plans →](https://www.tensix.in/services/custom-software-sa
 
 Fast, mobile-friendly websites that clearly explain what you sell and turn visitors into enquiries.
 
-From ₹14,999 [See plans →](https://www.tensix.in/services/website-development)
+From ₹49,999 [See plans →](https://www.tensix.in/services/website-development)
 
 04 // SERVICE
 
@@ -116,7 +116,7 @@ From ₹14,999 [See plans →](https://www.tensix.in/services/website-developmen
 
 Secure servers with backups, monitoring and automatic restarts, so your website and apps keep running.
 
-From ₹11,999 [See plans →](https://www.tensix.in/services/cloud-devops)
+From ₹49,999 [See plans →](https://www.tensix.in/services/cloud-devops)
 
 05 // SERVICE
 
@@ -124,7 +124,7 @@ From ₹11,999 [See plans →](https://www.tensix.in/services/cloud-devops)
 
 The technical setup that proves your emails are really from you, so they are far less likely to land in spam.
 
-From ₹12,999 [See plans →](https://www.tensix.in/services/email-deliverability)
+From ₹44,999 [See plans →](https://www.tensix.in/services/email-deliverability)
 
 06 // SERVICE
 
@@ -132,7 +132,7 @@ From ₹12,999 [See plans →](https://www.tensix.in/services/email-deliverabili
 
 Automatically collect public data from websites and pull details out of emails and PDFs into a sheet or database.
 
-From ₹16,999 [See plans →](https://www.tensix.in/services/data-scraping-automation)
+From ₹49,999 [See plans →](https://www.tensix.in/services/data-scraping-automation)
 
 07 // SERVICE
 
@@ -148,7 +148,7 @@ Custom quote [See plans →](https://www.tensix.in/services/geo-aeo-seo)
 
 Monthly engineering, server care and advice from Hemal Shah. A part-time CTO plan is also available.
 
-From ₹39,999/month [See plans →](https://www.tensix.in/services/fractional-cto-retainers)
+From ₹79,999/month [See plans →](https://www.tensix.in/services/fractional-cto-retainers)
 
 [Compare all services and prices →](https://www.tensix.in/services)
 
@@ -296,7 +296,7 @@ Yes. All work can be done online, with written updates in English and calls at t
 
 Why a fixed price instead of hourly billing? +
 
-Hourly billing makes costs hard to predict. TENSIX agrees a fixed price and a clear list of what you will get before work starts, with projects ranging from ₹14,999 to ₹1,25,000+ (or the USD equivalent). You know the cost and the delivery date upfront, with no hidden charges.
+Hourly billing makes costs hard to predict. TENSIX agrees a fixed price and a clear list of what you will get before work starts, with projects ranging from ₹75,000 to ₹3,50,000+ ($1,000 to $4,500+) (or the USD equivalent). You know the cost and the delivery date upfront, with no hidden charges.
 
 Who owns the code and the accounts? +
 

@@ -1,12 +1,12 @@
 ---
 title: "Email Deliverability and Amazon SES Setup | TENSIX"
 url: https://www.tensix.in/services/email-deliverability
-description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices from ₹12,999."
+description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices From ₹44,999."
 ---
 
 # Get Your Business Emails Into the Inbox, Not the Spam Folder
 
-TENSIX fixes the settings that decide whether your emails reach the inbox, and sets up low-cost systems for newsletters and bulk email. Prices are fixed from ₹12,999, and the basic fix usually takes 2–3 business days.
+TENSIX fixes the settings that decide whether your emails reach the inbox, and sets up low-cost systems for newsletters and bulk email. Prices are fixed From ₹44,999, and the basic fix usually takes 2–3 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
 

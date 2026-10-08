@@ -1,7 +1,7 @@
 ---
 title: "Monthly Tech Retainers and Fractional CTO | TENSIX"
 url: https://www.tensix.in/services/fractional-cto-retainers
-description: "Monthly engineering, server care, AI automation, code audits and technical leadership from Hemal Shah, with no long contract. Plans from ₹39,999 a month."
+description: "Monthly engineering, server care, AI automation, code audits and technical leadership from Hemal Shah, with no long contract. Plans From ₹79,999 a month."
 ---
 
 # Ongoing Tech Help Every Month, Without Hiring a Full Team

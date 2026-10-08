@@ -68,7 +68,7 @@ Software & AI Studio (Founder: Hemal Shah)
 
 Pricing Guarantee
 
-100% Fixed Upfront Quotes (₹14,999 – ₹1,25,000+), 0 Hourly Billing
+100% Fixed Upfront Quotes (₹75,000 – ₹3,50,000+ ($1,000 – $4,500+)), 0 Hourly Billing
 
 Delivery SLA
 
@@ -98,7 +98,7 @@ Eight services, each with fixed-price plans. Pick one to see what is included an
 
 AI assistants that answer customer questions from your own documents, sort emails and handle routine office tasks.
 
-From ₹29,999 [See plans →](https://www.tensix.in/services/ai-agent-development)
+From ₹65,000 [See plans →](https://www.tensix.in/services/ai-agent-development)
 
 02 // SERVICE
 
@@ -106,7 +106,7 @@ From ₹29,999 [See plans →](https://www.tensix.in/services/ai-agent-developme
 
 Software built around how your business works, from client portals to full online products people subscribe to (SaaS).
 
-From ₹34,999 [See plans →](https://www.tensix.in/services/custom-software-saas-development)
+From ₹75,000 [See plans →](https://www.tensix.in/services/custom-software-saas-development)
 
 03 // SERVICE
 
@@ -114,7 +114,7 @@ From ₹34,999 [See plans →](https://www.tensix.in/services/custom-software-sa
 
 Fast, mobile-friendly websites that clearly explain what you sell and turn visitors into enquiries.
 
-From ₹14,999 [See plans →](https://www.tensix.in/services/website-development)
+From ₹49,999 [See plans →](https://www.tensix.in/services/website-development)
 
 04 // SERVICE
 
@@ -122,7 +122,7 @@ From ₹14,999 [See plans →](https://www.tensix.in/services/website-developmen
 
 Secure servers with backups, monitoring and automatic restarts, so your website and apps keep running.
 
-From ₹11,999 [See plans →](https://www.tensix.in/services/cloud-devops)
+From ₹49,999 [See plans →](https://www.tensix.in/services/cloud-devops)
 
 05 // SERVICE
 
@@ -130,7 +130,7 @@ From ₹11,999 [See plans →](https://www.tensix.in/services/cloud-devops)
 
 The technical setup that proves your emails are really from you, so they are far less likely to land in spam.
 
-From ₹12,999 [See plans →](https://www.tensix.in/services/email-deliverability)
+From ₹44,999 [See plans →](https://www.tensix.in/services/email-deliverability)
 
 06 // SERVICE
 
@@ -138,7 +138,7 @@ From ₹12,999 [See plans →](https://www.tensix.in/services/email-deliverabili
 
 Automatically collect public data from websites and pull details out of emails and PDFs into a sheet or database.
 
-From ₹16,999 [See plans →](https://www.tensix.in/services/data-scraping-automation)
+From ₹49,999 [See plans →](https://www.tensix.in/services/data-scraping-automation)
 
 07 // SERVICE
 
@@ -154,7 +154,7 @@ Custom quote [See plans →](https://www.tensix.in/services/geo-aeo-seo)
 
 Monthly engineering, server care and advice from Hemal Shah. A part-time CTO plan is also available.
 
-From ₹39,999/month [See plans →](https://www.tensix.in/services/fractional-cto-retainers)
+From ₹79,999/month [See plans →](https://www.tensix.in/services/fractional-cto-retainers)
 
 [Compare all services and prices →](https://www.tensix.in/services)
 
@@ -302,7 +302,7 @@ Yes. All work can be done online, with written updates in English and calls at t
 
 Why a fixed price instead of hourly billing? +
 
-Hourly billing makes costs hard to predict. TENSIX agrees a fixed price and a clear list of what you will get before work starts, with projects ranging from ₹14,999 to ₹1,25,000+ (or the USD equivalent). You know the cost and the delivery date upfront, with no hidden charges.
+Hourly billing makes costs hard to predict. TENSIX agrees a fixed price and a clear list of what you will get before work starts, with projects ranging from ₹75,000 to ₹3,50,000+ ($1,000 to $4,500+) (or the USD equivalent). You know the cost and the delivery date upfront, with no hidden charges.
 
 Who owns the code and the accounts? +
 
@@ -407,7 +407,7 @@ Yes. TENSIX can sign a non-disclosure agreement (NDA) before you share any detai
 
 ### Can I hire TENSIX on a monthly basis?
 
-Yes. Monthly retainers start at ₹39,999 ($499) a month. A plan with more build time each month is ₹79,999 ($999), and a part-time CTO plan (senior technical leadership without a full-time hire) is ₹1,49,999 ($1,850) a month. Hemal works on your project every month, shares progress in your GitHub account, and you can message him directly.
+Yes. Dedicated studio retainers start at ₹79,999 ($999) a month. The Autonomous Systems Pod is ₹1,49,999 ($1,850) a month, and our Fractional CTO & Enterprise Architecture engagement is ₹2,49,999 ($3,200) a month. Hemal works on your project every month, shares progress in your GitHub account, and you can message him directly.
 
 ## Have a project in mind?
 
@@ -1424,7 +1424,7 @@ The Person You Talk To
 
 ### AI Coding Assistants
 
-Faster first drafts, checked by Hemal
+Autonomous Engineering Pipeline &amp; Rigorous QA
 
 Tools like Claude and ChatGPT, plus custom AI workflows built with LangGraph, help Hemal write first drafts of code, break big tasks into steps and write tests. Hemal reviews and tests everything before it reaches you.
 
@@ -1671,7 +1671,7 @@ Hourly billing makes the final bill hard to predict. Long contracts commit you b
 
 #### With TENSIX
 
-- **Fixed project prices**, from ₹11,999 for a server setup to ₹1,25,000+ for custom CRM/ERP software.
+- **Fixed project prices**, From ₹49,999 for a server setup to ₹1,25,000+ for custom CRM/ERP software.
 - **Monthly plans with no long lock-in:** Growth ₹39,999 / $499, AI Build Plan ₹79,999 / $999, Part-Time CTO ₹1,49,999 / $1,850. The Growth plan can be paused or cancelled at the end of any 30-day cycle. The other plans run month to month, with notice terms agreed in writing. See [monthly plans](https://www.tensix.in/services/fractional-cto-retainers).
 - You pay for finished, tested work delivered in milestones, not for hours.
 
@@ -1905,12 +1905,12 @@ Schedule an architecture sprint with TENSIX to implement Level 3 through Level 5
 ---
 title: "AI Agent and Assistant Development, Ahmedabad | TENSIX"
 url: https://www.tensix.in/services/ai-agent-development
-description: "Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices from ₹29,999."
+description: "Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices From ₹65,000."
 ---
 
 # AI Assistants and Agents That Do Real Work for Your Business
 
-TENSIX builds custom AI assistants and AI agents (software that reads information, decides and acts for you) that work with your own documents, data and tools. You get a working system on your own accounts, at fixed prices from ₹29,999, and you own all the code.
+TENSIX builds custom AI assistants and AI agents (software that reads information, decides and acts for you) that work with your own documents, data and tools. You get a working system on your own accounts, at fixed prices From ₹65,000, and you own all the code.
 
 [Book a consultation](https://www.tensix.in/contact?plan=ai-swarm) [See plans and prices ↓](https://www.tensix.in/services/ai-agent-development#plans)
 
@@ -2039,12 +2039,12 @@ Tell us what you need. You get a written plan and a price before any work starts
 ---
 title: "Cloud Server, VPS and DevOps Setup | TENSIX"
 url: https://www.tensix.in/services/cloud-devops
-description: "Secure cloud server (VPS) set-up, automatic deployments from GitHub, daily off-site backups and monitoring. Fixed prices from ₹11,999. Based in Ahmedabad."
+description: "Secure cloud server (VPS) set-up, automatic deployments from GitHub, daily off-site backups and monitoring. Fixed prices From ₹49,999. Based in Ahmedabad."
 ---
 
 # Secure Cloud Servers and Automatic Deployments, Set Up for You
 
-TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast and safely, and new versions go live automatically when your code changes. Firewalls, SSL, backups and monitoring are set up properly, at fixed prices from ₹11,999.
+TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast and safely, and new versions go live automatically when your code changes. Firewalls, SSL, backups and monitoring are set up properly, at fixed prices From ₹49,999.
 
 [Book a consultation](https://www.tensix.in/contact?plan=cloud-cicd) [See plans and prices ↓](https://www.tensix.in/services/cloud-devops#plans)
 
@@ -2175,12 +2175,12 @@ Tell us what you need. You get a written plan and a price before any work starts
 ---
 title: "Custom Software, CRM and SaaS Development | TENSIX"
 url: https://www.tensix.in/services/custom-software-saas-development
-description: "Custom software, CRMs, ERPs and SaaS products built for your exact workflow. Fixed prices from ₹34,999, and you own all the code. Based in Ahmedabad."
+description: "Custom software, CRMs, ERPs and SaaS products built for your exact workflow. Fixed prices From ₹75,000, and you own all the code. Based in Ahmedabad."
 ---
 
 # Custom Software, CRM and SaaS Built Around How You Work
 
-TENSIX builds custom business software: back-end systems, internal tools like CRMs and ERPs, and complete SaaS products (software you sell online by subscription). Prices are fixed from ₹34,999, and you own all the source code from day one.
+TENSIX builds custom business software: back-end systems, internal tools like CRMs and ERPs, and complete SaaS products (software you sell online by subscription). Prices are fixed From ₹75,000, and you own all the source code from day one.
 
 [Book a consultation](https://www.tensix.in/contact?plan=software-saas) [See plans and prices ↓](https://www.tensix.in/services/custom-software-saas-development#plans)
 
@@ -2313,12 +2313,12 @@ Tell us what you need. You get a written plan and a price before any work starts
 ---
 title: "Web Scraping and Workflow Automation | TENSIX"
 url: https://www.tensix.in/services/data-scraping-automation
-description: "Automatic data entry from emails and invoices, Google Maps lead lists and custom website trackers with alerts. Fixed prices from ₹16,999. Based in Ahmedabad."
+description: "Automatic data entry from emails and invoices, Google Maps lead lists and custom website trackers with alerts. Fixed prices From ₹49,999. Based in Ahmedabad."
 ---
 
 # Stop Copy-Pasting: Automatic Data Collection and Entry
 
-TENSIX builds small automatic systems that collect data for you: reading invoices from your inbox, building lead lists from Google Maps, or tracking competitor prices on websites. The data goes straight into Google Sheets, your database or your CRM, at fixed prices from ₹16,999.
+TENSIX builds small automatic systems that collect data for you: reading invoices from your inbox, building lead lists from Google Maps, or tracking competitor prices on websites. The data goes straight into Google Sheets, your database or your CRM, at fixed prices From ₹49,999.
 
 [Book a consultation](https://www.tensix.in/contact?plan=scraper-google-maps) [See plans and prices ↓](https://www.tensix.in/services/data-scraping-automation#plans)
 
@@ -2451,12 +2451,12 @@ Tell us what you need. You get a written plan and a price before any work starts
 ---
 title: "Email Deliverability and Amazon SES Setup | TENSIX"
 url: https://www.tensix.in/services/email-deliverability
-description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices from ₹12,999."
+description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices From ₹44,999."
 ---
 
 # Get Your Business Emails Into the Inbox, Not the Spam Folder
 
-TENSIX fixes the settings that decide whether your emails reach the inbox, and sets up low-cost systems for newsletters and bulk email. Prices are fixed from ₹12,999, and the basic fix usually takes 2–3 business days.
+TENSIX fixes the settings that decide whether your emails reach the inbox, and sets up low-cost systems for newsletters and bulk email. Prices are fixed From ₹44,999, and the basic fix usually takes 2–3 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
 
@@ -2588,7 +2588,7 @@ Tell us what you need. You get a written plan and a price before any work starts
 ---
 title: "Monthly Tech Retainers and Fractional CTO | TENSIX"
 url: https://www.tensix.in/services/fractional-cto-retainers
-description: "Monthly engineering, server care, AI automation, code audits and technical leadership from Hemal Shah, with no long contract. Plans from ₹39,999 a month."
+description: "Monthly engineering, server care, AI automation, code audits and technical leadership from Hemal Shah, with no long contract. Plans From ₹79,999 a month."
 ---
 
 # Ongoing Tech Help Every Month, Without Hiring a Full Team
@@ -2834,12 +2834,12 @@ Tell us what you need. You get a written plan and a price before any work starts
 ---
 title: "Website Design and Development in Ahmedabad | TENSIX"
 url: https://www.tensix.in/services/website-development
-description: "Fast, mobile-friendly business websites with WhatsApp, enquiry forms and SEO basics built in. Fixed prices from ₹14,999, ready in 5 to 14 business days."
+description: "Fast, mobile-friendly business websites with WhatsApp, enquiry forms and SEO basics built in. Fixed prices From ₹49,999, ready in 5 to 14 business days."
 ---
 
 # Fast, Mobile-Friendly Business Websites That Bring In Enquiries
 
-TENSIX designs and builds business websites that load fast on phones, look professional and turn visitors into enquiries through forms, WhatsApp and call buttons. Prices are fixed from ₹14,999, and most sites are ready in 5 to 14 business days.
+TENSIX designs and builds business websites that load fast on phones, look professional and turn visitors into enquiries through forms, WhatsApp and call buttons. Prices are fixed From ₹49,999, and most sites are ready in 5 to 14 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=web-standard) [See plans and prices ↓](https://www.tensix.in/services/website-development#plans)
 
@@ -2988,7 +2988,7 @@ Navrangpura, Ahmedabad, Gujarat — 380009
 
 ## What we can build for you
 
-[Business websitesFast, mobile-friendly websites that bring in enquiries on WhatsApp and email. From ₹14,999.](https://www.tensix.in/services/website-development) [Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹34,999.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹29,999.](https://www.tensix.in/services/ai-agent-development) [Data collection & automationCollect prices or listings from websites and move data from emails and PDFs into your sheets automatically. From ₹16,999.](https://www.tensix.in/services/data-scraping-automation) [Emails that reach the inboxCorrect email set-up so your mails stop landing in spam. From ₹12,999.](https://www.tensix.in/services/email-deliverability) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹11,999.](https://www.tensix.in/services/cloud-devops) [Google & AI search visibilityHelp customers find you on Google Maps, Google search and AI assistants like ChatGPT. Custom quote.](https://www.tensix.in/services/geo-aeo-seo) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹39,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
+[Business websitesFast, mobile-friendly websites that bring in enquiries on WhatsApp and email. From ₹49,999.](https://www.tensix.in/services/website-development) [Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹75,000.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹65,000.](https://www.tensix.in/services/ai-agent-development) [Data collection & automationCollect prices or listings from websites and move data from emails and PDFs into your sheets automatically. From ₹49,999.](https://www.tensix.in/services/data-scraping-automation) [Emails that reach the inboxCorrect email set-up so your mails stop landing in spam. From ₹44,999.](https://www.tensix.in/services/email-deliverability) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹49,999.](https://www.tensix.in/services/cloud-devops) [Google & AI search visibilityHelp customers find you on Google Maps, Google search and AI assistants like ChatGPT. Custom quote.](https://www.tensix.in/services/geo-aeo-seo) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹79,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
 
 ## How a project works
 
@@ -3073,21 +3073,21 @@ TENSIX works from a private studio in Navrangpura, Ahmedabad 380009, so there ar
 
 Each service has its own page with plans, prices and timelines.
 
-[### Business websites Fast, mobile-friendly websites that bring in enquiries on WhatsApp and email. From ₹14,999.](https://www.tensix.in/services/website-development)
+[### Business websites Fast, mobile-friendly websites that bring in enquiries on WhatsApp and email. From ₹49,999.](https://www.tensix.in/services/website-development)
 
-[### Custom software & SaaS Billing, inventory, CRM or your own software product, built around how you work. From ₹34,999.](https://www.tensix.in/services/custom-software-saas-development)
+[### Custom software & SaaS Billing, inventory, CRM or your own software product, built around how you work. From ₹75,000.](https://www.tensix.in/services/custom-software-saas-development)
 
-[### AI assistants & agents AI that answers customer questions from your own documents and handles repetitive office tasks. From ₹29,999.](https://www.tensix.in/services/ai-agent-development)
+[### AI assistants & agents AI that answers customer questions from your own documents and handles repetitive office tasks. From ₹65,000.](https://www.tensix.in/services/ai-agent-development)
 
-[### Data collection & automation Collect prices or listings from websites and move data from emails and PDFs into your sheets automatically. From ₹16,999.](https://www.tensix.in/services/data-scraping-automation)
+[### Data collection & automation Collect prices or listings from websites and move data from emails and PDFs into your sheets automatically. From ₹49,999.](https://www.tensix.in/services/data-scraping-automation)
 
-[### Emails that reach the inbox Correct email set-up so your mails stop landing in spam. From ₹12,999.](https://www.tensix.in/services/email-deliverability)
+[### Emails that reach the inbox Correct email set-up so your mails stop landing in spam. From ₹44,999.](https://www.tensix.in/services/email-deliverability)
 
-[### Cloud hosting & servers Secure servers with SSL, backups and monitoring, so problems are caught early. From ₹11,999.](https://www.tensix.in/services/cloud-devops)
+[### Cloud hosting & servers Secure servers with SSL, backups and monitoring, so problems are caught early. From ₹49,999.](https://www.tensix.in/services/cloud-devops)
 
 [### Google & AI search visibility Help customers find you on Google Maps, Google search and AI assistants like ChatGPT. Custom quote.](https://www.tensix.in/services/geo-aeo-seo)
 
-[### Monthly tech partner Hemal looks after your tech every month: fixes, upgrades and advice. From ₹39,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
+[### Monthly tech partner Hemal looks after your tech every month: fixes, upgrades and advice. From ₹79,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
 
 ## Areas we serve
 
@@ -3150,7 +3150,7 @@ Yes. All work is done online, so clients in the USA, UK, UAE, Europe and elsewhe
 
 How does fixed pricing work? +
 
-You get a written scope and a fixed price before work starts, so there are no hourly bills or surprise costs. Projects range from ₹14,999 to ₹1,25,000+ depending on size. All plans are listed on the services page.
+You get a written scope and a fixed price before work starts, so there are no hourly bills or surprise costs. Projects range from ₹75,000 to ₹3,50,000+ ($1,000 to $4,500+) depending on size. All plans are listed on the services page.
 
 Who owns the code and accounts? +
 
@@ -3173,7 +3173,7 @@ Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or
 ---
 title: "SaaS & Custom Software Developer in Ahmedabad | TENSIX"
 url: https://www.tensix.in/saas-developer-ahmedabad
-description: "Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices from ₹34,999."
+description: "Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices From ₹75,000."
 ---
 
 [← Back to TENSIX Home](https://www.tensix.in/)
@@ -3210,7 +3210,7 @@ See full details on the [custom software & SaaS development](https://www.tensix.
 
 ## Related services
 
-[Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹34,999.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹29,999.](https://www.tensix.in/services/ai-agent-development) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹11,999.](https://www.tensix.in/services/cloud-devops) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹39,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
+[Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹75,000.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹65,000.](https://www.tensix.in/services/ai-agent-development) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹49,999.](https://www.tensix.in/services/cloud-devops) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹79,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
 
 ## Have a software idea?
 
@@ -3274,7 +3274,7 @@ Serving Gota, Vandemataram, New SG Road & Chandkheda — Ahmedabad
 
 ## What we can build for you
 
-[Business websitesFast, mobile-friendly websites that bring in enquiries on WhatsApp and email. From ₹14,999.](https://www.tensix.in/services/website-development) [Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹34,999.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹29,999.](https://www.tensix.in/services/ai-agent-development) [Data collection & automationCollect prices or listings from websites and move data from emails and PDFs into your sheets automatically. From ₹16,999.](https://www.tensix.in/services/data-scraping-automation) [Emails that reach the inboxCorrect email set-up so your mails stop landing in spam. From ₹12,999.](https://www.tensix.in/services/email-deliverability) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹11,999.](https://www.tensix.in/services/cloud-devops) [Google & AI search visibilityHelp customers find you on Google Maps, Google search and AI assistants like ChatGPT. Custom quote.](https://www.tensix.in/services/geo-aeo-seo) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹39,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
+[Business websitesFast, mobile-friendly websites that bring in enquiries on WhatsApp and email. From ₹49,999.](https://www.tensix.in/services/website-development) [Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹75,000.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹65,000.](https://www.tensix.in/services/ai-agent-development) [Data collection & automationCollect prices or listings from websites and move data from emails and PDFs into your sheets automatically. From ₹49,999.](https://www.tensix.in/services/data-scraping-automation) [Emails that reach the inboxCorrect email set-up so your mails stop landing in spam. From ₹44,999.](https://www.tensix.in/services/email-deliverability) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹49,999.](https://www.tensix.in/services/cloud-devops) [Google & AI search visibilityHelp customers find you on Google Maps, Google search and AI assistants like ChatGPT. Custom quote.](https://www.tensix.in/services/geo-aeo-seo) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹79,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
 
 ## How a project works
 

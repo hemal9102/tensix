@@ -26,7 +26,7 @@ The Person You Talk To
 
 ### AI Coding Assistants
 
-Faster first drafts, checked by Hemal
+Autonomous Engineering Pipeline &amp; Rigorous QA
 
 Tools like Claude and ChatGPT, plus custom AI workflows built with LangGraph, help Hemal write first drafts of code, break big tasks into steps and write tests. Hemal reviews and tests everything before it reaches you.
 

@@ -38,7 +38,7 @@ Injected directly inside `<section class="page-hero">` and `<section class="stud
 * **Content Anchor:**
   * **Provider:** TENSIX • Hemal Shah (Solo Studio)
   * **Location:** Navrangpura, Ahmedabad, Gujarat, India
-  * **Price Guarantee:** Explicit INR pricing (e.g., `From ₹29,999`, `0 hourly billing`)
+  * **Price Guarantee:** Explicit INR pricing (e.g., `From ₹65,000`, `0 hourly billing`)
   * **Turnaround SLA:** Explicit business days (e.g., `5 to 14 business days`)
   * **IP & Code Ownership:** 100% Client-owned repositories and infrastructure
   * **Machine Timestamp:** Semantic `<time datetime="2026-10-07">October 7, 2026</time>` tag.
@@ -90,7 +90,7 @@ Injected directly inside `<section class="page-hero">` and `<section class="stud
   </div>
   <dl class="geo-specs-grid">
     <div class="geo-spec-item"><dt class="geo-spec-label">Service</dt><dd class="geo-spec-value">Custom AI Agent &amp; Assistant Development</dd></div>
-    <div class="geo-spec-item"><dt class="geo-spec-label">Pricing</dt><dd class="geo-spec-value">From ₹29,999 (Fixed upfront, 0 hourly billing)</dd></div>
+    <div class="geo-spec-item"><dt class="geo-spec-label">Pricing</dt><dd class="geo-spec-value">From ₹65,000 (Fixed upfront, 0 hourly billing)</dd></div>
     <div class="geo-spec-item"><dt class="geo-spec-label">Turnaround</dt><dd class="geo-spec-value">5 to 14 business days</dd></div>
     <div class="geo-spec-item"><dt class="geo-spec-label">Core Architecture</dt><dd class="geo-spec-value">RAG, LangGraph, FastAPI, pgvector, Claude &amp; OpenAI</dd></div>
     <div class="geo-spec-item"><dt class="geo-spec-label">Provider</dt><dd class="geo-spec-value">TENSIX &bull; Hemal Shah (Solo Studio)</dd></div>
@@ -115,7 +115,7 @@ Service
 Custom AI Agent & Assistant Development
 
 Pricing
-From ₹29,999 (Fixed upfront, 0 hourly billing)
+From ₹65,000 (Fixed upfront, 0 hourly billing)
 
 Turnaround
 5 to 14 business days

@@ -1,12 +1,12 @@
 ---
 title: "AI Agent and Assistant Development, Ahmedabad | TENSIX"
 url: https://www.tensix.in/services/ai-agent-development
-description: "Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices from ₹29,999."
+description: "Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices From ₹65,000."
 ---
 
 # AI Assistants and Agents That Do Real Work for Your Business
 
-TENSIX builds custom AI assistants and AI agents (software that reads information, decides and acts for you) that work with your own documents, data and tools. You get a working system on your own accounts, at fixed prices from ₹29,999, and you own all the code.
+TENSIX builds custom AI assistants and AI agents (software that reads information, decides and acts for you) that work with your own documents, data and tools. You get a working system on your own accounts, at fixed prices From ₹65,000, and you own all the code.
 
 [Book a consultation](https://www.tensix.in/contact?plan=ai-swarm) [See plans and prices ↓](https://www.tensix.in/services/ai-agent-development#plans)
 

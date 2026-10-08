@@ -1,7 +1,7 @@
 ---
 title: "SaaS & Custom Software Developer in Ahmedabad | TENSIX"
 url: https://www.tensix.in/saas-developer-ahmedabad
-description: "Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices from ₹34,999."
+description: "Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices From ₹75,000."
 ---
 
 [← Back to TENSIX Home](https://www.tensix.in/)
@@ -38,7 +38,7 @@ See full details on the [custom software & SaaS development](https://www.tensix.
 
 ## Related services
 
-[Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹34,999.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹29,999.](https://www.tensix.in/services/ai-agent-development) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹11,999.](https://www.tensix.in/services/cloud-devops) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹39,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
+[Custom software & SaaSBilling, inventory, CRM or your own software product, built around how you work. From ₹75,000.](https://www.tensix.in/services/custom-software-saas-development) [AI assistants & agentsAI that answers customer questions from your own documents and handles repetitive office tasks. From ₹65,000.](https://www.tensix.in/services/ai-agent-development) [Cloud hosting & serversSecure servers with SSL, backups and monitoring, so problems are caught early. From ₹49,999.](https://www.tensix.in/services/cloud-devops) [Monthly tech partnerHemal looks after your tech every month: fixes, upgrades and advice. From ₹79,999/month.](https://www.tensix.in/services/fractional-cto-retainers)
 
 ## Have a software idea?
 

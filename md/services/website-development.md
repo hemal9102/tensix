@@ -1,12 +1,12 @@
 ---
 title: "Website Design and Development in Ahmedabad | TENSIX"
 url: https://www.tensix.in/services/website-development
-description: "Fast, mobile-friendly business websites with WhatsApp, enquiry forms and SEO basics built in. Fixed prices from ₹14,999, ready in 5 to 14 business days."
+description: "Fast, mobile-friendly business websites with WhatsApp, enquiry forms and SEO basics built in. Fixed prices From ₹49,999, ready in 5 to 14 business days."
 ---
 
 # Fast, Mobile-Friendly Business Websites That Bring In Enquiries
 
-TENSIX designs and builds business websites that load fast on phones, look professional and turn visitors into enquiries through forms, WhatsApp and call buttons. Prices are fixed from ₹14,999, and most sites are ready in 5 to 14 business days.
+TENSIX designs and builds business websites that load fast on phones, look professional and turn visitors into enquiries through forms, WhatsApp and call buttons. Prices are fixed From ₹49,999, and most sites are ready in 5 to 14 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=web-standard) [See plans and prices ↓](https://www.tensix.in/services/website-development#plans)
 

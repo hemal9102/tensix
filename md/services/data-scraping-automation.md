@@ -1,12 +1,12 @@
 ---
 title: "Web Scraping and Workflow Automation | TENSIX"
 url: https://www.tensix.in/services/data-scraping-automation
-description: "Automatic data entry from emails and invoices, Google Maps lead lists and custom website trackers with alerts. Fixed prices from ₹16,999. Based in Ahmedabad."
+description: "Automatic data entry from emails and invoices, Google Maps lead lists and custom website trackers with alerts. Fixed prices From ₹49,999. Based in Ahmedabad."
 ---
 
 # Stop Copy-Pasting: Automatic Data Collection and Entry
 
-TENSIX builds small automatic systems that collect data for you: reading invoices from your inbox, building lead lists from Google Maps, or tracking competitor prices on websites. The data goes straight into Google Sheets, your database or your CRM, at fixed prices from ₹16,999.
+TENSIX builds small automatic systems that collect data for you: reading invoices from your inbox, building lead lists from Google Maps, or tracking competitor prices on websites. The data goes straight into Google Sheets, your database or your CRM, at fixed prices From ₹49,999.
 
 [Book a consultation](https://www.tensix.in/contact?plan=scraper-google-maps) [See plans and prices ↓](https://www.tensix.in/services/data-scraping-automation#plans)
 

@@ -1,12 +1,12 @@
 ---
 title: "Custom Software, CRM and SaaS Development | TENSIX"
 url: https://www.tensix.in/services/custom-software-saas-development
-description: "Custom software, CRMs, ERPs and SaaS products built for your exact workflow. Fixed prices from ₹34,999, and you own all the code. Based in Ahmedabad."
+description: "Custom software, CRMs, ERPs and SaaS products built for your exact workflow. Fixed prices From ₹75,000, and you own all the code. Based in Ahmedabad."
 ---
 
 # Custom Software, CRM and SaaS Built Around How You Work
 
-TENSIX builds custom business software: back-end systems, internal tools like CRMs and ERPs, and complete SaaS products (software you sell online by subscription). Prices are fixed from ₹34,999, and you own all the source code from day one.
+TENSIX builds custom business software: back-end systems, internal tools like CRMs and ERPs, and complete SaaS products (software you sell online by subscription). Prices are fixed From ₹75,000, and you own all the source code from day one.
 
 [Book a consultation](https://www.tensix.in/contact?plan=software-saas) [See plans and prices ↓](https://www.tensix.in/services/custom-software-saas-development#plans)
 
