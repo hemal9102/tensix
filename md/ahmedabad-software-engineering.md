@@ -1,12 +1,12 @@
 ---
 title: "Software & AI Development Company in Ahmedabad | TENSIX"
 url: https://www.tensix.in/ahmedabad-software-engineering
-description: "Websites, custom software, AI assistants and automation for Ahmedabad businesses. Fixed prices, and you work directly with founder Hemal Shah."
+description: "Websites, custom software, AI assistants and automation for Ahmedabad businesses. Fixed prices, and You work directly with our engineering leadership and founder Hemal Shah."
 ---
 
 # Software, Websites & AI Automation in Ahmedabad
 
-**TENSIX** helps Ahmedabad businesses get more customers and spend less time on manual work. It is a one-person studio founded and run by [Hemal Shah](https://www.tensix.in/hemal-shah), who builds every project himself with help from AI tools. Fixed prices, and you own everything we build.
+**TENSIX** helps Ahmedabad businesses get more customers and spend less time on manual work. It is an independent studio founded and run by [Hemal Shah](https://www.tensix.in/hemal-shah), who builds every project himself with help from AI tools. Fixed prices, and you own everything we build.
 
 ### Meetings by appointment
 

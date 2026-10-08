@@ -102,7 +102,7 @@ CI/CD means that when your developers save new code to GitHub, it is checked and
 
 Will my website go down during the move?
 
-Hemal plans moves to keep downtime as short as possible: the new server is fully prepared first and the switch happens at a quiet time. The old server stays ready in case you need to switch back.
+We execute migrations with zero or minimal scheduled downtime: the new server is fully prepared first and the switch happens at a quiet time. The old server stays ready in case you need to switch back.
 
 Which cloud provider should I use?
 
@@ -114,7 +114,7 @@ You pay the cloud provider directly, in your own account. The TENSIX fee covers 
 
 What if something breaks after set-up?
 
-Hemal sets up monitoring and automatic restarts so problems are caught early. For ongoing care, the [Growth Engine Retainer](https://www.tensix.in/services/fractional-cto-retainers) includes server updates, backups and security checks.
+We configure continuous monitoring, automated health-checks, and failovers so problems are caught early. For ongoing care, the [Growth Engine Retainer](https://www.tensix.in/services/fractional-cto-retainers) includes server updates, backups and security checks.
 
 ## Related services
 
@@ -128,6 +128,6 @@ Hemal sets up monitoring and automatic restarts so problems are caught early. Fo
 
 ## Ready to talk about Cloud Server and DevOps Setup?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=cloud-cicd) [See past work](https://www.tensix.in/work)

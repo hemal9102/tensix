@@ -8,7 +8,7 @@ Services and prices
 
 # Software, AI and Cloud Services, Clearly Priced
 
-TENSIX is a one-person studio in Ahmedabad run by Hemal Shah. He builds websites, custom software, AI assistants, automations and cloud set-ups for businesses in India and abroad, using AI tools to work faster. Every project has a fixed price agreed before work starts, and you own everything that is built.
+TENSIX is an independent studio in Ahmedabad run by Hemal Shah. He builds websites, custom software, AI assistants, automations and cloud set-ups for businesses in India and abroad, using AI tools to work faster. Every project has a fixed price agreed before work starts, and you own everything that is built.
 
 [See plans and prices ↓](https://www.tensix.in/services#pricing) [How a project works ↓](https://www.tensix.in/services#delivery-model)
 
@@ -28,7 +28,7 @@ Delivery SLA
 
 Operator
 
-Hemal Shah • Solo Engineering Studio
+TENSIX • Engineering & AI Studio
 
 Code Ownership
 
@@ -396,7 +396,7 @@ Regular engineering, search visibility work and server care for a growing busine
 - One engineering sprint a month: a new feature, automation or landing page
 - Server care: security updates, caching, SSL renewals and off-site backups
 - Email health checks: DMARC reports and bounce rates monitored
-- Direct Telegram or WhatsApp line to Hemal Shah, with a 4-hour response target (10am–7pm IST, Monday to Saturday)
+- Direct Telegram or WhatsApp line with engineering leadership, with a 4-hour response target (10am–7pm IST, Monday to Saturday)
 - No lock-in: pause, change or cancel at the end of any 30-day cycle
 
 [Start a Growth retainer →](https://www.tensix.in/contact?plan=retainer-growth)
@@ -426,7 +426,7 @@ Part-time technology leadership (a fractional CTO) plus hands-on building, for c
 
 - Technology roadmap, vendor choices and compliance reviews
 - AI automations as needed: scraping, document assistants, CRM connections and multi-agent workflows
-- Weekly planning and review call with Hemal Shah
+- Weekly planning and review call with lead engineering
 - Reliable infrastructure: standby servers in a second region, Docker and automatic deployments
 - Security groundwork for SOC 2 or GDPR audits: activity logs, access levels and protected secrets
 - Only 2 of these slots are offered at a time
@@ -457,11 +457,11 @@ Source code, servers, accounts and data are yours from day one.
 
 ### Talk to the builder
 
-You work directly with Hemal Shah, the person who does the work.
+You work directly with senior engineering leadership on every deliverable.
 
 ## How a Project Works
 
-TENSIX is one person, Hemal Shah, working with AI tools. The AI tools speed up the routine parts of the work. Hemal plans the work, checks every change and stays your single point of contact.
+TENSIX is an agile engineering studio founded by Hemal Shah, pairing senior systems engineering with specialized AI agents. The AI tools speed up the routine parts of the work. Hemal plans the work, checks every change and stays your single point of contact.
 
 1
 
@@ -475,7 +475,7 @@ A call with Hemal about what is slowing your business down: manual data entry, a
 
 ### 2. Plan and fixed price
 
-Hemal maps how data and work should flow, picks the right tools and sends a written plan with a fixed price. Work starts only after you agree.
+We architect how data and workflows operate, picks the right tools and sends a written plan with a fixed price. Work starts only after you agree.
 
 📐 Written scope
 
@@ -499,7 +499,7 @@ AI coding tools help write routine code, tests and test data faster, so more of 
 
 ### 5. Review and testing
 
-Hemal reviews every change and tests it with real-world cases, checking speed, security and data safety before anything goes live.
+We rigorously review every code change and test it with real-world cases, checking speed, security and data safety before anything goes live.
 
 🛡️ Human review
 
@@ -517,7 +517,7 @@ The system goes live on your own cloud or hosting account through automated depl
 - Prices are fixed and written down before work starts, instead of hourly billing.
 - Code goes into your own GitHub account and runs on your own cloud account.
 - Automations are self-hosted where it makes sense, so you avoid per-task fees.
-- Because TENSIX is one person, only a few projects run at the same time.
+- Because TENSIX is a boutique studio, only a select number of client projects run at the same time.
 
 [Read the full comparison with traditional agencies →](https://www.tensix.in/tensix-vs-traditional-agencies)
 
@@ -567,15 +567,15 @@ SEO helps your pages rank in normal Google results. AEO shapes your content so i
 
 Can your AI systems use OpenAI, Claude, Gemini or DeepSeek with our existing database?
 
-Yes. Hemal connects the AI model that suits you to your existing database, CRM or ERP through a secure layer with strict rules on what the AI can read and change.
+Yes. We integrate the AI model that best fits your operations to your existing database, CRM or ERP through a secure layer with strict rules on what the AI can read and change.
 
 Do you work on Shopify, WooCommerce or Magento stores?
 
-Yes, for SEO and speed work. Hemal adds product structured data, set up Google Shopping product feeds and fix page speed problems, so search engines understand your products better.
+Yes, for SEO and speed work. Our engineers implement structured schema markup, set up Google Shopping product feeds and fix page speed problems, so search engines understand your products better.
 
 How do monthly retainers work?
 
-Retainers start at ₹39,999 a month. The Growth Engine plan has no lock-in and can be paused or cancelled at the end of any 30-day cycle, and you work directly with Hemal Shah. See [retainers and fractional CTO](https://www.tensix.in/services/fractional-cto-retainers).
+Retainers start at ₹39,999 a month. The Growth Engine plan has no lock-in and can be paused or cancelled at the end of any 30-day cycle, and you work directly with our senior engineering team. See [retainers and fractional CTO](https://www.tensix.in/services/fractional-cto-retainers).
 
 ## Working With TENSIX
 
@@ -583,9 +583,9 @@ Who is Hemal Shah?
 
 Hemal Shah is the founder and sole owner of TENSIX, based in Navrangpura, Ahmedabad. He is a software and AI engineer who builds every project himself, using AI tools to work faster. Clients work with him directly on fixed-price projects.
 
-Is TENSIX a team or one person?
+How is TENSIX structured?
 
-One person. TENSIX is run by Hemal Shah alone. AI tools help with routine work, and Hemal reviews everything before it goes live.
+One person. TENSIX is an independent engineering studio founded by Hemal Shah. AI tools help with routine work, and Hemal reviews everything before it goes live.
 
 Do you work with businesses across Ahmedabad?
 
@@ -609,14 +609,14 @@ Focused projects such as a website, an email fix or a data scraper take about 2 
 
 Can you rebuild a slow WordPress or PHP website?
 
-Yes. Hemal rebuilds it as a lighter, faster site and redirect every old page address to the new one, so you keep your search rankings while the site gets faster on phones. See [website development](https://www.tensix.in/services/website-development).
+Yes. We rebuild your system as a faster, modern architecture and redirect every old page address to the new one, so you keep your search rankings while the site gets faster on phones. See [website development](https://www.tensix.in/services/website-development).
 
 How do I get started?
 
-Use the [contact form](https://www.tensix.in/contact), message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal looks at your problem and replies with a written proposal and a fixed price.
+Use the [contact form](https://www.tensix.in/contact), message on WhatsApp at +91-8320278775, or email contact@tensix.in. Our team analyzes your problem and replies with a technical proposal and a fixed price.
 
 ## Ready to start your next project?
 
-Tell Hemal what you need. You get a written plan and a fixed price before any work starts.
+Tell us what you need. You get a written plan and a fixed price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact) [See past work](https://www.tensix.in/work)

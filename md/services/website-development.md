@@ -133,6 +133,6 @@ You pay for your domain and hosting directly to the provider. There is no yearly
 
 ## Ready to talk about Website Development?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=web-standard) [See past work](https://www.tensix.in/work)

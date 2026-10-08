@@ -129,6 +129,6 @@ Rules differ by country. Hemal sets up the technical side, including unsubscribe
 
 ## Ready to talk about Email Deliverability and Setup?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=email-ses-engine) [See past work](https://www.tensix.in/work)

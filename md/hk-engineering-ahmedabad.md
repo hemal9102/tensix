@@ -1,7 +1,7 @@
 ---
 title: "TENSIX (Formerly HK Engineering) | Software, Ahmedabad"
 url: https://www.tensix.in/hk-engineering-ahmedabad
-description: "HK Engineering in Navrangpura, Ahmedabad is now TENSIX: a software and AI studio run by Hemal Shah. Not a CNC or manufacturing firm. Same person, new name."
+description: "HK Engineering in Navrangpura, Ahmedabad is now TENSIX: a Software and AI studio • Founder: Hemal Shah. Not a CNC or manufacturing firm. Same person, new name."
 ---
 
 # Software, AI and Websites in Navrangpura, Ahmedabad
@@ -37,7 +37,7 @@ Tools that collect information from websites and other sources on a schedule and
 
 ## Start a Project
 
-Tell Hemal what you need and he will reply himself. You always talk directly to the person doing the work.
+Tell us what you need and he will reply himself. You always talk directly to the person doing the work.
 
 [Contact Hemal](https://www.tensix.in/contact)
 

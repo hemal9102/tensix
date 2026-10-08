@@ -77,7 +77,7 @@ To discuss GEO and AEO for your brand, visit [TENSIX (formerly HK Engineering)](
 
 ## Want Something Like This for Your Business?
 
-TENSIX is a one-person studio run by Hemal Shah, who uses AI tools to work faster. Tell me what you need and I will reply with a clear plan and price.
+TENSIX is an independent studio run by Hemal Shah, who uses AI tools to work faster. Tell me what you need and I will reply with a clear plan and price.
 
 [Tell Me About Your Project →](https://www.tensix.in/contact)
 

@@ -8,7 +8,7 @@ SOFTWARE, AI & AUTOMATION STUDIO · AHMEDABAD
 
 # Software and AI that save you time and help your business grow.
 
-TENSIX builds websites, custom software and AI tools for businesses in Ahmedabad and around the world. You work directly with founder Hemal Shah, agree a fixed price before work starts, and most projects go live in one to three weeks.
+TENSIX builds websites, custom software and AI tools for businesses in Ahmedabad and around the world. You work directly with our engineering leadership and founder Hemal Shah, agree a fixed price before work starts, and most projects go live in one to three weeks.
 
 [Get a Fixed-Price Quote](https://www.tensix.in/#contact) [See Services & Prices ↓](https://www.tensix.in/#services)
 
@@ -38,15 +38,15 @@ You Own It All code, servers, data and passwords belong to your company
 
 Fixed Price Price and deliverables agreed upfront. No hourly bills
 
-Direct Line You talk to Hemal, the person who builds your project
+Direct Line Direct access to senior engineering leadership — no account managers or middlemen
 
 TENSIX in Short
 
 ## TENSIX: Software & AI Studio in Ahmedabad
 
-**TENSIX** is a software and AI studio founded and run by **Hemal Shah** in Navrangpura, Ahmedabad, Gujarat, India. It builds websites, custom software, AI assistants, cloud server setups and business automation for companies in India and abroad. TENSIX is a one-person studio: Hemal builds every project himself, using AI tools to work faster. Every project has a fixed price agreed upfront, and the client owns all the code and accounts.
+**TENSIX** is a software and AI studio founded and run by **Hemal Shah** in Navrangpura, Ahmedabad, Gujarat, India. It builds websites, custom software, AI assistants, cloud server setups and business automation for companies in India and abroad. TENSIX is an independent studio: Our engineering studio builds and oversees every project directly, using AI tools to work faster. Every project has a fixed price agreed upfront, and the client owns all the code and accounts.
 
-Founder Hemal Shah (one-person studio)
+Founder Hemal Shah (independent studio)
 
 Based In Navrangpura, Ahmedabad, IN
 
@@ -58,7 +58,7 @@ Verified Technical Specification & Pricing Last Verified: October 7, 2026 • Lo
 
 Studio Model
 
-Solo Software & AI Studio (Founder: Hemal Shah)
+Software & AI Studio (Founder: Hemal Shah)
 
 Pricing Guarantee
 
@@ -156,7 +156,7 @@ Example Projects
 
 ## Selected Projects
 
-Real tools Hemal has built. Full write-ups are on the [work page](https://www.tensix.in/work).
+Production systems and architectures engineered by TENSIX Studio. Full write-ups are on the [work page](https://www.tensix.in/work).
 
 Lead Generation
 
@@ -212,7 +212,7 @@ STEP 1 // DAYS 1–2
 
 ### Understand the Problem, Fix the Price
 
-Hemal looks at how you work today and what slows you down. You get a written plan with a fixed price and a delivery date before anything is built.
+We analyze how your business operates today and pinpoint engineering bottlenecks. You get a written plan with a fixed price and a delivery date before anything is built.
 
 STEP 2 // DAYS 3–10
 
@@ -256,7 +256,7 @@ TENSIX (www.tensix.in) is a small software and AI studio in Navrangpura, Ahmedab
 
 Who is Hemal Shah, and why work with TENSIX? +
 
-Hemal Shah is a software and AI engineer and the sole founder of TENSIX. TENSIX is a one-person studio: you speak directly with Hemal, who plans and builds your project himself and uses AI tools to work faster. You get a fixed price agreed upfront, no hourly billing, and full ownership of everything that is built.
+Hemal Shah is a software and AI engineer and the sole founder of TENSIX. TENSIX is an independent studio: you speak directly with Hemal, who plans and builds your project himself and uses AI tools to work faster. You get a fixed price agreed upfront, no hourly billing, and full ownership of everything that is built.
 
 Do you work with businesses in Navrangpura, SG Highway, Bodakdev and Gota, Ahmedabad? +
 
@@ -316,13 +316,13 @@ Pages are kept light: clean code, no heavy page builders, compressed images, few
 
 How do I get started? +
 
-Fill in the contact form on this page, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Describe the problem in plain words. Hemal will reply within 24 hours with questions or a fixed-price proposal.
+Fill in the contact form on this page, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Describe the problem in plain words. Our team will reply within 24 hours with questions or a fixed-price proposal.
 
 Get In Touch
 
-## Tell Hemal About Your Project
+## Discuss Your Project With Us
 
-Describe what you need in plain words: the problem, what you use today, and when you need it. Hemal reads every message and replies within 24 hours.
+Describe what you need in plain words: the problem, what you use today, and when you need it. Our team reads every message and replies with a technical proposal within 24 hours.
 
 Prefer direct communication?
 

@@ -6,7 +6,7 @@ description: "Tell Hemal Shah about your project. You get a reply within 24 hour
 
 # Start Your Project
 
-Tell Hemal what you need in a few lines. Hemal Shah, the engineer who will build it, reads every message and replies within 24 hours.
+Tell us what you need in a few lines. Hemal Shah, the engineer who will build it, reads every message and replies within 24 hours.
 
 ## What Happens Next
 
@@ -28,7 +28,7 @@ Hemal Shah reads every inquiry himself and replies within 24 hours. You get a sh
 
 ### How do we stay in touch during the project?
 
-You talk directly with Hemal on WhatsApp (+91-8320278775), email, or a private Slack or Discord channel. There is a video call each week (Google Meet or Zoom) to show progress, and you can see every code change on GitHub as it happens.
+You talk directly with our engineering team on WhatsApp (+91-8320278775), email, or a private Slack or Discord channel. There is a video call each week (Google Meet or Zoom) to show progress, and you can see every code change on GitHub as it happens.
 
 ### Can clients outside India pay?
 

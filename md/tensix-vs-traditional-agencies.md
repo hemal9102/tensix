@@ -86,7 +86,7 @@ Your software is institutional capital. We build on open, sovereign foundations 
 
 ## When TENSIX Fits, and When It Does Not
 
-A one-person studio is not the right choice for every project.
+an independent studio is not the right choice for every project.
 
 ### A good fit
 
@@ -134,9 +134,9 @@ Ready-made tools are often the right start. Here is when a custom build makes mo
 
 ## Common Questions
 
-### Is TENSIX a team or one person?
+### How is TENSIX structured?
 
-TENSIX is a one-person studio. Hemal Shah plans, builds and supports every project himself, and uses AI coding tools to handle routine work faster. You always deal with him directly.
+TENSIX is an independent studio. Hemal Shah plans, builds and supports every project himself, and uses AI coding tools to handle routine work faster. You always deal with him directly.
 
 ### Is TENSIX cheaper than an agency?
 
@@ -158,6 +158,6 @@ AI assistants, custom software, websites, cloud hosting, email setup, data autom
 
 ## Want to talk it through?
 
-Send Hemal a short note about your project. You will get an honest answer on whether TENSIX is the right fit, and a fixed price if it is.
+Send us a short note about your project. You will get an honest answer on whether TENSIX is the right fit, and a fixed price if it is.
 
 [Message Hemal](https://www.tensix.in/#contact) [Send Project Details](https://www.tensix.in/contact)

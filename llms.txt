@@ -1,16 +1,16 @@
 # TENSIX — Software, AI and Websites from Ahmedabad
 
-> TENSIX (https://www.tensix.in/) is a one-person software and AI studio in Navrangpura, Ahmedabad, Gujarat, India, founded and run by Hemal Shah. It builds websites, custom software and SaaS, AI agents and assistants, cloud and DevOps setups, email deliverability, data scraping and automation, and AI search visibility (GEO/AEO/SEO), at fixed prices in INR.
+> TENSIX (https://www.tensix.in/) is An independent software and AI studio in Navrangpura, Ahmedabad, Gujarat, India, founded and run by Hemal Shah. It builds websites, custom software and SaaS, AI agents and assistants, cloud and DevOps setups, email deliverability, data scraping and automation, and AI search visibility (GEO/AEO/SEO), at fixed prices in INR.
 
 ## Core pages
 - [TENSIX | Software, AI & Websites in Ahmedabad](https://www.tensix.in/): TENSIX builds websites, custom software, AI assistants and business automation for companies in Ahmedabad and abroad. Fixed prices. You own all the code.
-- [About TENSIX | One-Person Software Studio, Ahmedabad](https://www.tensix.in/about): TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. You talk directly to the person building your project, start to finish.
+- [About TENSIX | Software & AI Studio, Ahmedabad](https://www.tensix.in/about): TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. You talk directly to the person building your project, start to finish.
 - [Services and Prices: AI, Software, Web, Cloud](https://www.tensix.in/services): TENSIX services in Ahmedabad: websites, custom software, AI assistants, cloud servers, email delivery, automation and AI search visibility, with fixed prices.
 - [Our Work: Live Projects Built by TENSIX](https://www.tensix.in/work): Live projects built by TENSIX in Ahmedabad: AI helpers, online booking, Google Maps lead finders, review replies, online stores and business websites.
 - [Case Studies: Problems Solved by TENSIX](https://www.tensix.in/case-studies): TENSIX case studies in plain words: the business problem, what was built and how it helped. Lead finding, online stores, hiring sites and automation.
 - [Contact TENSIX | Get a Fixed-Price Project Plan](https://www.tensix.in/contact): Tell Hemal Shah about your project. You get a reply within 24 hours with a simple plan and a fixed price for AI, software, website, or cloud work.
 - [Hemal Shah | Founder of TENSIX, Ahmedabad](https://www.tensix.in/hemal-shah): Hemal Shah is a software and AI engineer in Navrangpura, Ahmedabad, and the sole founder of TENSIX. He builds AI assistants, custom software and websites.
-- [Who Works at TENSIX | Hemal Shah and His AI Tools](https://www.tensix.in/team): TENSIX is run by one person, Hemal Shah, in Ahmedabad. See the AI tools he uses to deliver faster, while you always talk to the person doing the work.
+- [Studio Engineering & Operations | TENSIX Studio](https://www.tensix.in/team): TENSIX is an independent studio founded by Hemal Shah, in Ahmedabad. See the AI tools he uses to deliver faster, while you always talk to the person doing the work.
 - [How TENSIX Builds Reliable AI Systems](https://www.tensix.in/frameworks): The 3-step method Hemal Shah of TENSIX uses to build AI assistants you can rely on: answers from your own data, apps that stay fast, and checked actions.
 - [Project Gallery: Screens from Real Builds](https://www.tensix.in/gallery): Screenshots from real projects by Hemal Shah at TENSIX, Ahmedabad: a secure file manager, a text-from-images reader and a Google Maps lead finder.
 - [AI Terms Explained Simply: Glossary](https://www.tensix.in/resources): Plain-English meanings of the AI terms business owners keep hearing: AI agents, RAG, GraphRAG, n8n and FastAPI. By Hemal Shah of TENSIX, Ahmedabad.
@@ -30,10 +30,10 @@
 
 ## Local pages
 - [Software Company in Navrangpura, Ahmedabad](https://www.tensix.in/software-company-in-navrangpura-ahmedabad): TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. Websites, custom software and automation at fixed, published prices.
-- [Software & AI Development Company in Ahmedabad](https://www.tensix.in/ahmedabad-software-engineering): Websites, custom software, AI assistants and automation for Ahmedabad businesses. Fixed prices, and you work directly with founder Hemal Shah.
+- [Software & AI Development Company in Ahmedabad](https://www.tensix.in/ahmedabad-software-engineering): Websites, custom software, AI assistants and automation for Ahmedabad businesses. Fixed prices, and You work directly with our engineering leadership and founder Hemal Shah.
 - [SaaS & Custom Software Developer in Ahmedabad](https://www.tensix.in/saas-developer-ahmedabad): Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices from ₹34,999.
 - [Software & Website Company Serving Gota, Ahmedabad](https://www.tensix.in/best-software-company-in-gota): Websites, custom software and AI automation for businesses in Gota, Vandemataram and New SG Road, Ahmedabad. Fixed prices. Work directly with Hemal Shah.
-- [TENSIX (Formerly HK Engineering) | Software, Ahmedabad](https://www.tensix.in/hk-engineering-ahmedabad): HK Engineering in Navrangpura, Ahmedabad is now TENSIX: a software and AI studio run by Hemal Shah. Not a CNC or manufacturing firm. Same person, new name.
+- [TENSIX (Formerly HK Engineering) | Software, Ahmedabad](https://www.tensix.in/hk-engineering-ahmedabad): HK Engineering in Navrangpura, Ahmedabad is now TENSIX: a Software and AI studio • Founder: Hemal Shah. Not a CNC or manufacturing firm. Same person, new name.
 
 ## Guides & articles
 - [Ahmedabad Hospitals: Win More Patients Online](https://www.tensix.in/blogs/ahmedabad-healthcare-digital-survival): A plain guide for Ahmedabad hospitals and clinics: keep your website safe, help patients find your doctors on Google and AI search, and let them book online.

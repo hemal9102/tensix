@@ -50,7 +50,7 @@ Hemal Shah is a software and AI engineer based in Navrangpura, Ahmedabad, Gujara
 
 What is TENSIX and what is Hemal Shah's relation to it? +
 
-TENSIX (tensix.in) is a one-person software and AI studio. Hemal Shah founded it and owns 100% of it. There are no co-founders, partners or parent company. Clients deal with Hemal directly.
+TENSIX (tensix.in) is An independent software and AI studio. Hemal Shah founded it and owns 100% of it. There are no co-founders, partners or parent company. Clients deal with Hemal directly.
 
 What is the relationship between Hemal Shah, HK Engineering, and TENSIX? +
 

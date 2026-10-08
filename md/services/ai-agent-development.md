@@ -100,7 +100,7 @@ The document assistant is set up to answer only from your own documents and to s
 
 Which AI models do you use?
 
-Hemal picks the model that fits the job and the budget, for example models from OpenAI, Anthropic (Claude), Google (Gemini) or open-source options. The system can be moved to another model later if prices or quality change.
+We select models tailored to precision and operational efficiency and the budget, for example models from OpenAI, Anthropic (Claude), Google (Gemini) or open-source options. The system can be moved to another model later if prices or quality change.
 
 Is my business data safe?
 
@@ -126,6 +126,6 @@ Yes, usually small ones. You pay the AI provider and hosting directly, based on 
 
 ## Ready to talk about AI Agent Development?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=ai-swarm) [See past work](https://www.tensix.in/work)

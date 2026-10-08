@@ -6,7 +6,7 @@ description: "Screenshots from real projects by Hemal Shah at TENSIX, Ahmedabad:
 
 # TENSIX Project Gallery
 
-Screenshots from real systems built by Hemal Shah, each with a short note on what it does for a business. For the full list, see [all projects](https://www.tensix.in/work).
+Screenshots from real production systems engineered by TENSIX Studio (Founder: Hemal Shah), each with a short note on what it does for a business. For the full list, see [all projects](https://www.tensix.in/work).
 
 Online Software
 
@@ -28,6 +28,6 @@ Collects business names, numbers and websites from Google Maps automatically, so
 
 ## Want something like this for your business?
 
-Tell Hemal what you need. You get a clear plan, a fixed price and a working system. See [AI agents](https://www.tensix.in/services/ai-agent-development), [custom software](https://www.tensix.in/services/custom-software-saas-development), [websites](https://www.tensix.in/services/website-development) and [automation](https://www.tensix.in/services/data-scraping-automation).
+Tell us what you need. You get a clear plan, a fixed price and a working system. See [AI agents](https://www.tensix.in/services/ai-agent-development), [custom software](https://www.tensix.in/services/custom-software-saas-development), [websites](https://www.tensix.in/services/website-development) and [automation](https://www.tensix.in/services/data-scraping-automation).
 
 [Get a Free Quote](https://www.tensix.in/contact) [See Services & Prices](https://www.tensix.in/services)

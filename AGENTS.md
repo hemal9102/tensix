@@ -109,7 +109,7 @@ python submit_indexnow.py
 - Every production page carries the "Services navigation" footer column (`inject_footer_links.py` adds it idempotently).
 
 ### 4.3 Comparison & Local Guides
-- **`tensix-vs-traditional-agencies.html`:** plain-language comparison of a one-person studio vs a typical agency (who you talk to, fixed price, ownership), including when another option suits you better. No named competitors.
+- **`tensix-vs-traditional-agencies.html`:** plain-language comparison of an independent studio vs a typical agency (who you talk to, fixed price, ownership), including when another option suits you better. No named competitors.
 - **Local Industry Digital Survival Guides:** 6 long-form whitepapers targeting Ahmedabad's economic clusters (Textiles, Pharma, Machinery, Real Estate, Jewelry, Healthcare).
 
 ### 4.4 Free Tool: `/is-my-site-ai-ready`
@@ -135,7 +135,7 @@ python submit_indexnow.py
 
 ### ✍️ CONTENT RULE — PLAIN LANGUAGE & HONESTY
 - Write for a business owner: lead with the benefit, explain jargon in a parenthesis or drop it, one clear CTA per section.
-- **TENSIX is a one-person studio** (Hemal Shah, working with AI tools). Never imply a team, pods or staff.
+- **TENSIX is an independent studio** (Hemal Shah, working with AI tools). Never imply a team, pods or staff.
 - **No unverifiable claims:** no guarantees (uptime, PageSpeed scores, inbox placement, "zero downtime"), no unsourced stats or percentages, no "N businesses served", no invented savings comparisons, no fake testimonials. Describe what is actually done instead ("we set up monitoring and automatic restarts").
 - FAQ schema answers must match the visible text.
 

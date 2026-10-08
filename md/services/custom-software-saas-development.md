@@ -130,6 +130,6 @@ You can book changes when you need them, or choose a monthly retainer for regula
 
 ## Ready to talk about Custom Software and SaaS Development?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=software-saas) [See past work](https://www.tensix.in/work)

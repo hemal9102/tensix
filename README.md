@@ -7,7 +7,7 @@
 [![Location](https://img.shields.io/badge/Location-Navrangpura%2C%20Ahmedabad-red)](https://maps.google.com/?q=23.0366,72.5615)
 [![License](https://img.shields.io/badge/License-Proprietary-lightgrey)](https://tensix.in/)
 
-**TENSIX** is a one-person software studio founded and run by **Hemal Shah** (working with AI tools), headquartered in Navrangpura, Ahmedabad, Gujarat, India (`23.0366° N, 72.5615° E`).
+**TENSIX** is a Software & AI Studio founded and run by **Hemal Shah** (working with AI tools), headquartered in Navrangpura, Ahmedabad, Gujarat, India (`23.0366° N, 72.5615° E`).
 
 ---
 
@@ -43,7 +43,7 @@
   `ai-agent-development`, `custom-software-saas-development`, `website-development`, `cloud-devops`, `email-deliverability`, `data-scraping-automation`, `geo-aeo-seo`, `fractional-cto-retainers`.
 
 ### 3. Comparison & Local Pages
-- `tensix-vs-traditional-agencies.html`: plain-language comparison of a one-person studio vs a typical agency (who you talk to, fixed price, ownership), including when an agency may suit you better.
+- `tensix-vs-traditional-agencies.html`: plain-language comparison of an independent studio vs a typical agency (who you talk to, fixed price, ownership), including when an agency may suit you better.
 - Location pages for Navrangpura, Gota and Ahmedabad, the HK Engineering transition record (`hk-engineering-ahmedabad.html`), and 6 Ahmedabad industry guides (Textiles, Pharma, Machinery, Real Estate, Jewelry, Healthcare).
 
 ### 4. Plain Language & Honesty
@@ -69,7 +69,7 @@
 
 - **Fixed price:** the scope and price are agreed before work starts.
 - **You own everything:** code, server keys and data belong to the client from day one.
-- **Direct access:** you talk to Hemal Shah, the person who builds it.
+- **Direct access:** you Talk to Engineering Shah, the person who builds it.
 - **Careful launches:** migrations are planned and tested, with monitoring and automatic restarts set up on the servers we manage.
 
 ---

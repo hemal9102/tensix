@@ -55,7 +55,7 @@ Regular engineering, search visibility work and server care for a growing busine
 - One engineering sprint a month: a new feature, automation or landing page
 - Server care: security updates, caching, SSL renewals and off-site backups
 - Email health checks: DMARC reports and bounce rates monitored
-- Direct Telegram or WhatsApp line to Hemal Shah, with a 4-hour response target (10am–7pm IST, Monday to Saturday)
+- Direct Telegram or WhatsApp line with engineering leadership, with a 4-hour response target (10am–7pm IST, Monday to Saturday)
 - No lock-in: pause, change or cancel at the end of any 30-day cycle
 
 [Start a Growth retainer →](https://www.tensix.in/contact?plan=retainer-growth)
@@ -85,7 +85,7 @@ Part-time technology leadership (a fractional CTO) plus hands-on building, for c
 
 - Technology roadmap, vendor choices and compliance reviews
 - AI automations as needed: scraping, document assistants, CRM connections and multi-agent workflows
-- Weekly planning and review call with Hemal Shah
+- Weekly planning and review call with lead engineering
 - Reliable infrastructure: standby servers in a second region, Docker and automatic deployments
 - Security groundwork for SOC 2 or GDPR audits: activity logs, access levels and protected secrets
 - Only 2 of these slots are offered at a time
@@ -98,7 +98,7 @@ What is a fractional CTO?
 
 A fractional CTO is a senior technology leader who works with you part-time. You get help with technical decisions, planning and hiring without paying a full-time salary.
 
-Is TENSIX a team or one person?
+How is TENSIX structured?
 
 TENSIX is run by one person, founder Hemal Shah. He uses AI coding and automation tools to work faster and reviews all the work himself, so you always deal with him directly.
 
@@ -130,6 +130,6 @@ You do. All code goes into your own GitHub account and runs on your own cloud ac
 
 ## Ready to talk about Monthly Retainers and Fractional CTO?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=retainer-ai-pod) [See past work](https://www.tensix.in/work)

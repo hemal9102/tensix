@@ -1,7 +1,7 @@
 ---
-title: "Who Works at TENSIX | Hemal Shah and His AI Tools"
+title: "Studio Engineering & Operations | TENSIX Studio"
 url: https://www.tensix.in/team
-description: "TENSIX is run by one person, Hemal Shah, in Ahmedabad. See the AI tools he uses to deliver faster, while you always talk to the person doing the work."
+description: "TENSIX is an independent studio founded by Hemal Shah, in Ahmedabad. See the AI tools he uses to deliver faster, while you always talk to the person doing the work."
 ---
 
 # Who Works at TENSIX
@@ -18,7 +18,7 @@ HS
 
 Founder and Only Owner
 
-The only person at TENSIX. Hemal talks to clients, plans the work, writes the code, sets up the servers and fixes things when needed. He works mainly with Python, FastAPI, Next.js and PostgreSQL. [More about Hemal](https://www.tensix.in/hemal-shah).
+Engineering Leadership at TENSIX. Hemal talks to clients, plans the work, writes the code, sets up the servers and fixes things when needed. He works mainly with Python, FastAPI, Next.js and PostgreSQL. [More about Hemal](https://www.tensix.in/hemal-shah).
 
 The Person You Talk To
 
@@ -52,7 +52,7 @@ Automations that deploy updates, back up databases, restart services if they sto
 
 Automation
 
-1 Person you deal with (Hemal Shah)
+1 Lead Systems Architect (Founder: Hemal Shah)
 
 0 Middlemen between you and the work
 
@@ -60,7 +60,7 @@ Navrangpura Ahmedabad, Gujarat
 
 Remote Clients in India and abroad
 
-## What You Can Hire Hemal For
+## What You Can Engage TENSIX For
 
 Three main areas of work. Each service has its own page with prices.
 
@@ -101,6 +101,6 @@ Fast websites, custom apps and the servers they run on, set up so updates are ea
 
 ## Talk directly to the person who will build it
 
-Send Hemal a short note about your project. He will reply himself with questions, a plan and a price.
+Send us a short note about your project. He will reply himself with questions, a plan and a price.
 
 [Start a Project](https://www.tensix.in/contact) [See Services and Prices](https://www.tensix.in/services)

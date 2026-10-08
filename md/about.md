@@ -1,12 +1,12 @@
 ---
-title: "About TENSIX | One-Person Software Studio, Ahmedabad"
+title: "About TENSIX | Software & AI Studio, Ahmedabad"
 url: https://www.tensix.in/about
 description: "TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. You talk directly to the person building your project, start to finish."
 ---
 
 # About TENSIX
 
-A one-person software and AI studio in Navrangpura, Ahmedabad. You work directly with Hemal Shah, the person who builds your project.
+An independent software and AI studio in Navrangpura, Ahmedabad. You work directly with Hemal Shah, the person who builds your project.
 
 ### What TENSIX Does
 
@@ -61,7 +61,7 @@ Straight answers on how TENSIX works, what it costs, and who you will be dealing
 
 ### How is TENSIX different from a typical IT company?
 
-Most IT companies put managers and junior developers between you and the work, and bill by the hour. TENSIX is run by one person, Hemal Shah, in Navrangpura, Ahmedabad. You speak directly with the person building your project. Work is priced per project or per month, agreed in writing before it starts, and Hemal uses AI tools to finish routine tasks faster.
+Most IT companies put managers and junior developers between you and the work, and bill by the hour. TENSIX is an independent studio founded by Hemal Shah, in Navrangpura, Ahmedabad. You speak directly with the person building your project. Work is priced per project or per month, agreed in writing before it starts, and Hemal uses AI tools to finish routine tasks faster.
 
 ### Can you sign an NDA or work white-label for my agency?
 
@@ -73,6 +73,6 @@ Yes. Monthly retainers start at ₹39,999 ($499) a month. A plan with more build
 
 ## Have a project in mind?
 
-Tell Hemal what you want to fix or build. You will get a plain answer on whether it makes sense, how long it takes and what it costs.
+Tell us what you want to fix or build. You will get a plain answer on whether it makes sense, how long it takes and what it costs.
 
-[Talk to Hemal](https://www.tensix.in/contact) [See Services and Prices](https://www.tensix.in/services)
+[Talk to Engineering](https://www.tensix.in/contact) [See Services and Prices](https://www.tensix.in/services)

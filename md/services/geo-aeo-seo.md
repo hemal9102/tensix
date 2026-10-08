@@ -100,6 +100,6 @@ Technical fixes can be done quickly, but search engines and AI tools can take we
 
 ## Ready to talk about AI Search Visibility (GEO, AEO and SEO)?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=geo-aeo-seo) [See past work](https://www.tensix.in/work)

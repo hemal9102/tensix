@@ -53,7 +53,7 @@ TENSIX builds business websites, custom software such as billing, inventory and 
 
 Is TENSIX a big agency? +
 
-No. TENSIX is a one-person studio. Hemal Shah handles every project himself and uses AI tools to speed up the work. This keeps costs down and means you always talk to the person doing the work.
+No. TENSIX is an independent studio. Hemal Shah handles every project himself and uses AI tools to speed up the work. This keeps costs down and means you always talk to the person doing the work.
 
 How much does a project cost? +
 

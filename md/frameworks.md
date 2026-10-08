@@ -6,7 +6,7 @@ description: "The 3-step method Hemal Shah of TENSIX uses to build AI assistants
 
 # How TENSIX Builds AI You Can Rely On
 
-A simple three-step method Hemal Shah uses on every AI project, so the system answers from your real data, stays fast and does not take risky actions on its own.
+A proven 3-step delivery framework developed by TENSIX Studio (Founder: Hemal Shah), so the system answers from your real data, stays fast and does not take risky actions on its own.
 
 ## The TENSIX AI Build Method
 
@@ -28,4 +28,4 @@ When the AI needs to do something real, like update your CRM or send an email, i
 
 Hemal Shah builds every system himself, using AI tools to work faster. Tell him what you want to automate and get a clear plan and a fixed price. See [AI agent development](https://www.tensix.in/services/ai-agent-development) and [automation](https://www.tensix.in/services/data-scraping-automation).
 
-[Talk to Hemal](https://www.tensix.in/#contact) [Get a Free Quote](https://www.tensix.in/contact)
+[Talk to Engineering](https://www.tensix.in/#contact) [Get a Free Quote](https://www.tensix.in/contact)

@@ -32,4 +32,4 @@ FastAPI is a popular Python toolkit for building the back end of an app (the par
 
 Hemal Shah builds every system himself, using AI tools to work faster. Tell him what you want to automate and get a clear plan and a fixed price.
 
-[Talk to Hemal](https://www.tensix.in/#contact) [Get a Free Quote](https://www.tensix.in/contact)
+[Talk to Engineering](https://www.tensix.in/#contact) [Get a Free Quote](https://www.tensix.in/contact)

@@ -130,6 +130,6 @@ For tools that run on a schedule, a small cloud server is usually enough. Hemal 
 
 ## Ready to talk about Data Scraping and Workflow Automation?
 
-Tell Hemal what you need. You get a written plan and a price before any work starts.
+Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=scraper-google-maps) [See past work](https://www.tensix.in/work)
