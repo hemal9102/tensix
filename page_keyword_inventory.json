@@ -1,0 +1,340 @@
+{
+  "total_pages": 46,
+  "unique_meta_keywords": 11,
+  "pages": [
+    {
+      "url": "about.html",
+      "title": "About TENSIX | Software & AI Studio, Ahmedabad",
+      "h1": "About TENSIX",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "ahmedabad-software-engineering.html",
+      "title": "Software &amp; AI Development Company in Ahmedabad | TENSIX",
+      "h1": "Software, Websites &amp; AI Automation in Ahmedabad",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "best-software-company-in-gota.html",
+      "title": "Software &amp; Website Company Serving Gota, Ahmedabad | TENSIX",
+      "h1": "Websites, Software and AI Automation for Gota Businesses",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs.html",
+      "title": "TENSIX Guides &amp; Insights | AI, Automation, Search",
+      "h1": "Guides &amp; Insights",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ahmedabad-healthcare-digital-survival.html",
+      "title": "Ahmedabad Hospitals: Win More Patients Online | TENSIX",
+      "h1": "Why Ahmedabad Hospitals Lose Patients Online, and How to Fix It",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ahmedabad-jewelry-digital-survival.html",
+      "title": "Ahmedabad Jewelers: Sell Online Safely | TENSIX",
+      "h1": "How Ahmedabad Jewelers Can Sell Online Safely and Win Buyer Trust",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ahmedabad-machinery-digital-survival.html",
+      "title": "Ahmedabad Machinery Makers: Win Export Orders | TENSIX",
+      "h1": "Why Ahmedabad Machinery Makers Lose Export Orders, and How to Fix It",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ahmedabad-pharma-digital-survival.html",
+      "title": "Ahmedabad Pharma: Secure Export Websites | TENSIX",
+      "h1": "Why Ahmedabad Pharma Firms Lose Export Buyers, and How to Stop It",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ahmedabad-real-estate-digital-survival.html",
+      "title": "Ahmedabad Real Estate: Win NRI Buyers Online | TENSIX",
+      "h1": "How Ahmedabad Builders Can Win NRI Buyers Online",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ahmedabad-textile-digital-survival.html",
+      "title": "Ahmedabad Textile Exporters: Get Found Online | TENSIX",
+      "h1": "Why Ahmedabad Textile Exporters Lose Global Buyers, and How to Fix It",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/ai-engineering/building-ai-agents-with-fastapi.html",
+      "title": "Building AI Agents with FastAPI: A Practical Guide | TENSIX",
+      "h1": "Building AI Agents with FastAPI: A Production Guide",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/automation/etl-pipeline-automation-n8n-python.html",
+      "title": "Automated Data Pipelines with Python & n8n | TENSIX",
+      "h1": "Reliable Data Pipelines with Python &amp; n8n: From SQL to AI Search",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/building-my-first-ai-project-lessons-learned.html",
+      "title": "Building My First AI Project: Engineering Lessons | TENSIX",
+      "h1": "Building My First AI Project \u2013 Lessons Learned",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/case-studies/china-vs-india-ai-race-cheap-llms.html",
+      "title": "China's Cheap AI vs India's Sovereign AI Push | TENSIX",
+      "h1": "China's Cheap AI vs India's Sovereign AI: What It Means for Business",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/case-studies/enterprise-rag-pgvector-fastapi-case-study.html",
+      "title": "Guide: AI Document Search with FastAPI &amp; pgvector | TENSIX",
+      "h1": "Guide: Fast AI Document Search with FastAPI &amp; pgvector",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/case-studies/irctc-system-design-scalability.html",
+      "title": "How IRCTC Handles the Tatkal Rush: System Design | TENSIX",
+      "h1": "IRCTC System Design: How It Handles the Tatkal Rush",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/case-studies/whatsapp-system-design-outage.html",
+      "title": "WhatsApp System Design: Why It Lags Under Load | TENSIX",
+      "h1": "WhatsApp System Design: Why Was WhatsApp Lagging?",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/n8n-vs-python-scripts-when-to-use-which.html",
+      "title": "n8n vs Python Scripts: Production Automation Guide | TENSIX",
+      "h1": "n8n vs Python Scripts \u2013 When to Use Which",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/seo-engineering/geo-aeo-semantic-seo-architecture.html",
+      "title": "GEO & AEO: How to Get Cited by AI Search Engines | TENSIX",
+      "h1": "GEO &amp; AEO: Using JSON-LD So AI Search Understands Your Business",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/the-future-of-seo-geo-and-search-engines.html",
+      "title": "The Future of SEO: GEO and AI Search Explained | TENSIX",
+      "h1": "The Future of SEO: Getting Found in AI Search (GEO)",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/the-ultimate-local-business-seo-master-strategy.html",
+      "title": "The Ultimate Local Business SEO & AEO Strategy | TENSIX",
+      "h1": "The Ultimate Local Business SEO Master Strategy",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/what-is-our-life.html",
+      "title": "What Is Our Life? Reflections on Purpose | TENSIX",
+      "h1": "What Is Our Life?",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "blogs/why-i-chose-automation-over-a-9-to-5.html",
+      "title": "Why I Chose Automation & Systems Over a 9-to-5 | TENSIX",
+      "h1": "Why I Chose Automation Over a 9-to-5",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "case-studies.html",
+      "title": "Case Studies: Problems Solved by TENSIX",
+      "h1": "Case Studies: Problem, Fix, Result",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "contact.html",
+      "title": "Contact TENSIX | Get a Fixed-Price Project Plan",
+      "h1": "Start Your Project",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "frameworks.html",
+      "title": "How TENSIX Builds Reliable AI Systems",
+      "h1": "How TENSIX Builds AI You Can Rely On",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "gallery.html",
+      "title": "Project Gallery: Screens from Real Builds | TENSIX",
+      "h1": "TENSIX Project Gallery",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "hemal-shah.html",
+      "title": "Hemal Shah | Founder of TENSIX, Ahmedabad",
+      "h1": "Who is Hemal Shah?",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "hk-engineering-ahmedabad.html",
+      "title": "TENSIX (Formerly HK Engineering) | Software, Ahmedabad",
+      "h1": "Software, AI and Websites in Navrangpura, Ahmedabad",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "index.html",
+      "title": "TENSIX | Software, AI & Websites in Ahmedabad",
+      "h1": "Engineering Bespoke Software &amp; Autonomous AI Systems for Scaling Enterprises.",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "is-my-site-ai-ready.html",
+      "title": "Is My Site AI Ready? Agent Diagnostic (ARD-22) | TENSIX",
+      "h1": "Benchmark your endpoints for AI Agent execution",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "resources.html",
+      "title": "AI Terms Explained Simply: Glossary | TENSIX",
+      "h1": "AI Terms Explained Simply",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "saas-developer-ahmedabad.html",
+      "title": "SaaS &amp; Custom Software Developer in Ahmedabad | TENSIX",
+      "h1": "Build Your Own Software Product (SaaS) in Ahmedabad",
+      "meta_keywords_count": 11,
+      "keywords": [
+        "SaaS Developer Ahmedabad",
+        "SaaS Development Company in Ahmedabad",
+        "Multi-Tenant Architecture",
+        "Cloud Software Architecture Ahmedabad",
+        "Cloud Software Gujarat",
+        "Custom CRM Development Company Ahmedabad",
+        "SaaS MVP Development India",
+        "Stripe Razorpay SaaS Integration",
+        "Next.js SaaS Application Development",
+        "FastAPI developer Ahmedabad",
+        "best software company in ahmedabad"
+      ]
+    },
+    {
+      "url": "services.html",
+      "title": "Services and Prices: AI, Software, Web, Cloud | TENSIX",
+      "h1": "High-Performance Engineering &amp; AI Systems, Transparently Scoped",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/ai-agent-development.html",
+      "title": "AI Agent and Assistant Development, Ahmedabad | TENSIX",
+      "h1": "AI Assistants and Agents That Do Real Work for Your Business",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/cloud-devops.html",
+      "title": "Cloud Server, VPS and DevOps Setup | TENSIX",
+      "h1": "Secure Cloud Servers and Automatic Deployments, Set Up for You",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/custom-software-saas-development.html",
+      "title": "Custom Software, CRM and SaaS Development | TENSIX",
+      "h1": "Custom Software, CRM and SaaS Built Around How You Work",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/data-scraping-automation.html",
+      "title": "Web Scraping and Workflow Automation | TENSIX",
+      "h1": "Stop Copy-Pasting: Automatic Data Collection and Entry",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/email-deliverability.html",
+      "title": "Email Deliverability and Amazon SES Setup | TENSIX",
+      "h1": "Get Your Business Emails Into the Inbox, Not the Spam Folder",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/fractional-cto-retainers.html",
+      "title": "Monthly Tech Retainers and Fractional CTO | TENSIX",
+      "h1": "Ongoing Tech Help Every Month, Without Hiring a Full Team",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/geo-aeo-seo.html",
+      "title": "GEO, AEO and SEO for AI Search Visibility | TENSIX",
+      "h1": "Get Found on Google and Cited by ChatGPT, Gemini and Perplexity",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/website-development.html",
+      "title": "Website Design and Development in Ahmedabad | TENSIX",
+      "h1": "Fast, Mobile-Friendly Business Websites That Bring In Enquiries",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "software-company-in-navrangpura-ahmedabad.html",
+      "title": "Software Company in Navrangpura, Ahmedabad | TENSIX",
+      "h1": "Software &amp; AI Studio in Navrangpura, Ahmedabad",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "team.html",
+      "title": "Studio Engineering & Operations | TENSIX Studio",
+      "h1": "Who Works at TENSIX",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "tensix-vs-traditional-agencies.html",
+      "title": "TENSIX vs Agencies, Outsourcing &amp; Freelancers",
+      "h1": "TENSIX vs Agencies, Outsourcing Firms &amp; Freelancers",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "work.html",
+      "title": "Our Work: Live Projects Built by TENSIX",
+      "h1": "Projects TENSIX Has Built",
+      "meta_keywords_count": 0,
+      "keywords": []
+    }
+  ]
+}
