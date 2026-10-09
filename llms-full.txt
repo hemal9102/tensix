@@ -439,7 +439,7 @@ Service Catalogue
 
 Price Range
 
-₹11,999 to ₹1,25,000+ (Fixed quotes, 0 hourly billing)
+₹35,000 to ₹1,25,000+ (Fixed quotes, 0 hourly billing)
 
 Delivery SLA
 
@@ -517,16 +517,16 @@ No hourly billing and no surprise invoices. Each project is built directly by He
 
 ### Basic Website
 
-A clean, professional website that builds trust with new customers.
+Sub-300ms edge-rendered corporate web system engineered for conversion, zero maintenance, and 100/100 Core Web Vitals.
 
-₹14,999 / one-time investment
+₹49,999 / one-time investment
 
 - 6–10 pages (for example Home, About, Services, Contact)
 - Works well on phones and tablets
 - WhatsApp button and email enquiry form
 - Google Maps location and links to your social profiles
 - Fast loading and basic on-page SEO set-up
-- Launch on Hostinger hosting
+- Cloudflare Edge + Global CDN with SSL Hardening
 - **Turnaround:** 5–7 business days
 
 [Start a basic website →](https://www.tensix.in/contact?plan=web-basic)
@@ -537,7 +537,7 @@ Recommended
 
 A bigger website designed to collect enquiries and send them to you instantly.
 
-₹24,999 / one-time investment
+₹85,000 / one-time investment
 
 - 15+ custom pages
 - Enquiries saved in a database, with instant WhatsApp or email alerts
@@ -553,7 +553,7 @@ A bigger website designed to collect enquiries and send them to you instantly.
 
 A full website with your own admin panel, so your team can manage content without code.
 
-₹45,000 / one-time investment
+₹1,45,000 / one-time investment
 
 - Built with Next.js and React, with smooth animations
 - Admin dashboard to manage blogs, enquiries and page content
@@ -571,7 +571,7 @@ A full website with your own admin panel, so your team can manage content withou
 
 The settings Gmail and Yahoo now require, so your emails are trusted instead of sent to spam.
 
-₹12,999 / one-time setup
+₹29,999 / one-time setup
 
 - SPF, DKIM and DMARC records (the identity checks email providers use) set up correctly
 - Custom return-path domain, which removes "via amazon.com" style labels
@@ -619,7 +619,7 @@ A separate set-up for cold email, so your main company domain stays protected.
 
 Bills, purchase orders and bank alerts from your inbox, entered into your sheet or database automatically.
 
-₹16,999 / one-time setup
+₹45,000 / one-time setup
 
 - Secure connection to your Gmail or other inbox, checking for new mail around the clock
 - Attachments such as PDF, Excel and CSV files downloaded automatically
@@ -636,7 +636,7 @@ Recommended
 
 Lists of local businesses in any city and category, ready for your sales team, without a monthly tool subscription.
 
-₹24,999 / one-time setup
+₹85,000 / one-time setup
 
 - Collects business listings for any category and city, using Playwright (browser automation)
 - Business name, phone, email (where available), website, rating and address
@@ -668,7 +668,7 @@ A custom tool that watches websites for you, such as competitor prices, property
 
 A properly secured Linux server, so you are no longer limited by shared hosting.
 
-₹11,999 / one-time setup
+₹35,000 / one-time setup
 
 - Server set-up on Oracle Cloud, Plesk, DigitalOcean or Hostinger
 - Firewall, key-only login and automatic blocking of password-guessing attacks
@@ -1016,7 +1016,7 @@ Yes. Work is done online in English, with clear written documentation and fixed-
 
 How does fixed pricing work?
 
-Each project has a scope and price agreed in writing before work starts, from ₹45,000 for sovereign infrastructure and email pipeline salvage to enterprise custom software and SaaS platforms. You know the deliverables and launch date in advance, with zero hourly billing.
+Each project has a scope and price agreed in writing before work starts, from ₹1,45,000 for sovereign infrastructure and email pipeline salvage to enterprise custom software and SaaS platforms. You know the deliverables and launch date in advance, with zero hourly billing.
 
 Who owns the code and the servers?
 
@@ -1755,7 +1755,7 @@ TENSIX is an independent studio. Hemal Shah plans, builds and supports every pro
 
 ### Is TENSIX cheaper than an agency?
 
-It depends on the project. TENSIX prices are fixed and published, starting at ₹11,999 for a server setup, so you can compare them with any other quote before you decide. Monthly plans have no long contract.
+It depends on the project. TENSIX prices are fixed and published, starting at ₹35,000 for a server setup, so you can compare them with any other quote before you decide. Monthly plans have no long contract.
 
 ### Who owns the code when the project ends?
 
@@ -2087,7 +2087,7 @@ Fixed scope agreed in writing before work starts. You own the code and accounts.
 
 A properly secured Linux server, so you are no longer limited by shared hosting.
 
-₹11,999 / one-time setup
+₹35,000 / one-time setup
 
 - Server set-up on Oracle Cloud, Plesk, DigitalOcean or Hostinger
 - Firewall, key-only login and automatic blocking of password-guessing attacks
@@ -2361,7 +2361,7 @@ Fixed scope agreed in writing before work starts. You own the code and accounts.
 
 Bills, purchase orders and bank alerts from your inbox, entered into your sheet or database automatically.
 
-₹16,999 / one-time setup
+₹45,000 / one-time setup
 
 - Secure connection to your Gmail or other inbox, checking for new mail around the clock
 - Attachments such as PDF, Excel and CSV files downloaded automatically
@@ -2378,7 +2378,7 @@ Recommended
 
 Lists of local businesses in any city and category, ready for your sales team, without a monthly tool subscription.
 
-₹24,999 / one-time setup
+₹85,000 / one-time setup
 
 - Collects business listings for any category and city, using Playwright (browser automation)
 - Business name, phone, email (where available), website, rating and address
@@ -2499,7 +2499,7 @@ Fixed scope agreed in writing before work starts. You own the code and accounts.
 
 The settings Gmail and Yahoo now require, so your emails are trusted instead of sent to spam.
 
-₹12,999 / one-time setup
+₹29,999 / one-time setup
 
 - SPF, DKIM and DMARC records (the identity checks email providers use) set up correctly
 - Custom return-path domain, which removes "via amazon.com" style labels
@@ -2880,16 +2880,16 @@ Fixed scope agreed in writing before work starts. You own the code and accounts.
 
 ### Basic Website
 
-A clean, professional website that builds trust with new customers.
+Sub-300ms edge-rendered corporate web system engineered for conversion, zero maintenance, and 100/100 Core Web Vitals.
 
-₹14,999 / one-time investment
+₹49,999 / one-time investment
 
 - 6–10 pages (for example Home, About, Services, Contact)
 - Works well on phones and tablets
 - WhatsApp button and email enquiry form
 - Google Maps location and links to your social profiles
 - Fast loading and basic on-page SEO set-up
-- Launch on Hostinger hosting
+- Cloudflare Edge + Global CDN with SSL Hardening
 - **Turnaround:** 5–7 business days
 
 [Start a basic website →](https://www.tensix.in/contact?plan=web-basic)
@@ -2900,7 +2900,7 @@ Recommended
 
 A bigger website designed to collect enquiries and send them to you instantly.
 
-₹24,999 / one-time investment
+₹85,000 / one-time investment
 
 - 15+ custom pages
 - Enquiries saved in a database, with instant WhatsApp or email alerts
@@ -2916,7 +2916,7 @@ A bigger website designed to collect enquiries and send them to you instantly.
 
 A full website with your own admin panel, so your team can manage content without code.
 
-₹45,000 / one-time investment
+₹1,45,000 / one-time investment
 
 - Built with Next.js and React, with smooth animations
 - Admin dashboard to manage blogs, enquiries and page content
@@ -3031,7 +3031,7 @@ No. TENSIX is an independent studio. Hemal Shah handles every project himself an
 
 How much does a project cost? +
 
-Prices are fixed and published. Websites start at ₹14,999, cloud server set-up at ₹11,999, email set-up at ₹12,999, data automation at ₹16,999, AI agents at ₹29,999 and custom software at ₹34,999. Monthly tech partner plans start at ₹39,999 per month. Search visibility work is quoted per project.
+Prices are fixed and published. Websites start at ₹49,999, cloud server set-up at ₹35,000, email set-up at ₹29,999, data automation at ₹45,000, AI agents at ₹29,999 and custom software at ₹34,999. Monthly tech partner plans start at ₹39,999 per month. Search visibility work is quoted per project.
 
 How long does a project take? +
 
@@ -3328,7 +3328,7 @@ We set up and improve your Google Business Profile, add structured data (labels 
 
 How much does a website cost and how long does it take? +
 
-A basic business website starts at ₹14,999 ($199) and takes 5–7 business days. A larger site with lead capture starts at ₹24,999 ($325) and takes 7–10 business days. Both include mobile-friendly design and basic local SEO.
+A basic business website starts at ₹49,999 ($600) and takes 5–7 business days. A larger site with lead capture starts at ₹85,000 ($1,050) and takes 7–10 business days. Both include mobile-friendly design and basic local SEO.
 
 How do I get started? +
 

@@ -169,6 +169,23 @@ function initAgentAudit() {
     core.forEach(c => main.appendChild(renderCheck(c, fixes)));
     results.appendChild(main);
 
+    // Direct WhatsApp Conversion & Remediation Gate
+    const ctaGate = el('div', 'conversion-box');
+    ctaGate.style.cssText = 'margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(37,211,102,0.08), rgba(59,130,246,0.08)); border: 1px solid rgba(37,211,102,0.3); border-radius: 0.75rem; text-align: left;';
+    const ctaTitle = el('h4', null, '⚡ Remediation Sprint: Fix Agentic Failures');
+    ctaTitle.style.cssText = 'font-size: 1.15rem; color: #0F172A; margin: 0 0 0.5rem 0; font-weight: 700;';
+    const ctaDesc = el('p', null, 'AI assistants and autonomous engines (Claude, ChatGPT, Perplexity) bypass websites failing RFC 9421, RFC 9727, and schema discovery. Connect directly with our lead architect to deploy machine-readable protocol rails.');
+    ctaDesc.style.cssText = 'font-size: 0.9rem; color: #334155; margin: 0 0 1rem 0; line-height: 1.5;';
+    const ctaBtn = el('a', 'cta-button primary', 'Remediate on WhatsApp Direct ↗');
+    ctaBtn.href = 'https://wa.me/918320278775?text=' + encodeURIComponent('Hi TENSIX, I just ran an Agent-Readiness scan on ' + scannedUrl + ' and would like to review architectural remediation.');
+    ctaBtn.target = '_blank';
+    ctaBtn.rel = 'noopener noreferrer';
+    ctaBtn.style.cssText = 'display: inline-flex; align-items: center; gap: 0.5rem; background: #166534; color: #fff; padding: 0.75rem 1.4rem; border-radius: 6px; font-weight: 700; text-decoration: none;';
+    ctaGate.appendChild(ctaTitle);
+    ctaGate.appendChild(ctaDesc);
+    ctaGate.appendChild(ctaBtn);
+    results.appendChild(ctaGate);
+
     if (rest.length) {
       const d = el('details', 'audit-advanced');
       d.appendChild(el('summary', null,
