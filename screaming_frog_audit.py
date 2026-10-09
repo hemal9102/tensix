@@ -1,7 +1,7 @@
 import os, re, json
 from urllib.parse import urlparse, urldefrag
 
-ROOT = r"H:\portfolio_website\tensix"
+ROOT = r"D:\projects\tensix"
 
 # 1. Discover all HTML pages
 pages = {}
@@ -150,8 +150,11 @@ for rel, data in pages.items():
             src = src_match.group(1).split("?")[0]
             if not src.startswith("http") and not src.startswith("data:"):
                 # resolve local image path
-                curr_dir = os.path.dirname(os.path.join(ROOT, rel))
-                target_img = os.path.normpath(os.path.join(curr_dir, src))
+                if src.startswith("/"):
+                    target_img = os.path.normpath(os.path.join(ROOT, src.lstrip("/")))
+                else:
+                    curr_dir = os.path.dirname(os.path.join(ROOT, rel))
+                    target_img = os.path.normpath(os.path.join(curr_dir, src))
                 if not os.path.exists(target_img):
                     issues["broken_images"].append((rel, src))
 
