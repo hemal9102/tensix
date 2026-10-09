@@ -385,13 +385,8 @@ function initScrollProgress() {
   // Use scaleX for better performance
   bar.style.transformOrigin = 'left center';
   
-  // Defer scrollHeight read to avoid forced reflow at init
   let maxScroll = 1;
-  const updateMax = () => { maxScroll = document.body.scrollHeight - window.innerHeight || 1; };
-  requestAnimationFrame(updateMax);
-  window.addEventListener('resize', updateMax, { passive: true });
-
-  let currentScroll = window.scrollY;
+  let currentScroll = 0;
   let ticking = false;
 
   const update = () => {
@@ -400,15 +395,23 @@ function initScrollProgress() {
     ticking = false;
   };
 
+  const updateMax = () => {
+    maxScroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight || 1;
+    currentScroll = window.scrollY || 0;
+    update();
+  };
+
+  // Defer all geometric reads and DOM writes until next frame after initial layout pass
+  window.requestAnimationFrame(updateMax);
+  window.addEventListener('resize', updateMax, { passive: true });
+
   window.addEventListener('scroll', () => {
-    currentScroll = window.scrollY;
+    currentScroll = window.scrollY || 0;
     if (!ticking) {
       window.requestAnimationFrame(update);
       ticking = true;
     }
   }, { passive: true });
-  
-  update();
 }
 
 /* ── Cursor Glow ────────────────────────────── */

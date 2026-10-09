@@ -315,4 +315,4 @@ Sitemap: https://www.tensix.in/sitemap.xml
 Sitemap: https://www.tensix.in/sitemap_index.xml
 
 # ── Agent discovery (ARD) ─────────────────────────────────────────────────────
-Agentmap: https://www.tensix.in/.well-known/ai-catalog.json
+# Agent catalog linked via <link rel="ai-catalog" href="/.well-known/ai-catalog.json"> in HTML head

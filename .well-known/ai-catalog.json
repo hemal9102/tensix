@@ -1,15 +1,10 @@
 {
   "specVersion": "1.0",
-  "host": {
-    "displayName": "TENSIX",
-    "identifier": "https://www.tensix.in/",
-    "url": "https://www.tensix.in/"
-  },
   "entries": [
     {
       "identifier": "urn:air:www.tensix.in:api:contact",
       "displayName": "TENSIX project inquiry API",
-      "type": "application/openapi+json",
+      "type": "application/ai-catalog+json",
       "url": "https://www.tensix.in/openapi.json",
       "description": "OpenAPI 3.1 description of POST /api/contact, which sends a project inquiry (name, email, message, optional plan slug) to TENSIX founder Hemal Shah in Ahmedabad, India.",
       "representativeQueries": [
@@ -22,7 +17,7 @@
     {
       "identifier": "urn:air:www.tensix.in:skill:request-a-quote",
       "displayName": "Request a quote from TENSIX",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://www.tensix.in/.well-known/agent-skills/request-a-quote/SKILL.md",
       "description": "Agent skill: TENSIX services, plan slugs and INR prices, and how to submit an inquiry with the user's consent.",
       "representativeQueries": [
