@@ -682,3 +682,10 @@ pre, code {
   color: #0F172A;
   margin: 0;
 }
+
+/* Mobile Clearance for Fixed CTA Bar */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 74px !important;
+  }
+}
