@@ -10,12 +10,35 @@ TENSIX builds custom AI assistants and AI agents (software that reads informatio
 
 [Book a consultation](https://www.tensix.in/contact?plan=ai-swarm) [See plans and prices ↓](https://www.tensix.in/services/ai-agent-development#plans)
 
-## Who this is for
+Target Fit
 
-- Teams that answer the same customer or staff questions again and again
-- Businesses with manuals, SOPs or product catalogues that people struggle to search
-- Owners who want leads, documents or reports handled without adding staff
-- Companies that want to use AI but need their data to stay in their own systems
+## Who This Is For
+
+Autonomous reasoning systems built for businesses handling repetitive data workflows.
+
+-
+
+Support & Operations TeamsAutomated FAQ
+
+Teams answering repetitive customer queries or internal employee requests that can be handled 24/7 with zero latency.
+
+-
+
+Knowledge-Heavy EnterprisesPrivate RAG
+
+Businesses with complex manuals, operational SOPs, or dense catalogs that teams spend hours manually searching.
+
+-
+
+Growth & Sales OperatorsLead Triage
+
+Owners and leaders wanting inbound inquiries qualified, CRM records updated, and custom reports drafted without adding headcount.
+
+-
+
+Data-Sensitive OrganizationsSelf-Hosted
+
+Companies that need advanced LLM workflows with strict RBAC guardrails, keeping proprietary company IP within their private servers.
 
 ## How it works
 

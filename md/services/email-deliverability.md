@@ -10,12 +10,35 @@ TENSIX fixes the settings that decide whether your emails reach the inbox, and s
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
 
-## Who this is for
+Target Fit
 
-- Businesses whose emails or invoices end up in customers' spam folders
-- Companies paying high monthly fees for newsletter tools
-- Apps that need to send sign-up, OTP or order emails reliably
-- Sales teams that want to run cold email without risking the main company domain
+## Who This Is For
+
+Sovereign email infrastructure configured for 99%+ inbox placement and low-cost volume.
+
+-
+
+B2B Companies & ExportersInbox Placement
+
+Businesses whose commercial proposals, contracts, or invoices land in junk folders because of faulty SPF, DKIM, or DMARC DNS records.
+
+-
+
+SaaS & Web ApplicationsTransactional API
+
+Apps requiring sub-second, highly reliable delivery for user sign-ups, verification OTPs, and password reset links via hardened Amazon SES.
+
+-
+
+High-Volume MarketersAmazon SES Setup
+
+Brands paying exorbitant monthly subscriptions to Mailchimp or Sendgrid that want identical high-speed delivery at AWS raw costs ($0.10/1k emails).
+
+-
+
+Outbound Sales TeamsDomain Protection
+
+Sales operations running prospecting campaigns that need dedicated secondary domains warmed up properly without risking their primary corporate reputation.
 
 ## How it works
 

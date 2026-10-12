@@ -10,12 +10,35 @@ TENSIX sets up and secures cloud servers (VPS) so your website or app runs fast 
 
 [Book a consultation](https://www.tensix.in/contact?plan=cloud-cicd) [See plans and prices ↓](https://www.tensix.in/services/cloud-devops#plans)
 
-## Who this is for
+Target Fit
 
-- Businesses whose website is slow or goes down on shared hosting
-- Development teams that still upload files to the server by hand
-- Companies that have never checked whether their backups actually work
-- Anyone running several sites who wants one secure, easy-to-manage server
+## Who This Is For
+
+Hardened cloud infrastructure and automated deployment pipelines for reliable digital operations.
+
+-
+
+High-Traffic Sites & StoresVPS Migration
+
+Businesses suffering from sluggish response times, database bottlenecks, or random downtime on overcrowded shared hosting.
+
+-
+
+Growing Software TeamsAutomated CI/CD
+
+Developers still transferring files manually via FTP or SSH who need reliable GitHub Actions pipelines with zero-downtime deployments.
+
+-
+
+Mission-Critical PlatformsDisaster Recovery
+
+Companies that lack automated daily off-site backups, verified restore drills, SSL auto-renewal, and 24/7 uptime health monitors.
+
+-
+
+Multi-Site OperatorsConsolidated Cloud
+
+Organizations hosting several web properties that want a single, hardened Oracle, AWS, or DigitalOcean VPS managed seamlessly.
 
 ## How it works
 

@@ -566,13 +566,41 @@ The system goes live on your own cloud or hosting account through automated depl
 
 🔑 You own it
 
+The Studio Difference
+
 ### How Working With TENSIX Is Different
 
-- You talk directly to the person building your project, not an account manager.
-- Prices are fixed and written down before work starts, instead of hourly billing.
-- Code goes into your own GitHub account and runs on your own cloud account.
-- Automations are self-hosted where it makes sense, so you avoid per-task fees.
-- Because TENSIX is a boutique studio, only a select number of client projects run at the same time.
+Architectural principles and commercial terms designed specifically for high-growth businesses.
+
+-
+
+Direct Architect Access0 Middlemen
+
+You collaborate directly with founder and architect Hemal Shah—no account managers, junior sales staff, or outsourced agency handoffs.
+
+-
+
+Fixed-Milestone Pricing0 Hourly Padding
+
+Prices and milestones are agreed in writing before work starts. You never receive surprise invoices or speculative hourly bills.
+
+-
+
+100% Code & IP OwnershipYour GitHub & Cloud
+
+All source code is committed directly to your private GitHub repository and deployed to your own server accounts from Day 1.
+
+-
+
+Sovereign Automation StacksNo Per-Task Fees
+
+Pipelines and AI agents are self-hosted on your own cloud VPS where feasible, eliminating recurring per-task fees charged by Zapier or Make.
+
+-
+
+Boutique Focus & High VelocityLimited Slots
+
+TENSIX takes on only a strictly limited batch of client engagements concurrently, guaranteeing senior engineering focus on your project.
 
 [Read the full comparison with traditional agencies →](https://www.tensix.in/tensix-vs-traditional-agencies)
 

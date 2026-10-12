@@ -10,12 +10,35 @@ TENSIX designs and builds business websites that load fast on phones, look profe
 
 [Book a consultation](https://www.tensix.in/contact?plan=web-standard) [See plans and prices ↓](https://www.tensix.in/services/website-development#plans)
 
-## Who this is for
+Target Fit
 
-- Local businesses that need a professional website for the first time
-- Companies with a slow or outdated WordPress site
-- Businesses that want enquiries to arrive straight on WhatsApp or email
-- Firms that want to update their own blog and pages without a developer
+## Who This Is For
+
+Modern, ultra-fast corporate websites engineered for conversion and long-term ownership.
+
+-
+
+First-Time Online BusinessesBrand Authority
+
+Local companies and service providers that need a credible, high-converting digital presence built right the first time.
+
+-
+
+WordPress Migration ClientsSub-300ms Speed
+
+Businesses tired of slow, insecure, plugin-heavy WordPress installations that crash, lag on mobile, and lose Google rankings.
+
+-
+
+Lead-Driven Commercial FirmsWhatsApp Routing
+
+Enterprises that need high-intent quote requests routed immediately into WhatsApp and company email with zero enquiry loss.
+
+-
+
+Self-Managing TeamsIntuitive CMS
+
+Marketing and content teams that want a clean, simple admin panel to publish blogs and updates without paying hourly retainers.
 
 ## How it works
 

@@ -10,12 +10,35 @@ TENSIX makes your website easy for Google and AI assistants like ChatGPT, Gemini
 
 [Book a consultation](https://www.tensix.in/contact?plan=geo-aeo-seo) [See plans and prices ↓](https://www.tensix.in/services/geo-aeo-seo#plans)
 
-## Who this is for
+Target Fit
 
-- Businesses that get little traffic from Google despite having a website
-- Companies that want to be mentioned when customers ask ChatGPT or Gemini for a recommendation
-- Local businesses in Ahmedabad that want to show up in nearby searches
-- Service and software firms whose offer is hard to explain in a search result
+## Who This Is For
+
+Search visibility engineered for traditional search engines and autonomous AI answer bots.
+
+-
+
+Under-Indexed WebsitesTechnical SEO
+
+Businesses that receive little or no organic discovery from Google despite having invested heavily in a live website.
+
+-
+
+Forward-Thinking BrandsGEO & LLM Citations
+
+Companies that want to be cited as authoritative answers when prospective clients ask ChatGPT, Claude, Gemini, or Perplexity for solutions.
+
+-
+
+Local Commercial LeadersRegional Dominance
+
+Ahmedabad and Gujarat enterprises aiming to dominate high-intent local map packs, nearby commercial queries, and mobile searches.
+
+-
+
+Complex B2B & SaaS VendorsSemantic Schema
+
+Technical service firms whose offerings require deep JSON-LD structured data, knowledge graph validation, and authoritative Q&A pages.
 
 ## How it works
 

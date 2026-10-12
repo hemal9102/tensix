@@ -10,12 +10,35 @@ TENSIX builds custom business software: back-end systems, internal tools like CR
 
 [Book a consultation](https://www.tensix.in/contact?plan=software-saas) [See plans and prices ↓](https://www.tensix.in/services/custom-software-saas-development#plans)
 
-## Who this is for
+Target Fit
 
-- Businesses that have outgrown Excel sheets and WhatsApp groups
-- Founders who want to launch a software product and test it with real customers
-- Companies paying for several subscriptions that do not fit their process
-- Teams that need an app or website connected to their own data
+## Who This Is For
+
+Bespoke software platforms and SaaS products built around your exact commercial logic.
+
+-
+
+Operational BusinessesInternal OS
+
+Companies that have outgrown error-prone Excel spreadsheets and messy WhatsApp groups, needing a centralized internal operations hub.
+
+-
+
+SaaS Founders & StartupsMVP Launch
+
+Visionary founders who want a fast, production-grade SaaS product with authentication, Stripe/Razorpay billing, and client dashboards in 2–3 weeks.
+
+-
+
+Subscription-Fatigued FirmsSovereign Build
+
+Businesses paying high monthly recurring fees for generic third-party SaaS tools that force staff into clumsy, mismatched workflows.
+
+-
+
+Data-Driven EnterprisesCustom Portals
+
+Teams requiring custom client-facing web portals, wholesale order management, or real-time admin dashboards linked directly to their private database.
 
 ## How it works
 

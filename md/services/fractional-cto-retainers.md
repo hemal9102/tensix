@@ -10,12 +10,35 @@ TENSIX retainers give you a set amount of engineering work, server care and tech
 
 [Book a consultation](https://www.tensix.in/contact?plan=retainer-ai-pod) [See plans and prices ↓](https://www.tensix.in/services/fractional-cto-retainers#plans)
 
-## Who this is for
+Target Fit
 
-- Growing businesses that need regular tech work but not a full-time developer
-- Founders who want a senior person to make technical decisions with them
-- Companies with a website, app or server that needs regular updates and care
-- Teams that want a code audit or architecture advice before a big build
+## Who This Is For
+
+Tailored engineering leadership and hands-on systems architecture for specific growth stages.
+
+-
+
+Growing BusinessesRetainer Fit
+
+Teams that need regular tech execution, automated pipelines, and bug fixes without the overhead of hiring a full-time developer.
+
+-
+
+Founders & LeadershipFractional CTO
+
+Solo founders and CEOs who want a battle-tested technical partner to make architectural choices, interview developers, and guide tech strategy.
+
+-
+
+Active Digital PlatformsSLA Care
+
+Companies with a live website, mobile app, or cloud server that needs proactive maintenance, security patches, backups, and zero-downtime care.
+
+-
+
+Scaling Engineering TeamsCode Audit
+
+Teams planning a large build or facing performance bottlenecks that need an objective architectural audit before scaling.
 
 ## How it works
 

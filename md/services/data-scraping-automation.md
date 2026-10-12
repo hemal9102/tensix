@@ -10,12 +10,35 @@ TENSIX builds small automatic systems that collect data for you: reading invoice
 
 [Book a consultation](https://www.tensix.in/contact?plan=scraper-google-maps) [See plans and prices ↓](https://www.tensix.in/services/data-scraping-automation#plans)
 
-## Who this is for
+Target Fit
 
-- Offices where staff type invoice or order details from email into Excel or Tally
-- Sales teams that need lists of local businesses to contact
-- Shops and brands that want to track competitor prices
-- Anyone paying per-task fees for Zapier who wants a cheaper option
+## Who This Is For
+
+Automated data harvesting pipelines and self-hosted workflows to replace manual grunt work.
+
+-
+
+Back-Office & Finance TeamsERP & Tally Sync
+
+Offices where employees waste hours manually re-typing invoice, dispatch, or order details from emails and PDFs into spreadsheets or Tally.
+
+-
+
+B2B Sales & Growth TeamsLead Extraction
+
+Outbound teams that need accurate, structured lists of verified local companies, phone numbers, and decision-maker contact details extracted automatically.
+
+-
+
+E-Commerce & Retail BrandsPrice Tracking
+
+Brands, wholesale distributors, and sellers that need daily automated intelligence on competitor pricing, stock levels, and product availability.
+
+-
+
+High-Volume Workflow UsersSelf-Hosted n8n
+
+Companies paying escalating per-task fees for Zapier or Make that want a private, unlimited automation engine running on their own VPS.
 
 ## How it works
 
