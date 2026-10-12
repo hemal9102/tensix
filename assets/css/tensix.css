@@ -530,7 +530,7 @@ article table th, article table td, table:not(.compare-table) th, table:not(.com
 article table th, table:not(.compare-table) th {
   background: rgba(15, 23, 42, 0.04);
   font-weight: 600;
-  color: #0F172A;
+  color: inherit; /* header rows set their own colour (e.g. white on navy) */
 }
 pre, code {
   max-width: 100%;
@@ -550,6 +550,9 @@ pre, code {
 @media (min-width: 900px) {
   .svc-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .svc-list li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
   }
 }
 .svc-list li {
@@ -611,7 +614,7 @@ pre, code {
   gap: 0.5rem;
 }
 .svc-list-badge {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -622,9 +625,9 @@ pre, code {
   color: #1D4ED8;
 }
 .svc-list-desc {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #475569;
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0;
 }
 @media (max-width: 640px) {
@@ -697,65 +700,72 @@ pre, code {
   font-weight: 600;
 }
 .geo-citation-grounding {
-  max-width: 840px;
+  max-width: 960px;
   margin: 2rem auto 2.5rem;
-  padding: 1.25rem 1.5rem;
-  background: rgba(15, 23, 42, 0.025);
-  border: 1px solid rgba(15, 23, 42, 0.09);
+  padding: 1.25rem 1.5rem 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
   border-left: 4px solid #1D4ED8;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
   text-align: left;
-  backdrop-filter: blur(8px);
 }
 .geo-grounding-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
 }
 .geo-grounding-badge {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #1D4ED8;
   background: rgba(29, 78, 216, 0.08);
-  padding: 0.2rem 0.55rem;
-  border-radius: 4px;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
 }
 .geo-grounding-meta {
-  font-size: 0.76rem;
-  color: #64748B;
+  font-size: 0.8125rem;
+  color: #475569;
   font-weight: 500;
 }
 .geo-specs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.75rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
   margin: 0;
   padding: 0;
 }
 .geo-spec-item {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.3rem;
+  padding: 0.85rem 1rem;
+  background: #F8FAFC;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-radius: 0.65rem;
 }
 .geo-spec-label {
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #64748B;
+  color: #475569;
 }
 .geo-spec-value {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  line-height: 1.45;
   color: #0F172A;
   margin: 0;
+}
+@media (max-width: 640px) {
+  .geo-citation-grounding { padding: 1rem; margin: 1.25rem 0; }
+  .geo-specs-grid { grid-template-columns: 1fr; gap: 0.6rem; }
 }
 
 /* Mobile Clearance for Fixed CTA Bar */
@@ -775,3 +785,17 @@ pre, code {
   }
 }
 
+/* Mobile readability floor + 44px touch targets (ui-ux-pro-max: touch, typography) */
+@media (max-width: 768px) {
+  .tag, .svc-list-badge, .pricing-period, .pricing-badge, .section-eyebrow, .project-status, .footer-tech-badge, .case-sector, .geo-spec-label { font-size: max(0.75rem, 12px); }
+  .nav-toggle, .logo { min-height: 44px; min-width: 44px; }
+  summary, .card-link, .blog-back, footer a { display: inline-flex; align-items: center; min-height: 44px; }
+  summary { display: flex; }
+}
+
+/* Reading comfort: 72ch measure on articles; reclaim width stolen by stacked padding on phones */
+article p, article li { max-width: 72ch; }
+@media (max-width: 640px) {
+  main section.section, main section.page-hero { padding-left: 1rem; padding-right: 1rem; }
+  main .blog-post { padding-left: 1rem; padding-right: 1rem; }
+}
