@@ -860,3 +860,63 @@ article p, article li { max-width: 72ch; }
 details p, [class*="faq"] p { max-width: 68ch; }
 /* home: spec panel lines up with the "TENSIX in Short" card above it */
 .aeo-callout-chassis ~ .geo-citation-grounding { max-width: 1100px; }
+
+/* ── Section header pill/eyebrow: own line above the heading (heading is inline-block for its underline) ── */
+.section-header > :is(div, span):first-child[style*="inline-block"] { display: block !important; width: fit-content; margin: 0 auto 0.85rem !important; }
+
+/* ── Direct-answer lead paragraph on service pages: readable callout ── */
+.aeo-direct-answer {
+  padding: 1rem 1.25rem;
+  background: #F8FAFC;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-left: 4px solid #1D4ED8;
+  border-radius: 0.75rem;
+  text-align: left;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* ── /team: cards, badges, division grid (previously unstyled) ── */
+.team-grid, .division-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin: 2rem 0; }
+.division-grid { grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+.team-card, .division-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+.founder-card { border-color: rgba(29, 78, 216, 0.35); }
+.team-card h3, .division-card h3 { font-size: 1.15rem; color: #0F172A; }
+.team-card p, .division-card p { font-size: 0.95rem; line-height: 1.65; color: #475569; }
+.team-avatar, .division-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 64px; height: 64px; flex-shrink: 0;
+  border-radius: 12px; font-size: 1.7rem; color: #fff;
+}
+.division-icon { width: 48px; height: 48px; font-size: 1.35rem; }
+.icon-ai { background: linear-gradient(135deg, #8b5cf6, #c026d3); }
+.icon-marketing { background: linear-gradient(135deg, #059669, #10b981); }
+.icon-brand { background: linear-gradient(135deg, #f97316, #f59e0b); }
+.team-role { font-size: 0.875rem; font-weight: 600; color: #1D4ED8; }
+.team-badge {
+  margin-top: auto; padding: 0.25rem 0.65rem; border-radius: 999px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  background: rgba(29, 78, 216, 0.08); color: #1D4ED8;
+}
+.badge-swarm { background: rgba(124, 58, 237, 0.1); color: #6D28D9; }
+.badge-geo { background: rgba(5, 150, 105, 0.1); color: #047857; }
+.badge-cloud { background: rgba(194, 65, 12, 0.1); color: #C2410C; }
+.service-list { list-style: none; display: grid; gap: 0.5rem; margin-top: 0.25rem; font-size: 0.92rem; color: #334155; }
+.service-list li { position: relative; padding-left: 1.4rem; line-height: 1.5; }
+.service-list li::before { content: '✓'; position: absolute; left: 0; color: #1D4ED8; font-weight: 700; }
+
+/* Footer: six columns on wide screens (brand, 4 link lists, connect) */
+@media (min-width: 1000px) {
+  .footer-inner { max-width: 1200px; grid-template-columns: 1.5fr 1fr 1.3fr 1.3fr 1fr 0.8fr; }
+}
