@@ -103,3 +103,27 @@ Technical fixes can be done quickly, but search engines and AI tools can take we
 Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=geo-aeo-seo) [See past work](https://www.tensix.in/work)
+
+Production Case Studies
+
+### Verified Research & System Designs
+
+Explore production benchmarks and implementation playbooks authored by our systems architects.
+
+Technical Whitepaper & Case Study
+
+#### [GEO & AEO Semantic Architecture Guide →](https://www.tensix.in/blogs/seo-engineering/geo-aeo-semantic-seo-architecture)
+
+How LLMs cite authoritative sources and parse entity graphs.
+
+Technical Whitepaper & Case Study
+
+#### [The Future of AI Search & Discovery →](https://www.tensix.in/blogs/the-future-of-seo-geo-and-search-engines)
+
+Why conversational engines prioritize structured consensus over backlinks.
+
+Technical Whitepaper & Case Study
+
+#### [B2B Search & Authority Blueprint →](https://www.tensix.in/blogs/the-ultimate-local-business-seo-master-strategy)
+
+Local schema markup and multi-location entity engineering.

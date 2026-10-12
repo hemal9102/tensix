@@ -48,6 +48,6 @@ Plain-English articles by Hemal Shah on AI assistants, automation, cloud hosting
 
 ## Have a project in mind?
 
-Tell Hemal what you want to build: an AI assistant, an automation, a website or a cloud setup. You get a clear plan and a fixed price before any work starts.
+Tell Our Team what you want to build: an AI assistant, an automation, a website or a cloud setup. You get a clear plan and a fixed price before any work starts.
 
 [Get a Fixed Quote](https://www.tensix.in/contact) [See Services & Prices](https://www.tensix.in/services)

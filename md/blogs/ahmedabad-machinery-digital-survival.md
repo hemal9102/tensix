@@ -32,9 +32,17 @@ Paper or spreadsheet planning leads to delays, mistakes and slow answers when a 
 
 Related services: [Website development](https://www.tensix.in/services/website-development), [Custom software and client portals](https://www.tensix.in/services/custom-software-saas-development) and [Google and AI search visibility](https://www.tensix.in/services/geo-aeo-seo). Or [contact TENSIX](https://www.tensix.in/contact) to talk through your setup.
 
+Related Studio Capability
+
+### Global Industrial Machinery Export SEO
+
+Position Ahmedabad machinery manufacturers as cited suppliers across international search and AI tools.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/geo-aeo-seo) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 ### Want Help Fixing This?
 
-Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
+Tell Our Team what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
 [Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 

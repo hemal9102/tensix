@@ -1,5 +1,5 @@
 ---
-title: "Is My Site AI Ready? Agent-Readiness Diagnostic (ARD-22)™ | TENSIX"
+title: "Is My Site AI Ready? Agent Diagnostic (ARD-22) | TENSIX"
 url: https://www.tensix.in/is-my-site-ai-ready
 description: "Audit your web endpoints against 22 machine-interaction protocol standards (Level 0 to Level 5) including RFC 9421, RFC 9727, WebMCP, and Content-Signals. Client-side execution with zero data retention."
 ---

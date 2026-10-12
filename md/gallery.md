@@ -8,6 +8,8 @@ description: "Screenshots from real projects by Hemal Shah at TENSIX, Ahmedabad:
 
 Screenshots from real production systems engineered by TENSIX Studio (Founder: Hemal Shah), each with a short note on what it does for a business. For the full list, see [all projects](https://www.tensix.in/work).
 
+## Verified Architecture & System Screenshots
+
 Online Software
 
 ### GitLite: Secure File Manager

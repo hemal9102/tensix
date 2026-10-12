@@ -80,8 +80,6 @@ Live
 
 FastAPI PostgreSQL Docker DevOps
 
-[View Live →](https://hemal9102.github.io/GitLite/)
-
 In Progress
 
 ### Lead-to-CRM Automation

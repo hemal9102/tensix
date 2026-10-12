@@ -52,4 +52,18 @@ Honestly, the most powerful setup is both together. Use n8n to orchestrate the h
 
 That philosophy drives every automation decision I make. If you want this kind of automation set up for your business, see [data and workflow automation](https://www.tensix.in/services/data-scraping-automation).
 
+## Need Something Similar Engineered for Your Business?
+
+TENSIX builds custom business software, AI agents, and high-velocity automations at guaranteed fixed prices. You deal directly with Principal Architect Hemal Shah — 0 middlemen.
+
+[Chat on WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20read%20your%20article%20and%20would%20like%20to%20discuss%20a%20project.) [Get a Fixed-Price Plan →](https://www.tensix.in/contact)
+
+Related Studio Capability
+
+### Enterprise Automation Architecture
+
+Build robust, self-healing background automation pipelines without recurring per-task fees.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/data-scraping-automation) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 [← Building My First AI Project](https://www.tensix.in/blogs/building-my-first-ai-project-lessons-learned) More posts coming soon →

@@ -20,7 +20,7 @@ An AI assistant is only as good as the data behind it. If your data is out of da
 
 At TENSIX (formerly [HK Engineering](https://www.tensix.in/hk-engineering-ahmedabad)), I combine **n8n** for visual workflows with small **Python services** for the heavy processing. Below is the setup I use to keep a normal SQL database in sync with a vector search engine (the index an AI uses to find relevant text).
 
-#### Need Your Data Workflows Automated?
+Need Your Data Workflows Automated?
 
 If you want data moved between apps, APIs connected, or reports updated without manual work, read about [TENSIX (formerly HK Engineering)](https://www.tensix.in/hk-engineering-ahmedabad) or talk to [Hemal Shah](https://www.tensix.in/hemal-shah) directly.
 
@@ -91,5 +91,13 @@ To discuss custom software or automation for your company, visit [TENSIX (former
 TENSIX is an independent studio run by Hemal Shah, who uses AI tools to work faster. Tell me what you need and I will reply with a clear plan and price.
 
 [Tell Me About Your Project →](https://www.tensix.in/contact)
+
+Related Studio Capability
+
+### Data Collection & Workflow Automation
+
+Eliminate manual entry with self-hosted n8n pipelines, Playwright extractors, and automated parsers.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/data-scraping-automation) [Schedule Technical Scoping →](https://www.tensix.in/contact)
 
 [← Previous post](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which) No newer posts

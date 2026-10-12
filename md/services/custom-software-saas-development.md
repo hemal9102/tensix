@@ -1,5 +1,5 @@
 ---
-title: "Custom Software, CRM and SaaS Development | TENSIX"
+title: "SaaS Development Company & Custom Software in Ahmedabad | TENSIX"
 url: https://www.tensix.in/services/custom-software-saas-development
 description: "Custom software, CRMs, ERPs and SaaS products built for your exact workflow. Fixed prices From ₹75,000, and you own all the code. Based in Ahmedabad."
 ---
@@ -94,29 +94,29 @@ Your own operations software, built around your process, to replace scattered to
 
 ## Common questions
 
+How much does it cost to build a SaaS MVP or custom software in Ahmedabad?
+
+Fixed-price SaaS MVP platforms start from ₹75,000 ($1,000+) and are typically delivered in 14 to 21 business days, including authentication, payment gateway integration (Razorpay/Stripe), database schema, and mobile-responsive dashboards. Larger enterprise CRMs and ERPs are scoped from ₹1,25,000+ ($1,650+) with guaranteed fixed milestones.
+
+How are milestone payments structured?
+
+To keep the process transparent and low-risk, projects are divided into milestone stages: 40% upfront to initiate architecture, 30% upon interactive staging demo review, and the final 30% only after full production deployment, testing, and handover on your own servers.
+
 Why custom software instead of ready-made software?
 
-Ready-made software is quick to start but makes you change your process to fit it, and monthly fees grow as you add users. Custom software fits how you already work, and because you own it there is no per-user fee to TENSIX.
+Ready-made software is quick to start but forces you to change your workflow to fit its limitations, and subscription fees grow exponentially as you add employees. Custom software fits your exact business process, and because you own all the source code, there are zero per-seat licensing fees.
 
-Who owns the code?
+Who owns the code and intellectual property?
 
-You do. The code goes into your own GitHub account and the software runs on your own cloud or server account, so you can hire anyone to work on it later.
+You do, 100% from Day 1. The source code is maintained directly inside your own private repository and runs on your cloud accounts (AWS, Oracle, or VPS). You receive all keys and credentials, so you are never locked in to TENSIX.
 
-What is an MVP?
+Can it connect to Tally, WhatsApp or my existing ERP?
 
-An MVP (minimum viable product) is the first simple version of a product, with just enough features for real customers to use and pay for. It lets you test the idea before spending more.
+Yes. We integrate custom software with external tools through webhooks, REST APIs, or automated sync scripts (including WhatsApp notifications, Tally XML/API sync, and payment gateways). We verify integration feasibility on the first scoping call before you pay anything.
 
-Can it connect to Tally, WhatsApp or my existing software?
+What happens after launch? Will I need you forever?
 
-Usually yes, if the other software allows connections through an API or data export. Hemal checks this on the first call and confirms it in the written scope before you pay.
-
-How is the price decided?
-
-Every project has a fixed price agreed in writing before work starts. Larger projects are split into milestones, each with clear deliverables.
-
-What happens after launch?
-
-You can book changes when you need them, or choose a monthly retainer for regular updates and upkeep.
+No lock-in. Every delivery includes comprehensive architecture documentation and video walkthroughs so your internal team or any outside engineer can maintain it. If you prefer ongoing support, we offer monthly retainer plans for continuous feature development and server monitoring.
 
 ## Related services
 
@@ -133,3 +133,21 @@ You can book changes when you need them, or choose a monthly retainer for regula
 Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=software-saas) [See past work](https://www.tensix.in/work)
+
+Production Case Studies
+
+### Verified Research & System Designs
+
+Explore production benchmarks and implementation playbooks authored by our systems architects.
+
+Technical Whitepaper & Case Study
+
+#### [Software Scalability & Cost Efficiency →](https://www.tensix.in/blogs/case-studies/china-vs-india-ai-race-cheap-llms)
+
+How high-efficiency engineering beats expensive bloated SaaS stacks.
+
+Technical Whitepaper & Case Study
+
+#### [Enterprise Backend Architecture →](https://www.tensix.in/blogs/case-studies/enterprise-rag-pgvector-fastapi-case-study)
+
+Scalable FastAPI and PostgreSQL database design.

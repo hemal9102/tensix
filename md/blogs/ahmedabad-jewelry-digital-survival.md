@@ -34,9 +34,17 @@ You don't need to change everything at once. Start with a secure place for stock
 
 Related services: [Custom stock and sales software](https://www.tensix.in/services/custom-software-saas-development), [Website development](https://www.tensix.in/services/website-development) and [Secure hosting and monitoring](https://www.tensix.in/services/cloud-devops). Or [contact TENSIX](https://www.tensix.in/contact) to talk through your setup.
 
+Related Studio Capability
+
+### Luxury Catalog & High-Trust Digital Platforms
+
+Deliver high-speed visual catalogs engineered for luxury buyer conversion.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/website-development) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 ### Want Help Fixing This?
 
-Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
+Tell Our Team what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
 [Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 

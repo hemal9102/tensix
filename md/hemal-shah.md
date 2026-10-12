@@ -6,15 +6,17 @@ description: "Hemal Shah is a software and AI engineer in Navrangpura, Ahmedabad
 
 # Who is Hemal Shah?
 
-Software and AI engineer, and the founder and only owner of **TENSIX ([tensix.in](https://www.tensix.in/))** in Navrangpura, Ahmedabad. When you hire TENSIX, Hemal is the person you talk to and the person who does the work.
+Systems Architect and Software Engineer based in Navrangpura, Ahmedabad. Founder and Principal Systems Architect of **TENSIX ([tensix.in](https://www.tensix.in/))**, directing AI agent protocol implementations, sovereign cloud systems, and high-performance web engineering.
 
-### What does Hemal do at TENSIX?
+## Founder Background & Engineering Focus
 
-Everything. Hemal Shah founded **TENSIX ([tensix.in](https://www.tensix.in/))** and runs it alone. He plans each project with the client, writes the code, sets up the servers and supports the system after launch. There are no co-founders, partners or junior staff passing your project around.
+### What is Hemal's role at TENSIX?
 
-### How does one person deliver bigger projects?
+Hemal Shah is the founder and **Principal Systems Architect** of TENSIX ([tensix.in](https://www.tensix.in/)). He leads engineering strategy, system architecture, database design, and core software implementation across all studio engagements.
 
-Hemal uses AI tools for routine work like first drafts of code, testing and documentation, then checks and finishes everything himself. That keeps projects moving quickly while one experienced person stays responsible for the result. [See the AI tools he uses](https://www.tensix.in/team).
+### How does TENSIX deliver complex enterprise systems?
+
+TENSIX operates on a high-leverage studio model: our Principal Systems Architect directs the architecture and human verification, powered by autonomous AI pipelines, strict type-safety, and automated continuous integration. This delivers higher velocity and zero agency bloat. [See our engineering stack and tools](https://www.tensix.in/team).
 
 ### Why the name change from HK Engineering?
 

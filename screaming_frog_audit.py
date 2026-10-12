@@ -1,7 +1,7 @@
 import os, re, json
 from urllib.parse import urlparse, urldefrag
 
-ROOT = r"D:\projects\tensix"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # 1. Discover all HTML pages
 pages = {}

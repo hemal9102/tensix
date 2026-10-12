@@ -8,11 +8,11 @@ description: "TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run 
 
 An independent software and AI studio in Navrangpura, Ahmedabad. You work directly with Hemal Shah, the person who builds your project.
 
-### What TENSIX Does
+## What TENSIX Does
 
 **TENSIX** builds software that saves businesses time and money. It is based in **Navrangpura, Ahmedabad** and works with clients across India and abroad.
 
-TENSIX is run by one person: [Hemal Shah](https://www.tensix.in/hemal-shah), a software and AI engineer. There is no sales team and no account manager in between. The person you talk to is the person writing your code. Hemal uses AI tools to handle routine work, so projects move faster without cutting corners.
+TENSIX is an agile engineering studio directed by Principal Systems Architect [Hemal Shah](https://www.tensix.in/hemal-shah), a software and AI engineer. There is no sales team and no account manager in between. The person you talk to is the person writing your code. Hemal uses AI tools to handle routine work, so projects move faster without cutting corners.
 
 What you can hire TENSIX for:
 
@@ -25,24 +25,30 @@ What you can hire TENSIX for:
 
 Past projects include a doctor appointment booking platform, tools that collect business data from the web, and an AI system that helps put together textbook content. Every project is built to be simple to run, easy to hand over, and fully owned by the client.
 
-### How Hemal Works
+## How Hemal Works
 
 "Do your karma. Do not be attached to the result." — Bhagavad Gita
 
 Focus on doing the work well. Start with your actual problem, not the latest trend. Pick simple, reliable tools over flashy ones. Measure whether the software really saves you time or money.
 
-### Learn More About Hemal
+## Hemal Shah
 
-[Meet Hemal Shah](https://www.tensix.in/hemal-shah) [See All Services and Prices](https://www.tensix.in/services) [Hemal on LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/) [Hemal's Code on GitHub](https://github.com/hemal9102)
+Founder & Principal Systems Architect
 
-### Milestones
+Directing TENSIX Engineering & AI Systems
+
+Under Hemal's technical direction, TENSIX operates as an engineering studio bridging modern AI agent rails (RFC 9421, WebMCP) with robust web and cloud backends.
+
+[View Full Profile & Story (Hemal Shah) →](https://www.tensix.in/hemal-shah) [Direct WhatsApp Consultation ↗](https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project%20with%20TENSIX.)
+
+## Milestones
 
 - **TENSIX Studio** 2025 – Present Building AI assistants, custom software, websites and server setups for businesses.
 - **Automation Projects** 2023 – Present Data collection tools, automated workflows (with n8n and Python) and AI apps that answer from company documents.
 - **B.Tech – Computer Science & Engineering** 2021 – 2025 Focused on AI, machine learning and backend software (the part of an app that runs on the server).
 - **Open Source Work** 2022 – Present Publishes tools and projects on GitHub in Python, FastAPI and Unity.
 
-### Outside of Work
+## Outside of Work
 
 - **Bodybuilding & Fitness** Discipline & growth mindset Physical training taught me consistency and structured improvement.
 - **Art, Sketching & Craft** Creative thinking Visual creativity sharpens UI/UX and design sensibility.
@@ -69,7 +75,11 @@ Yes. TENSIX can sign a non-disclosure agreement (NDA) before you share any detai
 
 ### Can I hire TENSIX on a monthly basis?
 
-Yes. Dedicated studio retainers start at ₹79,999 ($999) a month. The Autonomous Systems Pod is ₹1,49,999 ($1,850) a month, and our Fractional CTO & Enterprise Architecture engagement is ₹2,49,999 ($3,200) a month. Hemal works on your project every month, shares progress in your GitHub account, and you can message him directly.
+Yes. Dedicated studio retainers start at ₹79,999 ($999) a month. The Autonomous Systems Pod is ₹1,49,999 ($1,850) a month, and our Fractional CTO & Enterprise Architecture engagement is ₹2,49,999 ($3,200) a month. Hemal works on your project every month, shares progress in your repository, and you can message him directly.
+
+### What happens after the project is built? Will my company be locked in or dependent on you?
+
+Zero vendor lock-in. Every build includes clean documentation, video walkthroughs, and deployment on your own AWS, Oracle or VPS cloud accounts. You own 100% of the intellectual property, passwords, and source code. Any qualified software engineer can pick up and run your system from Day 1.
 
 ## Have a project in mind?
 

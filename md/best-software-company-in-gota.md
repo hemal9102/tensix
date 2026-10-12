@@ -68,7 +68,7 @@ We set up and improve your Google Business Profile, add structured data (labels 
 
 How much does a website cost and how long does it take? +
 
-A basic business website starts at ₹14,999 ($199) and takes 5–7 business days. A larger site with lead capture starts at ₹24,999 ($325) and takes 7–10 business days. Both include mobile-friendly design and basic local SEO.
+A basic business website starts at ₹49,999 ($600) and takes 5–7 business days. A larger site with lead capture starts at ₹85,000 ($1,050) and takes 7–10 business days. Both include mobile-friendly design and basic local SEO.
 
 How do I get started? +
 

@@ -6,9 +6,9 @@ description: "TENSIX services in Ahmedabad: websites, custom software, AI assist
 
 Services and prices
 
-# Software, AI and Cloud Services, Clearly Priced
+# High-Performance Engineering & AI Systems, Transparently Scoped
 
-TENSIX is an independent studio in Ahmedabad run by Hemal Shah. He builds websites, custom software, AI assistants, automations and cloud set-ups for businesses in India and abroad, using AI tools to work faster. Every project has a fixed price agreed before work starts, and you own everything that is built.
+TENSIX is an agile systems engineering studio led by Principal Architect Hemal Shah. We architect scalable custom software, deterministic AI agent workflows, and sovereign cloud platforms for forward-thinking enterprises. Engagements operate on guaranteed fixed-scope milestones with 100% intellectual property ownership.
 
 [See plans and prices ↓](https://www.tensix.in/services#pricing) [How a project works ↓](https://www.tensix.in/services#delivery-model)
 
@@ -20,7 +20,7 @@ Service Catalogue
 
 Price Range
 
-₹11,999 to ₹1,25,000+ (Fixed quotes, 0 hourly billing)
+Fixed Milestone Architecture (From ₹75,000 / $1,000+), 0 Hourly Billing
 
 Delivery SLA
 
@@ -28,7 +28,7 @@ Delivery SLA
 
 Operator
 
-TENSIX • Engineering & AI Studio
+TENSIX • Engineering & AI Studio (Director: Hemal Shah)
 
 Code Ownership
 
@@ -47,6 +47,12 @@ Pick a service to see who it is for, how it works, prices and common questions.
 Fast, mobile-friendly websites with WhatsApp, call and enquiry buttons, so visitors turn into leads. Redesigns keep your existing Google rankings by redirecting old page addresses.
 
 [See full details →](https://www.tensix.in/services/website-development)
+
+### Headless E-Commerce & Storefronts
+
+High-throughput headless e-commerce engineering for D2C brands and B2B wholesale exporters. Next.js storefronts, MedusaJS, sub-50ms page loads, and live ERP sync with Tally and SAP.
+
+[See full details →](https://www.tensix.in/services/headless-ecommerce-development)
 
 ### AI Assistants and Agents
 
@@ -96,18 +102,18 @@ Fixed prices
 
 No hourly billing and no surprise invoices. Each project is built directly by Hemal Shah, and you own the code and accounts from day one. Choose a category to see its plans. SEO and AI search visibility is priced as a [custom quote](https://www.tensix.in/services/geo-aeo-seo).
 
-### Basic Website
+### Sovereign Web Foundation
 
-A clean, professional website that builds trust with new customers.
+Sub-300ms edge-rendered corporate web system engineered for conversion, zero maintenance, and 100/100 Core Web Vitals.
 
-₹14,999 / one-time investment
+₹49,999 / one-time investment
 
 - 6–10 pages (for example Home, About, Services, Contact)
 - Works well on phones and tablets
 - WhatsApp button and email enquiry form
 - Google Maps location and links to your social profiles
 - Fast loading and basic on-page SEO set-up
-- Launch on Hostinger hosting
+- Cloudflare Edge + Global CDN with SSL Hardening
 - **Turnaround:** 5–7 business days
 
 [Start a basic website →](https://www.tensix.in/contact?plan=web-basic)
@@ -118,7 +124,7 @@ Recommended
 
 A bigger website designed to collect enquiries and send them to you instantly.
 
-₹24,999 / one-time investment
+₹85,000 / one-time investment
 
 - 15+ custom pages
 - Enquiries saved in a database, with instant WhatsApp or email alerts
@@ -134,7 +140,7 @@ A bigger website designed to collect enquiries and send them to you instantly.
 
 A full website with your own admin panel, so your team can manage content without code.
 
-₹45,000 / one-time investment
+₹1,45,000 / one-time investment
 
 - Built with Next.js and React, with smooth animations
 - Admin dashboard to manage blogs, enquiries and page content
@@ -152,7 +158,7 @@ A full website with your own admin panel, so your team can manage content withou
 
 The settings Gmail and Yahoo now require, so your emails are trusted instead of sent to spam.
 
-₹12,999 / one-time setup
+₹29,999 / one-time setup
 
 - SPF, DKIM and DMARC records (the identity checks email providers use) set up correctly
 - Custom return-path domain, which removes "via amazon.com" style labels
@@ -200,7 +206,7 @@ A separate set-up for cold email, so your main company domain stays protected.
 
 Bills, purchase orders and bank alerts from your inbox, entered into your sheet or database automatically.
 
-₹16,999 / one-time setup
+₹45,000 / one-time setup
 
 - Secure connection to your Gmail or other inbox, checking for new mail around the clock
 - Attachments such as PDF, Excel and CSV files downloaded automatically
@@ -217,7 +223,7 @@ Recommended
 
 Lists of local businesses in any city and category, ready for your sales team, without a monthly tool subscription.
 
-₹24,999 / one-time setup
+₹85,000 / one-time setup
 
 - Collects business listings for any category and city, using Playwright (browser automation)
 - Business name, phone, email (where available), website, rating and address
@@ -249,7 +255,7 @@ A custom tool that watches websites for you, such as competitor prices, property
 
 A properly secured Linux server, so you are no longer limited by shared hosting.
 
-₹11,999 / one-time setup
+₹35,000 / one-time setup
 
 - Server set-up on Oracle Cloud, Plesk, DigitalOcean or Hostinger
 - Firewall, key-only login and automatic blocking of password-guessing attacks
@@ -341,11 +347,11 @@ Your own operations software, built around your process, to replace scattered to
 
 [See full details: Custom Software and SaaS Development →](https://www.tensix.in/services/custom-software-saas-development)
 
-### Custom RAG Document Assistant
+### Enterprise RAG & Knowledge Engine
 
-An AI assistant that answers questions using only your own manuals, SOPs and documents (this is called RAG).
+Deterministic document reasoning architecture with strict RBAC guardrails and zero hallucination risk.
 
-₹29,999 / one-time setup
+₹65,000 / one-time setup
 
 - Reads your PDFs and documents and finds answers by meaning, not just keywords
 - Chat box for your website, or a bot inside WhatsApp or Slack
@@ -357,11 +363,11 @@ An AI assistant that answers questions using only your own manuals, SOPs and doc
 
 Recommended
 
-### Multi-Agent AI Workflow
+### Autonomous Multi-Agent Workflow
 
-A small team of AI agents, each with one job, that work together on a repeating task such as research and writing.
+Coordinated multi-agent clusters (LangGraph / FastAPI) executing continuous operational tasks.
 
-₹59,999 / one-time setup
+₹1,15,000 / one-time setup
 
 - Agents pass work along a chain, for example research → write → review → publish
 - Connected to your database and apps so the agents can look things up and update records
@@ -371,11 +377,11 @@ A small team of AI agents, each with one job, that work together on a repeating 
 
 [Plan a multi-agent workflow →](https://www.tensix.in/contact?plan=ai-swarm)
 
-### End-to-End AI Process
+### Enterprise Autonomous Operations OS
 
-A complete business process run by AI from start to finish, with a person able to review and step in.
+Complete business process orchestration powered by sovereign agent architectures.
 
-₹99,999+ / custom scope
+₹2,25,000+ / custom scope
 
 - Example process: find a lead → check fit → add details → send email → book a call → log it in your CRM
 - Works with voice notes, scanned documents and text
@@ -386,11 +392,11 @@ A complete business process run by AI from start to finish, with a person able t
 
 [See full details: AI Agent Development →](https://www.tensix.in/services/ai-agent-development)
 
-### Growth Engine Retainer
+### Studio Core Retainer
 
-Regular engineering, search visibility work and server care for a growing business.
+Dedicated systems engineering, architectural oversight, and continuous performance optimization.
 
-₹39,999($499) / month (cancel anytime)
+₹79,999($999) / month (cancel anytime)
 
 - Regular structured data and content updates to help Google and AI tools understand your site
 - One engineering sprint a month: a new feature, automation or landing page
@@ -403,11 +409,11 @@ Regular engineering, search visibility work and server care for a growing busine
 
 Recommended
 
-### AI Build Plan
+### Autonomous Systems Retainer
 
-More engineering time, plus AI automations that run for your business every day, managed by Hemal Shah.
+Dedicated AI engineering pod delivering custom agent integrations, continuous data pipelines, and high-velocity sprints.
 
-₹79,999($999) / month (rolling agreement)
+₹1,49,999($1,850) / month (rolling agreement)
 
 - 2 AI automations running continuously, for example lead collection and document processing
 - 2 engineering sprints a month for priority features, APIs or automations
@@ -418,11 +424,11 @@ More engineering time, plus AI automations that run for your business every day,
 
 [Discuss the AI Build Plan →](https://www.tensix.in/contact?plan=retainer-ai-pod)
 
-### Part-Time CTO Plan
+### Fractional CTO & Enterprise Architecture
 
-Part-time technology leadership (a fractional CTO) plus hands-on building, for companies that are scaling up.
+Executive technology leadership, system design, security governance, and high-stakes engineering direction.
 
-₹1,49,999($1,850) / month (exclusive allocation)
+₹2,49,999($3,200) / month (exclusive allocation)
 
 - Technology roadmap, vendor choices and compliance reviews
 - AI automations as needed: scraping, document assistants, CRM connections and multi-agent workflows
@@ -597,7 +603,7 @@ Yes. Work is done online in English, with clear written documentation and fixed-
 
 How does fixed pricing work?
 
-Each project has a scope and price agreed in writing before work starts, from ₹45,000 for sovereign infrastructure and email pipeline salvage to enterprise custom software and SaaS platforms. You know the deliverables and launch date in advance, with zero hourly billing.
+Each project has a scope and price agreed in writing before work starts, from ₹1,45,000 for sovereign infrastructure and email pipeline salvage to enterprise custom software and SaaS platforms. You know the deliverables and launch date in advance, with zero hourly billing.
 
 Who owns the code and the servers?
 

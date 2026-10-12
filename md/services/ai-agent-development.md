@@ -1,5 +1,5 @@
 ---
-title: "AI Agent and Assistant Development, Ahmedabad | TENSIX"
+title: "AI Agent & Chatbot Development Company in Ahmedabad | TENSIX"
 url: https://www.tensix.in/services/ai-agent-development
 description: "Custom AI assistants and agents that answer from your own documents, handle repetitive work and connect to your tools. Fixed prices From ₹65,000."
 ---
@@ -90,29 +90,25 @@ A complete business process run by AI from start to finish, with a person able t
 
 ## Common questions
 
-What is an AI agent, in simple words?
+How much does it cost to build an AI agent or chatbot, and what are the timelines?
 
-An AI agent is software that can read information, make a simple decision and take an action, such as replying to a query, updating a sheet or sending an email. It follows rules you agree on, and important steps can be sent to a person for approval.
+A private internal document search assistant costs ₹29,999 ($400) and takes 5–7 business days. A multi-agent workflow that handles customer queries or lead triage costs ₹59,999 ($800) and delivers in 10–14 days. End-to-end custom autonomous systems with external API integrations start at ₹99,999+ ($1,300+) in 2–4 weeks.
 
-Will the AI make up wrong answers?
+Will the AI leak our private company data or customer chats to public LLMs?
 
-The document assistant is set up to answer only from your own documents and to show the source of each answer. No AI is perfect, so Hemal tests it on your real questions before launch, and anyone can check where an answer came from.
+No. Your knowledge base and documents are indexed in a private vector database (e.g. self-hosted PostgreSQL pgvector) that runs entirely inside your own cloud account. We configure enterprise zero-data-retention API endpoints with OpenAI and Anthropic, ensuring your business data is never stored or used to train public AI models.
 
-Which AI models do you use?
+How do you prevent the AI from hallucinating or giving wrong answers?
 
-We select models tailored to precision and operational efficiency and the budget, for example models from OpenAI, Anthropic (Claude), Google (Gemini) or open-source options. The system can be moved to another model later if prices or quality change.
+We build deterministic RAG (Retrieval-Augmented Generation) pipelines that restrict the AI to citing only verified passages from your company documents. If an answer cannot be proven with an exact cited source, the agent responds with a safe fallback or escalates the query directly to a human team member.
 
-Is my business data safe?
+Can the AI agent connect to WhatsApp, our CRM, or our database?
 
-Your documents and data stay in accounts you own, such as your own database and cloud. Only the text needed for each answer is sent to the AI model, and provider settings that do not train on your data where they are available.
+Yes. We build custom API connectors so your AI assistant can read/write data to WhatsApp Business, Google Sheets, PostgreSQL, Hubspot, or custom internal backends via secure webhook actions.
 
-How long does it take and what does it cost?
+Are there ongoing subscription or API fees?
 
-A document assistant costs ₹29,999 and takes 5–7 business days. A multi-agent workflow costs ₹59,999 and takes 10–14 business days. Larger end-to-end systems start at ₹99,999 and take 2–4 weeks.
-
-Are there running costs after launch?
-
-Yes, usually small ones. You pay the AI provider and hosting directly, based on how much the system is used. Hemal estimates these costs before work starts.
+TENSIX does not charge per-user or recurring platform fees. You pay the AI model providers (OpenAI, Anthropic, or cloud host) directly based on actual token usage, which typically ranges from ₹500 to ₹3,000/month for most small-to-medium businesses. We provide exact operational cost estimates upfront.
 
 ## Related services
 
@@ -129,3 +125,27 @@ Yes, usually small ones. You pay the AI provider and hosting directly, based on 
 Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=ai-swarm) [See past work](https://www.tensix.in/work)
+
+Production Case Studies
+
+### Verified Research & System Designs
+
+Explore production benchmarks and implementation playbooks authored by our systems architects.
+
+Technical Whitepaper & Case Study
+
+#### [Building AI Agents with FastAPI & LangGraph →](https://www.tensix.in/blogs/ai-engineering/building-ai-agents-with-fastapi)
+
+Production design patterns for multi-agent execution.
+
+Technical Whitepaper & Case Study
+
+#### [Enterprise RAG Architecture Case Study →](https://www.tensix.in/blogs/case-studies/enterprise-rag-pgvector-fastapi-case-study)
+
+Deterministic vector search with pgvector and sub-50ms latency.
+
+Technical Whitepaper & Case Study
+
+#### [AI & Digital Survival for Pharma →](https://www.tensix.in/blogs/ahmedabad-pharma-digital-survival)
+
+Document compliance and automated retrieval systems.

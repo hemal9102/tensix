@@ -57,7 +57,7 @@ No. TENSIX is an independent studio. Hemal Shah handles every project himself an
 
 How much does a project cost? +
 
-Prices are fixed and published. Websites start at ₹14,999, cloud server set-up at ₹11,999, email set-up at ₹12,999, data automation at ₹16,999, AI agents at ₹29,999 and custom software at ₹34,999. Monthly tech partner plans start at ₹39,999 per month. Search visibility work is quoted per project.
+Prices are fixed and published. Websites start at ₹49,999, cloud server set-up at ₹35,000, email set-up at ₹29,999, data automation at ₹45,000, AI agents at ₹29,999 and custom software at ₹34,999. Monthly tech partner plans start at ₹39,999 per month. Search visibility work is quoted per project.
 
 How long does a project take? +
 

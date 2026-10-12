@@ -4,13 +4,13 @@ url: https://www.tensix.in/
 description: "TENSIX builds websites, custom software, AI assistants and business automation for companies in Ahmedabad and abroad. Fixed prices. You own all the code."
 ---
 
-SOFTWARE, AI & AUTOMATION STUDIO · AHMEDABAD
+HIGH-PERFORMANCE SOFTWARE ARCHITECTURE · AUTONOMOUS AI SYSTEMS
 
-# Software and AI that save you time and help your business grow.
+# Custom Software, AI Automation & SaaS Engineering for Growing Businesses.
 
-TENSIX builds websites, custom software and AI tools for businesses in Ahmedabad and around the world. You work directly with our engineering leadership and founder Hemal Shah, agree a fixed price before work starts, and most projects go live in one to three weeks.
+TENSIX builds custom business software, private AI assistants, and automated data pipelines in Ahmedabad. Fixed prices, 1–3 week delivery, and you own 100% of the code and servers from Day 1.
 
-[Get a Fixed-Price Quote](https://www.tensix.in/#contact) [See Services & Prices ↓](https://www.tensix.in/#services)
+[Chat on WhatsApp Direct](https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20TENSIX.) [See Services & Prices (From ₹49,999) ↓](https://www.tensix.in/#services)
 
 Example // How an Automation Works Runs on its own
 
@@ -58,11 +58,11 @@ Verified Technical Specification & Pricing Last Verified: October 7, 2026 • Lo
 
 Studio Model
 
-Software & AI Studio (Founder: Hemal Shah)
+Boutique Systems Studio • Led by Hemal Shah
 
 Pricing Guarantee
 
-100% Fixed Upfront Quotes (₹75,000 – ₹3,50,000+ ($1,000 – $4,500+)), 0 Hourly Billing
+Fixed Milestone Architecture (From ₹75,000 / $1,000+), 0 Hourly Billing
 
 Delivery SLA
 
@@ -86,69 +86,53 @@ Services
 
 Eight services, each with fixed-price plans. Pick one to see what is included and how much it costs.
 
-01 // SERVICE
+01 // CORE CAPABILITY
 
-### AI Agents & Assistants
+### Autonomous AI Systems & RAG Architecture
 
-AI assistants that answer customer questions from your own documents, sort emails and handle routine office tasks.
+Production-grade AI agent pipelines (LangGraph / FastAPI) grounded in deterministic company data, strict RBAC guardrails, and automated reasoning.
 
-From ₹65,000 [See plans →](https://www.tensix.in/services/ai-agent-development)
+Enterprise Engagement [View Architecture →](https://www.tensix.in/services/ai-agent-development)
 
-02 // SERVICE
+02 // CORE CAPABILITY
 
-### Custom Software & SaaS
+### Custom Software, CRM & SaaS Platforms
 
-Software built around how your business works, from client portals to full online products people subscribe to (SaaS).
+High-throughput backends and scalable SaaS web architectures (Next.js, FastAPI, PostgreSQL) engineered for zero downtime and full enterprise IP ownership.
 
-From ₹75,000 [See plans →](https://www.tensix.in/services/custom-software-saas-development)
+Milestone Scope [View Architecture →](https://www.tensix.in/services/custom-software-saas-development)
 
-03 // SERVICE
+03 // CORE CAPABILITY
 
-### Websites
+### Generative Engine Optimization (GEO & AEO)
 
-Fast, mobile-friendly websites that clearly explain what you sell and turn visitors into enquiries.
+Algorithmic authority and semantic structured graphs engineered to position your enterprise as the definitive, cited answer across ChatGPT, Perplexity, and Gemini.
 
-From ₹49,999 [See plans →](https://www.tensix.in/services/website-development)
+Quarterly Scope [View Architecture →](https://www.tensix.in/services/geo-aeo-seo)
 
-04 // SERVICE
+04 // CORE CAPABILITY
 
-### Cloud Servers & Hosting Setup
+### Fractional CTO & Dedicated Studio Retainer
 
-Secure servers with backups, monitoring and automatic restarts, so your website and apps keep running.
+Direct architectural direction, high-velocity sprint execution, code auditing, and sovereign cloud reliability led by Principal Architect Hemal Shah.
 
-From ₹49,999 [See plans →](https://www.tensix.in/services/cloud-devops)
+From ₹79,999 / mo [View Architecture →](https://www.tensix.in/services/fractional-cto-retainers)
 
-05 // SERVICE
+05 // CORE CAPABILITY
 
-### Business Email That Reaches the Inbox
+### Sovereign Cloud & High-Availability DevOps
 
-The technical setup that proves your emails are really from you, so they are far less likely to land in spam.
+Enterprise VPS clusters on Oracle, AWS, or DigitalOcean with automated zero-downtime CI/CD pipelines, cryptographic security, and 24/7 self-healing failovers.
 
-From ₹44,999 [See plans →](https://www.tensix.in/services/email-deliverability)
+Dedicated Pipeline [View Architecture →](https://www.tensix.in/services/cloud-devops)
 
-06 // SERVICE
+06 // CORE CAPABILITY
 
-### Data Collection & Automation
+### Headless Web Platforms & Conversion Portals
 
-Automatically collect public data from websites and pull details out of emails and PDFs into a sheet or database.
+Sub-second, ultra-lightweight web applications engineered with Next.js, advanced schema graphs, and deterministic lead-routing integrations.
 
-From ₹49,999 [See plans →](https://www.tensix.in/services/data-scraping-automation)
-
-07 // SERVICE
-
-### Google & AI Search Visibility
-
-Help your business show up on Google and get mentioned by AI tools like ChatGPT and Perplexity (GEO/AEO).
-
-Custom quote [See plans →](https://www.tensix.in/services/geo-aeo-seo)
-
-08 // SERVICE
-
-### Monthly Tech Partner
-
-Monthly engineering, server care and advice from Hemal Shah. A part-time CTO plan is also available.
-
-From ₹79,999/month [See plans →](https://www.tensix.in/services/fractional-cto-retainers)
+Full Platform [View Architecture →](https://www.tensix.in/services/website-development)
 
 [Compare all services and prices →](https://www.tensix.in/services)
 

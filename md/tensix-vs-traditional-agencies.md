@@ -160,4 +160,4 @@ AI assistants, custom software, websites, cloud hosting, email setup, data autom
 
 Send us a short note about your project. You will get an honest answer on whether TENSIX is the right fit, and a fixed price if it is.
 
-[Message Hemal](https://www.tensix.in/#contact) [Send Project Details](https://www.tensix.in/contact)
+[Consult Engineering Team](https://www.tensix.in/#contact) [Send Project Details](https://www.tensix.in/contact)

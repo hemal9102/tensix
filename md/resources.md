@@ -8,6 +8,8 @@ description: "Plain-English meanings of the AI terms business owners keep hearin
 
 Short, plain answers to the AI words you keep hearing, and what each one can do for your business. Written by Hemal Shah.
 
+## Core Artificial Intelligence & Engineering Glossary
+
 ### AI Agent
 
 An AI agent is software that does a job for you, not just chats. It reads a request, decides the next step and uses your tools, like email, a spreadsheet or your CRM, to finish the task. Example: an agent that reads new enquiries, replies with prices and books a call. See [AI agent development](https://www.tensix.in/services/ai-agent-development).

@@ -131,3 +131,17 @@ Instead of optimizing only for Google rankings, GEO focuses on making your conte
 - Fast, crawlable websites.
 
 The future of search is likely to involve both **traditional SEO** (ranking in search results) and **GEO** (being surfaced and referenced by AI assistants). For any business that wants to be found, understanding both will be increasingly valuable. If you want help with this, see [GEO, AEO and SEO services](https://www.tensix.in/services/geo-aeo-seo).
+
+## Need Something Similar Engineered for Your Business?
+
+TENSIX builds custom business software, AI agents, and high-velocity automations at guaranteed fixed prices. You deal directly with Principal Architect Hemal Shah — 0 middlemen.
+
+[Chat on WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20read%20your%20article%20and%20would%20like%20to%20discuss%20a%20project.) [Get a Fixed-Price Plan →](https://www.tensix.in/contact)
+
+Related Studio Capability
+
+### Generative Search Authority Services
+
+Position your business as the cited entity across modern AI search engines.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/geo-aeo-seo) [Schedule Technical Scoping →](https://www.tensix.in/contact)

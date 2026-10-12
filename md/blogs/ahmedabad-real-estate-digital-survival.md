@@ -36,9 +36,17 @@ Referrals still matter, but they are not enough on their own. A professional, se
 
 Related services: [Website development](https://www.tensix.in/services/website-development), [AI assistants that answer buyer questions](https://www.tensix.in/services/ai-agent-development) and [Custom CRM and lead tracking](https://www.tensix.in/services/custom-software-saas-development). Or [contact TENSIX](https://www.tensix.in/contact) to talk through your setup.
 
+Related Studio Capability
+
+### High-Conversion Real Estate Platforms
+
+Deploy sub-second project showcase portals with verified lead capture and WhatsApp automation.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/website-development) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 ### Want Help Fixing This?
 
-Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
+Tell Our Team what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
 [Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 

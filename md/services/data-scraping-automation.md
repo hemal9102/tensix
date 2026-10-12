@@ -1,5 +1,5 @@
 ---
-title: "Web Scraping and Workflow Automation | TENSIX"
+title: "Web Scraping & Data Extraction Services | TENSIX"
 url: https://www.tensix.in/services/data-scraping-automation
 description: "Automatic data entry from emails and invoices, Google Maps lead lists and custom website trackers with alerts. Fixed prices From ₹49,999. Based in Ahmedabad."
 ---
@@ -133,3 +133,21 @@ For tools that run on a schedule, a small cloud server is usually enough. Hemal 
 Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=scraper-google-maps) [See past work](https://www.tensix.in/work)
+
+Production Case Studies
+
+### Verified Research & System Designs
+
+Explore production benchmarks and implementation playbooks authored by our systems architects.
+
+Technical Whitepaper & Case Study
+
+#### [ETL Pipelines with n8n & Python →](https://www.tensix.in/blogs/automation/etl-pipeline-automation-n8n-python)
+
+Automated data pipelines and scheduled background extraction.
+
+Technical Whitepaper & Case Study
+
+#### [n8n vs. Custom Python Scripts →](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which)
+
+Architectural comparison between low-code and deterministic scripts.

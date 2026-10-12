@@ -36,9 +36,17 @@ Patients want three things online: to know which doctor to see, to understand th
 
 Related services: [Website development](https://www.tensix.in/services/website-development), [AI assistants that answer patient questions](https://www.tensix.in/services/ai-agent-development) and [Google and AI search visibility](https://www.tensix.in/services/geo-aeo-seo). Or [contact TENSIX](https://www.tensix.in/contact) to talk through your setup.
 
+Related Studio Capability
+
+### Healthcare Software & Patient Portals
+
+Build custom HIPAA/compliant medical management software and instant appointment scheduling engines.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/custom-software-saas-development) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 ### Want Help Fixing This?
 
-Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
+Tell Our Team what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
 [Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 

@@ -131,3 +131,21 @@ We configure continuous monitoring, automated health-checks, and failovers so pr
 Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=cloud-cicd) [See past work](https://www.tensix.in/work)
+
+Production Case Studies
+
+### Verified Research & System Designs
+
+Explore production benchmarks and implementation playbooks authored by our systems architects.
+
+Technical Whitepaper & Case Study
+
+#### [IRCTC System Design & High Concurrency →](https://www.tensix.in/blogs/case-studies/irctc-system-design-scalability)
+
+Architectural breakdown of high-throughput transactional backends.
+
+Technical Whitepaper & Case Study
+
+#### [High-Availability & Zero-Outage Architecture →](https://www.tensix.in/blogs/case-studies/whatsapp-system-design-outage)
+
+Sovereign infrastructure safeguards and automated failovers.

@@ -45,18 +45,18 @@ If you are replacing an old site, old page addresses are redirected so you keep 
 
 Fixed scope agreed in writing before work starts. You own the code and accounts.
 
-### Basic Website
+### Sovereign Web Foundation
 
-A clean, professional website that builds trust with new customers.
+Sub-300ms edge-rendered corporate web system engineered for conversion, zero maintenance, and 100/100 Core Web Vitals.
 
-₹14,999 / one-time investment
+₹49,999 / one-time investment
 
 - 6–10 pages (for example Home, About, Services, Contact)
 - Works well on phones and tablets
 - WhatsApp button and email enquiry form
 - Google Maps location and links to your social profiles
 - Fast loading and basic on-page SEO set-up
-- Launch on Hostinger hosting
+- Cloudflare Edge + Global CDN with SSL Hardening
 - **Turnaround:** 5–7 business days
 
 [Start a basic website →](https://www.tensix.in/contact?plan=web-basic)
@@ -67,7 +67,7 @@ Recommended
 
 A bigger website designed to collect enquiries and send them to you instantly.
 
-₹24,999 / one-time investment
+₹85,000 / one-time investment
 
 - 15+ custom pages
 - Enquiries saved in a database, with instant WhatsApp or email alerts
@@ -83,7 +83,7 @@ A bigger website designed to collect enquiries and send them to you instantly.
 
 A full website with your own admin panel, so your team can manage content without code.
 
-₹45,000 / one-time investment
+₹1,45,000 / one-time investment
 
 - Built with Next.js and React, with smooth animations
 - Admin dashboard to manage blogs, enquiries and page content
@@ -136,3 +136,21 @@ You pay for your domain and hosting directly to the provider. There is no yearly
 Tell us what you need. You get a written plan and a price before any work starts.
 
 [Contact TENSIX](https://www.tensix.in/contact?plan=web-standard) [See past work](https://www.tensix.in/work)
+
+Production Case Studies
+
+### Verified Research & System Designs
+
+Explore production benchmarks and implementation playbooks authored by our systems architects.
+
+Technical Whitepaper & Case Study
+
+#### [Real Estate High-Conversion Blueprint →](https://www.tensix.in/blogs/ahmedabad-real-estate-digital-survival)
+
+Sub-second digital platforms engineered for qualified lead capture.
+
+Technical Whitepaper & Case Study
+
+#### [Luxury Commerce & Visual Performance →](https://www.tensix.in/blogs/ahmedabad-jewelry-digital-survival)
+
+Fast, secure visual catalogs engineered for enterprise conversion.

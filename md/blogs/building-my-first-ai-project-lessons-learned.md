@@ -44,6 +44,20 @@ The breakthrough came with alpha-beta pruning. By tracking the best scores found
 
 **3. The gap between working and good is huge.** My first working version was a hack. Refactoring it taught me more than the original build.
 
-This project is [on GitHub](https://github.com/hemal9102/ChessAI-Glasses) if you want to explore the code.
+This project is available as open source if you want to explore the code.
+
+## Need Something Similar Engineered for Your Business?
+
+TENSIX builds custom business software, AI agents, and high-velocity automations at guaranteed fixed prices. You deal directly with Principal Architect Hemal Shah — 0 middlemen.
+
+[Chat on WhatsApp Direct ↗](https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20read%20your%20article%20and%20would%20like%20to%20discuss%20a%20project.) [Get a Fixed-Price Plan →](https://www.tensix.in/contact)
+
+Related Studio Capability
+
+### Enterprise AI Engineering Services
+
+Partner with TENSIX Studio to architect production-ready AI assistants and reasoning workflows.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/ai-agent-development) [Schedule Technical Scoping →](https://www.tensix.in/contact)
 
 [← Why I Chose Automation](https://www.tensix.in/blogs/why-i-chose-automation-over-a-9-to-5) [Next: n8n vs Python Scripts →](https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which)

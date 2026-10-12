@@ -1,5 +1,5 @@
 ---
-title: "Email Deliverability and Amazon SES Setup | TENSIX"
+title: "Fix Emails Going to Spam: SPF, DKIM, DMARC & SES Setup | TENSIX"
 url: https://www.tensix.in/services/email-deliverability
 description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices From ₹44,999."
 ---

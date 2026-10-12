@@ -6,27 +6,25 @@ description: "TENSIX is an independent studio founded by Hemal Shah, in Ahmedaba
 
 # Who Works at TENSIX
 
-One person: **Hemal Shah**, in Navrangpura, Ahmedabad. He uses AI tools to work faster, so you get quick delivery and always talk to the person doing the work.
+TENSIX is an agile systems engineering studio directed by Principal Systems Architect **[Hemal Shah](https://www.tensix.in/hemal-shah)**, delivering deterministic software, sovereign ownership, and zero agency bloat.
 
-## One Engineer, Helped by AI Tools
+## Principal-Led Engineering & Autonomous AI Pipelines
 
-There is no sales team, project manager or junior developer between you and your project. Hemal plans, builds and supports it himself, and uses the AI tools below for routine work.
-
-HS
+Direct technical alignment with senior engineering leadership. Every engagement is architected and verified by our Principal Systems Architect, eliminating junior developer hand-offs and bureaucratic agency overhead.
 
 ### Hemal Shah
 
-Founder and Only Owner
+Founder & Principal Systems Architect
 
-Engineering Leadership at TENSIX. Hemal talks to clients, plans the work, writes the code, sets up the servers and fixes things when needed. He works mainly with Python, FastAPI, Next.js and PostgreSQL. [More about Hemal](https://www.tensix.in/hemal-shah).
+Engineering Leadership at TENSIX. Leads systems architecture, high-performance web engineering, AI agent protocols (WebMCP/RFC 9421), and enterprise database design. [Meet Principal Architect Hemal Shah →](https://www.tensix.in/hemal-shah)
 
-The Person You Talk To
+Principal Systems Architect
 
 🤖
 
 ### AI Coding Assistants
 
-Autonomous Engineering Pipeline &amp; Rigorous QA
+Autonomous Engineering Pipeline & Rigorous QA
 
 Tools like Claude and ChatGPT, plus custom AI workflows built with LangGraph, help Hemal write first drafts of code, break big tasks into steps and write tests. Hemal reviews and tests everything before it reaches you.
 
@@ -52,7 +50,7 @@ Automations that deploy updates, back up databases, restart services if they sto
 
 Automation
 
-1 Lead Systems Architect (Founder: Hemal Shah)
+1 Principal-Led Architecture & Engineering
 
 0 Middlemen between you and the work
 
@@ -99,7 +97,7 @@ Fast websites, custom apps and the servers they run on, set up so updates are ea
 - Speed improvements and caching
 - Security basics: backups, access control and updates
 
-## Talk directly to the person who will build it
+## Direct Access to Senior Engineering Leadership
 
 Send us a short note about your project. He will reply himself with questions, a plan and a price.
 

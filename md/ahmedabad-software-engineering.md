@@ -8,7 +8,7 @@ description: "Websites, custom software, AI assistants and automation for Ahmeda
 
 **TENSIX** helps Ahmedabad businesses get more customers and spend less time on manual work. It is an independent studio founded and run by [Hemal Shah](https://www.tensix.in/hemal-shah), who builds every project himself with help from AI tools. Fixed prices, and you own everything we build.
 
-### Meetings by appointment
+## Meetings by appointment
 
 TENSIX works from a private studio in Navrangpura, Ahmedabad 380009, so there are no walk-ins. To start, send a message through the [contact form](https://www.tensix.in/contact), on WhatsApp at +91-8320278775, or connect with Hemal Shah on LinkedIn. Meetings can be in person in Ahmedabad or online.
 
@@ -110,3 +110,11 @@ Yes. We rebuild slow WordPress, Wix or old PHP sites as light, fast sites. We ke
 How do I get started? +
 
 Fill in the form at tensix.in/contact, message on WhatsApp at +91-8320278775, or email contact@tensix.in. Hemal reads every message himself, asks a few questions about your business and sends a fixed-price quote.
+
+Regional Playbooks
+
+### Ahmedabad Industry Digital Survival Blueprints
+
+Specific engineering strategies tailored to traditional industrial corridors across Ahmedabad and Gujarat.
+
+[**Pharma & Life Sciences →** Document AI, FDA/GMP compliance, and automated validation.](https://www.tensix.in/blogs/ahmedabad-pharma-digital-survival) [**Healthcare & Hospitals →** Custom clinic software, instant scheduling, and patient portals.](https://www.tensix.in/blogs/ahmedabad-healthcare-digital-survival) [**Textile & Apparel Export →** Automated B2B buyer pipelines and ERP inventory synchronization.](https://www.tensix.in/blogs/ahmedabad-textile-digital-survival) [**Industrial Machinery →** GEO citation for European & US buyer discovery.](https://www.tensix.in/blogs/ahmedabad-machinery-digital-survival)

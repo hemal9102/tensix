@@ -8,6 +8,8 @@ description: "Live projects built by TENSIX in Ahmedabad: AI helpers, online boo
 
 Client work and Hemal's own products: AI helpers, booking systems, lead finders and websites. Each card says what the project does in plain words and whether it is live or still in progress.
 
+## Production Deliverables & Client Deployments
+
 Freelance Work
 
 ### AI Textbook Writer
@@ -15,8 +17,6 @@ Freelance Work
 Writing a full textbook by hand takes months. This system uses a small team of AI helpers (one plans, one researches, one edits, one checks) to draft, review and assemble a complete book. It produced a 183-page AI marketing course, delivered as ready-to-edit Word files.
 
 Python LLM Agents Automation LLaMA 3
-
-[View Source →](https://github.com/hemal9102/book_generator)
 
 Live
 
@@ -126,8 +126,6 @@ A simple, secure place to upload and manage files, where each customer's files a
 
 FastAPI PostgreSQL Docker DevOps
 
-[View Live →](https://hemal9102.github.io/GitLite/)
-
 In Progress
 
 ### Lead-to-CRM Automation
@@ -138,6 +136,6 @@ n8n Python Automation Supabase
 
 ## Have a problem like one of these? Let's talk.
 
-Tell Hemal what is slowing your business down. You get a clear plan, a fixed price and a working system. See [AI agents](https://www.tensix.in/services/ai-agent-development), [custom software](https://www.tensix.in/services/custom-software-saas-development), [websites](https://www.tensix.in/services/website-development) and [automation](https://www.tensix.in/services/data-scraping-automation).
+Tell our engineering team what is slowing your operations down. You get a clear plan, a fixed price and a working system. See [AI agents](https://www.tensix.in/services/ai-agent-development), [custom software](https://www.tensix.in/services/custom-software-saas-development), [websites](https://www.tensix.in/services/website-development) and [automation](https://www.tensix.in/services/data-scraping-automation).
 
 [Get a Free Quote](https://www.tensix.in/contact) [See Services & Prices](https://www.tensix.in/services)

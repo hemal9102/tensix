@@ -34,9 +34,17 @@ Start with a secure, professional website that shows your products and capacity 
 
 Related services: [Website development](https://www.tensix.in/services/website-development), [Custom order and stock software](https://www.tensix.in/services/custom-software-saas-development) and [Google and AI search visibility](https://www.tensix.in/services/geo-aeo-seo). Or [contact TENSIX](https://www.tensix.in/contact) to talk through your setup.
 
+Related Studio Capability
+
+### Textile Inventory & Order Automation
+
+Automate purchase orders, multi-warehouse sync, and international buyer inquiries.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/data-scraping-automation) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 ### Want Help Fixing This?
 
-Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
+Tell Our Team what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
 [Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 

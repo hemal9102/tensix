@@ -32,9 +32,17 @@ B2B buyers research suppliers online, and more of them now ask AI assistants too
 
 Related services: [Website development](https://www.tensix.in/services/website-development), [Custom software and ERP integration](https://www.tensix.in/services/custom-software-saas-development) and [Secure hosting and monitoring](https://www.tensix.in/services/cloud-devops). Or [contact TENSIX](https://www.tensix.in/contact) to talk through your setup.
 
+Related Studio Capability
+
+### AI & Compliance Systems for Pharma
+
+Explore deterministic document assistants and automated audit workflows for pharma operations in Ahmedabad.
+
+[Explore Full Service Architecture →](https://www.tensix.in/services/ai-agent-development) [Schedule Technical Scoping →](https://www.tensix.in/contact)
+
 ### Want Help Fixing This?
 
-Tell Hemal what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
+Tell Our Team what your business needs. You get a plain answer on what to fix first, what it will cost, and how long it will take.
 
 [Start a Project Inquiry](https://www.tensix.in/contact) [Email Directly](mailto:contact@tensix.in)
 
