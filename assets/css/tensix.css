@@ -799,3 +799,64 @@ article p, article li { max-width: 72ch; }
   main section.section, main section.page-hero { padding-left: 1rem; padding-right: 1rem; }
   main .blog-post { padding-left: 1rem; padding-right: 1rem; }
 }
+
+/* ── Shared FAQ accordion for <details class="faq-accordion"><summary> pages (services, local landings) ── */
+.faq-list > details.faq-accordion {
+  max-width: 860px;
+  margin: 0 auto 0.75rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+.faq-list > details.faq-accordion[open] { border-color: rgba(29, 78, 216, 0.4); }
+.faq-list > details.faq-accordion > summary {
+  position: relative;
+  display: block;
+  min-height: 44px;
+  padding: 1rem 3rem 1rem 1.15rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #0F172A;
+  cursor: pointer;
+  list-style: none;
+}
+.faq-list > details.faq-accordion > summary::-webkit-details-marker { display: none; }
+.faq-list > details.faq-accordion > summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  border-radius: 50%;
+  background: rgba(29, 78, 216, 0.08);
+  color: #1D4ED8;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.faq-list > details.faq-accordion[open] > summary::after { transform: rotate(45deg); }
+.faq-list > details.faq-accordion > summary:hover { color: #1D4ED8; }
+.faq-list > details.faq-accordion .faq-answer { padding: 0.9rem 1.15rem 1.1rem; border-top: 1px solid rgba(15, 23, 42, 0.07); }
+.faq-list > details.faq-accordion .faq-answer p { max-width: 75ch; line-height: 1.7; color: #334155; }
+
+/* Section eyebrow labels sit above the heading, not beside it */
+.section-header > .section-eyebrow[style] { display: block !important; }
+
+@media (max-width: 768px) {
+  /* hero: header is already offset by <main>, so 8rem of extra top padding is dead space */
+  main section.page-hero { padding-top: 2.5rem; }
+  .pipeline-step-card { padding: 1.15rem 1.1rem; }
+  .pipeline-step-desc { font-size: 0.95rem; color: #475569; }
+  .main-nav a, .pillar-link, .back-link, .filter-btn { display: inline-flex; align-items: center; min-height: 44px; }
+  /* footer link lists: two columns instead of one 50px-per-row tower */
+  .site-footer ul { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 0.75rem; }
+  .site-footer p, .site-footer address, .blog-meta, .blog-date { font-size: max(0.875rem, 14px); }
+}
+details p, [class*="faq"] p { max-width: 68ch; }
+/* home: spec panel lines up with the "TENSIX in Short" card above it */
+.aeo-callout-chassis ~ .geo-citation-grounding { max-width: 1100px; }

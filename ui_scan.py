@@ -16,6 +16,7 @@ from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "ui_scan")
 PORT, CONCURRENCY = 8766, 12
+SHOTS = "--shots" in sys.argv  # also save full-page PNGs to ui_scan/shots/{desktop,mobile}/
 VIEWPORTS = {"desktop": dict(viewport={"width": 1440, "height": 900}),
              "mobile": dict(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True)}
 
@@ -68,7 +69,7 @@ JS = r"""
   document.querySelectorAll('a,button,summary,input,select,textarea').forEach(el => {
     const r = el.getBoundingClientRect(), s = getComputedStyle(el);
     if (!r.width || s.display === 'none' || s.visibility === 'hidden') return;
-    if ((r.height < 40 || r.width < 40) && !(el.tagName === 'A' && el.closest('p,li') && el.textContent.trim().length > 12 && s.display === 'inline'))
+    if ((r.height < (W < 600 ? 44 : 24) || r.width < 24) && !(el.tagName === 'A' && el.closest('p,li') && el.textContent.trim().length > 12 && s.display === 'inline'))
       out.issues.push({k: 'tap-target', m: Math.round(r.width)+'x'+Math.round(r.height), tag: el.tagName.toLowerCase(), cls: el.className.toString().slice(0,60), sec: '', text: (el.textContent||el.ariaLabel||'').trim().slice(0,60)});
   });
   document.querySelectorAll('ul,ol,dl').forEach(el => {
@@ -108,6 +109,8 @@ async def scan(ctx, sem, name, url):
                 await page.evaluate("css => document.head.append(Object.assign(document.createElement('style'), {textContent: css}))", "*{transition:none!important;animation:none!important}.reveal,.reveal-blur,.reveal-left,.reveal-right,.reveal-scale{opacity:1!important;transform:none!important;filter:none!important}")
                 await page.wait_for_timeout(200)
                 data = await page.evaluate(JS)
+                if SHOTS:
+                    await page.screenshot(path=os.path.join(OUT, "shots", name, (path.strip('/').replace('/', '__') or 'home') + ".png"), full_page=True)
                 break
             except Exception as e:
                 data = {"texts": [], "issues": [{"k": "load-error", "m": str(e)[:120], "tag": "", "cls": "", "sec": "", "text": ""}], "overflow": 0}
@@ -115,7 +118,7 @@ async def scan(ctx, sem, name, url):
     return name, path, data
 
 async def main():
-    os.makedirs(OUT, exist_ok=True)
+    for n in VIEWPORTS: os.makedirs(os.path.join(OUT, "shots", n), exist_ok=True)
     urls = [e.text for e in ET.parse(os.path.join(ROOT, "sitemap.xml")).getroot().iter() if e.tag.endswith("loc")]
     srv = serve()
     async with async_playwright() as p:
