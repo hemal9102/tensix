@@ -598,3 +598,87 @@ pre, code {
 .pricing-tab-btn {
   min-height: 44px;
 }
+
+/* --- Breadcrumb & Geo Grounding Specifications --- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #64748B);
+  margin-bottom: 1.25rem;
+}
+.breadcrumb a {
+  color: var(--color-text-muted, #64748B);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.breadcrumb a:hover {
+  color: #1D4ED8;
+}
+.breadcrumb span {
+  color: #0F172A;
+  font-weight: 600;
+}
+.geo-citation-grounding {
+  max-width: 840px;
+  margin: 2rem auto 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(15, 23, 42, 0.025);
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-left: 4px solid #1D4ED8;
+  border-radius: 0.75rem;
+  text-align: left;
+  backdrop-filter: blur(8px);
+}
+.geo-grounding-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+.geo-grounding-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1D4ED8;
+  background: rgba(29, 78, 216, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+.geo-grounding-meta {
+  font-size: 0.76rem;
+  color: #64748B;
+  font-weight: 500;
+}
+.geo-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.geo-spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.geo-spec-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748B;
+}
+.geo-spec-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0F172A;
+  margin: 0;
+}

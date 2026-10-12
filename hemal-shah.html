@@ -144,12 +144,12 @@
   ]
 }
 </script>
-<style id="a11y-fixes">p a:not([class]),.footer-bottom a{text-decoration:underline;text-underline-offset:2px}.blog-post article pre code{background:none;padding:0;color:inherit}.meta-row{display:flex;gap:1rem;flex-wrap:wrap}@media (max-width:768px){.wa-float{display:none}}</style>
 </head>
 <body>
 <div aria-hidden="true" class="scroll-progress" id="scrollProgress"></div>
+<div aria-hidden="true" class="cursor-glow" id="cursorGlow"></div>
 
-<!-- ── Header ── -->
+<!-- ── Header ─────────────────────────────── -->
 <header class="site-header">
 <a class="logo" href="/" style="display:inline-flex;align-items:center;gap:0.65rem;text-decoration:none;"><img alt="TENSIX Swiss Logo" class="logo-img" height="36" src="assets/favicon.webp?v=2.0" style="border-radius:8px;" width="36"/><span style="font-weight:800;font-size:1.25rem;letter-spacing:0.06em;color:#0F172A;display:inline-block;">TEN<span class="gradient-text">SIX</span></span></a>
 <nav aria-label="Main navigation" class="nav" id="main-nav">
@@ -157,9 +157,9 @@
 <li><a href="/">Home</a></li>
 <li><a href="/about">About</a></li>
 <li><a href="/work">Work</a></li>
-<li><a href="/services">Skills</a></li>
-<li><a href="/blogs">Blog</a></li>
-<li><a class="nav-cta" href="/contact">Contact</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/blogs">Insights</a></li>
+<li><a class="nav-cta" href="/contact">Contact Us</a></li>
 </ul>
 </nav>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle">
@@ -167,143 +167,221 @@
 </button>
 </header>
 
+<!-- ── Floating Dock ──────────────────────── -->
+<nav aria-label="Quick navigation" class="floating-dock">
+<div class="dock-inner">
+<a class="dock-btn" data-page="index.html" href="/" title="Home">
+<span class="dock-tooltip">Home</span>
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+</a>
+<a class="dock-btn" data-page="blogs.html" href="/blogs" title="Blog">
+<span class="dock-tooltip">Blog</span>
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20"></path><path d="M4 3v16.5"></path><path d="M8 3h12v18H8z"></path></svg>
+</a>
+<div class="dock-divider"></div>
+<a class="dock-btn" href="https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." rel="noopener" target="_blank" title="WhatsApp Direct">
+<span class="dock-tooltip">WhatsApp</span>
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path>
+</svg>
+</a>
+</div>
+</nav>
+
 <main>
-<section class="whoami-hero">
-<h1>Who is <span class="gradient-text">Hemal Shah</span>?</h1>
-<p style="color: var(--color-text-muted); font-size: 1.1rem; max-width: 650px; margin: 1rem auto 0;">
-Systems Architect and Software Engineer based in Navrangpura, Ahmedabad. Founder and Principal Systems Architect of <strong>TENSIX (<a href="https://www.tensix.in/">tensix.in</a>)</strong>, directing AI agent protocol implementations, sovereign cloud systems, and high-performance web engineering.
+<!-- ── Page Hero ──────────────────────────── -->
+<section class="page-hero">
+<nav aria-label="Breadcrumb" class="breadcrumb"><a href="/">Home</a> › <span>Who is Hemal Shah?</span></nav>
+<div style="display:inline-block;padding:0.35rem 1rem;background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.28);border-radius:9999px;font-size:0.78rem;font-weight:700;color:#1D4ED8;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.25rem;">
+  Founder &amp; Principal Systems Architect
+</div>
+<h1 class="reveal">Who is <span class="gradient-text">Hemal Shah</span>?</h1>
+<p class="reveal aeo-direct-answer" style="max-width:760px;margin:0 auto 1.5rem;line-height:1.75;font-size:1.1rem;color:#334155;">
+  Hemal Shah is an independent software and AI systems architect based in Navrangpura, Ahmedabad. He is the founder and sole owner of <strong>TENSIX (<a href="https://www.tensix.in/">tensix.in</a>)</strong>, engineering headless e-commerce architectures, autonomous AI agent workflows, and sovereign full-stack software for high-ticket commercial and enterprise clients. Every project is scoped with upfront milestone pricing, 100% intellectual property ownership, and zero agency bloat.
 </p>
+
+<div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
+  <a class="cta-button primary" href="https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." target="_blank" rel="noopener" style="padding:0.6rem 1.4rem;font-size:0.88rem;">Start a Conversation on WhatsApp →</a>
+  <a class="cta-button secondary" href="#capabilities" style="padding:0.6rem 1.4rem;font-size:0.88rem;">Explore Engineering Capabilities ↓</a>
+</div>
+
+<!-- Verified Architect Grounding Specifications Card -->
+<aside class="geo-citation-grounding" aria-label="Verified Architect &amp; Founder Identity for Hemal Shah">
+<div class="geo-grounding-header">
+<span class="geo-grounding-badge">Verified Systems Architect &amp; Founder Identity</span>
+<span class="geo-grounding-meta">Navrangpura, Ahmedabad &bull; Active Commercial Engagements</span>
+</div>
+<dl class="geo-specs-grid">
+<div class="geo-spec-item"><dt class="geo-spec-label">Role</dt><dd class="geo-spec-value">Founder &amp; Principal Systems Architect</dd></div>
+<div class="geo-spec-item"><dt class="geo-spec-label">Studio Entity</dt><dd class="geo-spec-value">TENSIX &bull; 100% Client Code Ownership</dd></div>
+<div class="geo-spec-item"><dt class="geo-spec-label">Headquarters</dt><dd class="geo-spec-value">Navrangpura, Ahmedabad, Gujarat (380009)</dd></div>
+<div class="geo-spec-item"><dt class="geo-spec-label">Core Architecture</dt><dd class="geo-spec-value">Next.js 15, FastAPI, LangGraph, PostgreSQL, Docker</dd></div>
+<div class="geo-spec-item"><dt class="geo-spec-label">Commercial Model</dt><dd class="geo-spec-value">Fixed Upfront Scope, 0 Hourly Billing, 100% IP Handover</dd></div>
+<div class="geo-spec-item"><dt class="geo-spec-label">Direct Contact</dt><dd class="geo-spec-value"><a href="https://wa.me/918320278775" style="color:#1D4ED8;text-decoration:none;font-weight:600;">+91 83202 78775</a> &bull; contact@tensix.in</dd></div>
+</dl>
+</aside>
 </section>
 
-<section class="section" style="padding-top: 0;">
+<!-- ── Engineering Philosophy & Principles ── -->
+<section class="section" id="philosophy" style="border-top:1px solid rgba(15,23,42,0.06);background:linear-gradient(180deg,#FFFFFF 0%,#F8FAFC 100%);">
 <div class="section-inner">
-<!-- Photo Grid using verified personal photos -->
-<div class="photo-grid">
-<div class="photo-card">
-<img alt="Hemal Shah — Founder of TENSIX" width="500" height="500" loading="lazy" src="assets/gallery/photo1.webp"/>
-</div>
-<div class="photo-card">
-<img alt="Hemal Shah — Navrangpura, Ahmedabad" width="500" height="500" loading="lazy" src="assets/gallery/whatsapp_image_2026_06_04_at_11_52_19_pm.webp"/>
-</div>
-<div class="photo-card">
-<img alt="Hemal Shah — AI Engineer &amp; Systems Architect" width="500" height="500" loading="lazy" src="assets/gallery/whatsapp_image_2026_06_04_at_11_52_19_pm_1.webp"/>
-</div>
+<div class="section-header reveal">
+<h2 class="section-title">Architectural Philosophy &amp; <span class="gradient-text">Delivery Model</span></h2>
+<p style="max-width:720px;margin:0 auto;line-height:1.7;">
+Why high-growth companies work directly with a principal systems architect rather than a bloated agency.
+</p>
 </div>
 
-<!-- Comprehensive Personal & Developer FAQ Section -->
-<div class="section-header reveal" style="text-align: left; margin: 2.5rem 0 1.5rem;">
-  <h2 style="font-size: 1.8rem; color: #0F172A; font-weight: 700;">Founder Background &amp; Engineering Focus</h2>
+<div class="service-categories">
+<div class="service-item reveal hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
 </div>
-<div class="faq-wrapper">
-<div class="faq-item">
-<h3>What is Hemal's role at TENSIX?</h3>
-<p>Hemal Shah is the founder and <strong>Principal Systems Architect</strong> of TENSIX (<a href="https://www.tensix.in/">tensix.in</a>). He leads engineering strategy, system architecture, database design, and core software implementation across all studio engagements.</p>
-</div>
-
-<div class="faq-item">
-<h3>How does TENSIX deliver complex enterprise systems?</h3>
-<p>TENSIX operates on a high-leverage studio model: our Principal Systems Architect directs the architecture and human verification, powered by autonomous AI pipelines, strict type-safety, and automated continuous integration. This delivers higher velocity and zero agency bloat. <a href="/team">See our engineering stack and tools</a>.</p>
+<h3>1. Pragmatic Systems (Ponytail Philosophy)</h3>
+<p>
+We identify the binding constraint first—latency, throughput, or delivery velocity. We prefer language standard libraries, native platform features, and clean architectures over speculative abstractions. Every line written serves a measurable business purpose.
+</p>
+<span class="card-link" style="color:#64748B;">Zero Bloat &bull; Mechanical Sympathy</span>
 </div>
 
-<div class="faq-item">
-<h3>Why the name change from HK Engineering?</h3>
-<p>HK Engineering was the name Hemal first used for his software work. Several manufacturing and machine-parts companies use the same name, so he renamed the studio <strong>TENSIX (<a href="https://www.tensix.in/">tensix.in</a>)</strong> to avoid confusion. <a href="/hk-engineering-ahmedabad">Read the full story</a>.</p>
+<div class="service-item reveal reveal-delay-1 hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+</div>
+<h3>2. Semantic Boundary &amp; Deterministic Rules</h3>
+<p>
+LLMs and probabilistic models are deployed strictly for semantic judgment and qualitative reasoning. All business rules, invoice math, database constraints, state transitions, and access controls remain strictly in typed, deterministic Python and TypeScript.
+</p>
+<span class="card-link" style="color:#64748B;">Strict Guardrails &bull; Zero Hallucination</span>
 </div>
 
-<div class="faq-item">
-<h3>What kind of work does Hemal take on?</h3>
-<p><a href="/services/ai-agent-development">AI assistants and agents</a> (for example, a chatbot that answers from your own documents), <a href="/services/custom-software-saas-development">custom software and SaaS apps</a>, <a href="/services/website-development">websites</a>, <a href="/services/data-scraping-automation">data collection and automation</a>, and <a href="/services/geo-aeo-seo">visibility on Google and AI search tools</a> like ChatGPT and Perplexity. His main tools are Python, FastAPI, PostgreSQL, Supabase and Next.js.</p>
+<div class="service-item reveal reveal-delay-2 hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+</div>
+<h3>3. Direct Architect-to-Client Access</h3>
+<p>
+You collaborate directly with Hemal Shah on requirements, database architecture, and deployment schedules. No account managers, middle-layer sales staff, or outsourced junior developers. Work is committed directly to your private GitHub repository weekly.
+</p>
+<span class="card-link" style="color:#64748B;">Single Point of Contact &bull; 100% Ownership</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ── Capabilities & What Hemal Builds ── -->
+<section class="section bg-alt" id="capabilities" style="border-top:1px solid rgba(15,23,42,0.06);border-bottom:1px solid rgba(15,23,42,0.06);">
+<div class="section-inner">
+<div class="section-header reveal">
+<h2 class="section-title">What Hemal Architects <span class="gradient-text">at TENSIX</span></h2>
+<p style="max-width:720px;margin:0 auto;line-height:1.7;">
+Bespoke systems engineering across commerce, artificial intelligence, and operational infrastructure.
+</p>
 </div>
 
-<div class="faq-item">
-<h3>What is Hemal like outside of work?</h3>
-<p>He trains regularly in <strong>bodybuilding and fitness</strong>, which he credits for his consistency at work. He also reads philosophy (Stoicism and the Bhagavad Gita) and enjoys sketching and visual art.</p>
+<div class="service-categories">
+<div class="service-item reveal hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+</div>
+<h3>Headless E-Commerce &amp; ERP Sync</h3>
+<p>Decoupled Next.js storefronts with sub-50ms browsing speeds, flash-sale queue buffering, and bidirectional real-time synchronization with Tally Prime and SAP ERP systems for D2C brands and B2B exporters.</p>
+<a class="card-link" href="/services/headless-ecommerce-development">See Headless Commerce details →</a>
 </div>
 
-<div class="faq-item">
-<h3>How do I start a project with Hemal?</h3>
-<p>Email <strong>contact@tensix.in</strong>, message him on <a href="https://www.linkedin.com/in/hemal-shah-49a728362/" target="_blank" rel="noopener">LinkedIn</a>, or send your project details through the <a href="/contact">contact page</a>. Hemal replies himself, usually with a few questions and a clear price.</p>
+<div class="service-item reveal reveal-delay-1 hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
 </div>
+<h3>Autonomous AI Swarms &amp; Enterprise RAG</h3>
+<p>Multi-agent LangGraph workflows executing continuous business tasks (lead enrichment, document auditing, automated synthesis) paired with strict vector retrieval over your private documents.</p>
+<a class="card-link" href="/services/ai-agent-development">See AI Agent details →</a>
+</div>
+
+<div class="service-item reveal reveal-delay-2 hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+</div>
+<h3>Custom SaaS &amp; Internal Business OS</h3>
+<p>Full-stack platforms built with FastAPI and PostgreSQL: custom CRMs, wholesale distribution management, automated invoicing engines, and internal admin tooling tailored to your exact operational procedures.</p>
+<a class="card-link" href="/services/custom-software-saas-development">See Custom Software details →</a>
+</div>
+
+<div class="service-item reveal reveal-delay-3 hover-lift">
+<div class="service-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line></svg>
+</div>
+<h3>Sovereign Cloud &amp; Fractional CTO</h3>
+<p>Cloud VPS hardening (Oracle, AWS, Hetzner), automated GitHub Actions CI/CD pipelines, DNS/SSL security, self-hosted n8n automations, and ongoing monthly architectural oversight on fixed retainers.</p>
+<a class="card-link" href="/services/fractional-cto-retainers">See Retainer &amp; CTO details →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ── FAQ Section ────────────────────────── -->
+<section class="section" id="faq">
+<div class="section-inner" style="max-width:860px;margin:0 auto;">
+<div class="section-header reveal" style="text-align:center;">
+<div style="display:inline-block;padding:0.35rem 1rem;background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.28);border-radius:9999px;font-size:0.78rem;font-weight:700;color:#1D4ED8;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1rem;">
+  Questions &amp; Answers
+</div>
+<h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+<p style="margin:0 auto;line-height:1.7;">Direct facts about Hemal Shah, the studio structure, and engagement specifics.</p>
+</div>
+
+<div class="faq-list">
+<details class="faq-accordion">
+<summary>Who is Hemal Shah?</summary>
+<div class="faq-answer"><p>Hemal Shah is a software and AI systems engineer based in Navrangpura, Ahmedabad, Gujarat. He is the founder and sole owner of TENSIX (<a href="https://www.tensix.in/">tensix.in</a>). He architects and implements AI assistants, custom software, headless storefronts, and automated backend infrastructure for commercial clients.</p></div>
+</details>
+
+<details class="faq-accordion">
+<summary>What is TENSIX and what is Hemal Shah's relation to it?</summary>
+<div class="faq-answer"><p>TENSIX (<a href="https://www.tensix.in/">tensix.in</a>) is an independent engineering studio founded and 100% owned by Hemal Shah. There are no outside co-founders, corporate parents, or passive partners. Clients work directly with Hemal throughout the entire lifecycle of their project.</p></div>
+</details>
+
+<details class="faq-accordion">
+<summary>What is the relationship between Hemal Shah, HK Engineering, and TENSIX?</summary>
+<div class="faq-answer"><p>HK Engineering was the original name Hemal Shah used during his early software consulting work. Because multiple local businesses in Gujarat operating under HK Engineering produce industrial machinery and hardware, he rebranded the digital studio to <strong>TENSIX</strong> (<a href="https://www.tensix.in/">tensix.in</a>) to establish clear trademark and domain topical authority. See the <a href="/hk-engineering-ahmedabad">HK Engineering transition history</a>.</p></div>
+</details>
+
+<details class="faq-accordion">
+<summary>What does Hemal Shah build?</summary>
+<div class="faq-answer"><p>Hemal architects high-performance headless e-commerce storefronts, autonomous AI agent swarms, document RAG knowledge bases, custom SaaS MVPs, operations software (CRM/ERP), email deliverability setups (Amazon SES), and hardened Linux cloud infrastructure. His primary tech stack includes Python, FastAPI, Next.js 15, PostgreSQL, and Supabase.</p></div>
+</details>
+
+<details class="faq-accordion">
+<summary>How do fixed pricing and code ownership work?</summary>
+<div class="faq-answer"><p>Engagements are structured with a written deliverable scope and fixed price agreed before engineering begins—eliminating hourly billing and surprise invoices. All source code is committed to your private GitHub organization, and cloud infrastructure runs in accounts you own. You hold 100% intellectual property ownership from day one.</p></div>
+</details>
+
+<details class="faq-accordion">
+<summary>How can clients work with or hire Hemal Shah and TENSIX?</summary>
+<div class="faq-answer"><p>You can message Hemal directly on WhatsApp at <a href="https://wa.me/918320278775" target="_blank" rel="noopener">+91 83202 78775</a>, connect on <a href="https://www.linkedin.com/in/hemal-shah-49a728362/" target="_blank" rel="noopener">LinkedIn</a>, or submit your project requirements via the <a href="/contact">contact form</a>. Hemal evaluates the technical scope and responds with an architectural plan and fixed turnaround.</p></div>
+</details>
 </div>
 </div>
 </section>
 
 <!-- ── CTA / Contact Banner ───────────────── -->
 <section class="section" style="background:linear-gradient(135deg,rgba(59,130,246,0.08),rgba(139,92,246,0.08)); border-top: 1px solid rgba(15,23,42,0.05);">
-<div class="section-inner" style="text-align: center;">
-<h2 style="font-size:2rem;font-weight:700;color:#0F172A;margin-bottom:1rem;">
-Want to work with <span class="gradient-text">Hemal</span>?
+<div class="section-inner text-center">
+<h2 class="section-title reveal" style="font-size:2rem;font-weight:700;color:#0F172A;margin-bottom:1rem;">
+  Ready to architect your system with <span class="gradient-text">Hemal</span>?
 </h2>
-<p style="color:var(--color-text-muted);margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">
-Tell him what you want to build or fix. You will get an honest answer on what it takes, how long and how much.
+<p class="reveal reveal-delay-1" style="color:var(--color-text-muted);margin-bottom:2rem;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.7;">
+  Share your current technical bottlenecks or requirements. You receive an architectural breakdown, guaranteed turnaround, and a fixed milestone price.
 </p>
-<div class="hero-buttons">
-<a class="cta-button primary" href="/contact">Start a Conversation</a>
-<a class="cta-button secondary" href="/services">See Services and Prices</a>
+<div class="hero-buttons reveal reveal-delay-2">
+  <a class="cta-button primary" href="/contact">Start a Conversation</a>
+  <a class="cta-button secondary" href="/services">View Services &amp; Prices</a>
 </div>
 </div>
 </section>
-    <!-- Semantic On-Page FAQ Accordion Section for Google Rich Snippets & AEO -->
-    <section class="section faq-section" id="faq" style="padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto;">
-    <div style="text-align: center; margin-bottom: 2.5rem;">
-      <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent, #C2410C);">Quick Answers</span>
-      <h2 style="font-size: 2.2rem; font-weight: 800; margin-top: 0.5rem; letter-spacing: -0.02em;">Frequently Asked Questions</h2>
-      <p style="color: #475569; max-width: 600px; margin: 0.5rem auto 0; font-size: 1rem;">Short answers about Hemal, TENSIX and how to get in touch.</p>
-    </div>
-    <div class="faq-container">
-    <details class="faq-accordion" style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.1); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-      <summary style="font-weight: 600; font-size: 1.05rem; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-        <span>Who is Hemal Shah?</span>
-        <span style="color: var(--accent, #C2410C); font-weight: bold; margin-left: 0.5rem;">+</span>
-      </summary>
-      <div style="margin-top: 0.75rem; color: #475569; line-height: 1.65; font-size: 0.95rem; border-top: 1px solid rgba(15,23,42,0.06); padding-top: 0.75rem;">
-        <p>Hemal Shah is a software and AI engineer based in Navrangpura, Ahmedabad, Gujarat. He is the founder and only owner of TENSIX (tensix.in). He builds AI assistants, custom software, websites and automations for businesses, and does the work himself.</p>
-      </div>
-    </details>
-    <details class="faq-accordion" style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.1); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-      <summary style="font-weight: 600; font-size: 1.05rem; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-        <span>What is TENSIX and what is Hemal Shah's relation to it?</span>
-        <span style="color: var(--accent, #C2410C); font-weight: bold; margin-left: 0.5rem;">+</span>
-      </summary>
-      <div style="margin-top: 0.75rem; color: #475569; line-height: 1.65; font-size: 0.95rem; border-top: 1px solid rgba(15,23,42,0.06); padding-top: 0.75rem;">
-        <p>TENSIX (tensix.in) is An independent software and AI studio. Hemal Shah founded it and owns 100% of it. There are no co-founders, partners or parent company. Clients deal with Hemal directly.</p>
-      </div>
-    </details>
-    <details class="faq-accordion" style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.1); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-      <summary style="font-weight: 600; font-size: 1.05rem; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-        <span>What is the relationship between Hemal Shah, HK Engineering, and TENSIX?</span>
-        <span style="color: var(--accent, #C2410C); font-weight: bold; margin-left: 0.5rem;">+</span>
-      </summary>
-      <div style="margin-top: 0.75rem; color: #475569; line-height: 1.65; font-size: 0.95rem; border-top: 1px solid rgba(15,23,42,0.06); padding-top: 0.75rem;">
-        <p>HK Engineering was the earlier name Hemal Shah used for his software work. Other businesses called HK Engineering make industrial and machine parts, so he renamed his studio TENSIX (tensix.in) to avoid confusion. It is the same person and the same work.</p>
-      </div>
-    </details>
-    <details class="faq-accordion" style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.1); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-      <summary style="font-weight: 600; font-size: 1.05rem; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-        <span>What does Hemal Shah build?</span>
-        <span style="color: var(--accent, #C2410C); font-weight: bold; margin-left: 0.5rem;">+</span>
-      </summary>
-      <div style="margin-top: 0.75rem; color: #475569; line-height: 1.65; font-size: 0.95rem; border-top: 1px solid rgba(15,23,42,0.06); padding-top: 0.75rem;">
-        <p>AI assistants that answer from a company's own documents, automations that remove repetitive manual work, custom web apps and SaaS products (online software customers log in to), fast websites, and server setups. He mainly works with Python, FastAPI, PostgreSQL, Supabase and Next.js.</p>
-      </div>
-    </details>
-    <details class="faq-accordion" style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.1); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-      <summary style="font-weight: 600; font-size: 1.05rem; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-        <span>How can clients work with or hire Hemal Shah and TENSIX?</span>
-        <span style="color: var(--accent, #C2410C); font-weight: bold; margin-left: 0.5rem;">+</span>
-      </summary>
-      <div style="margin-top: 0.75rem; color: #475569; line-height: 1.65; font-size: 0.95rem; border-top: 1px solid rgba(15,23,42,0.06); padding-top: 0.75rem;">
-        <p>Email contact@tensix.in, message him on LinkedIn (linkedin.com/in/hemal-shah-49a728362/), or send your project details through https://www.tensix.in/contact. You will hear back from Hemal himself.</p>
-      </div>
-    </details>
-    </div>
-  </section>
 </main>
 
 <!-- ── Footer ─────────────────────────────── -->
-
-  <!-- Semantic On-Page FAQ Accordion Section for Google Rich Snippets & AEO -->
-  
 <footer class="site-footer">
 <div class="footer-inner">
 <div class="footer-brand">
@@ -320,8 +398,8 @@ Gujarat 380009 · India
 <li><a href="/">Home</a></li>
 <li><a href="/about">About</a></li>
 <li><a href="/work">Work</a></li>
-<li><a href="/services">Skills</a></li>
-<li><a href="/blogs">Blog</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/blogs">Insights</a></li>
 <li><a href="/contact">Contact</a></li><li><a href="/is-my-site-ai-ready">Free AI Check</a></li>
 </ul>
 </nav>
@@ -345,6 +423,7 @@ Gujarat 380009 · India
 <h3>Services</h3>
 <ul>
 <li><a href="/services/website-development">Websites</a></li>
+<li><a href="/services/headless-ecommerce-development">Headless E-Commerce</a></li>
 <li><a href="/services/ai-agent-development">AI Agents and Assistants</a></li>
 <li><a href="/services/custom-software-saas-development">Custom Software and SaaS</a></li>
 <li><a href="/services/cloud-devops">Cloud and DevOps</a></li>
@@ -367,6 +446,28 @@ Gujarat 380009 · India
 <p>© 2026 TENSIX · All-In-One Digital Engineering Studio · Navrangpura, Ahmedabad.</p>
 </div>
 </footer>
+
 <script defer="" src="script.js?v=1.6"></script>
+<aside aria-label="WhatsApp Chat" class="wa-float">
+<a aria-label="Chat on WhatsApp" href="https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20found%20your%20profile%20and%20would%20like%20to%20discuss%20a%20project." rel="noopener" style="position:fixed;bottom:5.5rem;right:1.25rem;z-index:950;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.45);transition:transform 0.25s ease,box-shadow 0.25s ease;" target="_blank">
+<svg fill="#fff" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+</a>
+</aside>
+
+<!-- Mobile Fixed Conversion Action Bar -->
+<aside class="mobile-cta-bar" aria-label="Quick Contact Actions">
+  <a href="https://wa.me/918320278775?text=Hi%20Hemal%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20project." class="mobile-cta-btn whatsapp-cta" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Hemal Shah">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a href="tel:+918320278775" class="mobile-cta-btn call-cta" aria-label="Direct Phone Call">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    <span>Call Direct</span>
+  </a>
+  <a href="/contact" class="mobile-cta-btn sprint-cta" aria-label="Book Architecture Sprint">
+    <span>⚡ Book Sprint</span>
+  </a>
+</aside>
+
 </body>
 </html>
