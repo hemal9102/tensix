@@ -689,3 +689,14 @@ pre, code {
     padding-bottom: 74px !important;
   }
 }
+
+/* Accessibility, Crawler & Print Fail-safe for Reveal Elements */
+@media (prefers-reduced-motion: reduce), (scripting: none), print {
+  .reveal, .reveal-blur, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
+

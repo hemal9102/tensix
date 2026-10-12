@@ -104,6 +104,25 @@ OVERFLOW_CHECK_SCRIPT = """
 }
 """
 
+SCROLL_AND_SETTLE_SCRIPT = """
+async () => {
+    await new Promise((resolve) => {
+        let totalHeight = 0;
+        const distance = 400;
+        const timer = setInterval(() => {
+            window.scrollBy(0, distance);
+            totalHeight += distance;
+            if (totalHeight >= document.body.scrollHeight) {
+                clearInterval(timer);
+                window.scrollTo(0, 0);
+                document.querySelectorAll('.reveal, .reveal-blur, .reveal-left, .reveal-right, .reveal-scale').forEach(el => el.classList.add('active'));
+                resolve();
+            }
+        }, 25);
+    });
+}
+"""
+
 def run_audit():
     urls = get_sitemap_urls()
     print(f"Loaded {len(urls)} URLs from sitemap.xml")
@@ -158,6 +177,8 @@ def run_audit():
             desktop_shot_path = os.path.join(DESKTOP_DIR, f"{slug}.png")
             try:
                 desktop_page.goto(full_url, wait_until="networkidle", timeout=15000)
+                desktop_page.evaluate(SCROLL_AND_SETTLE_SCRIPT)
+                desktop_page.wait_for_timeout(300)
                 desktop_overflow = desktop_page.evaluate(OVERFLOW_CHECK_SCRIPT)
                 desktop_page.screenshot(path=desktop_shot_path, full_page=True)
 
@@ -183,6 +204,8 @@ def run_audit():
             mobile_shot_path = os.path.join(MOBILE_DIR, f"{slug}.png")
             try:
                 mobile_page.goto(full_url, wait_until="networkidle", timeout=15000)
+                mobile_page.evaluate(SCROLL_AND_SETTLE_SCRIPT)
+                mobile_page.wait_for_timeout(300)
                 mobile_overflow = mobile_page.evaluate(OVERFLOW_CHECK_SCRIPT)
                 mobile_page.screenshot(path=mobile_shot_path, full_page=True)
 

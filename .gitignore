@@ -20,3 +20,9 @@ contolo/
 
 # Rust build output
 tools/geo-kernel/target/
+
+# Local audit output & scratch files
+scratch/
+scratch_*.png
+ui_audit_report.json
+

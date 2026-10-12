@@ -104,6 +104,7 @@ function initReveal() {
   );
   if (!elements.length) return;
 
+  // Use a forgiving observer that triggers 80px before entering viewport
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -111,9 +112,32 @@ function initReveal() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.02, rootMargin: '0px 0px 80px 0px' });
 
   elements.forEach(el => observer.observe(el));
+
+  // If navigated directly via hash anchor, activate immediately
+  if (window.location.hash) {
+    elements.forEach(el => el.classList.add('active'));
+  }
+
+  // Safety fallback: Ensure all content is revealed after 800ms
+  // Prevents invisible content for fast scrollers, bots, or delayed observers
+  setTimeout(() => {
+    elements.forEach(el => el.classList.add('active'));
+  }, 800);
+
+  // Passive scroll listener for fast scrollers
+  window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+      if (!el.classList.contains('active')) {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight + 120 && r.bottom > -120) {
+          el.classList.add('active');
+        }
+      }
+    });
+  }, { passive: true });
 }
 
 /* ── Skill Bar Animations ───────────────────── */
@@ -126,12 +150,12 @@ function initSkillBars() {
       if (entry.isIntersecting) {
         const bar = entry.target;
         const width = bar.getAttribute('data-width') || '0%';
-        setTimeout(() => { bar.style.width = width; }, 200);
-        setTimeout(() => { bar.classList.add('filled'); }, 1900);
+        setTimeout(() => { bar.style.width = width; }, 150);
+        setTimeout(() => { bar.classList.add('filled'); }, 1500);
         observer.unobserve(bar);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1 });
 
   bars.forEach(bar => observer.observe(bar));
 }
