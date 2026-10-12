@@ -20,13 +20,9 @@
 <link href="assets/favicon.png" rel="icon" type="image/png"/>
 <link as="font" crossorigin="anonymous" href="assets/fonts/inter-variable.woff2" rel="preload" type="font/woff2"/>
 <link rel="stylesheet" href="/assets/css/tensix.css?v=1.0"/>
-<!-- JSON-LD Service Schema -->
-<!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
-<!-- JSON-LD Entity Graph for Hemal Shah Topical Authority -->
-<!-- NEXT-GEN AI METADATA JSON-LD GRAPH -->
+<!-- JSON-LD Service & Schema Graph -->
 <link href="https://www.tensix.in/services" rel="canonical"/>
 <meta content="TENSIX" name="author"/>
-<!-- HIGH E-E-A-T & ENTITY METADATA JSON-LD GRAPH -->
 <!-- Open Graph / Facebook -->
 <meta content="website" property="og:type"/>
 <meta content="TENSIX Services and Prices: AI, Software, Websites and Cloud" property="og:title"/>
@@ -129,6 +125,15 @@
           "itemOffered": {
             "@id": "https://tensix.in/services/website-development#service",
             "name": "Website Development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Headless E-Commerce Development",
+          "url": "https://www.tensix.in/services/headless-ecommerce-development",
+          "itemOffered": {
+            "@id": "https://tensix.in/services/headless-ecommerce-development#service",
+            "name": "Headless E-Commerce Development & Systems Engineering"
           }
         },
         {
@@ -369,7 +374,7 @@
 <span class="geo-grounding-meta">Last Verified: <time datetime="2026-10-07">October 7, 2026</time> &bull; Location: Navrangpura, Ahmedabad</span>
 </div>
 <dl class="geo-specs-grid">
-<div class="geo-spec-item"><dt class="geo-spec-label">Service Catalogue</dt><dd class="geo-spec-value">8 Fixed-Price Engineering &amp; AI Offerings</dd></div>
+<div class="geo-spec-item"><dt class="geo-spec-label">Service Catalogue</dt><dd class="geo-spec-value">9 Specialized Engineering &amp; AI Offerings (8 Fixed-Price Suites)</dd></div>
 <div class="geo-spec-item"><dt class="geo-spec-label">Price Range</dt><dd class="geo-spec-value">Fixed Milestone Architecture (From ₹75,000 / $1,000+), 0 Hourly Billing</dd></div>
 <div class="geo-spec-item"><dt class="geo-spec-label">Delivery SLA</dt><dd class="geo-spec-value">2 to 21 business days by milestone</dd></div>
 <div class="geo-spec-item"><dt class="geo-spec-label">Operator</dt><dd class="geo-spec-value">TENSIX &bull; Engineering &amp; AI Studio (Director: Hemal Shah)</dd></div>
@@ -475,19 +480,20 @@
     </p>
 
     <!-- Category Tabs Filter -->
-    <div class="pricing-tabs-container">
-      <button class="pricing-tab-btn active" data-target="pricing-web" onclick="switchPricing('pricing-web', this)">🌐 Websites</button>
-      <button class="pricing-tab-btn" data-target="pricing-email" onclick="switchPricing('pricing-email', this)">📬 Email delivery</button>
-      <button class="pricing-tab-btn" data-target="pricing-scraping" onclick="switchPricing('pricing-scraping', this)">🕷️ Data and automation</button>
-      <button class="pricing-tab-btn" data-target="pricing-cloud" onclick="switchPricing('pricing-cloud', this)">☁️ Cloud and DevOps</button>
-      <button class="pricing-tab-btn" data-target="pricing-software" onclick="switchPricing('pricing-software', this)">⚡ Custom software and SaaS</button>
-      <button class="pricing-tab-btn" data-target="pricing-ai" onclick="switchPricing('pricing-ai', this)">🧠 AI agents</button>
-      <button class="pricing-tab-btn" data-target="pricing-retainer" onclick="switchPricing('pricing-retainer', this)" style="border-color: rgba(139,92,246,0.6); background: rgba(139,92,246,0.12); color: #6D28D9;">🚀 Monthly retainers</button>
+    <div class="pricing-tabs-container" role="tablist" aria-label="Engineering Service Pricing Tiers">
+      <button class="pricing-tab-btn active" role="tab" id="tab-pricing-web" aria-controls="pricing-web" aria-selected="true" data-target="pricing-web" onclick="switchPricing('pricing-web', this)">🌐 Websites</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-ecommerce" aria-controls="pricing-ecommerce" aria-selected="false" data-target="pricing-ecommerce" onclick="switchPricing('pricing-ecommerce', this)">🛒 Headless E-Commerce</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-email" aria-controls="pricing-email" aria-selected="false" data-target="pricing-email" onclick="switchPricing('pricing-email', this)">📬 Email delivery</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-scraping" aria-controls="pricing-scraping" aria-selected="false" data-target="pricing-scraping" onclick="switchPricing('pricing-scraping', this)">🕷️ Data and automation</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-cloud" aria-controls="pricing-cloud" aria-selected="false" data-target="pricing-cloud" onclick="switchPricing('pricing-cloud', this)">☁️ Cloud and DevOps</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-software" aria-controls="pricing-software" aria-selected="false" data-target="pricing-software" onclick="switchPricing('pricing-software', this)">⚡ Custom software and SaaS</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-ai" aria-controls="pricing-ai" aria-selected="false" data-target="pricing-ai" onclick="switchPricing('pricing-ai', this)">🧠 AI agents</button>
+      <button class="pricing-tab-btn" role="tab" id="tab-pricing-retainer" aria-controls="pricing-retainer" aria-selected="false" data-target="pricing-retainer" onclick="switchPricing('pricing-retainer', this)" style="border-color: rgba(139,92,246,0.6); background: rgba(139,92,246,0.12); color: #6D28D9;">🚀 Monthly retainers</button>
     </div>
   </div>
 
 <!-- BEGIN generated pricing groups -->
-<div class="pricing-group active" id="pricing-web">
+<div class="pricing-group active" id="pricing-web" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-web">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
@@ -544,7 +550,61 @@
 </div>
 <p class="details-link"><a class="card-link" href="/services/website-development">See full details: Website Development →</a></p>
 </div>
-<div class="pricing-group" id="pricing-email">
+<div class="pricing-group" id="pricing-ecommerce" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-ecommerce">
+<div class="pricing-grid">
+<div class="pricing-card hover-lift">
+<div class="pricing-header">
+<h3>Headless Next.js Storefront</h3>
+<p class="pricing-hook">For growing D2C brands scaling past theme limitations: instant page loads, sub-50ms browsing and higher mobile conversion.</p>
+<div class="pricing-price-wrap"><span class="pricing-price">₹2,49,999<span class="pricing-usd">($3,000)</span></span> <span class="pricing-period">/ fixed project fee</span></div>
+</div>
+<ul class="pricing-features">
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Custom Next.js 15 App Router storefront</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Shopify Storefront API or MedusaJS backend</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Sub-50ms TTFB across Indian edge nodes</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Instant catalog search with Typesense or Algolia</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Core Web Vitals guarantee: 95+ mobile score</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 2–3 weeks</span></li>
+</ul>
+<a class="pricing-cta cta-button secondary" href="/contact?plan=ecommerce-headless">Start a headless storefront →</a>
+</div>
+<div class="pricing-card featured hover-lift">
+<span class="pricing-badge">Recommended</span>
+<div class="pricing-header">
+<h3>B2B Wholesale Portal &amp; ERP Sync</h3>
+<p class="pricing-hook">For manufacturers and exporters: private client wholesale ordering, tier pricing, GST invoicing and live Tally/SAP sync.</p>
+<div class="pricing-price-wrap"><span class="pricing-price">₹3,99,999<span class="pricing-usd">($5,000)</span></span> <span class="pricing-period">/ fixed project fee</span></div>
+</div>
+<ul class="pricing-features">
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Password-protected B2B wholesale portal</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Custom customer tier pricing &amp; bulk CSV ordering</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Bidirectional synchronization with Tally Prime or SAP ERP</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Automated GST invoice generation and credit terms</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Dedicated post-launch SLA &amp; warranty</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 3–4 weeks</span></li>
+</ul>
+<a class="pricing-cta cta-button primary" href="/contact?plan=ecommerce-b2b">Scope B2B wholesale portal →</a>
+</div>
+<div class="pricing-card hover-lift">
+<div class="pricing-header">
+<h3>High-Throughput Flash-Sale Architecture</h3>
+<p class="pricing-hook">For high-traffic D2C brands: zero-crash checkout resilience, queue buffering, read-replicas and database lock protection.</p>
+<div class="pricing-price-wrap"><span class="pricing-price">₹5,49,999<span class="pricing-usd">($6,800)</span></span> <span class="pricing-period">/ custom architecture scope</span></div>
+</div>
+<ul class="pricing-features">
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Load testing &amp; bottleneck simulation up to 50k req/min</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Redis &amp; BullMQ checkout queue buffering system</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Database read-replicas &amp; connection pooler tuning</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Edge cache invalidation pipeline on stock updates</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Live war-room engineering support during peak sales</span></li>
+<li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span><strong>Turnaround:</strong> 4–5 weeks</span></li>
+</ul>
+<a class="pricing-cta cta-button secondary" href="/contact?plan=ecommerce-flash-sale">Consult on flash-sale scale →</a>
+</div>
+</div>
+<p class="details-link"><a class="card-link" href="/services/headless-ecommerce-development">See full details: Headless E-Commerce Development →</a></p>
+</div>
+<div class="pricing-group" id="pricing-email" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-email">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
@@ -597,7 +657,7 @@
 </div>
 <p class="details-link"><a class="card-link" href="/services/email-deliverability">See full details: Email Deliverability and Setup →</a></p>
 </div>
-<div class="pricing-group" id="pricing-scraping">
+<div class="pricing-group" id="pricing-scraping" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-scraping">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
@@ -651,7 +711,7 @@
 </div>
 <p class="details-link"><a class="card-link" href="/services/data-scraping-automation">See full details: Data Scraping and Workflow Automation →</a></p>
 </div>
-<div class="pricing-group" id="pricing-cloud">
+<div class="pricing-group" id="pricing-cloud" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-cloud">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
@@ -703,7 +763,7 @@
 </div>
 <p class="details-link"><a class="card-link" href="/services/cloud-devops">See full details: Cloud Server and DevOps Setup →</a></p>
 </div>
-<div class="pricing-group" id="pricing-software">
+<div class="pricing-group" id="pricing-software" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-software">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
@@ -757,13 +817,13 @@
 </div>
 <p class="details-link"><a class="card-link" href="/services/custom-software-saas-development">See full details: Custom Software and SaaS Development →</a></p>
 </div>
-<div class="pricing-group" id="pricing-ai">
+<div class="pricing-group" id="pricing-ai" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-ai">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
 <h3>Enterprise RAG &amp; Knowledge Engine</h3>
 <p class="pricing-hook">Deterministic document reasoning architecture with strict RBAC guardrails and zero hallucination risk.</p>
-<div class="pricing-price-wrap"><span class="pricing-price">₹65,000</span></span> <span class="pricing-period">/ one-time setup</span></div>
+<div class="pricing-price-wrap"><span class="pricing-price">₹65,000</span> <span class="pricing-period">/ one-time setup</span></div>
 </div>
 <ul class="pricing-features">
 <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Reads your PDFs and documents and finds answers by meaning, not just keywords</span></li>
@@ -779,7 +839,7 @@
 <div class="pricing-header">
 <h3>Autonomous Multi-Agent Workflow</h3>
 <p class="pricing-hook">Coordinated multi-agent clusters (LangGraph / FastAPI) executing continuous operational tasks.</p>
-<div class="pricing-price-wrap"><span class="pricing-price">₹1,15,000</span></span> <span class="pricing-period">/ one-time setup</span></div>
+<div class="pricing-price-wrap"><span class="pricing-price">₹1,15,000</span> <span class="pricing-period">/ one-time setup</span></div>
 </div>
 <ul class="pricing-features">
 <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Agents pass work along a chain, for example research → write → review → publish</span></li>
@@ -794,7 +854,7 @@
 <div class="pricing-header">
 <h3>Enterprise Autonomous Operations OS</h3>
 <p class="pricing-hook">Complete business process orchestration powered by sovereign agent architectures.</p>
-<div class="pricing-price-wrap"><span class="pricing-price">₹2,25,000+</span></span> <span class="pricing-period">/ custom scope</span></div>
+<div class="pricing-price-wrap"><span class="pricing-price">₹2,25,000+</span> <span class="pricing-period">/ custom scope</span></div>
 </div>
 <ul class="pricing-features">
 <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Example process: find a lead → check fit → add details → send email → book a call → log it in your CRM</span></li>
@@ -807,13 +867,13 @@
 </div>
 <p class="details-link"><a class="card-link" href="/services/ai-agent-development">See full details: AI Agent Development →</a></p>
 </div>
-<div class="pricing-group" id="pricing-retainer">
+<div class="pricing-group" id="pricing-retainer" role="tabpanel" tabindex="0" aria-labelledby="tab-pricing-retainer">
 <div class="pricing-grid">
 <div class="pricing-card hover-lift">
 <div class="pricing-header">
 <h3>Studio Core Retainer</h3>
 <p class="pricing-hook">Dedicated systems engineering, architectural oversight, and continuous performance optimization.</p>
-<div class="pricing-price-wrap"><span class="pricing-price">₹79,999<span class="pricing-usd">($999)</span></span></span> <span class="pricing-period">/ month (cancel anytime)</span></div>
+<div class="pricing-price-wrap"><span class="pricing-price">₹79,999<span class="pricing-usd">($999)</span></span> <span class="pricing-period">/ month (cancel anytime)</span></div>
 </div>
 <ul class="pricing-features">
 <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Regular structured data and content updates to help Google and AI tools understand your site</span></li>
@@ -830,7 +890,7 @@
 <div class="pricing-header">
 <h3>Autonomous Systems Retainer</h3>
 <p class="pricing-hook">Dedicated AI engineering pod delivering custom agent integrations, continuous data pipelines, and high-velocity sprints.</p>
-<div class="pricing-price-wrap"><span class="pricing-price">₹1,49,999<span class="pricing-usd">($1,850)</span></span></span> <span class="pricing-period">/ month (rolling agreement)</span></div>
+<div class="pricing-price-wrap"><span class="pricing-price">₹1,49,999<span class="pricing-usd">($1,850)</span></span> <span class="pricing-period">/ month (rolling agreement)</span></div>
 </div>
 <ul class="pricing-features">
 <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>2 AI automations running continuously, for example lead collection and document processing</span></li>
@@ -846,7 +906,7 @@
 <div class="pricing-header">
 <h3>Fractional CTO &amp; Enterprise Architecture</h3>
 <p class="pricing-hook">Executive technology leadership, system design, security governance, and high-stakes engineering direction.</p>
-<div class="pricing-price-wrap"><span class="pricing-price">₹2,49,999<span class="pricing-usd">($3,200)</span></span></span> <span class="pricing-period">/ month (exclusive allocation)</span></div>
+<div class="pricing-price-wrap"><span class="pricing-price">₹2,49,999<span class="pricing-usd">($3,200)</span></span> <span class="pricing-period">/ month (exclusive allocation)</span></div>
 </div>
 <ul class="pricing-features">
 <li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Technology roadmap, vendor choices and compliance reviews</span></li>
@@ -1122,6 +1182,7 @@ Gujarat 380009 · India
 <h3>Services</h3>
 <ul>
 <li><a href="/services/website-development">Websites</a></li>
+<li><a href="/services/headless-ecommerce-development">Headless E-Commerce</a></li>
 <li><a href="/services/ai-agent-development">AI Agents and Assistants</a></li>
 <li><a href="/services/custom-software-saas-development">Custom Software and SaaS</a></li>
 <li><a href="/services/cloud-devops">Cloud and DevOps</a></li>
@@ -1154,12 +1215,34 @@ Gujarat 380009 · India
 </footer>
 <script>
 function switchPricing(groupId, btn) {
-  document.querySelectorAll('.pricing-tab-btn').forEach(function(b) { b.classList.remove('active'); });
-  document.querySelectorAll('.pricing-group').forEach(function(g) { g.classList.remove('active'); });
-  if (btn) btn.classList.add('active');
+  document.querySelectorAll('.pricing-tab-btn').forEach(function(b) {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
+  document.querySelectorAll('.pricing-group').forEach(function(g) {
+    g.classList.remove('active');
+  });
+  if (btn) {
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+  }
   var target = document.getElementById(groupId);
-  if (target) target.classList.add('active');
+  if (target) {
+    target.classList.add('active');
+  }
 }
+
+// Deep linking to pricing tabs via URL hash and keyboard tab navigation
+window.addEventListener('DOMContentLoaded', function() {
+  var hash = window.location.hash;
+  if (hash && hash.startsWith('#pricing-')) {
+    var tabBtn = document.querySelector('.pricing-tab-btn[data-target="' + hash.substring(1) + '"]');
+    if (tabBtn) {
+      switchPricing(hash.substring(1), tabBtn);
+      tabBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+});
 </script>
 <script defer="" src="script.js?v=1.6"></script>
 <aside aria-label="WhatsApp Chat" class="wa-float">

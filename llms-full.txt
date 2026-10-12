@@ -429,7 +429,7 @@ Verified Pricing & Service Specifications Last Verified: October 7, 2026 • Loc
 
 Service Catalogue
 
-8 Fixed-Price Engineering & AI Offerings
+9 Specialized Engineering & AI Offerings (8 Fixed-Price Suites)
 
 Price Range
 
@@ -566,6 +566,55 @@ A full website with your own admin panel, so your team can manage content withou
 [Plan a full platform →](https://www.tensix.in/contact?plan=web-premium)
 
 [See full details: Website Development →](https://www.tensix.in/services/website-development)
+
+### Headless Next.js Storefront
+
+For growing D2C brands scaling past theme limitations: instant page loads, sub-50ms browsing and higher mobile conversion.
+
+₹2,49,999($3,000) / fixed project fee
+
+- Custom Next.js 15 App Router storefront
+- Shopify Storefront API or MedusaJS backend
+- Sub-50ms TTFB across Indian edge nodes
+- Instant catalog search with Typesense or Algolia
+- Core Web Vitals guarantee: 95+ mobile score
+- **Turnaround:** 2–3 weeks
+
+[Start a headless storefront →](https://www.tensix.in/contact?plan=ecommerce-headless)
+
+Recommended
+
+### B2B Wholesale Portal & ERP Sync
+
+For manufacturers and exporters: private client wholesale ordering, tier pricing, GST invoicing and live Tally/SAP sync.
+
+₹3,99,999($5,000) / fixed project fee
+
+- Password-protected B2B wholesale portal
+- Custom customer tier pricing & bulk CSV ordering
+- Bidirectional synchronization with Tally Prime or SAP ERP
+- Automated GST invoice generation and credit terms
+- Dedicated post-launch SLA & warranty
+- **Turnaround:** 3–4 weeks
+
+[Scope B2B wholesale portal →](https://www.tensix.in/contact?plan=ecommerce-b2b)
+
+### High-Throughput Flash-Sale Architecture
+
+For high-traffic D2C brands: zero-crash checkout resilience, queue buffering, read-replicas and database lock protection.
+
+₹5,49,999($6,800) / custom architecture scope
+
+- Load testing & bottleneck simulation up to 50k req/min
+- Redis & BullMQ checkout queue buffering system
+- Database read-replicas & connection pooler tuning
+- Edge cache invalidation pipeline on stock updates
+- Live war-room engineering support during peak sales
+- **Turnaround:** 4–5 weeks
+
+[Consult on flash-sale scale →](https://www.tensix.in/contact?plan=ecommerce-flash-sale)
+
+[See full details: Headless E-Commerce Development →](https://www.tensix.in/services/headless-ecommerce-development)
 
 ### Email Inbox Fix
 
