@@ -116,7 +116,7 @@ Engagements are structured with a written deliverable scope and fixed price agre
 
 How can clients work with or hire Hemal Shah and TENSIX?
 
-You can message Hemal directly on WhatsApp at [+91 83202 78775](https://wa.me/918320278775), connect on [LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/), or submit your project requirements via the [contact form](https://www.tensix.in/contact). Hemal evaluates the technical scope and responds with an architectural plan and fixed turnaround.
+You can message Hemal directly on WhatsApp at [+91 83202 78775](https://wa.me/918320278775), connect on , or submit your project requirements via the [contact form](https://www.tensix.in/contact). Hemal evaluates the technical scope and responds with an architectural plan and fixed turnaround.
 
 ## Ready to architect your system with Hemal?
 

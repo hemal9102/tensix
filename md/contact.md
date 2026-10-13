@@ -12,7 +12,7 @@ Tell us what you need in a few lines. Hemal Shah, the engineer who will build it
 
 Send a short note about the problem you want to solve. Hemal reads it, asks any questions, and sends back a simple plan with a fixed price. There are no sales calls with account managers: you speak with the person who writes the code. TENSIX builds AI assistants, custom software, websites, cloud hosting, email setups and data automation for businesses in Ahmedabad, across India and abroad.
 
-[contact@tensix.in](mailto:contact@tensix.in) [TENSIX home page (tensix.in) ↗](https://www.tensix.in/) [linkedin.com/in/hemal-shah-49a728362](https://www.linkedin.com/in/hemal-shah-49a728362/)
+[contact@tensix.in](mailto:contact@tensix.in) [TENSIX home page (tensix.in) ↗](https://www.tensix.in/)
 
 [See all services and prices →](https://www.tensix.in/services)
 

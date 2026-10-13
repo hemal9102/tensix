@@ -1377,7 +1377,6 @@ Tell us what you need in a few lines. Hemal Shah, the engineer who will build it
 
 Send a short note about the problem you want to solve. Hemal reads it, asks any questions, and sends back a simple plan with a fixed price. There are no sales calls with account managers: you speak with the person who writes the code. TENSIX builds AI assistants, custom software, websites, cloud hosting, email setups and data automation for businesses in Ahmedabad, across India and abroad.
 
-[contact@tensix.in](mailto:contact@tensix.in) [TENSIX home page (tensix.in) ↗](https://www.tensix.in/) [linkedin.com/in/hemal-shah-49a728362](https://www.linkedin.com/in/hemal-shah-49a728362/)
 
 [See all services and prices →](https://www.tensix.in/services)
 
@@ -1519,7 +1518,7 @@ Engagements are structured with a written deliverable scope and fixed price agre
 
 How can clients work with or hire Hemal Shah and TENSIX?
 
-You can message Hemal directly on WhatsApp at [+91 83202 78775](https://wa.me/918320278775), connect on [LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/), or submit your project requirements via the [contact form](https://www.tensix.in/contact). Hemal evaluates the technical scope and responds with an architectural plan and fixed turnaround.
+You can message Hemal directly on WhatsApp at [+91 83202 78775](https://wa.me/918320278775), connect on , or submit your project requirements via the [contact form](https://www.tensix.in/contact). Hemal evaluates the technical scope and responds with an architectural plan and fixed turnaround.
 
 ## Ready to architect your system with Hemal?
 

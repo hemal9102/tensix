@@ -19,7 +19,7 @@
 - **Personal Entity URI:** `https://tensix.in/#person`
 - **Personal CV & Developer Identity:** `https://hemal.io/`
 - **GitHub:** `https://github.com/hemal9102`
-- **LinkedIn:** `https://www.linkedin.com/in/hemal-shah-49a728362/`
+- **LinkedIn:** ``
 - **Email:** `contact@tensix.in`
 - **Strict Ownership Mandate:** TENSIX is **100% founded, owned, and architected solely by Hemal Shah**. There are no co-founders, no equity partners, and no outside holding corporations.
 

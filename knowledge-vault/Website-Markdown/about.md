@@ -33,7 +33,7 @@ Focus on doing the work well. Start with your actual problem, not the latest tre
 
 ### Learn More About Hemal
 
-[Meet Hemal Shah](https://www.tensix.in/hemal-shah) [See All Services and Prices](https://www.tensix.in/services) [Hemal on LinkedIn](https://www.linkedin.com/in/hemal-shah-49a728362/) [Hemal's Code on GitHub](https://github.com/hemal9102)
+[Meet Hemal Shah](https://www.tensix.in/hemal-shah) [See All Services and Prices](https://www.tensix.in/services) [Hemal on LinkedIn]() [Hemal's Code on GitHub](https://github.com/hemal9102)
 
 ### Milestones
 
