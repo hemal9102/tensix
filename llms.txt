@@ -27,6 +27,7 @@
 - [Monthly Tech Retainers and Fractional CTO](https://www.tensix.in/services/fractional-cto-retainers): Monthly engineering, server care, AI automation, code audits and technical leadership from Hemal Shah, with no long contract. Plans From ₹79,999 a month.
 - [GEO, AEO and SEO for AI Search Visibility](https://www.tensix.in/services/geo-aeo-seo): Help Google, ChatGPT, Gemini and Perplexity understand and cite your business with technical SEO, structured data and clear answer pages. Custom quote.
 - [Headless E-Commerce Development Services & Storefronts](https://www.tensix.in/services/headless-ecommerce-development): High-throughput headless e-commerce engineering by Hemal Shah. Sub-50ms catalog browsing, Next.js storefronts, MedusaJS, Shopify Storefront API, and bidirectional ERP sync.
+- [Industrial Web Engineering & B2B Manufacturing Portals](https://www.tensix.in/services/industrial-web-engineering): High-performance web engineering for manufacturers, machinery exporters, and industrial plants in Ahmedabad, Gujarat. Sub-400ms speed, RFQ portals, CAD spec viewers, and ERP sync. Fixed prices From ₹49,999.
 - [Website Design and Development in Ahmedabad](https://www.tensix.in/services/website-development): Fast, mobile-friendly business websites with WhatsApp, enquiry forms and SEO basics built in. Fixed prices From ₹49,999, ready in 5 to 14 business days.
 
 ## Local pages

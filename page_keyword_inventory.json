@@ -1,5 +1,5 @@
 {
-  "total_pages": 46,
+  "total_pages": 47,
   "unique_meta_keywords": 11,
   "pages": [
     {
@@ -305,6 +305,13 @@
       "url": "services/website-development.html",
       "title": "Website Design and Development in Ahmedabad | TENSIX",
       "h1": "Fast, Mobile-Friendly Business Websites That Bring In Enquiries",
+      "meta_keywords_count": 0,
+      "keywords": []
+    },
+    {
+      "url": "services/industrial-web-engineering.html",
+      "title": "Industrial Web Engineering & B2B Manufacturing Portals | TENSIX Ahmedabad",
+      "h1": "Industrial Web Engineering & B2B Manufacturing Portals",
       "meta_keywords_count": 0,
       "keywords": []
     },
