@@ -23,7 +23,7 @@ def collect_defs(node, rel):
 
 
 for dirpath, dirs, files in os.walk(root):
-    dirs[:] = [d for d in dirs if d not in ("hk", "skills", "resources", "assets", "node_modules", ".git", "09_Archive")]
+    dirs[:] = [d for d in dirs if d not in ("hk", "skills", "resources", "assets", "node_modules", ".git", "09_Archive", "components")]
     for fname in files:
         if not fname.endswith(".html") or fname.startswith("google") or fname.startswith("rajputbhavin"):
             continue
