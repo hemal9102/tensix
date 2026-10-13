@@ -88,15 +88,15 @@ def main():
         success, result = submit_url(url, token)
         if success:
             success_count += 1
-            print(f"[{i}/{len(urls)}] [OK] {url}")
+            print(f"[{i}/{len(urls)}] [OK] {url}", flush=True)
         else:
             fail_count += 1
-            print(f"[{i}/{len(urls)}] [FAIL] {url} -> {result}")
-        time.sleep(0.15)  # gentle rate limit adherence
+            print(f"[{i}/{len(urls)}] [FAIL] {url} -> {result}", flush=True)
+        time.sleep(0.1)
 
-    print("\n" + "=" * 60)
-    print(f"  Google Indexing Summary: {success_count} succeeded, {fail_count} failed")
-    print("=" * 60)
+    print("\n" + "=" * 60, flush=True)
+    print(f"  Google Indexing Summary: {success_count} succeeded, {fail_count} failed", flush=True)
+    print("=" * 60, flush=True)
 
 if __name__ == "__main__":
     main()
