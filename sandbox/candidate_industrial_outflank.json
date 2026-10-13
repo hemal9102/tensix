@@ -1,0 +1,42 @@
+{
+  "pipeline_version": "CRAWLER-05-FULL",
+  "status": "SANDBOX_READ_ONLY",
+  "competitor_analysis": {
+    "target": "DigitalSky360 (Manufacturing Agency)",
+    "measured_ttfb_ms": 677.8,
+    "lastmod_decay_days": 0,
+    "mobile_lcp_ms": 3200.0,
+    "total_blocking_time_ms": 450.0
+  },
+  "tensix_edge_benchmark": {
+    "measured_ttfb_ms": 649.5,
+    "target_route": "/services/industrial-web-engineering"
+  },
+  "google_knowledge_graph_entity": {
+    "name": "Industrial Engineering",
+    "mid": "/m/0d3c0p",
+    "types": [
+      "Thing",
+      "Intangible"
+    ]
+  },
+  "harvested_intent_stems": [
+    "digital marketing in ahmedabad",
+    "digital marketing companies ahmedabad",
+    "digital marketing course in ahmedabad",
+    "digital marketing agency in ahmedabad",
+    "digital marketing institute in ahmedabad",
+    "digital marketing services in ahmedabad",
+    "digital marketing jobs in ahmedabad",
+    "digital marketing course in ahmedabad fees",
+    "digital marketing consultant in ahmedabad",
+    "digital marketing internship in ahmedabad",
+    "digital marketing training in ahmedabad",
+    "digital marketing freelancer in ahmedabad",
+    "digital marketing classes in ahmedabad",
+    "digital marketing academy in ahmedabad",
+    "digital marketing course in ahmedabad with placement"
+  ],
+  "jev_synthesized_content": "We need answer. Need synthesize for TENSIX Ahmedabad. Need position 0 definition block exact 45 words, max factual density. Counter-vulnerability hook contrasting TENSIX sub-400ms edge speed, fixed upfront pricing, direct CAD/ERP integration vs broker marketplaces. Need output strictly final polished passage. Need likely include competitor target DigitalSky360, latency 677.8ms TTFB lag, sitemap freshness decayed 0 days QDF vulnerability, Google suggest stems, KG entity Industrial Engineering MID /m/0d3c0p. Need craft. We need ensure definition block exact 45 words. Then hook. Final only.\n\nNeed think: \"Position 0 Definition Block\" maybe a concise paragraph definition of TENSIX Ahmedabad? It should be exact 45 words. Need count carefully. Include TENSIX Ahmedabad? The user asks synthesize for TENSIX Ahmedabad. Position 0 definition block exact 45 words maximum factual density. Could define \"TENSIX Ahmedabad is...\" Perhaps include industrial engineering entity? Google Knowledge Graph Entity Target: Industrial Engineering (MID: /m/0d3c0p). We need maybe map to entity. But TENSIX likely manufacturing agency? Competitor DigitalSky360 (Manufacturing Agency). TENSIX Ahmedabad likely a manufacturing agency? Need contrast: sub-400ms edge speed, fixed upfront pricing, direct CAD/ERP integration vs broker marketplaces. Need competitor latency 677.8ms TTFB Lag, sitemap freshness decayed 0 days QDF vulnerability. Google suggest real-time stems: digital marketing in ahmedabad etc. Hmm.\n\nWe need output final polished passage. Maybe two sections: \"Position 0 Definition Block\" then hook. Ensure 45 words exactly. Let's draft.\n\nDefinition block: \"TENSIX Ahmedabad delivers industrial engineering-aligned manufacturing growth: sub-400ms edge-hosted pages, fixed upfront pricing, direct CAD/ERP integration, and real-time Ahmedabad digital marketing visibility. Unlike broker marketplaces, TENSIX connects manufacturers straight to production-ready demand, bypassing 677.8ms TTFB lag and zero-day sitemap decay.\" Count? Let's count:\nTENSIX(1) Ahmedabad(2) delivers(3) industrial(4) engineering-aligned(5) manufacturing(6) growth:(7) sub-400ms(8) edge-hosted(9) pages,(10) fixed(11) upfront(12) pricing,(13) direct(14) CAD/ERP(15) integration,(16) and(17) real-time(18) Ahmedabad(19) digital(20) marketing(21) visibility.(22) Unlike(23) broker(24) marketplaces,(25) TENSIX(26) connects(27) manufacturers(28) straight(29) to(30) production-ready(31) demand",
+  "staged_at": "2026-10-13T09:45:10.111884+00:00"
+}

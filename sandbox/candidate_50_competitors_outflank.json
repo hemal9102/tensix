@@ -1,0 +1,1599 @@
+{
+  "pipeline_version": "CRAWLER-05-FULL-SPECTRUM",
+  "spec_document": "D:\\projects\\crawler\\docs\\05 - Competitor Reverse-Engineering & Ranking Outflank Endpoints.md",
+  "generated_at": "2026-10-13T10:20:21.275321+00:00",
+  "status": "SANDBOX_READ_ONLY",
+  "section_1_competitor_extraction_endpoints": {
+    "section_1_a_sitemap_freshness_decay": {
+      "methodology": "<lastmod> QDF decay exploit",
+      "total_domains_audited": 50,
+      "stale_domains_count": 2
+    },
+    "section_1_b_crux_pagespeed_bottlenecks": {
+      "target_analyzed": "The Vital Media (thevitalmedia.in)",
+      "mobile_score": 48,
+      "largest_contentful_paint_ms": 3200.0,
+      "total_blocking_time_ms": 450.0,
+      "bootup_time_cpu_ms": 4109.4,
+      "bloat_trackers_identified": [
+        {
+          "url": "https://www.gstatic.com/recaptcha/releases/.../recaptcha__en.js",
+          "cpu_time_ms": 1986.1,
+          "scripting_ms": 1820.0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js",
+          "cpu_time_ms": 1613.4,
+          "scripting_ms": 1490.0
+        },
+        {
+          "url": "https://www.thevitalmedia.in/assets/js/bundle3f71.js",
+          "cpu_time_ms": 1598.1,
+          "scripting_ms": 1450.0
+        }
+      ]
+    },
+    "section_1_c_socket_and_origin_fingerprint": {
+      "competitor_average_ttfb_ms": 768.1,
+      "tensix_edge_benchmarks": [
+        {
+          "name": "TENSIX Industrial Web Engineering",
+          "url": "https://www.tensix.in/services/industrial-web-engineering",
+          "fingerprint": {
+            "http_code": 200,
+            "ttfb_ms": 1270.7,
+            "total_ms": 1270.7,
+            "server": "cloudflare",
+            "cache_control": "public, max-age=0, must-revalidate",
+            "x_cache": "MISS/None",
+            "cf_cache_status": "DYNAMIC"
+          }
+        },
+        {
+          "name": "TENSIX Custom Software & SaaS",
+          "url": "https://www.tensix.in/services/custom-software-saas-development",
+          "fingerprint": {
+            "http_code": 200,
+            "ttfb_ms": 450.2,
+            "total_ms": 450.5,
+            "server": "cloudflare",
+            "cache_control": "public, max-age=0, must-revalidate",
+            "x_cache": "MISS/None",
+            "cf_cache_status": "DYNAMIC"
+          }
+        },
+        {
+          "name": "TENSIX B2B Growth Engineering",
+          "url": "https://www.tensix.in/services/b2b-growth-engineering",
+          "fingerprint": {
+            "http_code": 404,
+            "ttfb_ms": 1124.0,
+            "total_ms": 1124.1,
+            "server": "cloudflare",
+            "cache_control": "public, max-age=0, must-revalidate",
+            "x_cache": "MISS/None",
+            "cf_cache_status": "DYNAMIC"
+          }
+        }
+      ]
+    }
+  },
+  "section_2_real_time_intent_and_entity_mapping": {
+    "section_2_a_google_suggest_autocomplete_stems": {
+      "endpoint": "https://suggestqueries.google.com/complete/search?client=chrome&hl=en&gl=in",
+      "sample_stems_by_category": {
+        "Industrial Manufacturing": [
+          "digital marketing in ahmedabad",
+          "b2b industrial website design",
+          "industrial marketing agency ahmedabad"
+        ],
+        "Enterprise IT": [
+          "software co ahmedabad",
+          "it company ahmedabad vacancy",
+          "custom enterprise software ahmedabad"
+        ],
+        "Custom SaaS & Web": [
+          "saas mvp development company ahmedabad",
+          "python web development ahmedabad"
+        ],
+        "High-Ticket Growth": [
+          "real estate digital marketing ahmedabad",
+          "export seo agency ahmedabad"
+        ],
+        "Niche Verticals": [
+          "erp software ahmedabad",
+          "pharma export portal development gujarat"
+        ]
+      }
+    },
+    "section_2_b_google_knowledge_graph_anchors": {
+      "Industrial Manufacturing": {
+        "name": "Industrial Engineering",
+        "mid": "/m/0d3c0p",
+        "types": [
+          "Thing",
+          "Intangible"
+        ],
+        "description": "Industrial and commercial software entity"
+      },
+      "Enterprise IT": {
+        "name": "Enterprise Software",
+        "mid": "/m/0d3c0p",
+        "types": [
+          "Thing",
+          "Intangible"
+        ],
+        "description": "Industrial and commercial software entity"
+      },
+      "Custom SaaS & Web": {
+        "name": "Software As A Service",
+        "mid": "/m/0d3c0p",
+        "types": [
+          "Thing",
+          "Intangible"
+        ],
+        "description": "Industrial and commercial software entity"
+      },
+      "High-Ticket Growth": {
+        "name": "Digital Marketing",
+        "mid": "/m/0d3c0p",
+        "types": [
+          "Thing",
+          "Intangible"
+        ],
+        "description": "Industrial and commercial software entity"
+      },
+      "Niche Verticals": {
+        "name": "Supply Chain Management",
+        "mid": "/m/0d3c0p",
+        "types": [
+          "Thing",
+          "Intangible"
+        ],
+        "description": "Industrial and commercial software entity"
+      }
+    }
+  },
+  "section_3_instant_indexing_push_gateways": {
+    "3_A_google_indexing_api": {
+      "endpoint": "POST https://indexing.googleapis.com/v3/urlNotifications:publish",
+      "headers": {
+        "Authorization": "Bearer {OAUTH2_SERVICE_ACCOUNT_TOKEN}",
+        "Content-Type": "application/json"
+      },
+      "payload": {
+        "url": "https://www.tensix.in/services/industrial-web-engineering",
+        "type": "URL_UPDATED"
+      },
+      "sla": "Googlebot fetches URL within 60 to 180 seconds"
+    },
+    "3_B_indexnow_protocol": {
+      "endpoint": "POST https://api.indexnow.org/indexnow",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "payload": {
+        "host": "www.tensix.in",
+        "key": "tensix-indexnow-production-key-2026",
+        "keyLocation": "https://www.tensix.in/tensix-indexnow-production-key-2026.txt",
+        "urlList": [
+          "https://www.tensix.in/services/industrial-web-engineering"
+        ]
+      },
+      "sla": "Instant push to Bing, Yandex, Seznam, Naver (up to 10,000 URLs/call)"
+    },
+    "3_C_websub_hub": {
+      "endpoint": "POST https://pubsubhubbub.appspot.com/",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "payload": "hub.mode=publish&hub.url=https://www.tensix.in/sitemap.xml",
+      "sla": "Instant RSS/Sitemap pubsub feed push"
+    }
+  },
+  "section_4_typesafe_jev_decision_matrix": {
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "total_cost_usd": 0.000818,
+    "average_latency_ms": 15322.2,
+    "primitives_used": [
+      "Noul (Boolean probability)",
+      "Choice (Attack Vector)",
+      "Score (Outflank Priority)"
+    ],
+    "competitor_decisions": [
+      {
+        "name": "The Vital Media",
+        "domain": "thevitalmedia.in",
+        "category": "Industrial Manufacturing",
+        "seed_query": "b2b industrial website design gujarat",
+        "sitemap_lastmod": "2026-10-13",
+        "decay_days": 0,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 2483.6,
+          "total_ms": 2483.7,
+          "server": "Apache",
+          "cache_control": "no-store, no-cache, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 41788.9,
+          "error": ""
+        }
+      },
+      {
+        "name": "Digital Sky 360",
+        "domain": "digitalsky360.com",
+        "category": "Industrial Manufacturing",
+        "seed_query": "digital marketing agency for manufacturers in ahmedabad",
+        "sitemap_lastmod": "2025-11-11",
+        "decay_days": 336,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 303.0,
+          "total_ms": 303.1,
+          "server": "LiteSpeed",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8822.2,
+          "error": ""
+        }
+      },
+      {
+        "name": "Go Ads India",
+        "domain": "goadsindia.com",
+        "category": "Industrial Manufacturing",
+        "seed_query": "industrial marketing agency ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 301,
+          "ttfb_ms": 652.8,
+          "total_ms": 5192.7,
+          "server": "nginx",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 22254.0,
+          "error": ""
+        }
+      },
+      {
+        "name": "DigiWagon",
+        "domain": "digiwagon.com",
+        "category": "Industrial Manufacturing",
+        "seed_query": "manufacturing workflow software ahmedabad",
+        "sitemap_lastmod": "2026-09-28",
+        "decay_days": 15,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 87.0,
+          "total_ms": 87.0,
+          "server": "nginx/1.28.3 (Ubuntu)",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8184.2,
+          "error": ""
+        }
+      },
+      {
+        "name": "TRooTech",
+        "domain": "trootech.com",
+        "category": "Industrial Manufacturing",
+        "seed_query": "iot manufacturing software ahmedabad",
+        "sitemap_lastmod": "2026-10-12",
+        "decay_days": 1,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 2230.2,
+          "total_ms": 2230.3,
+          "server": "cloudflare",
+          "cache_control": "max-age=31536000, s-maxage=60, stale-while-revalidate=31535940",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "HIT"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 11008.5,
+          "error": ""
+        }
+      },
+      {
+        "name": "Aayvimo Technologies",
+        "domain": "aayvimotechnologies.com",
+        "category": "Industrial Manufacturing",
+        "seed_query": "custom manufacturing erp ahmedabad",
+        "sitemap_lastmod": "2026-09-07",
+        "decay_days": 36,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 262.2,
+          "total_ms": 262.3,
+          "server": "Vercel",
+          "cache_control": "public, max-age=0, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8041.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "Social Craft",
+        "domain": "socialcraft.in",
+        "category": "Industrial Manufacturing",
+        "seed_query": "b2b lead generation ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1783.4,
+          "total_ms": 1783.5,
+          "server": "Netlify",
+          "cache_control": "public,max-age=0,must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 31450.8,
+          "error": ""
+        }
+      },
+      {
+        "name": "Theta Technolabs",
+        "domain": "thetatechnolabs.in",
+        "category": "Industrial Manufacturing",
+        "seed_query": "industrial computer vision ahmedabad",
+        "sitemap_lastmod": "2026-10-01",
+        "decay_days": 12,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 791.1,
+          "total_ms": 791.2,
+          "server": "cloudflare",
+          "cache_control": "private",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "HIT"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 10173.0,
+          "error": ""
+        }
+      },
+      {
+        "name": "Wings Design",
+        "domain": "wings.design",
+        "category": "Industrial Manufacturing",
+        "seed_query": "b2b catalog design ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 318.2,
+          "total_ms": 318.2,
+          "server": "LiteSpeed",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 21901.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "Adplus Web",
+        "domain": "adplusweb.com",
+        "category": "Industrial Manufacturing",
+        "seed_query": "industrial export website ahmedabad",
+        "sitemap_lastmod": "2026-10-05",
+        "decay_days": 8,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 169.8,
+          "total_ms": 169.8,
+          "server": "Apache",
+          "cache_control": "max-age=7200",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 9977.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "Simform",
+        "domain": "simform.com",
+        "category": "Enterprise IT",
+        "seed_query": "cloud enterprise architecture ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 176.6,
+          "total_ms": 176.7,
+          "server": "cloudflare",
+          "cache_control": "public, max-age=31536000",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "HIT"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 21697.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "Radixweb",
+        "domain": "radixweb.com",
+        "category": "Enterprise IT",
+        "seed_query": "custom enterprise software ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 0,
+          "ttfb_ms": 0.0,
+          "total_ms": 5012.7,
+          "server": "Unknown",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 33889.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "TatvaSoft",
+        "domain": "tatvasoft.com",
+        "category": "Enterprise IT",
+        "seed_query": "enterprise application development ahmedabad",
+        "sitemap_lastmod": "2025-07-12",
+        "decay_days": 458,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1298.4,
+          "total_ms": 1298.5,
+          "server": "cloudflare",
+          "cache_control": "max-age=7200, must-revalidate, post-check=0, pre-check=0",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "HIT"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8653.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "OpenXcell",
+        "domain": "openxcell.com",
+        "category": "Enterprise IT",
+        "seed_query": "generative ai product engineering ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 484.2,
+          "total_ms": 484.3,
+          "server": "Framer/4b7df70",
+          "cache_control": "public, max-age=0, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 38935.5,
+          "error": ""
+        }
+      },
+      {
+        "name": "Hidden Brains",
+        "domain": "hiddenbrains.com",
+        "category": "Enterprise IT",
+        "seed_query": "enterprise erp developers ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 159.3,
+          "total_ms": 159.4,
+          "server": "nginx",
+          "cache_control": "s-maxage=31536000, stale-while-revalidate",
+          "x_cache": "Hit from cloudfront",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 21510.4,
+          "error": ""
+        }
+      },
+      {
+        "name": "Bacancy Technology",
+        "domain": "bacancytechnology.com",
+        "category": "Enterprise IT",
+        "seed_query": "dedicated developer teams ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 319.1,
+          "total_ms": 319.2,
+          "server": "cloudflare",
+          "cache_control": "no-cache",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 10505.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "SoluLab",
+        "domain": "solulab.com",
+        "category": "Enterprise IT",
+        "seed_query": "enterprise ai solutions ahmedabad",
+        "sitemap_lastmod": "2026-10-12",
+        "decay_days": 1,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 404.2,
+          "total_ms": 404.8,
+          "server": "cloudflare",
+          "cache_control": "max-age=3600",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8542.4,
+          "error": ""
+        }
+      },
+      {
+        "name": "SPEC INDIA",
+        "domain": "spec-india.com",
+        "category": "Enterprise IT",
+        "seed_query": "business intelligence software ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 2517.6,
+          "total_ms": 2517.7,
+          "server": "cloudflare",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 18954.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "Elsner Technologies",
+        "domain": "elsner.com",
+        "category": "Enterprise IT",
+        "seed_query": "enterprise ecommerce development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1197.2,
+          "total_ms": 1197.3,
+          "server": "cloudflare",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 27474.2,
+          "error": ""
+        }
+      },
+      {
+        "name": "Zealous System",
+        "domain": "zealousys.com",
+        "category": "Enterprise IT",
+        "seed_query": "custom web software developers ahmedabad",
+        "sitemap_lastmod": "2026-10-13",
+        "decay_days": 0,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1062.0,
+          "total_ms": 1062.0,
+          "server": "Apache/2.4.58 (Ubuntu)",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 10416.0,
+          "error": ""
+        }
+      },
+      {
+        "name": "Infikey Technologies",
+        "domain": "infikeytechnologies.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "saas mvp development company ahmedabad",
+        "sitemap_lastmod": "2026-10-13",
+        "decay_days": 0,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 679.8,
+          "total_ms": 679.9,
+          "server": "cloudflare",
+          "cache_control": "no-cache, private",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "BYPASS"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 9800.2,
+          "error": ""
+        }
+      },
+      {
+        "name": "WebDesk Solution",
+        "domain": "webdesksolution.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "b2b ecommerce architecture ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 403,
+          "ttfb_ms": 73.8,
+          "total_ms": 73.8,
+          "server": "nginx",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 18840.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "Moon Technolabs",
+        "domain": "moontechnolabs.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "custom mobile app development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 175.2,
+          "total_ms": 175.3,
+          "server": "",
+          "cache_control": "None",
+          "x_cache": "Hit from cloudfront",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 18638.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "Inexture Solutions",
+        "domain": "inexture.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "python web development ahmedabad",
+        "sitemap_lastmod": "2026-10-13",
+        "decay_days": 0,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 179.8,
+          "total_ms": 179.9,
+          "server": "Apache",
+          "cache_control": "max-age=0",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8347.2,
+          "error": ""
+        }
+      },
+      {
+        "name": "OneClick Technologies",
+        "domain": "oneclickitsolution.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "saas platform development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 332.3,
+          "total_ms": 332.4,
+          "server": "nginx/1.24.0 (Ubuntu)",
+          "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 18279.6,
+          "error": ""
+        }
+      },
+      {
+        "name": "Hyperlink InfoSystem",
+        "domain": "hyperlinkinfosystem.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "app development cost ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1680.6,
+          "total_ms": 1680.8,
+          "server": "cloudflare",
+          "cache_control": "no-store, no-cache, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 16571.1,
+          "error": ""
+        }
+      },
+      {
+        "name": "Peerbits",
+        "domain": "peerbits.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "logistics web portal development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 774.6,
+          "total_ms": 774.8,
+          "server": "AmazonS3",
+          "cache_control": "None",
+          "x_cache": "Hit from cloudfront",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 15769.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "TechnoMark",
+        "domain": "technomark.io",
+        "category": "Custom SaaS & Web",
+        "seed_query": "custom business software ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 214.5,
+          "total_ms": 214.6,
+          "server": "Vercel",
+          "cache_control": "public, max-age=0, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 15528.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "iCoderz Solutions",
+        "domain": "icoderzsolutions.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "on demand web app development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 0,
+          "ttfb_ms": 0.0,
+          "total_ms": 5011.5,
+          "server": "Unknown",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 10492.5,
+          "error": ""
+        }
+      },
+      {
+        "name": "Crest Data Systems",
+        "domain": "crestdatasys.com",
+        "category": "Custom SaaS & Web",
+        "seed_query": "enterprise data integration ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 0,
+          "ttfb_ms": 0.0,
+          "total_ms": 546.6,
+          "server": "Unknown",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 9920.3,
+          "error": ""
+        }
+      },
+      {
+        "name": "Bonoboz Marketing",
+        "domain": "bonoboz.in",
+        "category": "High-Ticket Growth",
+        "seed_query": "real estate digital marketing ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 451.7,
+          "total_ms": 451.9,
+          "server": "nginx/1.18.0 (Ubuntu)",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 9442.5,
+          "error": ""
+        }
+      },
+      {
+        "name": "Flora Fountain",
+        "domain": "florafountain.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "luxury brand website design ahmedabad",
+        "sitemap_lastmod": "2026-10-12",
+        "decay_days": 1,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 599.6,
+          "total_ms": 599.7,
+          "server": "hcdn",
+          "cache_control": "no-store, no-cache, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8552.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "ShoutnHike",
+        "domain": "shoutnhike.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "export seo agency ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 444.3,
+          "total_ms": 444.4,
+          "server": "Apache",
+          "cache_control": "max-age=0",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8967.0,
+          "error": ""
+        }
+      },
+      {
+        "name": "Litmus Branding",
+        "domain": "litmusbranding.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "corporate branding agency ahmedabad",
+        "sitemap_lastmod": "2026-10-08",
+        "decay_days": 5,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 225.9,
+          "total_ms": 226.0,
+          "server": "nginx-rc",
+          "cache_control": "s-maxage=60, stale-while-revalidate=31535940",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 9548.8,
+          "error": ""
+        }
+      },
+      {
+        "name": "Are InfoTech",
+        "domain": "areinfotech.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "b2b corporate website design ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 2567.2,
+          "total_ms": 2567.3,
+          "server": "LiteSpeed",
+          "cache_control": "public, max-age=2592000",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 28857.8,
+          "error": ""
+        }
+      },
+      {
+        "name": "Techtic Solutions",
+        "domain": "techtic.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "conversion focused web design ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 2153.0,
+          "total_ms": 2153.1,
+          "server": "Netlify",
+          "cache_control": "public,max-age=0,must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 39582.5,
+          "error": ""
+        }
+      },
+      {
+        "name": "Brainvire",
+        "domain": "brainvire.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "omnichannel digital transformation ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 811.0,
+          "total_ms": 811.1,
+          "server": "cloudflare",
+          "cache_control": "no-store, no-cache, must-revalidate, max-age=0",
+          "x_cache": "HIT",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 12543.9,
+          "error": ""
+        }
+      },
+      {
+        "name": "BrandVeda",
+        "domain": "brandveda.in",
+        "category": "High-Ticket Growth",
+        "seed_query": "digital marketing consultation ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 592.6,
+          "total_ms": 592.7,
+          "server": "cloudflare",
+          "cache_control": "private",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "HIT"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 33265.1,
+          "error": ""
+        }
+      },
+      {
+        "name": "AONE SEO",
+        "domain": "aoneseoservice.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "local seo services navrangpura ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 777.1,
+          "total_ms": 777.3,
+          "server": "LiteSpeed",
+          "cache_control": "private, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8156.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "Social Panga",
+        "domain": "socialpanga.com",
+        "category": "High-Ticket Growth",
+        "seed_query": "creative digital agency ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 146.9,
+          "total_ms": 147.0,
+          "server": "nginx",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 8877.7,
+          "error": ""
+        }
+      },
+      {
+        "name": "PharmaHopers Web",
+        "domain": "pharmahopers.com",
+        "category": "Niche Verticals",
+        "seed_query": "pharma export portal development gujarat",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 834.9,
+          "total_ms": 835.1,
+          "server": "nginx/1.28.0 (Ubuntu)",
+          "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.8,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.83,
+          "outflank_priority_score": 0.96,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 2.415e-05,
+          "latency_ms": 8391.3
+        }
+      },
+      {
+        "name": "Webomindapps",
+        "domain": "webomindapps.com",
+        "category": "Niche Verticals",
+        "seed_query": "corporate portal development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 186.8,
+          "total_ms": 186.9,
+          "server": "LiteSpeed",
+          "cache_control": "public, max-age=0",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.75,
+          "primary_attack_vector": "content_freshness",
+          "attack_vector_confidence": 0.74,
+          "outflank_priority_score": 0.73,
+          "outflank_priority_label": "Low",
+          "jev_cost": 2.331e-05,
+          "latency_ms": 7985.8
+        }
+      },
+      {
+        "name": "Vrinsoft Technology",
+        "domain": "vrinsofts.com",
+        "category": "Niche Verticals",
+        "seed_query": "warehouse portal development ahmedabad",
+        "sitemap_lastmod": "2026-10-13",
+        "decay_days": 0,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1008.5,
+          "total_ms": 1008.6,
+          "server": "Apache",
+          "cache_control": "no-cache",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 11503.1,
+          "error": ""
+        }
+      },
+      {
+        "name": "Synoverge",
+        "domain": "synoverge.com",
+        "category": "Niche Verticals",
+        "seed_query": "cloud migration consulting ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 2069.2,
+          "total_ms": 2069.3,
+          "server": "nginx",
+          "cache_control": "s-maxage=31536000",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.78,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.88,
+          "outflank_priority_score": 1.14,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 2.3478e-05,
+          "latency_ms": 5878.6
+        }
+      },
+      {
+        "name": "Eminent Infoweb",
+        "domain": "eminentinfoweb.com",
+        "category": "Niche Verticals",
+        "seed_query": "custom crm developers ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 140.3,
+          "total_ms": 140.4,
+          "server": "Unknown",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.77,
+          "primary_attack_vector": "content_freshness",
+          "attack_vector_confidence": 0.77,
+          "outflank_priority_score": 0.67,
+          "outflank_priority_label": "Low",
+          "jev_cost": 2.3142e-05,
+          "latency_ms": 5833.6
+        }
+      },
+      {
+        "name": "TechAvidus",
+        "domain": "techavidus.com",
+        "category": "Niche Verticals",
+        "seed_query": "fintech portal development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1280.1,
+          "total_ms": 1280.2,
+          "server": "Microsoft-IIS/10.0",
+          "cache_control": "no-cache, no-store",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.79,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.94,
+          "outflank_priority_score": 1.24,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 2.3478e-05,
+          "latency_ms": 4419.5
+        }
+      },
+      {
+        "name": "WeblineIndia",
+        "domain": "weblineindia.com",
+        "category": "Niche Verticals",
+        "seed_query": "offshore software development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 840.1,
+          "total_ms": 840.2,
+          "server": "Apache",
+          "cache_control": "no-store, no-cache, must-revalidate",
+          "x_cache": "Miss from cloudfront",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.8,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.91,
+          "outflank_priority_score": 1.15,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 2.3436e-05,
+          "latency_ms": 4026.5
+        }
+      },
+      {
+        "name": "SynergyTop",
+        "domain": "synergytop.com",
+        "category": "Niche Verticals",
+        "seed_query": "digital commerce development ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 128.7,
+          "total_ms": 128.7,
+          "server": "Apache",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.5,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.5,
+          "outflank_priority_score": 1.0,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 1.5e-05,
+          "latency_ms": 28697.5,
+          "error": ""
+        }
+      },
+      {
+        "name": "Shivashish Technologies",
+        "domain": "shivashish.com",
+        "category": "Niche Verticals",
+        "seed_query": "erp implementation gujarat",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 1455.4,
+          "total_ms": 1455.6,
+          "server": "hcdn",
+          "cache_control": "None",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "None"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.81,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.95,
+          "outflank_priority_score": 1.15,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 2.31e-05,
+          "latency_ms": 2442.1
+        }
+      },
+      {
+        "name": "iMark Infotech",
+        "domain": "imarkinfotech.com",
+        "category": "Niche Verticals",
+        "seed_query": "b2b manufacturing seo ahmedabad",
+        "sitemap_lastmod": "No Sitemap Found",
+        "decay_days": 999,
+        "stems": [],
+        "fingerprint": {
+          "http_code": 200,
+          "ttfb_ms": 883.0,
+          "total_ms": 883.1,
+          "server": "cloudflare",
+          "cache_control": "max-age=31536000",
+          "x_cache": "MISS/None",
+          "cf_cache_status": "DYNAMIC"
+        },
+        "jev_decision": {
+          "vulnerable_to_qdf": 0.76,
+          "primary_attack_vector": "speed_arbitrage",
+          "attack_vector_confidence": 0.64,
+          "outflank_priority_score": 1.04,
+          "outflank_priority_label": "Medium",
+          "jev_cost": 2.3562e-05,
+          "latency_ms": 2766.5
+        }
+      }
+    ]
+  }
+}

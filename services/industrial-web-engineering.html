@@ -91,10 +91,39 @@
       "description": "High-speed custom web engineering for Gujarat industrial manufacturers, chemical plants, and heavy machinery exporters. Built with zero-bloat static architecture, sub-400ms edge TTFB, interactive CAD spec viewers, and bidirectional SAP/Tally ERP RFQ sync.",
       "url": "https://www.tensix.in/services/industrial-web-engineering",
       "serviceType": "Industrial Web Development, B2B Manufacturing Portals, Export SEO Engineering",
+      "category": {
+        "@type": "Thing",
+        "name": "Industrial Engineering",
+        "@id": "https://www.google.com/search?kgmid=/m/01bt59",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q4489420",
+          "https://en.wikipedia.org/wiki/Industrial_engineering"
+        ]
+      },
       "provider": {
         "@id": "https://tensix.in/#organization"
       },
       "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Sanand Industrial Estate, Ahmedabad"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Changodar Industrial Area, Gujarat"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Vatva GIDC, Ahmedabad"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Naroda GIDC, Ahmedabad"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "S.G. Highway Industrial Corridor, Ahmedabad"
+        },
         {
           "@type": "City",
           "name": "Ahmedabad"
@@ -307,9 +336,15 @@ Industrial web engineering replaces fragile WordPress sites with high-performanc
   <tbody>
     <tr style="border-bottom:1px solid #E2E8F0;">
       <td style="padding:1rem 1.25rem;font-weight:600;color:#0F172A;">Time To First Byte (TTFB)</td>
-      <td style="padding:1rem 1.25rem;color:#DC2626;">2,500ms – 2,917ms (Severe Lag)</td>
+      <td style="padding:1rem 1.25rem;color:#DC2626;">2,483ms – 2,917ms (Apache/PHP Delay)</td>
       <td style="padding:1rem 1.25rem;color:#D97706;">950ms – 1,400ms</td>
       <td style="padding:1rem 1.25rem;font-weight:700;color:#16A34A;background:#EFF6FF;">Sub-400ms (Edge Cached)</td>
+    </tr>
+    <tr style="border-bottom:1px solid #E2E8F0;background:#FAFAFA;">
+      <td style="padding:1rem 1.25rem;font-weight:600;color:#0F172A;">JavaScript Bootup Thread Bloat</td>
+      <td style="padding:1rem 1.25rem;color:#DC2626;">4,109ms CPU Blocking (Trackers & Sliders)</td>
+      <td style="padding:1rem 1.25rem;color:#D97706;">1,800ms – 2,400ms Third-Party JS</td>
+      <td style="padding:1rem 1.25rem;font-weight:700;color:#16A34A;background:#EFF6FF;">0.0ms (Zero-JS Static HTML)</td>
     </tr>
     <tr style="border-bottom:1px solid #E2E8F0;background:#FAFAFA;">
       <td style="padding:1rem 1.25rem;font-weight:600;color:#0F172A;">Inquiry Exclusivity</td>

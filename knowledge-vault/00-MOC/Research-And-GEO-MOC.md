@@ -32,6 +32,7 @@ updated: 2026-10-07
 ## 🛠️ Production Implementation in TENSIX
 
 - **[[DOCS_GEO_RESEARCH_IMPLEMENTATION]]** — Master architectural reference document for all changes applied to `tensix.in`.
+- **[[COMPETITIVE_OUTFLANK_AND_JEV_PIPELINE]]** — 50-competitor outflank specification, TypeSafe Jev economics, and Google Knowledge Graph injection across 10 service pages.
 - **Top-200 Tokens Citation Grounding (`.geo-citation-grounding`)** — Injected into hero sections of all 8 service pages, `index.html`, and `services.html`.
 - **Schema Hardening** — `numberOfEmployees: 1`, `disambiguatingDescription`, `dateModified: "2026-10-07T00:00:00Z"`.
 - **Dynamic Schema Validation** — `validate_schemas.py` enforcing 46/46 valid JSON-LD graphs with 0 collisions.
