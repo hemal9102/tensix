@@ -1,7 +1,7 @@
 ---
-title: "What Is Our Life? Reflections on Purpose | TENSIX"
+title: "What Is Our Life? | Hemal Shah (HK)"
 url: https://www.tensix.in/blogs/what-is-our-life
-description: "A philosophical reflection on life, purpose, mastery, and building high-impact technology systems by Hemal Shah, founder of TENSIX."
+description: "A philosophical reflection on the meaning of life, karma, and finding your path – by Hemal Shah."
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

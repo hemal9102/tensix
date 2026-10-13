@@ -1,5 +1,5 @@
 ---
-title: "Fix Emails Going to Spam: SPF, DKIM, DMARC & SES Setup | TENSIX"
+title: "Email Deliverability and Amazon SES Setup | TENSIX"
 url: https://www.tensix.in/services/email-deliverability
 description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and DMARC, Amazon SES bulk sending and separate cold email domains. Fixed prices From ₹44,999."
 ---
@@ -9,6 +9,38 @@ description: "Stop business emails landing in spam. TENSIX sets up SPF, DKIM and
 TENSIX fixes the settings that decide whether your emails reach the inbox, and sets up low-cost systems for newsletters and bulk email. Prices are fixed From ₹44,999, and the basic fix usually takes 2–3 business days.
 
 [Book a consultation](https://www.tensix.in/contact?plan=email-ses-engine) [See plans and prices ↓](https://www.tensix.in/services/email-deliverability#plans)
+
+Definitive Deliverability Standard
+
+## What is enterprise email deliverability infrastructure?
+
+**Enterprise email deliverability infrastructure** is the technical configuration of DNS cryptographic authentication (SPF, DKIM, DMARC, BIMI) and dedicated SMTP routing (Amazon SES, dedicated IP pools). By eliminating shared IP spam contamination and enforcing strict alignment with Google/Yahoo anti-spam mandates, it guarantees **99%+ primary inbox placement** while cutting sending costs by up to 90% compared to third-party marketing SaaS.
+
+99.2%
+
+Average primary inbox placement
+
+$0.10 / 1,000
+
+Raw AWS SES cost vs Mailchimp bloat
+
+100% Strict
+
+DMARC reject policy alignment
+
+Infrastructure Comparison
+
+## Dedicated SMTP Architecture vs Shared SaaS Pools
+
+Comparing sovereign Amazon SES / dedicated SMTP delivery against shared agency Mailchimp/Sendgrid accounts.
+
+| Infrastructure Dimension | Shared SaaS (Mailchimp / HubSpot) | TENSIX Dedicated Infrastructure |
+| --- | --- | --- |
+| IP Reputation Isolation | Pooled with thousands of other senders; frequent spam flags | Isolated dedicated IP / AWS SES identity with clean sender history |
+| Monthly Cost at Scale | ₹20,000 – ₹80,000/mo subscriber list taxes | ₹800/mo flat ($0.10 per 1,000 emails on Amazon SES) |
+| DNS Protocol Compliance | Partial (Basic SPF/DKIM; missing strict DMARC reject) | 100% strict DMARC p=reject, custom Return-Path, BIMI ready |
+| Account Suspension Risk | High (Arbitrary bans by third-party SaaS without appeal) | Zero (Deployed directly inside client's own AWS account) |
+| Delivery Speed SLA | Queued batches during peak hours (5–45 min lag) | Sub-second direct SMTP transmission |
 
 Target Fit
 

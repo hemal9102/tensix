@@ -1,5 +1,5 @@
 ---
-title: "The Future of SEO: GEO and AI Search Explained | TENSIX"
+title: "The Future of SEO: GEO and Search Engines | Hemal Shah (HK)"
 url: https://www.tensix.in/blogs/the-future-of-seo-geo-and-search-engines
 description: "A plain guide to where people search today, from Google and Bing to AI assistants like ChatGPT and Perplexity, and what GEO means for your business."
 ---

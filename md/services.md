@@ -1,5 +1,5 @@
 ---
-title: "Services and Prices: AI, Software, Web, Cloud | TENSIX"
+title: "TENSIX Services and Prices: AI, Software, Websites and Cloud"
 url: https://www.tensix.in/services
 description: "TENSIX services in Ahmedabad: websites, custom software, AI assistants, cloud servers, email delivery, automation and AI search visibility, with fixed prices."
 ---

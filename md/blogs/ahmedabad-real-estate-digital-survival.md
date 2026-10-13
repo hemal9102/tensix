@@ -1,7 +1,7 @@
 ---
-title: "Ahmedabad Real Estate: Win NRI Buyers Online | TENSIX"
+title: ""
 url: https://www.tensix.in/blogs/ahmedabad-real-estate-digital-survival
-description: "A plain guide for Ahmedabad builders and brokers: earn NRI buyer trust online with clear project details, virtual tours, quick replies and a secure website."
+description: ""
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

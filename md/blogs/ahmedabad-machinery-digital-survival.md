@@ -1,7 +1,7 @@
 ---
-title: "Ahmedabad Machinery Makers: Win Export Orders | TENSIX"
+title: ""
 url: https://www.tensix.in/blogs/ahmedabad-machinery-digital-survival
-description: "A plain guide for Ahmedabad machinery makers: get found by B2B buyers, share clear specs and order updates online, and cut manual planning with custom software."
+description: ""
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

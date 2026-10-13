@@ -1,7 +1,7 @@
 ---
-title: "Ahmedabad Pharma: Secure Export Websites | TENSIX"
+title: ""
 url: https://www.tensix.in/blogs/ahmedabad-pharma-digital-survival
-description: "A plain guide for Ahmedabad pharma exporters: stop website hacks that scare off buyers, look credible online, and link product data and inquiries to your ERP."
+description: ""
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

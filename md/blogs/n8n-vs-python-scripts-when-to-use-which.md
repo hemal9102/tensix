@@ -1,5 +1,5 @@
 ---
-title: "n8n vs Python Scripts: Production Automation Guide | TENSIX"
+title: "n8n vs Python Scripts | Hemal Shah (HK)"
 url: https://www.tensix.in/blogs/n8n-vs-python-scripts-when-to-use-which
 description: "When to use n8n, a visual automation tool, and when to write a custom Python script instead. A simple decision guide for automating business work, by TENSIX."
 ---

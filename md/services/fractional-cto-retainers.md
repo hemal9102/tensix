@@ -10,6 +10,38 @@ TENSIX retainers give you a set amount of engineering work, server care and tech
 
 [Book a consultation](https://www.tensix.in/contact?plan=retainer-ai-pod) [See plans and prices ↓](https://www.tensix.in/services/fractional-cto-retainers#plans)
 
+Definitive Leadership Standard
+
+## What is a Fractional CTO for growing businesses?
+
+A **Fractional CTO** is an experienced executive software architect who provides part-time, high-impact technical leadership, systems architecture, and engineering oversight without the ₹40L+ annual overhead of a full-time executive. At TENSIX, fractional CTO retainers pair **hands-on code commits, server infrastructure hardening, and vendor technical vetting** with flexible 30-day cancellation terms.
+
+₹39,999/mo
+
+Starting retainer vs ₹40L+ full-time CTO
+
+100% Hands-On
+
+Direct code & server execution (No slide decks)
+
+30-Day Agility
+
+Pause or cancel anytime; zero multi-year lock-in
+
+Model Comparison
+
+## TENSIX Fractional CTO vs Traditional Tech Advisors
+
+Comparing direct hands-on systems engineering against theoretical non-technical consultants.
+
+| Leadership Dimension | Typical Agency / Board Advisor | TENSIX Fractional CTO Retainer |
+| --- | --- | --- |
+| Execution Model | Theoretical advice, meetings, and PowerPoint decks | Hands-on code reviews, CI/CD deploys, and architecture implementation |
+| Cost & Commitments | 6–12 month lock-in contracts or expensive equity grants | Month-to-month retainers from ₹39,999; 0% equity dilution |
+| Vendor & Developer Vetting | Recommends agency friends without technical testing | Rigorous technical screening of developer candidates and third-party codebases |
+| Incident Response | Unavailable during production outages | Direct root-cause server triage and automated disaster restore protocols |
+| Accountability | Blames the development team when projects fail | Directly accountable technical partner working with founder Hemal Shah |
+
 Target Fit
 
 ## Who This Is For

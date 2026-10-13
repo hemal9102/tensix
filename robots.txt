@@ -314,5 +314,9 @@ Content-Signal: ai-train=no, search=yes, ai-input=yes
 Sitemap: https://www.tensix.in/sitemap.xml
 Sitemap: https://www.tensix.in/sitemap_index.xml
 
-# ── Agent discovery (ARD) ─────────────────────────────────────────────────────
+# ── Agent discovery (ARD & llms.txt) ──────────────────────────────────────────
 # Agent catalog linked via <link rel="ai-catalog" href="/.well-known/ai-catalog.json"> in HTML head
+# https://llmstxt.org/ - Machine-readable knowledge corpus for LLM agents & Answer Engines
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /md/

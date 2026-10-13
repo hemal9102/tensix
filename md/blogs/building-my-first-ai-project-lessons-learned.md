@@ -1,5 +1,5 @@
 ---
-title: "Building My First AI Project: Engineering Lessons | TENSIX"
+title: "Building My First AI Project | Hemal Shah (HK)"
 url: https://www.tensix.in/blogs/building-my-first-ai-project-lessons-learned
 description: "Lessons from building my first real AI project, a chess engine: why the first version was too slow, how alpha-beta pruning fixed it, and what I learned."
 ---

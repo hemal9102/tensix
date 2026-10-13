@@ -1,7 +1,7 @@
 ---
-title: "Ahmedabad Textile Exporters: Get Found Online | TENSIX"
+title: ""
 url: https://www.tensix.in/blogs/ahmedabad-textile-digital-survival
-description: "A plain guide for Ahmedabad textile mills and exporters: get found by global B2B buyers, replace risky old websites, and automate inquiries and order handling."
+description: ""
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

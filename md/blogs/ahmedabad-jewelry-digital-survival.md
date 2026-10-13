@@ -1,7 +1,7 @@
 ---
-title: "Ahmedabad Jewelers: Sell Online Safely | TENSIX"
+title: ""
 url: https://www.tensix.in/blogs/ahmedabad-jewelry-digital-survival
-description: "A plain guide for Ahmedabad jewelers: protect stock and customer data, earn the trust of high-value and NRI buyers, and sell online with secure custom systems."
+description: ""
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

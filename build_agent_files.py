@@ -18,7 +18,7 @@ from urllib.parse import urljoin, urlparse
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://www.tensix.in/"
 TODAY = sys.argv[1] if len(sys.argv) > 1 else "2026-10-05"
-SKIP_DIRS = ("hk", "skills", "resources", "assets", "node_modules", ".git", "09_Archive")
+SKIP_DIRS = ("hk", "skills", "resources", "assets", "node_modules", ".git", "09_Archive", "components", "sandbox")
 
 CORE = [
     "index.html", "about.html", "services.html", "work.html", "case-studies.html",
@@ -85,10 +85,13 @@ class Page(HTMLParser):
         self.row = None
         self.rows = 0
         self.title = ""
+        self.og_title = ""
         self.in_title = False
         self.description = ""
         self.feed(html)
         self.close()
+        if not self.title and self.og_title:
+            self.title = self.og_title
 
     def blank(self):
         self.out.append("\n\n")
@@ -97,8 +100,16 @@ class Page(HTMLParser):
         a = dict(attrs)
         if tag == "title":
             self.in_title = True
-        elif tag == "meta" and (a.get("name") or "").lower() == "description":
-            self.description = a.get("content") or ""
+        elif tag == "meta":
+            prop = (a.get("property") or "").lower()
+            name = (a.get("name") or "").lower()
+            content = a.get("content") or ""
+            if name == "description" or prop in ("og:description", "twitter:description"):
+                if not self.description:
+                    self.description = content
+            elif prop in ("og:title", "twitter:title"):
+                if not self.og_title:
+                    self.og_title = content
         if tag == self.scope:
             self.active = True
             return

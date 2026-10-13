@@ -1,5 +1,5 @@
 ---
-title: "Why I Chose Automation & Systems Over a 9-to-5 | TENSIX"
+title: "Why I Chose Automation Over a 9-to-5 | Hemal Shah (HK)"
 url: https://www.tensix.in/blogs/why-i-chose-automation-over-a-9-to-5
 description: "Why Hemal Shah chose to build automation and software for clients instead of taking a 9-to-5 job: the freedom, the real risks, and what the work has taught him."
 ---

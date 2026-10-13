@@ -1,5 +1,5 @@
 ---
-title: "The Ultimate Local Business SEO & AEO Strategy | TENSIX"
+title: "The Ultimate Local Business SEO Strategy | Hemal Shah (HK)"
 url: https://www.tensix.in/blogs/the-ultimate-local-business-seo-master-strategy
 description: "A plain-language local SEO plan for small businesses: fix your website basics, write clear pages, win Google answer boxes, and get recommended by AI search."
 ---

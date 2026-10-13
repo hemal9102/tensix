@@ -1,7 +1,7 @@
 ---
-title: "Ahmedabad Hospitals: Win More Patients Online | TENSIX"
+title: ""
 url: https://www.tensix.in/blogs/ahmedabad-healthcare-digital-survival
-description: "A plain guide for Ahmedabad hospitals and clinics: keep your website safe, help patients find your doctors on Google and AI search, and let them book online."
+description: ""
 ---
 
 [← Back to Blog](https://www.tensix.in/blogs)

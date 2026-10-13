@@ -1,7 +1,7 @@
 ---
-title: "Software & Website Company Serving Gota, Ahmedabad | TENSIX"
+title: ""
 url: https://www.tensix.in/best-software-company-in-gota
-description: "Websites, custom software and AI automation for businesses in Gota, Vandemataram and New SG Road, Ahmedabad. Fixed prices. Work directly with Hemal Shah."
+description: ""
 ---
 
 [← Back to TENSIX Home](https://www.tensix.in/)

@@ -1,7 +1,7 @@
 ---
-title: "SaaS & Custom Software Developer in Ahmedabad | TENSIX"
+title: ""
 url: https://www.tensix.in/saas-developer-ahmedabad
-description: "Turn your idea into working software. TENSIX builds SaaS apps with logins, payments and dashboards in Ahmedabad. Fixed prices From ₹75,000."
+description: ""
 ---
 
 [← Back to TENSIX Home](https://www.tensix.in/)

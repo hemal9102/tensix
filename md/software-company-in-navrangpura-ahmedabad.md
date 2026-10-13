@@ -1,7 +1,7 @@
 ---
-title: "Software Company in Navrangpura, Ahmedabad | TENSIX"
+title: ""
 url: https://www.tensix.in/software-company-in-navrangpura-ahmedabad
-description: "TENSIX is a software and AI studio in Navrangpura, Ahmedabad, run by Hemal Shah. Websites, custom software and automation at fixed, published prices."
+description: ""
 ---
 
 [← Back to TENSIX Home](https://www.tensix.in/)

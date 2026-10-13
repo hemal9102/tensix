@@ -1,7 +1,7 @@
 ---
-title: "Case Studies: Problems Solved by TENSIX"
+title: ""
 url: https://www.tensix.in/case-studies
-description: "TENSIX case studies in plain words: the business problem, what was built and how it helped. Lead finding, online stores, hiring sites and automation."
+description: ""
 ---
 
 # Case Studies: Problem, Fix, Result
