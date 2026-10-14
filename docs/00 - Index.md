@@ -21,6 +21,7 @@
 * [[06-AI-Search-and-Crawler-Engine/10 - German Tech Job Crawler & Non-LeetCode SRE Relocation Blueprint|10 - German Tech Job Crawler & Non-LeetCode SRE Relocation Blueprint]]
 * [[06-AI-Search-and-Crawler-Engine/11 - Official German Corporate & Immigration Rules, Lebenslauf Standards & Relocation Playbook|11 - Official German Corporate & Immigration Rules, Lebenslauf Standards & Relocation Playbook]]
 * [[06-AI-Search-and-Crawler-Engine/12 - High-Throughput Autonomous Ingestion & Contract-Driven Data Pipeline|12 - High-Throughput Autonomous Ingestion & Contract-Driven Data Pipeline]]
+* [[06-AI-Search-and-Crawler-Engine/13 - Kernel-Level DSA & Mechanical Sympathy Rules|13 - Kernel-Level DSA & Mechanical Sympathy Rules]]
 
 ---
 
