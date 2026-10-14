@@ -20,6 +20,7 @@
 * [[06-AI-Search-and-Crawler-Engine/09 - The 48 Algorithmic Variables for Position 0, FAQ Schemas & AI Citation Dominance|09 - The 48 Algorithmic Variables for Position 0, FAQ Schemas & AI Citation Dominance]]
 * [[06-AI-Search-and-Crawler-Engine/10 - German Tech Job Crawler & Non-LeetCode SRE Relocation Blueprint|10 - German Tech Job Crawler & Non-LeetCode SRE Relocation Blueprint]]
 * [[06-AI-Search-and-Crawler-Engine/11 - Official German Corporate & Immigration Rules, Lebenslauf Standards & Relocation Playbook|11 - Official German Corporate & Immigration Rules, Lebenslauf Standards & Relocation Playbook]]
+* [[06-AI-Search-and-Crawler-Engine/12 - High-Throughput Autonomous Ingestion & Contract-Driven Data Pipeline|12 - High-Throughput Autonomous Ingestion & Contract-Driven Data Pipeline]]
 
 ---
 
