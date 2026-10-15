@@ -23,6 +23,7 @@
 * [[06-AI-Search-and-Crawler-Engine/12 - High-Throughput Autonomous Ingestion & Contract-Driven Data Pipeline|12 - High-Throughput Autonomous Ingestion & Contract-Driven Data Pipeline]]
 * [[06-AI-Search-and-Crawler-Engine/13 - Kernel-Level DSA & Mechanical Sympathy Rules|13 - Kernel-Level DSA & Mechanical Sympathy Rules]]
 * [[06-AI-Search-and-Crawler-Engine/14 - Production Engineering Ledger Local Dev & Cloud VPS Settings|14 - Production Engineering Ledger: Local Dev & Cloud VPS Settings]]
+* [[06-AI-Search-and-Crawler-Engine/15 - Competitor Keyword Intelligence & TenSix Ranking Battle Plan|15 - Competitor Keyword Intelligence & TenSix Ranking Battle Plan]] *(2026-10-15)*
 
 ---
 
