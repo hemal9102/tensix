@@ -300,6 +300,71 @@ graph TD
 ```
 
 ---
+
+## 📓 7. Engineering Journal & Protocol Clarifications (Empirical Field Notes)
+
+> **Status:** Production Grounded  
+> **Telemetry Baseline:** Live API audits (Google Search Console, Chrome UX Report, Bing Webmaster Tools, Wikidata WB-Search)
+
+### A. Telemetry & Inspection Endpoints: Protocol Specification
+1. **Google Indexing API vs. Search Console URL Inspection API:**
+   * *Google Indexing API (`/v3/urlNotifications:publish`):* Formally designated exclusively for short-lived, time-sensitive content (`JobPosting` and `BroadcastEvent`). Submitting general content violates published API policy and may result in silent omission.
+   * *The Production Route:* Audit indexing status and crawl telemetry using the **Google Search Console URL Inspection API**:
+     ```http
+     POST https://searchconsole.googleapis.com/v1/urlInspection/index:inspect
+     Authorization: Bearer {OAUTH2_GSC_TOKEN}
+     Content-Type: application/json
+
+     {
+       "inspectionUrl": "https://yourdomain.com/target-page",
+       "siteUrl": "https://yourdomain.com/",
+       "languageCode": "en"
+     }
+     ```
+     *Extract:* `coverageState`, `indexingState` (verifying canonical selection), and `lastCrawlTime`.
+
+2. **CrUX API vs. Synthetic PageSpeed Insights:**
+   * PageSpeed Insights (`pagespeedonline/v5`) measures simulated lab conditions.
+   * Real-user field data is queried via the **Chrome UX Report (CrUX) API**:
+     ```http
+     POST https://chromeuxreport.googleapis.com/v1/records:queryRecord?key={API_KEY}
+     Content-Type: application/json
+
+     {
+       "origin": "https://competitor.com",
+       "formFactor": "PHONE",
+       "metrics": ["largest_contentful_paint", "interaction_to_next_paint", "cumulative_layout_shift"]
+     }
+     ```
+   * *Impact Boundary:* Core Web Vitals represent a documented page-experience tiebreaker rather than a dominant standalone ranking driver.
+
+3. **Bing Webmaster Tools REST Integration:**
+   * In addition to IndexNow push gateways, Bing exposes direct programmatic management via `https://ssl.bing.com/webmaster/api.svc/json/`:
+     * `SubmitUrlBatch?apikey={KEY}`: Programmatic multi-URL submission.
+     * `GetUrlSubmissionQuota`: Verifies daily quota limits.
+     * `GetCrawlIssues`: Returns exact crawl errors, 4xx/5xx responses, and DNS latency encountered by Bingbot.
+     * `GetQueryStats`: Extracts exact search queries, impressions, CTR, and average rank position.
+
+---
+
+### B. Empirical Research Grounding: GEO vs. C-SEO Benchmarks
+
+1. **The GEO Benchmark (Aggarwal et al., Princeton / KDD 2024):**
+   * *Framework:* Evaluated black-box generative engines across domain subsets using normalized word count impression ($Imp_{wc}$).
+   * *Empirical Observations:* Adding authoritative citations, domain expert quotations, and concrete empirical statistics demonstrated upward visibility lift (up to an aggregate ceiling of ~40% in controlled evaluation slices).
+   * *Negative Signal:* Keyword stuffing consistently degraded visibility across evaluated LLMs (-8% to -15%).
+
+2. **The C-SEO Benchmark Replication (Puerto et al., NeurIPS 2025):**
+   * *The Retrieval Pre-Requisite:* Evaluated broader question-answering and product recommendation tasks. Established that generative copywriting optimizations cannot overcome poor retrieval ranking; traditional search signals that secure placement inside the LLM's initial retrieval window remain the primary determinant of visibility.
+   * *Zero-Sum Dynamics:* As multiple competing domains adopt identical formatting heuristics, relative citation gains compress.
+
+3. **Entity Semantics: Audit Tool vs. Ranking Mechanics:**
+   * Google Cloud Natural Language API's `salience` is a developer-facing NLP extraction feature, not a published Google ranking weight.
+   * Knowledge Graph machine IDs (`mid`) and Wikidata QIDs in JSON-LD provide unambiguous machine-readable entity disambiguation, but do not automatically grant topical rank elevation.
+   * *Correct Framing:* Treat Entity Delta analysis strictly as a **semantic completeness audit tool** to ensure coverage of relevant entities.
+
+---
+
 **Backlinks:**
 * [[06-AI-Search-and-Crawler-Engine/00 - Index|Master Domain Index]]
 * [[06-AI-Search-and-Crawler-Engine/01 - Google Autocomplete & Real-Time Intent Harvesting Engine|01 - Intent Harvester]]
