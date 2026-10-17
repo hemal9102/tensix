@@ -25,6 +25,7 @@
 * [[06-AI-Search-and-Crawler-Engine/14 - Production Engineering Ledger Local Dev & Cloud VPS Settings|14 - Production Engineering Ledger: Local Dev & Cloud VPS Settings]]
 * [[06-AI-Search-and-Crawler-Engine/15 - Competitor Keyword Intelligence & TenSix Ranking Battle Plan|15 - Competitor Keyword Intelligence & TenSix Ranking Battle Plan]] *(2026-10-15)*
 * [[06-AI-Search-and-Crawler-Engine/16 - Internet Systems Stack, Email Infra & IT-Services Economics (Fact-Verified)|16 - Internet Systems Stack, Email Infra & IT-Services Economics (Fact-Verified)]] *(2026-10-15)*
+* [[06-AI-Search-and-Crawler-Engine/17 - RFC Master Protocol Architecture for Web Crawlers, AI Citations & Diagnostic Engines|17 - RFC Master Protocol Architecture for Web Crawlers, AI Citations & Diagnostic Engines]] *(2026-10-17)*
 
 ---
 
