@@ -886,9 +886,9 @@ Internet-Draft         Agent-Readiness Evaluation           October 2026
 7.  Informative References
 
    [AGENTAUTHORITY]
-              Shah, H., "Agent Authority: a reference implementation of
-              standards-grounded agent-readiness evaluation", Reference
-              implementation (running code), 2026,
+              Shah, H. K., "Agent Authority: a reference implementation
+              of standards-grounded agent-readiness evaluation",
+              Reference implementation (running code), 2026,
               <https://github.com/hemal9102/agent-authority>.
 
 
