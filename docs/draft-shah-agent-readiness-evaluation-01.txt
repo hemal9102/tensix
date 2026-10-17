@@ -1,0 +1,1064 @@
+
+
+
+
+Independent Submission                                        H. K. Shah
+Internet-Draft                                                    TENSIX
+Intended status: Informational                           17 October 2026
+Expires: 20 April 2027
+
+
+   A Standards-Grounded Method for Evaluating Website Agent-Readiness
+                draft-shah-agent-readiness-evaluation-01
+
+Abstract
+
+   This document defines a method for evaluating the "agent-readiness"
+   of a website: a measure of how well the site supports autonomous AI
+   agents and generative-search crawlers that consume it without a human
+   in the loop.  The method is grounded entirely in published standards.
+   It organizes observable server behavior into four evaluation pillars,
+   each mapped to specific IETF RFCs and W3C specifications covering
+   agent discoverability, semantic entity grounding, content efficiency
+   and ingestion, and transport.  From the per-pillar observations it
+   derives a single deterministic weighted score between 0 and 100.  The
+   score formula and its pillar weights are a reproducible scoring
+   convention defined by this document; they are a measurement
+   convention and are not themselves a standard.  The method is
+   diagnostic: it observes and reports conformance to existing
+   specifications and changes no protocol.  It is a measurement method,
+   not a new protocol and not an enforcement mechanism.  Community and
+   vendor conventions that are not standards are observed only as
+   supplementary signals and are clearly identified as such.  A running
+   reference implementation that performs these checks exists and is
+   referenced as running code.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 20 April 2027.
+
+
+
+
+Shah                      Expires 20 April 2027                 [Page 1]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+Copyright Notice
+
+   Copyright (c) 2026 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+     1.1.  Requirements Language . . . . . . . . . . . . . . . . . .   4
+   2.  Evaluation Pillars and Standards Mapping  . . . . . . . . . .   4
+     2.1.  Pillar One: Agent Discoverability . . . . . . . . . . . .   5
+     2.2.  Pillar Two: Semantic Entity Grounding . . . . . . . . . .   6
+     2.3.  Pillar Three: Content Efficiency and Ingestion  . . . . .   7
+     2.4.  Pillar Four: Transport  . . . . . . . . . . . . . . . . .   8
+   3.  Scoring Methodology . . . . . . . . . . . . . . . . . . . . .   9
+   4.  Security Considerations . . . . . . . . . . . . . . . . . . .  12
+     4.1.  Active Probing and Authorization  . . . . . . . . . . . .  12
+     4.2.  Server-Side Request Forgery . . . . . . . . . . . . . . .  13
+     4.3.  Interpretation of the Score . . . . . . . . . . . . . . .  14
+     4.4.  Observational Signals and Scan-Time Validity  . . . . . .  14
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  15
+   6.  Empirical Observations Across an Origin Sample  . . . . . . .  15
+   7.  Normative References  . . . . . . . . . . . . . . . . . . . .  16
+   8.  Informative References  . . . . . . . . . . . . . . . . . . .  18
+   Appendix A.  Changes Since -00  . . . . . . . . . . . . . . . . .  18
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  19
+
+1.  Introduction
+
+   Autonomous AI agents and generative-search crawlers increasingly
+   retrieve, parse, and act upon Web resources with no human present to
+   interpret a page's visual layout.  Such a consumer is, for the
+   duration of a retrieval, a finite-state machine: it issues HTTP
+   requests, follows redirects, reads response headers, honors (or is
+   refused by) a robots exclusion policy, parses structured data, and
+   either succeeds or fails on each step against rules that are already
+   written down.  These rules live in published specifications.  Whether
+   an agent can discover a site's machine-readable description, resolve
+   its entities to authoritative identifiers, ingest its content
+   efficiently, and complete a secure transport handshake are all
+   questions with deterministic, verifiable answers.  They are not
+   questions of marketing reputation, and no opaque "authority score"
+
+
+
+Shah                      Expires 20 April 2027                 [Page 2]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   can answer them.
+
+   Despite this, the prevailing way sites are assessed for "AI
+   visibility" relies on proprietary, non-reproducible metrics whose
+   inputs are undisclosed and whose results change without an observable
+   cause.  That approach is unfalsifiable and therefore unhelpful to an
+   operator who wants to know, concretely, what to change.  This
+   document takes the opposite stance.  It treats agent-readiness the
+   way the W3C Markup Validation Service treats markup and the way
+   public TLS test services treat a transport configuration: as a set of
+   binary or bounded, independently reproducible observations against
+   published specifications.  If a server does not advertise a given
+   link relation, or does not negotiate a given TLS version, that is a
+   fact an auditor and the site operator can both confirm with a single
+   request, not a matter of opinion.
+
+   The method defined here rests on four evaluation pillars, each
+   anchored to published standards.  Agent Discoverability (Section 2.1)
+   concerns whether an agent can find a site's machine-readable
+   surfaces; it draws on the Robots Exclusion Protocol [RFC9309] for
+   crawl authorization, on Web Linking [RFC8288] for typed relations
+   such as "describedby" and "alternate", on the api-catalog well-known
+   URI and its application/linkset+json representation [RFC9727], and on
+   the generic "/.well-known/" path prefix [RFC8615] within which such
+   resources are located.  Semantic Entity Grounding (Section 2.2)
+   concerns whether a site expresses, in machine-readable form, what its
+   entities are and to which authoritative identifiers they correspond;
+   it draws on W3C JSON-LD 1.1 [JSONLD11] and the Schema.org vocabulary
+   [SCHEMAORG], and on the URI generic syntax [RFC3986] for the
+   requirement that cross-references resolve as absolute URIs.  Content
+   Efficiency and Ingestion (Section 2.3) concerns whether an agent can
+   obtain a site's content in a low-overhead, high-signal form; it draws
+   on the text/markdown media type [RFC7763] and on Web Linking
+   [RFC8288].  Transport (Section 2.4) concerns whether delivery is
+   secure and efficient for an automated consumer; it draws on HTTP
+   Semantics [RFC9110], HTTP Caching [RFC9111], and TLS 1.3 [RFC9846].
+
+   From the observations in these pillars the method computes a single
+   deterministic score in the range 0 to 100 as a weighted sum, with the
+   four pillars weighted 30, 30, 25, and 15 respectively.  These weights
+   and the formula that combines them are a reproducible convention
+   defined by this document to aid comparison and prioritization.  The
+   convention is not itself a standard, and nothing in this document
+   elevates the score, its weights, or any threshold to normative
+   status.  An implementation computing a different aggregate from the
+   same per-pillar observations remains consistent with the underlying
+   specifications; only the labeling of such an aggregate as the score
+   defined here is constrained.
+
+
+
+Shah                      Expires 20 April 2027                 [Page 3]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   The scope of this document is deliberately narrow.  It specifies a
+   measurement and diagnostic method and nothing more.  It defines no
+   new protocol, media type, link relation, header field, or well-known
+   URI, and it changes the behavior of none that exist.  It imposes no
+   requirement on any site to adopt any practice.  It is observation,
+   not enforcement: an agent-readiness evaluation reports how a target
+   behaves with respect to specifications that already define that
+   behavior, and the decision to act on such a report rests entirely
+   with the site operator.
+
+   Two mechanisms that appear in the agent-readiness landscape are
+   explicitly outside the set of standards this method relies upon.  The
+   "llms.txt" file [LLMSTXT] is a community convention, not an IETF or
+   W3C standard.  Cloudflare's "Content-Signal" [CONTENTSIGNAL] is a
+   vendor mechanism, not a standard.  Where present, these are observed
+   only as supplementary signals and are reported as conventions, so
+   that a site is never credited or penalized under this method merely
+   for using, or not using, a particular vendor or community practice.
+
+   A running reference implementation of this method, "Agent Authority"
+   [AGENTAUTHORITY], exists.  It captures the telemetry described above
+   over live HTTP and computes the four-pillar score as a pure function
+   of that telemetry, with an accompanying automated test suite, and is
+   referenced in this document as running code demonstrating that the
+   method is implementable and reproducible.
+
+1.1.  Requirements Language
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in BCP
+   14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+   In this document such requirements-language keywords describe the
+   evaluation method itself (for example, what an implementation of this
+   method is to observe and report) and the operational safety of
+   performing an evaluation.  They impose no conformance requirement on
+   any evaluated site and no requirement on any protocol.
+
+2.  Evaluation Pillars and Standards Mapping
+
+   This section defines the four evaluation pillars that constitute the
+   agent-readiness method.  Each pillar describes a class of observable
+   facts about a target origin, each such fact is tied to the published
+   specification that governs it, and each is checked by the reference
+   implementation described in Section 1 ("Agent Authority").  The
+   method is diagnostic: it observes what an origin serves and reports
+
+
+
+Shah                      Expires 20 April 2027                 [Page 4]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   it against the relevant standard.  It does not define new protocol
+   behavior, and nothing in this section places a requirement on any
+   server operator.
+
+   A note on terminology used throughout this section.  Where a behavior
+   is governed by a published IETF or W3C specification, this document
+   cites that specification and treats the observation as conformance
+   evidence.  Where a behavior follows only a community or vendor
+   convention with no corresponding standards-track or W3C
+   Recommendation status, this document says so explicitly and treats
+   the observation as an advisory signal with no conformance meaning.
+   Two such conventions appear below: the "llms.txt" file and
+   Cloudflare's "Content-Signal".  Neither is an IETF standard or a W3C
+   Recommendation.  They are observed because agent operators encounter
+   them in the wild, but they are never treated as standards compliance,
+   and the reference implementation scores them only as minor
+   observational bonuses so that a site is not rewarded merely for using
+   a particular vendor.
+
+2.1.  Pillar One: Agent Discoverability
+
+   This pillar observes whether an origin advertises machine-
+   discoverable entry points that an autonomous agent can follow without
+   guessing.  Three independent observations are made against the final
+   host (after redirects are followed and capped).
+
+   The first observation is the robots exclusion policy.  The reference
+   implementation fetches /robots.txt and evaluates it using a parser
+   that follows the grouping and longest-match semantics of the Robots
+   Exclusion Protocol [RFC9309]: records are grouped by case-insensitive
+   user-agent token, the longest matching Allow or Disallow rule wins,
+   and an Allow of equal specificity takes precedence over a Disallow.
+   It then asks, for a representative set of agent user-agent product
+   tokens, whether crawling of the site root is permitted.  The
+   governing standard is [RFC9309], which standardizes the file's
+   location, syntax, and matching rules.  What is observed is strictly
+   the stated policy for named agent tokens; the method does not fetch
+   disallowed paths and does not treat a Disallow as a defect, because a
+   Disallow is a legitimate operator choice.  The observation reported
+   is simply whether, and for which agents, access is permitted.
+
+   The second observation is a typed link from the root resource to a
+   machine-oriented description of the site.  The reference
+   implementation parses the Link header field of the root response
+   according to the Web Linking grammar [RFC8288] and looks for a link
+   whose relation type is "describedby".  The "describedby" relation is
+   an IANA-registered link relation (registered in 2009, with its
+   defining reference being the W3C POWDER specification [POWDER]) and
+
+
+
+Shah                      Expires 20 April 2027                 [Page 5]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   indicates that the target resource is a description of the context
+   resource.  In the agent-readiness setting this is the idiomatic way
+   to point an agent at a plain-text or structured site summary,
+   including a file following the "llms.txt" convention.  The governing
+   standard for the link-serialization mechanism is [RFC8288], which
+   defines the Link header field, the link model, and the registry of
+   relation types; the "describedby" relation itself is governed by its
+   IANA registration rather than by [RFC8288] directly.  The standard
+   being satisfied is the Web Linking mechanism and the registered
+   relation; the "llms.txt" file that the link may point to is a
+   convention, not a standard, and the presence of the file is scored
+   only as an observational signal under Section 2.3.
+
+   The third observation is API discoverability via the api-catalog
+   well-known resource.  The reference implementation checks for a Link
+   relation of type "api-catalog" on the root response and,
+   independently, fetches /.well-known/api-catalog and inspects whether
+   it is served with the application/linkset+json media type.  Both the
+   "api-catalog" link relation and the /.well-known/api-catalog well-
+   known URI are defined by [RFC9727], "api-catalog: A Well-Known URI
+   and Link Relation to Help Discovery of APIs".  [RFC9727] specifies
+   that the catalog is represented as a link set and, in its primary
+   representation, uses the application/linkset+json media type (the
+   link set format is defined in [RFC9264]); the "api-catalog" relation
+   type and the well-known URI are both registered by [RFC9727].  This
+   document is explicit and deliberate on one point of fact that is
+   commonly gotten wrong: the api-catalog well-known URI is defined by
+   [RFC9727] and is not defined by [RFC8615].  [RFC8615], "Well-Known
+   Uniform Resource Identifiers (URIs)", defines only the generic
+   "/.well-known/" path prefix and the procedures of the Well-Known URI
+   registry; it does not define any specific well-known URI, and in
+   particular it does not define api-catalog.  The two are related only
+   in that api-catalog is one entry registered under the general prefix
+   that [RFC8615] established.  The method observes whether the api-
+   catalog relation is advertised, whether the well-known resource is
+   served, and whether its media type matches what [RFC9727] prescribes.
+   A closely related registered relation an origin may use for human-
+   facing API documentation is "service-doc", registered by [RFC8631]
+   (Informational); the method may note its presence but treats catalog
+   discovery through [RFC9727] as the primary discoverability signal.
+
+2.2.  Pillar Two: Semantic Entity Grounding
+
+   This pillar observes whether the origin publishes machine-readable
+   structured data that identifies the entity the site represents and
+   anchors it to external authorities, so that an agent can resolve the
+   site to a known real-world entity rather than inferring one from
+   prose.
+
+
+
+Shah                      Expires 20 April 2027                 [Page 6]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   The reference implementation extracts every script element of type
+   application/ld+json from the root document and performs a set of
+   concrete, independently verifiable structural checks: whether each
+   block is well-formed and parses as JSON; whether a node declares an
+   @context that references the schema.org vocabulary; whether a node
+   carries an @type; and whether any sameAs values are present and, if
+   so, whether every one of them is an absolute URI.  The governing
+   specifications are the W3C JSON-LD 1.1 Recommendation [JSONLD11] for
+   the serialization and processing model and the Schema.org vocabulary
+   [SCHEMAORG] for the terms used (@type, sameAs, and so on).  These are
+   W3C and community-governed vocabularies and syntaxes rather than IETF
+   RFCs, and this document cites them as such.  The one IETF standard
+   that applies directly here is [RFC3986], the generic URI syntax,
+   which governs the absoluteness check applied to sameAs values: an
+   entity cross-reference is only resolvable by an agent if it is an
+   absolute URI (scheme and authority present) as defined by [RFC3986],
+   and a relative reference cannot unambiguously identify an external
+   entity.  The method therefore observes the presence and structural
+   shape of JSON-LD and the absolute-URI property of its sameAs anchors,
+   citing [RFC3986] for the latter.
+
+   This document is deliberate about what is not claimed in this pillar.
+   There is no authoritative, standardized validator that pronounces a
+   given JSON-LD graph "valid" or "invalid" as a semantic whole; JSON-LD
+   1.1 defines well-formedness and processing, and Schema.org defines a
+   vocabulary, but neither defines a single pass/fail validity verdict
+   for an arbitrary entity description.  For this reason the method
+   reports concrete sub-observations (parses, references schema.org, has
+   a type, has absolute sameAs anchors) and never an undefined "valid"
+   boolean.  This keeps every reported fact traceable to a specific,
+   checkable property rather than to a subjective judgment.
+
+2.3.  Pillar Three: Content Efficiency and Ingestion
+
+   This pillar observes whether the origin offers a representation of
+   its content that is inexpensive for an agent to ingest, and whether
+   it advertises that representation through standard mechanisms.
+
+   The primary observation is a Markdown representation of the page.
+   The reference implementation checks whether a Markdown mirror is
+   served with the text/markdown media type and, independently, whether
+   the root response advertises an alternate representation via a Link
+   relation of type "alternate" carrying type="text/markdown".  The
+   media type text/markdown is registered by [RFC7763], "The text/
+   markdown Media Type".  Two facts about [RFC7763] are load-bearing and
+   this document states them precisely.  First, [RFC7763] is
+   Informational; it is not a standards-track specification.  Second,
+   and critically, [RFC7763] carries no notion of Markdown "validity":
+
+
+
+Shah                      Expires 20 April 2027                 [Page 7]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   it cites the Markdown syntax specification's statement that there is
+   no such thing as "invalid" Markdown.  The method therefore never
+   checks, scores, or reports Markdown "validity" or "correctness".
+   What it observes is strictly the presence of a Markdown
+   representation, the correctness of the media type label (text/
+   markdown) under which it is served, and whether that representation
+   is discoverable through a standard typed link.  The "alternate"
+   relation used to advertise the mirror is an IANA-registered link
+   relation, and the Link header mechanism that carries it is governed
+   by [RFC8288]; the absoluteness and syntax of the link target are
+   governed by [RFC3986].  A secondary observation in this pillar is a
+   coarse text-to-markup density of the HTML body, reported only as an
+   efficiency indicator for how much of the delivered payload is agent-
+   usable text; this is an informational measurement, not a conformance
+   claim against any specification.
+
+   Within this pillar the method also records whether a file following
+   the "llms.txt" convention [LLMSTXT] is present at the origin.  This
+   document states plainly that "llms.txt" is a community convention,
+   not an IETF standard and not a W3C Recommendation.  It is observed
+   because it is in common use as an agent-oriented site summary, but
+   its presence is treated purely as an advisory signal.  It carries no
+   standards-conformance meaning, and the reference implementation
+   scores it only as a small observational bonus, never as part of the
+   standards-backed core of the pillar.  Likewise, where an origin emits
+   Cloudflare's "Content-Signal" directives [CONTENTSIGNAL] (a vendor
+   mechanism for expressing content-usage preferences), the method may
+   record them as observational context only; "Content-Signal" is a
+   Cloudflare vendor convention, not an IETF or W3C standard, and this
+   document does not treat its presence or its directives as conformance
+   to any standard.
+
+2.4.  Pillar Four: Transport
+
+   This pillar observes properties of the transport layer that affect
+   whether an agent can retrieve content securely, efficiently, and with
+   cacheable results.  All observations here are governed by standards-
+   track IETF specifications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shah                      Expires 20 April 2027                 [Page 8]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   The first observation is the negotiated TLS version.  The reference
+   implementation reads the TLS protocol version from the live
+   connection used to fetch the root resource and reports whether TLS
+   1.3 was negotiated.  The governing standard is [RFC9846], which
+   specifies TLS 1.3 (obsoleting RFC 8446).  The method observes the
+   negotiated version as a fact of the connection; because the version
+   is only reliably readable from the open HTTP/1.1 network stream, the
+   implementation makes this probe over HTTP/1.1, and where it cannot
+   read the version it reports the observation as unknown rather than as
+   a failure.
+
+   The second observation is the HTTP caching policy.  The reference
+   implementation reads the Cache-Control header field of the root
+   response and reports the declared caching policy, flagging internally
+   contradictory directives (for example, a response that combines no-
+   store with a positive max-age).  The governing standard is [RFC9111],
+   HTTP Caching, which defines Cache-Control and the semantics of its
+   directives.  This document is deliberate in observing the stated
+   caching policy rather than any transient cache outcome: a per-request
+   HIT or MISS status is not scored, because it varies between requests
+   and would make results non-reproducible.  The method may additionally
+   note, in a vendor-agnostic way, that a response passed through an
+   edge cache (for example via an Age header field, whose freshness
+   semantics are defined by [RFC9111], or via one of several vendor
+   cache-status header fields), but it treats the specific HIT/MISS
+   value as observational only.
+
+   The third set of observations concerns general HTTP semantics and
+   responsiveness.  The reference implementation records the response
+   status handling, header semantics, and a time-to-first-byte
+   measurement for the root fetch.  The governing standard is [RFC9110],
+   HTTP Semantics, which defines the meaning of methods, status codes,
+   and header fields that the method relies on when interpreting every
+   response.  Time-to-first-byte is reported as a transport
+   responsiveness indicator relevant to agents that must fetch many
+   resources; it is a measurement rather than a conformance verdict
+   against any single clause, and [RFC9110] (together with [RFC9111])
+   frames how the underlying request/response exchange is interpreted.
+
+3.  Scoring Methodology
+
+   This section defines how the per-pillar observations of Section 2 are
+   combined into a single composite figure.  The reader is cautioned at
+   the outset that the composite score, its range, its band labels, and
+   the pillar weights given below are a reproducible convention defined
+   by this document.  They are an evaluation and reporting aid.  They
+   are not themselves an Internet standard, they do not extend or amend
+   any of the protocols cited in Section 2, and conformance to the
+
+
+
+Shah                      Expires 20 April 2027                 [Page 9]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   referenced RFCs and W3C specifications in no way depends on them.  A
+   different evaluator is free to weight the pillars differently; what
+   this document fixes is a single, transparent, deterministic
+   convention so that two independent runs against the same observed
+   target produce the same number.
+
+   The composite score is a weighted sum over the four pillars, where
+   each pillar score is a real number in the closed interval 0 to 100
+   computed from the per-check results of that pillar, and each pillar
+   score is clamped to that interval before it is combined:
+
+      Score = SUM over p in {1..4} of ( weight_p * pillar_score_p )
+
+      Agent Discoverability            weight = 0.30
+      Semantic Entity Grounding        weight = 0.30
+      Content Efficiency and Ingestion weight = 0.25
+      Transport                        weight = 0.15
+
+   The weights sum to exactly 1.00, so the composite Score is itself
+   bounded to the range 0 to 100.  An implementation SHOULD assert that
+   the weights sum to unity at startup; the reference implementation
+   (Section 1) does so.  The rationale for the distribution is
+   editorial, not normative: discoverability and entity grounding are
+   weighted most heavily because they most directly determine whether an
+   autonomous agent can find the resource and resolve it to a known
+   entity at all, whereas transport characteristics, while they affect
+   ingestion cost and latency, rarely prevent ingestion outright and are
+   therefore weighted least.  Readers who disagree with this emphasis
+   can recompute the composite with their own weights without changing
+   any of the underlying observations; the pillar scores are reported
+   individually precisely so that this is possible.
+
+   Reproducibility is the central design constraint of this convention,
+   and it imposes two rules that distinguish this method from a naive
+   checker.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shah                      Expires 20 April 2027                [Page 10]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   First, the method scores stable policy, never transient per-request
+   state.  The clearest instance is HTTP caching.  The value of a
+   transient edge-cache status header such as "cf-cache-status: HIT" or
+   "cf-cache-status: MISS" (or any equivalent vendor header) varies
+   between otherwise identical requests depending on cache warmth and is
+   therefore unsuitable as the basis of a reproducible score.
+   Accordingly, the Transport pillar scores the declared caching policy,
+   principally the "Cache-Control" header defined in [RFC9111], together
+   with the vendor-agnostic presence of an edge cache.  The HIT or MISS
+   value itself is observed and reported for information but is
+   explicitly not an input to the score.  The same principle applies
+   throughout: the evaluator credits what the origin durably declares,
+   not what a single probe happened to encounter.
+
+   Second, the two best-known community and vendor conventions in this
+   space, the "llms.txt" file [LLMSTXT] and Cloudflare's "Content-
+   Signal" mechanism [CONTENTSIGNAL], are treated as observational
+   bonuses only, not as scored backbone.  As stated in Section 2,
+   neither is an IETF or W3C standard: "llms.txt" is a community
+   convention and "Content-Signal" is a single vendor's feature.  Their
+   presence is recorded and may contribute a small, bounded bonus within
+   a pillar, but a target can reach the top band without either of them,
+   and their absence is never reported as non-conformance.  This keeps
+   the convention from silently rewarding the customers of one content
+   delivery network or the adopters of one unratified file format, and
+   keeps the score anchored in the published standards of Section 2.
+
+   A separate concern is how the method treats a target it could not
+   actually observe.  An evaluator must not conflate "we were not
+   allowed to look" with "we looked and the target failed."  When the
+   root resource is unreachable, for example because the connection
+   fails, times out, is met with a WAF or bot-management challenge, or
+   returns an HTTP 403 (Forbidden) or comparable blocking status, the
+   target is reported as "not observed" (an explicit "unreachable"
+   result) rather than being assigned a low or zero score.  A "not
+   observed" result carries the reason for non-observation (the blocking
+   status or transport error) and a distinct band; it is not scored as
+   RFC non-conformance, and it MUST be visually and semantically
+   distinguished in any report from a reachable target that was examined
+   and found wanting.  This distinction matters because many origins
+   front their content with challenge pages that a conformance crawler
+   cannot pass, and penalising such a site as if its underlying
+   resources were non-conformant would be both inaccurate and unfair.
+   Only a target that is genuinely reachable and examined yields a
+   pillar-by-pillar composite score.
+
+
+
+
+
+
+Shah                      Expires 20 April 2027                [Page 11]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   Finally, the composite number is a summary, not the substance of the
+   result.  The running reference implementation (Section 1) emits, for
+   every individual check within every pillar, one of three outcomes,
+   "pass", "warn", or "fail" (with a fourth "unknown" outcome reserved
+   for a signal that could not be measured on a given connection, such
+   as a TLS version that the probe was unable to read), together with
+   the specific clause being applied, the citation to the governing RFC
+   or specification, the raw observation, and, where relevant, a
+   suggested remediation and a command to reproduce the observation.
+   The intent is that the composite Score lets a reader rank targets at
+   a glance, while the per-check "pass/warn/fail" breakdown, each item
+   citing the standard it rests on, lets that same reader audit exactly
+   how the number was reached and verify it independently.  The score is
+   thus always presented alongside, and never in place of, the itemised
+   evidence from which this document's convention derived it.
+
+4.  Security Considerations
+
+   This document defines an evaluation method; it specifies no new
+   protocol, defines no new wire format, and changes the behavior of no
+   existing protocol.  It is a measurement and diagnostic technique, not
+   an enforcement mechanism.  The security considerations below
+   therefore concern the act of performing the evaluation and the
+   interpretation of its results, rather than any new protocol
+   machinery.  The general guidance of [RFC3552] on writing security
+   considerations informs this section.
+
+4.1.  Active Probing and Authorization
+
+   An agent-readiness evaluation as described here is an active-probe
+   diagnostic.  To gather the telemetry the four pillars require, an
+   implementation sends real HTTP requests over TLS to a target origin
+   and to a small, fixed set of resources beneath it, including the site
+   root, "/robots.txt" [RFC9309], "/.well-known/api-catalog" [RFC9727],
+   and other well-known or conventional paths under the "/.well-known/"
+   prefix [RFC8615].  These requests are made to third-party
+   infrastructure that the party running the evaluation may not own or
+   control.
+
+   Operators MUST NOT treat the mere availability of this method as
+   authorization to scan arbitrary hosts.  An implementation and its
+   operator are responsible for ensuring they have authorization to
+   probe a given target, for example because they own or administer it,
+   because its operator has consented, or because applicable law and the
+   target's own published policies permit such requests.  In the common
+   case, an operator SHOULD restrict evaluation to sites they own or to
+   sites whose operators have explicitly asked to be evaluated.  Even
+   where probing is authorized, implementations SHOULD send requests at
+
+
+
+Shah                      Expires 20 April 2027                [Page 12]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   a modest rate, SHOULD identify themselves honestly with a descriptive
+   User-Agent rather than impersonating a browser or another crawler,
+   and SHOULD honor the target's Robots Exclusion Protocol directives
+   [RFC9309] for the identity under which they fetch.  Because a single
+   evaluation issues only a few requests against well-known paths, its
+   load on a target is small; nonetheless, operators running evaluations
+   in bulk SHOULD apply rate limiting and result caching so that
+   repeated or batched evaluations do not aggregate into abusive traffic
+   against any one origin.
+
+4.2.  Server-Side Request Forgery
+
+   A particular risk arises when an implementation of this method is
+   exposed as a hosted service that accepts a target host or URL from an
+   untrusted caller and then fetches it.  Such a service is, by
+   construction, a request-forwarding proxy, and without defensive
+   measures it is vulnerable to Server-Side Request Forgery (SSRF): an
+   attacker can supply a hostname that causes the service to issue
+   requests to resources that are reachable from the service's own
+   network position but not from the attacker's, such as internal
+   services, management endpoints, or a cloud provider's instance
+   metadata endpoint.  This is a well-known class of vulnerability and
+   is not specific to this document, but any hosted evaluation service
+   inherits it.
+
+   Implementations that accept caller-supplied targets MUST defend
+   against SSRF.  The critical property is to resolve-then-check: the
+   supplied name MUST be resolved to its IP address or addresses, and
+   each resulting address MUST be validated against a deny policy before
+   any request is issued, because a public DNS name can resolve to a
+   private, internal, or otherwise sensitive address, and that mapping
+   can change between checks.  The deny policy MUST reject, at minimum,
+   loopback addresses, private-use addresses (the ranges described in
+   [RFC1918] and IPv6 unique-local addresses), link-local addresses
+   (notably the IPv4 "169.254.0.0/16" range, which includes the
+   "169.254.169.254" cloud metadata address, and the IPv6 "fe80::/10"
+   range), multicast, reserved, and unspecified addresses, and in
+   general any address that is not globally routable.  Because a
+   hostname can resolve to multiple addresses, every resolved address
+   MUST pass the policy, not merely the first; a target that resolves to
+   any denied address MUST be refused.  Implementations SHOULD
+   additionally constrain the scheme to HTTPS, cap the number and depth
+   of redirects they will follow and re-apply the address check to
+   redirect targets, cap response body sizes before parsing, and apply
+   per-request timeouts, so that a hostile or pathological target cannot
+   exhaust the service's resources or be used to pivot via a redirect to
+   a denied address.  The reference implementation referred to in this
+   document ("Agent Authority") performs exactly this resolve-then-check
+
+
+
+Shah                      Expires 20 April 2027                [Page 13]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   validation before every scan and refuses any target that resolves to
+   a non-public address; operators of other implementations are strongly
+   encouraged to do likewise.
+
+4.3.  Interpretation of the Score
+
+   The composite score defined by this document is informational.  It is
+   a reproducible convention for summarizing a set of observations about
+   how amenable a site is to ingestion by autonomous agents and
+   generative-search crawlers; it is not a security rating, a
+   vulnerability score, a trust signal, or a certification, and it MUST
+   NOT be used as, or as an input to, a security control, an access-
+   control decision, an authentication or authorization mechanism, or an
+   allow/deny determination.  A high score indicates only that certain
+   discoverability, structured-data, content-efficiency, and transport
+   features were observed at scan time; it says nothing about the
+   correctness, authenticity, safety, or trustworthiness of the site's
+   content, and a site can be fully "agent-ready" by this method while
+   serving hostile, deceptive, or incorrect content.  Conversely, a low
+   score reflects the absence or non-observability of those features,
+   not that a site is malicious or non-conformant with any standard.
+   Consumers of a score, whether human or automated, SHOULD treat it as
+   a diagnostic summary to guide remediation, not as an assertion about
+   security posture, and SHOULD NOT make trust decisions on the basis of
+   it.
+
+4.4.  Observational Signals and Scan-Time Validity
+
+   Several inputs to the method are point-in-time observations that
+   reflect only what was true at the moment of the scan and from the
+   vantage point of the scanner.  In particular, any TLS-related
+   observation, such as a report that a connection negotiated TLS 1.3
+   [RFC9846], records only the protocol version that happened to be
+   negotiated for that one connection, from that client, at that time;
+   it is not a statement about the server's full configuration, its
+   support for other versions or cipher suites, the validity of its
+   certificate chain, or its resistance to downgrade, and it can differ
+   between clients and change at any time.  Likewise, transport and
+   caching observations [RFC9110] [RFC9111] describe the responses
+   actually received and may vary with the request path, the requesting
+   client, intermediary caches, content distribution networks, or the
+   time of day.  Results can also be affected by a target that serves a
+   bot-challenge or interstitial page instead of its real content, which
+   an implementation may be unable to distinguish from the genuine site;
+   such results reflect what was observed, not necessarily the site's
+   steady-state behavior.
+
+
+
+
+
+Shah                      Expires 20 April 2027                [Page 14]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   Finally, two of the signals the method may observe are community or
+   vendor conventions rather than standards.  The "llms.txt" convention
+   [LLMSTXT] is a community practice, not an IETF or W3C standard, and
+   the "Content-Signal" mechanism [CONTENTSIGNAL] is a vendor
+   (Cloudflare) convention, not a standard.  This document treats both
+   as purely observational signals and does not normatively depend on
+   them; implementations SHOULD label them as conventions wherever they
+   are reported, so that consumers do not mistake their presence or
+   absence for conformance to any published specification.
+
+5.  IANA Considerations
+
+   This document has no IANA actions.
+
+   This document defines an evaluation method that is grounded entirely
+   in existing, already-registered standards and registry entries, and
+   it introduces nothing that requires registration.  In particular, the
+   link relation types it observes, "describedby", "alternate", "api-
+   catalog", and "service-doc", are all already present in the IANA
+   "Link Relation Types" registry (see [RFC8288] for the registry,
+   [RFC9727] for "api-catalog", and [RFC8631] for "service-doc"), and
+   the well-known URIs it observes, including the "api-catalog" well-
+   known URI [RFC9727], are registered in the IANA "Well-Known URIs"
+   registry established by [RFC8615].  This document requests no
+   additions to, deletions from, or modifications of any IANA registry,
+   defines no new media types, link relations, well-known URIs, or
+   protocol parameters, and establishes no new registry.
+
+6.  Empirical Observations Across an Origin Sample
+
+   To show that the gap this method measures is real and not
+   hypothetical, the reference implementation described in Section 1 was
+   run as a bounded concurrent fleet scan against a sample of well-known
+   public origins.  This section reports what was observed.  The data is
+   presented as supporting evidence for the method's motivation; it is
+   not normative, and no requirement in this document depends on it.
+
+   Scope and honesty of the sample.  The run reported here covered a
+   small illustrative sample of 25 widely known origins, drawn
+   deliberately from highly engineering-capable operators (major
+   developer platforms, cloud providers, standards bodies, and framework
+   projects).  It is NOT a statistically representative census of the
+   web, and the figures below should be read as indicative of direction
+   and magnitude, not as population estimates.  A later revision of this
+   document intends to replace this sample with a run over a versioned,
+   openly published ranked list (for example a dated Tranco top-N list)
+   so that the figures become representative; the sample here is
+   sufficient only to demonstrate that the gap exists even among
+
+
+
+Shah                      Expires 20 April 2027                [Page 15]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   sophisticated operators.  All observations are point-in-time and
+   reflect a single vantage point, consistent with the caveats in
+   Section 4.4.  One origin in the sample was unreachable at scan time
+   and, per Section 3, is reported separately and excluded from the
+   conformance denominators rather than scored as non-conformant.
+
+   Of the 25 origins attempted, 24 were reachable and scored.  The
+   distribution of the composite agent-readiness score across those 24
+   reachable origins was: a median of 18 out of 100, a mean of
+   approximately 27, a minimum of 8, and a maximum of 90.  By band, 20
+   of the 24 fell in the lowest ("Agent Blind", 0 to 49) band, 3 in the
+   middle band, and only 1 in the highest band.  In plain terms, even
+   among these highly capable operators, the large majority were poorly
+   prepared for autonomous-agent consumption at the time of measurement.
+
+   The per-capability coverage, as a share of the 24 reachable origins,
+   reveals the shape of the gap.  Transport security was nearly
+   universal: TLS 1.3 [RFC9846] was negotiated by roughly 96 percent of
+   origins.  In contrast, the agent-facing discovery and ingestion layer
+   was largely absent.  A [RFC8288] "describedby" context manifest was
+   advertised by roughly 4 percent of origins; an advertised text/
+   markdown representation (the media type registered by [RFC7763],
+   advertised via [RFC8288]) by roughly 4 percent; an [RFC9727] api-
+   catalog by roughly 12 percent; and machine-readable JSON-LD
+   structured data by roughly one third, with absolute-URI "sameAs"
+   entity anchoring per [RFC3986] on fewer still.
+
+   The interpretation this document draws is narrow and specific: the
+   web has largely solved secure transport for machine clients, but has
+   barely begun to solve machine discoverability and low-overhead
+   ingestion, which are precisely the capabilities an autonomous agent
+   needs and precisely the capabilities this method's first two pillars
+   measure.  The gap is concrete, it maps to published standards rather
+   than to opinion, and it is large even in a sample biased toward the
+   most capable operators.  The full per-origin results and the
+   aggregate summary produced by the reference implementation are
+   reproducible from the running code cited in [AGENTAUTHORITY].
+
+7.  Normative References
+
+   [JSONLD11] World Wide Web Consortium (W3C), "JSON-LD 1.1: A JSON-
+              based Serialization for Linked Data", W3C Recommendation,
+              July 2020, <https://www.w3.org/TR/json-ld11/>.
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
+
+
+
+Shah                      Expires 20 April 2027                [Page 16]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   [RFC3986]  Berners-Lee, T., Fielding, R., and L. Masinter, "Uniform
+              Resource Identifier (URI): Generic Syntax", STD 66,
+              RFC 3986, DOI 10.17487/RFC3986, January 2005,
+              <https://www.rfc-editor.org/info/rfc3986>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
+   [RFC8288]  Nottingham, M., "Web Linking", RFC 8288,
+              DOI 10.17487/RFC8288, October 2017,
+              <https://www.rfc-editor.org/info/rfc8288>.
+
+   [RFC8615]  Nottingham, M., "Well-Known Uniform Resource Identifiers
+              (URIs)", RFC 8615, DOI 10.17487/RFC8615, May 2019,
+              <https://www.rfc-editor.org/info/rfc8615>.
+
+   [RFC9110]  Fielding, R., Ed., Nottingham, M., Ed., and J. Reschke,
+              Ed., "HTTP Semantics", STD 97, RFC 9110,
+              DOI 10.17487/RFC9110, June 2022,
+              <https://www.rfc-editor.org/info/rfc9110>.
+
+   [RFC9111]  Fielding, R., Ed., Nottingham, M., Ed., and J. Reschke,
+              Ed., "HTTP Caching", STD 98, RFC 9111,
+              DOI 10.17487/RFC9111, June 2022,
+              <https://www.rfc-editor.org/info/rfc9111>.
+
+   [RFC9264]  Wilde, E. and H. Van de Sompel, "Linkset: Media Types and
+              a Link Relation Type for Link Sets", RFC 9264,
+              DOI 10.17487/RFC9264, July 2022,
+              <https://www.rfc-editor.org/info/rfc9264>.
+
+   [RFC9309]  Koster, M., Illyes, G., Zeller, H., and L. Sassman,
+              "Robots Exclusion Protocol", RFC 9309,
+              DOI 10.17487/RFC9309, September 2022,
+              <https://www.rfc-editor.org/info/rfc9309>.
+
+   [RFC9727]  Smith, K., "api-catalog: A Well-Known URI and Link
+              Relation to Help Discovery of APIs", RFC 9727,
+              DOI 10.17487/RFC9727, June 2025,
+              <https://www.rfc-editor.org/info/rfc9727>.
+
+   [RFC9846]  Rescorla, E., "The Transport Layer Security (TLS) Protocol
+              Version 1.3", RFC 9846, DOI 10.17487/RFC9846, July 2026,
+              <https://www.rfc-editor.org/info/rfc9846>.
+
+
+
+
+
+
+Shah                      Expires 20 April 2027                [Page 17]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   [SCHEMAORG]
+              Schema.org Community Group, "Schema.org Vocabulary",
+              <https://schema.org/>.
+
+8.  Informative References
+
+   [AGENTAUTHORITY]
+              Shah, H. K., "Agent Authority: a reference implementation
+              of standards-grounded agent-readiness evaluation",
+              Reference implementation (running code), 2026,
+              <https://github.com/hemal9102/agent-authority>.
+
+   [CONTENTSIGNAL]
+              Cloudflare, "Content Signals: new AI traffic options
+              (vendor mechanism)", September 2025,
+              <https://blog.cloudflare.com/content-independence-day-ai-
+              options/>.
+
+   [LLMSTXT]  llms.txt (community convention), "The /llms.txt file",
+              <https://llmstxt.org/>.
+
+   [POWDER]   World Wide Web Consortium (W3C), "Protocol for Web
+              Description Resources (POWDER): Description Resources",
+              W3C Recommendation, September 2009,
+              <https://www.w3.org/TR/powder-dr/>.
+
+   [RFC1918]  Rekhter, Y., Moskowitz, B., Karrenberg, D., de Groot, G.
+              J., and E. Lear, "Address Allocation for Private
+              Internets", BCP 5, RFC 1918, DOI 10.17487/RFC1918,
+              February 1996, <https://www.rfc-editor.org/info/rfc1918>.
+
+   [RFC3552]  Rescorla, E. and B. Korver, "Guidelines for Writing RFC
+              Text on Security Considerations", BCP 72, RFC 3552,
+              DOI 10.17487/RFC3552, July 2003,
+              <https://www.rfc-editor.org/info/rfc3552>.
+
+   [RFC7763]  Leonard, S., "The text/markdown Media Type", RFC 7763,
+              DOI 10.17487/RFC7763, March 2016,
+              <https://www.rfc-editor.org/info/rfc7763>.
+
+   [RFC8631]  Wilde, E., "Link Relation Types for Web Services",
+              RFC 8631, DOI 10.17487/RFC8631, July 2019,
+              <https://www.rfc-editor.org/info/rfc8631>.
+
+Appendix A.  Changes Since -00
+
+   Changes in this revision (draft-shah-agent-readiness-evaluation-01)
+   relative to draft-shah-agent-readiness-evaluation-00:
+
+
+
+Shah                      Expires 20 April 2027                [Page 18]
+
+Internet-Draft         Agent-Readiness Evaluation           October 2026
+
+
+   *  Added Section 6 ("Empirical Observations Across an Origin
+      Sample"), reporting results from a bounded concurrent fleet scan
+      by the reference implementation, with an explicit statement that
+      the current sample is illustrative and not yet representative.
+
+   *  Updated the TLS 1.3 citation throughout from RFC 8446 to
+      [RFC9846], which obsoletes RFC 8446, and moved the normative
+      reference accordingly.
+
+   *  Aligned the reference implementation's robots.txt evaluation with
+      the longest-match semantics of [RFC9309] described in Section 2.1,
+      and normalized its per-check citation labels so that community and
+      vendor conventions (the "llms.txt" convention and Cloudflare
+      "Content-Signal") are labelled as conventions rather than as
+      standards, consistent with Section 2.
+
+Author's Address
+
+   H. K. Shah
+   TENSIX
+   Ahmedabad
+   Gujarat
+   India
+   Email: hemal@tensix.in
+   URI:   https://www.tensix.in/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shah                      Expires 20 April 2027                [Page 19]
