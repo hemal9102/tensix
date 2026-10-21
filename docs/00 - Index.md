@@ -22,6 +22,8 @@ The 14 canonical engineering ledgers below represent the verified technical trut
 
 ### Track 2: Bare-Metal MTA, Mailbox Deliverability & Protocol Standards
 * [[06 - MTA Deliverability, RFC Gateways & Mailbox Interrogation Endpoints.md|06 - Enterprise MTA Deliverability, RFC Gateways & Ingestion Architecture]] *(Consolidated with Doc 18 12-Level Deliverability)*
+* [[email-forensics-master-handbook.md|Email Forensics & Multi-Layer EML Inspection Master Handbook (38 Sections)]]
+* [[email-html-presentation-layer.md|Email HTML Presentation Layer Engineering (Cross-Client Rendering & Anti-Clipping)]]
 * [[16 - Internet Systems Stack, Email Infra & IT-Services Economics (Fact-Verified).md|16 - Internet Systems Stack, Email Infra & IT-Services Economics]]
 * [[RFC-SUBMISSION-STEPS.md|IETF RFC Submission & Publishing Blueprint]]
 * [[draft-shah-agent-readiness-evaluation-00.txt|IETF Internet-Draft: draft-shah-agent-readiness-evaluation-00]]

@@ -609,6 +609,7 @@ graph TD
 ---
 **Backlinks:**
 * [[00 - Index|Master Domain Index]]
-* [[06 - MTA Deliverability, RFC Gateways & Mailbox Interrogation Endpoints|06 - MTA Deliverability & RFC Gateways]]
+* [[email-forensics-master-handbook.md|Email Forensics & Multi-Layer EML Inspection Master Handbook (38 Sections)]]
+* [[email-html-presentation-layer.md|Email HTML Presentation Layer Engineering (Cross-Client Rendering & Anti-Clipping)]]
 * [[16 - Internet Systems Stack, Email Infra & IT-Services Economics (Fact-Verified)|16 - Internet Systems Stack]]
 * [[17 - RFC Master Protocol Architecture for Web Crawlers, AI Citations & Diagnostic Engines|17 - RFC Master Protocol Architecture]]
