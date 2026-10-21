@@ -1,5 +1,5 @@
 # Email Forensics & Deliverability Engineering — Master Handbook
-## 38-Section Framework for RFC-Level EML & Multi-Layer Inspection
+## 44-Section Framework for RFC-Level EML & Multi-Layer Inspection
 
 > **Repository:** `D:\projects\HK\tensix`  
 > **Service Architecture Link:** [`/services/email-deliverability`](https://www.tensix.in/services/email-deliverability)  
@@ -51,6 +51,12 @@
 36. [S36 — 3-Hop Authenticated Received Chain (ARC) Graphing in Multi-Gateway Relays](#s36--3-hop-authenticated-received-chain-arc-graphing-in-multi-gateway-relays)
 37. [S37 — The IP Cardinality Trap & Ephemeral VPC Subnet Normalization](#s37--the-ip-cardinality-trap--ephemeral-vpc-subnet-normalization)
 38. [S38 — Envelope Scope Isolation: RFC 5321/5322 Headers vs MIME Payload Leakage](#s38--envelope-scope-isolation-rfc-53215322-headers-vs-mime-payload-leakage)
+39. [S39 — JA3/JA4 TLS ClientHello Fingerprinting & TCP Stack Profiling (p0f)](#s39--ja3ja4-tls-clienthello-fingerprinting--tcp-stack-profiling-p0f)
+40. [S40 — MTA-STS (RFC 8461) & TLS-RPT (RFC 8460) Policy Validation & Enforcement](#s40--mta-sts-rfc-8461--tls-rpt-rfc-8460-policy-validation--enforcement)
+41. [S41 — SMTP Pipelining (RFC 2920) & BDAT Binary Chunking (RFC 3030)](#s41--smtp-pipelining-rfc-2920--bdat-binary-chunking-rfc-3030)
+42. [S42 — DSN (Delivery Status Notification) & RFC 3464 Enhanced Status Code Parsing](#s42--dsn-delivery-status-notification--rfc-3464-enhanced-status-code-parsing)
+43. [S43 — SMTPUTF8 (RFC 6531) Internationalized Mail Envelope Handling](#s43--smtputf8-rfc-6531-internationalized-mail-envelope-handling)
+44. [S44 — Encrypted Resolver Architecture: DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT) for MX/DNSBL Queries](#s44--encrypted-resolver-architecture-dns-over-https-doh--dns-over-tls-dot-for-mxdnsbl-queries)
 
 ---
 
@@ -1716,3 +1722,320 @@ In heuristic scanning, matching enterprise infrastructure regexes (e.g. `google.
 └────────────────────────────────────────────────────────┘
 ```
 Enforcing strict scope isolation guarantees that external hyperlink destinations in email footers never contaminate the forensic classification of the sending MTA engine.
+
+# S39 — S44 Section Content
+
+---
+
+## S39 — JA3/JA4 TLS ClientHello Fingerprinting & TCP Stack Profiling (p0f)
+
+### 1. Conceptual Framework & Attack Surface
+Modern edge security firewalls (Google Maglev, Cloudflare Magic Transit, Microsoft Front Door) do not wait for the SMTP conversation or message payload to classify incoming email infrastructure. Trust evaluation begins at **Layer 4 (TCP SYN packet)** and **Layer 5 (TLS ClientHello byte sequence)** before the receiving MTA ever dispatches its `220` SMTP service banner.
+
+```
++-----------------------------------------------------------------------------------------+
+| RECEIVER SOCKET EVALUATION TIMELINE                                                     |
+|                                                                                         |
+| 1. TCP SYN [p0f Fingerprint]  --> MSS, WScale, Window Size, SACK, TTL                  |
+| 2. TCP SYN-ACK / ACK Handshake                                                          |
+| 3. ClientHello [JA3/JA4 Hash] --> TLS Version, Cipher Suites, Extension Order, Groups  |
+| 4. ServerHello & Certificate Handshake                                                  |
+| 5. SMTP Banner 220 Dispatch   <-- (RECEIVER HAS ALREADY CLASSIFIED SENDER PROFILE)      |
++-----------------------------------------------------------------------------------------+
+```
+
+### 2. The Rust MTA vs OpenSSL Discrepancy (JA4 Analysis)
+KumoMTA and custom Rust MTAs compiled with `rustls` emit an entirely distinct ClientHello byte sequence from traditional enterprise MTAs (Postfix, Sendmail, Exim) running OpenSSL:
+
+```ini
+[Standard Enterprise Postfix (OpenSSL 3.0)]
+JA4 Fingerprint: t13d1516h2_8daaf6152771_027447817b84
+- Extension Order: 0, 23, 65281, 10, 11, 35, 16, 5, 13, 18, 51, 45, 43, 27, 21
+- Key Share Preference: X25519 (0x001d), secp256r1 (0x0017)
+- ALPN: None (or smtp)
+
+[Default Rustls / Async-Rust ClientHello]
+JA4 Fingerprint: t13d1910h2_4b9a89d31190_e21356f91722
+- Signature Algorithms: ed25519, ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256
+- Extension Order: Inverted or standardized according to Rustls crate defaults
+```
+
+Receivers flag anomalous JA4 fingerprints originating from non-residential / cloud IP blocks as atypical custom tooling or mass-sending bots.
+
+### 3. TCP Stack Tuning via Linux Sysctl
+Enterprise MTA servers require normalized TCP parameters to prevent OS fingerprinting (`p0f`) from identifying default VPS templates:
+
+```bash
+# Normalize TCP Window Scaling & Buffer Boundaries (Standard Ubuntu LTS / Enterprise Profile)
+sudo sysctl -w net.ipv4.tcp_window_scaling=1
+sudo sysctl -w net.ipv4.tcp_timestamps=1
+sudo sysctl -w net.ipv4.tcp_sack=1
+sudo sysctl -w net.ipv4.tcp_rmem="4096 87380 6291456"
+sudo sysctl -w net.ipv4.tcp_wmem="4096 16384 4194304"
+sudo sysctl -w net.core.rmem_max=16777216
+sudo sysctl -w net.core.wmem_max=16777216
+sudo sysctl -w net.ipv4.tcp_congestion_control=bbr
+```
+
+---
+
+## S40 — MTA-STS (RFC 8461) & TLS-RPT (RFC 8460) Policy Validation & Enforcement
+
+### 1. Conceptual Framework & Attack Surface
+Traditional SMTP TLS (`STARTTLS` via RFC 3207) is opportunistic: if an active adversary launches a Man-in-the-Middle (MITM) attack and strips the `STARTTLS` keyword from the `EHLO` response, the sending MTA transparently falls back to cleartext plaintext transmission without alerting the sender.
+
+**MTA-STS (Mail Transfer Agent Strict Transport Security - RFC 8461)** converts opportunistic encryption into mandatory cryptographic policy. **TLS-RPT (SMTP TLS Reporting - RFC 8460)** establishes an automated feedback mechanism for daily aggregate failure telemetry.
+
+```
+Sender MTA ────────────> DNS Query: _mta-sts.example.com (TXT)
+                │
+                ├──────> HTTPS Fetch: https://mta-sts.example.com/.well-known/mta-sts.txt
+                │        Policy: version: STSV1 | mode: enforce | mx: mail.example.com
+                │
+                └──────> STARTTLS Enforced. If Cert Invalid ──> DROP CONNECTION & Send TLS-RPT JSON
+```
+
+### 2. DNS & HTTPS Policy Configuration
+To achieve complete MTA-STS and TLS-RPT compliance for a sending domain:
+
+#### DNS Resource Records:
+```dns
+; MTA-STS Policy Versioning Record
+_mta-sts.example.com.   3600    IN      TXT     "v=STSV1; id=2026102101;"
+
+; TLS-RPT Reporting Mailbox & HTTPS Endpoint
+_smtp._tls.example.com. 3600    IN      TXT     "v=TLSRPTv1; rua=mailto:tls-reports@example.com,https://tlsrpt.example.com/v1/report"
+```
+
+#### HTTPS Policy File (`https://mta-sts.example.com/.well-known/mta-sts.txt`):
+```ini
+version: STSV1
+mode: enforce
+mx: mail.example.com
+mx: *.mail.example.com
+max_age: 604800
+```
+
+### 3. Forensic Validation Script (Python)
+```python
+import urllib.request
+import ssl
+
+def verify_mta_sts(domain):
+    url = f"https://mta-sts.{domain}/.well-known/mta-sts.txt"
+    ctx = ssl.create_default_context()
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MTA-STS-Auditor/1.0"})
+        with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
+            body = resp.read().decode("utf-8")
+            policy = dict(line.split(":", 1) for line in body.strip().splitlines() if ":" in line)
+            return {
+                "status": "VALID",
+                "mode": policy.get("mode", "").strip(),
+                "mx": [l.split(":", 1)[1].strip() for l in body.splitlines() if l.startswith("mx:")],
+                "max_age": policy.get("max_age", "").strip()
+            }
+    except Exception as e:
+        return {"status": "FAILED", "error": str(e)}
+```
+
+---
+
+## S41 — SMTP Pipelining (RFC 2920) & BDAT Binary Chunking (RFC 3030)
+
+### 1. Conceptual Framework & RTT Latency Compression
+Standard SMTP operates on a strictly synchronous lock-step state machine:
+
+```
+[Sequential Standard SMTP - 4 Round Trips]
+Client: MAIL FROM:<sender@example.com> ──────> (Network Latency ~45ms)
+Server: <────── 250 2.1.0 OK
+Client: RCPT TO:<recipient@example.com> ─────> (Network Latency ~45ms)
+Server: <────── 250 2.1.5 OK
+Client: DATA ───────────────────────────────> (Network Latency ~45ms)
+Server: <────── 354 Start mail input
+Client: [Message Payload] . ─────────────────> (Network Latency ~45ms)
+Server: <────── 250 2.0.0 OK: Queued
+TOTAL TIME = ~180ms + transmission
+```
+
+**SMTP Command Pipelining (RFC 2920)** collapses round-trips by batching multiple commands into a single TCP socket write without blocking for intermediate replies:
+
+```
+[RFC 2920 Pipelined SMTP - 1 Round Trip to Transmission]
+Client: [MAIL FROM + RCPT TO + DATA] ────────> (Single TCP Packet Burst ~45ms)
+Server: <────── [250 OK, 250 OK, 354 Send Data]
+Client: [Message Body] . ────────────────────>
+Server: <────── 250 2.0.0 OK
+TOTAL TIME = ~90ms (50% Latency Compression)
+```
+
+### 2. RFC 3030 BDAT Chunking vs Traditional DATA
+Traditional `DATA` scanning requires receivers to parse every incoming byte stream for `<CRLF>.<CRLF>`, forcing senders to execute dot-stuffing (`.` $\to$ `..`). 
+
+**RFC 3030 CHUNKING (`BDAT`)** introduces declared byte lengths:
+```smtp
+BDAT 65536
+[Raw 65,536 Bytes of Binary Payload with zero byte-stuffing]
+BDAT 1204 LAST
+[Final 1,204 Bytes of Payload]
+250 2.0.0 Message accepted for delivery
+```
+
+### 3. Pipelining Failure Modes & Protocol Violations
+*   **Out-of-Order Execution:** Senders must never pipeline commands *before* the receiver issues `250-PIPELINING` in the `EHLO` banner.
+*   **Session Desynchronization:** If an earlier pipelined command fails (e.g. `550 5.1.1 User unknown`), the sender must properly correlate the multiline response array to avoid injecting data into a failed transaction.
+
+---
+
+## S42 — DSN (Delivery Status Notification) & RFC 3464 Enhanced Status Code Parsing
+
+### 1. Conceptual Framework & The 3-Digit Enhanced Code Matrix
+VERP routing (S6) answers **who** bounced by parsing the encoded return-path address. However, determining **why** an email failed and whether an IP address is actively being firewalled requires parsing the **Delivery Status Notification (RFC 3464)** and its **Enhanced Status Codes (RFC 3463)**:
+
+$$\text{Status Code Format} = \text{Class} \cdot \text{Subject} \cdot \text{Detail} \quad (\text{e.g., } 5.7.1)$$
+
+```
+Class 2.X.X  --> Success (Message successfully delivered)
+Class 4.X.X  --> Persistent Transient Failure (Temporary deferral; KEEP recipient, backoff sender)
+Class 5.X.X  --> Permanent Failure (Hard bounce or policy block; immediate handling required)
+```
+
+### 2. RFC 3464 DSN MIME Structure
+A standard RFC 3464 bounce consists of a `multipart/report` MIME payload with `report-type=delivery-status`:
+
+```http
+Content-Type: multipart/report; report-type=delivery-status; boundary="BOUNDARY_DSN_987"
+
+--BOUNDARY_DSN_987
+Content-Type: text/plain; charset=utf-8
+
+This is the mail system at host mx.google.com.
+Your message could not be delivered to one or more recipients.
+
+--BOUNDARY_DSN_987
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; googlemail.com
+Arrival-Date: Wed, 21 Oct 2026 12:04:15 -0700
+
+Final-Recipient: rfc822; invalid_user@gmail.com
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist.
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+--BOUNDARY_DSN_987--
+```
+
+### 3. Critical Diagnostic Dispatch Matrix
+
+| Enhanced Code | Meaning | Operational Action | Critical Error to Avoid |
+| :--- | :--- | :--- | :--- |
+| **`5.1.1`** | Bad destination mailbox address | Hard delete from database immediately. | Retrying; triggers Spamhaus Spam-Trap threshold. |
+| **`4.2.2`** | Mailbox full | Soft deferral; retry in 4 hours, purge if persists > 7 days. | Treating as hard bounce; purges legitimate active buyer. |
+| **`5.7.1`** | Policy rejected / Sender blocked | **HALT IP QUEUE IMMEDIATELY.** Circuit breaker trips. | Continuing to spray mail; turns localized block into /24 subnet null-route. |
+| **`4.7.0`** | Temporary IP rate limit / Greylisting | Backoff queue rate (1 msg/sec); maintain connection pooling. | Terminating connection; triggers aggressive greylist reset. |
+
+---
+
+## S43 — SMTPUTF8 (RFC 6531) Internationalized Mail Envelope Handling
+
+### 1. Conceptual Framework: Display vs Transport Encoding
+RFC 2047 (S1) encodes characters exclusively in the header display stream (`Subject: =?UTF-8?B?...?=`). It does not allow non-ASCII Unicode characters in the underlying SMTP protocol envelope:
+
+```smtp
+MAIL FROM:<hemal@tensix.in>            <-- RFC 5321 (ASCII only)
+RCPT TO:<ユーザー@例え.テスト>           <-- RFC 6531 (SMTPUTF8 extension required)
+```
+
+### 2. The EHLO Negotiation Dance
+Before dispatching a message with Unicode local parts or Internationalized Domain Names (IDNs), the sender must negotiate the `SMTPUTF8` ESMTP capability:
+
+```smtp
+Client: EHLO mail.tensix.in
+Server: 250-mx.google.com at your service
+Server: 250-SIZE 157286400
+Server: 250-8BITMIME
+Server: 250-SMTPUTF8
+Server: 250 PIPELINING
+
+Client: MAIL FROM:<hemal@tensix.in> SMTPUTF8
+Server: 250 2.1.0 OK
+Client: RCPT TO:<info@müller-gmbh.de>
+Server: 250 2.1.5 OK
+```
+
+### 3. Punycode Fallback Transformation (RFC 3490)
+When the receiving server does NOT advertise `250-SMTPUTF8`, the sending MTA must convert the domain component to Punycode using the `xn--` prefix while converting or refusing non-ASCII local parts:
+
+$$\text{müller-gmbh.de} \xrightarrow{\text{Punycode IDNA}} \text{xn--mller-gmbh-e1a.de}$$
+
+```python
+def normalize_envelope_recipient(email_address, smtp_supports_utf8=False):
+    local, domain = email_address.rsplit("@", 1)
+    if not smtp_supports_utf8:
+        # Encode domain to Punycode
+        punycode_domain = domain.encode("idna").decode("ascii")
+        try:
+            local.encode("ascii")
+            return f"{local}@{punycode_domain}"
+        except UnicodeEncodeError:
+            raise ValueError(f"Receiver lacks SMTPUTF8; local part '{local}' cannot be down-converted without data loss.")
+    return email_address
+```
+
+---
+
+## S44 — Encrypted Resolver Architecture: DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT) for MX/DNSBL Queries
+
+### 1. The Cleartext Port 53 Attack Surface
+Standard MTAs perform DNS lookups (MX resolution, SPF TXT records, and DNSBL blacklist lookups) via unencrypted UDP port 53.
+
+```
+[Unencrypted Traditional UDP 53 Vulnerabilities]
+1. Wire Eavesdropping: Upstream ISP / DC hypervisor observes every recipient domain queried.
+2. DNS Spoofing: Adversary injects false MX response, hijacking email routing to hostile MTA.
+3. DNSBL Tampering: Intercepted queries to Zen Spamhaus (e.g. 222.143.56.149.zen.spamhaus.org)
+   falsely return 127.0.0.2, causing legitimate senders to self-throttle.
+```
+
+### 2. Encrypted Stub Resolver Architecture
+Modern secure mail clusters isolate DNS lookups behind an internal, caching DNS-over-TLS (DoT - RFC 7858) or DNS-over-HTTPS (DoH - RFC 8484) proxy:
+
+```
+[Secure In-Host DNS Architecture]
+KumoMTA / Postfix Socket
+         │
+         ▼ (Localhost 127.0.0.1:53)
+Unbound / Stubby Recursive Caching Engine
+         │
+         ▼ (TLS 1.3 / Port 853 DoT or Port 443 DoH)
+Encrypted Upstream Resolvers (Cloudflare 1.1.1.1 / Quad9 9.9.9.9)
+```
+
+### 3. Unbound DoT Production Configuration (`/etc/unbound/unbound.conf`)
+```ini
+server:
+    verbosity: 1
+    interface: 127.0.0.1
+    port: 53
+    do-ip4: yes
+    do-udp: yes
+    do-tcp: yes
+    
+    # Cache Hardening
+    harden-glue: yes
+    harden-dnssec-stripped: yes
+    use-caps-for-id: yes
+    prefetch: yes
+
+forward-zone:
+    name: "."
+    forward-tls-upstream: yes
+    # Cloudflare Primary DoT
+    forward-addr: 1.1.1.1@853#cloudflare-dns.com
+    # Quad9 Secondary DoT (DNSSEC Validating)
+    forward-addr: 9.9.9.9@853#dns.quad9.net
+```
+
+Operating internal DoT/DoH stub resolvers completely eliminates wire-level recipient reconnaissance and immunizes the delivery cluster against DNS cache-poisoning attacks.
