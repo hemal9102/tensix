@@ -36,7 +36,7 @@ TEN_CORE_SERVICES = [
     "https://www.tensix.in/services/fractional-cto-retainers"
 ]
 
-def push_indexnow(urls, key="tensix-indexnow-key-2026", dry_run=True):
+def push_indexnow(urls, key="c4b69324e9334bbba3ff6f3f02db4fb6", dry_run=True):
     """Submits batch URLs to the IndexNow protocol (Bing, Yandex, Seznam)."""
     endpoint = "https://api.indexnow.org/indexnow"
     payload = {
@@ -100,7 +100,7 @@ def main():
     parser.add_argument("--url", help="Specific URL to push")
     parser.add_argument("--all-services", action="store_true", help="Push all 10 core service pages")
     parser.add_argument("--service-account", help="Path to Google Cloud Service Account JSON key")
-    parser.add_argument("--indexnow-key", default="tensix-indexnow-key-2026", help="IndexNow verification key")
+    parser.add_argument("--indexnow-key", default="c4b69324e9334bbba3ff6f3f02db4fb6", help="IndexNow verification key")
     parser.add_argument("--dry-run", action="store_true", default=True, help="Simulate payloads without executing network requests")
     parser.add_argument("--execute", action="store_true", help="Execute real HTTP requests (defaults to dry-run)")
 
