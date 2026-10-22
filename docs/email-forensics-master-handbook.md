@@ -1,5 +1,5 @@
 # Email Forensics & Deliverability Engineering — Master Handbook
-## 44-Section Framework for RFC-Level EML & Multi-Layer Inspection
+## 49-Section Framework for RFC-Level EML & Multi-Layer Inspection
 
 > **Repository:** `D:\projects\HK\tensix`  
 > **Service Architecture Link:** [`/services/email-deliverability`](https://www.tensix.in/services/email-deliverability)  
@@ -57,6 +57,11 @@
 42. [S42 — DSN (Delivery Status Notification) & RFC 3464 Enhanced Status Code Parsing](#s42--dsn-delivery-status-notification--rfc-3464-enhanced-status-code-parsing)
 43. [S43 — SMTPUTF8 (RFC 6531) Internationalized Mail Envelope Handling](#s43--smtputf8-rfc-6531-internationalized-mail-envelope-handling)
 44. [S44 — Encrypted Resolver Architecture: DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT) for MX/DNSBL Queries](#s44--encrypted-resolver-architecture-dns-over-https-doh--dns-over-tls-dot-for-mxdnsbl-queries)
+45. [S45 — Enterprise Multi-Tenant DMARC Strict Alignment (`adkim=s`, `aspf=s`) & CNAME DKIM Delegation](#s45--enterprise-multi-tenant-dmarc-strict-alignment-adkims-aspfs--cname-dkim-delegation)
+46. [S46 — RFC 8058 HTTPS POST Header Architecture & Gmail Native Unsubscribe Signals](#s46--rfc-8058-https-post-header-architecture--gmail-native-unsubscribe-signals)
+47. [S47 — Multi-Segment Opaque Click Tracking & Tamper-Proof HMAC Token Deserialization](#s47--multi-segment-opaque-click-tracking--tamper-proof-hmac-token-deserialization)
+48. [S48 — Certified Senders Alliance (CSA) Whitelisting & Eco.de Compliance](#s48--certified-senders-alliance-csa-whitelisting--ecode-compliance)
+49. [S49 — Brevo (Sendinblue) Infrastructure Fingerprinting: Multi-Tier Dual DKIM & sendibm1 Mesh](#s49--brevo-sendinblue-infrastructure-fingerprinting-multi-tier-dual-dkim--sendibm1-mesh)
 
 ---
 
@@ -2039,3 +2044,143 @@ forward-zone:
 ```
 
 Operating internal DoT/DoH stub resolvers completely eliminates wire-level recipient reconnaissance and immunizes the delivery cluster against DNS cache-poisoning attacks.
+
+
+---
+
+## S45 — Enterprise Multi-Tenant DMARC Strict Alignment (`adkim=s`, `aspf=s`) & CNAME DKIM Delegation
+
+### 1. The Strict DMARC Challenge (`adkim=s`, `aspf=s`, `p=reject`)
+High-security enterprises (e.g. `exabytes.sg`) enforce strict DMARC policies where relaxed subdomain matching is explicitly blocked:
+```dns
+_dmarc.exabytes.sg. IN TXT "v=DMARC1; p=reject; rua=mailto:abuse@exabytes.sg; adkim=s; aspf=s;"
+```
+Under `aspf=s`, third-party ESP return-path domains (e.g. `bounces@fwdkim.exabytes.sg` or `bounces@sendgrid.net`) fail SPF alignment because `fwdkim.exabytes.sg != exabytes.sg`. Consequently, **the email must achieve 100% strict DKIM alignment** or be rejected by receiving MTAs.
+
+### 2. Multi-Hop CNAME Delegation Model
+To allow SaaS platforms (Freshsales, Salesforce, KumoMTA) to sign on behalf of the apex domain without exposing raw RSA private keys:
+```
+[Client DNS Zone: exabytes.sg]
+zn34q._domainkey.exabytes.sg.  IN CNAME  wl655631s1.domainkey.myfreshworks.com.
+
+[SaaS Cluster Zone: myfreshworks.com]
+wl655631s1.domainkey.myfreshworks.com.  IN CNAME  wl655631s1.domainkey.freshemail.io.
+
+[ESP Delivery Fleet: freshemail.io]
+wl655631s1.domainkey.freshemail.io.  IN TXT  "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA..."
+```
+This architecture provides three critical deliverability advantages:
+1. **Dynamic Key Rotation:** The ESP can rotate 2048-bit RSA keys transparently without requiring client DNS intervention.
+2. **Strict DKIM Alignment:** The signature header bears `d=exabytes.sg` matching `From: marketing@exabytes.sg`, satisfying `adkim=s`.
+3. **Multi-Tenant SPF Isolation:** The return path uses `fwdkim.exabytes.sg` to isolate bounce telemetry per tenant account.
+
+---
+
+## S46 — RFC 8058 HTTPS POST Header Architecture & Gmail Native Unsubscribe Signals
+
+### 1. The Mandated Header Duo
+Modern inbox providers (Google, Yahoo Bulk Sender Mandates) require the exact RFC 8058 header pair for promotional and bulk mail streams:
+```email
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <mailto:unsubscribe@list.unsubscribe.fmsend.net?subject=...>,<https://mailservice.freshdesk.com/api/v1/campaign/list/unsubscribe/...>
+```
+
+### 2. Protocol Handshake Sequence
+When the user clicks the native "Unsubscribe" button in Gmail or Yahoo:
+```
+Client Browser (Gmail UI)
+        │
+        ▼ (Google Backend Worker Proxy)
+POST /api/v1/campaign/list/unsubscribe/[opaque_token] HTTP/1.1
+Host: mailservice.freshdesk.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Google-List-Unsubscribe-Proxy
+
+List-Unsubscribe=One-Click
+```
+
+> [!IMPORTANT]
+> The target endpoint MUST respond with `HTTP 200 OK` and execute the suppression without requiring authentication, login credentials, or a confirmation click. If the endpoint responds with an HTTP 302 redirect or renders an interactive HTML page, Gmail de-ranks the sender's reputation score and disables the native unsubscribe UI.
+
+---
+
+## S47 — Multi-Segment Opaque Click Tracking & Tamper-Proof HMAC Token Deserialization
+
+### 1. Zero Cross-Domain Phishing Architecture
+To prevent spam filter flags (`SUSPICIOUS_REDIRECT` / `CROSS_DOMAIN_TRACKING`), the tracking subdomain must match the `From:` apex domain:
+- `From:` `marketing@exabytes.sg`
+- Tracking URL: `https://fwtrack.exabytes.sg/v1/clk/[token]`
+- DNS CNAME: `fwtrack.exabytes.sg -> bb4dfee0d99fba6b076006870dcb0a56.fmsendcrmclick.net`
+
+### 2. Multi-Segment Token Wire Format
+The tracking token is structured into discrete base64 and hash segments separated by commas:
+```
+/v1/clk/{recipient_hash},{link_uuid},{seq},{base64_url},{signature},{payload_meta},{sig_id},{tenant_id},{hash}
+```
+
+```python
+import base64
+import urllib.parse
+
+def decode_esp_tracking_segment(token_string: str) -> dict:
+    parts = token_string.split(",")
+    if len(parts) < 4:
+        raise ValueError("Invalid ESP tracking token structure")
+    
+    # Segment 3 (index 3) is URL-safe Base64 destination payload
+    b64_url = parts[3]
+    # Re-pad Base64 if needed
+    b64_url += "=" * ((4 - len(b64_url) % 4) % 4)
+    raw_dest = base64.urlsafe_b64decode(b64_url.encode("ascii")).decode("utf-8", errors="ignore")
+    
+    return {
+        "recipient_fingerprint": parts[0],
+        "link_element_id": parts[1],
+        "redirect_counter": parts[2],
+        "destination_url": raw_dest,
+        "utm_params": urllib.parse.parse_qs(urllib.parse.urlparse(raw_dest).query),
+        "hmac_signature": parts[-1]
+    }
+```
+Operating tamper-proof HMAC signatures over the destination URL prevents attackers from manipulating marketing redirects into open-redirect phishing vectors.
+
+
+---
+
+## S48 — Certified Senders Alliance (CSA) Whitelisting & Eco.de Compliance
+
+### 1. The European Whitelisting Framework
+The **Certified Senders Alliance (CSA)**, operated by `eco – Association of the Internet Industry` in Germany, is the gold standard for sender accreditation across Europe. Major consumer ISPs (including 1&1, web.de, GMX, Freenet, Magenta, Swisscom, and Orange) ingest CSA real-time IP/domain whitelist feeds directly into their MTA perimeter gateways.
+
+```email
+X-Csa-Complaints: csa-complaints@eco.de
+```
+
+### 2. Forensic Impact on Deliverability
+1. **Spam Filter Bypass:** Emails from CSA-certified IPs bypass automated SpamAssassin content scoring heuristics and local rate limits at participating ISPs.
+2. **Image Unblocking:** Participating webmail interfaces automatically display remote images by default without prompting the user to "Trust sender".
+3. **Complaint Feedback Redirection:** If an accredited sender generates spam complaints, eco.de aggregates the complaints and dispatches an automated remediation report directly to the postmaster desk before the sending IP is blacklisted.
+
+---
+
+## S49 — Brevo (Sendinblue) Infrastructure Fingerprinting: Multi-Tier Dual DKIM & sendibm1 Mesh
+
+### 1. Egress Node Topology & Reverse DNS
+Brevo operates an autonomous delivery fleet primarily residing in French and European IP blocks:
+- Connecting MTA: `bb.d.sender-sib.com` (`185.41.28.133`)
+- Reverse DNS: `PTR(185.41.28.133) -> bb.d.sender-sib.com` (1:1 FCrDNS match)
+- Tracking & Bounce Mesh: `h02su.r.a.d.sendibm1.com` / `bb.d.sender-sib.com`
+
+### 2. Multi-Tier Dual DKIM Signature Architecture
+Brevo applies two concurrent DKIM signatures over identical body hashes (`bh=`):
+```email
+DKIM-Signature: a=rsa-sha256; d=sevakpublication.com; s=brevo2; ...
+DKIM-Signature: a=rsa-sha256; d=mailin.fr; s=brevo1; ...
+```
+
+| Layer | Domain | Selector | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Customer Brand Signature** | `sevakpublication.com` | `brevo2` | Satisfies strict DMARC identifier alignment with the `From:` header. |
+| **ESP Infrastructure Anchor** | `mailin.fr` | `brevo1` | Acts as an established global reputation anchor (10+ years of clean historical volume across billions of deliveries). |
+
+If the customer's domain (`sevakpublication.com`) is newly registered or has neutral domain reputation, Google MX and Yahoo algorithms evaluate the secondary `mailin.fr` signature to prevent the cold sender from being throttled into Spam.
