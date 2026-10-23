@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-10-23T07:11:05.084514+00:00",
+  "framework": "UNIVERSAL_OMNI_SECTOR_STRATEGIES_LEDGER",
+  "total_strategies": 12,
+  "execution_duration_seconds": 22.56,
+  "strategies": [
+    {
+      "strategy_id": "OMNI_0001",
+      "name": "ATOMIC_PERMALINK_ANCHOR_SYSTEM",
+      "sector": "CENTRAL_BANKING",
+      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOM",
+      "discovered_on_domain": "www.bis.org",
+      "live_url": "https://www.bis.org",
+      "subsystem": "DEEP_LINK_PASSAGE_CITATION",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.97,
+      "ml_confidence": 0.992,
+      "wire_or_code_signature": {
+        "anchor_count": 2
+      },
+      "mechanics_and_impact": "Supplies immutable fragment URIs (#anchor), allowing AI engines to cite the exact passage span.",
+      "discovered_at": "2026-10-23T07:10:44.350662+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0002",
+      "name": "ZERO_ENTROPY_TABULAR_DATA_MATRIX",
+      "sector": "CUSTOMS_TARIFFS",
+      "rfc_or_standard_layer": "LAYER_9_NEURAL_TOKEN_ENCODING",
+      "discovered_on_domain": "www.wcoomd.org",
+      "live_url": "https://www.wcoomd.org",
+      "subsystem": "ZERO_LOSS_RAG_VECTORIZATION",
+      "complexity": {
+        "time": "O(R * C)",
+        "space": "O(R * C)"
+      },
+      "ml_weight": 0.98,
+      "ml_confidence": 0.985,
+      "wire_or_code_signature": {
+        "tables_found": 2
+      },
+      "mechanics_and_impact": "HTML tables convert with 100% vector fidelity into token matrices for AI Overviews and Perplexity.",
+      "discovered_at": "2026-10-23T07:10:47.322337+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0003",
+      "name": "LLMS_TXT_AI_INGRESS_PROTOCOL",
+      "sector": "GLOBAL_SHIPPING",
+      "rfc_or_standard_layer": "LAYER_4_CRAWLER_DISCOVERY",
+      "discovered_on_domain": "fbx.freightos.com",
+      "live_url": "https://fbx.freightos.com/llms.txt",
+      "subsystem": "AI_PROMPT_MANIFEST",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.98,
+      "ml_confidence": 0.998,
+      "wire_or_code_signature": {
+        "endpoint": "/llms.txt"
+      },
+      "mechanics_and_impact": "Feeds raw Markdown directly to LLM spiders, bypassing heavy HTML DOM rendering completely.",
+      "discovered_at": "2026-10-23T07:10:48.046594+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0004",
+      "name": "CSP_FRAME_ANCESTORS_CLICKJACKING_DEFENSE",
+      "sector": "GLOBAL_SHIPPING",
+      "rfc_or_standard_layer": "LAYER_5_INSTITUTIONAL_TRUST",
+      "discovered_on_domain": "fbx.freightos.com",
+      "live_url": "https://fbx.freightos.com",
+      "subsystem": "AUTHORITY_HIJACKING_DEFENSE",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.89,
+      "ml_confidence": 0.987,
+      "wire_or_code_signature": {
+        "csp": "frame-ancestors"
+      },
+      "mechanics_and_impact": "Bans unauthorized iframe embedding globally, protecting domain trust score.",
+      "discovered_at": "2026-10-23T07:10:48.561008+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0005",
+      "name": "WIKIDATA_SAMEAS_AUTHORITY_BINDING",
+      "sector": "GLOBAL_SHIPPING",
+      "rfc_or_standard_layer": "LAYER_7_LINKED_DATA_GRAPH",
+      "discovered_on_domain": "fbx.freightos.com",
+      "live_url": "https://fbx.freightos.com",
+      "subsystem": "KNOWLEDGE_VAULT_IDENTIFIER",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.97,
+      "ml_confidence": 0.998,
+      "wire_or_code_signature": {
+        "sameAs": [
+          "https://www.facebook.com/Freightos/",
+          "https://x.com/freightos"
+        ]
+      },
+      "mechanics_and_impact": "Directly binds corporate identity to official Wikidata QID and Freebase Machine IDs.",
+      "discovered_at": "2026-10-23T07:10:48.577620+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0006",
+      "name": "FAQPAGE_SCHEMA_SERP_ACCORDION_CAPTURE",
+      "sector": "GLOBAL_SHIPPING",
+      "rfc_or_standard_layer": "LAYER_7_LINKED_DATA_GRAPH",
+      "discovered_on_domain": "fbx.freightos.com",
+      "live_url": "https://fbx.freightos.com",
+      "subsystem": "SERP_ACCORDION_DOMINATION",
+      "complexity": {
+        "time": "O(Q)",
+        "space": "O(Q)"
+      },
+      "ml_weight": 0.94,
+      "ml_confidence": 0.985,
+      "wire_or_code_signature": {
+        "type": "FAQPage"
+      },
+      "mechanics_and_impact": "Captures rich expandable dropdown accordions directly inside Google organic search results.",
+      "discovered_at": "2026-10-23T07:10:48.577722+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0007",
+      "name": "HTTP3_QUIC_UDP_ZERO_RTT_TRANSPORT",
+      "sector": "PATENT_PRIOR_ART",
+      "rfc_or_standard_layer": "LAYER_2_TRANSPORT_CRYPTOGRAPHY",
+      "discovered_on_domain": "patents.google.com",
+      "live_url": "https://patents.google.com",
+      "subsystem": "QUIC_0RTT_TRANSPORT",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.96,
+      "ml_confidence": 0.995,
+      "wire_or_code_signature": {
+        "alt_svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+      },
+      "mechanics_and_impact": "Enables UDP 0-RTT connection resumption; eliminates TCP handshake roundtrips.",
+      "discovered_at": "2026-10-23T07:10:50.780670+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0008",
+      "name": "HIGHWIRE_PRESS_CITATION_METADATA_INDEXING",
+      "sector": "AI_PREPRINTS",
+      "rfc_or_standard_layer": "LAYER_5_INSTITUTIONAL_TRUST",
+      "discovered_on_domain": "arxiv.org",
+      "live_url": "https://arxiv.org/abs/1706.03762",
+      "subsystem": "ACADEMIC_CITATION_EXTRACTION",
+      "complexity": {
+        "time": "O(Metas)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.99,
+      "ml_confidence": 0.999,
+      "wire_or_code_signature": {
+        "count": 14
+      },
+      "mechanics_and_impact": "Emits citation_doi, citation_title, citation_author; grants supreme scientific citation weight in LLMs.",
+      "discovered_at": "2026-10-23T07:10:53.454374+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0009",
+      "name": "PERSISTENT_CROSSREF_DOI_HYPERLINKING",
+      "sector": "AI_PREPRINTS",
+      "rfc_or_standard_layer": "LAYER_9_NEURAL_TOKEN_ENCODING",
+      "discovered_on_domain": "arxiv.org",
+      "live_url": "https://arxiv.org/abs/1706.03762",
+      "subsystem": "PERSISTENT_IDENTIFIER_RESOLVER",
+      "complexity": {
+        "time": "O(Anchors)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.99,
+      "ml_confidence": 0.999,
+      "wire_or_code_signature": {
+        "sample_doi": "https://doi.org/10.48550/arXiv.1706.03762"
+      },
+      "mechanics_and_impact": "Binds assertions to immutable digital object identifiers, maximizing factual recall during RAG search.",
+      "discovered_at": "2026-10-23T07:10:53.455853+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0010",
+      "name": "HSTS_PRELOAD_SECURITY_LIST_ENFORCEMENT",
+      "sector": "CLINICAL_TRIALS",
+      "rfc_or_standard_layer": "LAYER_3_HTTP_SEMANTICS_CACHING",
+      "discovered_on_domain": "clinicaltrials.gov",
+      "live_url": "https://clinicaltrials.gov",
+      "subsystem": "TRANSPORT_SECURITY_HARDENING",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.91,
+      "ml_confidence": 0.992,
+      "wire_or_code_signature": {
+        "hsts": "max-age=31536000; includeSubDomains; preload"
+      },
+      "mechanics_and_impact": "Hardens domain into Chrome source preload list; prevents plaintext 301 downgrade loops.",
+      "discovered_at": "2026-10-23T07:10:55.439522+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0011",
+      "name": "BERT_45_WORD_DEFINITIONAL_COPULA_ENVELOPE",
+      "sector": "INTERNET_EXCHANGE_IXP",
+      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOM",
+      "discovered_on_domain": "www.peeringdb.com",
+      "live_url": "https://www.peeringdb.com",
+      "subsystem": "POSITION_0_SPAN_EXTRACTION",
+      "complexity": {
+        "time": "O(Tokens)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.98,
+      "ml_confidence": 0.99,
+      "wire_or_code_signature": {
+        "word_count": 44
+      },
+      "mechanics_and_impact": "Directly matches Google BERT QA softmax span selection window (42-58 words) for instant Position 0 extraction.",
+      "discovered_at": "2026-10-23T07:11:01.731159+00:00"
+    },
+    {
+      "strategy_id": "OMNI_0012",
+      "name": "CODE_FENCE_SYNTAX_SPECIFICITY",
+      "sector": "API_SPECIFICATION",
+      "rfc_or_standard_layer": "LAYER_9_NEURAL_TOKEN_ENCODING",
+      "discovered_on_domain": "docs.stripe.com",
+      "live_url": "https://docs.stripe.com/api",
+      "subsystem": "TYPED_CODE_BLOCK_TAGGING",
+      "complexity": {
+        "time": "O(Lines)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.92,
+      "ml_confidence": 0.989,
+      "wire_or_code_signature": {
+        "dom": "<pre><code>"
+      },
+      "mechanics_and_impact": "Explicitly types code blocks; allows Gemini and ChatGPT Code Search to extract runnable snippets.",
+      "discovered_at": "2026-10-23T07:11:05.082684+00:00"
+    }
+  ]
+}
