@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T10:51:56.291626+00:00",
+  "generated_at": "2026-10-23T11:14:11.708634+00:00",
   "framework": "TENSIX_MASTER_ECOMMERCE_9_LAYER_STRATEGIES",
-  "total_ecom_strategies": 16,
+  "total_ecom_strategies": 23,
   "layers_covered": 9,
   "strategies": [
     {
@@ -283,6 +283,134 @@
         "table": "<table><thead><th>Dimension</th><th>Metric Float</th></thead>..."
       },
       "mechanics_and_impact": "Formats physical dimensions, battery capacity, wattage, and material into rigid HTML tables. AI shopping engines (ChatGPT Search, Perplexity) cite table cells for comparative queries."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0017",
+      "name": "AKAMAI_JA4_POW_CHALLENGE_DECOUPLING",
+      "rfc_or_standard_layer": "LAYER_2_TRANSPORT_CRYPTOGRAPHY",
+      "subsystem": "TLS_HANDSHAKE_SESSION_VALIDATION",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.99,
+      "ml_confidence": 0.999,
+      "wire_or_code_signature": {
+        "platform": "Amazon / Akamai Bot Manager",
+        "mechanism": "JA4 Cipher Order + WebAssembly Client Puzzle (challenge.js)",
+        "cookie_target": "session-id, ubid-main, x-main"
+      },
+      "mechanics_and_impact": "Amazon isolates non-browser TLS handshakes at Layer 4/7 via Akamai JA4 hashing. Unmatched cipher suites are trapped in a Wasm computational puzzle before origin HTML renders. Bypassed via headless browser context injection using matched client ciphers and residential proxy routing."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0018",
+      "name": "AMAZON_DYNAMIC_ASIN_AVAILABILITY_GRAPH",
+      "rfc_or_standard_layer": "LAYER_4_SEMANTIC_DATA_GRAPH",
+      "subsystem": "REALTIME_STOCK_BUYBOX_RESOLUTION",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(Offers)"
+      },
+      "ml_weight": 0.97,
+      "ml_confidence": 0.995,
+      "wire_or_code_signature": {
+        "platform": "Amazon",
+        "dom_selector": "#availabilityInsideBuyBox_feature_div, #buybox-see-all-buying-choices",
+        "schema_target": "schema.org/InStock, schema.org/AggregateOffer"
+      },
+      "mechanics_and_impact": "Resolves real-time merchant buybox algorithmic rankings, delivery windows, and stock state into microdata. Allows AI shopping assistants (e.g. Rufus, Perplexity Buy) to extract authoritative purchase URLs with live price precision."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0019",
+      "name": "AMAZON_IMAGE_BLOCK_HIRES_ZOOM_LATTICE",
+      "rfc_or_standard_layer": "LAYER_5_DOM_CONTENT_STRUCTURE",
+      "subsystem": "MULTIMODAL_HIGH_DENSITY_ASSET_INDEXING",
+      "complexity": {
+        "time": "O(Images)",
+        "space": "O(Images * Resolutions)"
+      },
+      "ml_weight": 0.95,
+      "ml_confidence": 0.991,
+      "wire_or_code_signature": {
+        "platform": "Amazon",
+        "data_attribute": "data-a-dynamic-image",
+        "json_payload_format": "{'https://images-na.ssl-images-amazon.com/...': [1500, 1500], ...}"
+      },
+      "mechanics_and_impact": "Embeds raw JSON dictionaries of multi-resolution image URLs directly inside img tag data attributes. Vision LLMs (GPT-4o, Gemini Pro Vision) parse the JSON lattice to pull full 1500x1500px uncompressed product assets for visual feature reasoning."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0020",
+      "name": "CLOUDFLARE_TURNSTILE_POW_DECAY_SESSION_VAULT",
+      "rfc_or_standard_layer": "LAYER_2_TRANSPORT_CRYPTOGRAPHY",
+      "subsystem": "EDGE_SESSION_AUTHORIZATION",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.99,
+      "ml_confidence": 0.998,
+      "wire_or_code_signature": {
+        "platform": "Cloudflare Super Bot Fight Mode",
+        "cookie_vault": "cf_clearance",
+        "turnstile_host": "challenges.cloudflare.com/turnstile/v0/api.js"
+      },
+      "mechanics_and_impact": "Cloudflare enforces dynamic canvas and mathematical attestation challenges. Once solved, the edge issues a signed 'cf_clearance' cookie with decaying computational difficulty. Reusing this cookie across matched TLS fingerprints maintains unbroken high-throughput crawling."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0021",
+      "name": "POST_CHALLENGE_REACT_SERVER_COMPONENT_WIRE_HARVESTING",
+      "rfc_or_standard_layer": "LAYER_8_REALTIME_EDGE_PUSH",
+      "subsystem": "NEXTJS_RSC_STREAM_DESERIALIZATION",
+      "complexity": {
+        "time": "O(Chunks)",
+        "space": "O(JSON Tree)"
+      },
+      "ml_weight": 0.98,
+      "ml_confidence": 0.996,
+      "wire_or_code_signature": {
+        "framework": "Next.js / Cloudflare Workers",
+        "stream_identifier": "self.__next_f.push([1, '...'])",
+        "content_type": "text/x-component"
+      },
+      "mechanics_and_impact": "Harvests raw typed React Server Component (RSC) flight data streams post-Cloudflare clearance. Bypasses client-side DOM rendering entirely, giving LLMs direct access to normalized backend relational state trees with zero DOM parsing overhead."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0022",
+      "name": "UNIVERSAL_COMMERCE_PROTOCOL_MACHINE_LINKING",
+      "rfc_or_standard_layer": "LAYER_8_REALTIME_EDGE_PUSH",
+      "subsystem": "AUTONOMOUS_AGENT_CHECKOUT_PROTOCOL",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.96,
+      "ml_confidence": 0.993,
+      "wire_or_code_signature": {
+        "http_header": "Link: </.well-known/ucp>; rel=\"ucp\"; version=\"2026-08-25\"",
+        "endpoint": "/.well-known/ucp"
+      },
+      "mechanics_and_impact": "Cloudflare-fronted enterprise commerce platforms (e.g. Shopify D2C) advertise machine-readable commerce endpoints via HTTP Link headers, allowing purchasing agents to bypass frontend HTML and execute structured basket and checkout RPCs directly."
+    },
+    {
+      "strategy_id": "ECOM_STRAT_0023",
+      "name": "EDGE_SERVER_TIMING_FRESHNESS_CALCULUS",
+      "rfc_or_standard_layer": "LAYER_7_ASYNCHRONOUS_APPLICATION_STATE",
+      "subsystem": "ORIGIN_DECAY_DETECTION",
+      "complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "ml_weight": 0.93,
+      "ml_confidence": 0.989,
+      "wire_or_code_signature": {
+        "headers": [
+          "Server-Timing",
+          "cf-cache-status",
+          "CF-RAY"
+        ],
+        "metrics": "dur=21;desc='gc:1', db;dur=5, db_async;dur=1.419"
+      },
+      "mechanics_and_impact": "Examines edge micro-diagnostics in Server-Timing headers to determine exact database query latency and cache state (HIT/DYNAMIC). Enables autonomous indexers to predict origin freshness and dynamically adapt crawl frequency without polling full documents."
     }
   ]
 }
