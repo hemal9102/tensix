@@ -697,6 +697,53 @@ Spam filters (SpamAssassin, Barracuda, Proofpoint) run strict structural DOM val
 
 ---
 
+## Section P21 — Gmail Gemini AI Summarization Architecture & Presentation Layer Optimization
+
+### 1. How Gmail Triggers "Summarize this email"
+When an email arrives in a modern Gmail inbox (Web, Android, iOS), Google's Gemini LLM processes the message to decide whether to render the top-level **"Summarize this email"** pill button or an automated summary context card.
+
+The trigger relies on a dual requirement: **Recipient Account Settings** AND **Template Presentation Architecture**.
+
+### 2. Recipient Client-Side Requirements (Account Settings)
+For Gemini to activate on a recipient's inbox:
+1. **Smart Features and Personalization:** Under Gmail **Settings > General**, the setting `Smart features and personalization` MUST be checked:
+   - `Turn on smart features and personalization in Gmail, Chat, and Meet`.
+   - If disabled, Google's privacy policy prohibits LLMs from scanning message bodies, and AI summaries will NEVER trigger.
+2. **Inbox Tab / Folder Placement:** Gemini AI summaries are disabled on messages routed to the **Spam folder** or heavily filtered **Promotions tab** carrying free-tier ESP badges (`logo_mailin`). The email MUST land in **Primary** or **Updates** to qualify for summarization.
+
+### 3. Template & Presentation Layer Optimization (Why "Ideas That Inspire" Triggered Summarization)
+Why did `Ideas That Inspire. Research That Matters.eml` trigger Gmail's AI summary while `IJAR` and `PARIPEX` failed?
+
+```
+[Incoming Email Stream]
+          │
+          ├─► Lands in Spam? ───────► YES ──► Gemini AI Disabled
+          │         │ NO
+          │         ▼
+          ├─► Carries Free ESP Badge? ► YES ──► Classified as Bulk Promo ──► Gemini Skipped
+          │         │ NO
+          │         ▼
+          ├─► Text Word Count > 120 Words? ──► NO ──► Too Short to Summarize
+          │         │ YES
+          │         ▼
+          ├─► Clean Byte 0 Preheader & Structured Hierarchy?
+          │         │
+          │         ▼
+          └──► GEMINI ACTIVATES: "Summarize this email" Pill Displayed
+```
+
+1. **The Minimum Text Length Threshold:**
+   - Emails under ~100 words are considered too brief to warrant summarization.
+   - `Ideas That Inspire` contained ~450 words of rich, coherent narrative text with clear milestones (`STEP 01`, `STEP 02`, `STEP 03`), providing sufficient token density for Gemini to extract 3–5 bullet points.
+2. **True Byte-0 Preheader Precedence:**
+   - Gemini’s extraction parser inspects the top of `<body>`. Because the preheader text and `&zwnj;&nbsp;` buffer flood sat at Byte 0, Gemini immediately extracted the core topic without choking on broken tracking iframes, script blocks, or unrendered CSS.
+3. **Semantic Hierarchy vs. Fragmented Text:**
+   - Templates using clear hierarchical blocks (`YOUR NEXT ACADEMIC STEP`, `Questions or Editorial Interest?`) provide structural anchors that LLMs use to construct summaries.
+4. **Zero Script / Interstitial Pollution:**
+   - Because `Ideas That Inspire` bypassed the Brevo Campaign builder's client-side JavaScript redirect pages (`sibautomation.com`), the message payload remained clean, high-reputation HTML that Google's parser trusted.
+
+---
+
 ## Production Blueprint: The Complete Boilerplate HTML Shell
 
 Here is the master boilerplate combining all 15 presentation engineering techniques:
