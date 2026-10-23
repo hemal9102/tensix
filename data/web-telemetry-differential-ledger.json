@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:12:21.616664+00:00",
+  "generated_at": "2026-10-23T12:22:02.466909+00:00",
   "framework": "TENSIX_MASTER_ECOMMERCE_9_LAYER_STRATEGIES",
   "total_ecom_strategies": 36,
   "layers_covered": 9,
@@ -183,7 +183,7 @@
     {
       "strategy_id": "ECOM_STRAT_0011",
       "name": "ADAPTIVE_SRCSET_AVIF_RENDER_OPTIMIZATION",
-      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOM",
+      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOCUMENT_TREE",
       "subsystem": "VISUAL_LCP_OPTIMIZATION",
       "complexity": {
         "time": "O(1)",
@@ -199,7 +199,7 @@
     {
       "strategy_id": "ECOM_STRAT_0012",
       "name": "USER_QUERY_QA_ACCORDION_BERT_SPAN_WINDOW",
-      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOM",
+      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOCUMENT_TREE",
       "subsystem": "COMMERCIAL_PAA_DOMINATION",
       "complexity": {
         "time": "O(Q)",
@@ -305,7 +305,7 @@
     {
       "strategy_id": "ECOM_STRAT_0018",
       "name": "AMAZON_DYNAMIC_ASIN_AVAILABILITY_GRAPH",
-      "rfc_or_standard_layer": "LAYER_4_SEMANTIC_DATA_GRAPH",
+      "rfc_or_standard_layer": "LAYER_7_LINKED_DATA_GRAPH",
       "subsystem": "REALTIME_STOCK_BUYBOX_RESOLUTION",
       "complexity": {
         "time": "O(1)",
@@ -323,7 +323,7 @@
     {
       "strategy_id": "ECOM_STRAT_0019",
       "name": "AMAZON_IMAGE_BLOCK_HIRES_ZOOM_LATTICE",
-      "rfc_or_standard_layer": "LAYER_5_DOM_CONTENT_STRUCTURE",
+      "rfc_or_standard_layer": "LAYER_6_PRESENTATION_DOCUMENT_TREE",
       "subsystem": "MULTIMODAL_HIGH_DENSITY_ASSET_INDEXING",
       "complexity": {
         "time": "O(Images)",
@@ -394,7 +394,7 @@
     {
       "strategy_id": "ECOM_STRAT_0023",
       "name": "EDGE_SERVER_TIMING_FRESHNESS_CALCULUS",
-      "rfc_or_standard_layer": "LAYER_7_ASYNCHRONOUS_APPLICATION_STATE",
+      "rfc_or_standard_layer": "LAYER_7_LINKED_DATA_GRAPH",
       "subsystem": "ORIGIN_DECAY_DETECTION",
       "complexity": {
         "time": "O(1)",
@@ -480,7 +480,7 @@
     {
       "strategy_id": "ECOM_STRAT_0027",
       "name": "FEATURE_LEVEL_PARAMETRIC_RATING_VECTOR_LATTICE",
-      "rfc_or_standard_layer": "LAYER_7_ASYNCHRONOUS_APPLICATION_STATE",
+      "rfc_or_standard_layer": "LAYER_7_LINKED_DATA_GRAPH",
       "subsystem": "DIMENSIONAL_SENTIMENT_QUANTIZATION",
       "complexity": {
         "time": "O(Parameters)",
@@ -511,7 +511,7 @@
     {
       "strategy_id": "ECOM_STRAT_0028",
       "name": "DUAL_ENGINE_SEARCH_ITEMLIST_DAG_INJECTION",
-      "rfc_or_standard_layer": "LAYER_7_ASYNCHRONOUS_APPLICATION_STATE",
+      "rfc_or_standard_layer": "LAYER_7_LINKED_DATA_GRAPH",
       "subsystem": "CATALOG_GRAPH_CAROUSEL_BINDING",
       "complexity": {
         "time": "O(Products)",
@@ -643,7 +643,7 @@
     {
       "strategy_id": "AI_GOV_0002",
       "name": "EDGE_BOT_PREFERENCE_SYNC_DIRECTIVE",
-      "rfc_or_standard_layer": "LAYER_4_CRAWLER_DISCOVERY_CANONICAL",
+      "rfc_or_standard_layer": "LAYER_4_CRAWLER_DISCOVERY",
       "subsystem": "DYNAMIC_REVERSE_PROXY_ROBOTS_INJECTION",
       "complexity": {
         "time": "O(1)",

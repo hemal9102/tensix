@@ -158,7 +158,20 @@ class ApifySurgicalGate:
     """
 
     def __init__(self, api_token: Optional[str] = None):
-        self.api_token: str = api_token or os.getenv("APIFY_TOKEN", "")
+        token = api_token or os.getenv("APIFY_TOKEN", "")
+        if not token:
+            env_file = Path(__file__).resolve().parent.parent / ".env"
+            if env_file.exists():
+                try:
+                    with open(env_file, "r", encoding="utf-8") as f:
+                        for line in f:
+                            line = line.strip()
+                            if line.startswith("APIFY_TOKEN="):
+                                token = line.split("=", 1)[1].strip()
+                                break
+                except Exception:
+                    pass
+        self.api_token: str = token
 
     @property
     def is_configured(self) -> bool:
@@ -302,7 +315,7 @@ class StrategyAnatomySynthesizer:
         if "parameterRating" in body:
             admit(NovelStrategyCandidate(
                 name="FEATURE_LEVEL_PARAMETRIC_RATING_VECTOR_LATTICE",
-                rfc_or_standard_layer="LAYER_7_ASYNCHRONOUS_APPLICATION_STATE",
+                rfc_or_standard_layer="LAYER_7_LINKED_DATA_GRAPH",
                 subsystem="DIMENSIONAL_SENTIMENT_QUANTIZATION",
                 complexity={"time": "O(Parameters)", "space": "O(Parameters)"},
                 ml_weight=0.97, ml_confidence=0.995,
@@ -326,12 +339,48 @@ class StrategyAnatomySynthesizer:
         if "data-a-dynamic-image" in body:
             admit(NovelStrategyCandidate(
                 name="AMAZON_IMAGE_BLOCK_HIRES_ZOOM_LATTICE",
-                rfc_or_standard_layer="LAYER_5_DOM_CONTENT_STRUCTURE",
+                rfc_or_standard_layer="LAYER_6_PRESENTATION_DOCUMENT_TREE",
                 subsystem="MULTIMODAL_HIGH_DENSITY_ASSET_INDEXING",
                 complexity={"time": "O(Images)", "space": "O(Images * Resolutions)"},
                 ml_weight=0.95, ml_confidence=0.991,
                 wire_or_code_signature={"attribute": "data-a-dynamic-image"},
                 mechanics_and_impact="Embeds raw JSON dictionaries of multi-resolution image URLs for Vision LLMs."
+            ))
+
+        # Check: RFC 9110 HTTP 402 AI Micropayment Metering
+        if status == 402 or "paywall-type" in norm_h or "x-ai-cost" in norm_h:
+            admit(NovelStrategyCandidate(
+                name="RFC9110_HTTP402_AGENTIC_MICROPAYMENT_METERING",
+                rfc_or_standard_layer="LAYER_3_HTTP_SEMANTICS_CACHING",
+                subsystem="AUTONOMOUS_AI_CRAWL_MONETIZATION",
+                complexity={"time": "O(1)", "space": "O(1)"},
+                ml_weight=0.99, ml_confidence=0.999,
+                wire_or_code_signature={"status": 402, "headers": ["paywall-type", "x-ai-cost"]},
+                mechanics_and_impact="Bypasses binary block models by returning HTTP 402 Payment Required for AI crawler token licensing."
+            ))
+
+        # Check: Dynamic Bot Preference Sync & Edge Directives
+        if "noai" in norm_h.get("x-robots-tag", "").lower() or (url.endswith("/robots.txt") and "User-agent: GPTBot" in body and "Disallow" in body):
+            admit(NovelStrategyCandidate(
+                name="EDGE_BOT_PREFERENCE_SYNC_DIRECTIVE",
+                rfc_or_standard_layer="LAYER_4_CRAWLER_DISCOVERY",
+                subsystem="DYNAMIC_REVERSE_PROXY_ROBOTS_INJECTION",
+                complexity={"time": "O(1)", "space": "O(1)"},
+                ml_weight=0.97, ml_confidence=0.996,
+                wire_or_code_signature={"header": norm_h.get("x-robots-tag"), "url": url},
+                mechanics_and_impact="Edge proxy injects dynamic AI disallow rules and Layer 7 drops for unverified training scrapers."
+            ))
+
+        # Check: draft-shah-agent-readiness-evaluation-00 Manifest
+        if "agent-readiness.json" in url or "agent-readiness" in body:
+            admit(NovelStrategyCandidate(
+                name="IETF_AGENT_READINESS_ZERO_ENTROPY_TOPOLOGY",
+                rfc_or_standard_layer="LAYER_8_REALTIME_EDGE_PUSH",
+                subsystem="DRAFT_SHAH_AGENT_READINESS_EVALUATION",
+                complexity={"time": "O(1)", "space": "O(1)"},
+                ml_weight=0.99, ml_confidence=0.999,
+                wire_or_code_signature={"target": "/.well-known/agent-readiness.json"},
+                mechanics_and_impact="Provides a mathematically bounded, deterministic interface for autonomous agent swarms."
             ))
 
         return candidates
